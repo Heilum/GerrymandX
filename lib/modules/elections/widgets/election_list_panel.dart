@@ -53,9 +53,10 @@ class ElectionListPanel extends StatelessWidget {
               itemCount: databases.length,
               itemBuilder: (context, index) {
                 final dbName = databases[index];
+                final displayName = dbName.replaceAll('.db', '');
                 final isSelected = store.selectedDatabase.value == dbName;
                 return ListTile(
-                  title: Text(dbName),
+                  title: Text(displayName),
                   selected: isSelected,
                   onTap: () {
                     // Setting the signal triggers the effect in MapDataStore

@@ -54,6 +54,30 @@ class ElectionRepository {
     return {for (final c in candidates) c.id: c.partyId ?? 0};
   }
 
+  /// Returns {countyId: [precinctId, ...]}.
+  Future<Map<int, List<int>>> getCountyPrecinctMap() async {
+    final rows = await _db.query('county_precincts');
+    final map = <int, List<int>>{};
+    for (final row in rows) {
+      final countyId = row['county_id'] as int;
+      final precinctId = row['precinct_id'] as int;
+      map.putIfAbsent(countyId, () => []).add(precinctId);
+    }
+    return map;
+  }
+
+  /// Returns {congressionalDistrictId: [precinctId, ...]}.
+  Future<Map<int, List<int>>> getCdPrecinctMap() async {
+    final rows = await _db.query('congressional_district_precincts');
+    final map = <int, List<int>>{};
+    for (final row in rows) {
+      final cdId = row['congressional_district_id'] as int;
+      final precinctId = row['precinct_id'] as int;
+      map.putIfAbsent(cdId, () => []).add(precinctId);
+    }
+    return map;
+  }
+
   Future<void> updatePrecinctResult(int id, int votes) async {
     await _db.update(
       'precinct_results',

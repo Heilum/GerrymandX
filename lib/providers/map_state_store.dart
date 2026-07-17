@@ -2,6 +2,7 @@ import 'package:signals_flutter/signals_flutter.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
 
 enum FillMode {
+  none,
   winnerOpaque,
   winnerOpacity,
   singleCandidateOpacity,

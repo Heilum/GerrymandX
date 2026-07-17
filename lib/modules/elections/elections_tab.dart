@@ -11,8 +11,8 @@ class ElectionsTab extends StatefulWidget {
 }
 
 class _ElectionsTabState extends State<ElectionsTab> {
-  bool _showLeftPanel = true;
-  bool _showRightPanel = true;
+  bool _showLeftPanel = false;
+  bool _showRightPanel = false;
 
   @override
   Widget build(BuildContext context) {

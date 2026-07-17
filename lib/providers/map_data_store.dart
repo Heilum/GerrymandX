@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:flutter/painting.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
@@ -51,17 +52,28 @@ class MapDataStore {
   /// All candidates for this election
   final candidates = ListSignal<Candidate>([]);
 
+  /// Region → precinct mappings for aggregating non-precinct cells
+  /// {countyId: [precinctId, ...]}
+  final countyPrecincts = Signal<Map<int, List<int>>>({});
+  /// {cdId: [precinctId, ...]}
+  final cdPrecincts = Signal<Map<int, List<int>>>({});
+
+  String? _lastLoadedDb;
+  bool _loading = false;
+
   MapDataStore(this.electionStore) {
-    // Single reactive effect: when selectedDatabase changes, load everything.
-    effect(() {
-      final db = electionStore.selectedDatabase.value;
-      if (db != null) {
+    // Subscribe to database changes. We use subscribe instead of effect
+    // because _loadAll is async and effect() can't handle Futures.
+    electionStore.selectedDatabase.subscribe((db) {
+      if (db != null && db != _lastLoadedDb && !_loading) {
+        _lastLoadedDb = db;
         _loadAll(db);
       }
     });
   }
 
   Future<void> _loadAll(String dbName) async {
+    _loading = true;
     isLoadingData.value = true;
     try {
       // 1. Open the chosen database.
@@ -130,47 +142,62 @@ class MapDataStore {
       precinctVotes.value = summaries;
       candidatePartyMap.value = partyMap;
       candidates.value = allCandidates;
+
+      // 4. Load region → precinct mappings.
+      countyPrecincts.value = await _repo.getCountyPrecinctMap();
+      cdPrecincts.value = await _repo.getCdPrecinctMap();
     } finally {
+      _loading = false;
       isLoadingData.value = false;
     }
   }
 
-  int? hitTest(Offset localPosition, Size canvasSize, LayerType layerType) {
-    if (overallBounds.value == null) return null;
-    final bounds = overallBounds.value!;
+  /// Aggregate votes for a non-precinct cell by summing its child precincts.
+  PrecinctVoteSummary? aggregateVotesForRegion(LayerType layerType, int regionId) {
+    final votes = precinctVotes.value;
+    List<int>? precinctIds;
 
-    final scaleX = canvasSize.width / bounds.width;
-    final scaleY = canvasSize.height / bounds.height;
-    final scale = scaleX < scaleY ? scaleX : scaleY;
-
-    final mapWidth = bounds.width * scale;
-    final mapHeight = bounds.height * scale;
-    final offsetX = (canvasSize.width - mapWidth) / 2 - bounds.left * scale;
-    final offsetY = (canvasSize.height - mapHeight) / 2 - bounds.top * scale;
-
-    final mapX = (localPosition.dx - offsetX) / scale;
-    final mapY = (localPosition.dy - offsetY) / scale;
-    final mapPoint = Offset(mapX, mapY);
-
-    List<RenderableCell> targetList;
     switch (layerType) {
-      case LayerType.state:
-        targetList = states.value;
       case LayerType.county:
-        targetList = counties.value;
+        precinctIds = countyPrecincts.value[regionId];
       case LayerType.congressionalDistrict:
-        targetList = congressionalDistricts.value;
+        precinctIds = cdPrecincts.value[regionId];
+      case LayerType.state:
+        // State = all precincts
+        precinctIds = votes.keys.toList();
       case LayerType.precinct:
-        targetList = precincts.value;
+        return votes[regionId];
     }
 
-    for (final rCell in targetList) {
-      if (rCell.bounds.contains(mapPoint)) {
-        if (rCell.path.contains(mapPoint)) {
-          return rCell.cell.id;
-        }
+    if (precinctIds == null || precinctIds.isEmpty) return null;
+
+    final aggregated = <int, int>{}; // candidateId → total votes
+    int total = 0;
+    for (final pid in precinctIds) {
+      final pv = votes[pid];
+      if (pv == null) continue;
+      total += pv.totalVotes;
+      for (final entry in pv.candidateVotes.entries) {
+        aggregated[entry.key] = (aggregated[entry.key] ?? 0) + entry.value;
       }
     }
-    return null;
+
+    if (total == 0) return null;
+
+    int winnerId = 0;
+    int winnerVotes = 0;
+    for (final entry in aggregated.entries) {
+      if (entry.value > winnerVotes) {
+        winnerVotes = entry.value;
+        winnerId = entry.key;
+      }
+    }
+
+    return PrecinctVoteSummary(
+      totalVotes: total,
+      winnerCandidateId: winnerId,
+      winnerVotes: winnerVotes,
+      candidateVotes: aggregated,
+    );
   }
 }

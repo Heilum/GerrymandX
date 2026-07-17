@@ -70,15 +70,12 @@ class InspectorPanel extends StatelessWidget {
             }
 
             final cell = selectedCell.cell;
-            final votes = dataStore.precinctVotes.value;
             final partyMap = dataStore.candidatePartyMap.value;
             final allCandidates = dataStore.candidates.value;
 
-            // For precincts, show real vote data.
-            // For higher layers, aggregate across contained precincts (simplified: just show cell info).
-            final voteSummary = (layer == LayerType.precinct)
-                ? votes[cell.id]
-                : null;
+            // Aggregate votes: for precincts it's direct lookup,
+            // for counties/CDs/states it sums child precincts.
+            final voteSummary = dataStore.aggregateVotesForRegion(layer, cell.id);
 
             return SingleChildScrollView(
               padding: const EdgeInsets.all(16.0),
@@ -94,7 +91,7 @@ class InspectorPanel extends StatelessWidget {
                     _infoRow('Population', cell.population.toString()),
                   ],
                   if (voteSummary != null) ...[
-                    _infoRow('Total Votes', voteSummary.totalVotes.toString()),
+                    _infoRow('Total Votes', _formatNumber(voteSummary.totalVotes)),
                     if (cell.population > 0)
                       _infoRow('Turnout',
                           '${(voteSummary.totalVotes / cell.population * 100).toStringAsFixed(1)}%'),
@@ -120,10 +117,8 @@ class InspectorPanel extends StatelessWidget {
                     }),
                   ] else ...[
                     const SizedBox(height: 8),
-                    Text(
-                      layer == LayerType.precinct
-                          ? 'No vote data available'
-                          : 'Select a precinct to see vote details',
+                    const Text(
+                      'No vote data available',
                       style: TextStyle(color: Colors.white54),
                     ),
                   ],
@@ -134,6 +129,16 @@ class InspectorPanel extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  String _formatNumber(int n) {
+    final s = n.toString();
+    final buf = StringBuffer();
+    for (int i = 0; i < s.length; i++) {
+      if (i > 0 && (s.length - i) % 3 == 0) buf.write(',');
+      buf.write(s[i]);
+    }
+    return buf.toString();
   }
 
   Widget _infoRow(String label, String value) {
