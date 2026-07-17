@@ -56,16 +56,6 @@ class BaseMapPainter extends CustomPainter {
   final FillMode fillMode;
   final int? singleCandidateId;
 
-  /// Cached picture — avoids re-drawing 10k paths every frame.
-  ui.Picture? _cachedPicture;
-  Size? _cachedSize;
-
-  // Cache keys to detect real changes.
-  List<LayerType>? _prevLayers;
-  FillMode? _prevFillMode;
-  int? _prevSingleCandidateId;
-  bool? _prevLoading;
-
   BaseMapPainter({
     required this.dataStore,
     required this.visibleLayers,
@@ -78,32 +68,7 @@ class BaseMapPainter extends CustomPainter {
     if (dataStore.isLoadingData.value || dataStore.overallBounds.value == null) {
       return;
     }
-
-    final needsRepaint = _cachedPicture == null ||
-        _cachedSize != size ||
-        _prevLayers == null ||
-        !_listEquals(_prevLayers!, visibleLayers) ||
-        _prevFillMode != fillMode ||
-        _prevSingleCandidateId != singleCandidateId ||
-        _prevLoading != dataStore.isLoadingData.value;
-
-    if (needsRepaint) {
-      _cachedPicture = _recordPicture(size);
-      _cachedSize = size;
-      _prevLayers = List.of(visibleLayers);
-      _prevFillMode = fillMode;
-      _prevSingleCandidateId = singleCandidateId;
-      _prevLoading = dataStore.isLoadingData.value;
-    }
-
-    canvas.drawPicture(_cachedPicture!);
-  }
-
-  ui.Picture _recordPicture(Size size) {
-    final recorder = ui.PictureRecorder();
-    final c = Canvas(recorder);
-    _paintMap(c, size);
-    return recorder.endRecording();
+    _paintMap(canvas, size);
   }
 
   void _paintMap(Canvas canvas, Size size) {

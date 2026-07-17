@@ -32,6 +32,14 @@ class MapStateStore {
   final selectedCellId = Signal<int?>(null);
   final hoveredCellId = Signal<int?>(null);
 
+  /// Granularity order: finest first.
+  static const _granularityOrder = [
+    LayerType.precinct,
+    LayerType.county,
+    LayerType.congressionalDistrict,
+    LayerType.state,
+  ];
+
   void toggleLayerVisibility(LayerType type) {
     final layers = List<LayerType>.from(visibleLayers.value);
     if (layers.contains(type)) {
@@ -40,11 +48,20 @@ class MapStateStore {
       layers.add(type);
     }
     visibleLayers.value = layers;
-    
-    // If the interactive layer was just hidden, fall back to another visible layer
-    if (!visibleLayers.value.contains(interactiveLayer.value)) {
-      if (visibleLayers.value.isNotEmpty) {
-        interactiveLayer.value = visibleLayers.value.first;
+    _autoSelectFinestInteractiveLayer();
+  }
+
+  /// Always pick the finest-grained visible layer as interactive.
+  void _autoSelectFinestInteractiveLayer() {
+    final visible = visibleLayers.value;
+    for (final layer in _granularityOrder) {
+      if (visible.contains(layer)) {
+        if (interactiveLayer.value != layer) {
+          interactiveLayer.value = layer;
+          selectedCellId.value = null;
+          hoveredCellId.value = null;
+        }
+        return;
       }
     }
   }
