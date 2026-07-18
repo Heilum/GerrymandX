@@ -22,12 +22,14 @@ class PrecinctVoteSummary {
   final int winnerCandidateId;
   final int winnerVotes;
   final Map<int, int> candidateVotes; // candidateId -> votes
+  final int population;
 
   PrecinctVoteSummary({
     required this.totalVotes,
     required this.winnerCandidateId,
     required this.winnerVotes,
     required this.candidateVotes,
+    required this.population,
   });
 }
 
@@ -166,11 +168,13 @@ class MapDataStore {
             winnerId = cv.key;
           }
         }
+        final pop = cellIndex.value[LayerType.precinct]?[precinctId]?.cell.population ?? 0;
         summaries[precinctId] = PrecinctVoteSummary(
           totalVotes: total,
           winnerCandidateId: winnerId,
           winnerVotes: winnerVotes,
           candidateVotes: cvotes,
+          population: pop,
         );
       }
 
@@ -208,10 +212,12 @@ class MapDataStore {
 
     final aggregated = <int, int>{}; // candidateId → total votes
     int total = 0;
+    int pop = 0;
     for (final pid in precinctIds) {
       final pv = votes[pid];
       if (pv == null) continue;
       total += pv.totalVotes;
+      pop += pv.population;
       for (final entry in pv.candidateVotes.entries) {
         aggregated[entry.key] = (aggregated[entry.key] ?? 0) + entry.value;
       }
@@ -233,6 +239,7 @@ class MapDataStore {
       winnerCandidateId: winnerId,
       winnerVotes: winnerVotes,
       candidateVotes: aggregated,
+      population: pop,
     );
   }
 }

@@ -1,25 +1,33 @@
 CREATE TABLE states (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
-    boundary TEXT
+    boundary TEXT,
+    center_lat REAL,
+    center_lon REAL
 );
 
 CREATE TABLE counties (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
-    boundary TEXT
+    boundary TEXT,
+    center_lat REAL,
+    center_lon REAL
 );
 
 CREATE TABLE congressional_districts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
-    boundary TEXT
+    boundary TEXT,
+    center_lat REAL,
+    center_lon REAL
 );
 
 CREATE TABLE precincts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     boundary TEXT, -- GeoJSON stored as string
+    center_lat REAL,
+    center_lon REAL,
     population INTEGER NOT NULL DEFAULT 0
 );
 

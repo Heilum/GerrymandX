@@ -209,7 +209,10 @@ class BaseMapPainter extends CustomPainter {
             
             // Convert to geographic radius for drawCircle
             final radius = currentPixelRadius / (mapScale * interactiveScale);
-            canvas.drawCircle(rCell.bounds.center, radius, fillPaint);
+            final center = rCell.cell.centerLon != null && rCell.cell.centerLat != null
+                ? Offset(rCell.cell.centerLon!, -rCell.cell.centerLat!)
+                : rCell.bounds.center;
+            canvas.drawCircle(center, radius, fillPaint);
           }
         } else {
           Color fillColor = _getFillColor(layerType, rCell.cell.id, partyMap);

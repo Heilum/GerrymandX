@@ -72,14 +72,14 @@ class InspectorPanel extends StatelessWidget {
                   Text('${layer.name.toUpperCase()} #${cell.id}',
                       style: Theme.of(context).textTheme.labelMedium),
                   const SizedBox(height: 12),
-                  if (cell.population > 0) ...[
-                    _infoRow('Population', cell.population.toString()),
+                  if (voteSummary != null && voteSummary.population > 0) ...[
+                    _infoRow('Population', _formatNumber(voteSummary.population)),
                   ],
                   if (voteSummary != null) ...[
                     _infoRow('Total Votes', _formatNumber(voteSummary.totalVotes)),
-                    if (cell.population > 0)
+                    if (voteSummary.population > 0)
                       _infoRow('Turnout',
-                          '${(voteSummary.totalVotes / cell.population * 100).toStringAsFixed(1)}%'),
+                          '${(voteSummary.totalVotes / voteSummary.population * 100).toStringAsFixed(1)}%'),
                     const Divider(),
                     Text('Votes by Candidate',
                         style: Theme.of(context).textTheme.titleSmall),

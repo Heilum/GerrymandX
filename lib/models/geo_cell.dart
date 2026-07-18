@@ -8,6 +8,8 @@ class GeoCell {
   final String? boundaryJson;
   final LayerType layerType;
   final int population; // For precinct, directly from DB. For others, aggregated.
+  final double? centerLat;
+  final double? centerLon;
 
   GeoCell({
     required this.id,
@@ -15,6 +17,8 @@ class GeoCell {
     this.boundaryJson,
     required this.layerType,
     this.population = 0,
+    this.centerLat,
+    this.centerLon,
   });
 
   factory GeoCell.fromMap(Map<String, dynamic> map, LayerType type) {
@@ -24,6 +28,8 @@ class GeoCell {
       boundaryJson: map['boundary'] as String?,
       layerType: type,
       population: map['population'] ?? 0,
+      centerLat: map['center_lat'] as double?,
+      centerLon: map['center_lon'] as double?,
     );
   }
 }

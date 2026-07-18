@@ -4,6 +4,7 @@ import os
 import geopandas as gpd
 import pandas as pd
 import warnings
+import random
 
 # Suppress some geometry warnings during dissolve
 warnings.filterwarnings('ignore')
@@ -28,6 +29,14 @@ def geom_to_dict(x):
     except Exception as e:
         return None
 
+def get_best_center(geom):
+    if geom is None or geom.is_empty: return None, None
+    cent = geom.centroid
+    if geom.contains(cent):
+        return cent.y, cent.x
+    rep = geom.representative_point()
+    return rep.y, rep.x
+
 # ID Counters
 states_id_seq = 1
 parties_id_seq = 1
@@ -51,20 +60,27 @@ print("Computing State, County, and District boundaries (this may take 10-30 sec
 # State
 state_gdf = gdf.assign(state='Texas').dissolve(by='state')
 state_boundary = geom_to_dict(state_gdf.iloc[0].geometry) if not state_gdf.empty else None
+state_lat, state_lon = get_best_center(state_gdf.iloc[0].geometry) if not state_gdf.empty else (None, None)
 
 # Counties
 county_gdf = gdf.dissolve(by='County')
 county_boundaries = {}
+county_centers = {}
 for county_name, row in county_gdf.iterrows():
     county_boundaries[county_name] = geom_to_dict(row.geometry)
+    clat, clon = get_best_center(row.geometry)
+    county_centers[county_name] = (clat, clon)
 
 # Congressional Districts
 cd_gdf = cong_gdf.dissolve(by='CONG_DIST')
 cd_boundaries = {}
+cd_centers = {}
 for cd_val, row in cd_gdf.iterrows():
     if not pd.isna(cd_val):
         cd_str = str(int(cd_val))
         cd_boundaries[cd_str] = geom_to_dict(row.geometry)
+        clat, clon = get_best_center(row.geometry)
+        cd_centers[cd_str] = (clat, clon)
 
 # Build precinct to CD mapping
 precinct_to_cd = {}
@@ -77,7 +93,7 @@ for _, row in cong_gdf.iterrows():
 # 3. Base Setup (States)
 state_id = states_id_seq
 states_id_seq += 1
-cursor.execute("INSERT INTO states (id, name, boundary) VALUES (?, ?, ?)", (state_id, "Texas", state_boundary))
+cursor.execute("INSERT INTO states (id, name, boundary, center_lat, center_lon) VALUES (?, ?, ?, ?, ?)", (state_id, "Texas", state_boundary, state_lat, state_lon))
 
 party_map = {
     'D': 'Democrat', 'R': 'Republican', 'L': 'Libertarian', 
@@ -135,7 +151,8 @@ for idx, row in gdf.iterrows():
         cid = counties_id_seq
         counties_id_seq += 1
         cb = county_boundaries.get(county_name)
-        counties_batch.append((cid, county_name, cb))
+        clat, clon = county_centers.get(county_name, (None, None))
+        counties_batch.append((cid, county_name, cb, clat, clon))
         state_regions_batch.append((state_id, cid, 'county'))
         county_cache[county_name] = cid
     county_id = county_cache[county_name]
@@ -146,8 +163,7 @@ for idx, row in gdf.iterrows():
     precinct_id = precincts_id_seq
     precincts_id_seq += 1
     geom = row['geojson']
-    
-    # Removed duplicate append
+    clat, clon = get_best_center(row.geometry)
     
     # 3. Handle Congressional District (CD) using mapping
     best_cd_str = precinct_to_cd.get(uid)
@@ -157,7 +173,8 @@ for idx, row in gdf.iterrows():
             cdid = cds_id_seq
             cds_id_seq += 1
             cdb = cd_boundaries.get(best_cd_str)
-            cds_batch.append((cdid, cd_name, cdb))
+            cd_lat, cd_lon = cd_centers.get(best_cd_str, (None, None))
+            cds_batch.append((cdid, cd_name, cdb, cd_lat, cd_lon))
             state_regions_batch.append((state_id, cdid, 'congressional_district'))
             cd_cache[cd_name] = cdid
         cd_id = cd_cache[cd_name]
@@ -179,18 +196,18 @@ for idx, row in gdf.iterrows():
             ))
             results_id_seq += 1
             
-    # Mock Population: Assume ~55% voter turnout (1 / 0.55 ≈ 1.8)
+    # Mock Population: Assume random turnout between 1.2 and 1.8 ratio
     # Give a small base population if votes are 0 to prevent div-by-zero later
-    mock_population = int(total_precinct_presidential_votes * 1.8) if total_precinct_presidential_votes > 0 else 100
+    mock_population = int(total_precinct_presidential_votes * random.uniform(1.2, 1.8)) if total_precinct_presidential_votes > 0 else 100
     
-    precincts_batch.append((precinct_id, precinct_name, geom, mock_population))
+    precincts_batch.append((precinct_id, precinct_name, geom, clat, clon, mock_population))
     county_precincts_batch.append((precinct_id, county_id))
 
 print("Executing bulk inserts...")
-cursor.executemany("INSERT INTO counties (id, name, boundary) VALUES (?, ?, ?)", counties_batch)
-cursor.executemany("INSERT INTO congressional_districts (id, name, boundary) VALUES (?, ?, ?)", cds_batch)
+cursor.executemany("INSERT INTO counties (id, name, boundary, center_lat, center_lon) VALUES (?, ?, ?, ?, ?)", counties_batch)
+cursor.executemany("INSERT INTO congressional_districts (id, name, boundary, center_lat, center_lon) VALUES (?, ?, ?, ?, ?)", cds_batch)
 cursor.executemany("INSERT INTO state_regions (state_id, region_id, region_type) VALUES (?, ?, ?)", state_regions_batch)
-cursor.executemany("INSERT INTO precincts (id, name, boundary, population) VALUES (?, ?, ?, ?)", precincts_batch)
+cursor.executemany("INSERT INTO precincts (id, name, boundary, center_lat, center_lon, population) VALUES (?, ?, ?, ?, ?, ?)", precincts_batch)
 cursor.executemany("INSERT INTO county_precincts (precinct_id, county_id) VALUES (?, ?)", county_precincts_batch)
 cursor.executemany("INSERT INTO congressional_district_precincts (precinct_id, congressional_district_id) VALUES (?, ?)", cd_precincts_batch)
 cursor.executemany("INSERT INTO precinct_results (id, precinct_id, candidate_id, votes) VALUES (?, ?, ?, ?)", results_batch)
