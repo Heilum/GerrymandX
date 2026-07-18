@@ -145,16 +145,16 @@ class BaseMapPainter extends CustomPainter {
     switch (layerType) {
       case LayerType.state:
         borderThickness = 3.0;
-        borderColor = Colors.white54;
+        borderColor = fillMode == FillMode.singleCandidateOpacity ? Colors.grey[700]! : Colors.white54;
       case LayerType.congressionalDistrict:
         borderThickness = 0.5;
         borderColor = const Color(0xffffcc00);
       case LayerType.county:
         borderThickness = 0.5;
-        borderColor = Colors.white54;
+        borderColor = fillMode == FillMode.singleCandidateOpacity ? Colors.grey[600]! : Colors.white54;
       case LayerType.precinct:
         borderThickness = 0.25;
-        borderColor = Colors.white24;
+        borderColor = fillMode == FillMode.singleCandidateOpacity ? Colors.grey[800]! : Colors.white24;
     }
 
     final borderPaint = Paint()
@@ -187,9 +187,7 @@ class BaseMapPainter extends CustomPainter {
         if (fillMode == FillMode.winnerDotDensity) {
           final summary = dataStore.aggregateVotesForRegion(layerType, rCell.cell.id);
           if (summary != null && summary.winnerVotes > 0) {
-            final partyId = partyMap[summary.winnerCandidateId] ?? 0;
-            final baseColor = partyColors[partyId] ?? defaultCellColor;
-            fillPaint.color = baseColor.withValues(alpha: 0.7);
+            fillPaint.color = _getMarginColor(summary, partyMap);
 
             double basePixelRadius;
             switch (layerType) {
@@ -227,6 +225,23 @@ class BaseMapPainter extends CustomPainter {
     }
   }
 
+  Color _getStrengthColor(double share, int partyId) {
+    final baseColor = partyColors[partyId] ?? defaultCellColor;
+    // Map vote share to color strength:
+    // 50% share -> strength 0.0 (White/Neutral)
+    // >= 75% share -> strength 1.0 (Solid Party Color)
+    final strength = ((share - 0.5) * 4.0).clamp(0.0, 1.0);
+    
+    // Interpolate between a neutral light color and the party color
+    return Color.lerp(Colors.white, baseColor, strength) ?? baseColor;
+  }
+
+  Color _getMarginColor(PrecinctVoteSummary summary, Map<int, int> partyMap) {
+    final partyId = partyMap[summary.winnerCandidateId] ?? 0;
+    final share = summary.totalVotes > 0 ? summary.winnerVotes / summary.totalVotes : 0.5;
+    return _getStrengthColor(share, partyId);
+  }
+
   Color _getFillColor(LayerType layerType, int cellId, Map<int, int> partyMap) {
     if (fillMode == FillMode.none) return Colors.transparent;
 
@@ -242,24 +257,14 @@ class BaseMapPainter extends CustomPainter {
         return partyColors[partyId] ?? defaultCellColor;
 
       case FillMode.winnerOpacity:
-        final partyId = partyMap[summary.winnerCandidateId] ?? 0;
-        final baseColor = partyColors[partyId] ?? defaultCellColor;
-        final share = summary.totalVotes > 0 ? summary.winnerVotes / summary.totalVotes : 0.5;
-        // Map vote share to color strength:
-        // 50% share -> strength 0.0 (White/Neutral)
-        // >= 75% share -> strength 1.0 (Solid Party Color)
-        final strength = ((share - 0.5) * 4.0).clamp(0.0, 1.0);
-        
-        // Interpolate between a neutral light color and the party color
-        return Color.lerp(Colors.white, baseColor, strength) ?? baseColor;
+        return _getMarginColor(summary, partyMap);
 
       case FillMode.singleCandidateOpacity:
         if (singleCandidateId == null) return defaultCellColor;
         final candidateVotes = summary.candidateVotes[singleCandidateId] ?? 0;
-        final share = candidateVotes / summary.totalVotes;
+        final share = summary.totalVotes > 0 ? candidateVotes / summary.totalVotes : 0.0;
         final partyId = partyMap[singleCandidateId] ?? 0;
-        final baseColor = partyColors[partyId] ?? defaultCellColor;
-        return baseColor.withValues(alpha: share.clamp(0.05, 1.0));
+        return _getStrengthColor(share, partyId);
 
       case FillMode.turnoutGray:
         final pop = summary.totalVotes * 1.8;
