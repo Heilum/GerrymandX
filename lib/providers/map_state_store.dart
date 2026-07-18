@@ -32,6 +32,9 @@ class MapStateStore {
   final selectedCellId = Signal<int?>(null);
   final hoveredCellId = Signal<int?>(null);
 
+  // Trigger to reset map view zoom/pan
+  final resetViewTrigger = Signal<int>(0);
+
   /// Granularity order: finest first.
   static const _granularityOrder = [
     LayerType.precinct,

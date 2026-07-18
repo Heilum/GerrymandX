@@ -1,3 +1,4 @@
+import 'dart:isolate';
 import 'package:flutter/foundation.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:flutter/painting.dart';
@@ -40,6 +41,9 @@ class MapDataStore {
   final congressionalDistricts = ListSignal<RenderableCell>([]);
   final precincts = ListSignal<RenderableCell>([]);
 
+  /// O(1) cell lookup by ID per layer type.
+  final cellIndex = Signal<Map<LayerType, Map<int, RenderableCell>>>({});
+
   final isLoadingData = Signal<bool>(false);
   final overallBounds = Signal<Rect?>(null);
 
@@ -79,34 +83,65 @@ class MapDataStore {
       // 1. Open the chosen database.
       await _dbHelper.openNamedDatabase(dbName);
 
-      // 2. Load geometry.
+      // 2. Load geometry from DB (main thread - sqflite requires it).
       final rawStates = await _repo.getStates();
       final rawCounties = await _repo.getCounties();
       final rawCds = await _repo.getCongressionalDistricts();
       final rawPrecincts = await _repo.getPrecincts();
 
+      // 3. Parse GeoJSON in background isolate.
+      // Collect all boundary strings for batch processing.
+      final allCells = <GeoCell>[
+        ...rawStates.where((c) => c.boundaryJson != null),
+        ...rawCounties.where((c) => c.boundaryJson != null),
+        ...rawCds.where((c) => c.boundaryJson != null),
+        ...rawPrecincts.where((c) => c.boundaryJson != null),
+      ];
+      final boundaries = allCells.map((c) => c.boundaryJson!).toList();
+
+      // Heavy JSON parsing runs on a separate isolate.
+      final coordDataList = await Isolate.run(() {
+        return boundaries.map((b) => GeoJsonParser.parseGeoJsonToCoords(b)).toList();
+      });
+
+      // 4. Build Paths on main thread (fast — just moveTo/lineTo).
       double minX = double.infinity;
       double minY = double.infinity;
       double maxX = -double.infinity;
       double maxY = -double.infinity;
 
-      List<RenderableCell> processCells(List<GeoCell> cells) {
-        return cells.where((c) => c.boundaryJson != null).map((c) {
-          final parsed = GeoJsonParser.parseGeoJson(c.boundaryJson!);
+      final renderableCells = <RenderableCell>[];
+      for (int i = 0; i < allCells.length; i++) {
+        final data = coordDataList[i];
+        final pathData = GeoJsonParser.coordsToPath(data);
 
-          if (parsed.bounds.left < minX) minX = parsed.bounds.left;
-          if (parsed.bounds.top < minY) minY = parsed.bounds.top;
-          if (parsed.bounds.right > maxX) maxX = parsed.bounds.right;
-          if (parsed.bounds.bottom > maxY) maxY = parsed.bounds.bottom;
+        if (pathData.bounds.left < minX) minX = pathData.bounds.left;
+        if (pathData.bounds.top < minY) minY = pathData.bounds.top;
+        if (pathData.bounds.right > maxX) maxX = pathData.bounds.right;
+        if (pathData.bounds.bottom > maxY) maxY = pathData.bounds.bottom;
 
-          return RenderableCell(cell: c, path: parsed.path, bounds: parsed.bounds);
-        }).toList();
+        renderableCells.add(RenderableCell(
+          cell: allCells[i],
+          path: pathData.path,
+          bounds: pathData.bounds,
+        ));
       }
 
-      states.value = processCells(rawStates);
-      counties.value = processCells(rawCounties);
-      congressionalDistricts.value = processCells(rawCds);
-      precincts.value = processCells(rawPrecincts);
+      // 5. Distribute back to layer signals.
+      states.value = renderableCells.where((r) => r.cell.layerType == LayerType.state).toList();
+      counties.value = renderableCells.where((r) => r.cell.layerType == LayerType.county).toList();
+      congressionalDistricts.value = renderableCells.where((r) => r.cell.layerType == LayerType.congressionalDistrict).toList();
+      precincts.value = renderableCells.where((r) => r.cell.layerType == LayerType.precinct).toList();
+
+      // Build O(1) cell lookup index.
+      // Build O(1) cell lookup index per layer type.
+      final layerIndices = <LayerType, Map<int, RenderableCell>>{
+        LayerType.state: { for (final c in states.value) c.cell.id: c },
+        LayerType.county: { for (final c in counties.value) c.cell.id: c },
+        LayerType.congressionalDistrict: { for (final c in congressionalDistricts.value) c.cell.id: c },
+        LayerType.precinct: { for (final c in precincts.value) c.cell.id: c },
+      };
+      cellIndex.value = layerIndices;
 
       if (minX != double.infinity) {
         overallBounds.value = Rect.fromLTRB(minX, minY, maxX, maxY);

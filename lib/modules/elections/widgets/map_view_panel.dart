@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:ui' as ui;
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:provider/provider.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:gerrymanderx/providers/map_state_store.dart';
@@ -9,6 +9,7 @@ import 'package:gerrymanderx/providers/map_data_store.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/map_painters.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/spatial_index.dart';
+
 
 class MapViewPanel extends StatefulWidget {
   const MapViewPanel({super.key});
@@ -92,9 +93,9 @@ class _MapViewPanelState extends State<MapViewPanel> {
 
 // ─────────────────────────────────────────────
 // _MapCanvas — fully stateful, owns ALL caches.
-// No Watch wrapper; reads signals directly via
-// subscriptions that only trigger setState when
-// truly needed.
+// Uses Watch inside build() to auto-rebuild when
+// signals change. Per-layer Picture cache lives
+// in State and survives across Watch rebuilds.
 // ─────────────────────────────────────────────
 class _MapCanvas extends StatefulWidget {
   const _MapCanvas();
@@ -110,83 +111,47 @@ class _MapCanvasState extends State<_MapCanvas> {
 
   // ── Interaction ──
   final InteractionNotifier _interactionNotifier = InteractionNotifier();
+  final TransformationController _transformController =
+      TransformationController();
   SpatialIndex? _spatialIndex;
   Size _canvasSize = Size.zero;
   Timer? _hoverTimer;
   Offset? _pendingHoverPos;
 
-  // ── Base map Picture cache ──
-  ui.Picture? _cachedPicture;
+  // ── Per-layer Picture cache (P3: dirty tracking) ──
+  final Map<LayerType, ui.Picture> _layerPictures = {};
+  final Map<LayerType, _LayerCacheKey> _layerCacheKeys = {};
+  ui.Picture? _compositePicture;
   Size? _cachedSize;
-  List<LayerType>? _cachedLayers;
-  FillMode? _cachedFillMode;
-  int? _cachedSingleCandidateId;
-  bool _cachedLoading = true;
+  List<LayerType>? _cachedVisibleLayers;
 
-  // ── Signal subscriptions (disposed on dispose) ──
-  final List<Function()> _disposers = [];
+  // ── Track interactive layer changes ──
+  LayerType? _lastInteractiveLayer;
+  int? _lastSelectedCellId;
+  EffectCleanup? _resetEffect;
 
   @override
   void initState() {
     super.initState();
     _dataStore = context.read<MapDataStore>();
     _mapStore = context.read<MapStateStore>();
-
-    // Subscribe to signals that require map redraw.
-    // Each only calls setState — no heavy work happens here.
-    _disposers.add(_dataStore.isLoadingData.subscribe((_) => _scheduleRebuild()));
-    _disposers.add(_dataStore.overallBounds.subscribe((_) {
-      _invalidateCache();
-      _scheduleRebuild();
-    }));
-    _disposers.add(_dataStore.precinctVotes.subscribe((_) {
-      _invalidateCache();
-      _scheduleRebuild();
-    }));
-    _disposers.add(_mapStore.visibleLayers.subscribe((_) {
-      _invalidateCache();
-      _scheduleRebuild();
-    }));
-    _disposers.add(_mapStore.fillMode.subscribe((_) {
-      _invalidateCache();
-      _scheduleRebuild();
-    }));
-    _disposers.add(_mapStore.selectedCandidateId.subscribe((_) {
-      _invalidateCache();
-      _scheduleRebuild();
-    }));
-    _disposers.add(_mapStore.interactiveLayer.subscribe((_) {
-      _rebuildSpatialIndex();
-      _interactionNotifier.hoveredCellId = null;
-      _interactionNotifier.selectedCellId = null;
-      _scheduleRebuild();
-    }));
-  }
-
-  bool _rebuildScheduled = false;
-  void _scheduleRebuild() {
-    if (_rebuildScheduled) return;
-    _rebuildScheduled = true;
-    SchedulerBinding.instance.addPostFrameCallback((_) {
-      _rebuildScheduled = false;
-      if (mounted) setState(() {});
+    
+    _resetEffect = effect(() {
+      final trigger = _mapStore.resetViewTrigger.value;
+      if (trigger > 0) {
+        _transformController.value = Matrix4.identity();
+      }
     });
   }
 
-  void _invalidateCache() {
-    // Don't dispose here — the painter from the current frame may still
-    // reference the old Picture. Let the GC reclaim it after replacement.
-    _cachedPicture = null;
-  }
-
-  void _rebuildSpatialIndex() {
+  void _rebuildSpatialIndex(LayerType layer) {
     final bounds = _dataStore.overallBounds.value;
     if (bounds == null) return;
-    _spatialIndex = SpatialIndex.build(_getInteractiveCells(), bounds);
+    _spatialIndex = SpatialIndex.build(_getInteractiveCells(layer), bounds);
   }
 
-  List<RenderableCell> _getInteractiveCells() {
-    switch (_mapStore.interactiveLayer.value) {
+  List<RenderableCell> _getInteractiveCells(LayerType layer) {
+    switch (layer) {
       case LayerType.state:
         return _dataStore.states.value;
       case LayerType.county:
@@ -198,168 +163,276 @@ class _MapCanvasState extends State<_MapCanvas> {
     }
   }
 
-  int? _hitTest(Offset localPos) {
+  // ── Hit-test: accounts for InteractiveViewer transform ──
+  int? _hitTest(Offset localPos, LayerType layer) {
     if (_spatialIndex == null || _canvasSize == Size.zero) return null;
     final bounds = _dataStore.overallBounds.value;
     if (bounds == null) return null;
 
-    final t = MapTransform.fit(bounds, _canvasSize);
-    final geoPoint = t.toGeo(localPos);
+    // Use transformation matrix to convert screen hit to canvas local coordinate
+    final t = _transformController.value.clone();
+    t.invert();
+    final canvasLocal = MatrixUtils.transformPoint(t, localPos);
 
-    final cells = _getInteractiveCells();
+    final mapT = MapTransform.fit(bounds, _canvasSize);
+    final geoPoint = mapT.toGeo(canvasLocal);
+
+    final cells = _getInteractiveCells(layer);
     final idx = _spatialIndex!.hitTest(geoPoint, cells);
     return idx >= 0 ? cells[idx].cell.id : null;
   }
 
-  void _onHover(Offset localPos) {
+  void _onHover(Offset localPos, LayerType layer) {
     _pendingHoverPos = localPos;
     _hoverTimer ??= Timer(const Duration(milliseconds: 16), () {
       _hoverTimer = null;
       if (_pendingHoverPos != null) {
-        final id = _hitTest(_pendingHoverPos!);
+        final id = _hitTest(_pendingHoverPos!, layer);
         _interactionNotifier.hoveredCellId = id;
         _mapStore.hoveredCellId.value = id;
       }
     });
   }
 
-  void _onTap(Offset localPos) {
-    final id = _hitTest(localPos);
+  void _onTap(Offset localPos, LayerType layer) {
+    final id = _hitTest(localPos, layer);
     _interactionNotifier.selectedCellId = id;
     _mapStore.selectedCellId.value = id;
   }
 
-  /// Record the base map as a ui.Picture if cache is stale.
-  void _ensurePicture(Size size) {
-    final layers = _mapStore.visibleLayers.value;
-    final fillMode = _mapStore.fillMode.value;
-    final singleId = _mapStore.selectedCandidateId.value;
-    final loading = _dataStore.isLoadingData.value;
 
-    final sameSize = _cachedSize == size;
-    final sameLayers = _cachedLayers != null && _listEq(_cachedLayers!, layers);
-    final sameFill = _cachedFillMode == fillMode;
-    final sameCandidate = _cachedSingleCandidateId == singleId;
-    final sameLoading = _cachedLoading == loading;
-
-    if (_cachedPicture != null &&
-        sameSize &&
-        sameLayers &&
-        sameFill &&
-        sameCandidate &&
-        sameLoading) {
-      return; // cache hit
-    }
-
-    // Record new picture.
+  // ── P3: Per-layer Picture caching ──
+  ui.Picture _recordLayerPicture(
+    Size size,
+    LayerType layerType,
+    FillMode fillMode,
+    int? singleCandidateId,
+  ) {
     final recorder = ui.PictureRecorder();
     final canvas = Canvas(recorder);
-
-    if (!loading && _dataStore.overallBounds.value != null) {
+    if (_dataStore.overallBounds.value != null) {
       final painter = BaseMapPainter(
         dataStore: _dataStore,
-        visibleLayers: layers,
+        visibleLayers: [layerType],
         fillMode: fillMode,
-        singleCandidateId: singleId,
+        singleCandidateId: singleCandidateId,
       );
       painter.paint(canvas, size);
     }
+    return recorder.endRecording();
+  }
 
-    _cachedPicture = recorder.endRecording();
+  void _ensurePicture(
+    Size size,
+    List<LayerType> layers,
+    FillMode fillMode,
+    int? singleCandidateId,
+  ) {
+    bool compositeNeeded = false;
+
+    // Check each visible layer's cache.
+    for (final layer in layers) {
+      final key = _LayerCacheKey(size: size, fillMode: fillMode, singleCandidateId: singleCandidateId);
+      final existingKey = _layerCacheKeys[layer];
+      
+      if (_layerPictures[layer] == null || existingKey != key) {
+        // Cache miss for this layer — re-record only this layer.
+        _layerPictures[layer] = _recordLayerPicture(size, layer, fillMode, singleCandidateId);
+        _layerCacheKeys[layer] = key;
+        compositeNeeded = true;
+      }
+    }
+
+    // Remove pictures for layers that are no longer visible.
+    final removedLayers = _layerPictures.keys.where((l) => !layers.contains(l)).toList();
+    if (removedLayers.isNotEmpty) {
+      for (final l in removedLayers) {
+        _layerPictures.remove(l);
+        _layerCacheKeys.remove(l);
+      }
+      compositeNeeded = true;
+    }
+
+    // Check if visible layers order changed.
+    if (!compositeNeeded && _cachedVisibleLayers != null && !_listEq(_cachedVisibleLayers!, layers)) {
+      compositeNeeded = true;
+    }
+
+    if (!compositeNeeded && _compositePicture != null && _cachedSize == size) {
+      return; // Full cache hit.
+    }
+
+    // Composite all visible layer Pictures into one final Picture.
+    final recorder = ui.PictureRecorder();
+    final canvas = Canvas(recorder);
+    // Draw in correct z-order: state → CD → county → precinct.
+    const drawOrder = [
+      LayerType.state,
+      LayerType.congressionalDistrict,
+      LayerType.county,
+      LayerType.precinct,
+    ];
+    for (final layer in drawOrder) {
+      if (layers.contains(layer) && _layerPictures.containsKey(layer)) {
+        canvas.drawPicture(_layerPictures[layer]!);
+      }
+    }
+    _compositePicture = recorder.endRecording();
     _cachedSize = size;
-    _cachedLayers = List.of(layers);
-    _cachedFillMode = fillMode;
-    _cachedSingleCandidateId = singleId;
-    _cachedLoading = loading;
+    _cachedVisibleLayers = List.of(layers);
+  }
+
+  /// Handle scroll-wheel zoom on macOS.
+  void _onPointerSignal(PointerSignalEvent event) {
+    if (event is PointerScrollEvent) {
+      final direction = event.scrollDelta.dy > 0 ? -1.0 : 1.0;
+      const zoomFactor = 0.1;
+      final currentScale =
+          _transformController.value.getMaxScaleOnAxis();
+      final newScale =
+          (currentScale * (1.0 + direction * zoomFactor)).clamp(0.5, 30.0);
+      final scaleDelta = newScale / currentScale;
+
+      // Scale centered on pointer position.
+      final focalPoint = event.localPosition;
+      final matrix = _transformController.value.clone();
+      final focalInChild = matrix.clone()..invert();
+      final focalLocal =
+          MatrixUtils.transformPoint(focalInChild, focalPoint);
+
+      matrix.translate(focalLocal.dx, focalLocal.dy);
+      matrix.scale(scaleDelta, scaleDelta);
+      matrix.translate(-focalLocal.dx, -focalLocal.dy);
+
+      _transformController.value = matrix;
+    }
   }
 
   @override
   void dispose() {
+    _resetEffect?.call();
     _hoverTimer?.cancel();
     _interactionNotifier.dispose();
-    _cachedPicture?.dispose();
-    for (final d in _disposers) {
-      d();
+    _transformController.dispose();
+    _compositePicture?.dispose();
+    for (final p in _layerPictures.values) {
+      p.dispose();
     }
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    final isLoading = _dataStore.isLoadingData.value;
-    final hasBounds = _dataStore.overallBounds.value != null;
+    return Watch((context) {
+      final isLoading = _dataStore.isLoadingData.value;
+      final hasBounds = _dataStore.overallBounds.value != null;
+      final layers = _mapStore.visibleLayers.value;
+      final fillMode = _mapStore.fillMode.value;
+      final singleCandidateId = _mapStore.selectedCandidateId.value;
+      final interactiveLayer = _mapStore.interactiveLayer.value;
+      final selectedCellId = _mapStore.selectedCellId.value;
+      // Read cellIndex for O(1) lookup in overlay painter.
+      final cellIdx = _dataStore.cellIndex.value;
 
-    if (isLoading) {
-      return Container(
-        color: const Color(0xFF1A1A2E),
-        child: const Center(child: CircularProgressIndicator()),
-      );
-    }
-    if (!hasBounds) {
-      return Container(
-        color: const Color(0xFF1A1A2E),
-        child: const Center(
-          child: Text('Select an election to view the map',
-              style: TextStyle(color: Colors.white54, fontSize: 16)),
-        ),
-      );
-    }
+      // Detect interactive layer changes → rebuild spatial index.
+      if (_lastInteractiveLayer != interactiveLayer) {
+        _lastInteractiveLayer = interactiveLayer;
+        _rebuildSpatialIndex(interactiveLayer);
+        _interactionNotifier.hoveredCellId = null;
+        _interactionNotifier.selectedCellId = null;
+      }
 
-    // Build spatial index on first paint if not yet built.
-    _spatialIndex ??= (() {
-      _rebuildSpatialIndex();
-      return _spatialIndex;
-    })();
 
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        _canvasSize = Size(constraints.maxWidth, constraints.maxHeight);
 
-        // Ensure the Picture is ready (cache hit = instant).
-        _ensurePicture(_canvasSize);
-
+      if (isLoading) {
         return Container(
           color: const Color(0xFF1A1A2E),
-          child: MouseRegion(
-            onHover: (event) => _onHover(event.localPosition),
-            onExit: (_) {
-              _interactionNotifier.hoveredCellId = null;
-              _mapStore.hoveredCellId.value = null;
-            },
-            child: GestureDetector(
-              onTapUp: (details) => _onTap(details.localPosition),
-              child: Stack(
-                children: [
-                  // Layer 1: cached base map
-                  Positioned.fill(
-                    child: CustomPaint(
-                      painter: _CachedPicturePainter(_cachedPicture),
-                      size: _canvasSize,
-                    ),
-                  ),
-                  // Layer 2: lightweight interaction overlay
-                  Positioned.fill(
-                    child: CustomPaint(
-                      painter: InteractionOverlayPainter(
-                        dataStore: _dataStore,
-                        interactiveLayer: _mapStore.interactiveLayer.value,
-                        notifier: _interactionNotifier,
-                      ),
-                      size: _canvasSize,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+          child: const Center(child: CircularProgressIndicator()),
+        );
+      }
+      if (!hasBounds) {
+        return Container(
+          color: const Color(0xFF1A1A2E),
+          child: const Center(
+            child: Text('Select an election to view the map',
+                style: TextStyle(color: Colors.white54, fontSize: 16)),
           ),
         );
-      },
-    );
+      }
+
+      // Build spatial index on first paint if not yet built.
+      if (_spatialIndex == null) {
+        _rebuildSpatialIndex(interactiveLayer);
+      }
+
+      return LayoutBuilder(
+        builder: (context, constraints) {
+          _canvasSize = Size(constraints.maxWidth, constraints.maxHeight);
+
+          // P3: Per-layer Picture cache.
+          _ensurePicture(_canvasSize, layers, fillMode, singleCandidateId);
+
+          return Container(
+            color: const Color(0xFF1A1A2E),
+            child: Listener(
+              onPointerSignal: _onPointerSignal,
+              child: MouseRegion(
+                onHover: (event) =>
+                    _onHover(event.localPosition, interactiveLayer),
+                onExit: (_) {
+                  _interactionNotifier.hoveredCellId = null;
+                  _mapStore.hoveredCellId.value = null;
+                },
+                child: GestureDetector(
+                  onTapUp: (details) =>
+                      _onTap(details.localPosition, interactiveLayer),
+                  child: InteractiveViewer(
+                    transformationController: _transformController,
+                    minScale: 0.5,
+                    maxScale: 30.0,
+                    boundaryMargin: const EdgeInsets.all(double.infinity),
+                    panEnabled: true,
+                    scaleEnabled: true,
+                    child: SizedBox(
+                      width: constraints.maxWidth,
+                      height: constraints.maxHeight,
+                      child: Stack(
+                        children: [
+                          // Layer 1: cached composite base map
+                          Positioned.fill(
+                            child: CustomPaint(
+                              painter:
+                                  _CachedPicturePainter(_compositePicture),
+                              size: _canvasSize,
+                            ),
+                          ),
+                          // Layer 2: lightweight interaction overlay
+                          Positioned.fill(
+                            child: CustomPaint(
+                              painter: InteractionOverlayPainter(
+                                dataStore: _dataStore,
+                                interactiveLayer: interactiveLayer,
+                                notifier: _interactionNotifier,
+                                cellIndex: cellIdx,
+                              ),
+                              size: _canvasSize,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          );
+        },
+      );
+    });
   }
 }
 
 /// Ultra-lightweight painter: just draws a pre-recorded ui.Picture.
-/// No path iteration, no color computation — just a single drawPicture call.
 class _CachedPicturePainter extends CustomPainter {
   final ui.Picture? picture;
 
@@ -376,6 +449,26 @@ class _CachedPicturePainter extends CustomPainter {
   bool shouldRepaint(covariant _CachedPicturePainter old) {
     return old.picture != picture;
   }
+}
+
+/// Cache key for a single layer's Picture.
+class _LayerCacheKey {
+  final Size size;
+  final FillMode fillMode;
+  final int? singleCandidateId;
+
+  _LayerCacheKey({required this.size, required this.fillMode, required this.singleCandidateId});
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is _LayerCacheKey &&
+          size == other.size &&
+          fillMode == other.fillMode &&
+          singleCandidateId == other.singleCandidateId;
+
+  @override
+  int get hashCode => Object.hash(size, fillMode, singleCandidateId);
 }
 
 bool _listEq<T>(List<T> a, List<T> b) {

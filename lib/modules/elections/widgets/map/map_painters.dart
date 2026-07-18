@@ -80,22 +80,22 @@ class BaseMapPainter extends CustomPainter {
     canvas.scale(t.scale, t.scale);
 
     if (visibleLayers.contains(LayerType.state)) {
-      _drawLayer(canvas, dataStore.states.value, LayerType.state, t.scale);
+      _drawLayer(canvas, dataStore.states.value, LayerType.state, t.scale, size, t);
     }
     if (visibleLayers.contains(LayerType.congressionalDistrict)) {
-      _drawLayer(canvas, dataStore.congressionalDistricts.value, LayerType.congressionalDistrict, t.scale);
+      _drawLayer(canvas, dataStore.congressionalDistricts.value, LayerType.congressionalDistrict, t.scale, size, t);
     }
     if (visibleLayers.contains(LayerType.county)) {
-      _drawLayer(canvas, dataStore.counties.value, LayerType.county, t.scale);
+      _drawLayer(canvas, dataStore.counties.value, LayerType.county, t.scale, size, t);
     }
     if (visibleLayers.contains(LayerType.precinct)) {
-      _drawLayer(canvas, dataStore.precincts.value, LayerType.precinct, t.scale);
+      _drawLayer(canvas, dataStore.precincts.value, LayerType.precinct, t.scale, size, t);
     }
 
     canvas.restore();
   }
 
-  void _drawLayer(Canvas canvas, List<RenderableCell> cells, LayerType layerType, double mapScale) {
+  void _drawLayer(Canvas canvas, List<RenderableCell> cells, LayerType layerType, double mapScale, Size canvasSize, MapTransform t) {
     double borderThickness;
     switch (layerType) {
       case LayerType.state:
@@ -112,31 +112,43 @@ class BaseMapPainter extends CustomPainter {
       ..strokeWidth = borderThickness / mapScale
       ..color = layerType == LayerType.precinct ? Colors.white24 : Colors.white54;
 
+    final fillPaint = Paint()..style = PaintingStyle.fill;
+
     final votes = dataStore.precinctVotes.value;
     final partyMap = dataStore.candidatePartyMap.value;
 
+    // The canvas is currently transformed so that geo coordinates map directly to pixels.
+    // So the visible bounds in geo-coordinates is exactly the canvas rect transformed back.
+    final geoVisibleRect = Rect.fromLTRB(
+      -t.offsetX / t.scale, 
+      -t.offsetY / t.scale, 
+      (canvasSize.width - t.offsetX) / t.scale, 
+      (canvasSize.height - t.offsetY) / t.scale
+    );
+
     for (final rCell in cells) {
+      // Viewport culling (P0)
+      if (!geoVisibleRect.overlaps(rCell.bounds)) {
+        continue;
+      }
+
       // FillMode.none: border only, no fill
       if (fillMode != FillMode.none) {
-        Color fillColor;
-        if (layerType == LayerType.precinct) {
-          fillColor = _precinctFillColor(rCell.cell.id, votes, partyMap);
-        } else {
-          fillColor = Colors.transparent;
-        }
+        Color fillColor = _getFillColor(layerType, rCell.cell.id, partyMap);
 
         if (fillColor != Colors.transparent) {
-          canvas.drawPath(rCell.path, Paint()
-            ..color = fillColor
-            ..style = PaintingStyle.fill);
+          fillPaint.color = fillColor;
+          canvas.drawPath(rCell.path, fillPaint);
         }
       }
       canvas.drawPath(rCell.path, borderPaint);
     }
   }
 
-  Color _precinctFillColor(int precinctId, Map<int, PrecinctVoteSummary> votes, Map<int, int> partyMap) {
-    final summary = votes[precinctId];
+  Color _getFillColor(LayerType layerType, int cellId, Map<int, int> partyMap) {
+    if (fillMode == FillMode.none) return Colors.transparent;
+
+    final summary = dataStore.aggregateVotesForRegion(layerType, cellId);
     if (summary == null || summary.totalVotes == 0) return defaultCellColor;
 
     switch (fillMode) {
@@ -206,11 +218,13 @@ class InteractionOverlayPainter extends CustomPainter {
   final MapDataStore dataStore;
   final LayerType interactiveLayer;
   final InteractionNotifier notifier;
+  final Map<LayerType, Map<int, RenderableCell>> cellIndex;
 
   InteractionOverlayPainter({
     required this.dataStore,
     required this.interactiveLayer,
     required this.notifier,
+    required this.cellIndex,
   }) : super(repaint: notifier); // <-- repaint via Listenable, no widget rebuild
 
   @override
@@ -224,59 +238,49 @@ class InteractionOverlayPainter extends CustomPainter {
     canvas.translate(t.offsetX, t.offsetY);
     canvas.scale(t.scale, t.scale);
 
-    final cells = _getCells();
     final thickness = 2.0 / t.scale;
+
+    // Pre-allocate paint objects.
+    final hoverFillPaint = Paint()
+      ..color = Colors.white.withOpacity(0.25)
+      ..style = PaintingStyle.fill;
+    final hoverStrokePaint = Paint()
+      ..color = Colors.white70
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = thickness;
+    final selectedFillPaint = Paint()
+      ..color = Colors.white.withOpacity(0.45)
+      ..style = PaintingStyle.fill;
+    final selectedStrokePaint = Paint()
+      ..color = Colors.white
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = thickness * 1.5;
 
     // Draw hovered cell.
     if (notifier.hoveredCellId != null && notifier.hoveredCellId != notifier.selectedCellId) {
-      final cell = _findCell(cells, notifier.hoveredCellId!);
+      final cell = cellIndex[interactiveLayer]?[notifier.hoveredCellId!];
       if (cell != null) {
-        canvas.drawPath(cell.path, Paint()
-          ..color = Colors.white.withOpacity(0.25)
-          ..style = PaintingStyle.fill);
-        canvas.drawPath(cell.path, Paint()
-          ..color = Colors.white70
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = thickness);
+        canvas.drawPath(cell.path, hoverFillPaint);
+        canvas.drawPath(cell.path, hoverStrokePaint);
       }
     }
 
     // Draw selected cell.
     if (notifier.selectedCellId != null) {
-      final cell = _findCell(cells, notifier.selectedCellId!);
+      final cell = cellIndex[interactiveLayer]?[notifier.selectedCellId!];
       if (cell != null) {
-        canvas.drawPath(cell.path, Paint()
-          ..color = Colors.white.withOpacity(0.45)
-          ..style = PaintingStyle.fill);
-        canvas.drawPath(cell.path, Paint()
-          ..color = Colors.white
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = thickness * 1.5);
+        canvas.drawPath(cell.path, selectedFillPaint);
+        canvas.drawPath(cell.path, selectedStrokePaint);
       }
     }
 
     canvas.restore();
   }
 
-  List<RenderableCell> _getCells() {
-    switch (interactiveLayer) {
-      case LayerType.state: return dataStore.states.value;
-      case LayerType.county: return dataStore.counties.value;
-      case LayerType.congressionalDistrict: return dataStore.congressionalDistricts.value;
-      case LayerType.precinct: return dataStore.precincts.value;
-    }
-  }
-
-  RenderableCell? _findCell(List<RenderableCell> cells, int id) {
-    for (final c in cells) {
-      if (c.cell.id == id) return c;
-    }
-    return null;
-  }
-
   @override
   bool shouldRepaint(covariant InteractionOverlayPainter oldDelegate) {
-    return oldDelegate.interactiveLayer != interactiveLayer;
+    return oldDelegate.interactiveLayer != interactiveLayer ||
+        oldDelegate.cellIndex != cellIndex;
   }
 }
 

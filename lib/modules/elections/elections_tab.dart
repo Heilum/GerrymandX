@@ -3,6 +3,9 @@ import 'package:gerrymanderx/modules/elections/widgets/election_list_panel.dart'
 import 'package:gerrymanderx/modules/elections/widgets/map_view_panel.dart';
 import 'package:gerrymanderx/modules/elections/widgets/inspector_panel.dart';
 
+import 'package:provider/provider.dart';
+import 'package:gerrymanderx/providers/map_state_store.dart';
+
 class ElectionsTab extends StatefulWidget {
   const ElectionsTab({super.key});
 
@@ -18,7 +21,19 @@ class _ElectionsTabState extends State<ElectionsTab> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Elections'),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            IconButton(
+              icon: const Icon(Icons.refresh),
+              tooltip: 'Reset map view',
+              onPressed: () {
+                context.read<MapStateStore>().resetViewTrigger.value++;
+              },
+            ),
+            const Text('Elections'),
+          ],
+        ),
         leading: IconButton(
           icon: Icon(_showLeftPanel ? Icons.menu_open : Icons.menu),
           onPressed: () {

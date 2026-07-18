@@ -46,24 +46,8 @@ class InspectorPanel extends StatelessWidget {
             }
 
             final dataStore = context.read<MapDataStore>();
-            final layer = store.interactiveLayer.value;
-
-            // Find the selected cell's data.
-            RenderableCell? selectedCell;
-            switch (layer) {
-              case LayerType.state:
-                selectedCell = dataStore.states.value
-                    .where((c) => c.cell.id == selectedId).firstOrNull;
-              case LayerType.county:
-                selectedCell = dataStore.counties.value
-                    .where((c) => c.cell.id == selectedId).firstOrNull;
-              case LayerType.congressionalDistrict:
-                selectedCell = dataStore.congressionalDistricts.value
-                    .where((c) => c.cell.id == selectedId).firstOrNull;
-              case LayerType.precinct:
-                selectedCell = dataStore.precincts.value
-                    .where((c) => c.cell.id == selectedId).firstOrNull;
-            }
+            final cellIdx = dataStore.cellIndex.value;
+            final selectedCell = cellIdx[store.interactiveLayer.value]?[selectedId];
 
             if (selectedCell == null) {
               return const Center(child: Text('Cell not found'));
@@ -72,6 +56,7 @@ class InspectorPanel extends StatelessWidget {
             final cell = selectedCell.cell;
             final partyMap = dataStore.candidatePartyMap.value;
             final allCandidates = dataStore.candidates.value;
+            final layer = store.interactiveLayer.value;
 
             // Aggregate votes: for precincts it's direct lookup,
             // for counties/CDs/states it sums child precincts.
