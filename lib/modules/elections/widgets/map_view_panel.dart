@@ -25,61 +25,7 @@ class _MapViewPanelState extends State<MapViewPanel> {
 
     return Column(
       children: [
-        // ── Header: Layers left, Fill right ──
-        Container(
-          color: Theme.of(context).cardColor,
-          padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
-          child: Row(
-            children: [
-              // Left group: Layers
-              const Text('Layers: ',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
-              const SizedBox(width: 4),
-              Expanded(
-                child: Watch((context) {
-                  return Wrap(
-                    spacing: 4,
-                    runSpacing: 4,
-                    children: LayerType.values.map((layer) {
-                      final isVisible =
-                          store.visibleLayers.value.contains(layer);
-                      return FilterChip(
-                        label: Text(layer.name,
-                            style: const TextStyle(fontSize: 11)),
-                        selected: isVisible,
-                        onSelected: (_) => store.toggleLayerVisibility(layer),
-                        visualDensity: VisualDensity.compact,
-                        materialTapTargetSize:
-                            MaterialTapTargetSize.shrinkWrap,
-                      );
-                    }).toList(),
-                  );
-                }),
-              ),
-              // Right group: Fill
-              const SizedBox(width: 8),
-              const Text('Fill: ',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
-              const SizedBox(width: 4),
-              Watch((context) {
-                return DropdownButton<FillMode>(
-                  value: store.fillMode.value,
-                  isDense: true,
-                  items: FillMode.values.map((mode) {
-                    return DropdownMenuItem(
-                        value: mode,
-                        child: Text(mode.name,
-                            style: const TextStyle(fontSize: 12)));
-                  }).toList(),
-                  onChanged: (mode) {
-                    if (mode != null) store.setFillMode(mode);
-                  },
-                );
-              }),
-            ],
-          ),
-        ),
-        const Divider(height: 1),
+
         // ── Map Canvas ──
         Expanded(
           child: RepaintBoundary(

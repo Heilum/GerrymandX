@@ -244,8 +244,14 @@ class BaseMapPainter extends CustomPainter {
       case FillMode.winnerOpacity:
         final partyId = partyMap[summary.winnerCandidateId] ?? 0;
         final baseColor = partyColors[partyId] ?? defaultCellColor;
-        final margin = summary.winnerVotes / summary.totalVotes;
-        return baseColor.withValues(alpha: (margin * 1.5).clamp(0.3, 1.0));
+        final share = summary.totalVotes > 0 ? summary.winnerVotes / summary.totalVotes : 0.5;
+        // Map vote share to color strength:
+        // 50% share -> strength 0.0 (White/Neutral)
+        // >= 75% share -> strength 1.0 (Solid Party Color)
+        final strength = ((share - 0.5) * 4.0).clamp(0.0, 1.0);
+        
+        // Interpolate between a neutral light color and the party color
+        return Color.lerp(Colors.white, baseColor, strength) ?? baseColor;
 
       case FillMode.singleCandidateOpacity:
         if (singleCandidateId == null) return defaultCellColor;
