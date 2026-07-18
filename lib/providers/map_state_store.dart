@@ -6,7 +6,7 @@ enum FillMode {
   winnerOpaque,
   winnerOpacity,
   singleCandidateOpacity,
-  dotDensity,
+  winnerDotDensity,
   turnoutGray,
 }
 

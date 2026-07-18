@@ -119,16 +119,17 @@ class _MapCanvasState extends State<_MapCanvas> {
   Offset? _pendingHoverPos;
 
   // ── Per-layer Picture cache (P3: dirty tracking) ──
-  final Map<LayerType, ui.Picture> _layerPictures = {};
+  final Map<LayerType, _LayerPictures> _layerPictures = {};
   final Map<LayerType, _LayerCacheKey> _layerCacheKeys = {};
   ui.Picture? _compositePicture;
   Size? _cachedSize;
   List<LayerType>? _cachedVisibleLayers;
 
-  // ── Track interactive layer changes ──
   LayerType? _lastInteractiveLayer;
   int? _lastSelectedCellId;
   EffectCleanup? _resetEffect;
+  Timer? _zoomDebounceTimer;
+  double _currentZoomScale = 1.0;
 
   @override
   void initState() {
@@ -142,6 +143,21 @@ class _MapCanvasState extends State<_MapCanvas> {
         _transformController.value = Matrix4.identity();
       }
     });
+
+    _transformController.addListener(_onTransformChanged);
+  }
+
+  void _onTransformChanged() {
+    final scale = _transformController.value.getMaxScaleOnAxis();
+    if ((scale - _currentZoomScale).abs() > 0.05) {
+      _zoomDebounceTimer?.cancel();
+      _zoomDebounceTimer = Timer(const Duration(milliseconds: 150), () {
+        if (!mounted) return;
+        setState(() {
+          _currentZoomScale = scale;
+        });
+      });
+    }
   }
 
   void _rebuildSpatialIndex(LayerType layer) {
@@ -202,24 +218,46 @@ class _MapCanvasState extends State<_MapCanvas> {
 
 
   // ── P3: Per-layer Picture caching ──
-  ui.Picture _recordLayerPicture(
+  _LayerPictures _recordLayerPictures(
     Size size,
     LayerType layerType,
     FillMode fillMode,
     int? singleCandidateId,
+    double zoomScale,
   ) {
-    final recorder = ui.PictureRecorder();
-    final canvas = Canvas(recorder);
+    // Record fill
+    final fillRecorder = ui.PictureRecorder();
     if (_dataStore.overallBounds.value != null) {
-      final painter = BaseMapPainter(
+      final fillPainter = BaseMapPainter(
         dataStore: _dataStore,
         visibleLayers: [layerType],
         fillMode: fillMode,
         singleCandidateId: singleCandidateId,
+        interactiveScale: zoomScale,
+        drawFill: true,
+        drawBorder: false,
       );
-      painter.paint(canvas, size);
+      fillPainter.paint(Canvas(fillRecorder), size);
     }
-    return recorder.endRecording();
+    final fillPic = fillRecorder.endRecording();
+
+    // Record border
+    final borderRecorder = ui.PictureRecorder();
+    if (_dataStore.overallBounds.value != null) {
+      final borderPainter = BaseMapPainter(
+        dataStore: _dataStore,
+        visibleLayers: [layerType],
+        fillMode: fillMode,
+        singleCandidateId: singleCandidateId,
+        interactiveScale: zoomScale,
+        drawFill: false,
+        drawBorder: true,
+      );
+      borderPainter.paint(Canvas(borderRecorder), size);
+    }
+    final borderPic = borderRecorder.endRecording();
+
+    return _LayerPictures(fillPic, borderPic);
   }
 
   void _ensurePicture(
@@ -232,12 +270,13 @@ class _MapCanvasState extends State<_MapCanvas> {
 
     // Check each visible layer's cache.
     for (final layer in layers) {
-      final key = _LayerCacheKey(size: size, fillMode: fillMode, singleCandidateId: singleCandidateId);
+      final key = _LayerCacheKey(size: size, fillMode: fillMode, singleCandidateId: singleCandidateId, zoomScale: _currentZoomScale);
       final existingKey = _layerCacheKeys[layer];
       
       if (_layerPictures[layer] == null || existingKey != key) {
-        // Cache miss for this layer — re-record only this layer.
-        _layerPictures[layer] = _recordLayerPicture(size, layer, fillMode, singleCandidateId);
+        // Cache miss for this layer — re-record both fill and border.
+        _layerPictures[layer]?.dispose();
+        _layerPictures[layer] = _recordLayerPictures(size, layer, fillMode, singleCandidateId, _currentZoomScale);
         _layerCacheKeys[layer] = key;
         compositeNeeded = true;
       }
@@ -265,16 +304,25 @@ class _MapCanvasState extends State<_MapCanvas> {
     // Composite all visible layer Pictures into one final Picture.
     final recorder = ui.PictureRecorder();
     final canvas = Canvas(recorder);
-    // Draw in correct z-order: state → CD → county → precinct.
+    // Draw in correct z-order: state → county → CD → precinct.
     const drawOrder = [
       LayerType.state,
-      LayerType.congressionalDistrict,
       LayerType.county,
+      LayerType.congressionalDistrict,
       LayerType.precinct,
     ];
+    
+    // First Pass: Draw all fills
     for (final layer in drawOrder) {
       if (layers.contains(layer) && _layerPictures.containsKey(layer)) {
-        canvas.drawPicture(_layerPictures[layer]!);
+        canvas.drawPicture(_layerPictures[layer]!.fill);
+      }
+    }
+    
+    // Second Pass: Draw all borders
+    for (final layer in drawOrder) {
+      if (layers.contains(layer) && _layerPictures.containsKey(layer)) {
+        canvas.drawPicture(_layerPictures[layer]!.border);
       }
     }
     _compositePicture = recorder.endRecording();
@@ -310,6 +358,8 @@ class _MapCanvasState extends State<_MapCanvas> {
 
   @override
   void dispose() {
+    _zoomDebounceTimer?.cancel();
+    _transformController.removeListener(_onTransformChanged);
     _resetEffect?.call();
     _hoverTimer?.cancel();
     _interactionNotifier.dispose();
@@ -452,12 +502,25 @@ class _CachedPicturePainter extends CustomPainter {
 }
 
 /// Cache key for a single layer's Picture.
+class _LayerPictures {
+  final ui.Picture fill;
+  final ui.Picture border;
+
+  _LayerPictures(this.fill, this.border);
+
+  void dispose() {
+    fill.dispose();
+    border.dispose();
+  }
+}
+
 class _LayerCacheKey {
   final Size size;
   final FillMode fillMode;
   final int? singleCandidateId;
+  final double zoomScale;
 
-  _LayerCacheKey({required this.size, required this.fillMode, required this.singleCandidateId});
+  _LayerCacheKey({required this.size, required this.fillMode, required this.singleCandidateId, required this.zoomScale});
 
   @override
   bool operator ==(Object other) =>
@@ -465,10 +528,11 @@ class _LayerCacheKey {
       other is _LayerCacheKey &&
           size == other.size &&
           fillMode == other.fillMode &&
-          singleCandidateId == other.singleCandidateId;
+          singleCandidateId == other.singleCandidateId &&
+          zoomScale == other.zoomScale;
 
   @override
-  int get hashCode => Object.hash(size, fillMode, singleCandidateId);
+  int get hashCode => Object.hash(size, fillMode, singleCandidateId, zoomScale);
 }
 
 bool _listEq<T>(List<T> a, List<T> b) {
