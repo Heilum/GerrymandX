@@ -1,4 +1,4 @@
-import 'dart:convert';
+import 'dart:typed_data';
 import 'package:flutter/painting.dart';
 
 class GeoPathData {
@@ -15,52 +15,68 @@ class GeoCoordData {
   GeoCoordData({required this.rings, required this.minX, required this.minY, required this.maxX, required this.maxY});
 }
 
-class GeoJsonParser {
-  // Parses a single GeoJSON string and returns a Path
-  // Inverts Y (latitude) so it renders correctly on Flutter's Canvas (Y goes down).
-  static GeoPathData parseGeoJson(String geoJsonString) {
-    final coordData = parseGeoJsonToCoords(geoJsonString);
-    return coordsToPath(coordData);
-  }
+class GeometryParser {
+  // Parses WKB into raw coordinate lists (isolate-friendly, no dart:ui dependencies)
+  static GeoCoordData parseWkbToCoords(Uint8List wkbBytes) {
+    if (wkbBytes.isEmpty) {
+      return GeoCoordData(rings: [], minX: 0, minY: 0, maxX: 0, maxY: 0);
+    }
 
-  // Parses GeoJSON into raw coordinate lists (isolate-friendly, no dart:ui dependencies)
-  static GeoCoordData parseGeoJsonToCoords(String geoJsonString) {
-    final Map<String, dynamic> geoJson = json.decode(geoJsonString);
-    final List<List<List<double>>> allRings = [];
+    final bd = ByteData.sublistView(wkbBytes);
+    int offset = 0;
+
     double minX = double.infinity;
     double minY = double.infinity;
     double maxX = -double.infinity;
     double maxY = -double.infinity;
+    final List<List<List<double>>> allRings = [];
 
-    void processPolygon(List<dynamic> polygon) {
-      if (polygon.isEmpty) return;
-      
-      for (var ring in polygon) {
-        if (ring.isEmpty) continue;
-        
-        final List<List<double>> parsedRing = [];
-        for (int i = 0; i < ring.length; i++) {
-          final point = ring[i];
-          final double x = (point[0] as num).toDouble();
-          final double y = -(point[1] as num).toDouble(); // Invert Y for Flutter canvas
-          
+    void parsePolygon(Endian endian) {
+      final numRings = bd.getUint32(offset, endian);
+      offset += 4;
+      for (int i = 0; i < numRings; i++) {
+        final numPoints = bd.getUint32(offset, endian);
+        offset += 4;
+        final List<List<double>> ring = [];
+        for (int p = 0; p < numPoints; p++) {
+          final x = bd.getFloat64(offset, endian);
+          offset += 8;
+          final y = -bd.getFloat64(offset, endian); // Invert Y for Flutter canvas
+          offset += 8;
+
           if (x < minX) minX = x;
           if (y < minY) minY = y;
           if (x > maxX) maxX = x;
           if (y > maxY) maxY = y;
 
-          parsedRing.add([x, y]);
+          ring.add([x, y]);
         }
-        allRings.add(parsedRing);
+        allRings.add(ring);
       }
     }
 
-    final type = geoJson['type'];
-    if (type == 'Polygon') {
-      processPolygon(geoJson['coordinates']);
-    } else if (type == 'MultiPolygon') {
-      for (var polygon in geoJson['coordinates']) {
-        processPolygon(polygon);
+    final byteOrder = bd.getUint8(offset);
+    offset += 1;
+    final endian = byteOrder == 1 ? Endian.little : Endian.big;
+    final type = bd.getUint32(offset, endian) & 0xFF; // mask to get base type 2D
+    offset += 4;
+
+    if (type == 3) {
+      // Polygon
+      parsePolygon(endian);
+    } else if (type == 6) {
+      // MultiPolygon
+      final numPolygons = bd.getUint32(offset, endian);
+      offset += 4;
+      for (int i = 0; i < numPolygons; i++) {
+        final polyByteOrder = bd.getUint8(offset);
+        offset += 1;
+        final polyEndian = polyByteOrder == 1 ? Endian.little : Endian.big;
+        final polyType = bd.getUint32(offset, polyEndian) & 0xFF;
+        offset += 4;
+        if (polyType == 3) {
+          parsePolygon(polyEndian);
+        }
       }
     }
 
@@ -84,9 +100,16 @@ class GeoJsonParser {
       }
       path.close();
     }
+    
+    // Fallback bounds if empty
+    Rect bounds = Rect.zero;
+    if (data.rings.isNotEmpty) {
+      bounds = Rect.fromLTRB(data.minX, data.minY, data.maxX, data.maxY);
+    }
+    
     return GeoPathData(
       path: path,
-      bounds: Rect.fromLTRB(data.minX, data.minY, data.maxX, data.maxY),
+      bounds: bounds,
     );
   }
 }

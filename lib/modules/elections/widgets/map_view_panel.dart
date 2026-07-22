@@ -73,6 +73,7 @@ class _MapCanvasState extends State<_MapCanvas> {
 
   LayerType? _lastInteractiveLayer;
   int? _lastSelectedCellId;
+  Map<int, RenderableCell>? _lastCellIndex;
   EffectCleanup? _resetEffect;
   Timer? _zoomDebounceTimer;
   double _currentZoomScale = 1.0;
@@ -330,9 +331,11 @@ class _MapCanvasState extends State<_MapCanvas> {
       // Read cellIndex for O(1) lookup in overlay painter.
       final cellIdx = _dataStore.cellIndex.value;
 
-      // Detect interactive layer changes → rebuild spatial index.
-      if (_lastInteractiveLayer != interactiveLayer) {
+      // Detect interactive layer or data changes → rebuild spatial index.
+      final dataChanged = !identical(_lastCellIndex, cellIdx);
+      if (_lastInteractiveLayer != interactiveLayer || dataChanged) {
         _lastInteractiveLayer = interactiveLayer;
+        _lastCellIndex = cellIdx;
         _rebuildSpatialIndex(interactiveLayer);
         _interactionNotifier.hoveredCellId = null;
         _interactionNotifier.selectedCellId = null;

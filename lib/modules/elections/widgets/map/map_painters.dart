@@ -321,7 +321,7 @@ class InteractionOverlayPainter extends CustomPainter {
   final MapDataStore dataStore;
   final LayerType interactiveLayer;
   final InteractionNotifier notifier;
-  final Map<LayerType, Map<int, RenderableCell>> cellIndex;
+  final Map<int, RenderableCell> cellIndex;
 
   InteractionOverlayPainter({
     required this.dataStore,
@@ -356,7 +356,7 @@ class InteractionOverlayPainter extends CustomPainter {
     // Draw hovered cell.
     if (notifier.hoveredCellId != null &&
         notifier.hoveredCellId != notifier.selectedCellId) {
-      final cell = cellIndex[interactiveLayer]?[notifier.hoveredCellId!];
+      final cell = cellIndex[notifier.hoveredCellId!];
       if (cell != null) {
         canvas.drawPath(cell.path, hoverFillPaint);
       }
@@ -364,7 +364,7 @@ class InteractionOverlayPainter extends CustomPainter {
 
     // Draw selected cell.
     if (notifier.selectedCellId != null) {
-      final cell = cellIndex[interactiveLayer]?[notifier.selectedCellId!];
+      final cell = cellIndex[notifier.selectedCellId!];
       if (cell != null) {
         canvas.drawPath(cell.path, selectedFillPaint);
       }

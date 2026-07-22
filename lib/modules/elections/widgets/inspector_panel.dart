@@ -47,7 +47,7 @@ class InspectorPanel extends StatelessWidget {
 
             final dataStore = context.read<MapDataStore>();
             final cellIdx = dataStore.cellIndex.value;
-            final selectedCell = cellIdx[store.interactiveLayer.value]?[selectedId];
+            final selectedCell = cellIdx[selectedId];
 
             if (selectedCell == null) {
               return const Center(child: Text('Cell not found'));

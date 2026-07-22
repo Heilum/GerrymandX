@@ -13,8 +13,9 @@ void main() {
       providers: [
         Provider(create: (_) => ElectionStore()),
         Provider(create: (_) => MapStateStore()),
-        ProxyProvider<ElectionStore, MapDataStore>(
-          update: (context, electionStore, previous) => previous ?? MapDataStore(electionStore),
+        ProxyProvider2<ElectionStore, MapStateStore, MapDataStore>(
+          update: (context, electionStore, mapStateStore, previous) =>
+              previous ?? MapDataStore(electionStore, mapStateStore),
         ),
       ],
       child: const GerrymanderXApp(),

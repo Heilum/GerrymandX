@@ -22,10 +22,10 @@ with open('schema.sql', 'r') as f:
 
 print(f"Initialized {DB_NAME}")
 
-def geom_to_dict(x):
+def geom_to_wkb(x):
     if x is None or x.is_empty: return None
     try:
-        return json.dumps(x.__geo_interface__)
+        return x.wkb
     except Exception as e:
         return None
 
@@ -59,7 +59,7 @@ cong_gdf = gpd.read_file(cong_path).to_crs("EPSG:4326")
 print("Computing State, County, and District boundaries (this may take 10-30 seconds)...")
 # State
 state_gdf = gdf.assign(state='Texas').dissolve(by='state')
-state_boundary = geom_to_dict(state_gdf.iloc[0].geometry) if not state_gdf.empty else None
+state_boundary = geom_to_wkb(state_gdf.iloc[0].geometry) if not state_gdf.empty else None
 state_lat, state_lon = get_best_center(state_gdf.iloc[0].geometry) if not state_gdf.empty else (None, None)
 
 # Counties
@@ -67,7 +67,7 @@ county_gdf = gdf.dissolve(by='County')
 county_boundaries = {}
 county_centers = {}
 for county_name, row in county_gdf.iterrows():
-    county_boundaries[county_name] = geom_to_dict(row.geometry)
+    county_boundaries[county_name] = geom_to_wkb(row.geometry)
     clat, clon = get_best_center(row.geometry)
     county_centers[county_name] = (clat, clon)
 
@@ -78,7 +78,7 @@ cd_centers = {}
 for cd_val, row in cd_gdf.iterrows():
     if not pd.isna(cd_val):
         cd_str = str(int(cd_val))
-        cd_boundaries[cd_str] = geom_to_dict(row.geometry)
+        cd_boundaries[cd_str] = geom_to_wkb(row.geometry)
         clat, clon = get_best_center(row.geometry)
         cd_centers[cd_str] = (clat, clon)
 
@@ -128,8 +128,8 @@ for col in president_cols:
 
 print("Candidates created.")
 
-print("Converting precinct geometries to GeoJSON...")
-gdf['geojson'] = gdf.geometry.apply(geom_to_dict)
+print("Converting precinct geometries to WKB...")
+gdf['wkb'] = gdf.geometry.apply(geom_to_wkb)
 
 total_rows = len(gdf)
 county_cache = {}
@@ -162,7 +162,7 @@ for idx, row in gdf.iterrows():
     precinct_name = uid or row.get('TX_VTD') or f"Precinct_{idx}"
     precinct_id = precincts_id_seq
     precincts_id_seq += 1
-    geom = row['geojson']
+    geom = row['wkb']
     clat, clon = get_best_center(row.geometry)
     
     # 3. Handle Congressional District (CD) using mapping

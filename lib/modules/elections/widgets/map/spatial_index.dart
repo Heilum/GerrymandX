@@ -64,6 +64,7 @@ class SpatialIndex {
     final bucket = _grid[row * gridCols + col];
 
     for (final idx in bucket) {
+      if (idx >= cells.length) continue; // stale index after data reload
       final rCell = cells[idx];
       if (rCell.bounds.contains(point) && rCell.path.contains(point)) {
         return idx;

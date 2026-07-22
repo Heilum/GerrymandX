@@ -1,4 +1,6 @@
+import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:path/path.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
@@ -11,8 +13,11 @@ class DatabaseHelper {
     sqfliteFfiInit();
   }
 
-  Database? _currentDb;
-  String? _currentDbName;
+  String? _currentElectionName;
+  Database? _nationalDb;
+  final Map<String, Database> _stateDbs = {};
+
+  Future<String> get dbDir async => _dbDir;
 
   Future<String> get _dbDir async {
     final appDocDir = await getApplicationDocumentsDirectory();
@@ -21,71 +26,162 @@ class DatabaseHelper {
     return appPath;
   }
 
-  /// Opens (and optionally copies from assets) the named database.
-  /// Returns the opened Database handle.
-  Future<Database> openNamedDatabase(String fileName) async {
-    // If we already have this DB open, reuse it.
-    if (_currentDbName == fileName && _currentDb != null && _currentDb!.isOpen) {
-      return _currentDb!;
+  /// Clears sandbox databases directory.
+  Future<void> clearSandboxData() async {
+    final dir = await _dbDir;
+    final directory = Directory(dir);
+    if (await directory.exists()) {
+      await directory.delete(recursive: true);
+      await directory.create(recursive: true);
+    }
+  }
+
+  /// Deletes a specific election folder in the sandbox.
+  Future<void> deleteElectionFolder(String electionName) async {
+    if (_currentElectionName == electionName) {
+      await closeCurrentElection();
+    }
+    final dir = await _dbDir;
+    final folder = Directory(join(dir, electionName));
+    if (await folder.exists()) {
+      await folder.delete(recursive: true);
+    }
+  }
+
+  /// Ensures assets are copied to sandbox and returns all available election folder names.
+  Future<List<String>> ensureDefaultAndListDatabases() async {
+    final dir = await _dbDir;
+    await _copyAssetsIfNeeded();
+
+    final entities = await Directory(dir).list().toList();
+    final elections = <String>[];
+
+    for (final entity in entities) {
+      if (entity is Directory) {
+        final electionName = basename(entity.path);
+        final nationalDbFile = File(join(entity.path, 'National.db'));
+        if (await nationalDbFile.exists()) {
+          elections.add(electionName);
+        }
+      }
     }
 
-    // Close any previously open DB.
-    if (_currentDb != null && _currentDb!.isOpen) {
-      await _currentDb!.close();
+    elections.sort();
+    return elections;
+  }
+
+  /// Fetches state info (id, name, db_name) from National.db of a given election folder.
+  Future<List<Map<String, String>>> getStatesInfoForElection(String electionName) async {
+    final dir = await _dbDir;
+    final dbPath = join(dir, electionName, 'National.db');
+    final file = File(dbPath);
+    if (!await file.exists()) {
+      await _copyAssetsIfNeeded();
     }
+    if (!await file.exists()) return [];
+
+    final databaseFactory = databaseFactoryFfi;
+    final db = await databaseFactory.openDatabase(dbPath, options: OpenDatabaseOptions(readOnly: true));
+    try {
+      final rows = await db.query('states', columns: ['id', 'name', 'db_name']);
+      return rows.map((r) => {
+        'id': (r['id'] ?? '').toString(),
+        'name': (r['name'] ?? '').toString(),
+        'db_name': (r['db_name'] ?? '').toString(),
+      }).toList();
+    } catch (e) {
+      debugPrint('Error reading states info for election $electionName: $e');
+      return [];
+    } finally {
+      await db.close();
+    }
+  }
+
+  Future<void> _copyAssetsIfNeeded() async {
+    final dir = await _dbDir;
+    try {
+      final manifestJson = await rootBundle.loadString('AssetManifest.json');
+      final Map<String, dynamic> manifestMap = json.decode(manifestJson);
+
+      for (final assetPath in manifestMap.keys) {
+        if (assetPath.startsWith('assets/db/')) {
+          final relativePath = assetPath.substring('assets/db/'.length);
+          if (relativePath.isEmpty || relativePath.endsWith('/')) continue;
+
+          final targetPath = join(dir, relativePath);
+          final targetFile = File(targetPath);
+
+          if (!await targetFile.exists()) {
+            await targetFile.parent.create(recursive: true);
+            final byteData = await rootBundle.load(assetPath);
+            await targetFile.writeAsBytes(byteData.buffer.asUint8List(), flush: true);
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('Error copying assets: $e');
+    }
+  }
+
+  /// Opens National.db for an election folder (e.g. 2024-National-President).
+  Future<Database> openElection(String electionName) async {
+    if (_currentElectionName == electionName && _nationalDb != null && _nationalDb!.isOpen) {
+      return _nationalDb!;
+    }
+
+    await closeCurrentElection();
 
     final dir = await _dbDir;
-    final dbPath = join(dir, fileName);
-    final file = File(dbPath);
+    final nationalDbPath = join(dir, electionName, 'National.db');
+    final file = File(nationalDbPath);
 
-    // Copy from assets on first use.
     if (!await file.exists()) {
-      try {
-        final byteData = await rootBundle.load('assets/db/$fileName');
-        final bytes = byteData.buffer.asUint8List();
-        await file.writeAsBytes(bytes, flush: true);
-      } catch (e) {
-        rethrow;
-      }
+      await _copyAssetsIfNeeded();
     }
 
     final databaseFactory = databaseFactoryFfi;
-    _currentDb = await databaseFactory.openDatabase(dbPath);
-    _currentDbName = fileName;
-    return _currentDb!;
+    _nationalDb = await databaseFactory.openDatabase(nationalDbPath);
+    _currentElectionName = electionName;
+    return _nationalDb!;
   }
 
-  /// Convenience getter: returns the currently open database.
-  /// Throws if nothing has been opened yet.
-  Database get currentDb {
-    if (_currentDb == null || !_currentDb!.isOpen) {
-      throw StateError('No database is currently open. Call openNamedDatabase first.');
+  /// Opens or retrieves a cached state database (e.g. TX.db) within the current election folder.
+  Future<Database> getStateDb(String dbName) async {
+    if (_currentElectionName == null) {
+      throw StateError('No election is currently open. Call openElection first.');
     }
-    return _currentDb!;
+
+    if (_stateDbs.containsKey(dbName) && _stateDbs[dbName]!.isOpen) {
+      return _stateDbs[dbName]!;
+    }
+
+    final dir = await _dbDir;
+    final stateDbPath = join(dir, _currentElectionName!, dbName);
+    final databaseFactory = databaseFactoryFfi;
+    final db = await databaseFactory.openDatabase(stateDbPath);
+    _stateDbs[dbName] = db;
+    return db;
   }
 
-  /// Ensures the default election DB is copied from assets
-  /// and returns a list of all .db files in the local directory.
-  Future<List<String>> ensureDefaultAndListDatabases() async {
-    // Always ensure the default DB has been copied.
-    final dir = await _dbDir;
-    const defaultDb = '2024-National-President-rr.db';
-    final file = File(join(dir, defaultDb));
-    if (!await file.exists()) {
-      try {
-        final byteData = await rootBundle.load('assets/db/$defaultDb');
-        await file.writeAsBytes(byteData.buffer.asUint8List(), flush: true);
-      } catch (_) {
-        // Asset might not exist; that's okay.
+  Database get nationalDb {
+    if (_nationalDb == null || !_nationalDb!.isOpen) {
+      throw StateError('No election database is currently open. Call openElection first.');
+    }
+    return _nationalDb!;
+  }
+
+  Future<void> closeCurrentElection() async {
+    for (final db in _stateDbs.values) {
+      if (db.isOpen) {
+        await db.close();
       }
     }
+    _stateDbs.clear();
 
-    final entities = await Directory(dir).list().toList();
-    return entities
-        .whereType<File>()
-        .where((f) => f.path.endsWith('.db'))
-        .map((f) => basename(f.path))
-        .toList()
-      ..sort();
+    if (_nationalDb != null && _nationalDb!.isOpen) {
+      await _nationalDb!.close();
+      _nationalDb = null;
+    }
+    _currentElectionName = null;
   }
 }
