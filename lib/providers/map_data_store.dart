@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:flutter/painting.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
+import 'package:gerrymanderx/models/election_metadata.dart';
 import 'package:gerrymanderx/models/election_sub_item.dart';
 import 'package:gerrymanderx/repositories/election_repository.dart';
 import 'package:gerrymanderx/core/utils/geojson_parser.dart';
@@ -13,17 +14,23 @@ import 'package:gerrymanderx/providers/map_state_store.dart';
 class RenderableCell {
   final GeoCell cell;
   final Path path;
+  final Path exteriorPath;
   final Rect bounds;
 
-  RenderableCell({required this.cell, required this.path, required this.bounds});
+  RenderableCell({
+    required this.cell,
+    required this.path,
+    required this.exteriorPath,
+    required this.bounds,
+  });
 }
 
 /// Aggregated vote totals for a precinct.
 class PrecinctVoteSummary {
   final int totalVotes;
-  final int winnerCandidateId;
+  final String? winnerCandidateId;
   final int winnerVotes;
-  final Map<int, int> candidateVotes; // candidateId -> votes
+  final Map<String, int> candidateVotes; // candidateId (UUID) -> votes
   final int population;
 
   PrecinctVoteSummary({
@@ -47,8 +54,12 @@ class MapDataStore {
   final congressionalDistricts = ListSignal<RenderableCell>([]);
   final precincts = ListSignal<RenderableCell>([]);
 
-  /// O(1) cell lookup by ID per layer type.
-  final cellIndex = Signal<Map<int, RenderableCell>>({});
+  /// O(1) cell lookup by ID, per layer type. Counties, congressional districts
+  /// and precincts each number from 1 in their own state DB, so ids are only
+  /// unique within a layer — never flatten this into a single map.
+  final cellIndex = Signal<Map<LayerType, Map<int, RenderableCell>>>({});
+
+  RenderableCell? cellAt(LayerType layer, int id) => cellIndex.value[layer]?[id];
 
   /// Combined bounding box of all loaded geometries.
   final overallBounds = Signal<Rect?>(null);
@@ -56,14 +67,28 @@ class MapDataStore {
   /// Signal to track data loading state
   final isLoadingData = Signal<bool>(false);
 
+  /// Bumped whenever the loaded geometry/vote data is replaced. Consumers that
+  /// cache rendered output must include this in their cache key.
+  final dataVersion = Signal<int>(0);
+
   /// {precinctId: PrecinctVoteSummary}
   final precinctVotes = Signal<Map<int, PrecinctVoteSummary>>({});
 
   /// {candidateId: partyId}
-  final candidatePartyMap = Signal<Map<int, int>>({});
+  final candidatePartyMap = Signal<Map<String, String>>({});
 
-  /// All candidates for this election
+  /// All candidates for this election, from the election manifest.
   final candidates = ListSignal<Candidate>([]);
+
+  /// All parties for this election, keyed by party id.
+  final parties = Signal<Map<String, Party>>({});
+
+  /// Party colour for a candidate, falling back to the neutral cell colour.
+  Color? partyColorForCandidate(String? candidateId) {
+    if (candidateId == null) return null;
+    final partyId = candidatePartyMap.value[candidateId];
+    return partyId == null ? null : parties.value[partyId]?.color;
+  }
 
   /// Region → precinct mappings for aggregating non-precinct cells
   /// {countyId: [precinctId, ...]}
@@ -102,9 +127,25 @@ class MapDataStore {
     precinctVotes.value = {};
     candidatePartyMap.value = {};
     candidates.value = [];
+    parties.value = {};
     countyPrecincts.value = {};
     cdPrecincts.value = {};
+    // peek(): clearData() runs inside the selection effect, and a plain `++`
+    // would subscribe that effect to dataVersion and then re-trigger it.
+    dataVersion.value = dataVersion.peek() + 1;
     _dbHelper.closeCurrentElection();
+  }
+
+  /// Candidates and parties come from the election manifest (meta.json), not
+  /// from the databases.
+  void _loadElectionMetadata(String folder) {
+    final meta = electionStore.localElectionMeta.value[folder];
+    candidates.value = meta?.candidates ?? [];
+    parties.value = {for (final p in meta?.parties ?? const <Party>[]) p.id: p};
+    candidatePartyMap.value = {
+      for (final c in candidates.value)
+        if (c.partyId != null) c.id: c.partyId!,
+    };
   }
 
   GeoCoordData? _parseCellCoords(GeoCell cell) {
@@ -121,15 +162,11 @@ class MapDataStore {
 
     try {
       await _dbHelper.openElection(folder);
+      _loadElectionMetadata(folder);
 
       if (subItem.isNational) {
         // --- NATIONAL VIEW ---
         final rawStates = await _repo.getStates();
-
-        final candList = await _repo.getCandidates();
-        final partyMap = await _repo.getCandidatePartyMap();
-        candidates.value = candList;
-        candidatePartyMap.value = partyMap;
 
         final summaries = <int, PrecinctVoteSummary>{};
         for (final cell in rawStates) {
@@ -137,14 +174,14 @@ class MapDataStore {
           if (summaryJson != null && summaryJson.isNotEmpty) {
             try {
               final List<dynamic> list = json.decode(summaryJson);
-              final cvotes = <int, int>{};
+              final cvotes = <String, int>{};
               int total = 0;
-              int winnerId = 0;
+              String? winnerId;
               int winnerVotes = 0;
 
               for (final item in list) {
                 if (item is Map) {
-                  final cid = ((item['candidate_id'] ?? item['candiate_id']) as num).toInt();
+                  final cid = (item['candidate_id'] ?? item['candiate_id']).toString();
                   final v = (item['votes'] as num).toInt();
                   cvotes[cid] = v;
                   total += v;
@@ -176,14 +213,19 @@ class MapDataStore {
           if (coordData != null) {
             final pathData = GeometryParser.coordsToPath(coordData);
 
-            if (pathData.bounds.left < minX) minX = pathData.bounds.left;
-            if (pathData.bounds.top < minY) minY = pathData.bounds.top;
-            if (pathData.bounds.right > maxX) maxX = pathData.bounds.right;
-            if (pathData.bounds.bottom > maxY) maxY = pathData.bounds.bottom;
+            // A cell whose geometry produced no rings has Rect.zero bounds;
+            // folding that in would stretch the extent all the way to (0, 0).
+            if (!pathData.bounds.isEmpty) {
+              if (pathData.bounds.left < minX) minX = pathData.bounds.left;
+              if (pathData.bounds.top < minY) minY = pathData.bounds.top;
+              if (pathData.bounds.right > maxX) maxX = pathData.bounds.right;
+              if (pathData.bounds.bottom > maxY) maxY = pathData.bounds.bottom;
+            }
 
             renderableStates.add(RenderableCell(
               cell: cell,
               path: pathData.path,
+              exteriorPath: pathData.exteriorPath,
               bounds: pathData.bounds,
             ));
           }
@@ -193,7 +235,9 @@ class MapDataStore {
         counties.value = [];
         congressionalDistricts.value = [];
         precincts.value = [];
-        cellIndex.value = {for (final c in renderableStates) c.cell.id: c};
+        cellIndex.value = {
+          LayerType.state: {for (final c in renderableStates) c.cell.id: c},
+        };
 
         if (minX != double.infinity) {
           overallBounds.value = Rect.fromLTRB(minX, minY, maxX, maxY);
@@ -206,19 +250,15 @@ class MapDataStore {
         // --- STATE VIEW (e.g. Texas / TX.db) ---
         final dbName = subItem.dbName;
         if (dbName != null && dbName.isNotEmpty) {
-          final stateRegionsMap = await _repo.getAllStateRegions();
-          final stateId = subItem.stateId;
-          final records = stateId != null ? (stateRegionsMap[stateId] ?? []) : [];
-          final countyIds = records.where((r) => r.regionType == 'county').map((r) => r.regionId).toList().cast<int>();
-          final cdIds = records.where((r) => r.regionType == 'congressional_district').map((r) => r.regionId).toList().cast<int>();
+          final records = await _repo.getStateRegions(dbName);
+          final countyIds = records.where((r) => r.regionType == 'county').map((r) => r.regionId).toList();
+          final cdIds = records.where((r) => r.regionType == 'congressional_district').map((r) => r.regionId).toList();
 
           final rawCounties = await _repo.getCountiesForState(dbName, countyIds);
           final rawCds = await _repo.getCongressionalDistrictsForState(dbName, cdIds);
           final rawPrecincts = await _repo.getPrecinctsForState(dbName);
 
           final voteMap = await _repo.getPrecinctVoteMapForState(dbName);
-          final partyMap = await _repo.getCandidatePartyMapForState(dbName);
-          final candList = await _repo.getCandidatesForState(dbName);
           final countyPrec = await _repo.getCountyPrecinctMapForState(dbName);
           final cdPrec = await _repo.getCdPrecinctMapForState(dbName);
 
@@ -229,7 +269,7 @@ class MapDataStore {
             final precinctId = entry.key;
             final cvotes = entry.value;
             int total = 0;
-            int winnerId = 0;
+            String? winnerId;
             int winnerVotes = 0;
             for (final cv in cvotes.entries) {
               total += cv.value;
@@ -249,8 +289,6 @@ class MapDataStore {
           }
 
           precinctVotes.value = summaries;
-          candidatePartyMap.value = partyMap;
-          candidates.value = candList;
           countyPrecincts.value = countyPrec;
           cdPrecincts.value = cdPrec;
 
@@ -267,14 +305,17 @@ class MapDataStore {
             final coordData = _parseCellCoords(cell);
             if (coordData != null) {
               final pathData = GeometryParser.coordsToPath(coordData);
-              if (pathData.bounds.left < minX) minX = pathData.bounds.left;
-              if (pathData.bounds.top < minY) minY = pathData.bounds.top;
-              if (pathData.bounds.right > maxX) maxX = pathData.bounds.right;
-              if (pathData.bounds.bottom > maxY) maxY = pathData.bounds.bottom;
+              if (!pathData.bounds.isEmpty) {
+                if (pathData.bounds.left < minX) minX = pathData.bounds.left;
+                if (pathData.bounds.top < minY) minY = pathData.bounds.top;
+                if (pathData.bounds.right > maxX) maxX = pathData.bounds.right;
+                if (pathData.bounds.bottom > maxY) maxY = pathData.bounds.bottom;
+              }
 
               renderableCells.add(RenderableCell(
                 cell: cell,
                 path: pathData.path,
+                exteriorPath: pathData.exteriorPath,
                 bounds: pathData.bounds,
               ));
             }
@@ -285,30 +326,26 @@ class MapDataStore {
           congressionalDistricts.value = renderableCells.where((r) => r.cell.layerType == LayerType.congressionalDistrict).toList();
           precincts.value = renderableCells.where((r) => r.cell.layerType == LayerType.precinct).toList();
 
-          final index = <int, RenderableCell>{};
-          for (final c in renderableCells) index[c.cell.id] = c;
+          final index = <LayerType, Map<int, RenderableCell>>{};
+          for (final c in renderableCells) {
+            (index[c.cell.layerType] ??= {})[c.cell.id] = c;
+          }
           cellIndex.value = index;
 
           if (minX != double.infinity) {
             overallBounds.value = Rect.fromLTRB(minX, minY, maxX, maxY);
           }
 
-          // State view: visible layers MUST NOT include state chip
-          final currentLayers = List<LayerType>.from(mapStateStore.visibleLayers.value)..remove(LayerType.state);
-          if (currentLayers.isEmpty) {
-            currentLayers.addAll([LayerType.county, LayerType.congressionalDistrict, LayerType.precinct]);
-          }
-          mapStateStore.visibleLayers.value = currentLayers;
-          // Ensure interactiveLayer is one of the visible layers
-          if (!currentLayers.contains(mapStateStore.interactiveLayer.value)) {
-            mapStateStore.interactiveLayer.value = currentLayers.first;
-          }
+          // State view: visible layers MUST NOT include state or precinct by default
+          mapStateStore.visibleLayers.value = [LayerType.county, LayerType.congressionalDistrict];
+          mapStateStore.interactiveLayer.value = LayerType.county;
         }
       }
     } catch (e, stack) {
       debugPrint("Error loading selection ($folder - ${subItem.name}): $e\n$stack");
     } finally {
       _loading = false;
+      dataVersion.value = dataVersion.peek() + 1;
       isLoadingData.value = false;
     }
   }
@@ -331,7 +368,7 @@ class MapDataStore {
 
     if (precinctIds == null || precinctIds.isEmpty) return null;
 
-    final aggregated = <int, int>{};
+    final aggregated = <String, int>{};
     int total = 0;
     int pop = 0;
     for (final pid in precinctIds) {
@@ -346,7 +383,7 @@ class MapDataStore {
 
     if (total == 0) return null;
 
-    int winnerId = 0;
+    String? winnerId;
     int winnerVotes = 0;
     for (final entry in aggregated.entries) {
       if (entry.value > winnerVotes) {

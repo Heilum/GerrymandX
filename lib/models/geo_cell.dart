@@ -42,33 +42,12 @@ class GeoCell {
   }
 }
 
-class Candidate {
-  final int id;
-  final String name;
-  final int? partyId;
-  final String? office;
-
-  Candidate({
-    required this.id,
-    required this.name,
-    this.partyId,
-    this.office,
-  });
-
-  factory Candidate.fromMap(Map<String, dynamic> map) {
-    return Candidate(
-      id: map['id'] as int,
-      name: map['name'] as String,
-      partyId: map['party_id'] as int?,
-      office: map['office'] as String?,
-    );
-  }
-}
-
 class PrecinctResult {
   final int id;
   final int precinctId;
-  final int candidateId;
+
+  /// Candidate UUID. Candidates live in the election manifest, not in the DB.
+  final String candidateId;
   final int votes;
 
   PrecinctResult({
@@ -82,7 +61,7 @@ class PrecinctResult {
     return PrecinctResult(
       id: map['id'] as int,
       precinctId: map['precinct_id'] as int,
-      candidateId: map['candidate_id'] as int,
+      candidateId: map['candidate_id'].toString(),
       votes: map['votes'] as int,
     );
   }

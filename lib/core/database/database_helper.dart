@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -48,7 +47,13 @@ class DatabaseHelper {
     }
   }
 
+  /// Name of the per-election manifest describing candidates, parties and dbs.
+  static const metaFileName = 'meta.json';
+
   /// Ensures assets are copied to sandbox and returns all available election folder names.
+  ///
+  /// A folder counts as an election as soon as it has a [metaFileName]; the
+  /// individual databases (including National.db) may be downloaded later.
   Future<List<String>> ensureDefaultAndListDatabases() async {
     final dir = await _dbDir;
     await _copyAssetsIfNeeded();
@@ -59,8 +64,14 @@ class DatabaseHelper {
     for (final entity in entities) {
       if (entity is Directory) {
         final electionName = basename(entity.path);
+        if (await File(join(entity.path, metaFileName)).exists()) {
+          elections.add(electionName);
+          continue;
+        }
+        // Folders created before meta.json existed.
         final nationalDbFile = File(join(entity.path, 'National.db'));
-        if (await nationalDbFile.exists()) {
+        final nationalTmpFile = File(join(entity.path, 'National.db.tmp'));
+        if (await nationalDbFile.exists() && !await nationalTmpFile.exists()) {
           elections.add(electionName);
         }
       }
@@ -68,6 +79,29 @@ class DatabaseHelper {
 
     elections.sort();
     return elections;
+  }
+
+  /// Returns the downloaded `*.db` file names for an election folder, skipping
+  /// files whose download is still in progress.
+  Future<List<String>> getDownloadedDbNames(String electionName) async {
+    final dir = await _dbDir;
+    final folder = Directory(join(dir, electionName));
+    if (!await folder.exists()) return [];
+    final names = <String>[];
+    await for (final entity in folder.list()) {
+      if (entity is File && entity.path.endsWith('.db')) {
+        if (await File('${entity.path}.tmp').exists()) continue;
+        names.add(basename(entity.path));
+      }
+    }
+    names.sort();
+    return names;
+  }
+
+  Future<bool> hasNationalDb(String electionName) async {
+    final dir = await _dbDir;
+    final path = join(dir, electionName, 'National.db');
+    return await File(path).exists() && !await File('$path.tmp').exists();
   }
 
   /// Fetches state info (id, name, db_name) from National.db of a given election folder.
@@ -100,10 +134,10 @@ class DatabaseHelper {
   Future<void> _copyAssetsIfNeeded() async {
     final dir = await _dbDir;
     try {
-      final manifestJson = await rootBundle.loadString('AssetManifest.json');
-      final Map<String, dynamic> manifestMap = json.decode(manifestJson);
+      final assetManifest = await AssetManifest.loadFromAssetBundle(rootBundle);
+      final assetPaths = assetManifest.listAssets();
 
-      for (final assetPath in manifestMap.keys) {
+      for (final assetPath in assetPaths) {
         if (assetPath.startsWith('assets/db/')) {
           final relativePath = assetPath.substring('assets/db/'.length);
           if (relativePath.isEmpty || relativePath.endsWith('/')) continue;
@@ -123,13 +157,17 @@ class DatabaseHelper {
     }
   }
 
-  /// Opens National.db for an election folder (e.g. 2024-National-President).
-  Future<Database> openElection(String electionName) async {
-    if (_currentElectionName == electionName && _nationalDb != null && _nationalDb!.isOpen) {
-      return _nationalDb!;
+  /// Opens an election folder, and National.db with it when that file is
+  /// present. An election whose National.db has not been downloaded yet is
+  /// still usable — only the national view is unavailable.
+  Future<Database?> openElection(String electionName) async {
+    if (_currentElectionName == electionName) {
+      if (_nationalDb != null && _nationalDb!.isOpen) return _nationalDb;
+      if (!await hasNationalDb(electionName)) return null;
     }
 
     await closeCurrentElection();
+    _currentElectionName = electionName;
 
     final dir = await _dbDir;
     final nationalDbPath = join(dir, electionName, 'National.db');
@@ -138,12 +176,17 @@ class DatabaseHelper {
     if (!await file.exists()) {
       await _copyAssetsIfNeeded();
     }
+    if (!await file.exists()) {
+      debugPrint('National.db not downloaded for $electionName');
+      return null;
+    }
 
     final databaseFactory = databaseFactoryFfi;
     _nationalDb = await databaseFactory.openDatabase(nationalDbPath);
-    _currentElectionName = electionName;
-    return _nationalDb!;
+    return _nationalDb;
   }
+
+  bool get isNationalDbOpen => _nationalDb != null && _nationalDb!.isOpen;
 
   /// Opens or retrieves a cached state database (e.g. TX.db) within the current election folder.
   Future<Database> getStateDb(String dbName) async {

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:gerrymanderx/providers/map_state_store.dart';
 import 'package:gerrymanderx/providers/map_data_store.dart';
+import 'package:gerrymanderx/models/election_metadata.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
 
 class InspectorPanel extends StatelessWidget {
@@ -46,8 +47,8 @@ class InspectorPanel extends StatelessWidget {
             }
 
             final dataStore = context.read<MapDataStore>();
-            final cellIdx = dataStore.cellIndex.value;
-            final selectedCell = cellIdx[selectedId];
+            final layer = store.interactiveLayer.value;
+            final selectedCell = dataStore.cellAt(layer, selectedId);
 
             if (selectedCell == null) {
               return const Center(child: Text('Cell not found'));
@@ -56,7 +57,7 @@ class InspectorPanel extends StatelessWidget {
             final cell = selectedCell.cell;
             final partyMap = dataStore.candidatePartyMap.value;
             final allCandidates = dataStore.candidates.value;
-            final layer = store.interactiveLayer.value;
+            final allParties = dataStore.parties.value;
 
             // Aggregate votes: for precincts it's direct lookup,
             // for counties/CDs/states it sums child precincts.
@@ -87,14 +88,14 @@ class InspectorPanel extends StatelessWidget {
                     ...voteSummary.candidateVotes.entries.map((entry) {
                       final candidate = allCandidates
                           .where((c) => c.id == entry.key).firstOrNull;
-                      final partyId = partyMap[entry.key] ?? 0;
+                      final party = allParties[partyMap[entry.key]];
                       final isWinner = entry.key == voteSummary.winnerCandidateId;
                       final share = voteSummary.totalVotes > 0
                           ? (entry.value / voteSummary.totalVotes * 100)
                           : 0.0;
                       return _voteRow(
                         candidateName: candidate?.name ?? 'Unknown',
-                        partyId: partyId,
+                        party: party,
                         votes: entry.value,
                         sharePercent: share,
                         isWinner: isWinner,
@@ -141,22 +142,13 @@ class InspectorPanel extends StatelessWidget {
 
   Widget _voteRow({
     required String candidateName,
-    required int partyId,
+    required Party? party,
     required int votes,
     required double sharePercent,
     required bool isWinner,
   }) {
-    const partyNames = {1: 'D', 2: 'R', 3: 'L', 4: 'G', 5: 'I', 6: 'W', 7: 'O'};
-    const partyColors = {
-      1: Color(0xFF2166AC),
-      2: Color(0xFFB2182B),
-      3: Color(0xFFFFC107),
-      4: Color(0xFF4CAF50),
-      5: Color(0xFF9E9E9E),
-    };
-
-    final color = partyColors[partyId] ?? Colors.grey;
-    final partyLabel = partyNames[partyId] ?? '?';
+    final color = party?.color ?? Colors.grey;
+    final partyLabel = party?.name ?? '?';
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),

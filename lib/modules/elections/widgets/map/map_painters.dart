@@ -5,16 +5,7 @@ import 'package:gerrymanderx/models/geo_cell.dart';
 import 'package:gerrymanderx/providers/map_data_store.dart';
 import 'package:gerrymanderx/providers/map_state_store.dart';
 
-/// Party colors — must match map_painter.dart constants.
-const partyColors = <int, Color>{
-  1: Color(0xFF2166AC), // Democrat
-  2: Color(0xFFB2182B), // Republican
-  3: Color(0xFFFFC107), // Libertarian
-  4: Color(0xFF4CAF50), // Green
-  5: Color(0xFF9E9E9E), // Independent
-  6: Color(0xFF757575), // Write-In
-  7: Color(0xFF616161), // Other
-};
+/// Fallback for cells with no vote data or an unknown party.
 const defaultCellColor = Color(0xFF333333);
 
 /// Holds the transformation from GeoJSON coordinates to canvas pixels.
@@ -56,7 +47,7 @@ class BaseMapPainter extends CustomPainter {
   final MapDataStore dataStore;
   final List<LayerType> visibleLayers;
   final FillMode fillMode;
-  final int? singleCandidateId;
+  final String? singleCandidateId;
   final double interactiveScale;
   final bool drawFill;
   final bool drawBorder;
@@ -164,9 +155,6 @@ class BaseMapPainter extends CustomPainter {
 
     final fillPaint = Paint()..style = PaintingStyle.fill;
 
-    final votes = dataStore.precinctVotes.value;
-    final partyMap = dataStore.candidatePartyMap.value;
-
     // The canvas is currently transformed so that geo coordinates map directly to pixels.
     // So the visible bounds in geo-coordinates is exactly the canvas rect transformed back.
     final geoVisibleRect = Rect.fromLTRB(
@@ -187,7 +175,7 @@ class BaseMapPainter extends CustomPainter {
         if (fillMode == FillMode.winnerDotDensity) {
           final summary = dataStore.aggregateVotesForRegion(layerType, rCell.cell.id);
           if (summary != null && summary.winnerVotes > 0) {
-            fillPaint.color = _getMarginColor(summary, partyMap);
+            fillPaint.color = _getMarginColor(summary);
 
             double basePixelRadius;
             switch (layerType) {
@@ -215,7 +203,7 @@ class BaseMapPainter extends CustomPainter {
             canvas.drawCircle(center, radius, fillPaint);
           }
         } else {
-          Color fillColor = _getFillColor(layerType, rCell.cell.id, partyMap);
+          Color fillColor = _getFillColor(layerType, rCell.cell.id);
           if (fillColor != Colors.transparent) {
             fillPaint.color = fillColor;
             canvas.drawPath(rCell.path, fillPaint);
@@ -223,13 +211,13 @@ class BaseMapPainter extends CustomPainter {
         }
       }
       if (drawBorder) {
-        canvas.drawPath(rCell.path, borderPaint);
+        canvas.drawPath(rCell.exteriorPath, borderPaint);
       }
     }
   }
 
-  Color _getStrengthColor(double share, int partyId) {
-    final baseColor = partyColors[partyId] ?? defaultCellColor;
+  Color _getStrengthColor(double share, String? candidateId) {
+    final baseColor = dataStore.partyColorForCandidate(candidateId) ?? defaultCellColor;
     // Map vote share to color strength:
     // 50% share -> strength 0.0 (White/Neutral)
     // >= 75% share -> strength 1.0 (Solid Party Color)
@@ -239,13 +227,12 @@ class BaseMapPainter extends CustomPainter {
     return Color.lerp(Colors.white, baseColor, strength) ?? baseColor;
   }
 
-  Color _getMarginColor(PrecinctVoteSummary summary, Map<int, int> partyMap) {
-    final partyId = partyMap[summary.winnerCandidateId] ?? 0;
+  Color _getMarginColor(PrecinctVoteSummary summary) {
     final share = summary.totalVotes > 0 ? summary.winnerVotes / summary.totalVotes : 0.5;
-    return _getStrengthColor(share, partyId);
+    return _getStrengthColor(share, summary.winnerCandidateId);
   }
 
-  Color _getFillColor(LayerType layerType, int cellId, Map<int, int> partyMap) {
+  Color _getFillColor(LayerType layerType, int cellId) {
     if (fillMode == FillMode.none) return Colors.transparent;
 
     final summary = dataStore.aggregateVotesForRegion(layerType, cellId);
@@ -256,18 +243,17 @@ class BaseMapPainter extends CustomPainter {
         return Colors.transparent;
 
       case FillMode.winnerOpaque:
-        final partyId = partyMap[summary.winnerCandidateId] ?? 0;
-        return partyColors[partyId] ?? defaultCellColor;
+        return dataStore.partyColorForCandidate(summary.winnerCandidateId) ??
+            defaultCellColor;
 
       case FillMode.winnerOpacity:
-        return _getMarginColor(summary, partyMap);
+        return _getMarginColor(summary);
 
       case FillMode.singleCandidateOpacity:
         if (singleCandidateId == null) return defaultCellColor;
         final candidateVotes = summary.candidateVotes[singleCandidateId] ?? 0;
         final share = summary.totalVotes > 0 ? candidateVotes / summary.totalVotes : 0.0;
-        final partyId = partyMap[singleCandidateId] ?? 0;
-        return _getStrengthColor(share, partyId);
+        return _getStrengthColor(share, singleCandidateId);
 
       case FillMode.turnoutGray:
         final pop = summary.totalVotes * 1.8;

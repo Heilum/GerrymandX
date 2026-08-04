@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 import 'dart:ui' as ui;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -72,8 +73,7 @@ class _MapCanvasState extends State<_MapCanvas> {
   List<LayerType>? _cachedVisibleLayers;
 
   LayerType? _lastInteractiveLayer;
-  int? _lastSelectedCellId;
-  Map<int, RenderableCell>? _lastCellIndex;
+  Map<LayerType, Map<int, RenderableCell>>? _lastCellIndex;
   EffectCleanup? _resetEffect;
   Timer? _zoomDebounceTimer;
   double _currentZoomScale = 1.0;
@@ -164,13 +164,22 @@ class _MapCanvasState extends State<_MapCanvas> {
   }
 
 
+  /// Stroke widths are divided by `mapScale * interactiveScale` when recorded,
+  /// so the recording has to know the zoom level or borders scale up with the
+  /// InteractiveViewer transform. Bucketing to powers of two keeps the number
+  /// of re-records small — at most one per doubling.
+  static double _zoomBucketFor(double scale) {
+    if (!scale.isFinite || scale <= 1.0) return 1.0;
+    return math.pow(2, (math.log(scale) / math.ln2).round()).toDouble();
+  }
+
   // ── P3: Per-layer Picture caching ──
   _LayerPictures _recordLayerPictures(
     Size size,
     LayerType layerType,
     FillMode fillMode,
-    int? singleCandidateId,
-    double zoomScale,
+    String? singleCandidateId,
+    double zoomBucket,
   ) {
     // Record fill
     final fillRecorder = ui.PictureRecorder();
@@ -180,7 +189,7 @@ class _MapCanvasState extends State<_MapCanvas> {
         visibleLayers: [layerType],
         fillMode: fillMode,
         singleCandidateId: singleCandidateId,
-        interactiveScale: zoomScale,
+        interactiveScale: zoomBucket,
         drawFill: true,
         drawBorder: false,
       );
@@ -196,7 +205,7 @@ class _MapCanvasState extends State<_MapCanvas> {
         visibleLayers: [layerType],
         fillMode: fillMode,
         singleCandidateId: singleCandidateId,
-        interactiveScale: zoomScale,
+        interactiveScale: zoomBucket,
         drawFill: false,
         drawBorder: true,
       );
@@ -211,19 +220,27 @@ class _MapCanvasState extends State<_MapCanvas> {
     Size size,
     List<LayerType> layers,
     FillMode fillMode,
-    int? singleCandidateId,
+    String? singleCandidateId,
+    int dataVersion,
+    double zoomBucket,
   ) {
     bool compositeNeeded = false;
 
     // Check each visible layer's cache.
     for (final layer in layers) {
-      final key = _LayerCacheKey(size: size, fillMode: fillMode, singleCandidateId: singleCandidateId, zoomScale: _currentZoomScale);
+      final key = _LayerCacheKey(
+          size: size,
+          fillMode: fillMode,
+          singleCandidateId: singleCandidateId,
+          dataVersion: dataVersion,
+          zoomBucket: zoomBucket);
       final existingKey = _layerCacheKeys[layer];
       
       if (_layerPictures[layer] == null || existingKey != key) {
         // Cache miss for this layer — re-record both fill and border.
         _layerPictures[layer]?.dispose();
-        _layerPictures[layer] = _recordLayerPictures(size, layer, fillMode, singleCandidateId, _currentZoomScale);
+        _layerPictures[layer] = _recordLayerPictures(
+            size, layer, fillMode, singleCandidateId, zoomBucket);
         _layerCacheKeys[layer] = key;
         compositeNeeded = true;
       }
@@ -251,7 +268,6 @@ class _MapCanvasState extends State<_MapCanvas> {
     // Composite all visible layer Pictures into one final Picture.
     final recorder = ui.PictureRecorder();
     final canvas = Canvas(recorder);
-    // Draw in correct z-order: state → county → CD → precinct.
     const drawOrder = [
       LayerType.state,
       LayerType.county,
@@ -327,9 +343,13 @@ class _MapCanvasState extends State<_MapCanvas> {
       final fillMode = _mapStore.fillMode.value;
       final singleCandidateId = _mapStore.selectedCandidateId.value;
       final interactiveLayer = _mapStore.interactiveLayer.value;
-      final selectedCellId = _mapStore.selectedCellId.value;
-      // Read cellIndex for O(1) lookup in overlay painter.
+      final dataVersion = _dataStore.dataVersion.value;
+      // Read cellIndex for O(1) lookup in overlay painter. Hover/selection ids
+      // always come from the interactive layer, so only that layer's map is
+      // needed — ids are not unique across layers.
       final cellIdx = _dataStore.cellIndex.value;
+      final interactiveCells =
+          cellIdx[interactiveLayer] ?? const <int, RenderableCell>{};
 
       // Detect interactive layer or data changes → rebuild spatial index.
       final dataChanged = !identical(_lastCellIndex, cellIdx);
@@ -339,6 +359,12 @@ class _MapCanvasState extends State<_MapCanvas> {
         _rebuildSpatialIndex(interactiveLayer);
         _interactionNotifier.hoveredCellId = null;
         _interactionNotifier.selectedCellId = null;
+      }
+      if (dataChanged) {
+        // A new state/election has its own extent — drop the previous pan/zoom.
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) _transformController.value = Matrix4.identity();
+        });
       }
 
 
@@ -369,7 +395,8 @@ class _MapCanvasState extends State<_MapCanvas> {
           _canvasSize = Size(constraints.maxWidth, constraints.maxHeight);
 
           // P3: Per-layer Picture cache.
-          _ensurePicture(_canvasSize, layers, fillMode, singleCandidateId);
+          _ensurePicture(_canvasSize, layers, fillMode, singleCandidateId,
+              dataVersion, _zoomBucketFor(_currentZoomScale));
 
           return Container(
             color: const Color(0xFF1A1A2E),
@@ -412,7 +439,7 @@ class _MapCanvasState extends State<_MapCanvas> {
                                 dataStore: _dataStore,
                                 interactiveLayer: interactiveLayer,
                                 notifier: _interactionNotifier,
-                                cellIndex: cellIdx,
+                                cellIndex: interactiveCells,
                               ),
                               size: _canvasSize,
                             ),
@@ -466,10 +493,23 @@ class _LayerPictures {
 class _LayerCacheKey {
   final Size size;
   final FillMode fillMode;
-  final int? singleCandidateId;
-  final double zoomScale;
+  final String? singleCandidateId;
 
-  _LayerCacheKey({required this.size, required this.fillMode, required this.singleCandidateId, required this.zoomScale});
+  /// Without this the cached Pictures survive a change of election/state,
+  /// leaving the previous selection's geometry on screen.
+  final int dataVersion;
+
+  /// Border stroke widths are baked in at record time, so a change of zoom
+  /// bucket has to invalidate the recording.
+  final double zoomBucket;
+
+  _LayerCacheKey({
+    required this.size,
+    required this.fillMode,
+    required this.singleCandidateId,
+    required this.dataVersion,
+    required this.zoomBucket,
+  });
 
   @override
   bool operator ==(Object other) =>
@@ -478,10 +518,12 @@ class _LayerCacheKey {
           size == other.size &&
           fillMode == other.fillMode &&
           singleCandidateId == other.singleCandidateId &&
-          zoomScale == other.zoomScale;
+          dataVersion == other.dataVersion &&
+          zoomBucket == other.zoomBucket;
 
   @override
-  int get hashCode => Object.hash(size, fillMode, singleCandidateId, zoomScale);
+  int get hashCode =>
+      Object.hash(size, fillMode, singleCandidateId, dataVersion, zoomBucket);
 }
 
 bool _listEq<T>(List<T> a, List<T> b) {

@@ -42,14 +42,17 @@ class ElectionListPanel extends StatelessWidget {
         ),
         const Divider(height: 1),
         Expanded(
-          child: Watch((context) {
-            final isRemote = store.isRemoteMode.value;
-            if (isRemote) {
-              return _buildRemoteList(context, store);
-            } else {
-              return _buildLocalList(context, store);
-            }
-          }),
+          child: ListTileTheme(
+            shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+            child: Watch((context) {
+              final isRemote = store.isRemoteMode.value;
+              if (isRemote) {
+                return _buildRemoteList(context, store);
+              } else {
+                return _buildLocalList(context, store);
+              }
+            }),
+          ),
         ),
       ],
     );
@@ -123,9 +126,39 @@ class ElectionListPanel extends StatelessWidget {
           child: ExpansionTile(
             key: PageStorageKey<String>(folder),
             initiallyExpanded: true,
+            shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+            collapsedShape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
             title: Text(
               folder,
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+            ),
+            trailing: IconButton(
+              icon: const Icon(Icons.delete_outline, size: 18, color: Colors.grey),
+              tooltip: 'Delete Election',
+              onPressed: () async {
+                final confirm = await showDialog<bool>(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    title: const Text('Delete Election'),
+                    content: Text('Are you sure you want to delete "$folder"?'),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, false),
+                        child: const Text('Cancel'),
+                      ),
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, true),
+                        style: TextButton.styleFrom(foregroundColor: Colors.red),
+                        child: const Text('Delete'),
+                      ),
+                    ],
+                  ),
+                );
+
+                if (confirm == true && context.mounted) {
+                  await store.deleteLocalElection(folder);
+                }
+              },
             ),
             children: subItems.map((subItem) {
               final isSelected = selectedFolder == folder &&
@@ -133,7 +166,7 @@ class ElectionListPanel extends StatelessWidget {
                   store.selectedRemoteElection.value == null;
 
               return ListTile(
-                contentPadding: const EdgeInsets.only(left: 32.0, right: 16.0),
+                contentPadding: const EdgeInsets.only(left: 32.0, right: 8.0),
                 shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
                 title: Text(
                   subItem.name,
@@ -146,6 +179,34 @@ class ElectionListPanel extends StatelessWidget {
                 onTap: () {
                   store.selectSubItem(folder, subItem);
                 },
+                trailing: IconButton(
+                  icon: const Icon(Icons.delete_outline, size: 16, color: Colors.grey),
+                  tooltip: 'Delete ${subItem.name}',
+                  onPressed: () async {
+                    final confirm = await showDialog<bool>(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: Text('Delete ${subItem.name}'),
+                        content: Text('Are you sure you want to delete "${subItem.name}" from "$folder"?'),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.pop(context, false),
+                            child: const Text('Cancel'),
+                          ),
+                          TextButton(
+                            onPressed: () => Navigator.pop(context, true),
+                            style: TextButton.styleFrom(foregroundColor: Colors.red),
+                            child: const Text('Delete'),
+                          ),
+                        ],
+                      ),
+                    );
+
+                    if (confirm == true && context.mounted) {
+                      await store.deleteLocalSubItem(folder, subItem);
+                    }
+                  },
+                ),
               );
             }).toList(),
           ),
@@ -180,15 +241,11 @@ class ElectionListPanel extends StatelessWidget {
       itemCount: remoteItems.length,
       itemBuilder: (context, index) {
         final item = remoteItems[index];
-        final isSelected = store.selectedRemoteElection.value?.name == item.name;
 
-        final tile = ListTile(
+        return ExpansionTile(
           shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-          title: Text(item.name),
-          selected: isSelected,
-          onTap: () {
-            store.selectRemoteElection(item);
-          },
+          collapsedShape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+          title: Text(item.name, style: const TextStyle(fontWeight: FontWeight.bold)),
           trailing: Watch((context) {
             final isDownloading = store.downloadingElections.value.contains(item.name);
             if (isDownloading) {
@@ -210,6 +267,35 @@ class ElectionListPanel extends StatelessWidget {
                     percentText,
                     style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                   ),
+                  const SizedBox(width: 4),
+                  IconButton(
+                    icon: const Icon(Icons.close, size: 16),
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(),
+                    tooltip: 'Cancel',
+                    onPressed: () async {
+                      final confirm = await showDialog<bool>(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          title: const Text('Cancel Download'),
+                          content: Text('Are you sure you want to cancel downloading "${item.name}"?'),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.of(context).pop(false),
+                              child: const Text('No'),
+                            ),
+                            TextButton(
+                              onPressed: () => Navigator.of(context).pop(true),
+                              child: const Text('Yes'),
+                            ),
+                          ],
+                        ),
+                      );
+                      if (confirm == true) {
+                        store.cancelElectionDownload(item.name);
+                      }
+                    },
+                  ),
                 ],
               );
             }
@@ -222,7 +308,7 @@ class ElectionListPanel extends StatelessWidget {
                   return const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8.0),
                     child: Text(
-                      '已下载',
+                      'Downloaded',
                       style: TextStyle(
                         color: Colors.green,
                         fontWeight: FontWeight.bold,
@@ -240,20 +326,107 @@ class ElectionListPanel extends StatelessWidget {
                   onPressed: () {
                     store.downloadElection(item);
                   },
-                  child: const Text('下载'),
+                  child: const Text('Download All'),
                 );
               },
             );
           }),
-        );
+          children: item.dbs.map((dbItem) {
+            final dbKey = '${item.name}/${dbItem.url}';
+            return Padding(
+              padding: const EdgeInsets.only(left: 16.0),
+              child: ListTile(
+                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                title: Text(dbItem.name),
+                trailing: Watch((context) {
+                  final dbProgress = store.dbDownloadProgress.value[dbKey];
+                  final isDownloadingDb = dbProgress != null;
+                  if (isDownloadingDb) {
+                    final percentText = '${(dbProgress * 100).toInt()}%';
+                    return Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        SizedBox(
+                          width: 14,
+                          height: 14,
+                          child: CircularProgressIndicator(
+                            value: dbProgress > 0 ? dbProgress : null,
+                            strokeWidth: 2.0,
+                          ),
+                        ),
+                        const SizedBox(width: 6),
+                        Text(
+                          percentText,
+                          style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(width: 4),
+                        IconButton(
+                          icon: const Icon(Icons.close, size: 16),
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(),
+                          tooltip: 'Cancel',
+                          onPressed: () async {
+                            final confirm = await showDialog<bool>(
+                              context: context,
+                              builder: (context) => AlertDialog(
+                                title: const Text('Cancel Download'),
+                                content: Text('Are you sure you want to cancel downloading "${dbItem.name}"?'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.of(context).pop(false),
+                                    child: const Text('No'),
+                                  ),
+                                  TextButton(
+                                    onPressed: () => Navigator.of(context).pop(true),
+                                    child: const Text('Yes'),
+                                  ),
+                                ],
+                              ),
+                            );
+                            if (confirm == true) {
+                              store.cancelSingleDbDownload(item.name, dbItem);
+                            }
+                          },
+                        ),
+                      ],
+                    );
+                  }
 
-        if (item.description.isNotEmpty) {
-          return Tooltip(
-            message: item.description,
-            child: tile,
-          );
-        }
-        return tile;
+                  return FutureBuilder<bool>(
+                    future: store.isDbFileDownloaded(item.name, dbItem.url),
+                    builder: (context, snapshot) {
+                      final isDownloaded = snapshot.data ?? false;
+                      if (isDownloaded) {
+                        return const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8.0),
+                          child: Text(
+                            'Downloaded',
+                            style: TextStyle(
+                              color: Colors.green,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                            ),
+                          ),
+                        );
+                      }
+
+                      return ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                        onPressed: () {
+                          store.downloadSingleDb(item.name, dbItem);
+                        },
+                        child: const Text('Download'),
+                      );
+                    },
+                  );
+                }),
+              ),
+            );
+          }).toList(),
+        );
       },
     );
   }

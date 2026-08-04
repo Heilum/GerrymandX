@@ -4,13 +4,11 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 class StateRegionRecord {
   final int id;
-  final int stateId;
   final int regionId;
   final String regionType; // 'county' or 'congressional_district'
 
   StateRegionRecord({
     required this.id,
-    required this.stateId,
     required this.regionId,
     required this.regionType,
   });
@@ -18,7 +16,6 @@ class StateRegionRecord {
   factory StateRegionRecord.fromMap(Map<String, dynamic> map) {
     return StateRegionRecord(
       id: map['id'] as int,
-      stateId: map['state_id'] as int,
       regionId: map['region_id'] as int,
       regionType: map['region_type'] as String,
     );
@@ -32,19 +29,23 @@ class ElectionRepository {
 
   /// Fetches all states from National.db
   Future<List<GeoCell>> getStates() async {
+    if (!_dbHelper.isNationalDbOpen) return [];
     final maps = await _nationalDb.query('states');
     return maps.map((map) => GeoCell.fromMap(map, LayerType.state)).toList();
   }
 
-  /// Fetches state_regions records from National.db grouped by state_id
-  Future<Map<int, List<StateRegionRecord>>> getAllStateRegions() async {
-    final maps = await _nationalDb.query('state_regions');
-    final result = <int, List<StateRegionRecord>>{};
-    for (final map in maps) {
-      final record = StateRegionRecord.fromMap(map);
-      result.putIfAbsent(record.stateId, () => []).add(record);
+  /// Fetches the regions a state contains, from that state's own database.
+  ///
+  /// This used to live in National.db keyed by state_id; each state DB now
+  /// carries its own list, so the state view no longer depends on National.db.
+  Future<List<StateRegionRecord>> getStateRegions(String dbName) async {
+    try {
+      final db = await _dbHelper.getStateDb(dbName);
+      final maps = await db.query('state_regions');
+      return maps.map((map) => StateRegionRecord.fromMap(map)).toList();
+    } catch (e) {
+      return [];
     }
-    return result;
   }
 
   /// Fetches counties for a state from its state DB (e.g. TX.db) using region_ids
@@ -88,35 +89,6 @@ class ElectionRepository {
     return maps.map((map) => GeoCell.fromMap(map, LayerType.precinct)).toList();
   }
 
-  /// Fetches candidates from National.db
-  Future<List<Candidate>> getCandidates() async {
-    try {
-      final db = _dbHelper.nationalDb;
-      final maps = await db.query('candidates');
-      return maps.map((map) => Candidate.fromMap(map)).toList();
-    } catch (e) {
-      return [];
-    }
-  }
-
-  /// Returns {candidateId: partyId} from National.db.
-  Future<Map<int, int>> getCandidatePartyMap() async {
-    final candidates = await getCandidates();
-    return {for (final c in candidates) c.id: c.partyId ?? 0};
-  }
-
-  /// Fetches candidates from a state DB (or National.db fallback)
-  Future<List<Candidate>> getCandidatesForState(String dbName) async {
-    try {
-      final db = await _dbHelper.getStateDb(dbName);
-      final maps = await db.query('candidates');
-      if (maps.isNotEmpty) {
-        return maps.map((map) => Candidate.fromMap(map)).toList();
-      }
-    } catch (_) {}
-    return getCandidates();
-  }
-
   /// Fetches precinct results from a state DB
   Future<List<PrecinctResult>> getPrecinctResultsForState(String dbName) async {
     final db = await _dbHelper.getStateDb(dbName);
@@ -125,20 +97,14 @@ class ElectionRepository {
   }
 
   /// Returns {precinctId: {candidateId: votes}} for quick lookup.
-  Future<Map<int, Map<int, int>>> getPrecinctVoteMapForState(String dbName) async {
+  Future<Map<int, Map<String, int>>> getPrecinctVoteMapForState(String dbName) async {
     final results = await getPrecinctResultsForState(dbName);
-    final map = <int, Map<int, int>>{};
+    final map = <int, Map<String, int>>{};
     for (final r in results) {
       map.putIfAbsent(r.precinctId, () => {});
       map[r.precinctId]![r.candidateId] = r.votes;
     }
     return map;
-  }
-
-  /// Returns {candidateId: partyId}.
-  Future<Map<int, int>> getCandidatePartyMapForState(String dbName) async {
-    final candidates = await getCandidatesForState(dbName);
-    return {for (final c in candidates) c.id: c.partyId ?? 0};
   }
 
   /// Returns {countyId: [precinctId, ...]}.

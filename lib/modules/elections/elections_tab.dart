@@ -61,11 +61,14 @@ class _ElectionsTabState extends State<ElectionsTab> {
             children: [
               IconButton(
                 icon: const Icon(Icons.refresh),
-                tooltip: isRemoteMode ? 'Reload remote elections' : 'Reset map view',
+                tooltip: isRemoteMode
+                    ? 'Reload remote elections'
+                    : 'Reload local elections and reset map view',
                 onPressed: () {
                   if (isRemoteMode) {
                     electionStore.fetchRemoteElections();
                   } else {
+                    electionStore.refreshLocalDatabases();
                     context.read<MapStateStore>().resetViewTrigger.value++;
                   }
                 },
@@ -166,7 +169,7 @@ class _ElectionsTabState extends State<ElectionsTab> {
                             const Text('Candidate: ',
                                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
                             const SizedBox(width: 4),
-                            DropdownButton<int>(
+                            DropdownButton<String>(
                               value: store.selectedCandidateId.value ?? candidates.first.id,
                               isDense: true,
                               items: candidates.map((c) {

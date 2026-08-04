@@ -11,22 +11,21 @@ enum FillMode {
 }
 
 class MapStateStore {
-  // Visible layers (default all)
+  // Visible layers (default state, congressionalDistrict, county)
   final visibleLayers = ListSignal<LayerType>([
     LayerType.state,
     LayerType.congressionalDistrict,
     LayerType.county,
-    LayerType.precinct,
   ]);
 
   // Interactive Layer (one of the visible layers)
-  final interactiveLayer = Signal<LayerType>(LayerType.precinct);
+  final interactiveLayer = Signal<LayerType>(LayerType.county);
 
   // Fill Mode configuration
   final fillMode = Signal<FillMode>(FillMode.winnerOpaque);
   
-  // Single Candidate for fillMode = singleCandidateOpacity
-  final selectedCandidateId = Signal<int?>(null);
+  // Single Candidate (UUID) for fillMode = singleCandidateOpacity
+  final selectedCandidateId = Signal<String?>(null);
 
   // Inspector state
   final selectedCellId = Signal<int?>(null);

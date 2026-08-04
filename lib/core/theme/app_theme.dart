@@ -87,9 +87,17 @@ class AppTheme {
           ),
         ),
       ),
-      listTileTheme: ListTileThemeData(
+      listTileTheme: const ListTileThemeData(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.zero,
+        ),
+      ),
+      expansionTileTheme: const ExpansionTileThemeData(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.zero,
+        ),
+        collapsedShape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.zero,
         ),
       ),
       dividerTheme: DividerThemeData(
