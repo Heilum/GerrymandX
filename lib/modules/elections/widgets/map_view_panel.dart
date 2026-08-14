@@ -5,6 +5,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:signals_flutter/signals_flutter.dart';
+import 'package:gerrymanderx/modules/elections/comparison_selection.dart';
+import 'package:gerrymanderx/providers/election_store.dart';
 import 'package:gerrymanderx/providers/map_state_store.dart';
 import 'package:gerrymanderx/providers/map_data_store.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
@@ -22,10 +24,10 @@ class MapViewPanel extends StatefulWidget {
 class _MapViewPanelState extends State<MapViewPanel> {
   @override
   Widget build(BuildContext context) {
-    final store = context.read<MapStateStore>();
-
-    return Column(
+    return const Column(
       children: [
+        // ── Comparison prompt (only while a comparison fill is incomplete) ──
+        _ComparisonNotice(),
 
         // ── Map Canvas ──
         Expanded(
@@ -35,6 +37,48 @@ class _MapViewPanelState extends State<MapViewPanel> {
         ),
       ],
     );
+  }
+}
+
+/// Tells the user what is still missing before a comparison fill mode can
+/// colour the map — which is also exactly when the map stays neutral.
+class _ComparisonNotice extends StatelessWidget {
+  const _ComparisonNotice();
+
+  @override
+  Widget build(BuildContext context) {
+    return Watch((context) {
+      final selection = ComparisonSelection.resolve(
+        electionStore: context.read<ElectionStore>(),
+        mapStore: context.read<MapStateStore>(),
+        dataStore: context.read<MapDataStore>(),
+      );
+      final issue = selection.issue;
+      if (issue == null) return const SizedBox.shrink();
+
+      final color = selection.isLoading ? Colors.white70 : Colors.amber;
+      return Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        color: Colors.amber.withValues(alpha: selection.isLoading ? 0.06 : 0.12),
+        child: Row(
+          children: [
+            Icon(
+              selection.isLoading ? Icons.hourglass_top : Icons.warning_amber,
+              size: 16,
+              color: color,
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                issue,
+                style: TextStyle(fontSize: 12, color: color),
+              ),
+            ),
+          ],
+        ),
+      );
+    });
   }
 }
 
@@ -55,6 +99,7 @@ class _MapCanvasState extends State<_MapCanvas> {
   // ── Stores (injected once) ──
   late final MapDataStore _dataStore;
   late final MapStateStore _mapStore;
+  late final ElectionStore _electionStore;
 
   // ── Interaction ──
   final InteractionNotifier _interactionNotifier = InteractionNotifier();
@@ -83,7 +128,9 @@ class _MapCanvasState extends State<_MapCanvas> {
     super.initState();
     _dataStore = context.read<MapDataStore>();
     _mapStore = context.read<MapStateStore>();
-    
+    _electionStore = context.read<ElectionStore>();
+
+
     _resetEffect = effect(() {
       final trigger = _mapStore.resetViewTrigger.value;
       if (trigger > 0) {
@@ -173,12 +220,23 @@ class _MapCanvasState extends State<_MapCanvas> {
     return math.pow(2, (math.log(scale) / math.ln2).round()).toDouble();
   }
 
+  /// Null unless a comparison fill mode is active *and* fully configured; the
+  /// painter then falls back to neutral fills while the notice explains why.
+  ComparisonSpec? _buildComparisonSpec() {
+    return ComparisonSelection.resolve(
+      electionStore: _electionStore,
+      mapStore: _mapStore,
+      dataStore: _dataStore,
+    ).spec;
+  }
+
   // ── P3: Per-layer Picture caching ──
   _LayerPictures _recordLayerPictures(
     Size size,
     LayerType layerType,
     FillMode fillMode,
     String? singleCandidateId,
+    ComparisonSpec? comparisonSpec,
     double zoomBucket,
   ) {
     // Record fill
@@ -189,6 +247,7 @@ class _MapCanvasState extends State<_MapCanvas> {
         visibleLayers: [layerType],
         fillMode: fillMode,
         singleCandidateId: singleCandidateId,
+        comparisonSpec: comparisonSpec,
         interactiveScale: zoomBucket,
         drawFill: true,
         drawBorder: false,
@@ -205,6 +264,7 @@ class _MapCanvasState extends State<_MapCanvas> {
         visibleLayers: [layerType],
         fillMode: fillMode,
         singleCandidateId: singleCandidateId,
+        comparisonSpec: comparisonSpec,
         interactiveScale: zoomBucket,
         drawFill: false,
         drawBorder: true,
@@ -221,6 +281,7 @@ class _MapCanvasState extends State<_MapCanvas> {
     List<LayerType> layers,
     FillMode fillMode,
     String? singleCandidateId,
+    ComparisonSpec? comparisonSpec,
     int dataVersion,
     double zoomBucket,
   ) {
@@ -232,15 +293,16 @@ class _MapCanvasState extends State<_MapCanvas> {
           size: size,
           fillMode: fillMode,
           singleCandidateId: singleCandidateId,
+          comparisonSpec: comparisonSpec,
           dataVersion: dataVersion,
           zoomBucket: zoomBucket);
       final existingKey = _layerCacheKeys[layer];
-      
+
       if (_layerPictures[layer] == null || existingKey != key) {
         // Cache miss for this layer — re-record both fill and border.
         _layerPictures[layer]?.dispose();
         _layerPictures[layer] = _recordLayerPictures(
-            size, layer, fillMode, singleCandidateId, zoomBucket);
+            size, layer, fillMode, singleCandidateId, comparisonSpec, zoomBucket);
         _layerCacheKeys[layer] = key;
         compositeNeeded = true;
       }
@@ -342,6 +404,7 @@ class _MapCanvasState extends State<_MapCanvas> {
       final layers = _mapStore.visibleLayers.value;
       final fillMode = _mapStore.fillMode.value;
       final singleCandidateId = _mapStore.selectedCandidateId.value;
+      final comparisonSpec = _buildComparisonSpec();
       final interactiveLayer = _mapStore.interactiveLayer.value;
       final dataVersion = _dataStore.dataVersion.value;
       // Read cellIndex for O(1) lookup in overlay painter. Hover/selection ids
@@ -396,7 +459,7 @@ class _MapCanvasState extends State<_MapCanvas> {
 
           // P3: Per-layer Picture cache.
           _ensurePicture(_canvasSize, layers, fillMode, singleCandidateId,
-              dataVersion, _zoomBucketFor(_currentZoomScale));
+              comparisonSpec, dataVersion, _zoomBucketFor(_currentZoomScale));
 
           return Container(
             color: const Color(0xFF1A1A2E),
@@ -495,6 +558,10 @@ class _LayerCacheKey {
   final FillMode fillMode;
   final String? singleCandidateId;
 
+  /// Parties/election being compared against, and the version of the loaded
+  /// comparison data.
+  final ComparisonSpec? comparisonSpec;
+
   /// Without this the cached Pictures survive a change of election/state,
   /// leaving the previous selection's geometry on screen.
   final int dataVersion;
@@ -507,6 +574,7 @@ class _LayerCacheKey {
     required this.size,
     required this.fillMode,
     required this.singleCandidateId,
+    required this.comparisonSpec,
     required this.dataVersion,
     required this.zoomBucket,
   });
@@ -518,12 +586,13 @@ class _LayerCacheKey {
           size == other.size &&
           fillMode == other.fillMode &&
           singleCandidateId == other.singleCandidateId &&
+          comparisonSpec == other.comparisonSpec &&
           dataVersion == other.dataVersion &&
           zoomBucket == other.zoomBucket;
 
   @override
-  int get hashCode =>
-      Object.hash(size, fillMode, singleCandidateId, dataVersion, zoomBucket);
+  int get hashCode => Object.hash(size, fillMode, singleCandidateId,
+      comparisonSpec, dataVersion, zoomBucket);
 }
 
 bool _listEq<T>(List<T> a, List<T> b) {

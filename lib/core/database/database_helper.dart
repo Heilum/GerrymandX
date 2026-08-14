@@ -16,6 +16,10 @@ class DatabaseHelper {
   Database? _nationalDb;
   final Map<String, Database> _stateDbs = {};
 
+  /// State databases from other elections, opened read-only for the comparison
+  /// fill modes. Keyed by `<electionName>/<dbName>`.
+  final Map<String, Database> _comparisonDbs = {};
+
   Future<String> get dbDir async => _dbDir;
 
   Future<String> get _dbDir async {
@@ -206,6 +210,40 @@ class DatabaseHelper {
     return db;
   }
 
+  /// Opens a state database belonging to an election *other* than the open one,
+  /// for cross-election comparison.
+  ///
+  /// Kept out of [_stateDbs] so that switching elections does not close it and
+  /// it does not shadow the current election's database of the same name. Only
+  /// one is held open at a time — comparisons look at a single other election.
+  Future<Database?> getComparisonStateDb(
+    String electionName,
+    String dbName,
+  ) async {
+    final key = join(electionName, dbName);
+    final cached = _comparisonDbs[key];
+    if (cached != null && cached.isOpen) return cached;
+
+    final dir = await _dbDir;
+    final path = join(dir, electionName, dbName);
+    if (!await File(path).exists()) return null;
+
+    await closeComparisonDbs();
+    final db = await databaseFactoryFfi.openDatabase(
+      path,
+      options: OpenDatabaseOptions(readOnly: true),
+    );
+    _comparisonDbs[key] = db;
+    return db;
+  }
+
+  Future<void> closeComparisonDbs() async {
+    for (final db in _comparisonDbs.values) {
+      if (db.isOpen) await db.close();
+    }
+    _comparisonDbs.clear();
+  }
+
   Database get nationalDb {
     if (_nationalDb == null || !_nationalDb!.isOpen) {
       throw StateError('No election database is currently open. Call openElection first.');
@@ -214,6 +252,7 @@ class DatabaseHelper {
   }
 
   Future<void> closeCurrentElection() async {
+    await closeComparisonDbs();
     for (final db in _stateDbs.values) {
       if (db.isOpen) {
         await db.close();

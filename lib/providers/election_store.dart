@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:gerrymanderx/core/database/database_helper.dart';
+import 'package:gerrymanderx/models/election_metadata.dart';
 import 'package:gerrymanderx/models/election_sub_item.dart';
 import 'package:gerrymanderx/models/remote_election_item.dart';
 import 'package:path/path.dart' as p;
@@ -99,11 +100,13 @@ class ElectionStore {
           selectedElectionFolder.value == null &&
           !isRemoteMode.value) {
         final firstFolder = dbFolders.first;
-        selectedElectionFolder.value = firstFolder;
         final items = map[firstFolder];
-        if (items != null && items.isNotEmpty) {
-          selectedSubItem.value = items.first;
-        }
+        batch(() {
+          selectedElectionFolder.value = firstFolder;
+          if (items != null && items.isNotEmpty) {
+            selectedSubItem.value = items.first;
+          }
+        });
       }
     } catch (e) {
       debugPrint("Error loading local databases: $e");
@@ -605,10 +608,37 @@ class ElectionStore {
     }
   }
 
+  /// Downloaded election folders that also carry the state database [dbName]
+  /// (e.g. `TX.db`), i.e. the elections the current state can be compared with.
+  List<String> foldersContainingDb(String dbName, {String? excluding}) {
+    final result = <String>[];
+    localElectionSubItems.value.forEach((folder, items) {
+      if (folder == excluding) return;
+      if (items.any((i) => !i.isNational && i.dbName == dbName)) {
+        result.add(folder);
+      }
+    });
+    result.sort();
+    return result;
+  }
+
+  /// Party names an election defines, the key the comparison fill modes match
+  /// parties on (party ids are minted per election).
+  Set<String> partyNamesIn(String electionFolder) => {
+        for (final p in localElectionMeta.value[electionFolder]?.parties ??
+            const <Party>[])
+          p.name,
+      };
+
+  /// batch(): folder and sub-item are one selection. Written separately, a
+  /// listener sees the new folder paired with the *previous* folder's sub-item
+  /// — e.g. election B with election A's `National`, which loads nothing.
   void selectSubItem(String electionFolder, ElectionSubItem subItem) {
-    selectedElectionFolder.value = electionFolder;
-    selectedSubItem.value = subItem;
-    selectedRemoteElection.value = null;
+    batch(() {
+      selectedElectionFolder.value = electionFolder;
+      selectedSubItem.value = subItem;
+      selectedRemoteElection.value = null;
+    });
   }
 
   void selectRemoteElection(RemoteElectionItem item) {
@@ -619,15 +649,18 @@ class ElectionStore {
     await _dbHelper.deleteElectionFolder(electionFolder);
     await _loadLocalDatabases();
     if (localDatabases.value.isEmpty) {
-      selectedElectionFolder.value = null;
-      selectedSubItem.value = null;
+      batch(() {
+        selectedElectionFolder.value = null;
+        selectedSubItem.value = null;
+      });
     } else if (selectedElectionFolder.value == electionFolder) {
       final firstFolder = localDatabases.value.first;
-      selectedElectionFolder.value = firstFolder;
       final items = localElectionSubItems.value[firstFolder];
-      selectedSubItem.value = (items != null && items.isNotEmpty)
-          ? items.first
-          : null;
+      batch(() {
+        selectedElectionFolder.value = firstFolder;
+        selectedSubItem.value =
+            (items != null && items.isNotEmpty) ? items.first : null;
+      });
     }
   }
 
@@ -669,14 +702,18 @@ class ElectionStore {
         selectedSubItem.value = items.first;
       } else if (localDatabases.value.isNotEmpty) {
         final firstFolder = localDatabases.value.first;
-        selectedElectionFolder.value = firstFolder;
         final firstItems = localElectionSubItems.value[firstFolder];
-        selectedSubItem.value = (firstItems != null && firstItems.isNotEmpty)
-            ? firstItems.first
-            : null;
+        batch(() {
+          selectedElectionFolder.value = firstFolder;
+          selectedSubItem.value = (firstItems != null && firstItems.isNotEmpty)
+              ? firstItems.first
+              : null;
+        });
       } else {
-        selectedElectionFolder.value = null;
-        selectedSubItem.value = null;
+        batch(() {
+          selectedElectionFolder.value = null;
+          selectedSubItem.value = null;
+        });
       }
     }
   }

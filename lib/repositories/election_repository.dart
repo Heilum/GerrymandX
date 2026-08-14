@@ -22,6 +22,28 @@ class StateRegionRecord {
   }
 }
 
+/// Everything needed to recompute vote shares for one state database, read in
+/// one pass. Used for the comparison fill modes, where the other election's
+/// database is opened on its own and none of the loaded map state applies.
+class StateVoteSnapshot {
+  /// {precinctId: {candidateId: votes}}
+  final Map<int, Map<String, int>> precinctVotes;
+  final Map<int, List<int>> countyPrecincts;
+  final Map<int, List<int>> cdPrecincts;
+  final Map<int, String> countyNames;
+  final Map<int, String> cdNames;
+  final Map<int, String> precinctNames;
+
+  const StateVoteSnapshot({
+    required this.precinctVotes,
+    required this.countyPrecincts,
+    required this.cdPrecincts,
+    required this.countyNames,
+    required this.cdNames,
+    required this.precinctNames,
+  });
+}
+
 class ElectionRepository {
   final DatabaseHelper _dbHelper = DatabaseHelper.instance;
 
@@ -131,6 +153,74 @@ class ElectionRepository {
       map.putIfAbsent(cdId, () => []).add(precinctId);
     }
     return map;
+  }
+
+  /// Reads names, memberships and votes straight from an already-open state
+  /// database. Takes the [Database] rather than a name because the comparison
+  /// modes read a database outside the currently open election.
+  Future<StateVoteSnapshot> loadStateVoteSnapshot(Database db) async {
+    Future<List<Map<String, Object?>>> query(
+      String table, {
+      List<String>? columns,
+    }) async {
+      try {
+        return await db.query(table, columns: columns);
+      } catch (_) {
+        // Older databases may not carry every table (e.g. no congressional
+        // districts); an absent table just means no data for that layer.
+        return const [];
+      }
+    }
+
+    final votes = <int, Map<String, int>>{};
+    for (final row in await query('precinct_results')) {
+      final precinctId = row['precinct_id'];
+      final candidateId = row['candidate_id'];
+      if (precinctId is! int || candidateId == null) continue;
+      votes.putIfAbsent(precinctId, () => {})[candidateId.toString()] =
+          (row['votes'] as int?) ?? 0;
+    }
+
+    Map<int, List<int>> membership(
+      List<Map<String, Object?>> rows,
+      String parentColumn,
+    ) {
+      final map = <int, List<int>>{};
+      for (final row in rows) {
+        final parentId = row[parentColumn];
+        final precinctId = row['precinct_id'];
+        if (parentId is! int || precinctId is! int) continue;
+        map.putIfAbsent(parentId, () => []).add(precinctId);
+      }
+      return map;
+    }
+
+    Map<int, String> names(List<Map<String, Object?>> rows) {
+      final map = <int, String>{};
+      for (final row in rows) {
+        final id = row['id'];
+        final name = row['name'];
+        if (id is int && name != null) map[id] = name.toString();
+      }
+      return map;
+    }
+
+    return StateVoteSnapshot(
+      precinctVotes: votes,
+      countyPrecincts: membership(
+        await query('county_precincts'),
+        'county_id',
+      ),
+      cdPrecincts: membership(
+        await query('congressional_district_precincts'),
+        'congressional_district_id',
+      ),
+      countyNames: names(await query('counties', columns: ['id', 'name'])),
+      cdNames: names(
+        await query('congressional_districts', columns: ['id', 'name']),
+      ),
+      precinctNames: names(await query('precincts', columns: ['id', 'name'])),
+    );
   }
 
   Future<void> updatePrecinctResultForState(String dbName, int id, int votes) async {
