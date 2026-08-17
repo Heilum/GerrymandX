@@ -9,14 +9,15 @@ class RemoteDbItem {
     required this.url,
   });
 
+  static const String _cdnBase = 'https://files.xp-oncology.cn/gerrymander/';
+
   static String _ensureCdnUrl(String rawUrl) {
-    if (rawUrl.contains('xp-oncology.cn/gerrymander/')) {
-      return rawUrl.replaceAll(
-        'https://xp-oncology.cn/gerrymander/',
-        'https://public-assets.peipeixiong.cn/public/jagie/gerrymander/',
-      );
-    }
-    return rawUrl;
+    return rawUrl
+        .replaceAll('https://xp-oncology.cn/gerrymander/', _cdnBase)
+        .replaceAll(
+          'https://public-assets.peipeixiong.cn/public/jagie/gerrymander/',
+          _cdnBase,
+        );
   }
 
   factory RemoteDbItem.fromJson(dynamic json) {

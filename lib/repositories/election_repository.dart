@@ -223,6 +223,22 @@ class ElectionRepository {
     );
   }
 
+  /// Precinct geometry from an already-open state database.
+  ///
+  /// Separate from [loadStateVoteSnapshot] because it pulls the boundary
+  /// blobs — the expensive part — and only the comparison modes need them.
+  Future<List<GeoCell>> loadPrecinctGeometry(Database db) async {
+    try {
+      final rows = await db.query(
+        'precincts',
+        columns: ['id', 'name', 'boundary', 'center_lat', 'center_lon'],
+      );
+      return rows.map((m) => GeoCell.fromMap(m, LayerType.precinct)).toList();
+    } catch (_) {
+      return const [];
+    }
+  }
+
   Future<void> updatePrecinctResultForState(String dbName, int id, int votes) async {
     final db = await _dbHelper.getStateDb(dbName);
     await db.update(

@@ -4,16 +4,16 @@ import 'package:gerrymanderx/modules/elections/widgets/map/map_painters.dart';
 import 'package:gerrymanderx/providers/map_data_store.dart';
 
 /// The comparison fill modes rest on two pieces of arithmetic: reducing
-/// another election's database to per-region party shares, and turning a swing
+/// another election's database to per-region party totals, and turning a swing
 /// into a colour.
 void main() {
-  group('sharesByRegionName', () {
+  group('votesByRegionName', () {
     // Two counties, two precincts each. Candidate a1/a2 are one party, b1 the
     // other, and z belongs to no party in the manifest.
     const partyOf = {'a1': 'DEM', 'a2': 'DEM', 'b1': 'REP'};
 
     test('sums a region\'s precincts and divides by its total votes', () {
-      final shares = MapDataStore.sharesByRegionName(
+      final regions = MapDataStore.votesByRegionName(
         {1: 'Anderson', 2: 'Andrews'},
         {
           1: [10, 11],
@@ -27,13 +27,13 @@ void main() {
         partyOf,
       );
 
-      expect(shares['anderson']!['DEM'], closeTo(40 / 100, 1e-9));
-      expect(shares['anderson']!['REP'], closeTo(60 / 100, 1e-9));
-      expect(shares['andrews']!['DEM'], closeTo(0.25, 1e-9));
+      expect(regions['anderson']!.shareOf('DEM'), closeTo(40 / 100, 1e-9));
+      expect(regions['anderson']!.shareOf('REP'), closeTo(60 / 100, 1e-9));
+      expect(regions['andrews']!.shareOf('DEM'), closeTo(0.25, 1e-9));
     });
 
     test('counts unaffiliated votes in the denominator only', () {
-      final shares = MapDataStore.sharesByRegionName(
+      final regions = MapDataStore.votesByRegionName(
         {1: 'Anderson'},
         {
           1: [10],
@@ -44,12 +44,12 @@ void main() {
         partyOf,
       );
 
-      expect(shares['anderson']!['DEM'], closeTo(0.4, 1e-9));
-      expect(shares['anderson']!.containsKey('z'), isFalse);
+      expect(regions['anderson']!.shareOf('DEM'), closeTo(0.4, 1e-9));
+      expect(regions['anderson']!.votesByParty.containsKey('z'), isFalse);
     });
 
     test('matches region names case- and padding-insensitively', () {
-      final shares = MapDataStore.sharesByRegionName(
+      final regions = MapDataStore.votesByRegionName(
         {1: '  Anderson '},
         {
           1: [10],
@@ -60,12 +60,12 @@ void main() {
         partyOf,
       );
 
-      expect(shares.keys, ['anderson']);
+      expect(regions.keys, ['anderson']);
       expect(MapDataStore.normalizeRegionName(' ANDERSON '), 'anderson');
     });
 
     test('merges regions that share a name instead of dropping one', () {
-      final shares = MapDataStore.sharesByRegionName(
+      final regions = MapDataStore.votesByRegionName(
         {1: 'Anderson', 2: 'anderson'},
         {
           1: [10],
@@ -78,12 +78,12 @@ void main() {
         partyOf,
       );
 
-      expect(shares['anderson']!['DEM'], closeTo(0.5, 1e-9));
-      expect(shares['anderson']!['REP'], closeTo(0.5, 1e-9));
+      expect(regions['anderson']!.shareOf('DEM'), closeTo(0.5, 1e-9));
+      expect(regions['anderson']!.shareOf('REP'), closeTo(0.5, 1e-9));
     });
 
     test('skips regions with no votes rather than dividing by zero', () {
-      final shares = MapDataStore.sharesByRegionName(
+      final regions = MapDataStore.votesByRegionName(
         {1: 'Empty'},
         {
           1: [10],
@@ -92,7 +92,52 @@ void main() {
         partyOf,
       );
 
-      expect(shares, isEmpty);
+      expect(regions, isEmpty);
+    });
+  });
+
+  group('votesByPrecinctId', () {
+    // Precincts are matched geometrically rather than by name, so their
+    // baseline totals stay keyed by id instead of going through region names.
+    const partyOf = {'a1': 'DEM', 'a2': 'DEM', 'b1': 'REP'};
+
+    test('divides each precinct by its own total', () {
+      final regions = MapDataStore.votesByPrecinctId(
+        {
+          10: {'a1': 30, 'a2': 10, 'b1': 60},
+          11: {'b1': 100},
+        },
+        partyOf,
+      );
+
+      expect(regions[10]!.shareOf('DEM'), closeTo(0.4, 1e-9));
+      expect(regions[10]!.shareOf('REP'), closeTo(0.6, 1e-9));
+      expect(regions[11]!.shareOf('REP'), closeTo(1.0, 1e-9));
+      expect(regions[11]!.votesByParty.containsKey('DEM'), isFalse);
+    });
+
+    test('counts unaffiliated votes in the denominator only', () {
+      final regions = MapDataStore.votesByPrecinctId(
+        {
+          10: {'a1': 40, 'b1': 40, 'z': 20},
+        },
+        partyOf,
+      );
+
+      expect(regions[10]!.shareOf('DEM'), closeTo(0.4, 1e-9));
+      expect(regions[10]!.votesByParty.containsKey('z'), isFalse);
+    });
+
+    test('skips precincts with no votes rather than dividing by zero', () {
+      final regions = MapDataStore.votesByPrecinctId(
+        {
+          10: {'a1': 0, 'b1': 0},
+          11: <String, int>{},
+        },
+        partyOf,
+      );
+
+      expect(regions, isEmpty);
     });
   });
 

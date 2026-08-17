@@ -166,7 +166,7 @@ class ElectionStore {
     try {
       final request = await client.getUrl(
         Uri.parse(
-          'https://public-assets.peipeixiong.cn/public/jagie/gerrymander/elections.json',
+          'https://files.xp-oncology.cn/gerrymander/elections.json',
         ),
       );
       final response = await request.close();

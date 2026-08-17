@@ -52,7 +52,7 @@ OFFICE = "President"
 OUTPUT_DIR = OUTPUT_ROOT / ELECTION_NAME
 NATIONAL_DB = OUTPUT_DIR / "National.db"
 DB_LIST = OUTPUT_ROOT / "dbs.json"
-CDN_BASE = "https://public-assets.peipeixiong.cn/public/jagie/gerrymander"
+CDN_BASE = "https://files.xp-oncology.cn/gerrymander"
 
 # Deterministic id namespace, shared with import_to_sqlite.py.  Never change
 # these strings: doing so invalidates every candidate_id already written into a

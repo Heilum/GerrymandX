@@ -313,7 +313,7 @@ class BaseMapPainter extends CustomPainter {
 
     final baselineA = dataStore.comparisonShareFor(
       layerType,
-      cell.name,
+      cell,
       spec.partyAName,
     );
     if (baselineA == null) return defaultCellColor;
@@ -336,7 +336,7 @@ class BaseMapPainter extends CustomPainter {
 
     final baselineB = dataStore.comparisonShareFor(
       layerType,
-      cell.name,
+      cell,
       partyBName,
     );
     if (baselineB == null) return defaultCellColor;
