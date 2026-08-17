@@ -29,6 +29,16 @@ class DatabaseHelper {
     return appPath;
   }
 
+  /// The app's own store for user-made custom layers. Lives next to (not
+  /// inside) the election databases folder, so re-downloading or clearing
+  /// elections never touches it.
+  Future<String> get customLayerDbPath async {
+    final appDocDir = await getApplicationDocumentsDirectory();
+    final dir = Directory(join(appDocDir.path, 'GerrymanderX'));
+    await dir.create(recursive: true);
+    return join(dir.path, 'custom_layers.db');
+  }
+
   /// Clears sandbox databases directory.
   Future<void> clearSandboxData() async {
     final dir = await _dbDir;

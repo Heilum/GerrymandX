@@ -77,20 +77,28 @@ class MapStateStore {
     comparisonPartyBId.value = null;
   }
 
-  /// Granularity order: finest first.
+  /// Granularity order: finest first. Group cells sit between precincts and
+  /// counties — they are built from precincts and are usually smaller than
+  /// the regions they are carved out of.
   static const _granularityOrder = [
     LayerType.precinct,
+    LayerType.custom,
     LayerType.county,
     LayerType.congressionalDistrict,
     LayerType.state,
   ];
 
   void toggleLayerVisibility(LayerType type) {
+    setLayerVisible(type, !visibleLayers.value.contains(type));
+  }
+
+  void setLayerVisible(LayerType type, bool visible) {
     final layers = List<LayerType>.from(visibleLayers.value);
-    if (layers.contains(type)) {
-      layers.remove(type);
-    } else {
+    if (layers.contains(type) == visible) return;
+    if (visible) {
       layers.add(type);
+    } else {
+      layers.remove(type);
     }
     visibleLayers.value = layers;
     _autoSelectFinestInteractiveLayer();

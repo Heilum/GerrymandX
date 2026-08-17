@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math' as math;
 import 'dart:ui' as ui;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +10,7 @@ import 'package:gerrymanderx/providers/map_state_store.dart';
 import 'package:gerrymanderx/providers/map_data_store.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/map_painters.dart';
+import 'package:gerrymanderx/modules/elections/widgets/map/map_zoom.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/spatial_index.dart';
 
 
@@ -157,10 +157,13 @@ class _MapCanvasState extends State<_MapCanvas> {
   void _rebuildSpatialIndex(LayerType layer) {
     final bounds = _dataStore.overallBounds.value;
     if (bounds == null) return;
-    _spatialIndex = SpatialIndex.build(_getInteractiveCells(layer), bounds);
+    _spatialIndex = SpatialIndex.build(_hitTestCells(layer), bounds);
   }
 
-  List<RenderableCell> _getInteractiveCells(LayerType layer) {
+  /// Cells the spatial index is built over. Group cells are hit-tested
+  /// through their precincts: a group's fill path can run to a million
+  /// vertices, and the precinct index already exists.
+  List<RenderableCell> _hitTestCells(LayerType layer) {
     switch (layer) {
       case LayerType.state:
         return _dataStore.states.value;
@@ -169,6 +172,7 @@ class _MapCanvasState extends State<_MapCanvas> {
       case LayerType.congressionalDistrict:
         return _dataStore.congressionalDistricts.value;
       case LayerType.precinct:
+      case LayerType.custom:
         return _dataStore.precincts.value;
     }
   }
@@ -187,9 +191,14 @@ class _MapCanvasState extends State<_MapCanvas> {
     final mapT = MapTransform.fit(bounds, _canvasSize);
     final geoPoint = mapT.toGeo(canvasLocal);
 
-    final cells = _getInteractiveCells(layer);
+    final cells = _hitTestCells(layer);
     final idx = _spatialIndex!.hitTest(geoPoint, cells);
-    return idx >= 0 ? cells[idx].cell.id : null;
+    if (idx < 0) return null;
+    final id = cells[idx].cell.id;
+    if (layer == LayerType.custom) {
+      return _dataStore.customGroupOfPrecinct.value[id];
+    }
+    return id;
   }
 
   void _onHover(Offset localPos, LayerType layer) {
@@ -210,15 +219,6 @@ class _MapCanvasState extends State<_MapCanvas> {
     _mapStore.selectedCellId.value = id;
   }
 
-
-  /// Stroke widths are divided by `mapScale * interactiveScale` when recorded,
-  /// so the recording has to know the zoom level or borders scale up with the
-  /// InteractiveViewer transform. Bucketing to powers of two keeps the number
-  /// of re-records small — at most one per doubling.
-  static double _zoomBucketFor(double scale) {
-    if (!scale.isFinite || scale <= 1.0) return 1.0;
-    return math.pow(2, (math.log(scale) / math.ln2).round()).toDouble();
-  }
 
   /// Null unless a comparison fill mode is active *and* fully configured; the
   /// painter then falls back to neutral fills while the notice explains why.
@@ -283,6 +283,7 @@ class _MapCanvasState extends State<_MapCanvas> {
     String? singleCandidateId,
     ComparisonSpec? comparisonSpec,
     int dataVersion,
+    int customVersion,
     double zoomBucket,
   ) {
     bool compositeNeeded = false;
@@ -295,6 +296,8 @@ class _MapCanvasState extends State<_MapCanvas> {
           singleCandidateId: singleCandidateId,
           comparisonSpec: comparisonSpec,
           dataVersion: dataVersion,
+          // Only the custom layer's recording depends on the group geometry.
+          customVersion: layer == LayerType.custom ? customVersion : 0,
           zoomBucket: zoomBucket);
       final existingKey = _layerCacheKeys[layer];
 
@@ -335,6 +338,7 @@ class _MapCanvasState extends State<_MapCanvas> {
       LayerType.county,
       LayerType.congressionalDistrict,
       LayerType.precinct,
+      LayerType.custom,
     ];
     
     // First Pass: Draw all fills
@@ -358,26 +362,7 @@ class _MapCanvasState extends State<_MapCanvas> {
   /// Handle scroll-wheel zoom on macOS.
   void _onPointerSignal(PointerSignalEvent event) {
     if (event is PointerScrollEvent) {
-      final direction = event.scrollDelta.dy > 0 ? -1.0 : 1.0;
-      const zoomFactor = 0.1;
-      final currentScale =
-          _transformController.value.getMaxScaleOnAxis();
-      final newScale =
-          (currentScale * (1.0 + direction * zoomFactor)).clamp(0.5, 30.0);
-      final scaleDelta = newScale / currentScale;
-
-      // Scale centered on pointer position.
-      final focalPoint = event.localPosition;
-      final matrix = _transformController.value.clone();
-      final focalInChild = matrix.clone()..invert();
-      final focalLocal =
-          MatrixUtils.transformPoint(focalInChild, focalPoint);
-
-      matrix.translate(focalLocal.dx, focalLocal.dy);
-      matrix.scale(scaleDelta, scaleDelta);
-      matrix.translate(-focalLocal.dx, -focalLocal.dy);
-
-      _transformController.value = matrix;
+      MapZoom.applyScroll(_transformController, event);
     }
   }
 
@@ -407,12 +392,14 @@ class _MapCanvasState extends State<_MapCanvas> {
       final comparisonSpec = _buildComparisonSpec();
       final interactiveLayer = _mapStore.interactiveLayer.value;
       final dataVersion = _dataStore.dataVersion.value;
+      final customVersion = _dataStore.customVersion.value;
       // Read cellIndex for O(1) lookup in overlay painter. Hover/selection ids
       // always come from the interactive layer, so only that layer's map is
       // needed — ids are not unique across layers.
       final cellIdx = _dataStore.cellIndex.value;
-      final interactiveCells =
-          cellIdx[interactiveLayer] ?? const <int, RenderableCell>{};
+      final interactiveCells = interactiveLayer == LayerType.custom
+          ? _dataStore.customCellIndex.value
+          : cellIdx[interactiveLayer] ?? const <int, RenderableCell>{};
 
       // Detect interactive layer or data changes → rebuild spatial index.
       final dataChanged = !identical(_lastCellIndex, cellIdx);
@@ -459,7 +446,8 @@ class _MapCanvasState extends State<_MapCanvas> {
 
           // P3: Per-layer Picture cache.
           _ensurePicture(_canvasSize, layers, fillMode, singleCandidateId,
-              comparisonSpec, dataVersion, _zoomBucketFor(_currentZoomScale));
+              comparisonSpec, dataVersion, customVersion,
+              MapZoom.bucketFor(_currentZoomScale));
 
           return Container(
             color: const Color(0xFF1A1A2E),
@@ -477,8 +465,8 @@ class _MapCanvasState extends State<_MapCanvas> {
                       _onTap(details.localPosition, interactiveLayer),
                   child: InteractiveViewer(
                     transformationController: _transformController,
-                    minScale: 0.5,
-                    maxScale: 30.0,
+                    minScale: MapZoom.minScale,
+                    maxScale: MapZoom.maxScale,
                     boundaryMargin: const EdgeInsets.all(double.infinity),
                     panEnabled: true,
                     scaleEnabled: true,
@@ -566,6 +554,9 @@ class _LayerCacheKey {
   /// leaving the previous selection's geometry on screen.
   final int dataVersion;
 
+  /// Group-cell geometry of the active custom layer (0 for other layers).
+  final int customVersion;
+
   /// Border stroke widths are baked in at record time, so a change of zoom
   /// bucket has to invalidate the recording.
   final double zoomBucket;
@@ -576,6 +567,7 @@ class _LayerCacheKey {
     required this.singleCandidateId,
     required this.comparisonSpec,
     required this.dataVersion,
+    required this.customVersion,
     required this.zoomBucket,
   });
 
@@ -588,11 +580,12 @@ class _LayerCacheKey {
           singleCandidateId == other.singleCandidateId &&
           comparisonSpec == other.comparisonSpec &&
           dataVersion == other.dataVersion &&
+          customVersion == other.customVersion &&
           zoomBucket == other.zoomBucket;
 
   @override
   int get hashCode => Object.hash(size, fillMode, singleCandidateId,
-      comparisonSpec, dataVersion, zoomBucket);
+      comparisonSpec, dataVersion, customVersion, zoomBucket);
 }
 
 bool _listEq<T>(List<T> a, List<T> b) {

@@ -1,14 +1,18 @@
+import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:flutter/painting.dart';
+import 'package:gerrymanderx/models/custom_layer.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
 import 'package:gerrymanderx/models/election_metadata.dart';
 import 'package:gerrymanderx/models/election_sub_item.dart';
 import 'package:gerrymanderx/repositories/election_repository.dart';
 import 'package:gerrymanderx/core/utils/geojson_parser.dart';
+import 'package:gerrymanderx/core/utils/region_outline.dart';
 import 'package:gerrymanderx/core/database/database_helper.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/spatial_index.dart';
+import 'package:gerrymanderx/providers/custom_layer_store.dart';
 import 'package:gerrymanderx/providers/election_store.dart';
 import 'package:gerrymanderx/providers/map_state_store.dart';
 
@@ -60,9 +64,35 @@ class RegionPartyVotes {
       totalVotes > 0 ? (votesByParty[partyName] ?? 0) / totalVotes : 0.0;
 }
 
+/// How a group cell decomposes into the built-in regions: the counties and
+/// districts it holds in full, and the precincts left over.
+class GroupComposition {
+  final List<GeoCell> wholeCounties;
+  final List<GeoCell> wholeDistricts;
+
+  /// Member precincts not covered by any whole county or whole district.
+  final int remainingPrecincts;
+  final int totalPrecincts;
+
+  const GroupComposition({
+    required this.wholeCounties,
+    required this.wholeDistricts,
+    required this.remainingPrecincts,
+    required this.totalPrecincts,
+  });
+
+  static const empty = GroupComposition(
+    wholeCounties: [],
+    wholeDistricts: [],
+    remainingPrecincts: 0,
+    totalPrecincts: 0,
+  );
+}
+
 class MapDataStore {
   final ElectionStore electionStore;
   final MapStateStore mapStateStore;
+  final CustomLayerStore? customLayerStore;
   final ElectionRepository _repo = ElectionRepository();
   final DatabaseHelper _dbHelper = DatabaseHelper.instance;
 
@@ -77,7 +107,39 @@ class MapDataStore {
   /// unique within a layer — never flatten this into a single map.
   final cellIndex = Signal<Map<LayerType, Map<int, RenderableCell>>>({});
 
-  RenderableCell? cellAt(LayerType layer, int id) => cellIndex.value[layer]?[id];
+  RenderableCell? cellAt(LayerType layer, int id) => layer == LayerType.custom
+      ? customCellIndex.value[id]
+      : cellIndex.value[layer]?[id];
+
+  // ── Custom layer (group cells of the active CustomLayer) ──
+  //
+  // Kept apart from [cellIndex]: replacing that signal is what tells the map
+  // a new state was loaded (and resets pan/zoom), which an edit to a group
+  // must not do.
+
+  /// One renderable per group cell of the active custom layer.
+  final customCells = ListSignal<RenderableCell>([]);
+  final customCellIndex = Signal<Map<int, RenderableCell>>({});
+
+  /// {groupId: [precinctId, ...]} — same role as [countyPrecincts].
+  final customPrecincts = Signal<Map<int, List<int>>>({});
+  final customGroupColors = Signal<Map<int, Color>>({});
+
+  /// {precinctId: groupId} for the active custom layer.
+  final customGroupOfPrecinct = Signal<Map<int, int>>({});
+
+  /// Bumped whenever the custom renderables are rebuilt, for painter caches
+  /// and spatial indexes.
+  final customVersion = Signal<int>(0);
+
+  Timer? _customRebuildTimer;
+
+  /// Geometry cache per group: rebuilding a group's outline costs a pass over
+  /// its precinct vertices, so groups whose precinct set did not change reuse
+  /// their previous renderable.
+  final Map<int, ({Set<int> precinctIds, String title, RenderableCell cell})>
+      _groupCellCache = {};
+  int _groupCellCacheVersion = -1;
 
   /// Combined bounding box of all loaded geometries.
   final overallBounds = Signal<Rect?>(null);
@@ -155,7 +217,7 @@ class MapDataStore {
   /// no comparison is active.
   String? _lastComparisonKey;
 
-  MapDataStore(this.electionStore, this.mapStateStore) {
+  MapDataStore(this.electionStore, this.mapStateStore, {this.customLayerStore}) {
     effect(() {
       final folder = electionStore.selectedElectionFolder.value;
       final subItem = electionStore.selectedSubItem.value;
@@ -176,7 +238,182 @@ class MapDataStore {
         dbName: electionStore.selectedSubItem.value?.dbName,
       );
     });
+
+    final layerStore = customLayerStore;
+    if (layerStore != null) {
+      effect(() {
+        // Subscribe to the active layer (any edit replaces it) and to the
+        // loaded geometry; the rebuild itself is debounced so a burst of
+        // clicks in the editor costs one outline pass, not one per click.
+        layerStore.activeLayer.value;
+        dataVersion.value;
+        _customRebuildTimer?.cancel();
+        _customRebuildTimer = Timer(
+          const Duration(milliseconds: 120),
+          _rebuildCustomCells,
+        );
+      });
+    }
   }
+
+  // ── Custom layer renderables ──
+
+  void _rebuildCustomCells() {
+    final layer = customLayerStore?.activeLayer.peek();
+    final precinctIdx = cellIndex.peek()[LayerType.precinct];
+    final version = dataVersion.peek();
+
+    if (_groupCellCacheVersion != version) {
+      _groupCellCache.clear();
+      _groupCellCacheVersion = version;
+    }
+
+    if (layer == null || precinctIdx == null || precinctIdx.isEmpty) {
+      _groupCellCache.clear();
+      if (customCells.peek().isEmpty && customPrecincts.peek().isEmpty) return;
+      batch(() {
+        customCells.value = [];
+        customCellIndex.value = {};
+        customPrecincts.value = {};
+        customGroupColors.value = {};
+        customGroupOfPrecinct.value = {};
+        customVersion.value = customVersion.peek() + 1;
+      });
+      return;
+    }
+
+    final cells = <RenderableCell>[];
+    final index = <int, RenderableCell>{};
+    final byGroup = <int, List<int>>{};
+    final colors = <int, Color>{};
+    final ofPrecinct = <int, int>{};
+    final liveIds = <int>{};
+
+    for (final group in layer.groups) {
+      liveIds.add(group.id);
+      colors[group.id] = group.color;
+      byGroup[group.id] = group.precinctIds.toList();
+      for (final p in group.precinctIds) {
+        ofPrecinct[p] = group.id;
+      }
+
+      final cached = _groupCellCache[group.id];
+      RenderableCell cell;
+      if (cached != null &&
+          identical(cached.precinctIds, group.precinctIds) &&
+          cached.title == group.title) {
+        cell = cached.cell;
+      } else {
+        cell = _buildGroupCell(group, precinctIdx);
+        _groupCellCache[group.id] = (
+          precinctIds: group.precinctIds,
+          title: group.title,
+          cell: cell,
+        );
+      }
+      cells.add(cell);
+      index[group.id] = cell;
+    }
+    _groupCellCache.removeWhere((id, _) => !liveIds.contains(id));
+
+    batch(() {
+      customCells.value = cells;
+      customCellIndex.value = index;
+      customPrecincts.value = byGroup;
+      customGroupColors.value = colors;
+      customGroupOfPrecinct.value = ofPrecinct;
+      customVersion.value = customVersion.peek() + 1;
+    });
+  }
+
+  /// A group's fill is simply all of its precinct paths; its border is the
+  /// outline those precincts form together (see [RegionOutline]).
+  RenderableCell _buildGroupCell(
+    GroupCell group,
+    Map<int, RenderableCell> precinctIdx,
+  ) {
+    final fill = Path()..fillType = PathFillType.evenOdd;
+    final coords = <GeoCoordData>[];
+    Rect? bounds;
+    var population = 0;
+
+    for (final id in group.precinctIds) {
+      final rc = precinctIdx[id];
+      if (rc == null) continue;
+      fill.addPath(rc.path, Offset.zero);
+      bounds = bounds == null ? rc.bounds : bounds.expandToInclude(rc.bounds);
+      population += rc.cell.population;
+      final wkb = rc.cell.boundaryWkb;
+      if (wkb != null) coords.add(GeometryParser.parseWkbToCoords(wkb));
+    }
+
+    return RenderableCell(
+      cell: GeoCell(
+        id: group.id,
+        name: group.title,
+        layerType: LayerType.custom,
+        population: population,
+      ),
+      path: fill,
+      exteriorPath: RegionOutline.outlineOf(coords),
+      bounds: bounds ?? Rect.zero,
+    );
+  }
+
+  /// Precincts of a cell in any built-in state layer (a precinct is its own
+  /// single member), for adding a whole county/district to a group at once.
+  List<int> precinctIdsOfCell(LayerType layer, int cellId) {
+    switch (layer) {
+      case LayerType.precinct:
+        return cellIndex.value[LayerType.precinct]?.containsKey(cellId) == true
+            ? [cellId]
+            : const [];
+      case LayerType.county:
+        return countyPrecincts.value[cellId] ?? const [];
+      case LayerType.congressionalDistrict:
+        return cdPrecincts.value[cellId] ?? const [];
+      case LayerType.custom:
+        return customPrecincts.value[cellId] ?? const [];
+      case LayerType.state:
+        return precinctVotes.value.keys.toList();
+    }
+  }
+
+  /// Which whole counties / districts a precinct set contains, and how many
+  /// precincts are left over once those are taken out.
+  GroupComposition compositionOf(Set<int> precinctIds) {
+    if (precinctIds.isEmpty) return GroupComposition.empty;
+    final covered = <int>{};
+
+    List<GeoCell> whole(LayerType layer, Map<int, List<int>> membership) {
+      final cells = cellIndex.value[layer] ?? const <int, RenderableCell>{};
+      final result = <GeoCell>[];
+      membership.forEach((regionId, members) {
+        if (members.isEmpty || !members.every(precinctIds.contains)) return;
+        final cell = cells[regionId]?.cell;
+        if (cell == null) return;
+        result.add(cell);
+        covered.addAll(members);
+      });
+      result.sort((a, b) => a.name.compareTo(b.name));
+      return result;
+    }
+
+    final wholeCounties = whole(LayerType.county, countyPrecincts.value);
+    final wholeDistricts =
+        whole(LayerType.congressionalDistrict, cdPrecincts.value);
+    return GroupComposition(
+      wholeCounties: wholeCounties,
+      wholeDistricts: wholeDistricts,
+      remainingPrecincts: precinctIds.difference(covered).length,
+      totalPrecincts: precinctIds.length,
+    );
+  }
+
+  /// Sums the current election's votes over an arbitrary precinct set. Used by
+  /// the editor, whose group under construction is not a loaded cell yet.
+  PrecinctVoteSummary? aggregateVotesForPrecincts(Iterable<int> precinctIds) =>
+      _aggregate(precinctIds);
 
   /// (Re)loads the comparison data for the current selection.
   ///
@@ -444,10 +681,41 @@ class MapDataStore {
   ///
   /// Counties and districts join by name; precincts join by geometry, so they
   /// are looked up by the current election's own precinct id.
-  RegionPartyVotes? comparisonVotesFor(LayerType layer, GeoCell cell) =>
-      layer == LayerType.precinct
-          ? comparisonPrecinctVotes.value[cell.id]
-          : comparisonRegionVotes.value[layer]?[normalizeRegionName(cell.name)];
+  RegionPartyVotes? comparisonVotesFor(LayerType layer, GeoCell cell) {
+    switch (layer) {
+      case LayerType.precinct:
+        return comparisonPrecinctVotes.value[cell.id];
+      case LayerType.custom:
+        // Group cells have no counterpart region; sum their precincts'
+        // geometric matches instead.
+        return comparisonVotesForPrecincts(
+          customPrecincts.value[cell.id] ?? const [],
+        );
+      case LayerType.state:
+      case LayerType.county:
+      case LayerType.congressionalDistrict:
+        return comparisonRegionVotes.value[layer]
+            ?[normalizeRegionName(cell.name)];
+    }
+  }
+
+  /// Comparison-election party totals summed over a precinct set; null when
+  /// none of the precincts has a counterpart.
+  RegionPartyVotes? comparisonVotesForPrecincts(Iterable<int> precinctIds) {
+    final byPrecinct = comparisonPrecinctVotes.value;
+    var total = 0;
+    final byParty = <String, int>{};
+    for (final id in precinctIds) {
+      final v = byPrecinct[id];
+      if (v == null) continue;
+      total += v.totalVotes;
+      v.votesByParty.forEach((party, votes) {
+        byParty[party] = (byParty[party] ?? 0) + votes;
+      });
+    }
+    if (total <= 0) return null;
+    return RegionPartyVotes(totalVotes: total, votesByParty: byParty);
+  }
 
   /// Vote share of [partyName] in the comparison election for [cell]'s region,
   /// or null when that region has no counterpart there.
@@ -747,6 +1015,8 @@ class MapDataStore {
         precinctIds = countyPrecincts.value[regionId];
       case LayerType.congressionalDistrict:
         precinctIds = cdPrecincts.value[regionId];
+      case LayerType.custom:
+        precinctIds = customPrecincts.value[regionId];
       case LayerType.state:
         precinctIds = votes.keys.toList();
       case LayerType.precinct:
@@ -754,7 +1024,11 @@ class MapDataStore {
     }
 
     if (precinctIds == null || precinctIds.isEmpty) return null;
+    return _aggregate(precinctIds);
+  }
 
+  PrecinctVoteSummary? _aggregate(Iterable<int> precinctIds) {
+    final votes = precinctVotes.value;
     final aggregated = <String, int>{};
     int total = 0;
     int pop = 0;

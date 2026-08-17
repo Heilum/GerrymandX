@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gerrymanderx/modules/elections/widgets/custom_layer/custom_layer_controls.dart';
 import 'package:gerrymanderx/modules/elections/widgets/election_list_panel.dart';
 import 'package:gerrymanderx/modules/elections/widgets/fill_mode_controls.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map_view_panel.dart';
@@ -91,20 +92,30 @@ class _ElectionsTabState extends State<ElectionsTab> {
                       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     );
                   } else {
-                    final availableLayers = LayerType.values.where((l) => l != LayerType.state).toList();
-                    return Wrap(
-                      spacing: 4,
-                      runSpacing: 4,
-                      children: availableLayers.map((layer) {
-                        final isVisible = store.visibleLayers.value.contains(layer);
-                        return FilterChip(
-                          label: Text(layer.name, style: const TextStyle(fontSize: 11)),
-                          selected: isVisible,
-                          onSelected: (_) => store.toggleLayerVisibility(layer),
-                          visualDensity: VisualDensity.compact,
-                          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        );
-                      }).toList(),
+                    // The custom layer is picked from its own dropdown, not
+                    // toggled as a chip.
+                    final availableLayers = LayerType.values
+                        .where((l) => l.isBuiltInStateLayer)
+                        .toList();
+                    return Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Wrap(
+                          spacing: 4,
+                          runSpacing: 4,
+                          children: availableLayers.map((layer) {
+                            final isVisible = store.visibleLayers.value.contains(layer);
+                            return FilterChip(
+                              label: Text(layer.name, style: const TextStyle(fontSize: 11)),
+                              selected: isVisible,
+                              onSelected: (_) => store.toggleLayerVisibility(layer),
+                              visualDensity: VisualDensity.compact,
+                              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            );
+                          }).toList(),
+                        ),
+                        const CustomLayerControls(),
+                      ],
                     );
                   }
                 }),

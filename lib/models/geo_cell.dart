@@ -2,7 +2,26 @@
 
 import 'dart:typed_data';
 
-enum LayerType { state, county, congressionalDistrict, precinct }
+enum LayerType {
+  state,
+  county,
+  congressionalDistrict,
+  precinct,
+
+  /// A user-defined layer: its cells are group cells (sets of precincts) from
+  /// the currently active [CustomLayer]. Toggled through the custom-layer
+  /// picker rather than the layer chips.
+  custom,
+}
+
+extension LayerTypeInfo on LayerType {
+  /// The layers every state database carries, i.e. everything a user can pick
+  /// cells from when building a custom layer.
+  bool get isBuiltInStateLayer =>
+      this == LayerType.county ||
+      this == LayerType.congressionalDistrict ||
+      this == LayerType.precinct;
+}
 
 class GeoCell {
   final int id;

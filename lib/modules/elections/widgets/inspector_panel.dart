@@ -3,10 +3,11 @@ import 'package:provider/provider.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:gerrymanderx/modules/elections/comparison_selection.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/map_painters.dart';
+import 'package:gerrymanderx/modules/elections/widgets/vote_breakdown.dart';
+import 'package:gerrymanderx/providers/custom_layer_store.dart';
 import 'package:gerrymanderx/providers/election_store.dart';
 import 'package:gerrymanderx/providers/map_state_store.dart';
 import 'package:gerrymanderx/providers/map_data_store.dart';
-import 'package:gerrymanderx/models/election_metadata.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
 
 class InspectorPanel extends StatelessWidget {
@@ -59,9 +60,6 @@ class InspectorPanel extends StatelessWidget {
             }
 
             final cell = selectedCell.cell;
-            final partyMap = dataStore.candidatePartyMap.value;
-            final allCandidates = dataStore.candidates.value;
-            final allParties = dataStore.parties.value;
             final comparisonSpec = ComparisonSelection.resolve(
               electionStore: electionStore,
               mapStore: store,
@@ -79,16 +77,20 @@ class InspectorPanel extends StatelessWidget {
                 children: [
                   Text(cell.name, style: Theme.of(context).textTheme.titleLarge),
                   const SizedBox(height: 4),
-                  Text('${layer.name.toUpperCase()} #${cell.id}',
-                      style: Theme.of(context).textTheme.labelMedium),
+                  Text(
+                    layer == LayerType.custom
+                        ? 'GROUP CELL · ${context.read<CustomLayerStore>().activeLayer.value?.name ?? ''}'
+                        : '${layer.name.toUpperCase()} #${cell.id}',
+                    style: Theme.of(context).textTheme.labelMedium,
+                  ),
                   const SizedBox(height: 12),
                   if (voteSummary != null && voteSummary.population > 0) ...[
-                    _infoRow('Population', _formatNumber(voteSummary.population)),
+                    InfoRow('Population', formatNumber(voteSummary.population)),
                   ],
                   if (voteSummary != null) ...[
-                    _infoRow('Total Votes', _formatNumber(voteSummary.totalVotes)),
+                    InfoRow('Total Votes', formatNumber(voteSummary.totalVotes)),
                     if (voteSummary.population > 0)
-                      _infoRow('Turnout',
+                      InfoRow('Turnout',
                           '${(voteSummary.totalVotes / voteSummary.population * 100).toStringAsFixed(1)}%'),
                     const Divider(),
                   ],
@@ -106,27 +108,9 @@ class InspectorPanel extends StatelessWidget {
                       comparisonElection:
                           store.comparisonElectionFolder.value ?? '',
                     )
-                  else if (voteSummary != null) ...[
-                    Text('Votes by Candidate',
-                        style: Theme.of(context).textTheme.titleSmall),
-                    const SizedBox(height: 8),
-                    ...voteSummary.candidateVotes.entries.map((entry) {
-                      final candidate = allCandidates
-                          .where((c) => c.id == entry.key).firstOrNull;
-                      final party = allParties[partyMap[entry.key]];
-                      final isWinner = entry.key == voteSummary.winnerCandidateId;
-                      final share = voteSummary.totalVotes > 0
-                          ? (entry.value / voteSummary.totalVotes * 100)
-                          : 0.0;
-                      return _voteRow(
-                        candidateName: candidate?.name ?? 'Unknown',
-                        party: party,
-                        votes: entry.value,
-                        sharePercent: share,
-                        isWinner: isWinner,
-                      );
-                    }),
-                  ] else ...[
+                  else if (voteSummary != null)
+                    VotesByCandidate(summary: voteSummary)
+                  else ...[
                     const SizedBox(height: 8),
                     const Text(
                       'No vote data available',
@@ -139,71 +123,6 @@ class InspectorPanel extends StatelessWidget {
           }),
         ),
       ],
-    );
-  }
-
-  Widget _infoRow(String label, String value) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 2),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(label),
-          Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
-        ],
-      ),
-    );
-  }
-
-  Widget _voteRow({
-    required String candidateName,
-    required Party? party,
-    required int votes,
-    required double sharePercent,
-    required bool isWinner,
-  }) {
-    final color = party?.color ?? Colors.grey;
-    final partyLabel = party?.name ?? '?';
-
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Container(
-                width: 12, height: 12,
-                decoration: BoxDecoration(color: color, shape: BoxShape.circle),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  '$candidateName ($partyLabel)',
-                  style: TextStyle(
-                    fontWeight: isWinner ? FontWeight.bold : FontWeight.normal,
-                  ),
-                ),
-              ),
-              Text('$votes', style: const TextStyle(fontWeight: FontWeight.w600)),
-            ],
-          ),
-          const SizedBox(height: 2),
-          LinearProgressIndicator(
-            value: sharePercent / 100,
-            backgroundColor: Colors.white12,
-            valueColor: AlwaysStoppedAnimation<Color>(color),
-            minHeight: 4,
-          ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Text(
-              '${sharePercent.toStringAsFixed(1)}%',
-              style: const TextStyle(fontSize: 11, color: Colors.white54),
-            ),
-          ),
-        ],
-      ),
     );
   }
 }
@@ -380,7 +299,7 @@ class _ComparisonBreakdown extends StatelessWidget {
                 .textTheme
                 .titleSmall
                 ?.copyWith(fontWeight: FontWeight.bold)),
-        Text('$subtitle · ${_formatNumber(totalVotes)} votes',
+        Text('$subtitle · ${formatNumber(totalVotes)} votes',
             style: const TextStyle(fontSize: 11, color: Colors.white54)),
         const SizedBox(height: 6),
         ...partyNames.map((name) {
@@ -414,7 +333,7 @@ class _ComparisonBreakdown extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Text(_formatNumber(partyVotes),
+                    Text(formatNumber(partyVotes),
                         style: const TextStyle(fontWeight: FontWeight.w600)),
                     const SizedBox(width: 8),
                     SizedBox(
@@ -448,13 +367,3 @@ class _ComparisonBreakdown extends StatelessWidget {
 /// modes scale their colour by.
 String _formatDelta(double delta) =>
     '${delta >= 0 ? '+' : '−'}${(delta * 100).abs().toStringAsFixed(1)}%';
-
-String _formatNumber(int n) {
-  final s = n.toString();
-  final buf = StringBuffer();
-  for (int i = 0; i < s.length; i++) {
-    if (i > 0 && (s.length - i) % 3 == 0) buf.write(',');
-    buf.write(s[i]);
-  }
-  return buf.toString();
-}

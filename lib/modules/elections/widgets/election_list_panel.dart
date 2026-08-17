@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gerrymanderx/models/election_sub_item.dart';
 import 'package:gerrymanderx/models/remote_election_item.dart';
+import 'package:gerrymanderx/providers/custom_layer_store.dart';
 import 'package:gerrymanderx/providers/election_store.dart';
 import 'package:provider/provider.dart';
 import 'package:signals_flutter/signals_flutter.dart';
@@ -118,7 +119,10 @@ class ElectionListPanel extends StatelessWidget {
                 ),
               );
 
-              if (confirm == true) {
+              if (confirm == true && context.mounted) {
+                // Custom layers are built on this election's precinct ids and
+                // die with it.
+                await context.read<CustomLayerStore>().deleteLayersOfElection(folder);
                 await store.deleteLocalElection(folder);
               }
             }
@@ -156,6 +160,7 @@ class ElectionListPanel extends StatelessWidget {
                 );
 
                 if (confirm == true && context.mounted) {
+                  await context.read<CustomLayerStore>().deleteLayersOfElection(folder);
                   await store.deleteLocalElection(folder);
                 }
               },

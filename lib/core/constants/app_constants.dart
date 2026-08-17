@@ -21,6 +21,14 @@ class AppConstants {
   static const double countyBorderThickness = 1.5;
   static const double precinctBorderThickness = 0.5;
 
-  // URLs
-  static const String feedbackEmail = 'mailto:chencwf@gmail.com';
+  // App identity
+  static const String appName = 'GerrymanderX';
+
+  // URLs / contact
+  static const String supportEmail = 'chencwf@gmail.com';
+  static const String privacyPolicyUrl =
+      'https://xp-oncology.cn/pp_gerrymanderx.html';
+
+  // Help
+  static const String helpAssetPath = 'assets/help/help.md';
 }

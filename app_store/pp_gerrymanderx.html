@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - GerrymanderX</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 760px; margin: 0 auto; padding: 40px 24px; color: #1c1c1e; line-height: 1.6; }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.2em; margin-top: 2em; }
+  .last-updated { color: #6e6e73; font-size: 0.9em; }
+  a { color: #1a6b5a; }
+  code { background: #f2f2f7; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy for GerrymanderX</h1>
+<p class="last-updated">Last Updated: August 17, 2026</p>
+
+<h2>1. Introduction</h2>
+<p>GerrymanderX ("the App") is a precinct-level election atlas for macOS developed by com.swordfish. It lets you download public U.S. election result databases, explore them on a map, compare elections, and draw your own groupings of precincts. This policy explains what data the App handles and — more importantly — what it does not. The short version: the App collects nothing about you, and everything you download or create stays on your Mac.</p>
+
+<h2>2. Data We Collect</h2>
+<p>None. The App collects no personal information, no usage analytics, no crash reports, no location data and no identifiers. It requires no account or login, and it contains no advertising or third-party tracking SDKs.</p>
+
+<h2>3. Network Activity</h2>
+<p>The App's only network activity is downloading public election data from a content delivery server operated on our behalf:</p>
+<ul>
+  <li><strong>The election list</strong> — a small manifest describing which elections and states are available for download.</li>
+  <li><strong>Election databases</strong> — one database per election and state, downloaded only when you explicitly click <em>Download</em> or <em>Download All</em>. Interrupted downloads may be resumed automatically the next time you open the Remote list.</li>
+</ul>
+<p>These are plain file downloads. The requests carry no account, identifier or user-generated data; the hosting provider sees only the standard network metadata any download discloses (such as your IP address and the requested file). Nothing is ever uploaded from the App.</p>
+
+<h2>4. What Is Stored on Your Device</h2>
+<p>The App stores the following, entirely on your Mac, inside <code>~/Documents/GerrymanderX/</code>:</p>
+<ul>
+  <li><strong>Downloaded election databases</strong> and their accompanying metadata (candidate and party lists). These contain public election results and boundary geometry only.</li>
+  <li><strong>Your custom layers</strong> — the layer names, group names, colours and the sets of precincts you assign to each group, kept in a local SQLite database. These are your own creations and exist nowhere else.</li>
+  <li><strong>Preferences</strong> — currently your theme choice (System, Light or Dark).</li>
+</ul>
+<p>You can delete any downloaded election or custom layer from within the App; deleting an election also deletes the custom layers that depend on it. Removing the <code>~/Documents/GerrymanderX/</code> folder removes everything the App has stored.</p>
+
+<h2>5. Data Sources</h2>
+<p>The election data the App offers for download is compiled from public sources: precinct results and boundaries published by the Voting and Election Science Team (VEST) via the Redistricting Data Hub and by the MIT Election Data + Science Lab (MEDSL), and state, county and congressional-district boundaries from the U.S. Census Bureau. This data describes aggregate election results by geographic area and contains no information about individual voters.</p>
+
+<h2>6. Links You Open</h2>
+<p>The App may open this policy in your browser, and the Feedback action opens your email client with our support address and the App version pre-filled — nothing is sent until you send it yourself. Those sites and apps are governed by their own policies.</p>
+
+<h2>7. Third-Party Components</h2>
+<p>The App is built with open-source software (Flutter and SQLite, among others). These components run locally and do not transmit data.</p>
+
+<h2>8. Children</h2>
+<p>The App does not target children and collects no data from anyone, including children.</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>If the App's behavior ever changes in a way that affects privacy, this policy will be updated and the "Last Updated" date revised before the change ships.</p>
+
+<h2>10. Contact Us</h2>
+<p>Questions about this policy: <a href="mailto:chencwf@gmail.com">chencwf@gmail.com</a></p>
+</body>
+</html>

@@ -187,9 +187,23 @@ class BaseMapPainter extends CustomPainter {
         t,
       );
     }
+    if (visibleLayers.contains(LayerType.custom)) {
+      _drawLayer(
+        canvas,
+        dataStore.customCells.value,
+        LayerType.custom,
+        t.scale,
+        size,
+        t,
+      );
+    }
 
     canvas.restore();
   }
+
+  /// Group cells are outlined in their own colour, thick enough to read over
+  /// the county/district borders they usually cross.
+  static const customBorderThickness = 1.5;
 
   void _drawLayer(
     Canvas canvas,
@@ -214,12 +228,18 @@ class BaseMapPainter extends CustomPainter {
       case LayerType.precinct:
         borderThickness = 0.25;
         borderColor = _hasLightFills ? Colors.grey[800]! : Colors.white24;
+      case LayerType.custom:
+        borderThickness = customBorderThickness;
+        borderColor = Colors.white; // replaced per cell below
     }
 
     final borderPaint = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = borderThickness / (mapScale * interactiveScale)
       ..color = borderColor;
+    final groupColors = layerType == LayerType.custom
+        ? dataStore.customGroupColors.value
+        : const <int, Color>{};
 
     final fillPaint = Paint()..style = PaintingStyle.fill;
 
@@ -252,6 +272,7 @@ class BaseMapPainter extends CustomPainter {
               case LayerType.congressionalDistrict:
                 basePixelRadius = summary.winnerVotes * 0.00005;
               case LayerType.county:
+              case LayerType.custom:
                 basePixelRadius = summary.winnerVotes * 0.0001;
               case LayerType.precinct:
                 basePixelRadius = summary.winnerVotes * 0.003;
@@ -279,6 +300,9 @@ class BaseMapPainter extends CustomPainter {
         }
       }
       if (drawBorder) {
+        if (layerType == LayerType.custom) {
+          borderPaint.color = groupColors[rCell.cell.id] ?? Colors.white;
+        }
         canvas.drawPath(rCell.exteriorPath, borderPaint);
       }
     }
