@@ -47,6 +47,20 @@ class PrecinctVoteSummary {
   });
 }
 
+/// A comparison-election precinct reduced to what re-aggregation needs: where
+/// it is, and how it voted.
+///
+/// Kept for as long as a comparison is active so that user-defined groups can
+/// be re-aggregated as they are edited, without holding on to the geometry
+/// those points came from.
+class BaselinePoint {
+  /// Centre in the geometry's own coordinates (longitude, -latitude).
+  final Offset centre;
+  final RegionPartyVotes votes;
+
+  const BaselinePoint(this.centre, this.votes);
+}
+
 /// Party-level totals for one region of the comparison election.
 ///
 /// Only party aggregates are kept: the other election's candidates are
@@ -182,21 +196,23 @@ class MapDataStore {
 
   // ── Cross-election comparison (FillMode.singlePartyComparison / twoPartyComparison) ──
 
-  /// County and congressional-district party totals in the comparison
-  /// election, keyed by layer and by the region's normalised name.
+  /// The comparison election's votes re-aggregated onto the **current** map's
+  /// counties and districts, keyed by layer and by the current region's id.
   ///
-  /// Region ids are assigned per election and do not line up across them, so
-  /// the name is the only stable join key at these levels.
+  /// Regions are never joined by name or id across elections: ids are minted
+  /// per election, and a name can denote different ground — Texas redrew every
+  /// congressional district after the 2020 census, so its "District 13" covers
+  /// different counties in each election. Instead the other election's
+  /// precinct votes are summed into whichever current region contains them,
+  /// which answers "how would that election have gone under this map".
   final comparisonRegionVotes =
-      Signal<Map<LayerType, Map<String, RegionPartyVotes>>>({});
+      Signal<Map<LayerType, Map<int, RegionPartyVotes>>>({});
 
   /// Comparison-election party totals for the **current** election's
   /// precincts, keyed by current precinct id.
   ///
-  /// Precincts get no name join at all — the numbering schemes are unrelated
-  /// (2020 VEST publishes VTD codes like `1131104`, 2024 uses `001-0001`) and
-  /// the boundaries are redrawn between elections. They are matched
-  /// geometrically instead, in [_matchPrecinctsToComparison].
+  /// Precincts are matched the other way round — see
+  /// [_matchPrecinctsToComparison].
   final comparisonPrecinctVotes = Signal<Map<int, RegionPartyVotes>>({});
 
   final isLoadingComparison = Signal<bool>(false);
@@ -216,6 +232,11 @@ class MapDataStore {
   /// `<comparisonElection>/<stateDb>` currently loaded (or loading), null when
   /// no comparison is active.
   String? _lastComparisonKey;
+
+  /// The comparison election's precincts as points, kept for the lifetime of
+  /// the comparison so that edited groups can be re-aggregated without reading
+  /// and re-parsing the other database.
+  List<BaselinePoint> _baselinePoints = const [];
 
   MapDataStore(this.electionStore, this.mapStateStore, {this.customLayerStore}) {
     effect(() {
@@ -324,6 +345,10 @@ class MapDataStore {
       customGroupOfPrecinct.value = ofPrecinct;
       customVersion.value = customVersion.peek() + 1;
     });
+
+    // The groups just moved, so their share of the comparison election has to
+    // be re-aggregated onto the new outlines.
+    _refreshCustomComparison();
   }
 
   /// A group's fill is simply all of its precinct paths; its border is the
@@ -457,8 +482,21 @@ class MapDataStore {
   }
 
   void clearComparisonData() {
+    _baselinePoints = const [];
     comparisonRegionVotes.value = {};
     comparisonPrecinctVotes.value = {};
+    comparisonVersion.value = comparisonVersion.peek() + 1;
+  }
+
+  /// Group cells are drawn by the user and change as they are edited, so their
+  /// share of the comparison election has to be re-aggregated each time.
+  void _refreshCustomComparison() {
+    if (_baselinePoints.isEmpty) return;
+    comparisonRegionVotes.value = {
+      ...comparisonRegionVotes.peek(),
+      LayerType.custom:
+          aggregateBaselineInto(customCells.peek(), _baselinePoints),
+    };
     comparisonVersion.value = comparisonVersion.peek() + 1;
   }
 
@@ -494,34 +532,37 @@ class MapDataStore {
         return;
       }
 
-      final snapshot = await _repo.loadStateVoteSnapshot(db);
+      final precinctVoteMap = await _repo.loadPrecinctVoteMap(db);
       if (_lastComparisonKey != key) return;
 
-      // Only pulled when the map actually has precincts to match against —
-      // these are the boundary blobs, by far the most expensive read here.
-      final baselinePrecincts = precincts.value.isEmpty
-          ? const <GeoCell>[]
-          : await _repo.loadPrecinctGeometry(db);
+      // The boundary blobs are by far the most expensive read here, and every
+      // level is rebuilt from them.
+      final baselineCells =
+          _toRenderable(await _repo.loadPrecinctGeometry(db));
       if (_lastComparisonKey != key) return;
+
+      final baselineVotes =
+          votesByPrecinctId(precinctVoteMap, partyNameByCandidate);
+
+      // Reduce the geometry to points before anything else: the paths are
+      // needed only for the precinct match below, while the points outlive
+      // the load so that groups can be re-aggregated as they are edited.
+      _baselinePoints = [
+        for (final cell in baselineCells)
+          if (baselineVotes[cell.cell.id] case final votes?)
+            BaselinePoint(_centreOf(cell), votes),
+      ];
 
       comparisonRegionVotes.value = {
-        LayerType.county: votesByRegionName(
-          snapshot.countyNames,
-          snapshot.countyPrecincts,
-          snapshot.precinctVotes,
-          partyNameByCandidate,
-        ),
-        LayerType.congressionalDistrict: votesByRegionName(
-          snapshot.cdNames,
-          snapshot.cdPrecincts,
-          snapshot.precinctVotes,
-          partyNameByCandidate,
-        ),
+        LayerType.county:
+            aggregateBaselineInto(counties.value, _baselinePoints),
+        LayerType.congressionalDistrict:
+            aggregateBaselineInto(congressionalDistricts.value, _baselinePoints),
+        LayerType.custom:
+            aggregateBaselineInto(customCells.value, _baselinePoints),
       };
-      comparisonPrecinctVotes.value = _matchPrecinctsToComparison(
-        baselinePrecincts,
-        votesByPrecinctId(snapshot.precinctVotes, partyNameByCandidate),
-      );
+      comparisonPrecinctVotes.value =
+          _matchPrecinctsToComparison(baselineCells, baselineVotes);
       comparisonVersion.value = comparisonVersion.peek() + 1;
     } catch (e, stack) {
       debugPrint('Error loading comparison $compareFolder/$dbName: $e\n$stack');
@@ -532,72 +573,115 @@ class MapDataStore {
     }
   }
 
-  /// Gives every precinct of the *current* election the vote shares of the
-  /// comparison election's precinct that contains its centre.
-  ///
-  /// Precinct numbering is unrelated across elections and the boundaries are
-  /// redrawn, so geometry is the only usable join. A split or merged precinct
-  /// inherits the whole counterpart's totals, so its *share* stays meaningful
-  /// while its vote counts are the counterpart's, not its own.
-  ///
-  /// The comparison geometry is parsed only to build the index and is dropped
-  /// as soon as the match is done — nothing but the totals is kept.
-  Map<int, RegionPartyVotes> _matchPrecinctsToComparison(
-    List<GeoCell> baselinePrecincts,
-    Map<int, RegionPartyVotes> baselineVotes,
-  ) {
-    final current = precincts.value;
-    if (current.isEmpty || baselinePrecincts.isEmpty) return const {};
+  /// Geometry is stored with y flipped (see the dot-density painter), and the
+  /// stored centre is preferred over the bounding box's.
+  static Offset _centreOf(RenderableCell rCell) =>
+      rCell.cell.centerLat != null && rCell.cell.centerLon != null
+          ? Offset(rCell.cell.centerLon!, -rCell.cell.centerLat!)
+          : rCell.bounds.center;
 
-    final baselineCells = <RenderableCell>[];
-    double minX = double.infinity,
-        minY = double.infinity,
-        maxX = -double.infinity,
-        maxY = -double.infinity;
+  static Rect? _boundsOf(List<RenderableCell> cells) {
+    Rect? bounds;
+    for (final c in cells) {
+      if (c.bounds.isEmpty) continue;
+      bounds = bounds == null ? c.bounds : bounds.expandToInclude(c.bounds);
+    }
+    return bounds;
+  }
 
-    for (final cell in baselinePrecincts) {
+  static List<RenderableCell> _toRenderable(List<GeoCell> cells) {
+    final result = <RenderableCell>[];
+    for (final cell in cells) {
       final wkb = cell.boundaryWkb;
       if (wkb == null) continue;
       final pathData =
           GeometryParser.coordsToPath(GeometryParser.parseWkbToCoords(wkb));
       if (pathData.bounds.isEmpty) continue;
-      if (pathData.bounds.left < minX) minX = pathData.bounds.left;
-      if (pathData.bounds.top < minY) minY = pathData.bounds.top;
-      if (pathData.bounds.right > maxX) maxX = pathData.bounds.right;
-      if (pathData.bounds.bottom > maxY) maxY = pathData.bounds.bottom;
-      baselineCells.add(RenderableCell(
+      result.add(RenderableCell(
         cell: cell,
         path: pathData.path,
         exteriorPath: pathData.exteriorPath,
         bounds: pathData.bounds,
       ));
     }
-    if (baselineCells.isEmpty) return const {};
+    return result;
+  }
 
-    final index = SpatialIndex.build(
-      baselineCells,
-      Rect.fromLTRB(minX, minY, maxX, maxY),
-    );
+  /// Re-aggregates the comparison election onto the current map: every
+  /// baseline precinct's votes are added to whichever [currentRegions] cell
+  /// contains its centre.
+  ///
+  /// This is what makes a redrawn map comparable. Joining regions by name
+  /// instead would silently compare different ground — Texas redrew all of its
+  /// congressional districts after the 2020 census, so a fifth of the votes in
+  /// its 2024 "District 13" come from a suburban county the 2020 district of
+  /// that name never contained.
+  ///
+  /// Every baseline precinct lands in at most one region, so the totals stay
+  /// additive: unlike carrying shares over, summing these never counts a
+  /// precinct twice.
+  @visibleForTesting
+  static Map<int, RegionPartyVotes> aggregateBaselineInto(
+    List<RenderableCell> currentRegions,
+    List<BaselinePoint> baselinePoints,
+  ) {
+    final bounds = _boundsOf(currentRegions);
+    if (bounds == null || baselinePoints.isEmpty) return const {};
+    final index = SpatialIndex.build(currentRegions, bounds);
+
+    final votesByRegion = <int, Map<String, int>>{};
+    final totals = <int, int>{};
+    for (final point in baselinePoints) {
+      final hit = index.hitTest(point.centre, currentRegions);
+      if (hit < 0) continue;
+
+      final regionId = currentRegions[hit].cell.id;
+      totals[regionId] = (totals[regionId] ?? 0) + point.votes.totalVotes;
+      final acc = votesByRegion.putIfAbsent(regionId, () => {});
+      point.votes.votesByParty.forEach((party, n) {
+        acc[party] = (acc[party] ?? 0) + n;
+      });
+    }
+
+    return {
+      for (final entry in totals.entries)
+        if (entry.value > 0)
+          entry.key: RegionPartyVotes(
+            totalVotes: entry.value,
+            votesByParty: votesByRegion[entry.key] ?? const {},
+          ),
+    };
+  }
+
+  /// Gives every precinct of the *current* election the totals of the
+  /// comparison election's precinct that contains its centre.
+  ///
+  /// The other levels aggregate baseline precincts into current regions, but
+  /// precincts are matched the opposite way: current precincts are smaller and
+  /// more numerous than their counterparts, so aggregating into them would
+  /// leave the ones carved out of a larger old precinct with nothing. Carrying
+  /// the counterpart's totals over instead keeps the *share* meaningful for
+  /// every precinct, at the cost of the counts being the counterpart's.
+  Map<int, RegionPartyVotes> _matchPrecinctsToComparison(
+    List<RenderableCell> baselinePrecincts,
+    Map<int, RegionPartyVotes> baselineVotes,
+  ) {
+    final current = precincts.value;
+    final bounds = _boundsOf(baselinePrecincts);
+    if (current.isEmpty || bounds == null) return const {};
+    final index = SpatialIndex.build(baselinePrecincts, bounds);
 
     final matched = <int, RegionPartyVotes>{};
     var unmatched = 0;
     for (final rCell in current) {
-      final cell = rCell.cell;
-      // Geometry is stored with y flipped (see the dot-density painter).
-      final centre = cell.centerLat != null && cell.centerLon != null
-          ? Offset(cell.centerLon!, -cell.centerLat!)
-          : rCell.bounds.center;
-      final hit = index.hitTest(centre, baselineCells);
-      if (hit < 0) {
-        unmatched++;
-        continue;
-      }
-      final votes = baselineVotes[baselineCells[hit].cell.id];
+      final hit = index.hitTest(_centreOf(rCell), baselinePrecincts);
+      final votes =
+          hit < 0 ? null : baselineVotes[baselinePrecincts[hit].cell.id];
       if (votes == null) {
         unmatched++;
         continue;
       }
-      matched[cell.id] = votes;
+      matched[rCell.cell.id] = votes;
     }
     if (unmatched > 0) {
       debugPrint('Comparison: $unmatched of ${current.length} precincts have '
@@ -629,92 +713,22 @@ class MapDataStore {
     return result;
   }
 
-  /// Sums each region's precinct votes into per-party shares, keyed by the
-  /// region's normalised name. Regions sharing a name are merged rather than
-  /// dropped.
-  @visibleForTesting
-  static Map<String, RegionPartyVotes> votesByRegionName(
-    Map<int, String> regionNames,
-    Map<int, List<int>> regionPrecincts,
-    Map<int, Map<String, int>> precinctVotes,
-    Map<String, String> partyNameByCandidate,
-  ) {
-    final votesByName = <String, Map<String, int>>{};
-    final totalsByName = <String, int>{};
-
-    for (final entry in regionPrecincts.entries) {
-      final rawName = regionNames[entry.key];
-      if (rawName == null) continue;
-      final name = normalizeRegionName(rawName);
-      final partyVotes = votesByName.putIfAbsent(name, () => {});
-      var total = totalsByName[name] ?? 0;
-
-      for (final precinctId in entry.value) {
-        final votes = precinctVotes[precinctId];
-        if (votes == null) continue;
-        for (final v in votes.entries) {
-          total += v.value;
-          final party = partyNameByCandidate[v.key];
-          if (party == null) continue;
-          partyVotes[party] = (partyVotes[party] ?? 0) + v.value;
-        }
-      }
-      totalsByName[name] = total;
-    }
-
-    final result = <String, RegionPartyVotes>{};
-    for (final entry in votesByName.entries) {
-      final total = totalsByName[entry.key] ?? 0;
-      if (total <= 0) continue;
-      result[entry.key] =
-          RegionPartyVotes(totalVotes: total, votesByParty: entry.value);
-    }
-    return result;
-  }
-
-  /// Region names come from independently built databases; fold away the
-  /// casing and padding differences before matching them.
-  static String normalizeRegionName(String name) => name.trim().toLowerCase();
-
   /// Party totals for [cell]'s region in the comparison election, or null when
   /// that region has no counterpart there.
   ///
-  /// Counties and districts join by name; precincts join by geometry, so they
-  /// are looked up by the current election's own precinct id.
+  /// Everything is keyed by the *current* election's own ids: counties and
+  /// districts because the other election's votes were re-aggregated onto this
+  /// map, precincts because they were matched to it geometrically.
   RegionPartyVotes? comparisonVotesFor(LayerType layer, GeoCell cell) {
     switch (layer) {
       case LayerType.precinct:
         return comparisonPrecinctVotes.value[cell.id];
       case LayerType.custom:
-        // Group cells have no counterpart region; sum their precincts'
-        // geometric matches instead.
-        return comparisonVotesForPrecincts(
-          customPrecincts.value[cell.id] ?? const [],
-        );
       case LayerType.state:
       case LayerType.county:
       case LayerType.congressionalDistrict:
-        return comparisonRegionVotes.value[layer]
-            ?[normalizeRegionName(cell.name)];
+        return comparisonRegionVotes.value[layer]?[cell.id];
     }
-  }
-
-  /// Comparison-election party totals summed over a precinct set; null when
-  /// none of the precincts has a counterpart.
-  RegionPartyVotes? comparisonVotesForPrecincts(Iterable<int> precinctIds) {
-    final byPrecinct = comparisonPrecinctVotes.value;
-    var total = 0;
-    final byParty = <String, int>{};
-    for (final id in precinctIds) {
-      final v = byPrecinct[id];
-      if (v == null) continue;
-      total += v.totalVotes;
-      v.votesByParty.forEach((party, votes) {
-        byParty[party] = (byParty[party] ?? 0) + votes;
-      });
-    }
-    if (total <= 0) return null;
-    return RegionPartyVotes(totalVotes: total, votesByParty: byParty);
   }
 
   /// Vote share of [partyName] in the comparison election for [cell]'s region,
@@ -890,8 +904,7 @@ class MapDataStore {
             : null;
 
         // National view: visible layers fixed to [state]
-        mapStateStore.visibleLayers.value = [LayerType.state];
-        mapStateStore.interactiveLayer.value = LayerType.state;
+        mapStateStore.setVisibleLayers([LayerType.state]);
       } else {
         // --- STATE VIEW (e.g. Texas / TX.db) ---
         final dbName = subItem.dbName;
@@ -982,9 +995,11 @@ class MapDataStore {
               ? Rect.fromLTRB(minX, minY, maxX, maxY)
               : null;
 
-          // State view: visible layers MUST NOT include state or precinct by default
-          mapStateStore.visibleLayers.value = [LayerType.county, LayerType.congressionalDistrict];
-          mapStateStore.interactiveLayer.value = LayerType.county;
+          // State view: visible layers MUST NOT include state or precinct by
+          // default. County is both the finest visible layer and the one the
+          // interactive/filled selections derive from.
+          mapStateStore.setVisibleLayers(
+              [LayerType.county, LayerType.congressionalDistrict]);
         }
       }
     } catch (e, stack) {

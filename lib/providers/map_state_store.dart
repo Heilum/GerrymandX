@@ -40,6 +40,19 @@ class MapStateStore {
   // Interactive Layer (one of the visible layers)
   final interactiveLayer = Signal<LayerType>(LayerType.county);
 
+  /// The one visible layer whose cells are filled; every other layer draws
+  /// borders only.
+  ///
+  /// Fills are opaque and the layers composite finest-last, so before this
+  /// existed the finest visible layer's fill simply hid the others' — the
+  /// choice was already being made, just not by the user.
+  final filledLayer = Signal<LayerType>(LayerType.county);
+
+  /// False while [filledLayer] is still tracking the finest visible layer,
+  /// which reproduces what the map used to show. Picking one explicitly pins
+  /// it, until it is hidden and there is nothing to pin to.
+  bool _filledLayerPinned = false;
+
   // Fill Mode configuration
   final fillMode = Signal<FillMode>(FillMode.winnerOpaque);
   
@@ -102,6 +115,16 @@ class MapStateStore {
     }
     visibleLayers.value = layers;
     _autoSelectFinestInteractiveLayer();
+    _autoSelectFilledLayer();
+  }
+
+  /// Replaces the visible set outright, as loading a selection does, and
+  /// re-derives the interactive and filled layers from it.
+  void setVisibleLayers(List<LayerType> layers) {
+    visibleLayers.value = List.of(layers);
+    _filledLayerPinned = false;
+    _autoSelectFinestInteractiveLayer();
+    _autoSelectFilledLayer();
   }
 
   /// Always pick the finest-grained visible layer as interactive.
@@ -117,6 +140,26 @@ class MapStateStore {
         return;
       }
     }
+  }
+
+  /// Keeps [filledLayer] on the finest visible layer until the user pins one,
+  /// and unpins it when that layer stops being visible.
+  void _autoSelectFilledLayer() {
+    final visible = visibleLayers.value;
+    if (_filledLayerPinned && visible.contains(filledLayer.value)) return;
+    _filledLayerPinned = false;
+    for (final layer in _granularityOrder) {
+      if (visible.contains(layer)) {
+        filledLayer.value = layer;
+        return;
+      }
+    }
+  }
+
+  void setFilledLayer(LayerType type) {
+    if (!visibleLayers.value.contains(type)) return;
+    _filledLayerPinned = true;
+    filledLayer.value = type;
   }
 
   void setInteractiveLayer(LayerType type) {

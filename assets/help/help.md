@@ -2,12 +2,22 @@
 
 GerrymanderX is a precinct-level election atlas for macOS. It lets you explore U.S. presidential results state by state and precinct by precinct, compare two elections on the same map, and draw your own groupings of precincts to see how the vote would add up under different boundaries.
 
+## Your Account
+
+GerrymanderX asks you to sign in before the map opens. Signing in with your Google account creates the account on first use — there is no separate registration step and no password to remember.
+
+- Your name and profile picture, as Google supplies them, sit at the bottom of the side menu. Click them to confirm which account you are signed in as, and to sign out.
+- The session is remembered on this Mac, so you sign in once; after that the app opens straight to the map. Signing in does need a working connection.
+- **Settings → Account** repeats the same information and adds *Delete Account*, which removes your account permanently.
+- The account only identifies you. It holds nothing about your work — no election databases, no custom layers, no settings — and nothing you do in the app is uploaded to it.
+
 ## Quick Start
 
-1. Open the **Elections** tab and click the list icon (☰) in the toolbar to show the election list.
-2. Switch **Source** to **Remote**, pick an election (for example *2024 National President*), and click **Download All** — or download only the states you care about, one at a time.
-3. Switch **Source** back to **Local**, expand the election and click **National** or a state to load it on the map.
-4. Hover over the map to highlight a region, click it to open the **Inspector** with population, turnout and the vote breakdown.
+1. Sign in with your Google account when the app opens.
+2. Open the **Elections** tab and click the list icon (☰) in the toolbar to show the election list.
+3. Switch **Source** to **Remote**, pick an election (for example *2024 National President*), and click **Download All** — or download only the states you care about, one at a time.
+4. Switch **Source** back to **Local**, expand the election and click **National** or a state to load it on the map.
+5. Hover over the map to highlight a region, click it to open the **Inspector** with population, turnout and the vote breakdown.
 
 ## Getting Election Data
 
@@ -64,9 +74,11 @@ A custom layer is your own set of **group cells** — named, coloured collection
 - The group inspector shows the group's composition (whole counties, whole districts, remaining precincts), population, total votes, turnout and vote breakdown — updated live as you draw.
 - Changes are saved as you make them; there is no Save button. Deleting a group asks for confirmation when it contains precincts.
 - Custom layers are tied to a specific election and state database. Deleting that election deletes its custom layers too.
+- **Custom layers stay on this Mac and have nothing to do with your account.** They are stored under `~/Documents/GerrymanderX/`, never uploaded and never synced. Signing in on another Mac will not bring them with you, and signing in here as somebody else shows the same layers — they belong to the machine, not to the account.
 
 ## Settings
 
+- **Account**: the account you are signed in as, with *Sign out* and *Delete Account*.
 - **Theme**: System, Light or Dark.
 - **Feedback**: opens your mail client with our address pre-filled.
 - **Privacy Policy** and **About** (app version).
@@ -77,10 +89,11 @@ Precinct results and boundaries come from the Voting and Election Science Team (
 
 ## Privacy
 
-GerrymanderX has no accounts, no analytics and no tracking. Its only network activity is downloading the election list and databases you request from our server. Everything you download or draw is stored in `~/Documents/GerrymanderX/` on your Mac and nothing is ever uploaded. See the Privacy Policy in Settings for details.
+Signing in tells us only what Google hands over: your name, email address and profile picture. There is no analytics and no tracking. Apart from sign-in, GerrymanderX's only network activity is downloading the election list and databases you request from our server. Everything you download or draw — databases, custom layers, settings — is stored in `~/Documents/GerrymanderX/` on your Mac and nothing is ever uploaded. See the Privacy Policy in Settings for details.
 
 ## Troubleshooting
 
+- **Sign-in does not complete** — the authorization opens in your browser and must be finished there; if you closed it, click the sign-in button again. A failed sign-in also needs a working internet connection.
 - **The Remote list is empty or shows an error** — check your internet connection and press *Retry*.
 - **Comparison modes are missing from the Fill dropdown** — select a state (not National) and make sure that state's database is downloaded for at least two elections.
 - **A region shows no votes** — some precincts have boundaries but no reported results, or vice versa; the source data is incomplete for a few areas.

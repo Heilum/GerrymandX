@@ -4,7 +4,10 @@ import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:gerrymanderx/core/constants/app_constants.dart';
+import 'package:gerrymanderx/modules/auth/widgets/sign_out_dialog.dart';
+import 'package:gerrymanderx/modules/auth/widgets/user_menu_button.dart';
 import 'package:gerrymanderx/providers/app_settings_store.dart';
+import 'package:gerrymanderx/providers/auth_store.dart';
 
 class SettingsTab extends StatelessWidget {
   const SettingsTab({super.key});
@@ -18,6 +21,9 @@ class SettingsTab extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
         children: [
+          // ── Account ──
+          const _AccountSection(),
+
           // ── Appearance ──
           const _SectionTitle(title: 'Appearance'),
           Card(
@@ -62,6 +68,93 @@ class SettingsTab extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// The signed-in account: who you are, sign-out, and the account deletion the
+/// App Store requires from any app that offers sign-in (guideline 5.1.1(v)).
+class _AccountSection extends StatelessWidget {
+  const _AccountSection();
+
+  Future<void> _confirmDelete(BuildContext context) async {
+    final auth = context.read<AuthStore>();
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Delete account?'),
+        content: Text(
+          'This permanently deletes the ${auth.displayName} account. '
+          'You may be asked to sign in again to confirm.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            style: FilledButton.styleFrom(
+              backgroundColor: Theme.of(context).colorScheme.error,
+            ),
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Delete'),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+    await auth.deleteAccount();
+    if (!context.mounted || auth.error == null) return;
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(auth.error!)));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // Nullable lookup: the tab is also pumped on its own in widget tests,
+    // where no AuthStore is in scope.
+    final auth = context.watch<AuthStore?>();
+    if (auth == null || !auth.isSignedIn) return const SizedBox.shrink();
+    final email = auth.user?.email;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const _SectionTitle(title: 'Account'),
+        Card(
+          margin: EdgeInsets.zero,
+          child: Column(
+            children: [
+              ListTile(
+                leading: UserAvatar(auth: auth, radius: 18),
+                title: Text(auth.displayName),
+                subtitle: Text(
+                  email == null || email.isEmpty
+                      ? 'Signed in with ${auth.providerName}'
+                      : '$email · ${auth.providerName}',
+                ),
+                trailing: TextButton.icon(
+                  onPressed: auth.isBusy ? null : () => confirmSignOut(context),
+                  icon: const Icon(Icons.logout, size: 16),
+                  label: const Text('Sign out'),
+                ),
+              ),
+              const Divider(height: 1, indent: 16, endIndent: 16),
+              ListTile(
+                leading: Icon(
+                  Icons.delete_forever_outlined,
+                  color: Theme.of(context).colorScheme.error,
+                ),
+                title: const Text('Delete Account'),
+                subtitle:
+                    const Text('Removes your account and profile for good'),
+                onTap: auth.isBusy ? null : () => _confirmDelete(context),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 30),
+      ],
     );
   }
 }

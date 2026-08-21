@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gerrymanderx/modules/auth/widgets/user_menu_button.dart';
 import 'package:gerrymanderx/modules/elections/elections_tab.dart';
 import 'package:gerrymanderx/modules/help/help_tab.dart';
 import 'package:gerrymanderx/modules/settings/settings_tab.dart';
@@ -32,6 +33,17 @@ class _MainShellState extends State<MainShell> {
               });
             },
             labelType: NavigationRailLabelType.all,
+            // Expanded inside `trailing` pushes the account chip to the
+            // bottom of the rail, below the destinations.
+            trailing: const Expanded(
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Padding(
+                  padding: EdgeInsets.only(bottom: 12),
+                  child: UserMenuButton(),
+                ),
+              ),
+            ),
             destinations: const [
               NavigationRailDestination(
                 icon: Icon(Icons.how_to_vote_outlined),

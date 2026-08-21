@@ -185,7 +185,12 @@ class _ComparisonBreakdown extends StatelessWidget {
           _electionGroup(
             context,
             title: comparisonElection,
-            subtitle: 'compared with',
+            // These are not that election's own published totals: the votes
+            // were re-counted inside this cell, which is the only way to
+            // compare a district that has since been redrawn.
+            subtitle: layer == LayerType.precinct
+                ? 'matched precinct'
+                : 'recounted on this ${layer.name}',
             totalVotes: baseline.totalVotes,
             votes: baseline.votesByParty,
             partyNames: partyNames,

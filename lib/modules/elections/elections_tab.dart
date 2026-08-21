@@ -21,7 +21,7 @@ class ElectionsTab extends StatefulWidget {
 class _ElectionsTabState extends State<ElectionsTab> {
   bool _showLeftPanel = false;
   bool _showRightPanel = false;
-  
+
   Function? _cleanup;
 
   @override
@@ -47,6 +47,50 @@ class _ElectionsTabState extends State<ElectionsTab> {
     super.dispose();
   }
 
+  /// Layer chips (or the fixed `state` chip for national elections) plus the
+  /// custom-layer picker.
+  Widget _buildLayerControls(ElectionStore electionStore) {
+    return Watch((context) {
+      final subItem = electionStore.selectedSubItem.value;
+      final store = context.read<MapStateStore>();
+
+      if (subItem?.isNational == true) {
+        return FilterChip(
+          label: const Text('state', style: TextStyle(fontSize: 11)),
+          selected: true,
+          onSelected: null,
+          visualDensity: VisualDensity.compact,
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        );
+      }
+
+      // The custom layer is picked from its own dropdown, not toggled as a chip.
+      final availableLayers = LayerType.values
+          .where((l) => l.isBuiltInStateLayer)
+          .toList();
+      return Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Wrap(
+            spacing: 4,
+            runSpacing: 4,
+            children: availableLayers.map((layer) {
+              final isVisible = store.visibleLayers.value.contains(layer);
+              return FilterChip(
+                label: Text(layer.name, style: const TextStyle(fontSize: 11)),
+                selected: isVisible,
+                onSelected: (_) => store.toggleLayerVisibility(layer),
+                visualDensity: VisualDensity.compact,
+                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              );
+            }).toList(),
+          ),
+          const CustomLayerControls(),
+        ],
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Watch((context) {
@@ -57,6 +101,7 @@ class _ElectionsTabState extends State<ElectionsTab> {
         appBar: AppBar(
           centerTitle: false,
           titleSpacing: 0.0,
+          toolbarHeight: isRemoteMode ? kToolbarHeight : 88,
           title: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -76,49 +121,39 @@ class _ElectionsTabState extends State<ElectionsTab> {
               ),
               if (!isRemoteMode) ...[
                 const SizedBox(width: 8),
-                const Text('Layers: ',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
-                const SizedBox(width: 4),
-                Watch((context) {
-                  final subItem = electionStore.selectedSubItem.value;
-                  final store = context.read<MapStateStore>();
-
-                  if (subItem?.isNational == true) {
-                    return FilterChip(
-                      label: const Text('state', style: TextStyle(fontSize: 11)),
-                      selected: true,
-                      onSelected: null,
-                      visualDensity: VisualDensity.compact,
-                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                    );
-                  } else {
-                    // The custom layer is picked from its own dropdown, not
-                    // toggled as a chip.
-                    final availableLayers = LayerType.values
-                        .where((l) => l.isBuiltInStateLayer)
-                        .toList();
-                    return Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Wrap(
-                          spacing: 4,
-                          runSpacing: 4,
-                          children: availableLayers.map((layer) {
-                            final isVisible = store.visibleLayers.value.contains(layer);
-                            return FilterChip(
-                              label: Text(layer.name, style: const TextStyle(fontSize: 11)),
-                              selected: isVisible,
-                              onSelected: (_) => store.toggleLayerVisibility(layer),
-                              visualDensity: VisualDensity.compact,
-                              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                            );
-                          }).toList(),
+                // Two left-aligned rows: layers on top, fill mode below, so the
+                // controls fit without overflowing the app bar width.
+                Expanded(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Text(
+                              'Layers: ',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12,
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            _buildLayerControls(electionStore),
+                          ],
                         ),
-                        const CustomLayerControls(),
-                      ],
-                    );
-                  }
-                }),
+                      ),
+                      const SizedBox(height: 4),
+                      const SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: FillModeControls(),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ],
           ),
@@ -133,10 +168,10 @@ class _ElectionsTabState extends State<ElectionsTab> {
           actions: isRemoteMode
               ? null
               : [
-                  const FillModeControls(),
-                  const SizedBox(width: 8),
                   IconButton(
-                    icon: Icon(_showRightPanel ? Icons.info_outline : Icons.info),
+                    icon: Icon(
+                      _showRightPanel ? Icons.info_outline : Icons.info,
+                    ),
                     onPressed: () {
                       setState(() {
                         _showRightPanel = !_showRightPanel;
@@ -149,12 +184,8 @@ class _ElectionsTabState extends State<ElectionsTab> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             if (_showLeftPanel)
-              const SizedBox(
-                width: 250,
-                child: ElectionListPanel(),
-              ),
-            if (_showLeftPanel)
-              const VerticalDivider(width: 1, thickness: 1),
+              const SizedBox(width: 250, child: ElectionListPanel()),
+            if (_showLeftPanel) const VerticalDivider(width: 1, thickness: 1),
             Expanded(
               child: isRemoteMode
                   ? const SizedBox.shrink()
@@ -163,10 +194,7 @@ class _ElectionsTabState extends State<ElectionsTab> {
             if (_showRightPanel && !isRemoteMode)
               const VerticalDivider(width: 1, thickness: 1),
             if (_showRightPanel && !isRemoteMode)
-              const SizedBox(
-                width: 300,
-                child: InspectorPanel(),
-              ),
+              const SizedBox(width: 300, child: InspectorPanel()),
           ],
         ),
       );

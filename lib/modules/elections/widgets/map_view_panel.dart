@@ -237,11 +237,17 @@ class _MapCanvasState extends State<_MapCanvas> {
     FillMode fillMode,
     String? singleCandidateId,
     ComparisonSpec? comparisonSpec,
+    bool fills,
     double zoomBucket,
   ) {
-    // Record fill
+    // Record fill. Only one layer is filled; the others would be hidden
+    // underneath it anyway, so their fills are never recorded.
+    //
+    // The Canvas is created either way: a recorder that never had one throws
+    // on endRecording() rather than yielding an empty Picture.
     final fillRecorder = ui.PictureRecorder();
-    if (_dataStore.overallBounds.value != null) {
+    final fillCanvas = Canvas(fillRecorder);
+    if (fills && _dataStore.overallBounds.value != null) {
       final fillPainter = BaseMapPainter(
         dataStore: _dataStore,
         visibleLayers: [layerType],
@@ -252,12 +258,13 @@ class _MapCanvasState extends State<_MapCanvas> {
         drawFill: true,
         drawBorder: false,
       );
-      fillPainter.paint(Canvas(fillRecorder), size);
+      fillPainter.paint(fillCanvas, size);
     }
     final fillPic = fillRecorder.endRecording();
 
     // Record border
     final borderRecorder = ui.PictureRecorder();
+    final borderCanvas = Canvas(borderRecorder);
     if (_dataStore.overallBounds.value != null) {
       final borderPainter = BaseMapPainter(
         dataStore: _dataStore,
@@ -269,7 +276,7 @@ class _MapCanvasState extends State<_MapCanvas> {
         drawFill: false,
         drawBorder: true,
       );
-      borderPainter.paint(Canvas(borderRecorder), size);
+      borderPainter.paint(borderCanvas, size);
     }
     final borderPic = borderRecorder.endRecording();
 
@@ -282,6 +289,7 @@ class _MapCanvasState extends State<_MapCanvas> {
     FillMode fillMode,
     String? singleCandidateId,
     ComparisonSpec? comparisonSpec,
+    LayerType filledLayer,
     int dataVersion,
     int customVersion,
     double zoomBucket,
@@ -295,6 +303,7 @@ class _MapCanvasState extends State<_MapCanvas> {
           fillMode: fillMode,
           singleCandidateId: singleCandidateId,
           comparisonSpec: comparisonSpec,
+          fills: layer == filledLayer,
           dataVersion: dataVersion,
           // Only the custom layer's recording depends on the group geometry.
           customVersion: layer == LayerType.custom ? customVersion : 0,
@@ -304,8 +313,8 @@ class _MapCanvasState extends State<_MapCanvas> {
       if (_layerPictures[layer] == null || existingKey != key) {
         // Cache miss for this layer — re-record both fill and border.
         _layerPictures[layer]?.dispose();
-        _layerPictures[layer] = _recordLayerPictures(
-            size, layer, fillMode, singleCandidateId, comparisonSpec, zoomBucket);
+        _layerPictures[layer] = _recordLayerPictures(size, layer, fillMode,
+            singleCandidateId, comparisonSpec, layer == filledLayer, zoomBucket);
         _layerCacheKeys[layer] = key;
         compositeNeeded = true;
       }
@@ -391,6 +400,7 @@ class _MapCanvasState extends State<_MapCanvas> {
       final singleCandidateId = _mapStore.selectedCandidateId.value;
       final comparisonSpec = _buildComparisonSpec();
       final interactiveLayer = _mapStore.interactiveLayer.value;
+      final filledLayer = _mapStore.filledLayer.value;
       final dataVersion = _dataStore.dataVersion.value;
       final customVersion = _dataStore.customVersion.value;
       // Read cellIndex for O(1) lookup in overlay painter. Hover/selection ids
@@ -446,7 +456,7 @@ class _MapCanvasState extends State<_MapCanvas> {
 
           // P3: Per-layer Picture cache.
           _ensurePicture(_canvasSize, layers, fillMode, singleCandidateId,
-              comparisonSpec, dataVersion, customVersion,
+              comparisonSpec, filledLayer, dataVersion, customVersion,
               MapZoom.bucketFor(_currentZoomScale));
 
           return Container(
@@ -550,6 +560,9 @@ class _LayerCacheKey {
   /// comparison data.
   final ComparisonSpec? comparisonSpec;
 
+  /// Whether this layer is the filled one; its fill Picture is empty if not.
+  final bool fills;
+
   /// Without this the cached Pictures survive a change of election/state,
   /// leaving the previous selection's geometry on screen.
   final int dataVersion;
@@ -566,6 +579,7 @@ class _LayerCacheKey {
     required this.fillMode,
     required this.singleCandidateId,
     required this.comparisonSpec,
+    required this.fills,
     required this.dataVersion,
     required this.customVersion,
     required this.zoomBucket,
@@ -579,13 +593,14 @@ class _LayerCacheKey {
           fillMode == other.fillMode &&
           singleCandidateId == other.singleCandidateId &&
           comparisonSpec == other.comparisonSpec &&
+          fills == other.fills &&
           dataVersion == other.dataVersion &&
           customVersion == other.customVersion &&
           zoomBucket == other.zoomBucket;
 
   @override
   int get hashCode => Object.hash(size, fillMode, singleCandidateId,
-      comparisonSpec, dataVersion, customVersion, zoomBucket);
+      comparisonSpec, fills, dataVersion, customVersion, zoomBucket);
 }
 
 bool _listEq<T>(List<T> a, List<T> b) {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:gerrymanderx/core/constants/app_constants.dart';
 import 'package:gerrymanderx/core/theme/app_theme.dart';
-import 'package:gerrymanderx/modules/main_shell.dart';
+import 'package:gerrymanderx/modules/auth/auth_gate.dart';
 import 'package:gerrymanderx/providers/app_settings_store.dart';
 
 class GerrymanderXApp extends StatelessWidget {
@@ -17,7 +17,7 @@ class GerrymanderXApp extends StatelessWidget {
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
       themeMode: themeMode,
-      home: const MainShell(),
+      home: const AuthGate(),
     );
   }
 }

@@ -31,4 +31,12 @@ class AppConstants {
 
   // Help
   static const String helpAssetPath = 'assets/help/help.md';
+
+  // Sign-in
+  /// Sign in with Apple needs the capability enabled on the App ID, which
+  /// requires a paid developer account. The button stays hidden until then.
+  /// Flipping this to true is all the UI needs — [AuthStore.signInWithApple]
+  /// is already wired — but the `com.apple.developer.applesignin` entitlement
+  /// has to go back into both .entitlements files at the same time.
+  static const bool appleSignInEnabled = false;
 }

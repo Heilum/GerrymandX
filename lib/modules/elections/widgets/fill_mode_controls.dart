@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 
 import 'package:gerrymanderx/models/election_metadata.dart';
+import 'package:gerrymanderx/models/geo_cell.dart';
 import 'package:gerrymanderx/modules/elections/comparison_selection.dart';
 import 'package:gerrymanderx/providers/election_store.dart';
 import 'package:gerrymanderx/providers/map_data_store.dart';
@@ -61,9 +62,49 @@ class FillModeControls extends StatelessWidget {
               if (m != null) mapStore.setFillMode(m);
             },
           ),
+          if (mode != FillMode.none) const _FilledLayerPicker(),
           if (mode == FillMode.singleCandidateOpacity) const _CandidatePicker(),
           if (mode.isComparison && comparableElections.isNotEmpty)
             _ComparisonPickers(comparableElections: comparableElections),
+        ],
+      );
+    });
+  }
+}
+
+/// Which visible layer gets the fill. Every other layer keeps its borders
+/// only, so a choropleth of one granularity can be read under the boundaries
+/// of another.
+class _FilledLayerPicker extends StatelessWidget {
+  const _FilledLayerPicker();
+
+  @override
+  Widget build(BuildContext context) {
+    return Watch((context) {
+      final store = context.read<MapStateStore>();
+      final layers = store.visibleLayers.value;
+      if (layers.length < 2) return const SizedBox.shrink();
+
+      final filled = store.filledLayer.value;
+      return Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const SizedBox(width: 8),
+          const Text('Filled layer: ', style: FillModeControls._labelStyle),
+          const SizedBox(width: 4),
+          DropdownButton<LayerType>(
+            value: layers.contains(filled) ? filled : layers.first,
+            isDense: true,
+            items: layers
+                .map((l) => DropdownMenuItem(
+                      value: l,
+                      child: Text(l.name, style: FillModeControls._itemStyle),
+                    ))
+                .toList(),
+            onChanged: (l) {
+              if (l != null) store.setFilledLayer(l);
+            },
+          ),
         ],
       );
     });

@@ -1,98 +1,70 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/map_painters.dart';
+import 'package:gerrymanderx/models/geo_cell.dart';
 import 'package:gerrymanderx/providers/map_data_store.dart';
 
-/// The comparison fill modes rest on two pieces of arithmetic: reducing
-/// another election's database to per-region party totals, and turning a swing
-/// into a colour.
+/// The comparison fill modes rest on two pieces of arithmetic: re-aggregating
+/// another election onto the current map, and turning a swing into a colour.
 void main() {
-  group('votesByRegionName', () {
-    // Two counties, two precincts each. Candidate a1/a2 are one party, b1 the
-    // other, and z belongs to no party in the manifest.
-    const partyOf = {'a1': 'DEM', 'a2': 'DEM', 'b1': 'REP'};
-
-    test('sums a region\'s precincts and divides by its total votes', () {
-      final regions = MapDataStore.votesByRegionName(
-        {1: 'Anderson', 2: 'Andrews'},
-        {
-          1: [10, 11],
-          2: [20],
-        },
-        {
-          10: {'a1': 30, 'b1': 20},
-          11: {'a2': 10, 'b1': 40},
-          20: {'a1': 25, 'b1': 75},
-        },
-        partyOf,
+  group('aggregateBaselineInto', () {
+    // Two square current regions side by side, and baseline precincts placed
+    // by their centre. Region ids are the *current* map's, which is the whole
+    // point: the baseline election has its own, unrelated ones.
+    RenderableCell region(int id, double left, double right) {
+      final rect = Rect.fromLTRB(left, 0, right, 10);
+      return RenderableCell(
+        cell: GeoCell(id: id, name: 'region $id', layerType: LayerType.county),
+        path: Path()..addRect(rect),
+        exteriorPath: Path()..addRect(rect),
+        bounds: rect,
       );
+    }
 
-      expect(regions['anderson']!.shareOf('DEM'), closeTo(40 / 100, 1e-9));
-      expect(regions['anderson']!.shareOf('REP'), closeTo(60 / 100, 1e-9));
-      expect(regions['andrews']!.shareOf('DEM'), closeTo(0.25, 1e-9));
+    final regions = [region(1, 0, 10), region(2, 10, 20)];
+    const baseline = [
+      BaselinePoint(Offset(2, 5),
+          RegionPartyVotes(totalVotes: 100, votesByParty: {'DEM': 40, 'REP': 60})),
+      BaselinePoint(Offset(5, 5),
+          RegionPartyVotes(totalVotes: 100, votesByParty: {'DEM': 20, 'REP': 80})),
+      BaselinePoint(Offset(15, 5),
+          RegionPartyVotes(totalVotes: 200, votesByParty: {'DEM': 150, 'REP': 50})),
+    ];
+
+    test('sums baseline precincts into the region containing them', () {
+      final result =
+          MapDataStore.aggregateBaselineInto(regions, baseline);
+
+      expect(result[1]!.totalVotes, 200);
+      expect(result[1]!.votesByParty, {'DEM': 60, 'REP': 140});
+      expect(result[1]!.shareOf('DEM'), closeTo(0.3, 1e-9));
+      expect(result[2]!.totalVotes, 200);
+      expect(result[2]!.shareOf('DEM'), closeTo(0.75, 1e-9));
     });
 
-    test('counts unaffiliated votes in the denominator only', () {
-      final regions = MapDataStore.votesByRegionName(
-        {1: 'Anderson'},
-        {
-          1: [10],
-        },
-        {
-          10: {'a1': 40, 'b1': 40, 'z': 20},
-        },
-        partyOf,
-      );
+    test('drops baseline precincts that fall outside every region', () {
+      final result =
+          MapDataStore.aggregateBaselineInto([region(1, 0, 10)], baseline);
 
-      expect(regions['anderson']!.shareOf('DEM'), closeTo(0.4, 1e-9));
-      expect(regions['anderson']!.votesByParty.containsKey('z'), isFalse);
+      expect(result.keys, [1]);
+      expect(result[1]!.totalVotes, 200, reason: 'precinct 72 is outside');
     });
 
-    test('matches region names case- and padding-insensitively', () {
-      final regions = MapDataStore.votesByRegionName(
-        {1: '  Anderson '},
-        {
-          1: [10],
-        },
-        {
-          10: {'a1': 1},
-        },
-        partyOf,
-      );
+    test('never counts a baseline precinct into two regions', () {
+      // Groups are redrawn constantly; totals have to stay additive however
+      // the boundaries are cut.
+      final split = MapDataStore.aggregateBaselineInto(regions, baseline);
+      final whole =
+          MapDataStore.aggregateBaselineInto([region(9, 0, 20)], baseline);
 
-      expect(regions.keys, ['anderson']);
-      expect(MapDataStore.normalizeRegionName(' ANDERSON '), 'anderson');
+      expect(split.values.fold<int>(0, (a, b) => a + b.totalVotes), 400);
+      expect(whole[9]!.totalVotes, 400);
+      expect(whole[9]!.votesByParty, {'DEM': 210, 'REP': 190});
     });
 
-    test('merges regions that share a name instead of dropping one', () {
-      final regions = MapDataStore.votesByRegionName(
-        {1: 'Anderson', 2: 'anderson'},
-        {
-          1: [10],
-          2: [20],
-        },
-        {
-          10: {'a1': 100},
-          20: {'b1': 100},
-        },
-        partyOf,
-      );
-
-      expect(regions['anderson']!.shareOf('DEM'), closeTo(0.5, 1e-9));
-      expect(regions['anderson']!.shareOf('REP'), closeTo(0.5, 1e-9));
-    });
-
-    test('skips regions with no votes rather than dividing by zero', () {
-      final regions = MapDataStore.votesByRegionName(
-        {1: 'Empty'},
-        {
-          1: [10],
-        },
-        const {},
-        partyOf,
-      );
-
-      expect(regions, isEmpty);
+    test('returns nothing when either side is empty', () {
+      expect(MapDataStore.aggregateBaselineInto(const [], baseline), isEmpty);
+      expect(MapDataStore.aggregateBaselineInto(regions, const []), isEmpty);
     });
   });
 
