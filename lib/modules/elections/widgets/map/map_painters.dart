@@ -287,7 +287,7 @@ class BaseMapPainter extends CustomPainter {
             // Convert to geographic radius for drawCircle
             final radius = currentPixelRadius / (mapScale * interactiveScale);
             final center = rCell.cell.centerLon != null && rCell.cell.centerLat != null
-                ? Offset(rCell.cell.centerLon!, -rCell.cell.centerLat!)
+                ? dataStore.projection.project(rCell.cell.centerLon!, rCell.cell.centerLat!)
                 : rCell.bounds.center;
             canvas.drawCircle(center, radius, fillPaint);
           }

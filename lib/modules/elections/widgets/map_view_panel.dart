@@ -368,10 +368,13 @@ class _MapCanvasState extends State<_MapCanvas> {
     _cachedVisibleLayers = List.of(layers);
   }
 
+  double get _maxScale =>
+      MapZoom.maxScaleFor(_dataStore.overallBounds.value, _canvasSize);
+
   /// Handle scroll-wheel zoom on macOS.
   void _onPointerSignal(PointerSignalEvent event) {
     if (event is PointerScrollEvent) {
-      MapZoom.applyScroll(_transformController, event);
+      MapZoom.applyScroll(_transformController, event, maxScale: _maxScale);
     }
   }
 
@@ -476,7 +479,7 @@ class _MapCanvasState extends State<_MapCanvas> {
                   child: InteractiveViewer(
                     transformationController: _transformController,
                     minScale: MapZoom.minScale,
-                    maxScale: MapZoom.maxScale,
+                    maxScale: _maxScale,
                     boundaryMargin: const EdgeInsets.all(double.infinity),
                     panEnabled: true,
                     scaleEnabled: true,

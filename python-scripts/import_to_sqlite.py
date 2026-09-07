@@ -34,6 +34,8 @@ import pandas as pd
 import shapely
 from shapely.ops import unary_union
 
+from fix_antimeridian import unwrap_antimeridian
+
 
 ROOT = Path(__file__).resolve().parent
 INPUT_DIR = ROOT / "data" / "raw_data"
@@ -296,7 +298,12 @@ def polygonal(geometry):
 
 def wkb(geometry):
     geometry = polygonal(geometry)
-    return None if geometry is None or geometry.is_empty else geometry.wkb
+    if geometry is None or geometry.is_empty:
+        return None
+    # Alaska's western Aleutians lie east of 180°.  Left in positive longitude
+    # they draw 350° away from the rest of the state and stretch its extent to
+    # the whole globe; shifting them by -360° keeps the chain in one piece.
+    return unwrap_antimeridian(geometry).wkb
 
 
 def center(geometry):

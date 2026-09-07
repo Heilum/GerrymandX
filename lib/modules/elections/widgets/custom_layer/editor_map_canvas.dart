@@ -238,13 +238,14 @@ class _EditorMapCanvasState extends State<EditorMapCanvas> {
         _ensureBorderPicture(
             _canvasSize, MapZoom.bucketFor(_zoomScale), dataVersion);
         _ensureFillPicture(_canvasSize, dataVersion);
+        final maxScale = MapZoom.maxScaleFor(bounds, _canvasSize);
 
         return Container(
           color: _background,
           child: Listener(
             onPointerSignal: (event) {
               if (event is PointerScrollEvent) {
-                MapZoom.applyScroll(_transform, event);
+                MapZoom.applyScroll(_transform, event, maxScale: maxScale);
               }
             },
             child: MouseRegion(
@@ -256,7 +257,7 @@ class _EditorMapCanvasState extends State<EditorMapCanvas> {
                 child: InteractiveViewer(
                   transformationController: _transform,
                   minScale: MapZoom.minScale,
-                  maxScale: MapZoom.maxScale,
+                  maxScale: maxScale,
                   boundaryMargin: const EdgeInsets.all(double.infinity),
                   child: SizedBox(
                     width: constraints.maxWidth,

@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 import 'package:flutter/painting.dart';
+import 'package:gerrymanderx/core/utils/map_projection.dart';
 
 class GeoPathData {
   final Path path;         // Full path for fill (evenOdd)
@@ -29,8 +30,16 @@ class GeoCoordData {
 }
 
 class GeometryParser {
-  // Parses WKB into raw coordinate lists (isolate-friendly, no dart:ui dependencies)
-  static GeoCoordData parseWkbToCoords(Uint8List wkbBytes) {
+  // Parses WKB into coordinate lists (isolate-friendly, no dart:ui dependencies).
+  //
+  // Vertices are stored as longitude/latitude and come out in map
+  // coordinates through [projection]; every consumer of the result — paths,
+  // bounds, outlines, hit tests — works in that space, so one projection
+  // has to be used for everything drawn together.
+  static GeoCoordData parseWkbToCoords(
+    Uint8List wkbBytes, {
+    MapProjection projection = MapProjection.identity,
+  }) {
     if (wkbBytes.isEmpty) {
       return GeoCoordData(
         exteriorRings: [],
@@ -60,10 +69,19 @@ class GeometryParser {
         offset += 4;
         final List<List<double>> ring = [];
         for (int p = 0; p < numPoints; p++) {
-          final x = bd.getFloat64(offset, endian);
+          final lon = bd.getFloat64(offset, endian);
           offset += 8;
-          final y = -bd.getFloat64(offset, endian); // Invert Y for Flutter canvas
+          final lat = bd.getFloat64(offset, endian);
           offset += 8;
+          final double x, y;
+          if (projection.isIdentity) {
+            x = lon;
+            y = -lat; // Invert Y for Flutter canvas
+          } else {
+            final p = projection.project(lon, lat);
+            x = p.dx;
+            y = p.dy;
+          }
           if (hasZ) offset += 8;
           if (hasM) offset += 8;
 

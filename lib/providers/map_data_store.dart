@@ -9,6 +9,7 @@ import 'package:gerrymanderx/models/election_metadata.dart';
 import 'package:gerrymanderx/models/election_sub_item.dart';
 import 'package:gerrymanderx/repositories/election_repository.dart';
 import 'package:gerrymanderx/core/utils/geojson_parser.dart';
+import 'package:gerrymanderx/core/utils/map_projection.dart';
 import 'package:gerrymanderx/core/utils/region_outline.dart';
 import 'package:gerrymanderx/core/database/database_helper.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/spatial_index.dart';
@@ -155,8 +156,27 @@ class MapDataStore {
       _groupCellCache = {};
   int _groupCellCacheVersion = -1;
 
-  /// Combined bounding box of all loaded geometries.
+  /// Combined bounding box of all loaded geometries, in map coordinates.
   final overallBounds = Signal<Rect?>(null);
+
+  /// Longitude/latitude → map coordinates for the loaded selection. Fitted
+  /// to the selection's extent when it loads, and applied to everything
+  /// drawn with it: the paths, the stored centres, and the comparison
+  /// election's geometry. Not a signal: it changes only together with the
+  /// geometry, which [dataVersion] already announces.
+  MapProjection projection = MapProjection.identity;
+
+  /// The conic for [cells], fitted to the extent of their stored centres.
+  @visibleForTesting
+  static MapProjection projectionForTest(Iterable<GeoCell> cells) =>
+      _projectionFor(cells);
+
+  static MapProjection _projectionFor(Iterable<GeoCell> cells) =>
+      MapProjection.forPoints([
+        for (final c in cells)
+          if (c.centerLat != null && c.centerLon != null)
+            (lat: c.centerLat!, lon: c.centerLon!),
+      ]);
 
   /// Signal to track data loading state
   final isLoadingData = Signal<bool>(false);
@@ -369,7 +389,9 @@ class MapDataStore {
       bounds = bounds == null ? rc.bounds : bounds.expandToInclude(rc.bounds);
       population += rc.cell.population;
       final wkb = rc.cell.boundaryWkb;
-      if (wkb != null) coords.add(GeometryParser.parseWkbToCoords(wkb));
+      if (wkb != null) {
+        coords.add(GeometryParser.parseWkbToCoords(wkb, projection: projection));
+      }
     }
 
     return RenderableCell(
@@ -573,11 +595,11 @@ class MapDataStore {
     }
   }
 
-  /// Geometry is stored with y flipped (see the dot-density painter), and the
-  /// stored centre is preferred over the bounding box's.
-  static Offset _centreOf(RenderableCell rCell) =>
+  /// The stored centre, projected like the geometry, is preferred over the
+  /// bounding box's.
+  Offset _centreOf(RenderableCell rCell) =>
       rCell.cell.centerLat != null && rCell.cell.centerLon != null
-          ? Offset(rCell.cell.centerLon!, -rCell.cell.centerLat!)
+          ? projection.project(rCell.cell.centerLon!, rCell.cell.centerLat!)
           : rCell.bounds.center;
 
   static Rect? _boundsOf(List<RenderableCell> cells) {
@@ -589,13 +611,13 @@ class MapDataStore {
     return bounds;
   }
 
-  static List<RenderableCell> _toRenderable(List<GeoCell> cells) {
+  List<RenderableCell> _toRenderable(List<GeoCell> cells) {
     final result = <RenderableCell>[];
     for (final cell in cells) {
       final wkb = cell.boundaryWkb;
       if (wkb == null) continue;
-      final pathData =
-          GeometryParser.coordsToPath(GeometryParser.parseWkbToCoords(wkb));
+      final pathData = GeometryParser.coordsToPath(
+          GeometryParser.parseWkbToCoords(wkb, projection: projection));
       if (pathData.bounds.isEmpty) continue;
       result.add(RenderableCell(
         cell: cell,
@@ -771,6 +793,7 @@ class MapDataStore {
     precincts.value = [];
     cellIndex.value = {};
     overallBounds.value = null;
+    projection = MapProjection.identity;
     precinctVotes.value = {};
     candidatePartyMap.value = {};
     candidateIdsByPartyName.value = {};
@@ -808,7 +831,8 @@ class MapDataStore {
 
   GeoCoordData? _parseCellCoords(GeoCell cell) {
     if (cell.boundaryWkb != null) {
-      return GeometryParser.parseWkbToCoords(cell.boundaryWkb!);
+      return GeometryParser.parseWkbToCoords(cell.boundaryWkb!,
+          projection: projection);
     }
     return null;
   }
@@ -866,6 +890,7 @@ class MapDataStore {
         final renderableStates = <RenderableCell>[];
         double minX = double.infinity, minY = double.infinity, maxX = -double.infinity, maxY = -double.infinity;
 
+        projection = _projectionFor(rawStates);
         for (final cell in rawStates) {
           final coordData = _parseCellCoords(cell);
           if (coordData != null) {
@@ -960,6 +985,7 @@ class MapDataStore {
           final renderableCells = <RenderableCell>[];
           double minX = double.infinity, minY = double.infinity, maxX = -double.infinity, maxY = -double.infinity;
 
+          projection = _projectionFor(allStateCells);
           for (final cell in allStateCells) {
             final coordData = _parseCellCoords(cell);
             if (coordData != null) {
