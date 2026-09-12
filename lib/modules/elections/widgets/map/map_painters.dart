@@ -201,9 +201,18 @@ class BaseMapPainter extends CustomPainter {
     canvas.restore();
   }
 
+  /// Border widths in screen pixels at 1x, coarsest layer boldest: a state
+  /// line must read over a district line, a district line over a county line,
+  /// and a county line over the precinct mesh. Layers composite in that order
+  /// too (see [_paintMap]), so the bolder line is also the one drawn on top.
+  static const stateBorderThickness = 3.0;
+  static const districtBorderThickness = 1.5;
+  static const countyBorderThickness = 0.7;
+  static const precinctBorderThickness = 0.3;
+
   /// Group cells are outlined in their own colour, thick enough to read over
   /// the county/district borders they usually cross.
-  static const customBorderThickness = 1.5;
+  static const customBorderThickness = 2.0;
 
   void _drawLayer(
     Canvas canvas,
@@ -217,16 +226,16 @@ class BaseMapPainter extends CustomPainter {
     Color borderColor;
     switch (layerType) {
       case LayerType.state:
-        borderThickness = 3.0;
+        borderThickness = stateBorderThickness;
         borderColor = _hasLightFills ? Colors.grey[700]! : Colors.white54;
       case LayerType.congressionalDistrict:
-        borderThickness = 0.5;
+        borderThickness = districtBorderThickness;
         borderColor = const Color(0xffffcc00);
       case LayerType.county:
-        borderThickness = 0.5;
+        borderThickness = countyBorderThickness;
         borderColor = _hasLightFills ? Colors.grey[600]! : Colors.white54;
       case LayerType.precinct:
-        borderThickness = 0.25;
+        borderThickness = precinctBorderThickness;
         borderColor = _hasLightFills ? Colors.grey[800]! : Colors.white24;
       case LayerType.custom:
         borderThickness = customBorderThickness;
