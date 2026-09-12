@@ -58,10 +58,16 @@ class ComparisonSelection {
       );
     }
 
+    final loading = dataStore.isLoadingComparison.value;
     final baselineParties = electionStore.partyNamesIn(compareFolder);
     if (baselineParties.isEmpty) {
+      // A year folder's parties are only known once its database has been
+      // read, which the comparison load is about to do.
       return ComparisonSelection(
-        issue: '$compareFolder lists no parties. Select another election.',
+        issue: loading
+            ? 'Reading $compareFolder…'
+            : '$compareFolder lists no parties. Select another election.',
+        isLoading: loading,
       );
     }
 
@@ -77,7 +83,6 @@ class ComparisonSelection {
       );
     }
 
-    final loading = dataStore.isLoadingComparison.value;
     final version = dataStore.comparisonVersion.value;
     final loadingIssue = loading ? 'Reading $compareFolder…' : null;
 

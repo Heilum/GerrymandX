@@ -26,11 +26,11 @@ class RemoteDbItem {
       final filename = Uri.parse(fixedUrl).pathSegments.last;
       return RemoteDbItem(name: filename, url: fixedUrl);
     } else if (json is Map<String, dynamic>) {
-      final rawUrl = json['url'] as String;
-      return RemoteDbItem(
-        name: json['name'] as String,
-        url: _ensureCdnUrl(rawUrl),
-      );
+      // Legacy manifest: {name, url}. Year manifest: {stateName, db}.
+      final rawUrl = (json['url'] ?? json['db']) as String;
+      final name = (json['name'] ?? json['stateName']) as String? ??
+          Uri.parse(rawUrl).pathSegments.last;
+      return RemoteDbItem(name: name, url: _ensureCdnUrl(rawUrl));
     }
     throw FormatException('Invalid db item format: $json');
   }
@@ -38,6 +38,9 @@ class RemoteDbItem {
   Map<String, dynamic> toJson() => {'name': name, 'url': url};
 }
 
+/// One downloadable election folder: a legacy election such as
+/// `2024-National-President`, or a year such as `2024` whose databases each
+/// hold every contest of one state.
 class RemoteElectionItem {
   final String name;
   final String description;
@@ -67,7 +70,37 @@ class RemoteElectionItem {
     );
   }
 
-  /// Written to `election.json` inside the downloaded election folder so that
+  /// Parses either manifest shape.
+  ///
+  /// The legacy `elections.json` is a list of elections with their candidates
+  /// and parties. `new_elections.json` is keyed by year —
+  /// `{"2024": [{"stateName": "Texas", "db": "…/TX-2024.db"}, …]}` — and each
+  /// year becomes one item whose folder name is the year; candidates and
+  /// parties live in the databases themselves.
+  static List<RemoteElectionItem> listFromManifest(dynamic decoded) {
+    if (decoded is List) {
+      return decoded
+          .map((e) => RemoteElectionItem.fromJson(e as Map<String, dynamic>))
+          .toList();
+    }
+    if (decoded is Map<String, dynamic>) {
+      final years = decoded.keys.toList()..sort((a, b) => b.compareTo(a));
+      return [
+        for (final year in years)
+          if (decoded[year] is List)
+            RemoteElectionItem(
+              name: year,
+              description: '$year elections',
+              dbs: (decoded[year] as List<dynamic>)
+                  .map((e) => RemoteDbItem.fromJson(e))
+                  .toList(),
+            ),
+      ];
+    }
+    throw FormatException('Unrecognised elections manifest: ${decoded.runtimeType}');
+  }
+
+  /// Written to `meta.json` inside the downloaded election folder so that
   /// candidates and parties are available without the remote manifest.
   Map<String, dynamic> toJson() => {
         'name': name,

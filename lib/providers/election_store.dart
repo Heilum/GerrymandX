@@ -19,6 +19,17 @@ class ElectionStore {
   /// `election.json` written next to the downloaded databases.
   final localElectionMeta = MapSignal<String, RemoteElectionItem>({});
 
+  /// Office the user wants to see (`President`, `US Senate`, `US House`,
+  /// `Governor`). A state that did not hold that contest in the selected year
+  /// falls back to its first contest; the preference itself is kept so that
+  /// the next state opens on the same office.
+  final selectedOffice = Signal<String>('President');
+
+  /// Party codes seen in each election folder's databases, filled in as the
+  /// comparison modes open them. Year folders keep parties inside the
+  /// databases, so — unlike the legacy manifest — they are not known up front.
+  final knownPartyNames = MapSignal<String, Set<String>>({});
+
   final remoteElections = ListSignal<RemoteElectionItem>([]);
   final selectedRemoteElection = Signal<RemoteElectionItem?>(null);
   final downloadingElections = SetSignal<String>({});
@@ -81,6 +92,13 @@ class ElectionStore {
 
         for (final dbName in await _dbHelper.getDownloadedDbNames(folder)) {
           if (dbName == 'National.db') continue;
+          if (labels[dbName] == null) {
+            // Year-folder databases name themselves; a legacy database copied
+            // in by hand keeps its file name.
+            final dbMeta = await _dbHelper.readStateDbMeta(folder, dbName);
+            final stateName = dbMeta['state_name'];
+            if (stateName != null && stateName.isNotEmpty) labels[dbName] = stateName;
+          }
           items.add(
             ElectionSubItem(
               name: labels[dbName] ?? p.basenameWithoutExtension(dbName),
@@ -158,24 +176,23 @@ class ElectionStore {
     if (changed) await _loadLocalDatabases();
   }
 
+  /// Manifest of downloadable databases, keyed by year:
+  /// `{"2024": [{"stateName": "Texas", "db": "…/TX-2024.db"}, …]}`.
+  static const remoteManifestUrl =
+      'https://files.xp-oncology.cn/gerrymander/new_elections.json';
+
   Future<void> fetchRemoteElections() async {
     isRemoteLoading.value = true;
     final client = HttpClient()
       ..badCertificateCallback =
           (X509Certificate cert, String host, int port) => true;
     try {
-      final request = await client.getUrl(
-        Uri.parse(
-          'https://files.xp-oncology.cn/gerrymander/elections.json',
-        ),
-      );
+      final request = await client.getUrl(Uri.parse(remoteManifestUrl));
       final response = await request.close();
       if (response.statusCode == 200) {
         final jsonString = await response.transform(utf8.decoder).join();
-        final List<dynamic> list = json.decode(jsonString);
-        remoteElections.value = list
-            .map((e) => RemoteElectionItem.fromJson(e as Map<String, dynamic>))
-            .toList();
+        remoteElections.value =
+            RemoteElectionItem.listFromManifest(json.decode(jsonString));
         await _syncDownloadedElectionMeta();
         _checkAndResumeInterruptedDownloads();
       } else {
@@ -610,11 +627,21 @@ class ElectionStore {
 
   /// Downloaded election folders that also carry the state database [dbName]
   /// (e.g. `TX.db`), i.e. the elections the current state can be compared with.
+  ///
+  /// Matched by state, not file name: the legacy folders call it `TX.db`, the
+  /// year folders `TX-2024.db`.
   List<String> foldersContainingDb(String dbName, {String? excluding}) {
+    final code = ElectionSubItem.stateCodeOf(dbName);
+    if (code == null) return const [];
+    return foldersContainingState(code, excluding: excluding);
+  }
+
+  /// Downloaded election folders that hold a database for [stateCode].
+  List<String> foldersContainingState(String stateCode, {String? excluding}) {
     final result = <String>[];
     localElectionSubItems.value.forEach((folder, items) {
       if (folder == excluding) return;
-      if (items.any((i) => !i.isNational && i.dbName == dbName)) {
+      if (items.any((i) => !i.isNational && i.stateCode == stateCode)) {
         result.add(folder);
       }
     });
@@ -622,13 +649,39 @@ class ElectionStore {
     return result;
   }
 
-  /// Party names an election defines, the key the comparison fill modes match
+  /// File name of [stateCode]'s database inside [electionFolder], if downloaded.
+  String? dbNameFor(String electionFolder, String stateCode) {
+    for (final item in localElectionSubItems.value[electionFolder] ?? const []) {
+      if (!item.isNational && item.stateCode == stateCode) return item.dbName;
+    }
+    return null;
+  }
+
+  /// Party codes an election defines, the key the comparison fill modes match
   /// parties on (party ids are minted per election).
+  ///
+  /// Legacy folders list them in `meta.json`; year folders reveal them as
+  /// their databases are opened (see [knownPartyNames]), so this can be empty
+  /// for a year folder until its database has been read once.
   Set<String> partyNamesIn(String electionFolder) => {
         for (final p in localElectionMeta.value[electionFolder]?.parties ??
             const <Party>[])
           p.name,
+        ...?knownPartyNames.value[electionFolder],
       };
+
+  /// Records the party codes found in one of [electionFolder]'s databases.
+  void rememberPartyNames(String electionFolder, Iterable<String> names) {
+    final merged = {...?knownPartyNames.value[electionFolder], ...names};
+    if (merged.length == (knownPartyNames.value[electionFolder]?.length ?? -1)) {
+      return;
+    }
+    knownPartyNames.value = {...knownPartyNames.value, electionFolder: merged};
+  }
+
+  void setSelectedOffice(String office) {
+    if (selectedOffice.value != office) selectedOffice.value = office;
+  }
 
   /// batch(): folder and sub-item are one selection. Written separately, a
   /// listener sees the new folder paired with the *previous* folder's sub-item

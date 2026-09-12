@@ -145,6 +145,33 @@ class DatabaseHelper {
     }
   }
 
+  /// The `meta` table of a state database in an election folder — state
+  /// name, code and year for the year-folder databases; empty for a legacy
+  /// database, which has no such table.
+  Future<Map<String, String>> readStateDbMeta(
+    String electionName,
+    String dbName,
+  ) async {
+    final dir = await _dbDir;
+    final path = join(dir, electionName, dbName);
+    if (!await File(path).exists()) return const {};
+    final db = await databaseFactoryFfi.openDatabase(
+      path,
+      options: OpenDatabaseOptions(readOnly: true),
+    );
+    try {
+      final rows = await db.query('meta');
+      return {
+        for (final r in rows)
+          if (r['key'] != null) r['key'].toString(): (r['value'] ?? '').toString(),
+      };
+    } catch (_) {
+      return const {};
+    } finally {
+      await db.close();
+    }
+  }
+
   Future<void> _copyAssetsIfNeeded() async {
     final dir = await _dbDir;
     try {

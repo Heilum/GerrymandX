@@ -9,6 +9,8 @@ import 'package:provider/provider.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:gerrymanderx/providers/map_state_store.dart';
 import 'package:gerrymanderx/providers/election_store.dart';
+import 'package:gerrymanderx/providers/map_data_store.dart';
+import 'package:gerrymanderx/models/election_metadata.dart';
 import 'package:gerrymanderx/models/geo_cell.dart';
 
 class ElectionsTab extends StatefulWidget {
@@ -16,6 +18,67 @@ class ElectionsTab extends StatefulWidget {
 
   @override
   State<ElectionsTab> createState() => _ElectionsTabState();
+}
+
+/// App-bar dropdown for the contest shown on the map: President, US Senate,
+/// US House or Governor, out of those the loaded state held that year.
+///
+/// A legacy database holds the presidential contest only, so the menu then
+/// has a single, fixed entry; the national view has no menu at all.
+class ElectionTypeMenu extends StatelessWidget {
+  const ElectionTypeMenu({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Watch((context) {
+      final electionStore = context.read<ElectionStore>();
+      final dataStore = context.read<MapDataStore>();
+      final subItem = electionStore.selectedSubItem.value;
+      if (subItem == null || subItem.isNational) return const SizedBox.shrink();
+
+      final contests = dataStore.availableElections.value;
+      final active = dataStore.activeElection.value;
+      final label = active?.label ?? electionStore.selectedOffice.value;
+      final enabled = contests.length > 1;
+
+      return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4),
+        child: PopupMenuButton<ElectionContest>(
+          tooltip: 'Election type',
+          enabled: enabled,
+          initialValue: active,
+          onSelected: dataStore.setContest,
+          itemBuilder: (context) => [
+            for (final contest in contests)
+              PopupMenuItem<ElectionContest>(
+                value: contest,
+                child: Text(contest.label, style: const TextStyle(fontSize: 13)),
+              ),
+          ],
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+            decoration: BoxDecoration(
+              border: Border.all(color: Theme.of(context).dividerColor),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.how_to_vote_outlined, size: 16),
+                const SizedBox(width: 6),
+                Text(label, style: const TextStyle(fontSize: 13)),
+                Icon(
+                  Icons.arrow_drop_down,
+                  size: 18,
+                  color: enabled ? null : Theme.of(context).disabledColor,
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    });
+  }
 }
 
 class _ElectionsTabState extends State<ElectionsTab> {
@@ -168,6 +231,7 @@ class _ElectionsTabState extends State<ElectionsTab> {
           actions: isRemoteMode
               ? null
               : [
+                  const ElectionTypeMenu(),
                   IconButton(
                     icon: Icon(
                       _showRightPanel ? Icons.info_outline : Icons.info,

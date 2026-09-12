@@ -1,0 +1,5169 @@
+{
+  "year": 2024,
+  "schema": 2,
+  "generated_at": "2026-09-12T15:51:27+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2024",
+  "national": {
+    "db": "National-2024.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2024/National-2024.db",
+    "size": 4829184,
+    "sha256": "e8bdea426f5e1c43ccdd0cd2cfd8f3c7764fcbd9440b6efc1739ca390166677a"
+  },
+  "states": [
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "db": "AK-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/AK-2024.db",
+      "size": 17240064,
+      "sha256": "4b9a57c1c40a42b60ccfbfb67756aebf889fbd6c8cbeaf041809252763809c05",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Alaska President",
+          "total_votes": 327524,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1597c495-2618-5001-bdd0-e9db35d969f0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "30d7242e-2043-5cc2-a9eb-979fc49792e1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f328b0da-c4db-5747-9ddf-6131ff50cb7f",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Alaska US House",
+          "total_votes": 328805,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "06024434-c85e-5a15-bf02-fafa21811841",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5aa4063d-c9de-53e9-ac11-5f14e7315330",
+              "code": "AKI",
+              "name": "Alaskan Independence"
+            },
+            {
+              "id": "3d372f75-46c9-5af0-b469-0daaa9e23705",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/AL-2024.db",
+      "size": 35123200,
+      "sha256": "c98e32fc44f6ad252a698673a27b9b8a6524b735cdb04899d14cea96c08a5513",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Alabama President",
+          "total_votes": 2265090,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "c2a5ebdd-4067-5281-b0a6-1da4a12c2ebe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2a76091f-79d2-53ed-b226-320b5bc5d6ea",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "c3c4a8d8-751d-5266-8fe5-0a178c424a45",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ef807b43-8e9f-58cc-99fd-c5994e67f59d",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "09057ecb-4795-5693-8dfe-234a3b7a9538",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "6799ee50-593a-55b3-8c20-71ba07c12208",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Alabama US House",
+          "total_votes": 2048663,
+          "candidates": 18,
+          "parties": [
+            {
+              "id": "d50b7408-e45f-5f6b-96f1-c757d4879237",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e74b3d1a-4d06-5f75-89a6-317b0061e093",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "9849ff55-2a23-53c5-8df9-b9d6467bf7b4",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/AR-2024.db",
+      "size": 24748032,
+      "sha256": "5f2b46d3787f322d4c70bd805c1e05244c79797e9f8e3ebcd9d8045766d1950a",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Arkansas President",
+          "total_votes": 1182481,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "2e8c7908-3d5b-53e0-8a6f-bc7ab8bc0f4e",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "8de8a4f0-5562-5682-a81c-5f9bc87a8f2e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "18d75aff-7899-527d-8b2d-348b3ee86957",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "cd650493-bf93-5431-8147-a2cc07260180",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "58e9e5ca-7431-5914-9ec1-16beb5fe0a79",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b32b3e51-0f26-5400-9130-747f89748aa2",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Arkansas US House",
+          "total_votes": 1144611,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "ff1a8ba0-ec60-5dac-be26-0d578310264a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0935d733-8486-56c4-95d8-c9135eabb8ad",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9f1d27d2-4545-57cd-b0c1-bb0e568fdb2b",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/AZ-2024.db",
+      "size": 20103168,
+      "sha256": "9d4c14fb6038790b07c91b7d85b85a8b0723acc156b99095ad6a54f59e7a6d45",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Arizona President",
+          "total_votes": 3389319,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "73ea00c1-6a85-56d5-af58-df746cfc36af",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1479c775-d4de-5349-bc9b-9c7d9ff4a38e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "de808789-7401-5816-b7da-3523240ea963",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "39f69747-932f-54ed-a220-f38929748dde",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Arizona US Senate",
+          "total_votes": 3352137,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e534735c-bc17-5cbe-a661-0ff95cf01e33",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "21feddac-8839-5010-a8a9-d8834bcd3d98",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "1a24c906-1844-58a3-b07a-e0f744e3037c",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "f9266c17-d64c-5377-92a8-2ce26855ab48",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Arizona US House",
+          "total_votes": 3256701,
+          "candidates": 28,
+          "parties": [
+            {
+              "id": "ef69529e-9611-589d-af0c-1001c0466ddc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d30b3fa7-d5f3-54bf-8095-44b54879a680",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "1af595f9-5a30-59b5-a8ed-e053308b030c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3681054b-fa11-5878-8df0-f9eaed206f9b",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/CA-2024.db",
+      "size": 182693888,
+      "sha256": "0676ce53fcd78bc6ee74ae53bf68e9f05abcf87ede3317c77a54e24d1a4d0fd0",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 California President",
+          "total_votes": 15584975,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "95a0d48e-aa23-5979-9da7-41e341d74d61",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6bfef542-696d-55f7-ad6f-afde29fa4da1",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "773effe7-90be-589a-aee7-218fb84381a2",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "08575583-749b-5b89-b659-36a67a58a9b6",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 California US Senate",
+          "total_votes": 15341548,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "9d9e6520-61d7-5ca1-91a3-a1d40a22c213",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "11bd7a79-66b9-5eee-821b-7cd755d4badf",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US Senate",
+          "special": true,
+          "name": "2024 California US Senate (Special)",
+          "total_votes": 15034610,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "59c31520-1618-5430-9d77-fc93c73be954",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3886388e-c1e0-5e8a-86de-e2aa663474a0",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "US House",
+          "special": false,
+          "name": "2024 California US House",
+          "total_votes": 15104029,
+          "candidates": 104,
+          "parties": [
+            {
+              "id": "e5e67b4b-bb54-59c6-b131-29e592c6dffd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "af4c5274-b6d5-59c7-97bf-2cccd51d2856",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "aa338af9-e5df-584f-94a9-9b836b568f93",
+              "code": "AMR",
+              "name": "American"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/CO-2024.db",
+      "size": 40976384,
+      "sha256": "4c0a7bffd8205a5bd3dcced62d4396452626d144e5bcc9efde5e51fb87804dff",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Colorado President",
+          "total_votes": 3192745,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "93449318-b634-5585-b964-3a73073181a7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "755b4c9b-755f-5130-9750-93885e01425a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b7fa13ef-b38f-5ab8-a467-c39e3390a71c",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "fe9add94-ee99-57f2-a032-e8ba4b7b50fa",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bdac2f52-eeb3-5054-8579-2adb4c4bc83f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9c2787a6-0538-56a1-8bf0-37824c51c786",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "87ad1cd7-6349-5e55-a9c3-650064177689",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Colorado US House",
+          "total_votes": 3073391,
+          "candidates": 43,
+          "parties": [
+            {
+              "id": "976ee104-06fb-5355-a6f0-8d49d657abe6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "71f1bdac-67d4-532a-b431-da718b1741f8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "64bf6dd9-220c-5081-96ce-cc339bdff1a4",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "e71dce66-dfda-5e59-ad8c-ae54735ab4b8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d14e5811-f61f-5c7e-a152-e5fec02c51ec",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "43c535ac-ff72-5641-b7cd-c71e38a7b6b7",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/CT-2024.db",
+      "size": 7036928,
+      "sha256": "33d4322f05fc3a9e38f45d8709e6048345f894ff68b1bdc9d9d848456607561f",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Connecticut President",
+          "total_votes": 1750562,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "483403d9-11ec-5e01-a00d-7d4b8a4dcdfa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5b999e7e-e63d-5001-81b3-0a0a8d33935e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "893ccf62-59e0-5ba8-8724-121861385924",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "dda8f75f-70f9-5c8e-85e4-094863409bde",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "dbbe800f-1e52-57c7-8668-f5b22991d3ac",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "b7c6f9e0-0338-5c6e-bdd7-087e02e762c9",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Connecticut US Senate",
+          "total_votes": 1708259,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "93a701de-652a-5322-ab36-3213f147aaec",
+              "code": "CGG",
+              "name": "Cheaper Gas Groceries"
+            },
+            {
+              "id": "963ec046-8d94-5adf-aac0-b8a4406821d1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4704ea1d-adb9-53a8-ba40-c2e7a2ef0953",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "1baf54f6-6606-5d95-9105-dd7c260bbfd1",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "44252219-c718-5785-8f67-0bf7f0ce19a4",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Connecticut US House",
+          "total_votes": 1701914,
+          "candidates": 18,
+          "parties": [
+            {
+              "id": "e002e1e4-752b-58c5-a937-34a0ac084e1d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cd4ae850-f478-55a2-a045-fd4d16cb7071",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "3df73dad-c752-575f-8502-005527f3db2b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3cb29c8d-6726-5eb4-9ea8-c9b6f720cb7d",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "1f723b4f-9126-5225-a25c-9d142dbb1b89",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/DE-2024.db",
+      "size": 4595712,
+      "sha256": "bd9d4b084227a0a30ec1db88e30bfbc49e00fee32c1a135754f246009b1260a7",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Delaware President",
+          "total_votes": 510783,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "d91be467-0735-5a8e-835b-6dd032991e6b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e0b6f0fb-7776-5f9b-a660-5eaa72d5a655",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4e85779a-9d57-52e1-8aae-90fc344078b6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5b2aa83b-2c40-504d-b8d0-7b0bfd8af01c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Delaware US Senate",
+          "total_votes": 500606,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "30b0a9e4-62e8-563a-b5f0-573d4d098cdd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b71daa58-dd88-503c-b1f3-d908fc5e3d74",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4cd38f70-d90e-509c-9100-31e6ff482c8f",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Delaware US House",
+          "total_votes": 497436,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "65f7ef0a-86bf-5581-a0e9-c376e75a528d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f794d435-8c01-5506-a7dc-f9f30ec9a1c3",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 Delaware Governor",
+          "total_votes": 498635,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "47abf37a-b10d-5700-a69b-61cda18fd687",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "80f4534e-f0e7-5140-b934-647a4e3de571",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/FL-2024.db",
+      "size": 85078016,
+      "sha256": "6dc34be6418ca724c714fff07f8b3b3e64dbc14661b23e8444cc690305be2432",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Florida President",
+          "total_votes": 10868291,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "c4480cd6-84e0-5dde-9d6f-77f32c2aa1e2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aec3a7db-2124-51cd-8a9a-501c4b3ed064",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "8ca922d7-26a7-52b1-aa27-b98cc11b7072",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bc695332-b703-5ae5-b593-9ad2bf8c55d8",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Florida US Senate",
+          "total_votes": 10757416,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "2fb6436e-e07b-5d59-af91-83e1e2771824",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c26f184b-0a1c-5578-a35a-cce3cddc6811",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "86389c7e-474d-5a1d-8e30-e98a6ebff8af",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "7f0d06e2-86a6-5840-9307-4a41ef7e6fdc",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Florida US House",
+          "total_votes": 10327700,
+          "candidates": 57,
+          "parties": [
+            {
+              "id": "e4deb42a-7719-5891-a46d-5c4a1cc6b5a7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a6141f69-b48e-579c-9244-b9d264899935",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "57a8dea7-a7be-5861-b2e4-2d72ee7a1456",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "702e960e-de59-5590-86aa-22792f10bbec",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/GA-2024.db",
+      "size": 45867008,
+      "sha256": "2bb25e9a91e2c472b594db1dc20f46d3b6f9a747838bbd4650cf3ad1d0b8dedb",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Georgia President",
+          "total_votes": 5250066,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "5fac5a08-82ba-5aa4-87f4-69aab1e2d9cb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ffd6ce82-9063-58ff-bd5f-eeb92662e961",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "353586b6-6a02-5a6e-8a43-641839cff1ba",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "e6f9d488-c85f-525d-bf99-fdaef7329507",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bc9cf1d3-6af8-5a18-b842-f7cc3d09a943",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Georgia US House",
+          "total_votes": 5137102,
+          "candidates": 28,
+          "parties": [
+            {
+              "id": "a02de31e-c508-5391-ba7d-f40b17d8283a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "77a77207-bf30-50b2-8403-dd5ce7f9a115",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/HI-2024.db",
+      "size": 5124096,
+      "sha256": "499242607da98665f24c87775c77edc912e5e99106082731e0a59ea10da01512",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Hawaii President",
+          "total_votes": 516701,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "4946af79-525e-5cf6-9d1f-e8a263875d61",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4c6d98dd-d4a6-5090-a16a-4b430aab1858",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2a3c93b4-a25b-50d1-83fb-0118059b514e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8a7b6d73-407d-58d4-9bec-a44a6387479c",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4c8f1100-b57d-52bb-ba42-81ab47662fcd",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Hawaii US Senate",
+          "total_votes": 501763,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "de27814f-ddeb-5a2e-8211-023c69ed2e80",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "42f6eb5e-818c-5baf-a98c-b4ce7bdc3ee2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0b2b44a4-b789-5798-80b9-66ebd4cbc4e7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ccd61d71-f379-5575-ae7a-a9bd0e8ef74b",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Hawaii US House",
+          "total_votes": 478766,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "31e7cae5-b8f6-564e-853d-de529d35cc9c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5275e6b6-fb25-511b-8739-6d29d42950ae",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "96555465-2db8-5733-9338-afbcddb4e337",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6e70ddaa-7362-5bbc-b8c5-f4d9faff1ff7",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/IA-2024.db",
+      "size": 15155200,
+      "sha256": "7f033efcacde9c5f2c53a25942b936225c082ef7a3286b1a3b9c5de9a61ae9ae",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Iowa President",
+          "total_votes": 1661718,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "02876a46-cfde-5def-a7fe-314705288910",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dbd0de70-6ca7-5987-9716-16eaaff9e836",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c1589fa8-3da4-5904-9e67-cec1e08cd859",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "19b31b88-5ad9-57d2-b91b-f5cef922979d",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "413338c2-d2d2-5fc2-b464-e6c049533335",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Iowa US House",
+          "total_votes": 1609609,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "bafc7e28-cdcd-50fa-b65a-edf71d8d112f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eb83c529-2b09-5fac-a711-627e845d5ac6",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "98ee336b-055c-5afc-b135-baad3b6c3f85",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "79620a6e-884b-566c-9f96-f38ec61f7035",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/ID-2024.db",
+      "size": 21405696,
+      "sha256": "688a85d316d67994561c4bf29a935215203ff25fa030e73b97cfbf1b36f3ce3c",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Idaho President",
+          "total_votes": 903480,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "9237144c-e989-5dad-9d97-2fe2a0a49f79",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5fe2815e-0d34-5338-88e2-5032d61826a0",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "a2af0745-ce42-50f3-9cf5-75931e5e5cb6",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "be2791e0-8c32-54c1-bb27-5f4681d1f4a1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6fa3ffda-a103-538f-8bd8-bad0a61ccbd3",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Idaho US House",
+          "total_votes": 873704,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "959b05ab-0cf1-57ac-8076-abb0abc74ad0",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "2959c7de-847c-50cf-8b74-b9ef1546b252",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e8991263-2cc9-51bb-b355-b4ec1e0f4d45",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "aa2de3d2-d646-5874-a128-bc89a2a74a8a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "33aeb6c7-2a47-59ec-96c7-ba9e21aefaf9",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/IL-2024.db",
+      "size": 52936704,
+      "sha256": "421c50f3cbe69a578a2d2841d4183fed777085a720fc37188ebf65c88868e96e",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Illinois President",
+          "total_votes": 5649622,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "2f3e0205-7b9e-51df-8978-03956d5ab2ac",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1dc785b2-ce69-5b97-b3a5-174bdfdca7e6",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "856bf47c-0c57-531c-a6c9-9df46ac6de71",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "9f1c6efa-9114-5f30-9e23-6fa0252a7d4d",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Illinois US House",
+          "total_votes": 5376615,
+          "candidates": 46,
+          "parties": [
+            {
+              "id": "caea0fa2-9ff4-55f9-a999-cea4d7d93d1e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "111c213c-48a0-5ee1-bf63-469a7cd9ac69",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "fe7ddcca-06de-5df1-9eb6-5f644f330903",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2ea77dcc-f7af-53fd-96d9-c3ad96a20a06",
+              "code": "WCP",
+              "name": "Working Class"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/IN-2024.db",
+      "size": 33497088,
+      "sha256": "011da126df01f789413b6448acd8744bbf00863b688ce3aa1d8b044e3f2d00c1",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Indiana President",
+          "total_votes": 3088482,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "6eb272a5-f2ab-53b5-8610-26a36380200d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a994a84b-d549-559d-8055-7eb05fe3763e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8c4ea044-1588-5794-b8bf-8128568fb276",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d440f66f-8fd2-5e35-bb26-ff464b753c14",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "b1256a9f-5c1b-5de3-9acf-8a7527e75bba",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "63b254ba-00c0-5915-b5c1-f6ed7cfd0d88",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Indiana US Senate",
+          "total_votes": 2976484,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "93d79cae-8d08-5c92-96fc-cd6b352daf51",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d7345700-9bfa-533e-b56e-d9b98411ea30",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "09f8773f-cb11-5700-ad2b-e8453e2bf579",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ae772e34-edf6-5665-acc0-13697eb643da",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Indiana US House",
+          "total_votes": 3005335,
+          "candidates": 36,
+          "parties": [
+            {
+              "id": "b1d8e916-c365-5f39-b984-d22d36d61d0f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1b85f92f-41f2-5638-97dc-a53c8533ef3e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ac94d5aa-dcd5-5371-a99d-6f8efc578690",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ef55d09e-042a-5f43-a566-bf4ab69a656e",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "dd6c17c8-b3de-509b-a4ba-4a249a25d70f",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 Indiana Governor",
+          "total_votes": 2995532,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "7993c617-7ece-5e08-94d4-56ec58b9efc5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "0712c1e5-652f-5eda-aa24-77d27b23bd48",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6f3de2d2-5236-5ee4-a320-7118f53d412c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "15da5499-d3c9-5de6-a875-f92e610f01f7",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/KS-2024.db",
+      "size": 33075200,
+      "sha256": "7caf37e69a72dcb96516ef40cc15da6b8203fe3c3f7b2ba60b0b41df69d08ea9",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Kansas President",
+          "total_votes": 1327591,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "a89ac5d5-8a0e-54ac-89d4-e306939b5e39",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a82ba6a5-7b75-51ef-899f-3547e935cc1e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ae2cbee6-cb31-5121-8dd5-2a239ed0a93f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a89c108f-d02a-53fc-a046-b94e67d3e8dd",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Kansas US House",
+          "total_votes": 1305655,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "31d221a8-93ac-5012-9022-2762fdd96163",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dc41a79c-6029-5eaa-8835-447e4ba0156e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "853b835b-8391-5a88-9e7b-f47a9a88f876",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bc4d512c-962c-5371-861c-1c1064411921",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/KY-2024.db",
+      "size": 57221120,
+      "sha256": "017ba3100f373b6765805d9697d42fdf923f27a8effa2b9bb9ed14d89f2fecd7",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Kentucky President",
+          "total_votes": 2074527,
+          "candidates": 15,
+          "parties": [
+            {
+              "id": "ae04fef6-5a38-5244-9953-0703195b5a04",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f4eb42fc-851d-5087-95f8-d23010fc5ea5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0b80bbd5-99e8-58c5-b33f-20dc42f33323",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "c0f08cc7-dae7-56b6-9d4e-eebdd61adefa",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c4d59a16-7918-5baa-a87d-146514a46519",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a1fa2f0b-971f-57ba-ba16-3e2e4f75cdcf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Kentucky US House",
+          "total_votes": 1905531,
+          "candidates": 12,
+          "parties": [
+            {
+              "id": "3f17b935-418d-5c10-9459-0d6836d94f46",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "22333dae-ce0b-5284-bdd2-83a686d927ae",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3e7f8587-6f1e-5655-9cbb-8d44c72a1713",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "3487472d-8bca-5304-b7e0-9f3eaf908ae1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/LA-2024.db",
+      "size": 38490112,
+      "sha256": "09b31621cdddd19abc9b80a78ec04b98b66fc268acbb0b8a3ba954c432d2d088",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Louisiana President",
+          "total_votes": 2006975,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "ffa9e058-4e11-5677-ae73-f854d689db00",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "da7ed07c-a74e-5cfe-993d-8429876817a2",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e6b93a0b-1bc5-519a-8a6e-effb4c06318c",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "2a47da54-9d73-58d4-9de7-9e98e9a37724",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "adffd7a5-462f-5b4f-bab0-2810266fd6f5",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "51c75387-ff24-5ae5-ab2f-3ad41eef0ece",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Louisiana US House",
+          "total_votes": 1905718,
+          "candidates": 24,
+          "parties": [
+            {
+              "id": "f462c085-df25-5959-a8be-9902c7a9c0b2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ce695e29-0bc7-58f2-8489-55c1c7f3b581",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "c54767fa-8d06-56d3-91f5-489e718df02c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/MA-2024.db",
+      "size": 22216704,
+      "sha256": "0cc10a712ca87a33393b79c8a964ed200ac21db6aa1b4af7b760cd6f69ce1469",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Massachusetts President",
+          "total_votes": 3415293,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "8583092a-c28b-52bd-bf16-39b6d4d495a8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "69a66ada-b92a-5313-bcac-eaa38a7d4dc6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3b4c20c9-a071-5f2f-85ab-02b0920c674b",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "547e2a19-a5ff-51a7-abe0-4dba33126e44",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Massachusetts US Senate",
+          "total_votes": 3413329,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4c51e755-0dd0-5aae-9190-f2f80e4a9d6a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c390e8da-ade1-5c0d-a78e-47936e89429e",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "bdff8734-fb99-5063-bf68-8d53bf005b01",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Massachusetts US House",
+          "total_votes": 2976163,
+          "candidates": 23,
+          "parties": [
+            {
+              "id": "071ff2de-2143-5019-a173-2d0fe8973e75",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4403cca2-0323-5699-bfa6-a0647f707506",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "3fceeae6-c38d-5cde-94e0-a169813c95db",
+              "code": "UNE",
+              "name": "Unenrolled"
+            },
+            {
+              "id": "91d7baf9-12e8-508c-b35d-be3c88322fb5",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/MD-2024.db",
+      "size": 58396672,
+      "sha256": "31e986e3a4e7b498c3ea3b6c7432d3fa5f0fbf725d41799139960bcd228c56fc",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Maryland President",
+          "total_votes": 3007585,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "6c2c0773-b611-5b0e-96f1-537ee54efbeb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "58cd66b3-28a0-58c0-be0f-68e38526c71c",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "8abdfc7c-58db-5850-9e73-016671d689f5",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "dea158f5-ca25-5a5c-8249-127255696163",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "cc7cb89f-7d31-5fa4-bc60-0eed9fed7b7e",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Maryland US Senate",
+          "total_votes": 3021378,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "1bd613e6-8494-5c42-a1c6-327c5187ea39",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "22a033e5-0a1e-5192-aeb0-eb8b1224c1f7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d41975e6-6f7e-5be8-8713-909bd52a1544",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "b1d3fb92-9edd-5a6b-a9ab-8589829db031",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "20095cf4-d123-579e-bb7f-ec31a187f960",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Maryland US House",
+          "total_votes": 2935328,
+          "candidates": 29,
+          "parties": [
+            {
+              "id": "23523f38-40f8-5a24-aa68-2db416a7c7b7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bc80ca93-0b30-58bd-be8a-5e4ac519562f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "cefb6029-28c0-5dda-bcb9-4e25c3ececa3",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "a772e910-9902-5c96-bbc1-65e9a7a86f0a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d567e267-405b-5883-b0ea-3d02320e8244",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/ME-2024.db",
+      "size": 1912832,
+      "sha256": "55f31770f7a6ba36445990f0e71237b4cf204957587f3232360a69cad586777c",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Maine President",
+          "total_votes": 824806,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "d4366ae1-9a8d-53ac-8f63-53b15e4b79f0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e48ea194-a801-5c7f-aee0-d2ea33ae38db",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5ad2b3fc-6150-5c1d-b3d5-9c872f37ae7a",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9a6e3018-1ca5-57f6-be0c-2c3e250872fc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2b359c6c-f844-553d-95a9-345f9c1b3b75",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "2dd8c042-bbd7-5085-a32a-e916284bf5e5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Maine US Senate",
+          "total_votes": 810583,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "cc22f0bb-d7a2-5f81-92ca-0831a85dd61b",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "2ac8cd2d-947b-56d0-b96d-6c5c5cd2b44d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "97c0cb9a-2eca-5c0d-b672-2d5d33b80ba5",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Maine US House",
+          "total_votes": 798076,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "b5d8aadf-0f2d-584b-b204-11871a435237",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "67c0dc05-bcb5-5f4c-b480-4121bba67477",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "530ecf3e-fc90-5691-a958-8512f1a18ecf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fd5a4a1c-b247-56e3-9a42-f157e6c4f6e2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/MI-2024.db",
+      "size": 37892096,
+      "sha256": "37f55dec62ea7337f306f1a2dec9239c13ec7f5549557df71cedeef37f2b9f64",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Michigan President",
+          "total_votes": 5619828,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "ff0015fc-de12-511c-942b-ba0583eb535b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6d31363d-2745-5c8f-9665-18063e0711f1",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "04b949d0-06c5-5bf5-9cdf-75552f509ed8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1a5e06c9-38a0-5597-99e3-7ca3da37c518",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Michigan US Senate",
+          "total_votes": 5576702,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "09d976ee-d955-5885-a249-5584580cb149",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d3dc0449-c321-5036-a16d-e2a12ecf4573",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "288b84bf-7030-56d1-9571-60562e4a3099",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c446b7a5-255c-585d-8544-44f394a9ad7a",
+              "code": "NLP",
+              "name": "Natural Law"
+            },
+            {
+              "id": "3c9c427e-1963-585e-806d-3bab4a3d33cc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5c2cd0c1-e866-5a13-a763-9f26d0ff8d81",
+              "code": "UST",
+              "name": "US Taxpayers"
+            },
+            {
+              "id": "6ef98a56-01ab-5f0b-a241-e294c1eb6e02",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Michigan US House",
+          "total_votes": 5516486,
+          "candidates": 51,
+          "parties": [
+            {
+              "id": "f44558cd-87f7-5d5b-b09b-2c7bf3eabfa5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e4537121-ca41-5fe2-a791-fc37d343ceab",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "252a0dc5-7f22-50f1-bfda-39011811a094",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6390a2c2-018d-51db-8112-0f8eb6af55b8",
+              "code": "WCP",
+              "name": "Working Class"
+            },
+            {
+              "id": "13525463-3260-514a-9a30-b383c3d00055",
+              "code": "UST",
+              "name": "US Taxpayers"
+            },
+            {
+              "id": "7314a516-e11d-5c42-abfe-dbf08073557e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "63dab75a-526e-5d27-b543-5ba8979c80d6",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "fdf2bfa9-158f-502a-81a7-f47caa4bd320",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/MN-2024.db",
+      "size": 21483520,
+      "sha256": "ac49cf31836d43fbe624c97f1cb45a4137ea740a009c913e899813dad9807830",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Minnesota President",
+          "total_votes": 3253920,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "69c75e90-cb76-539e-a87b-1bd73d178ec9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "97584b16-58ff-534d-84eb-fa26ff134620",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "852f4b66-b71d-5f86-8d4f-9ac275131071",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "dc5d9d8c-932c-5519-81ec-7bbf315fa4e8",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "7738a882-3ed4-50a3-8481-cb0b95b8f835",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "35a1b8bf-17c8-589e-ae02-d5cb14007909",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Minnesota US Senate",
+          "total_votes": 3189323,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "64a69a66-6183-58c4-819d-96d086421bc2",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "602a390a-dc9e-50ba-9fec-ecd6e7a6fc10",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "edbd3687-33b5-5ac9-98c3-0aa86263c6d2",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "3906baf2-5cce-5e8d-adbe-9af0f7d5ad6a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "09b38026-78a7-56c1-b6e4-fb90da7fa27e",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Minnesota US House",
+          "total_votes": 3146762,
+          "candidates": 25,
+          "parties": [
+            {
+              "id": "7a589fa4-17a3-57d1-b786-7c470f55d91f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4194609d-b2c7-5850-a40f-bc77313b7aef",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f14106b9-5117-5f21-936c-e7f33c57fb67",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "50198270-55b4-560a-92ff-9f959fcb242e",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/MO-2024.db",
+      "size": 33714176,
+      "sha256": "f0213172641628c2c7a8b7d7d3872b083f0aa8059fbeb5d638d2ee0cc446a4ba",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Missouri President",
+          "total_votes": 2995327,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "2d7c6215-c084-53e1-a65d-9407ad2db264",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dad4909c-1aec-5344-b77f-4d9c582d82a3",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "b309cd1b-e4ab-562a-8d3c-0505c3c90ab0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8b7cbd59-584b-559e-bd6a-32bc69a7383a",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4a746def-95bb-5cf0-b8e6-daefc50bcf40",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "f420b5fb-b6ec-5407-b6e8-2b08feee6b3b",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "a79c8c3e-e5b0-5d6a-89a4-7280994cdc6d",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Missouri US Senate",
+          "total_votes": 2972559,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "9b73f427-344a-5ac2-8ebf-26ce3596cb57",
+              "code": "BTR",
+              "name": "Better Party"
+            },
+            {
+              "id": "d17e4347-109c-58a4-bcd8-695ca4981c24",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1651c1b1-7992-5d8a-affc-1798005abfab",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "a226ad37-5598-5afd-9e94-1e8001230daf",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3e02bbdf-11e7-5914-87a5-c18620022d57",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "e2bc41ac-72d3-541a-9d3f-73a6c68e91ac",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Missouri US House",
+          "total_votes": 2924863,
+          "candidates": 31,
+          "parties": [
+            {
+              "id": "d76bfffa-6931-54b0-a5fd-b60d2d9bc44b",
+              "code": "BTR",
+              "name": "Better Party"
+            },
+            {
+              "id": "1dc6d95a-41db-59fb-af74-6c26e0582fa7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7dd1871f-109e-5164-83bc-da9358ba2ffa",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9f720ded-08f1-50e6-824e-7e8af2de37d0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b1e296ad-69b4-53c4-b033-00035b69b58c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4376c4b5-1730-5007-9c2f-026732a5fd2c",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 Missouri Governor",
+          "total_votes": 2960266,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "37459e49-f825-5e17-918f-512f70d00bc7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "76b8e30e-5705-5746-87e8-e3910bd62512",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c1cb23ab-6de5-5a0d-b98e-9a8977a731be",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "41b384c6-13a0-53cf-8eae-e63c92ecaeb1",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "ffd8f06b-4802-55ae-9727-1099bdd489e3",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "b76fdb1a-3e17-599b-9629-bdd4e8a39f73",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/MS-2024.db",
+      "size": 34623488,
+      "sha256": "8cc4af70af03ef64ffd891106d287bc701e59941c919c2f22daf68339d7a97f2",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Mississippi President",
+          "total_votes": 1226977,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "7469d2b0-e5ba-5492-8bc9-d9e7eacfc525",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "96117adb-7883-5453-926c-e80f0ddfb3cc",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c1d93306-a7c5-5aaa-a776-4d84cc5e858d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "751e61d9-9cdd-508e-9915-3bb40a352d2c",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "c8ec066f-4aec-5301-99e1-271a31d9f5b2",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Mississippi US Senate",
+          "total_votes": 1215400,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "5d541aae-17d4-52db-9564-fbae7be6abe0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fa9873db-3549-5d00-a8f2-ff7da7fa75f6",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Mississippi US House",
+          "total_votes": 1163151,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "a01aec25-ddce-5e4c-848c-efe21bd456a6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "06a3b48c-576d-54ad-8086-ee2b5bde471f",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/MT-2024.db",
+      "size": 17133568,
+      "sha256": "67cb99dc7bb61e3b3463014bb35f42ce571ee2cf55985aab1477ef7568f45f1e",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Montana President",
+          "total_votes": 602963,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "55ac902d-b644-5d77-94c2-d497a82443d3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2ea0163d-be34-5d06-9e7b-58d73d633197",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "18c3a1dc-b072-5cae-877c-1d3b9903e056",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "66e57b1d-74f4-5cee-80ba-e4340b64f3e7",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "61d5f544-342e-56d8-8353-0256fe7cfa7c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Montana US Senate",
+          "total_votes": 607262,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e6771bcc-8ec8-5856-a490-32d7870c5dba",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bd898379-db32-5d9a-95e5-3080fed686bb",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "eb254978-fccd-55a6-a9d0-1178c82d9583",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "83a3f4d9-3cb0-5864-b2b6-7b67d6f2d737",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Montana US House",
+          "total_votes": 597811,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "3d1379bb-b95e-5a9e-ac30-29f17a78cc89",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d37867f8-bc2b-58b1-a9b7-0e9ecb54ee8a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "fb766b94-0b54-5859-a562-65b185ea0361",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 Montana Governor",
+          "total_votes": 602404,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c29022df-7bf5-53b4-8ff1-8b8a7a1846c0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8584b7cd-d94c-5bf6-b6dd-e2452dc45013",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7a7985d6-f35e-5a4c-87d9-67e7a46585b7",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/NC-2024.db",
+      "size": 50163712,
+      "sha256": "93abab55241eca3611846af1a36140b3425ebc97fef99d04cbe00db4da9a506f",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 North Carolina President",
+          "total_votes": 5676874,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "98f34dd8-63a5-55aa-8ddc-c5f2d652ec5f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1533c8ce-1c3c-5adb-b9e9-6af6319aa870",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "f5dc789c-6179-593f-9960-a7d0f8d529f4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5c774d04-1f3b-5468-b38f-9ab2a091fccd",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "e1be6074-3b39-5b61-8f46-e4cb773bbb8a",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 North Carolina US House",
+          "total_votes": 5480486,
+          "candidates": 34,
+          "parties": [
+            {
+              "id": "0fe75aff-cc74-5966-b917-588211b67bdb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c37a935-6367-5c46-9f10-d6dce7669bf3",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c6b0d371-61eb-5aad-8d52-8d32ee789e99",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5ac1a03e-23cd-5789-8665-a8867027291d",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "abf08a29-ea15-5ce2-9b5e-8194883fb1a1",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "22a97ebe-ec82-5ad1-94b5-f0b99d20230e",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 North Carolina Governor",
+          "total_votes": 5588824,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "86e00cf4-6fed-5f02-9841-80b84adc4e64",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "a478918f-d1ad-5235-9718-e9f4d7429ec2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1f64c427-3860-5dc7-b2bb-b185ca99dee4",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "0bbd964c-a2d1-5832-9c3f-7b554a661aa9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "136128cf-2c28-51e0-b442-527b1222aa18",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/ND-2024.db",
+      "size": 7454720,
+      "sha256": "4fe2f89a402164616ae89d085010a404234e6242cd9e1240ab487697904928a9",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 North Dakota President",
+          "total_votes": 368155,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "7629d6f5-c00e-5136-b06f-8adef87be52b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "97231a0c-9fb7-5879-ac54-dd315e5645a2",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bbe75fed-f177-5ec0-9e49-77e7e3c52029",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "d8ae3e73-bcfa-5861-a5a2-ad7df6b6f4d4",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 North Dakota US Senate",
+          "total_votes": 364327,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "801fa25d-0c9b-5cf9-ad84-3beb5533811e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "731712b3-53bb-5144-aaeb-d1768360c597",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "8254a5fa-2f56-59a5-9de8-01c3c15e7c3f",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 North Dakota US House",
+          "total_votes": 359787,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1e07d4c3-1f28-599f-8215-9a420edda5e0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9ab11210-35e9-50cc-b049-a8054d21280c",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "efd59362-d625-5b78-9dfa-b2c9e75aa9a6",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 North Dakota Governor",
+          "total_votes": 361951,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "cce493bf-22af-5676-a255-bc185a6495e9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6fb6b9f0-1c3a-57c4-8dce-aaa52e995b04",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "ee3e274c-5aa7-5de9-916b-8d9f693f23fb",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "7f84f640-c5a4-5ee5-93fb-89c37c9eea6b",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/NE-2024.db",
+      "size": 12161024,
+      "sha256": "4d4c0e40d02e2e180ac8c0870d6f9ffdc5afb33a6332164b1d3be823e0f14475",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Nebraska President",
+          "total_votes": 944097,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "d3b04e94-0941-5b34-87a2-00a77afc6179",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6e8f6108-2a2c-5073-98d8-48fd1f22821f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9a047752-19e0-5019-a370-39a7024ac010",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "17eefa7b-1fa6-5364-98f4-3b2eea55cd6d",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Nebraska US Senate",
+          "total_votes": 935617,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "dbdeb5b0-c188-5e98-a101-3a3b8072f7a9",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "ac041627-1d6d-515f-b17d-5158e1372eed",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US Senate",
+          "special": true,
+          "name": "2024 Nebraska US Senate (Special)",
+          "total_votes": 935005,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "fb517a8b-9137-591e-8f77-7a1a69f25d4c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "76293824-967b-5d3c-b88b-56192b2bd22a",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Nebraska US House",
+          "total_votes": 929392,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "35ba20d8-db89-5147-8c7d-477e6c48929b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d86bd133-8d51-5ecd-988e-910004af164c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/NH-2024.db",
+      "size": 3489792,
+      "sha256": "e36202bd34b253f72a06ee646e10c717f7cdecc2bb5fc85bdd2735c26f681f01",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 New Hampshire President",
+          "total_votes": 826189,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "2d15425d-7882-5c36-8c55-326f398c0a38",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "03cdde5a-2f36-51b4-b3e5-57a8be261eb7",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "45e77133-bf6d-51ad-a943-370feed39acb",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5035d46f-cccc-5cc0-a0e5-106bb56285b4",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "cdac193b-3c9a-5767-a17e-a2bd358da873",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 New Hampshire US House",
+          "total_votes": 804626,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "96a41003-f1e4-5c1a-9c50-8ead9376299a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "46b3d723-6f14-5627-b1f4-1230ab7b8eb3",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "07ac5bbb-c109-5251-b410-d90c0b0cdcc9",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 New Hampshire Governor",
+          "total_votes": 813497,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "c3d5203a-32e6-5daf-b553-90f5cb9e6e64",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d9635993-8c5f-5fff-97c8-9067649cf515",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b0e905a9-7fc9-56ac-8f9c-bd33b8e89100",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "def89544-113a-52bc-aeae-fc692de021fc",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/NJ-2024.db",
+      "size": 43433984,
+      "sha256": "9196aca1f5c927600d67451c41d5376c3b05a0e5189b0fc430b18c2567958fad",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 New Jersey President",
+          "total_votes": 4694904,
+          "candidates": 12,
+          "parties": [
+            {
+              "id": "26d79543-be9f-50fa-b4d1-34ae90b13fa8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0f344fd4-dee9-5218-b8a0-226d77d912fb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dfcad2c1-8559-5f0f-b54d-784fb46ad675",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d03fff19-92aa-5722-91b5-ad0c5505fbf4",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4a563358-c4f3-5f5c-8e46-8f4daded922d",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "69093669-6a8e-55f3-b8c7-430d7592b48c",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 New Jersey US Senate",
+          "total_votes": 4416611,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "8a0cee26-ea1d-5f5d-98e0-a268255008bd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ad5b8aee-f971-5969-964b-a0ac743a0d9e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "64241f48-9665-5f82-b4fc-99bbf7fa4862",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "aee9a5f6-8dfe-5cca-ad8e-3de2d8a018da",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "16dd413a-5ac5-52f9-b194-6e86f227559c",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "a76cc897-29bc-5c4d-bc74-5afd57f9ade9",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "0e498ae1-e4ab-530f-838c-3da2b84a12da",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 New Jersey US House",
+          "total_votes": 4388364,
+          "candidates": 70,
+          "parties": [
+            {
+              "id": "8208dcd6-eaa3-5fec-ade9-e15b376ae019",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bf11a6a8-c554-517d-a95b-5722d67a084b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "394d5a35-c4cb-5607-bdc6-744e8497fe8c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d0ee17b1-814b-566a-8dd0-7cfc99c3d9c5",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "4e9691fc-e338-55f8-ae32-f2e99555a7f3",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "2b0640ea-5eea-556d-bd71-4b9208391e0e",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "94f08193-b996-56db-be4f-2fc5b895eb63",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/NM-2024.db",
+      "size": 25489408,
+      "sha256": "15e30dfcda0f2f1b105eb511358e01beb63abfbba1ad0e7ae3af8f2aee541269",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 New Mexico President",
+          "total_votes": 909693,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "01ec7deb-2a97-5e18-b607-f6cdb0628b4b",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "566a6a05-8e8c-58ab-8425-40ae06b9a50f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a31a3bde-9ac4-5a3f-a52f-378352ae9cf8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "19c815aa-13e9-5255-afa8-2846bcbda6d6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b4a0f817-7712-5bc3-a81e-2511fe779c2a",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "59e8b1e5-2e90-50b4-a2b4-29bc8b16263f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 New Mexico US Senate",
+          "total_votes": 903260,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "ec6ac789-3184-57cb-87e3-02163247a28a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "41185631-7b60-5b67-8a13-f3b5c487351e",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 New Mexico US House",
+          "total_votes": 896430,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "2a512696-35cb-5584-82e3-595de6656ba5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ab7dd4f1-57dd-542e-85e2-83950817ffe4",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/NV-2024.db",
+      "size": 10600448,
+      "sha256": "17625ccf4db2bd8e8866dab8f8f9e77cd7970cfa44dfb20a049818ea417bd812",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Nevada President",
+          "total_votes": 1484451,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "77d64dc4-99ef-5a6e-bbef-3a6e5bf03eba",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "c979574e-9572-5781-bb34-a4dec9ba74ea",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ca0bd520-e025-57df-8512-83ad6fe68545",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f9c8472e-93b4-5f6c-823d-e7f52991555e",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Nevada US Senate",
+          "total_votes": 1464387,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "96f877b9-4ed1-519b-8178-b3c59bd843fe",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "47bf7acb-7a39-5af2-b602-e7d26bcd1825",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "17a1eb68-903d-515a-88ee-84e2947695e3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c7722534-b23a-54be-a5de-970c7c5e6d6e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "23de1faf-54dd-5b0d-94b6-4bbb76a0d6ff",
+              "code": "IAP",
+              "name": "Independent American"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Nevada US House",
+          "total_votes": 1426745,
+          "candidates": 16,
+          "parties": [
+            {
+              "id": "6fb09a7b-f58c-5692-ae96-12ac191d92b0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "08a86339-c547-5132-9f51-7252898a7ff3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1cdeb6a2-dc6e-578a-bc34-ccf7f6e41458",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "d6d57e90-cdc7-5db4-9a6b-d5f5c962aa48",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "f17e69cc-624b-57ac-882d-7d0e1f2b3fa6",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/NY-2024.db",
+      "size": 55861248,
+      "sha256": "b6c243624e8a1b0c48249cd3a06157db2b657bfc63a34a515beea80d076f016f",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 New York President",
+          "total_votes": 8304998,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "68e1977b-0625-55b3-bdd2-7e804dc9b5d4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1aae7433-b5c8-537e-9e71-b5fc68a85e66",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "e7da10e8-abd8-5d12-9861-07bc91356dde",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 New York US Senate",
+          "total_votes": 8011295,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "bb262703-b206-5e67-ab08-b6a87e6c7a7f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7686f056-623c-5a8a-9f21-51829a9d9dbe",
+              "code": "LAR",
+              "name": "LaRouche"
+            },
+            {
+              "id": "681616aa-a38f-502d-b958-da77c9e1b273",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "78e00349-8eec-5e0d-8ee4-6d750eac3905",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 New York US House",
+          "total_votes": 7936022,
+          "candidates": 55,
+          "parties": [
+            {
+              "id": "ee4b993b-c504-550a-8265-2ca5f7610a87",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "392fa0be-e5d9-57a4-a8f0-ce9a5ed47229",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "a32932c0-423f-58fc-9d7b-a4d4d070148c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/OH-2024.db",
+      "size": 60510208,
+      "sha256": "b01800a83779e515036c9b07d7c66d5182709a6bc72d521c9ee6dcc9b53c321b",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Ohio President",
+          "total_votes": 5765017,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "2dad7427-1587-52ed-b671-ac7b4579ce42",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2f1b75be-75c3-5fa6-a142-16a347dccde4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8051747e-8dd7-5212-8954-87f02898ad93",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "ac03a472-171b-5393-9070-4207b6470210",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Ohio US Senate",
+          "total_votes": 5703980,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f706938a-2e89-5666-b120-f8517ee6f742",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8825370e-8805-54e8-8fdf-8246f5187fe9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c5adeb51-c089-5802-a053-7ad45dc2534c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Ohio US House",
+          "total_votes": 5570751,
+          "candidates": 34,
+          "parties": [
+            {
+              "id": "2e66aec1-83b5-5bd7-8263-82168b0ac0d9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d62cb7ee-8249-5d6f-8f0f-02a33d5ba6d3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f1ad219f-5dec-527f-b74e-df1da145e233",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "8313c1d7-afbc-5a94-be22-a45ac5e72175",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/OK-2024.db",
+      "size": 24104960,
+      "sha256": "9539453a778fd804cd4a83420b2231b06d9a705007cd407ff0d8dd9b91ae78b7",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Oklahoma President",
+          "total_votes": 1566173,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "40dcd6ba-ec5f-531c-8489-6b8178a364ba",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "066c0ef9-b32b-5e87-b2b8-e8df0f29d4cd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "00b0c00c-d6e6-5de9-b8f1-8daf8e3766c5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b5196578-a28f-58e4-9f7c-0d9641042876",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "37406e52-10e7-5ac6-8b3d-a99b4c70d0e4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Oklahoma US House",
+          "total_votes": 1282106,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "54471316-1fe6-5e6b-8d42-bac98a0415a4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "91aec043-6c6c-5872-a67c-bd1a2c015a24",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e0893ddc-cd1e-50af-9a3d-ba347c0be6a4",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/OR-2024.db",
+      "size": 23547904,
+      "sha256": "0cfac35eb0ce124294c4bdddd3667b2121be6348877c92043dbb045455167185",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Oregon President",
+          "total_votes": 2245051,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "d51e7bb6-608e-5320-a1bc-52cb5a4f8a2a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a0dadb4c-723b-5ca7-980d-61418f36b0b0",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "0741f5f4-f83c-5311-96d1-e5ff7eeeb40a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "89412c2f-3c5f-5260-bf57-b268ad6b5b5c",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "1950c5e0-f4d7-537a-9dd7-efb9fc58a9c8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "147e5517-e8fb-525c-9d77-0d45c3b169cb",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Oregon US House",
+          "total_votes": 2144652,
+          "candidates": 28,
+          "parties": [
+            {
+              "id": "79d89347-5be8-521c-8548-9ec59cf594b0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "759f692c-4079-56be-b525-e79d45b7c9a8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "458aead8-f929-5e1e-9fd2-1376511d0ac1",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "08dd6f4c-e4d6-5f35-8ae9-6ac08706c20f",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "2c591a97-00db-5901-a9ff-ee6b9d89086e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1d23c12a-d743-511e-8874-4abce36fa46a",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "f6ac7531-6772-50a0-a5d6-9374c29f13d0",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "799237ce-3f91-5caa-a06b-466740b6199f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/PA-2024.db",
+      "size": 66629632,
+      "sha256": "e8b44cd4a64502443d6e107558cc69c25fa4b6a0747ec0144276365ad62aa406",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Pennsylvania President",
+          "total_votes": 7031737,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "f3796988-465f-5c73-bee8-c3c8e52f7504",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c0aa392-d96a-577b-950d-9383e0399f43",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "38cf3d22-6e6b-5c96-915c-1fc3eda8d16f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f0e583d1-82cf-5bcc-8fae-0131a8fed9ec",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Pennsylvania US Senate",
+          "total_votes": 6957488,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "7b99877b-2971-5f52-a4a0-b066f256aaf3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ba06403f-baea-50e5-a49e-4acd028c3f2c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b2cc4264-2a63-5120-b4b6-83648e5559a7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4be6c1fd-a5f6-55f3-8fdd-734f31505967",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "8e350e11-487e-50b4-8dd6-e31368a66e0c",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Pennsylvania US House",
+          "total_votes": 6811334,
+          "candidates": 33,
+          "parties": [
+            {
+              "id": "bfa8a6f7-a1f4-5368-a397-cc9927421efd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d919ddb1-2637-59dd-9d47-801c52fcd502",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/RI-2024.db",
+      "size": 4132864,
+      "sha256": "1dc621bba8de71317dbd6b295e88908439dfaa51ec364e19e26c3a465f59b733",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Rhode Island President",
+          "total_votes": 506774,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "e5491fcf-3595-591c-a00c-65036f069a5f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "146ff40e-17bd-5eca-a51a-5f2c68e8348c",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "6f1c5e4f-77aa-52de-b83a-7ffe15337eeb",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3861a462-bf1b-54a9-bc95-c6eed0d1a0e4",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "e9ae4426-6fbb-560e-b0b2-4ce88132fe9b",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Rhode Island US Senate",
+          "total_votes": 491919,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8fa3fee4-3c11-5bae-970c-33251924d66b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "36c597c8-c4c5-540a-a984-d80b2998f143",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "04c52e7d-1d63-5dbe-9ac1-1096645cf65f",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Rhode Island US House",
+          "total_votes": 484569,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "537946ef-3247-5dd2-a955-1ae1d1fdcfb5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5aa3cc7f-54c1-5b83-940f-9e4a2c2a3a32",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "a965da85-a612-501f-ac20-8ee5f04b8cc7",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "d8655d08-b7ea-5353-bd11-3766b5267ec4",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/SC-2024.db",
+      "size": 33202176,
+      "sha256": "a90c65d1a279d0d405465c4bee99f64c24fd9a6989e9cea8360aba80534ba8df",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 South Carolina President",
+          "total_votes": 2536044,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c419e945-49c3-58db-9e0c-832e14b0f81c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "73f24c6b-11c5-5171-87dd-1ce2e3de7663",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c48a218b-c79c-5200-8e45-25599240c1e3",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4b508e3f-9b0b-550c-8c69-664074904ab8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8c0b3cf2-9c11-5184-994c-ffaac02a27cf",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 South Carolina US House",
+          "total_votes": 2474904,
+          "candidates": 26,
+          "parties": [
+            {
+              "id": "157d699d-7b2f-5da2-ae6a-ca3fcca80aab",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "453dcb04-67d4-54b4-903c-4b5722a09929",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "6ebae99f-e7e2-5c38-937c-4015a93d4e2a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7a1fcb7c-c47f-5cd5-986c-af0e09e4e90d",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "3da8c3da-4715-56dc-ab3b-ea2cf76753cc",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/SD-2024.db",
+      "size": 11620352,
+      "sha256": "952626b131eb2ef30af4050e95f336475d3b31100a5f643067ff27a5d6851ca0",
+      "source": "MEDSL",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 South Dakota President",
+          "total_votes": 428922,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "9c34fd6e-8131-5985-86e5-66a03a1f62f0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "585aca9b-302d-5f70-ad40-cd57b6f70032",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d9d84949-e7a0-5967-8f0f-dbefcaa46e63",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "59a1eca1-f7a5-547d-b11b-43a8129e7522",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2024 South Dakota US House",
+          "total_votes": 421448,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "282901f7-2464-5d5d-91d8-058dae0da6d1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c1bf3a1d-ed1a-57a2-8047-d292281adb19",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/TN-2024.db",
+      "size": 44974080,
+      "sha256": "f85b1b3b2bba91ba76cb62f1c2a8ae0d0f538e4a0c4b6c5563ad724357407f64",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Tennessee President",
+          "total_votes": 3063942,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "01dc7160-9da4-556f-8bea-fde95f125714",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "40080b80-9ca0-5e0b-9bf5-79a1522ce448",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "e2f7e25d-3da8-59f3-bd60-13b0513a5b9b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "0d9c5fc7-296b-5e8e-afe2-643991399657",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Tennessee US Senate",
+          "total_votes": 3007608,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "033a4726-7fc6-5429-a5f8-105ffc1b6e56",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "acf4cb37-3803-51ba-8f2e-e25c84a7d096",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "b9551ab0-4d76-5f4b-b980-fbdf1162455e",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Tennessee US House",
+          "total_votes": 2926955,
+          "candidates": 31,
+          "parties": [
+            {
+              "id": "f5da7c69-dd57-5257-9277-2a8e67e53b91",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e58aa910-58c9-5eb1-a0af-d01213ab870f",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "5c086d2f-912d-5582-afa4-08ca3b3ab53d",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2024-202609122351.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/TX-2024-202609122351.db",
+      "size": 111017984,
+      "sha256": "98807fdb0b8a23693150595c77cc6d1ca1a93a7f7fd86033e90fdac7bcdf33bb",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Texas President",
+          "total_votes": 11404528,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "34b6471c-117a-5646-9158-cb19b8b40e60",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b8ff03e3-7573-574a-9db8-346a758c73da",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "d4e719d0-6bc8-587b-b844-0fc5c2110962",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "921b3962-dc89-5f3d-9899-4cb8bfbdf515",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "42f7dcf7-2cdf-5538-920e-4dcdf6f50e97",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Texas US Senate",
+          "total_votes": 11290233,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "a3954572-2d6b-5bd0-afe4-5d3a8d7642f7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fa668259-4026-56a3-96dc-356c0a022dd5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7bb84ed0-c0b7-59b8-bbcb-36140711d840",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "45b5b098-725b-50fb-8e4b-a4f37059dfca",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Texas US House",
+          "total_votes": 10669194,
+          "candidates": 81,
+          "parties": [
+            {
+              "id": "58e6903b-74fb-516c-8bb0-78c87e9c164c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "28bb39e6-3612-5494-8d10-98c456bb851d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5e985b62-93fb-5dd0-9c8c-a2e59a762d65",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bac88210-694f-5d78-ab31-a603dd55218f",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "1e0d81cc-2f8b-5ca7-8167-b7aef00cd5af",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/UT-2024.db",
+      "size": 28954624,
+      "sha256": "13b0862d5682d725cf8a19e02a6a69960ca10362ac6374c1e669ca89642b653a",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Utah President",
+          "total_votes": 1470815,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c21c1ef7-2a3a-5962-be5f-8d47fa2fb972",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "240b6ffa-b2a3-551b-a5a5-98b127c66347",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "34c9bcdf-4529-56f8-9767-e157c33c51db",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "2e1b0ffe-3839-5aa0-a97c-a584613f5591",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "7a97ac85-b129-5732-b6d4-18878e4893ce",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Utah US Senate",
+          "total_votes": 1462628,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "3c36dee0-fad1-5ad6-afd2-b18723712a6b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "36e8ee2b-8ae6-5666-acd4-1cc82e9555a6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f4e3f2bb-7fad-574e-b864-e883e6b5b06a",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "3dc5127f-0cff-574a-b43e-145a9d9f0606",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "31ca267a-99ee-5a8b-9f4c-6500b44ebec6",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Utah US House",
+          "total_votes": 1447609,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "6f0d44ab-bee0-5ebf-8663-2f87b31ead40",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f0889b3a-d81c-5955-a39f-deb05ec79320",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "38927a05-8795-569f-a8be-8906ea66de46",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a9ed2c84-9cb7-55e1-9d72-41b9dff325c5",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "0aa662c4-57b7-56bb-acc4-c75ce3e5dc6a",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "39e46862-4e15-5ef0-b377-996858f33b88",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 Utah Governor",
+          "total_votes": 1476512,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "9b5b079d-071f-5d07-8b5d-da881145aafb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7dbe9674-a66c-5186-a062-e55a0b763656",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "44b0be1b-cad4-5cfb-affc-4631b4b4011a",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "42e07695-b0f8-525e-8419-e44c0a59ba27",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4e2646b4-7111-5a08-886a-1dbe832e181f",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "c3f8177c-d3ef-5ac5-9698-e5efff6b2555",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/VA-2024.db",
+      "size": 29265920,
+      "sha256": "67221ce4f975e7540ed18084fdb8398b727e5c86c9b4c3fd7dd5c96746f38fd4",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Virginia President",
+          "total_votes": 4503288,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "4a793355-65e5-5c5e-8aab-3e1768b607d6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b06f35e1-ea14-5133-81a5-d3b2c2099382",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "bfeb3411-b3ab-58dc-842f-71d8cdebcdfc",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "f999e05f-6a7c-57e0-9673-00a71e3c1ffe",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "36a6ce61-9635-56e3-820b-3699e8eaa4b6",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "48e0c2c8-86e0-56eb-94fd-223eac9b6f41",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Virginia US Senate",
+          "total_votes": 4442926,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3586b8c0-945d-5808-8898-213c10b08443",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "59001ddb-c2a0-59aa-8f2a-52081b16d4d4",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "4c712a35-5301-500c-895d-177225fd8531",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Virginia US House",
+          "total_votes": 4423142,
+          "candidates": 37,
+          "parties": [
+            {
+              "id": "e69debce-11bb-577e-b18c-d35ac3d90239",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e86e9aac-88f0-5d6f-be6e-d93c3bab5789",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "e8b5d308-488e-5797-8d1d-b6727ae23137",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0ba4ba4b-0561-5478-92b3-97a5a8a6706b",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/VT-2024.db",
+      "size": 2043904,
+      "sha256": "cd18bbe846614cbe09066512f9051c48a2019cb90cc7b687175c7f9d4bc0dc60",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Vermont President",
+          "total_votes": 365952,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "a5b0aa6b-5157-526d-994e-60e8ab2a312f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f48fbc02-4a83-5617-bd44-66df3f74144d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "49e9ff87-a052-5d90-ae64-b5e377c084bf",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "d4816ff1-3b72-5675-bb27-dfbea29fda61",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4c281d58-aff4-583a-a247-c6542f597bac",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Vermont US Senate",
+          "total_votes": 363253,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "3611fe7a-a73e-5bc7-bf83-7a727af4c10a",
+              "code": "EPC",
+              "name": "Epic"
+            },
+            {
+              "id": "5cc3cdc0-0086-5a81-a035-bbaba638ef65",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "aa01ad55-d9fd-504b-b15b-d3ead82a8c67",
+              "code": "PAJ",
+              "name": "Peace and Justice"
+            },
+            {
+              "id": "e55e86a1-a547-5e03-acf1-0b93d6e2c155",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "93463571-16f8-5f59-b8e2-46bc36d48737",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "40f5d64f-f934-55e6-ba14-96f15d981087",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Vermont US House",
+          "total_votes": 350616,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "a073d86a-5c90-5110-8ebe-3fbc260c11d3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6d007eab-71ef-5852-8f9b-57cf65dcda52",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "e79c83db-f994-534a-b25f-3b6c6db3f97f",
+              "code": "PAJ",
+              "name": "Peace and Justice"
+            },
+            {
+              "id": "c36392a1-a4b4-502e-a1f6-5ba9b1fe8000",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "69a66ea6-81a1-50ff-aac9-93440baaacbf",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 Vermont Governor",
+          "total_votes": 362841,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "30ad7b01-3fb2-5d1f-95d3-5640b18ea6aa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "71632fc7-adc7-595b-9f89-03173da0d085",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4e3f87e3-5112-54fe-8fd2-ea06e62f0dcf",
+              "code": "PAJ",
+              "name": "Peace and Justice"
+            },
+            {
+              "id": "a1dcebd8-4a12-54e5-985a-a3f3d56e61e6",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "43ce4e67-e7de-5fcc-9edb-12e6b885ef8b",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/WA-2024.db",
+      "size": 69914624,
+      "sha256": "4dc11722f607a8eed95402137e2d7c848a9b96b5989404cbd875361195e634d0",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Washington President",
+          "total_votes": 3852509,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "cc54c7e7-350b-5bf5-bc43-da9acad79930",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c954b76f-3b3b-56c2-8689-da9b0a282d8c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cd323dc8-ed96-5253-b439-f0b5c5ea8347",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "5934464a-391e-5380-a80a-78631b3bd313",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "ab02ecb3-3b21-5ffe-a64e-ca08e80bd954",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "be41bd2a-de43-51db-880b-65c3c6c509b0",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Washington US Senate",
+          "total_votes": 3812391,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "582973cf-d22c-536f-af38-0cb8020e4221",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c391145a-93b3-5083-84bb-dbd48cd26ba9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5aefa6a0-69bc-5524-afd5-bf2da3023f13",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Washington US House",
+          "total_votes": 3768180,
+          "candidates": 30,
+          "parties": [
+            {
+              "id": "bc9a01c8-fd75-503c-b404-8262538580a0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "09d34ed2-ec01-5d72-9839-b774876b61e0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1ea8db8e-acf6-5920-87f0-039b9fac3da0",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 Washington Governor",
+          "total_votes": 3861388,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b2b6a3fd-f22f-59c6-b462-3ba0924e686e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3f396980-f382-54a1-a806-209f55271d4a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f1d4adba-120c-5850-8614-23257d069766",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/WI-2024.db",
+      "size": 68857856,
+      "sha256": "7ca272bfc7a1e1a1fb3048905c1c1078de10f4dbc9325fee5b959a9a89c3d98c",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Wisconsin President",
+          "total_votes": 3415787,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "334a537a-0f68-5058-970f-e3512c36b6de",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "086e1261-fe33-51e6-bd4f-2323640dfc89",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0d437bfc-ea22-51e2-8d3e-6d948224dd91",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "5c6e5b14-bf5e-5cb2-b7bc-dce3f76e1a03",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3928dcad-97b2-5067-bb40-6a4e37823af3",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Wisconsin US Senate",
+          "total_votes": 3390787,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "b8431e32-6f50-5278-a83c-4056aff8e6a8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6e77a5fb-f36b-53ff-a861-53e868335087",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d546f044-192c-5b43-9d30-34fbb0e1a521",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "bf1c7378-c56f-524d-8505-19d9aa63209e",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "5fe4a17c-24ce-51ed-b3ed-0b95bd0d0b43",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Wisconsin US House",
+          "total_votes": 3325606,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "70d2272e-249a-5990-a82d-5021bfd94c0b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ed34207f-1d42-57e7-8b59-3680aad3da67",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fcb4245c-deb8-5622-ae80-b26edb86c24c",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "7d08abb4-54f7-54aa-9118-06c51e8ef48a",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "1d447221-609a-51db-9477-3cfd85998a54",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/WV-2024.db",
+      "size": 32706560,
+      "sha256": "9bf9f6cc89748f53a147d0128f1e1d652b19d421878abb6f789362495aab0290",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 West Virginia President",
+          "total_votes": 759859,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "6fc2f5fe-90bf-5905-8b59-8a03f62db314",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ee81a72b-478b-5699-a9bb-83a653a6d711",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "c92bfd4c-c5da-591b-9877-25b14ae22ee4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "02958425-de73-5221-be00-97fac84d614c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 West Virginia US Senate",
+          "total_votes": 747702,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "905a45bf-7b58-5acf-a5c0-262339914ded",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c3072037-9cc5-5b80-8156-dd6f59004756",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "26716e12-9f7b-517a-9bfc-ce21d742eda4",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 West Virginia US House",
+          "total_votes": 723110,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "7359c63c-43cf-5b3d-a317-d8a4abde5ea5",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "40bc3ba3-303a-55f6-ac51-04260be1f9d7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1c4ad56e-8bd5-5d0f-9588-909354640d85",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2024 West Virginia Governor",
+          "total_votes": 740928,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "0bcefebd-5e5a-5913-9d6d-4fc6d1554472",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "716cbaf4-aaa6-5622-a1e7-7b10963ff038",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f4459161-c81a-56ab-b37f-ba527db516ca",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8a7a8f04-be6b-5fa0-800c-71b4562f61e8",
+              "code": "MTN",
+              "name": "Mountain"
+            },
+            {
+              "id": "bed50d69-7f60-5ca1-943b-1c5761ce0e69",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2024.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2024/WY-2024.db",
+      "size": 8810496,
+      "sha256": "3257d60221f12caf5ff9a9e2794b96cffbab74faeb1cdab0a26a27e20dd4f1ae",
+      "source": "VEST",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2024 Wyoming President",
+          "total_votes": 269048,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "34c83d9f-4df3-5a8b-a237-d1ca3c786b5d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fe392e3c-c4b7-58bc-986a-483509af888e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "079edcf6-244f-594b-aa9b-16392ebde4dc",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "4e551c4e-b9ee-5633-b07a-979f89f9bd2e",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2024 Wyoming US Senate",
+          "total_votes": 264162,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ae7aa4b8-aa5d-5b57-941a-e520a1e5c98b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "db77f639-7107-53e8-885a-32891d1c1592",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "a0adf123-31df-5d63-97fc-8fc01834021e",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2024 Wyoming US House",
+          "total_votes": 261548,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "4b7ecf44-7294-555f-b812-9941c236d038",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "450f839c-f021-57cc-8bb1-3044ed005e8a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2db57d32-a1a1-5974-a586-0536b94c686c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "273cf298-2a9f-504e-a95c-973c9138a4a0",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "484df783-ec86-5e90-bdf5-bcd3dc1e36f8",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

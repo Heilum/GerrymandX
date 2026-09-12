@@ -1,0 +1,204 @@
+{
+  "2024": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/AL-2024.db"
+    },
+    {
+      "stateName": "Alaska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/AK-2024.db"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/AZ-2024.db"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/AR-2024.db"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/CA-2024.db"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/CO-2024.db"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/CT-2024.db"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/DE-2024.db"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/FL-2024.db"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/GA-2024.db"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/HI-2024.db"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/ID-2024.db"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/IL-2024.db"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/IN-2024.db"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/IA-2024.db"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/KS-2024.db"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/KY-2024.db"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/LA-2024.db"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/ME-2024.db"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MD-2024.db"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MA-2024.db"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MI-2024.db"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MN-2024.db"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MS-2024.db"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MO-2024.db"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MT-2024.db"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NE-2024.db"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NV-2024.db"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NH-2024.db"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NJ-2024.db"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NM-2024.db"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NY-2024.db"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NC-2024.db"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/ND-2024.db"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/OH-2024.db"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/OK-2024.db"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/OR-2024.db"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/PA-2024.db"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/RI-2024.db"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/SC-2024.db"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/SD-2024.db"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/TN-2024.db"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/TX-2024-202609122351.db"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/UT-2024.db"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/VT-2024.db"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/VA-2024.db"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/WA-2024.db"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/WV-2024.db"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/WI-2024.db"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/WY-2024.db"
+    }
+  ]
+}
