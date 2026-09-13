@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 import 'package:gerrymanderx/modules/elections/comparison_selection.dart';
 import 'package:gerrymanderx/modules/elections/widgets/map/map_painters.dart';
+import 'package:gerrymanderx/modules/elections/widgets/state_overview.dart';
 import 'package:gerrymanderx/modules/elections/widgets/vote_breakdown.dart';
 import 'package:gerrymanderx/providers/custom_layer_store.dart';
 import 'package:gerrymanderx/providers/election_store.dart';
@@ -47,7 +48,7 @@ class InspectorPanel extends StatelessWidget {
           child: Watch((context) {
             final selectedId = store.selectedCellId.value;
             if (selectedId == null) {
-              return const Center(child: Text('Select a cell on the map'));
+              return const StateOverview();
             }
 
             final dataStore = context.read<MapDataStore>();

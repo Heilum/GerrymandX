@@ -49,6 +49,53 @@ class PrecinctVoteSummary {
   });
 }
 
+/// Who took each US House seat of a state, worked out from the statewide
+/// candidate totals: every district's seat goes to its best-placed candidate.
+class HouseSeatSummary {
+  final int totalSeats;
+
+  /// Party name (`DEM`, `REP`, …) → seats won. Parties with no seat are absent.
+  final Map<String, int> seatsByParty;
+
+  const HouseSeatSummary({required this.totalSeats, required this.seatsByParty});
+
+  /// Districts are read off the candidates' `district` field, which is how a
+  /// year-folder database says which race each House candidate ran in.
+  /// Candidates without a district (a legacy manifest) contribute no seat.
+  static HouseSeatSummary compute({
+    required Iterable<Candidate> candidates,
+    required Map<String, String> candidatePartyMap,
+    required Map<String, Party> parties,
+    required Map<String, int> candidateVotes,
+  }) {
+    final byDistrict = <String, List<Candidate>>{};
+    for (final c in candidates) {
+      final district = c.district;
+      if (district == null || district.isEmpty) continue;
+      byDistrict.putIfAbsent(district, () => []).add(c);
+    }
+
+    final seats = <String, int>{};
+    for (final runners in byDistrict.values) {
+      Candidate? winner;
+      var best = -1;
+      for (final c in runners) {
+        final votes = candidateVotes[c.id] ?? 0;
+        if (votes > best) {
+          best = votes;
+          winner = c;
+        }
+      }
+      // A district whose votes have not been counted yet is still a seat,
+      // just one nobody holds.
+      if (winner == null || best <= 0) continue;
+      final partyName = parties[candidatePartyMap[winner.id]]?.name ?? '?';
+      seats[partyName] = (seats[partyName] ?? 0) + 1;
+    }
+    return HouseSeatSummary(totalSeats: byDistrict.length, seatsByParty: seats);
+  }
+}
+
 /// A comparison-election precinct reduced to what re-aggregation needs: where
 /// it is, and how it voted.
 ///
@@ -805,6 +852,20 @@ class MapDataStore {
   /// or null when that region has no counterpart there.
   double? comparisonShareFor(LayerType layer, GeoCell cell, String partyName) =>
       comparisonVotesFor(layer, cell)?.shareOf(partyName);
+
+  /// The whole state's votes for the current contest, or null before any
+  /// state is loaded.
+  PrecinctVoteSummary? stateVoteSummary() =>
+      aggregateVotesForRegion(LayerType.state, 0);
+
+  /// Seats of the loaded contest, meaningful only when it is a US House race.
+  HouseSeatSummary houseSeatsIn(PrecinctVoteSummary summary) =>
+      HouseSeatSummary.compute(
+        candidates: candidates.value,
+        candidatePartyMap: candidatePartyMap.value,
+        parties: parties.value,
+        candidateVotes: summary.candidateVotes,
+      );
 
   /// Party totals within an already-aggregated region of the current election.
   Map<String, int> partyVotesIn(PrecinctVoteSummary summary) {
