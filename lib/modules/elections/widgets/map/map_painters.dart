@@ -383,7 +383,13 @@ class BaseMapPainter extends CustomPainter {
     if (fillMode == FillMode.none) return Colors.transparent;
 
     final summary = dataStore.aggregateVotesForRegion(layerType, cell.id);
-    if (summary == null || summary.totalVotes == 0) return defaultCellColor;
+    if (summary == null || summary.totalVotes == 0) {
+      // Under "Only See", a region without votes is one outside the focused
+      // district: it keeps its border and nothing else.
+      return dataStore.focusPrecincts.value == null
+          ? defaultCellColor
+          : Colors.transparent;
+    }
 
     switch (fillMode) {
       case FillMode.none:

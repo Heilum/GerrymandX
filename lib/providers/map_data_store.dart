@@ -257,6 +257,19 @@ class MapDataStore {
   /// The contest whose candidates, parties and votes are loaded.
   final activeElection = Signal<ElectionContest?>(null);
 
+  /// The office whose contest is a set of district seats rather than one
+  /// statewide race.
+  static const houseOffice = 'US House';
+
+  /// Precincts of the "Only See" district, or null when no district is being
+  /// looked at on its own (none picked, or the contest is not a House race).
+  late final ReadonlySignal<Set<int>?> focusPrecincts = computed(() {
+    final districtId = mapStateStore.focusDistrictId.value;
+    if (districtId == null) return null;
+    if (activeElection.value?.office != houseOffice) return null;
+    return (cdPrecincts.value[districtId] ?? const <int>[]).toSet();
+  });
+
   /// True when the loaded state database carries its contests in an
   /// `elections` table (year folders); false for a legacy database.
   bool _newSchema = false;
@@ -1307,29 +1320,46 @@ class MapDataStore {
       case LayerType.state:
         precinctIds = votes.keys.toList();
       case LayerType.precinct:
-        return votes[regionId];
+        final pv = votes[regionId];
+        final focus = focusPrecincts.value;
+        if (pv == null || focus == null || focus.contains(regionId)) return pv;
+        return _noVotes(pv.population);
     }
 
     if (precinctIds == null || precinctIds.isEmpty) return null;
     return _aggregate(precinctIds);
   }
 
+  /// What a precinct outside the "Only See" district reports: its people are
+  /// still there, its ballots are not.
+  static PrecinctVoteSummary _noVotes(int population) => PrecinctVoteSummary(
+        totalVotes: 0,
+        winnerCandidateId: null,
+        winnerVotes: 0,
+        candidateVotes: const {},
+        population: population,
+      );
+
   PrecinctVoteSummary? _aggregate(Iterable<int> precinctIds) {
     final votes = precinctVotes.value;
+    final focus = focusPrecincts.value;
     final aggregated = <String, int>{};
     int total = 0;
     int pop = 0;
     for (final pid in precinctIds) {
       final pv = votes[pid];
       if (pv == null) continue;
-      total += pv.totalVotes;
       pop += pv.population;
+      if (focus != null && !focus.contains(pid)) continue;
+      total += pv.totalVotes;
       for (final entry in pv.candidateVotes.entries) {
         aggregated[entry.key] = (aggregated[entry.key] ?? 0) + entry.value;
       }
     }
 
-    if (total == 0) return null;
+    // Without a focus, no votes means no data; with one, it means the region
+    // lies outside the district being looked at, which is worth reporting.
+    if (total == 0) return focus == null ? null : _noVotes(pop);
 
     String? winnerId;
     int winnerVotes = 0;

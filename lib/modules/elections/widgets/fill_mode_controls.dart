@@ -63,6 +63,7 @@ class FillModeControls extends StatelessWidget {
             },
           ),
           if (mode != FillMode.none) const _FilledLayerPicker(),
+          const _OnlySeePicker(),
           if (mode == FillMode.singleCandidateOpacity) const _CandidatePicker(),
           if (mode.isComparison && comparableElections.isNotEmpty)
             _ComparisonPickers(comparableElections: comparableElections),
@@ -103,6 +104,60 @@ class _FilledLayerPicker extends StatelessWidget {
                 .toList(),
             onChanged: (l) {
               if (l != null) store.setFilledLayer(l);
+            },
+          ),
+        ],
+      );
+    });
+  }
+}
+
+/// "Only See": one congressional district of a US House race on its own.
+/// Everything outside it draws borders only, and its votes read as zero.
+class _OnlySeePicker extends StatelessWidget {
+  const _OnlySeePicker();
+
+  /// Stands in for "none": a [DropdownButton] needs a non-null value to show
+  /// an item as selected.
+  static const _none = -1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Watch((context) {
+      final mapStore = context.read<MapStateStore>();
+      final dataStore = context.read<MapDataStore>();
+      if (dataStore.activeElection.value?.office != MapDataStore.houseOffice) {
+        return const SizedBox.shrink();
+      }
+
+      final districts = dataStore.congressionalDistricts.value
+          .map((c) => c.cell)
+          .toList()
+        ..sort((a, b) => a.id.compareTo(b.id));
+      final ids = districts.map((d) => d.id).toSet();
+      final focus = mapStore.focusDistrictId.value;
+
+      return Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const SizedBox(width: 8),
+          const Text('Only See: ', style: FillModeControls._labelStyle),
+          const SizedBox(width: 4),
+          DropdownButton<int>(
+            value: focus != null && ids.contains(focus) ? focus : _none,
+            isDense: true,
+            items: [
+              const DropdownMenuItem(
+                value: _none,
+                child: Text('none', style: FillModeControls._itemStyle),
+              ),
+              ...districts.map((d) => DropdownMenuItem(
+                    value: d.id,
+                    child: Text(d.name, style: FillModeControls._itemStyle),
+                  )),
+            ],
+            onChanged: (id) {
+              mapStore.focusDistrictId.value = id == _none ? null : id;
             },
           ),
         ],

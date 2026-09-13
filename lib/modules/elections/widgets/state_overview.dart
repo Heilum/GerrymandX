@@ -15,8 +15,6 @@ import 'package:gerrymanderx/providers/map_data_store.dart';
 class StateOverview extends StatelessWidget {
   const StateOverview({super.key});
 
-  static const houseOffice = 'US House';
-
   @override
   Widget build(BuildContext context) {
     final dataStore = context.read<MapDataStore>();
@@ -32,7 +30,7 @@ class StateOverview extends StatelessWidget {
       }
 
       final stateName = electionStore.selectedSubItem.value?.name ?? 'State';
-      final isHouse = contest?.office == houseOffice;
+      final isHouse = contest?.office == MapDataStore.houseOffice;
 
       return _body(context, dataStore, contest, summary, stateName, isHouse);
     });

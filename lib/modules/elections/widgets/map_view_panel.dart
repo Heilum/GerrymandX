@@ -292,6 +292,7 @@ class _MapCanvasState extends State<_MapCanvas> {
     LayerType filledLayer,
     int dataVersion,
     int customVersion,
+    int? focusDistrictId,
     double zoomBucket,
   ) {
     bool compositeNeeded = false;
@@ -307,6 +308,7 @@ class _MapCanvasState extends State<_MapCanvas> {
           dataVersion: dataVersion,
           // Only the custom layer's recording depends on the group geometry.
           customVersion: layer == LayerType.custom ? customVersion : 0,
+          focusDistrictId: focusDistrictId,
           zoomBucket: zoomBucket);
       final existingKey = _layerCacheKeys[layer];
 
@@ -406,6 +408,7 @@ class _MapCanvasState extends State<_MapCanvas> {
       final filledLayer = _mapStore.filledLayer.value;
       final dataVersion = _dataStore.dataVersion.value;
       final customVersion = _dataStore.customVersion.value;
+      final focusDistrictId = _mapStore.focusDistrictId.value;
       // Read cellIndex for O(1) lookup in overlay painter. Hover/selection ids
       // always come from the interactive layer, so only that layer's map is
       // needed — ids are not unique across layers.
@@ -460,7 +463,7 @@ class _MapCanvasState extends State<_MapCanvas> {
           // P3: Per-layer Picture cache.
           _ensurePicture(_canvasSize, layers, fillMode, singleCandidateId,
               comparisonSpec, filledLayer, dataVersion, customVersion,
-              MapZoom.bucketFor(_currentZoomScale));
+              focusDistrictId, MapZoom.bucketFor(_currentZoomScale));
 
           return Container(
             color: const Color(0xFF1A1A2E),
@@ -573,6 +576,9 @@ class _LayerCacheKey {
   /// Group-cell geometry of the active custom layer (0 for other layers).
   final int customVersion;
 
+  /// "Only See" district; its fills are recorded with everything else blank.
+  final int? focusDistrictId;
+
   /// Border stroke widths are baked in at record time, so a change of zoom
   /// bucket has to invalidate the recording.
   final double zoomBucket;
@@ -585,6 +591,7 @@ class _LayerCacheKey {
     required this.fills,
     required this.dataVersion,
     required this.customVersion,
+    required this.focusDistrictId,
     required this.zoomBucket,
   });
 
@@ -599,11 +606,13 @@ class _LayerCacheKey {
           fills == other.fills &&
           dataVersion == other.dataVersion &&
           customVersion == other.customVersion &&
+          focusDistrictId == other.focusDistrictId &&
           zoomBucket == other.zoomBucket;
 
   @override
   int get hashCode => Object.hash(size, fillMode, singleCandidateId,
-      comparisonSpec, fills, dataVersion, customVersion, zoomBucket);
+      comparisonSpec, fills, dataVersion, customVersion, focusDistrictId,
+      zoomBucket);
 }
 
 bool _listEq<T>(List<T> a, List<T> b) {

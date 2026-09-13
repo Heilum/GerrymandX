@@ -68,6 +68,12 @@ class MapStateStore {
   final comparisonPartyAId = Signal<String?>(null);
   final comparisonPartyBId = Signal<String?>(null);
 
+  /// "Only See": a congressional district of the loaded state to look at on
+  /// its own. Every precinct outside it counts as having cast no votes, so
+  /// the other districts, and whatever counties/precincts lie in them, draw
+  /// borders only. Meaningful only for a US House contest.
+  final focusDistrictId = Signal<int?>(null);
+
   // Inspector state
   final selectedCellId = Signal<int?>(null);
   final hoveredCellId = Signal<int?>(null);
@@ -76,6 +82,7 @@ class MapStateStore {
   final resetViewTrigger = Signal<int>(0);
 
   void resetSelection() {
+    focusDistrictId.value = null;
     selectedCellId.value = null;
     hoveredCellId.value = null;
     selectedCandidateId.value = null;
