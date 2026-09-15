@@ -1,0 +1,2999 @@
+{
+  "year": 2012,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:58+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2012",
+  "national": {
+    "db": "National-2012.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2012/National-2012-202609151031.db",
+    "size": 3092480,
+    "sha256": "6f97a1cffb3cd67880b48db991c17059cdf031823088f188b37e162f0a0f94a9"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/AL-2012-202609151031.db",
+      "size": 913408,
+      "sha256": "29793a6ca5b2f925f3b6e78918ea20fc3bc79bd26e9fbe1429f632de1a613c5a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Alabama President",
+          "total_votes": 2074338,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9cfea98d-bbd9-502d-9b1a-cfd597299e8f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7cc44b98-96ab-53d7-ad51-ffa8bb54fe7f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f560abca-a2f1-5d35-a141-e59ee95bb350",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/AR-2012-202609151031.db",
+      "size": 1011712,
+      "sha256": "4809affdfe6a7acd278850bcefe2b42faf70d58eaf13f0f74da2b52c8143be13",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Arkansas President",
+          "total_votes": 1069468,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4f8a5004-fdcf-5357-91a6-62e8f8ad78dc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "18d1e9fd-6130-5294-aa5d-129d1f961e99",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "751c9bac-b7b3-51aa-966a-a6d46f4ff8ab",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/AZ-2012-202609151031.db",
+      "size": 458752,
+      "sha256": "2036eb2a3ca42b9eba82b23e4953ccdf42bd9d5ff9d834edad746f8dc3c70fe7",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Arizona President",
+          "total_votes": 2306559,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "daae2a53-7198-5ca2-a221-a11d17c08416",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2465e72d-3ce5-5a85-a12b-5b5248b56164",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3e005426-eef5-5461-bec8-bf4472573c82",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Arizona US Senate",
+          "total_votes": 2243422,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8937f905-8120-57ff-92e5-dd9316a73c4a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c5ca26c-90e5-5f37-8f99-58f143aae26b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9574d409-1318-53ed-b8f9-a1b11f8a668f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/CA-2012-202609151031.db",
+      "size": 1458176,
+      "sha256": "571a351c8c5a778e2c1940ae06a6938d96ea870961df77194585314b35224ce6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 California President",
+          "total_votes": 13055815,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a5afd287-7eeb-5aac-8106-0f8c0eb8d70a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a71a72cd-0b50-520f-9b8d-396e7e547cc4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3aea2734-f9c4-5215-b220-1d44e0a5c10f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 California US Senate",
+          "total_votes": 12578511,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "b920b269-d7bd-50d3-b2ae-b36b381a8f96",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "073d8c26-f8ee-52a6-ac0f-68148d902522",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/CO-2012-202609151031.db",
+      "size": 851968,
+      "sha256": "baa15ee0457d7f3b9ef4c5ef5ad2ffc4f9319b6531947e50935c131cfa513763",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Colorado President",
+          "total_votes": 2571846,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b16457d3-9d1b-5bfd-9e6d-88ef3e654bd4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a4fea5f3-334e-5b2f-b1ac-1beb15d6fd3b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "57eb2eee-6203-5721-9108-da4b18afad40",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/CT-2012-202609151031.db",
+      "size": 204800,
+      "sha256": "27e807bbd096233abc68658008a7d5ff95eceb75abc7d14efbb0337a0b77ef45",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Connecticut President",
+          "total_votes": 1558075,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8d898d85-eabc-57ad-9171-5bad79faf1ca",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "07c3f495-09a8-5842-8067-e7db35df5e08",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5c778bb2-f94f-5a3e-9a4e-92ecaacb68e7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Connecticut US Senate",
+          "total_votes": 1504895,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "24bd4fb0-5197-56f5-8b31-38c69bdf5530",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0637fb69-ac6a-524f-bcff-09ff0d9873ce",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e7f195ac-cdf2-5761-b96a-4bf57cd05b43",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "db": "DC-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/DC-2012-202609151031.db",
+      "size": 122880,
+      "sha256": "bc273e19d4a77c1b502cd4a71628ee9feb8e17df973e3f9caab96384da5e64d0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 District of Columbia President",
+          "total_votes": 293764,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "74fe6a24-4175-5138-a46a-7ad445456901",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3e1d68fc-67d6-5f12-804b-b0b42afbcde5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ce2a98ad-b2b3-57f9-ace5-7e8fe9ea01a3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/DE-2012-202609151031.db",
+      "size": 147456,
+      "sha256": "5ac98f6d314b560b097802e31bd0366c1389caa9eba698eb8c60747fbb089f80",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Delaware President",
+          "total_votes": 413921,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "74c3b1d1-39d3-571f-a500-2d4865f274bc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3ff82465-5780-5bfa-bb3e-c1198174a4fc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "df649918-ab70-57f8-8848-4dd006f74357",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Delaware US Senate",
+          "total_votes": 399607,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "460f637f-407c-5a5f-bf43-f35886c78fed",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "764ffa6c-c13e-50b6-b9c6-47384a9890bd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "19d5219f-ee4d-51a0-b6bc-ac2e0d5dbfce",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 Delaware Governor",
+          "total_votes": 398033,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fdd0dc64-1edf-5cc5-bced-86fbd67e1350",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3511e5b1-a7d6-53bb-99d8-88bff4b09530",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "eb699e23-4e0c-5372-aec4-ecbcb7c86900",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/FL-2012-202609151031.db",
+      "size": 56078336,
+      "sha256": "fcdf8831851135c0d2d98edbcc81eb8cce4848ea9f7c2fa695c9f45d43446149",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Florida President",
+          "total_votes": 8491741,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "354844de-0267-5e64-ae96-b16f448c0083",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0a906c3e-ece3-5d60-8565-2764a2cca07b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0dd3f587-eafc-52cc-8330-be8eb36d375c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "0daf84b3-9b39-5a1f-9994-44abbea130b8",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c318d069-89d6-599b-9aea-856357d00d49",
+              "code": "PFP",
+              "name": "Peace and Freedom"
+            },
+            {
+              "id": "6576b6eb-2376-5ab0-89fa-f0246dffe8a9",
+              "code": "OBJ",
+              "name": "Objectivist"
+            },
+            {
+              "id": "e3328560-a604-5750-8310-60131af7587a",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "303b98b2-5408-5db9-aef4-a1bad766f19f",
+              "code": "JUS",
+              "name": "Justice"
+            },
+            {
+              "id": "64eaf656-2d15-5620-a08f-2ebae2a9d541",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "4438cb28-e4b6-5b77-b5ee-cdd8ae4fc1d3",
+              "code": "REF",
+              "name": "Reform"
+            },
+            {
+              "id": "9a0effee-f4aa-5a85-9bf3-b40797b4298d",
+              "code": "SOC",
+              "name": "Socialist"
+            },
+            {
+              "id": "e8d98b57-538e-515c-9e15-9dcf94211d59",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "c7938d5c-bb3b-5551-899a-7e2abded1188",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Florida US Senate",
+          "total_votes": 8198228,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "7be0007d-ab2d-5e43-bb2d-2857666626f4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6a133b15-6e88-5cce-a251-a38b61117445",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "97738bed-729c-5cde-b34a-dfe04dd775f2",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "28c4fc6f-21f7-5281-96ac-83af71bf43d2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/GA-2012-202609151031.db",
+      "size": 1691648,
+      "sha256": "7621a4c62ef3728669682ba59a8f6d6a379a6f40e0049d3df32eaa2ac397c1ba",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Georgia President",
+          "total_votes": 3908369,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "42404eaa-aee2-5a77-a319-ebdc8ce54a22",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d8db5eef-b742-5dcb-8c1e-c68f9fabf569",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2d1d031e-d8fc-539a-bdeb-5978adfb6333",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/HI-2012-202609151031.db",
+      "size": 204800,
+      "sha256": "dff089ed515bb05c9663058a5d3d26d9ab18bdff3b32ffd11f49f6c63d46a053",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Hawaii President",
+          "total_votes": 434248,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d85aed19-aff4-504f-b505-78338f7aefe0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "73464f96-9bdc-565b-a5fb-a1ee8e49168d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "eceb25e7-d854-50ea-a27d-a73f72c5ec7e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Hawaii US Senate",
+          "total_votes": 430056,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "fc3e0662-d1a6-53d4-88ee-9a4575f9f2a5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "19360641-2001-5567-b831-713607416601",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/IA-2012-202609151031.db",
+      "size": 557056,
+      "sha256": "9366530394ae9858555fcf7ca18f9f75f60c4491cb72f88490be051e144677e5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Iowa President",
+          "total_votes": 1582180,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9677101f-f41d-54e1-9a85-b43275f18413",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0c581d44-a32d-5645-a145-e5a3f4224ecd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5b097dc9-e490-5fa2-8dcf-29a76fd64aba",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/ID-2012-202609151031.db",
+      "size": 819200,
+      "sha256": "ed1d9e2deaac0de481f72b2501d03ae65a2d5c33f0cbef1eae93c89d4dfa2073",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Idaho President",
+          "total_votes": 656742,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "dc3c8d6d-1b91-5f43-8552-c326346d3f71",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "324d502e-bed4-5beb-b239-ee969c7c28ec",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "32c9f501-baf2-5772-9fe0-0ec3649c6c60",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/IL-2012-202609151031.db",
+      "size": 901120,
+      "sha256": "4bbe14f97aa59bd874d5d4381b0c68374973ffbaf98404f0f44876d922bd38cf",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Illinois President",
+          "total_votes": 5251432,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a54165bb-72ff-55e1-9495-1d4b7bfec351",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e87426b0-ebee-5075-82df-f983555c777f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "77e73ae7-9bcf-5cb0-a430-acc2f798cce6",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/IN-2012-202609151031.db",
+      "size": 733184,
+      "sha256": "78cb1ba98cc989ed420dc2b035686e0c1c44f27baed0dd68762595257830170c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Indiana President",
+          "total_votes": 2633143,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e1d2f503-9ea6-57a4-800c-9184b653b447",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a60aa2e1-4845-5044-832c-d2dbdb4ce2fe",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "714168ee-7596-542c-ba63-f2980965575d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Indiana US Senate",
+          "total_votes": 2560102,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "13d7931b-2306-5e2b-91e0-7f784fea9126",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1b0e2247-174b-50d4-91cb-0779775e39c5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "21ad90ed-d9fd-58a0-92f9-d5128092a85a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 Indiana Governor",
+          "total_votes": 2577329,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "42a39e03-6c8f-5c21-bfb3-8d0438d9081d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "005c0142-1638-5847-84f1-b67fd6b7da68",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "455a4467-13e3-5aee-babc-45323070196a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/KS-2012-202609151031.db",
+      "size": 18124800,
+      "sha256": "d38abbb1a9001a45026a29e0a08d1f14196099a5ed6e205a19fad859002b4586",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Kansas President",
+          "total_votes": 1157424,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "dbe2923a-accb-5565-b89c-fa55f5108896",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7868a7ce-a4d9-57df-98df-98217b94dbd7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dc90be83-f342-55df-9136-9d8b723676c3",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f2db5f4d-7da4-5d02-9e78-28d075528bf1",
+              "code": "REF",
+              "name": "Reform"
+            },
+            {
+              "id": "6520e40a-146a-54f7-afea-a9427db29d34",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/KY-2012-202609151031.db",
+      "size": 1593344,
+      "sha256": "d7ab9f206843b37d689a9dc07fb51f8b4986a099893b587c76e86ae86453d5d1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Kentucky President",
+          "total_votes": 1798048,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a9237862-fb5d-5800-bf46-c93f5463a612",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "660408f3-be2b-561f-bf21-a8adc210a733",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6ab98c8c-9d81-5d14-a5d0-fecf9b240b58",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/LA-2012-202609151031.db",
+      "size": 1110016,
+      "sha256": "0870969176dd81c87f005b84537410517749576bcff7c7758d153298c5cb830c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Louisiana President",
+          "total_votes": 1994065,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f372754a-5dd4-56ef-9260-4558ab4af8ee",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a7521713-5d88-5c41-8e35-011d14408672",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "99af90d7-82c2-5b2e-bd74-a9c9f5ed9419",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/MA-2012-202609151031.db",
+      "size": 344064,
+      "sha256": "444ca6a3e8e7a6925e94cda2020f51288451b9bd235f76f720ba63f5f10f381b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Massachusetts President",
+          "total_votes": 3129731,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e269e067-96b5-5c57-95a2-f102d5c89888",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "51f00668-f356-5053-ab69-4c72a9b14d10",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c9012250-af7a-5d68-9bf8-d529b87bf3d6",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Massachusetts US Senate",
+          "total_votes": 3156553,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e9a18d13-0ada-5e62-aedf-413550def1f5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d61d3f2a-3011-5420-96b1-92898ce928d9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3a693326-0325-525d-b931-ef0e94b5354c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/MD-2012-202609151031.db",
+      "size": 520192,
+      "sha256": "e60dec395783a7c4903336791698c53529d9ab81e907e9f0959f69ec9186c0ba",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Maryland President",
+          "total_votes": 2707327,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "91f1c3ec-9ddb-541e-8d5c-e59d176782ff",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5075e6d2-6f7e-54b8-ad29-98eb95f145e7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "09035795-f465-5518-ac43-0ea01e31c586",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Maryland US Senate",
+          "total_votes": 2633234,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bfe87832-f70c-5f20-ae0b-77f831e99de8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2bf4cd96-ad36-52b4-9029-ac47f76f8428",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f72c27ac-a41b-548a-844b-cdb432671a11",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/ME-2012-202609151031.db",
+      "size": 458752,
+      "sha256": "8ffe959c51424aec82460daa5d386d6b92a95f3bae0c202f59c39f9c2a8bc687",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Maine President",
+          "total_votes": 710738,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f9044752-47d3-5361-b675-bd2d24d51121",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9a44815c-7078-5bda-a60d-0f4b0f45234e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2d4eac17-39fd-56a9-a06a-552b6d995ddd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Maine US Senate",
+          "total_votes": 605490,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7cb8e9f6-1e77-5489-85f1-5c171e5c5d4e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3ec3df37-000a-5d4b-992d-340e8d01c13d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bf94e7da-cae3-5c87-bb7c-424932805d19",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/MI-2012-202609151031.db",
+      "size": 864256,
+      "sha256": "7ed3563b80aeb57f386265490c6cf41945b7b62598d4abebc9340d35c899779b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Michigan President",
+          "total_votes": 4745316,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3bd9ba06-29b1-539d-892f-03d2bc8d716b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "68bb2a41-06dc-5df5-8519-f6dcb6fc8244",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4d53c961-2f9e-5997-a84a-1abadddad12a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Michigan US Senate",
+          "total_votes": 4652918,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2a007119-633f-5240-9932-18fdee528411",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "36d41131-5e49-53ba-aeaa-94496a7c632d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c198d987-ff72-515b-8aa8-516b630d6b24",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/MN-2012-202609151031.db",
+      "size": 892928,
+      "sha256": "e81e90bf838d36ce05f275b375abbb6f0bdff87e363723901f2b5d8a4c784466",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Minnesota President",
+          "total_votes": 2936561,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f4dffe6e-cce3-5a88-b787-a0daa768ac5d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4381be68-6e8f-5ed2-b17c-38c64603f18d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "346ef30b-d292-559d-b3e0-c0720d875468",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Minnesota US Senate",
+          "total_votes": 2843207,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1328f4fa-c82a-5e86-892e-7a3b531c7974",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d6fa369a-50e4-5710-b45f-e135dc06007a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "98269caf-69ab-51d4-849d-ce89826a3612",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/MO-2012-202609151031.db",
+      "size": 1089536,
+      "sha256": "bb9df3fe6e832fced6295519a3ce52617165e5dace586e7775ef3d9e653f0375",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Missouri President",
+          "total_votes": 3277251,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "35ed5672-eba8-520c-a926-fbff8aab4bbe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5e6fd53e-efb8-5fa5-8291-5fb83b5aae37",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2cc955d2-e283-5de6-b555-88cd9f5f434c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Missouri US Senate",
+          "total_votes": 2590220,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a5e5ec02-f2b2-55fd-adda-0f3971ff4b10",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "338bd600-1ba8-528e-bf46-92a772f1ff65",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a59f9eeb-c70c-5dac-ba97-47975fd09157",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 Missouri Governor",
+          "total_votes": 2593547,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bb1899a7-f71c-57af-8c35-f0258c14e055",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "55c7edbf-59cf-534a-b4f3-e815d545a2b9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "30bfb65d-52d6-52ab-a743-0fe7aa7e78ee",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/MS-2012-202609151031.db",
+      "size": 823296,
+      "sha256": "5cce7202149d79b28262c9f91eb8951919abcb9809e3585268e13874192320c8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Mississippi President",
+          "total_votes": 1285584,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "05d0eea6-5f16-52c9-ae2c-59c95bf3999a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "df8cb246-8f25-5ca5-86e0-7c106d06e0d6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1d4e143f-ad43-5a56-b052-3f8097c108cb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Mississippi US Senate",
+          "total_votes": 1241568,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6c7e5166-c9cc-5a1b-9c07-800ce9fe7569",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "631a79f9-c082-58d9-9465-7d04a664b8a1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3cab3f07-492a-58b6-8191-3282cca8ddef",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/MT-2012-202609151031.db",
+      "size": 1069056,
+      "sha256": "908db290c8ae078f560493651a18f7ad36c9328347da9c787dfe9b34dd7b8934",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Montana President",
+          "total_votes": 484484,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1c0221b8-d379-56e6-b7ef-a197028dffb4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "66376ff1-a431-559f-8503-e28434c9d490",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3c8cad40-49a0-506a-b522-044e60ddaeeb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Montana US Senate",
+          "total_votes": 486066,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7ed10474-2c8e-5ffd-b3a8-87b6da06eda0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "61c091a7-b761-5a3e-a5a1-1f6df31619bb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8e87d5bc-f1e7-575f-aefb-44e4cfc14c25",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 Montana Governor",
+          "total_votes": 483489,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "79c133d1-1f15-51dc-9b7d-185f8ba6392f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dd4b1660-d021-5e8f-89a0-b925a14de13f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "24ecd0d2-83c4-50af-9c79-b29ecf350352",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/NC-2012-202609151031.db",
+      "size": 1347584,
+      "sha256": "728c25548bb5d41177e89910ecc2c0ad50761539d2479100730fd7be143bf01f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 North Carolina President",
+          "total_votes": 4505372,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8f564390-cbae-5b15-a901-6e396c17fb2e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e19e5d23-c9bc-543f-a802-b53be3a97c07",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0bea4bf0-0452-5c97-bf16-afc44648e7cb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 North Carolina Governor",
+          "total_votes": 4468295,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f93a3383-f1a8-5624-bf87-471e60bf4f20",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b33b7f49-95c1-54cf-80aa-228f08b6c90f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7ea6722f-b450-5d03-847f-9eebd6369208",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/ND-2012-202609151031.db",
+      "size": 589824,
+      "sha256": "a033d718119c2ec356c99448686cfadc55d237a595634250b4bad320a6d77da8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 North Dakota President",
+          "total_votes": 322627,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a70992be-ad30-513e-aa9e-5ec012fb9099",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "515ffea5-1573-5f31-83bb-55f82b987745",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6b3e5ee1-e681-5502-957d-3f6993599c87",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 North Dakota US Senate",
+          "total_votes": 320851,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a2d34464-fe86-5b86-8762-7e6d9fe268de",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eece9dc9-f5a3-5020-a111-cbf4c43286fe",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ea3aef1a-8e50-51df-86c1-2bf33209e6cd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 North Dakota Governor",
+          "total_votes": 317812,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d6248d57-5cd3-5340-a8cd-06adabea0eec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e37751c0-816e-59eb-b256-415f5455e185",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "42a01014-cc47-567d-b51e-d222289d82bd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/NE-2012-202609151031.db",
+      "size": 602112,
+      "sha256": "63d3a3b8953552b466816f891f19e32c4f2f827b54ce10dce7710a28680490ae",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Nebraska President",
+          "total_votes": 794379,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "94f451cb-26c8-52b0-b9c1-f125dc40c6bb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "310670b4-4399-5b15-9050-1b318d2f9b47",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e97a7be9-af35-5ad9-855d-c55b4b29f484",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Nebraska US Senate",
+          "total_votes": 788572,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "e58f48c5-0bd7-5edd-bd00-cf55e6a18d01",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "65a14349-6183-5eda-8eaf-ca1045013edb",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/NH-2012-202609151031.db",
+      "size": 229376,
+      "sha256": "220d0be23c830a2f7a9a863980adafc8ec8e0def15478f47de894de49526a203",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 New Hampshire President",
+          "total_votes": 710972,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "34ff28f7-c259-52d4-a362-3a9f0c25825d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4ac19c41-7d6b-555d-b466-e6d2b3319554",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6b23398f-b6e9-54c8-bb19-76f60b3b8483",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 New Hampshire Governor",
+          "total_votes": 693877,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7e7fcb76-ea13-5506-887c-c8f7907145fa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4d2c8f31-f370-5b48-b833-513b9412f1a8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "72a1415d-0f6d-5a61-8a5e-c3a9b6a7b3aa",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/NJ-2012-202609151031.db",
+      "size": 442368,
+      "sha256": "9c84f58989699c423d9606553f2b397d2a909c61c7f4b4313841d507f604e8d8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 New Jersey President",
+          "total_votes": 3651140,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5ac9f622-6f90-59dd-b016-d362cef718c9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "900f61a2-6871-5650-9947-fbe41ed69485",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "88d398e3-aa8b-531f-b887-23066e0d3451",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 New Jersey US Senate",
+          "total_votes": 3374668,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "eacc3664-1381-5d49-b261-ce55df679a64",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b3096dfe-465b-5409-891e-f5c73091c745",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6b3fc5a0-e492-5162-b540-97d0bda230b4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/NM-2012-202609151031.db",
+      "size": 397312,
+      "sha256": "08e04509c05b7258c9803301a4716b55cc28288e2b3d10ecaf0e8dcac823915d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 New Mexico President",
+          "total_votes": 783757,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b58d5880-2471-5f4c-ba85-ecef12b87f3f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b7c89bdd-a481-5e7e-b1b1-d2a5f89ab5d7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9db57d2a-b3ba-5c1f-afae-4d8668725a67",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 New Mexico US Senate",
+          "total_votes": 775792,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6ca6c705-bf5f-518b-9cc4-27c788a272ad",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dcf37fac-0349-5a60-a1d5-da9df98f9e7a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "446e3363-a94b-58ff-be94-001b174726a7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/NV-2012-202609151031.db",
+      "size": 294912,
+      "sha256": "769186075cedaf8586b3335a14f2852f37c46e0561e1b3648cd26aed91544989",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Nevada President",
+          "total_votes": 1014918,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "eda89563-1a19-550b-9e7b-00a1e217c272",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "be662866-b4c9-5202-9690-fc89e8606573",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0b5a5ff0-e44d-514e-9311-a247b679007b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Nevada US Senate",
+          "total_votes": 997805,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "440c9ad5-4f19-508c-a437-0cf1d57d2c72",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e637a959-613e-5c08-b3c8-193783694be3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9b7bc029-bf70-5085-ae40-b3524fdf84d3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/NY-2012-202609151031.db",
+      "size": 835584,
+      "sha256": "18f353e67cb099221f4072038fa5ead6e3dc5dde615d6fc0dd9ef3522d5dcddb",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 New York President",
+          "total_votes": 7081536,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7789c4bb-2176-5622-b737-4633bb373fcf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b0d143bc-565e-5f41-bc0d-6e6b4bdd612f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bb83158d-1632-5722-b71d-05022d8e8da5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 New York US Senate",
+          "total_votes": 6679678,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bd485e34-6811-531b-9509-0012586a0d10",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4a100185-7f8a-5373-bc68-9ea48c84baaa",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "18ac3433-f9e0-55cc-8b93-b2fa9e9b6e73",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/OH-2012-202609151031.db",
+      "size": 749568,
+      "sha256": "46cf1580b52ebe014f1ce54470c1fd4f0691ec4a1201079310a2533789e5214b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Ohio President",
+          "total_votes": 5590934,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cab9288d-9f03-5fa9-824a-dd91c24638ec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c4756ff-1eff-505e-8e33-be8618255629",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a7efe68f-a815-5b00-853e-2f5b81ed567a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Ohio US Senate",
+          "total_votes": 5449114,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6fe295a3-b98b-5109-b014-7aa0c6e21269",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "36c3d2fe-d0fd-5759-9b1b-79e9eed2084a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "df65c0c0-0708-596e-8fd9-bd6df44d3d0d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/OK-2012-202609151031.db",
+      "size": 741376,
+      "sha256": "bddb2f4a765c8c26636ae3ab46b70f5bc6cedf8913b3c5cd5b935b21717a7115",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Oklahoma President",
+          "total_votes": 1334872,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "5dc6aaf3-5b01-53e4-ae71-6b24e7bf747e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "75c71e90-a17d-50ea-bb93-22bb455fa5be",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/OR-2012-202609151031.db",
+      "size": 630784,
+      "sha256": "9bf4289beb57866ea3f5e94c4bc485af9a2690d6ff63f5dd19172866b17d85a9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Oregon President",
+          "total_votes": 1789270,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8eac5bb3-dab5-51be-a328-74ad9adc0e96",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0866b80b-340b-5a63-9db9-d509670b11a8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fe9c6ea1-0b48-552d-a710-4d34ef7ba460",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/PA-2012-202609151031.db",
+      "size": 831488,
+      "sha256": "01ac068bb106e2446540748046d0c334b54ff340068f141b696d48a316eef815",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Pennsylvania President",
+          "total_votes": 5755620,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bd4bfd4c-f536-5101-9cae-1e5e95459295",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b099e0e0-9ca5-5e85-8cfc-48976632b3dc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9fa6b692-e24b-59e5-8926-c1a90c2234e4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Pennsylvania US Senate",
+          "total_votes": 5627422,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "15d25255-1c50-5122-a218-cfda1fa8f95a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "768c0b6a-3475-548d-a1f8-19b0af1450c8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dcee3c81-eb18-5a46-94a1-6d9620519fc3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/RI-2012-202609151031.db",
+      "size": 155648,
+      "sha256": "366ab4ad7ddc68ac8ae2507bbdb2534169d44c0af98be552ad1155366b97c7da",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Rhode Island President",
+          "total_votes": 445716,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a63a05dd-853a-57b3-9dfc-05406cdc119b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "484a41c9-e72d-5f9f-8d74-47d72126cf82",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "336d6a4e-2072-5ea9-848d-fb18397c4619",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Rhode Island US Senate",
+          "total_votes": 417899,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5570a01c-abe5-5c09-9ede-4b72a585ce4b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f1d6cf89-0642-5be6-ad60-7d106b5cd895",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b92456a0-2cbb-55b6-92fb-92c649a07cdb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/SC-2012-202609151031.db",
+      "size": 892928,
+      "sha256": "67789b6dad8e918095ca47997ffeb7ae36e79573b27e651cad351a0895678fd4",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 South Carolina President",
+          "total_votes": 1964118,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8cca465f-df3e-5a83-b81d-d2c3ac64a541",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5139c319-34a8-542c-a23b-bf6757e6711a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f31abc80-efed-58dc-95f3-9e2946c59c94",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/SD-2012-202609151031.db",
+      "size": 618496,
+      "sha256": "4a3ea7f11611c7fa3c8a29aee8c51d63f8f86fc62d112247a012a7019dd5f24a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 South Dakota President",
+          "total_votes": 363815,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b41c8d5a-99d0-56d7-8ae1-3b3723db7366",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8dfdcb60-e0ca-51fc-9063-3bd85d485563",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2515066a-02ab-52b0-8d20-940fb6c6a882",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/TN-2012-202609151031.db",
+      "size": 1282048,
+      "sha256": "6e94b5f1c3d85d909e7420153e11a3a490c810c77871fe4c2df1638045c6befb",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Tennessee President",
+          "total_votes": 2460904,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "aaab2a53-ea7c-5631-b800-8359edc8f617",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5996881e-8ffa-5e3e-a078-54e3920c64e7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "31c718b3-cf9e-5f0c-996f-d7baff4876ea",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Tennessee US Senate",
+          "total_votes": 2321477,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c03374ae-f0fb-5a28-8f6c-99102cd58128",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "98de018e-1b06-528e-84bb-4e001a10335c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a9db25e5-6192-5f9d-93c3-cf2097898393",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/TX-2012-202609151031.db",
+      "size": 2576384,
+      "sha256": "4a6f5bbbf95e94d09d519c538c0d79dffe752d21d8e0014bc7f349fb2143649e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Texas President",
+          "total_votes": 7999657,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6d6e912d-1cc3-5cce-b742-e68be0175680",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4e858aa8-c5aa-5eec-9ca0-f55ffb6b1f12",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4b9ec95a-bf44-5482-b637-cdfd975833a2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Texas US Senate",
+          "total_votes": 7864822,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "59a3e5df-5c48-5e15-9cde-15f824713e79",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3eafebf2-18fa-55e5-9a0b-019fd14d862b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c3db2444-d45e-5648-8127-de4539d75198",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/UT-2012-202609151031.db",
+      "size": 638976,
+      "sha256": "f8cd5ff7cd9436664d52679fa186c823883d4520befc075e183f8c735ad0120e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Utah President",
+          "total_votes": 1020861,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a6b61abf-d800-5418-926b-97dc65839d8c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "75ad013b-9bbd-56a1-ac9d-51e21a6458a3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a7e061ba-f6ba-5d5a-93ea-36ff28354425",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Utah US Senate",
+          "total_votes": 1006901,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cf2c1ba3-a5ca-5342-9d3f-94a0d5ae0d07",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b53bbd05-793f-5555-ae15-cbb94572d3da",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a7753597-c122-593f-ba7f-475b75fb1c00",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 Utah Governor",
+          "total_votes": 1006524,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "498366c2-e13c-51c3-be22-68c94f6eb175",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d9944cd7-b788-58dd-9053-0457a04ba0f2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1121578c-8c71-5003-b0cc-b72bc57bc95d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/VA-2012-202609151031.db",
+      "size": 1613824,
+      "sha256": "9139cc1a6c58f4850f0442ff6b56c66320589c1580be5379b1e4df91371015ce",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Virginia President",
+          "total_votes": 3854489,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "90ab8140-79fe-52b0-bebe-5ca0ff9eccf2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b90ba518-2966-5eb6-a1f5-1d918667d920",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3631c907-ec4f-5136-9e57-e08540d70a54",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Virginia US Senate",
+          "total_votes": 3802196,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2cacde02-892a-567d-bfcb-ab1e2f42e025",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "40d25b08-1f53-50bc-bf5a-915053eb5415",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "56150f5c-227a-5ca5-834f-36bb069fd485",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/VT-2012-202609151031.db",
+      "size": 262144,
+      "sha256": "17e4f7f57ecd6ff87977ab807170728f7ed4524a03d2ebbc833824930a3ace25",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Vermont President",
+          "total_votes": 299290,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3891b523-c387-5316-ae9b-3c7dc54c86f9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4caf1bd2-7b40-5ebd-9743-631d17c9a97f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d3e0a51a-1a89-56c2-a302-a6da223f39f8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Vermont US Senate",
+          "total_votes": 294267,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9297092c-faef-56f4-b4de-c3738cc36774",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "57ca6a5a-1bd3-5adc-bb7d-21d60901f625",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b188dadb-1dae-5b70-a845-10439351a6d6",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 Vermont Governor",
+          "total_votes": 295261,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9439e8b1-eb24-5d6f-a87d-89a1f4443e14",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6bc323b7-dc85-5658-9933-e76652ada9b0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fec6667e-953a-5e3f-b0c0-5c517c677e6d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/WA-2012-202609151031.db",
+      "size": 782336,
+      "sha256": "5417865748ca87f6c942a55a76d31c4c103c4f6fce36c78c9520780ef6dc479c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Washington President",
+          "total_votes": 3145958,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e96cb84e-9bbd-52e4-9c09-996867a0f4a6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4e1a088a-2397-57ef-b030-1f4f24324d77",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6c1858ad-bbb7-56b5-b011-291206313c68",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Washington US Senate",
+          "total_votes": 3069417,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "f56ce00d-e9ce-50fd-8906-dad6ac29bc5b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1d978b92-7a2c-505e-8b7a-21955d421695",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 Washington Governor",
+          "total_votes": 3071047,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "659c2161-0ef6-5b21-819a-a54dcfbe6844",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d6816a85-9fc8-5960-a851-41074526ac7e",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/WI-2012-202609151031.db",
+      "size": 761856,
+      "sha256": "3f3d1745901f879f27147017d0bc8e10499c861e69fa79b900538b0d9fe40261",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Wisconsin President",
+          "total_votes": 3068434,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "62bc2231-3330-5281-935a-0b4331fba1ad",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "af321dbb-93fc-56be-a804-703b0a2db922",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c60f0f98-67de-5435-b712-fc4d30cad294",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Wisconsin US Senate",
+          "total_votes": 3009411,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d086b1a9-ff8b-578a-aa02-c18a8db178f6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "25f947a2-c333-51b1-bd61-bfd413c6b820",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "19c892ff-6e3f-574c-93d8-4025f7397297",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/WV-2012-202609151031.db",
+      "size": 880640,
+      "sha256": "c89d29a0c4b7ccae30ce01e9564646e491b2beb5e9e9033556df0aa97872b573",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 West Virginia President",
+          "total_votes": 672119,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fbaf9f12-266b-53cc-8ae7-3d30f2b9c781",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ee8658a8-a4da-53be-8956-bfc608b0b815",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e8d0ddf0-274e-5b43-b0fd-b6fbba0d6169",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 West Virginia US Senate",
+          "total_votes": 660212,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "84364c20-caca-571a-8da5-f21f5ffdfa8c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "158284f0-e4c7-5f71-bcbb-849d7d0d6731",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c1206aad-2ff6-50fd-9994-2e06e29abe55",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2012 West Virginia Governor",
+          "total_votes": 664455,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0b64fe00-cc96-5a97-b4fa-8d9a7afe5130",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b1ed4c34-6a00-5a14-a84b-432647ef6a3c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5b0fe4e9-c732-5d03-80af-769d3f31bc96",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2012.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2012/WY-2012-202609151031.db",
+      "size": 335872,
+      "sha256": "058bd2e62a3509d5549b9eb8efe403cc1c42007ca9d1737e9f8ebf4dc993370f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2012 Wyoming President",
+          "total_votes": 249061,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0582a769-e0dd-518c-bd95-c8652b720dfc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "88e0f6a7-d711-5a54-87db-ca0964bfdcda",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "468c9643-17d3-54d1-8e6f-61b33d353871",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2012 Wyoming US Senate",
+          "total_votes": 244862,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9f3be845-1f3c-5c4d-b535-37db68978775",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "112e2116-747a-5f58-92d0-6049c3fa0e65",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a1e887dc-96d3-5b87-8bb4-0f162ceae52f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

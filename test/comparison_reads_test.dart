@@ -15,7 +15,7 @@ void main() {
   setUp(() async {
     db = await databaseFactoryFfi.openDatabase(inMemoryDatabasePath);
     for (final statement in [
-      'CREATE TABLE precincts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL, population INTEGER NOT NULL DEFAULT 0)',
+      'CREATE TABLE precincts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL)',
       'CREATE TABLE precinct_results (id INTEGER PRIMARY KEY AUTOINCREMENT, precinct_id INTEGER, candidate_id TEXT, votes INTEGER NOT NULL DEFAULT 0, UNIQUE(precinct_id, candidate_id))',
     ]) {
       await db.execute(statement);

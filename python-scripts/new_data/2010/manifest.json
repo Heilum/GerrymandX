@@ -1,0 +1,2314 @@
+{
+  "year": 2010,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:58+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2010",
+  "national": {
+    "db": "National-2010.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2010/National-2010-202609151031.db",
+    "size": 2850816,
+    "sha256": "20092bc77ef29d710b9ecf8d4c8549a8687961ec36952bce77fbcf1b1186d067"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/AL-2010-202609151031.db",
+      "size": 937984,
+      "sha256": "22c58778a48f3b71770718868086a953e30433a641e244bedb859e0c7845d2bd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Alabama US Senate",
+          "total_votes": 1485499,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "068f1dd0-d956-5873-b8eb-8b2f6b67887b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a9c0f181-5c31-55df-b995-8b44c54f1d6b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bae53b2d-9531-5341-a343-94b9bf6f2e52",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Alabama Governor",
+          "total_votes": 1494273,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9d3c2bdf-8145-5ca3-b967-fd96e90ef2b8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "980ca568-0613-524d-a9dd-c3de18cc0008",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cf2c9624-facc-549b-9b0d-938269ba99ae",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/AR-2010-202609151031.db",
+      "size": 1044480,
+      "sha256": "00c1213f18a3ec062c9d3a1769125c564deef112f6ed3c2e07e61cb274a1c8c0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Arkansas US Senate",
+          "total_votes": 779957,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a5cba0d3-b53c-552e-b408-f68c92b365ec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3d4ad4e2-b731-5298-97be-364307becb8a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cae7060e-2a04-5804-acde-9177b54f54be",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Arkansas Governor",
+          "total_votes": 781333,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5e9fdc46-ff3b-5208-8a8e-def55766213a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c11b305e-5bbf-5980-b5db-ade29746c9f0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d135ba22-8dc4-58f6-a066-8ca9cf40c8cd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/AZ-2010-202609151031.db",
+      "size": 458752,
+      "sha256": "b694f525fcdb3f58e82377dbbfe748ace2a0e6e536d0e4197ea36f8d697e5386",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Arizona US Senate",
+          "total_votes": 1708484,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "29d82363-348d-5731-8c59-4ea9152bdc83",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "302e0855-a865-5fe0-8e3a-adefa6182420",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "04fd7d27-2560-527e-8145-ec7a3235123c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Arizona Governor",
+          "total_votes": 1728081,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "de017ace-15a8-54b4-a2dd-2110e7417b37",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4a09e35d-0de5-5d96-8bed-54dd88a6c439",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bcd84f9c-ba02-54e4-a446-fd84180f49e3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/CA-2010-202609151031.db",
+      "size": 1462272,
+      "sha256": "f060b3609cabbb8b0db15b54cda2c6c47d05366b2812d33d93ef51c9d972c86f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 California US Senate",
+          "total_votes": 9999860,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2a2b974e-f861-5f0f-b879-7f439c30f62a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f7b7ddad-0f6a-5b4c-a280-419bc7af29a3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "14be73ee-2a4b-5db8-a6bc-750a53bbcedc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 California Governor",
+          "total_votes": 10095185,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "584006ac-68db-58d3-862a-b3796c1a102c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "986e47ce-ba65-5edd-848d-94a51293ca9a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "727afe32-6b72-592e-b088-61f4515d5c90",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/CO-2010-202609151031.db",
+      "size": 876544,
+      "sha256": "ad8deb621f477d473bfac0c76ce3d392c10d763bf341475d6aa803a0a0b64609",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Colorado US Senate",
+          "total_votes": 1777668,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f59e43db-9a6f-5104-b4b3-5cf7cd6c9186",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d372891a-0433-5043-aad9-d12089d89586",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ba73840c-0802-5495-81c3-f8f10b8e0908",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Colorado Governor",
+          "total_votes": 1793148,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3197969a-984e-53f1-99db-8e71b6a67d86",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fc1faa88-678d-5a60-838e-20d17a655497",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b624d0d2-df00-5d28-9ec1-075fa742271a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/CT-2010-202609151031.db",
+      "size": 204800,
+      "sha256": "414f7b9decf812850b1b5dda25357206a34453dc0db3e9408fcd7ddf2481ed33",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Connecticut US Senate",
+          "total_votes": 1152391,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "27c46e97-9514-5abf-93d0-16474958c02d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f8cfb910-8340-51d6-901b-e3e5358ff03d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1d06acb0-b5d0-5f3d-b42d-5d82332a1753",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Connecticut Governor",
+          "total_votes": 1145781,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9920b908-e2f9-5e3d-a101-576aba0a87ee",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d3c431b9-e48f-5c16-9186-10026fac9923",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ef2b0e34-65e0-567d-b483-fbdb3e06f3d3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/DE-2010-202609151031.db",
+      "size": 147456,
+      "sha256": "260b0f8fc37203206fca5dbfe190798f0610aaa044a68c4b04e967d2421ebb20",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": true,
+          "name": "2010 Delaware US Senate (Special)",
+          "total_votes": 307402,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b6682ddb-88e0-52a3-b578-da9c12567d03",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f2e5d592-78a3-5749-88e8-dddc805d86ec",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "75e44c25-9da0-515f-a13c-6ee953b06e3b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/FL-2010-202609151031.db",
+      "size": 1036288,
+      "sha256": "2b2a675dfb70870914b13ed11e792d964f6f6844d7bdc6aba109a0ab0f232582",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Florida US Senate",
+          "total_votes": 5411106,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e6665513-7c95-5aee-827c-b7b708f8113c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "11815384-428c-580c-9be3-25570f8c5ff1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7bc23a0a-a3de-59e8-992e-7417a7abad63",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Florida Governor",
+          "total_votes": 5359735,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "11112241-04a2-5aa2-ab86-8b23c92220d4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e65a974f-8992-57be-ab2f-da37452d7d92",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b984ed45-7448-5259-8299-25f49bb1abe3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/GA-2010-202609151031.db",
+      "size": 1769472,
+      "sha256": "9300fbb49bb47933b1c660188e6932a28970bfabdd21ab63b90a8f691a3219d8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Georgia US Senate",
+          "total_votes": 2555258,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "90a1d137-a03b-57a9-9ae4-b251e35a47be",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d7717ec8-3034-5ea5-a9da-0ca62f127678",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "06a00121-22ff-594d-ad81-6f673ff6d043",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Georgia Governor",
+          "total_votes": 2576161,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9b81fb4a-4b61-5441-a5fd-d281b3b21c09",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1d7e8d9b-d640-5cc5-adc9-a7d037b26ad0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a5099e76-99ca-50ae-a7c7-14fe6d7bf33d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/HI-2010-202609151031.db",
+      "size": 204800,
+      "sha256": "6bf01a47d661256fa24c72c621619408d1f00ccf3d4472a1d16ea215ec9a6b4b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Hawaii US Senate",
+          "total_votes": 370506,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0c2ebaf3-78f4-587f-ba67-9155220445a0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a0fc4ef7-5c4b-50a9-9595-98a42c6e9d88",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "80194d29-5fba-520e-8641-eea878a68af1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Hawaii Governor",
+          "total_votes": 382563,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8371a671-6fe6-5fc6-aa85-5e1fd5353221",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6d9f3c92-3787-5462-b6d1-44cc70bf82a3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1a7d328c-5e6a-5e76-9e1f-918542ec7c6a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/IA-2010-202609151031.db",
+      "size": 614400,
+      "sha256": "c5ec7f698b2ba8d2a874e5cc9182741190976748fe24068294f49d3b43460245",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Iowa US Senate",
+          "total_votes": 1116063,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2104d0dc-9d2b-5ec7-afac-5583f2777553",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ca48b799-3955-5bd6-a89f-21eac441d2c7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9415f0ca-6734-55f8-826e-6237ae4d2fad",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Iowa Governor",
+          "total_votes": 1122013,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7c97c0a2-27e7-5a53-bf54-e1a26fa14afc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9fe0e50a-106c-54e3-b79b-5fa3073f8599",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4af97a38-abcf-5d3e-a3a3-0d666c276686",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/ID-2010-202609151031.db",
+      "size": 835584,
+      "sha256": "10e12109aedcb66c5896962114b96a716646a6798a5b67abb1552689cd1f3eb3",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Idaho US Senate",
+          "total_votes": 449530,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4dfac2ca-5e3f-5a84-ba31-2a246a0d17f6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6268abcf-e367-5ee6-a657-5bbbcfac3d05",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fcc25148-f832-59b4-9064-5f9c080b6718",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Idaho Governor",
+          "total_votes": 452535,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2f8132e4-5223-5c1c-b189-f55085bfadec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eced2fbd-6aef-50c9-94ef-ee6dd63ee955",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8f70b072-402e-531e-bb34-964c6c43e4d0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/IL-2010-202609151031.db",
+      "size": 958464,
+      "sha256": "47ece04bf7fce10064aed7429a555161faaca4bcd06580ee10f1fe6e5095cf57",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Illinois US Senate",
+          "total_votes": 3704473,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0153c8a8-9223-526b-8aac-862099c05505",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5b402e72-ddc2-5d4c-8a28-318ec9ec576e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "50361c19-5815-5036-a3fe-ca38851688c3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Illinois Governor",
+          "total_votes": 3729989,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e1e78489-cbfc-512c-b000-bb6e19ee571a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "92083b75-42b4-5789-bce8-ddf8ffe22883",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b1a178aa-5a22-595a-963b-8bf3e080d17c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/IN-2010-202609151031.db",
+      "size": 638976,
+      "sha256": "a77de42416f7df4dfe71ba3ab7cc57b95b4c330e411a5cb62151240ce77d63a8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Indiana US Senate",
+          "total_votes": 1744481,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cd1c917a-4e5b-594f-92f8-64d67170510b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "04f5a7a5-bff1-5ce7-adb0-1340001b0b58",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5e760636-5d56-530d-82cf-429a074e81bf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/KS-2010-202609151031.db",
+      "size": 618496,
+      "sha256": "00bd94c721f70135a93a48b253a202463b827592f96084e20ec9b68b978c6b65",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Kansas US Senate",
+          "total_votes": 837692,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b6700978-6e4a-526c-b608-83e394de3e0c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "41c507b1-91f7-5c21-9a57-575633711c66",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bc10a0a3-b58c-5228-8248-f0cb7b75f2ba",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Kansas Governor",
+          "total_votes": 838790,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ca0b8c61-576e-513c-99ed-74e5559e53c5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "08727d68-12ac-530f-b3c7-a0c009591064",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "430ac994-63a2-5a47-887c-fd843a6a0c6c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/KY-2010-202609151031.db",
+      "size": 1585152,
+      "sha256": "118c53bf4173ac27a5369e25cfc693ddddf84ef01de6ca495b510499da8d019c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Kentucky US Senate",
+          "total_votes": 1356468,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0b700ecd-698e-52f1-9f7b-159f06bcfc50",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7f2b0f72-0d5f-5ced-a26d-d7ef673056fe",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0c63f8de-aaa6-5775-86ef-c113bc5c5fe5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/LA-2010-202609151031.db",
+      "size": 1110016,
+      "sha256": "aec4357b93592801e859171c723630c41c301b041863e9aee80a67938826c9ef",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Louisiana US Senate",
+          "total_votes": 1264994,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f5f6f295-5027-569d-a931-62f08ec4d768",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a2b46d72-0c2d-5246-92b0-d1a1f8a12489",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9410c9cf-42ee-515f-b6dc-6de79538a24e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/MA-2010-202609151031.db",
+      "size": 344064,
+      "sha256": "190934c828a0294cdf0d3f94498e937174b55ada9dac1d875a83a1a7cd3131cd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": true,
+          "name": "2010 Massachusetts US Senate (Special)",
+          "total_votes": 2249026,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "451b1cea-a3cf-52c0-ac91-7b49267d336b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5d8b875b-dd9b-5998-b8b7-f4ba11e47b60",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e74af619-be87-5aab-9f22-267c00d0870f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Massachusetts Governor",
+          "total_votes": 2297039,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4cdbf8f0-bcf4-5f1d-bb80-f730951a6d60",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b8fbcf99-7f74-56aa-9e10-29aa6cf09025",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f11c04aa-6ae7-5746-a402-9c957db8683e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/MD-2010-202609151031.db",
+      "size": 520192,
+      "sha256": "41d923d63d6efc76ff900ace0d361a4cac05999d01eee7f4e508539801784b4b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Maryland US Senate",
+          "total_votes": 1833858,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0e3fc787-1973-575e-97a2-d727db00bf5b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0917c69b-59cc-5fc4-bc6c-f5de210b1de9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d86e7603-4b18-5499-aa8f-3ab11929cb3c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Maryland Governor",
+          "total_votes": 1857880,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e31092d5-041a-58bc-9381-87fbb56f90b7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8b65547a-d0a0-5042-8445-d4f70ae41009",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0ad8d376-b4a9-5dbc-b482-2cb852596983",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/ME-2010-202609151031.db",
+      "size": 434176,
+      "sha256": "b3530eb02bdf26fa21dda0618cfcc4fe206eab6b986d2416b9d97035a0fad5b0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Maine Governor",
+          "total_votes": 572167,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "018a5c01-b27e-5396-aadb-5b15fdf8c6dd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "043c0a24-cae4-5b82-9afc-19b85f51f993",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1f56edb0-1fbd-5d13-be55-5e8c96fd22d0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/MI-2010-202609151031.db",
+      "size": 811008,
+      "sha256": "537cc9f05b6735216ee6d2982687de3d6577f48cc1576320d5bd656943e0846d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Michigan Governor",
+          "total_votes": 3226088,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "99a12d04-58a3-561e-a1d8-54831a4e952f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c8456f9-e822-560d-adc8-a2c201aef7a3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "99be6495-ee29-597d-bf77-cffee44ea26b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/MN-2010-202609151031.db",
+      "size": 839680,
+      "sha256": "cfffe81b13402adfb2f2168fc27da6d9f99cf96a3c967f3eaccada8932d072c4",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Minnesota Governor",
+          "total_votes": 2107021,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bf9701d8-d0dc-55cd-b4bb-355352542f44",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "37567a3f-be84-5c5d-be27-2b3de361aaaf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5a56628b-39be-5558-bb10-6b5ffb05bb36",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/MO-2010-202609151031.db",
+      "size": 966656,
+      "sha256": "4aa49342ff35d0bdac0762174bbb4e432eccd5844ad337d6583ab1960679487a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Missouri US Senate",
+          "total_votes": 1857379,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b4ebb76b-cf47-5896-a78e-a192d3081966",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5e4208da-e206-528d-876d-fc8dd2b4becc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2193cdc0-efdd-5532-b1f6-06c6535698ae",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/NC-2010-202609151031.db",
+      "size": 1290240,
+      "sha256": "c4dc53aa7586541a72fcd42742fa6f21ab05cead3293029bdd3778a5c5750e7b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 North Carolina US Senate",
+          "total_votes": 2660079,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1b371405-4c24-5153-b2b2-62d78f1a7701",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7b92c0a3-e1c1-546d-a3d0-dfbb04d5c3cd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8a57d3af-a730-5e71-be87-fc2d7cd2239c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/ND-2010-202609151031.db",
+      "size": 532480,
+      "sha256": "65c7ba2f87d6a9ed334ddf8056d786ba14aed8980ce49f39fb066bc1da2486cd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 North Dakota US Senate",
+          "total_votes": 238812,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8f05cb71-8df9-500d-91cf-7e80a242fc00",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "88e76d25-61d5-5894-b10b-52a730b0be79",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ea052414-987f-5993-a523-5ba32eb760e9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/NE-2010-202609151031.db",
+      "size": 565248,
+      "sha256": "8a7ddafe46df4996dc774dd3b532ea26e75cb731469d7182f272026a1f39caa3",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Nebraska Governor",
+          "total_votes": 487988,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "e233ea91-48a2-5ec8-88a9-dd8db15e7f01",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "323e461c-9780-5dbc-9353-d50fa3bb5efd",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/NH-2010-202609151031.db",
+      "size": 229376,
+      "sha256": "8913b1138d5c0938cca1f0429d82299279590142b399748ec384b8535498b36e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 New Hampshire US Senate",
+          "total_votes": 455149,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "370513c5-0665-5111-9245-01701120e054",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "34c314b8-5b00-508e-ad2a-a49d50c2c9a2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7bfbaae8-6919-51b4-9f6a-25d087758866",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 New Hampshire Governor",
+          "total_votes": 456588,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c41fa6ed-863e-58cb-9195-6b8913cf0a45",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b296ecd7-4e5f-54d8-9623-01cd178e25c8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "034ae89a-1115-59e9-b881-23bc2f5f7fac",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/NM-2010-202609151031.db",
+      "size": 376832,
+      "sha256": "fdc2ce35b555633ba17f490792bad3e9244aed183a9fbf06e3889e3b509d9f40",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 New Mexico Governor",
+          "total_votes": 602827,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "85bbd34c-e0dc-525f-82b7-add305db7d38",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cdcff405-118c-5324-a89b-5e9eccc9228c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1328f470-4309-5950-a57d-86a262fa22a3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/NV-2010-202609151031.db",
+      "size": 294912,
+      "sha256": "3317ccb40667c38f30e1767702080b66fa0fa97dccfc9c7a29ced912338d5ce6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Nevada US Senate",
+          "total_votes": 721404,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cd0cf11b-f9e1-5415-89f1-1a01ca64347d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "da6b5dde-7318-59bb-ac89-feb5001be6a9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f2009a6e-496e-5401-870f-959d82345d1a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Nevada Governor",
+          "total_votes": 716529,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "179b7b92-9b2b-5c56-9830-59ceefd3bccb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "30691043-1132-58c1-9e24-7cf63ca163f9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5f86cfbd-45cc-513e-b382-d12bc558a30d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/NY-2010-202609151031.db",
+      "size": 876544,
+      "sha256": "5f03c017fd28a65c09a5929bdc1d722360fd66482b80eb8b54c6bbdc3b96c040",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 New York US Senate",
+          "total_votes": 4596796,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "98ba4901-d34c-5f5e-aa3e-c95bb2745ca6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7c5f3da4-b9b1-5dd5-bbe9-d8c056f9dbd2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8031c97e-15aa-5550-bc79-c0ab094eeb8c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": true,
+          "name": "2010 New York US Senate (Special)",
+          "total_votes": 4506466,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a359643c-795e-5293-8e1a-445eabcf543e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "73314921-6e87-5fce-bd32-e833f83e9340",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "73a0cf57-c328-537d-901f-15d4db738abf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 New York Governor",
+          "total_votes": 4658825,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8472319c-fd9e-5f1a-8c72-5cc72b6734a2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e2eefb09-218e-5394-9d01-a2f609621c53",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "83ff9c3e-aa27-5efc-b9ab-5866cc2dff34",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/OH-2010-202609151031.db",
+      "size": 749568,
+      "sha256": "fc61e9937977ffe48e860049070dcf6c76144f5129d25a4b9d75f408fc1c8560",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Ohio US Senate",
+          "total_votes": 3815098,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "79896afb-e362-5d7d-9c85-a487bbaaddfa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "529a4541-8ef2-5d00-a6b4-fcd5a151b0a2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0fc6085c-3c31-53af-a534-10ba511627e7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Ohio Governor",
+          "total_votes": 3852469,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c673b8ff-50ae-528c-8b2b-20d850017763",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "55852d1c-20d5-5403-a76b-b4549604471e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "21cc8939-22b7-572b-82fe-ce73da7d6f71",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/OK-2010-202609151031.db",
+      "size": 778240,
+      "sha256": "68505434ad315440135fbe8a96b63524a1153448e88e186ead5042ed549a320c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Oklahoma US Senate",
+          "total_votes": 1017151,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "de5cdfc4-7b70-58bb-b532-4028a4989685",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dba0052f-e7b1-5cef-bf8f-b4fefad263b1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "aca89f17-40f3-59fe-a71a-806e74bedd03",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Oklahoma Governor",
+          "total_votes": 1034767,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "854576d3-403a-5000-8981-dec04af7fb87",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "07935587-70c1-5eb7-ab25-fc99c239a081",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/OR-2010-202609151031.db",
+      "size": 643072,
+      "sha256": "5fc70e1b71928380295c50751125c21390efccac5a2624a5bd7d0045c6b78dbe",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Oregon US Senate",
+          "total_votes": 1442588,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6f08fb89-fc55-5b86-ba1c-1e4875d0aa06",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "671139a4-b12c-5d8e-aea3-4523c52d9147",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "54a8b889-26c4-572a-b98b-e06ff7d56385",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Oregon Governor",
+          "total_votes": 1453548,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fc032766-b9fb-5ca3-b3f6-c34db9d3d8df",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "12ac7b42-8299-5f92-9833-e791a9dbd34b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dc1ae33e-fe92-582e-af77-da924c63be78",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/PA-2010-202609151031.db",
+      "size": 811008,
+      "sha256": "2c16bc3376410a075553bb2a17f85d5516b3f91f24dca1887a19b9e97cdba350",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Pennsylvania US Senate",
+          "total_votes": 3977661,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "213b773e-4d7d-5578-b80c-82bc81a0d19e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c4f96c30-a1a4-5cd9-957c-a86d6c07554a",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Pennsylvania Governor",
+          "total_votes": 3987551,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "1d69112c-e661-5968-a442-38ae548404a4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "59dd90f8-7888-5b56-b06c-3df6eff38b0b",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/RI-2010-202609151031.db",
+      "size": 155648,
+      "sha256": "ffd80cbdda8a1407b5ba81d17b69696d9bc1d6a7951430bce07c8ec742a78bb5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Rhode Island Governor",
+          "total_votes": 342201,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "90f2734b-7b1a-559f-a8df-0fe0fc2c464e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e739473d-cab3-5a77-be49-cf946591685b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bd3693f1-5ecc-533b-842a-0333c6f9d989",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/SC-2010-202609151031.db",
+      "size": 913408,
+      "sha256": "f15391d0681260e00c1575ae01bae4191e5d7bfd3b053f38f32e2351ccb43e36",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 South Carolina US Senate",
+          "total_votes": 1318794,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7db9c5af-884d-5d62-a55b-f227c4cd5eba",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5c8104d1-e9a2-5342-93b6-1a5d1ba5277d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9c6f5ab3-3255-50bf-9178-c8878f19ac13",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 South Carolina Governor",
+          "total_votes": 1344198,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "973d5059-7b3f-534a-90c7-dd520680005c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5377b791-0228-5071-918c-12b3496230f9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "eafbf5d2-ce75-55ea-914d-cf69c6269a57",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/SD-2010-202609151031.db",
+      "size": 618496,
+      "sha256": "097f4f2be0eab53f50493ecd81288eb959d622ec19d65892de99bc4b3bd2f7c6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 South Dakota US Senate",
+          "total_votes": 227947,
+          "candidates": 1,
+          "parties": [
+            {
+              "id": "ca7f41a3-09e0-5fe0-ba23-8060c208b3ea",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 South Dakota Governor",
+          "total_votes": 317083,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "90af6993-1a77-5fd5-a458-bb2a944a193c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "550eeb9a-d314-5816-97e9-e37c018fa49a",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/TN-2010-202609151031.db",
+      "size": 1224704,
+      "sha256": "aaf802c88b7956dd1f0b4631a1c595eb2f02688dd2cf6fd3a40347411ed4c335",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Tennessee Governor",
+          "total_votes": 1601549,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "50422000-21a8-5f63-91d5-89f9e6498aa2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "41af171c-c455-5cce-92fd-ca784a32d46e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dadb8d2f-7dbb-57dc-8064-9f43e4a62d18",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/TX-2010-202609151031.db",
+      "size": 2449408,
+      "sha256": "d2a00be42f06e3065aeeefa32ebab808c7678235aba16d89a7372421e07cfe4b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Texas Governor",
+          "total_votes": 4979870,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2e91cf5e-a509-565a-91aa-21d2ddc4adec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9ca8c1c6-1ffc-5358-a908-648d3204f569",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "18ef12b7-85d0-5d32-86c1-347683c11904",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/UT-2010-202609151031.db",
+      "size": 606208,
+      "sha256": "14dae466ea7798b0a63ad7df4cab6bacc3865be1118240337ffc27fa4c70f3be",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Utah US Senate",
+          "total_votes": 633829,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c8483556-1db9-5790-a0b2-fa427c5d6a68",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b0ceed62-f78d-56cd-846f-6cf12697163d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4002c0cf-21ab-5b72-b75f-7e7babd73e98",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/VT-2010-202609151031.db",
+      "size": 245760,
+      "sha256": "f4524c88e016ca6bbd99cd60208c20befc56cfd8da9a8eb87f02ad7cce751092",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Vermont US Senate",
+          "total_votes": 235178,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1108f64e-e320-5ae0-adb0-97675509a13c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5e5001d8-328f-51e5-bb24-09a120300bb7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "511e74d6-a62f-50bf-a475-26c857651afe",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Vermont Governor",
+          "total_votes": 241605,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "83ba2ecd-81ac-59a5-a3ff-ed0ffcc9e2ae",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8ab2fbda-5059-5ead-8e81-d7d137edf6e9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "31004bce-9997-5cd2-9c92-75a5951bc415",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/WA-2010-202609151031.db",
+      "size": 737280,
+      "sha256": "3e7a4fde4b356b9842485ab09c4337b748a4914962827da7e145c20c7575a87d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Washington US Senate",
+          "total_votes": 2511094,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "bb0b882f-cd3e-5455-907d-921986df2611",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b64b0875-b0b9-5cdc-aae5-a0ca5fa7dc7a",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/WI-2010-202609151031.db",
+      "size": 761856,
+      "sha256": "2139a7e7459baffc8616285498388b33a7b4d5c9f09834364d503b9cb2547729",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2010 Wisconsin US Senate",
+          "total_votes": 2171331,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "25eeb862-ec25-5f0c-ad1c-aa2cbae8f44a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2df34247-0f68-5eb5-b3ac-cdb0936675bc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "144a5006-67d6-545d-8d4b-a5e8626a33ea",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Wisconsin Governor",
+          "total_votes": 2160832,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "45229017-dca6-5540-94af-665c71952003",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "35291b73-2d29-50b9-a949-a13e6b73c364",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8a74ee23-a375-5b6e-8ad4-b078002c353d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/WV-2010-202609151031.db",
+      "size": 811008,
+      "sha256": "1b32168d8919199c47da0995a485642c1aecf3a5d0c63941f7535bf375bf7127",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": true,
+          "name": "2010 West Virginia US Senate (Special)",
+          "total_votes": 529948,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "490bfe21-d407-5a8e-9b5e-8b9d2602fde8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e125ba56-562f-530a-aad2-32e69d827896",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "40cc8aa6-1939-5fc6-bde6-707270688d90",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2010.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2010/WY-2010-202609151031.db",
+      "size": 311296,
+      "sha256": "b8f36cd97fe78959d1573c7e7c6a28343e6f988fc08fed19764d6dbbeb018901",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2010 Wyoming Governor",
+          "total_votes": 188463,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "805342e3-9439-56b8-a864-2a973606ea91",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5d56837d-d6ea-572a-bf24-446343a35db2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c391d792-ca99-5c46-885d-b8ba9cf63021",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

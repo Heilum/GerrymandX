@@ -1,0 +1,2939 @@
+{
+  "year": 2004,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:58+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2004",
+  "national": {
+    "db": "National-2004.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2004/National-2004-202609151031.db",
+    "size": 3092480,
+    "sha256": "5d0f0d7e36b9b145e3c2bc990ea15008a653cc654043c8d3edc8b17590f1a1ad"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/AL-2004-202609151031.db",
+      "size": 937984,
+      "sha256": "ad9f65635a1bab92fd8731e9f2931d8eb95d9840a30a88e2c21fb6576c2e5808",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Alabama President",
+          "total_votes": 1883449,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "47a65f1d-8727-5fa0-a0c0-46a0164a3929",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7b11359e-b397-5d5c-8a61-bcb836a51987",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a8b51d68-a27d-50e3-815a-57e1c6fb1700",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Alabama US Senate",
+          "total_votes": 1839066,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3a821990-4ca4-592c-9089-7d451fb37074",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "794afa5a-5901-51de-b947-457642f2cad9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "846ef2f0-26c0-5b8e-84bf-1b98a3cba519",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/AR-2004-202609151031.db",
+      "size": 1036288,
+      "sha256": "87cb75f9a0343f1bd5fb7eb3c346e8e0309da843183a4a660aad512bde503bb7",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Arkansas President",
+          "total_votes": 1054945,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d38584f4-5b3e-5682-9adb-62a3a60255d6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "60a47611-f747-5f74-bbf5-f4abf0e16267",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c2425aab-3391-579b-8bb9-a3039401d454",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Arkansas US Senate",
+          "total_votes": 1039349,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c50a17a0-3ff9-5f14-b248-5e589a318a71",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1bb3e493-8110-562d-9f69-5d41cb88efe9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "080a7152-a86d-53ea-a1ab-784dc042b789",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/AZ-2004-202609151031.db",
+      "size": 458752,
+      "sha256": "a5cd55f4f162da2a12854c9d659dcb151f9fb2cf1584205002e66ead61d3a64a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Arizona President",
+          "total_votes": 2016102,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9e099ba8-445e-550e-9af7-303c5278be63",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "02efda5a-91bf-56ae-8f8f-1e980e71896d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "91318c45-20fe-5afb-9255-f0bfb36c7075",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Arizona US Senate",
+          "total_votes": 1961677,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "eaf80110-f800-5baf-929b-cc064f8ea6f9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "38f0943d-661b-5496-ae8f-46709a8b0552",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8172dd3c-e435-5d7b-93c3-d576db769fae",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/CA-2004-202609151031.db",
+      "size": 1462272,
+      "sha256": "0dc8012d65aad07998b57da06e684c869b264d939858c246752f4cbabaef63d5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 California President",
+          "total_votes": 12421859,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0505520e-9774-53a3-bef0-cce4b103998d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b792916a-9b72-5733-947d-d14b23a50bef",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1b261bc8-defc-5ef6-9f61-8b709d6be7d5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 California US Senate",
+          "total_votes": 12053295,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7a270540-2720-5b0e-9496-fa21e809ac25",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "386c9708-7c3a-54d2-ac16-656b6c9c5ec4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7ca98391-40bc-5e88-a857-faee3c74615b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/CO-2004-202609151031.db",
+      "size": 876544,
+      "sha256": "3b16091d574a52a54454c41a843123972f43954ce10184018774261d54cb9625",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Colorado President",
+          "total_votes": 2130325,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5616d46d-ce50-57ef-be99-bf5dbaa01d50",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "66833a94-1dad-5d9a-92ca-637b5a097b5d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "022700f9-2be4-5016-9305-c1833c1e4f05",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Colorado US Senate",
+          "total_votes": 2107554,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1c12cd4c-d2e9-5461-a3f1-c5ed5d7bcb86",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "32c0d1a5-2c46-5875-9906-c2373852f52f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a8b17965-f255-5aa9-8faf-fc392cfeb672",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/CT-2004-202609151031.db",
+      "size": 204800,
+      "sha256": "8b3c6caad9299596494a287bb98957cf94c7df1f775651f1dd2a580d036b2315",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Connecticut President",
+          "total_votes": 1578769,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "67b9096b-f8db-5917-8c62-bfcff3b624e8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "662ec979-7b63-5bf1-a0cb-c24b1b7f2096",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "df422ec1-01ec-541f-b72f-bbc6852be76d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Connecticut US Senate",
+          "total_votes": 1424726,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "10c98c3e-9338-51f5-8ca9-e1300ee5fca7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "76a943ea-e4aa-5aa8-92f0-1dbc8335ffc0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a1cfcd19-42d1-5cba-b646-bfff94e450fe",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "db": "DC-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/DC-2004-202609151031.db",
+      "size": 122880,
+      "sha256": "43e64bbc1dc223b86561c84f264fa19e6029f1600c1bcbdc3e2bc52a93091a7e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 District of Columbia President",
+          "total_votes": 227586,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a8312673-e962-5feb-b68d-aec84311928f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a21a4391-8fe2-5e4f-b017-da368610cbf6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "95d28006-02e7-5cc3-abd5-a8fafa6cacdf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/DE-2004-202609151031.db",
+      "size": 147456,
+      "sha256": "05620363103ac6a218a55adfc10db9fb3b0021fa35fadc16b0b6eed9b800b827",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Delaware President",
+          "total_votes": 375270,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c21cfd2d-c7aa-5d31-aafc-a45d9f29a3ca",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b9b5d940-176c-5587-a291-e5bf825ae620",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0c830a95-30ff-500b-a30f-362f0935b4f9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 Delaware Governor",
+          "total_votes": 365008,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "06c37bc6-09cc-53b0-9217-95159203fc7c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6bb449b1-5365-5664-9c56-bf9fe5b808c1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "32b32f93-487e-53fb-9649-09c9ed57dc52",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/FL-2004-202609151031.db",
+      "size": 1036288,
+      "sha256": "b65aff6d09a6e2a37d9796655540c975eec935e876cdfcb65eed77ab1b70908b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Florida President",
+          "total_votes": 7609810,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f7cbf152-bf3b-565d-90d0-5f0c2f0df113",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ee5cc48f-49cc-582e-a320-e299e53ed00e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b9487232-206c-5dd1-8b27-48b6854c86d3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Florida US Senate",
+          "total_votes": 7429894,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "991f3603-baea-5f30-a458-c2e04a5e3c63",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4d39901e-c6ba-5ca8-b838-6564f46a57ee",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "515da7d7-79bd-5bac-9529-2daefb687298",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/GA-2004-202609151031.db",
+      "size": 1769472,
+      "sha256": "9749f29d6b1ce0c73c556ef464dfc374ccc02820a8aa746270f2358674d1f2f9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Georgia President",
+          "total_votes": 3304481,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e07400f1-5326-57d9-a971-8a908f0e8b8d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fef3598e-c08c-58dc-921f-5bedb0aa237b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1bd12240-974d-5f5e-90fb-3e10682905a9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Georgia US Senate",
+          "total_votes": 3220981,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f7195202-adf3-505c-bf7b-8b94f5099ddc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "129c9597-ce78-5aa2-a77d-8a1af25ca315",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "11594807-546c-53ad-bc6d-7b5a4e1d7016",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/HI-2004-202609151031.db",
+      "size": 204800,
+      "sha256": "14d158d318c382583acca227332facfae380195fde16e15d6695d7e55578dbcd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Hawaii President",
+          "total_votes": 428595,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "386b37bd-5312-5ce1-b197-29d262193a1e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "37092bef-222e-5683-be1c-58835da0ddf5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "99fd48cc-2428-5b15-b673-1030833d121d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Hawaii US Senate",
+          "total_votes": 414936,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "887197d9-4e10-5e6a-86fd-a3be8cf12b75",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a8a9aefd-9024-5f38-b7ff-ab61dc42670c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c915d8c8-5042-5115-ae48-c2db473bb257",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/IA-2004-202609151031.db",
+      "size": 614400,
+      "sha256": "531b3664e795c98377839c28c6007d70b6f7af444039afee8134f327da8554c2",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Iowa President",
+          "total_votes": 1506908,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b57b1bcc-bd12-569a-8ead-7ab7437e45b1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5211c197-5bc7-5eab-bf63-acc5784c3d3d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d8f4d2c9-5d11-5131-a9c9-2d5ea3812eaa",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Iowa US Senate",
+          "total_votes": 1479228,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "906ee33d-dc55-51f1-8442-fb61fb28821b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c66568b-e6c2-5a03-9aba-315088d6b5b4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a29e7228-fab8-525b-bcff-9d9c850f468d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/ID-2004-202609151031.db",
+      "size": 831488,
+      "sha256": "c9e93b47373b9c3a92093f7c387b0152dab95390e05ed3ec709c8907182d3701",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Idaho President",
+          "total_votes": 598447,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "58e44f01-6f25-5d0d-9a06-ff812c0f3d66",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ea9aeadd-082f-5fd8-a331-13f8de9349dc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "15ade05e-d2c7-513b-8326-dc7ac6f2c42f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Idaho US Senate",
+          "total_votes": 503932,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "c9e75a23-2114-5a6e-9f7f-3e41f0d968b2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2eee0cb9-ed92-5014-bc80-bf8dec9e9a14",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/IL-2004-202609151031.db",
+      "size": 958464,
+      "sha256": "b567e99652d82a1d9d30be70510184a8603d37367efb75b7fd5cd74e51404861",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Illinois President",
+          "total_votes": 5274322,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ecffffda-13f3-5d3d-9a2f-b1dd9485d637",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d55a9f4a-1c07-5c21-b28e-4239a2a97f9c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "015cb97b-a55f-5ebc-abab-93b611ed5f4c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Illinois US Senate",
+          "total_votes": 5141520,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "62e8b338-49e0-5022-80d7-86c7cc5ecc57",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "de302575-6680-54bc-9804-db99c2090ba3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "62f5f9ca-9314-5420-b9da-46c14d0a4e91",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/IN-2004-202609151031.db",
+      "size": 733184,
+      "sha256": "344be87700487fa7a03d958d85131e997bf1042d6398a0457e073b0f7564784a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Indiana President",
+          "total_votes": 2468002,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "36972f17-8146-57c0-a22a-4263146e2207",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "44603c7f-3f57-5453-803a-f22603e81c83",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c628d3b0-8f8f-5adc-a6c8-19a6e4612ba8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Indiana US Senate",
+          "total_votes": 2428233,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "43d7938c-442f-51ba-b024-5effd5cf0df3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7c6630ef-0b32-5592-b1be-2d87e1ab46be",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b5110bfd-7d47-550e-8a39-b4669be081f0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 Indiana Governor",
+          "total_votes": 2448498,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bcc95c88-1469-54cc-80c0-eacda5def32a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2a3a5f3b-3641-55f6-a3c7-5b9b5e478e82",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e48fa5ce-d05f-5445-bcfb-5a6500f0e1da",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/KS-2004-202609151031.db",
+      "size": 618496,
+      "sha256": "5ef4e7fba8596350485c6ed4bb721485767c8afe62f4dee001a6149fd2dc6b03",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Kansas President",
+          "total_votes": 1187756,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e11c965e-72d9-54e6-ae7c-9e4a00d765de",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "916151cc-f800-5c2f-8ec6-3c4d04a78893",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "52faca16-a544-56c0-939e-01d1373e31b9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Kansas US Senate",
+          "total_votes": 1129022,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "40b7a15b-2717-524c-b6d9-297e52998b82",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "801fa986-e940-572a-bdc0-8899b259d71b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9a09b1e3-6423-57a5-a2f2-7ff9cc38695e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/KY-2004-202609151031.db",
+      "size": 1642496,
+      "sha256": "6d41e6bf86939b9d360b2d1e269672aab684e600dc7217ea36caaf824209db5f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Kentucky President",
+          "total_votes": 1796079,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "14007ee1-f067-5601-98b0-8572329cfa01",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7fde17eb-5425-573d-9081-25bbf7487ab0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7505e9e9-e95a-549d-941f-40660c1057b8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Kentucky US Senate",
+          "total_votes": 1724362,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "61e654ee-a9b2-5ee4-baa6-bd89f3b8b88a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3a18dab7-0f07-5843-bc51-41189e8a72be",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/LA-2004-202609151031.db",
+      "size": 1134592,
+      "sha256": "1848d3f0ed3fc2b24eaa53ba4dfd0e5c532f70fddbcbf11c094f4421e1b8ae19",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Louisiana President",
+          "total_votes": 1943106,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d3f63b42-8403-5dc5-b567-00864e82d5d3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "63ac41e3-53e1-5b6f-b2d6-14eb4b1d1bf6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7aa74627-17e8-5892-b4e3-997528b7fd06",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Louisiana US Senate",
+          "total_votes": 1848056,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "302b1e1a-9939-50a4-bcb8-2d3b5362c545",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "85ae5b39-7ed0-5141-85ae-03e1a150a435",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bf869bf8-bcc5-5ad9-9a40-2aed6a8678cf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/MA-2004-202609151031.db",
+      "size": 335872,
+      "sha256": "8ab827bd1b5e97b455311b055f386015d42e7a7699ac6c92af1805b5508f7f19",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Massachusetts President",
+          "total_votes": 2912388,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a93638d5-eb86-5fc1-a475-02d82d701ed1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dddb234d-5143-5b98-91af-5cf3a6602c99",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4029a22d-b489-5253-b183-b171c9661206",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/MD-2004-202609151031.db",
+      "size": 520192,
+      "sha256": "67616c8f6c1f9c8d5dca36b85828dbf026952c40a91c03386a11cd8ad95a3ac5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Maryland President",
+          "total_votes": 2386678,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bdc90719-3bf2-50e7-bd67-5d70eff85564",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d8b78b18-4b52-5493-ad2b-1b4ccfa8f6ba",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "90cd49f5-a7d4-563a-a051-40d59398d70c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Maryland US Senate",
+          "total_votes": 2323183,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "590ed9f0-b988-5999-b818-cd4d60f04ac0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "83694fcb-4e6e-542b-baf0-cbfe6d6a074b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0a7b0a88-96c8-5634-8096-6deb98099e5a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/ME-2004-202609151031.db",
+      "size": 434176,
+      "sha256": "93fe3682ef976bd9167c87cece208b8b5ba041d90503bdf883512d43947214f2",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Maine President",
+          "total_votes": 740752,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8957d322-cfcb-509e-9963-638f530a3895",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9da22a88-fbc1-5724-9b2c-b06f7b246ec0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ad73db25-d3f1-501d-a0d3-d82f27960261",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/MI-2004-202609151031.db",
+      "size": 811008,
+      "sha256": "c8f853d1ac9e650a7d773841220268b87f8234d45504b2b5113153b81b256b07",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Michigan President",
+          "total_votes": 4839252,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "df2a8245-0d4b-5998-8955-3b3c85b6e105",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "127de7aa-9596-5067-881b-622e0895700d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "046db3d9-785f-58df-96fe-57d6ab3cdbb8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/MN-2004-202609151031.db",
+      "size": 839680,
+      "sha256": "a53db28bfa3d39ce3b1f9e2c582a2cff3f4f0a8e719567ab6d0b7b5658393d53",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Minnesota President",
+          "total_votes": 2828387,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "25a9068e-3d80-5e27-8888-a84d428b80c8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9e91c8d8-eb7d-51ea-b53c-327eee8d31c2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "292afc4b-7783-58f4-ac77-32efb7c13f6d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/MO-2004-202609151031.db",
+      "size": 1089536,
+      "sha256": "cf27be90b84ddb122fca514bf997803d53c27189c60aa0e6a032f35115baffa4",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Missouri President",
+          "total_votes": 3268887,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "abbe19d7-2aec-5038-9c92-9c1cc9c7aa1b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "81c2cc8a-3d97-5205-98e4-11498856e20d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7949c37d-7a2e-5622-a8a0-3c5340d26376",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Missouri US Senate",
+          "total_votes": 2566442,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "221661b6-552b-501f-9775-5320bf8c5c5e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "77f9e902-3795-5d15-bee7-e8b0aaeed25d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e340311e-3713-51de-b1d7-829e621f7d04",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 Missouri Governor",
+          "total_votes": 2579051,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "440e1813-81ca-5cb6-b559-a52afba419b5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c545fc5a-d53b-5e90-a6f4-a145dcadee86",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a4eea047-9500-5192-84f3-fd3604e2006b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/MS-2004-202609151031.db",
+      "size": 774144,
+      "sha256": "b98a8761e04a8241df367552f792f2089c816eca4722461b27be4951e22069c5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Mississippi President",
+          "total_votes": 1152365,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d579914c-6e94-595a-902f-3addf54c1983",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6fdfbfca-41f8-5524-a120-a2110b647c45",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f38b6828-d97d-5cbf-a748-f04be01c9a89",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/MT-2004-202609151031.db",
+      "size": 1028096,
+      "sha256": "202ac42b3350e79e1c8040d5578b0c352b8917818165bffaa0d9e491ab16370e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Montana President",
+          "total_votes": 450445,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "13459c3f-d0ef-5c93-9ea3-cc53a826a1ba",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e659903a-9b3a-5142-9d97-582ed3191407",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0f52a7f4-bf41-5e11-b9dd-81af6f2943df",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 Montana Governor",
+          "total_votes": 446146,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0f9986dc-c3da-550a-8cf5-8060b3a5cb78",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a44a1e89-6372-5ab7-8c99-a72d83a7c6f9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "429da824-1b2b-5f6e-b0c5-c87a2e5acaf4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/NC-2004-202609151031.db",
+      "size": 1392640,
+      "sha256": "9687e0042765685087852bf0223fb039c20f262205e5859b0c80c11cbfd0c2cb",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 North Carolina President",
+          "total_votes": 3501007,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "320c4221-1602-5687-8f2b-b37628f598df",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "24c22598-9b87-51c6-a5fa-9578b791c349",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "18ac4a21-c8aa-58c4-9bba-26622cfbf6af",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 North Carolina US Senate",
+          "total_votes": 3472082,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "775ecc84-cc45-5c5d-ba76-da8a03409e90",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b7f3a23c-c3be-549f-8c3c-82102346f3d7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0991899f-acb8-56b7-ad1b-e86b96f8c28c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 North Carolina Governor",
+          "total_votes": 3486688,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a1ab1746-cbd9-56e9-9588-39131f3d58f7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c8fdc7bd-4e07-54f0-943a-b7487f08273b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "92c73546-1800-587f-8c41-0173f0e9fa4b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/ND-2004-202609151031.db",
+      "size": 573440,
+      "sha256": "1bee4972dd6dfaa28d46eae580ef330188c1c56781ab8224081c60de558f50e5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 North Dakota President",
+          "total_votes": 312833,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c2a86a49-4e1e-53c8-b1b3-e3189be85394",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1fefea8c-0307-56b4-958f-a9af51842a9a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "255e8b4e-07df-54fa-b353-23120a9dcd2f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 North Dakota US Senate",
+          "total_votes": 310696,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "c5459ba2-a465-5ade-998f-8f1ff52c9c1d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "89fdf739-8591-5805-987a-bfbe7daf696c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 North Dakota Governor",
+          "total_votes": 309873,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "289fc46e-ed9d-5b26-8267-92a67673200f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "32ab51ed-b9b7-56f4-9976-c72aaedce6de",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1d005f19-c081-520d-9300-b3695e638c9c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/NE-2004-202609151031.db",
+      "size": 577536,
+      "sha256": "45a031bea44150db02e9141516598fe6ab11dbf4dd6cc5081fbdd4b8dcc32636",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Nebraska President",
+          "total_votes": 778186,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cdd7f4bc-3521-53d8-9c5e-ebad9fb630ed",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ed92fe26-c633-53a6-9e0a-f2fc0222b865",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "75344f1a-96d9-5440-b8ee-44bf6e26acb9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/NH-2004-202609151031.db",
+      "size": 237568,
+      "sha256": "ab2bc17e37eaa6d81d98aa30e251970005b2b15779304254bb377b98f21bf9e1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 New Hampshire President",
+          "total_votes": 677738,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a15da402-21d6-5441-9459-be8ea61d7f6b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0b69ed7b-75fd-5f12-8a03-310bcd902d39",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "85929454-0a96-5651-88d4-3d2f59bf8408",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 New Hampshire US Senate",
+          "total_votes": 657086,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "957dbcb5-cf61-569a-a1c7-20a78da0a001",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bc47bafd-e853-58da-aa38-e5d5bf5e9818",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7329c7dc-1afc-5738-a506-e59577d25ec1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 New Hampshire Governor",
+          "total_votes": 667020,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "914fc257-5003-5af4-9436-fa4a84005089",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "25c21183-0a4a-5d48-b514-e27f36317362",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "af9e4c05-3265-5cb8-9348-86620c76a205",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/NJ-2004-202609151031.db",
+      "size": 417792,
+      "sha256": "0759d692de17ad830504211d3c5254c4be48af7a3308e757f1bf46628d453226",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 New Jersey President",
+          "total_votes": 3612137,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "45efdab7-e770-5f9a-94e1-fd54c17508ed",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "98981fa7-b49e-5e89-b21d-468183ace63a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2547e795-4e0e-53d8-85ad-1043253d58e1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/NM-2004-202609151031.db",
+      "size": 385024,
+      "sha256": "de810439954b4acbaa1a34ba4c3a5ea8f64ca56529bb13576f1ae3d0e8e92100",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 New Mexico President",
+          "total_votes": 756304,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5970c8d5-e51b-59bc-942c-3defac97123c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "503bd272-4bc0-5b71-832c-2ecc82b3e6e8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ad64450c-95ea-5e40-9db9-6270f85715dc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/NV-2004-202609151031.db",
+      "size": 294912,
+      "sha256": "46334dd85d4be7471e3b5d69515a734c03c1051525b7d27cefac23f3eeb75d48",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Nevada President",
+          "total_votes": 829587,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "15be7d43-3c6d-57e3-8a25-a13c1c0ae2bc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a51fbaf7-dfcd-57b8-bf0d-2a3cef647c6a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "df6cac00-9cc1-5cfc-b8d8-aba066cf5c54",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Nevada US Senate",
+          "total_votes": 810068,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "54c76be8-1db6-5f8d-8f20-fed40ac71068",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bdcd0b9b-6550-5f99-8a85-fcdfb7f0bca5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a86f3bfa-2696-599b-b845-bd17254b75ff",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/NY-2004-202609151031.db",
+      "size": 835584,
+      "sha256": "ae21dde6deda3116b5910c607ca2fcd8d1cbf1f12993471f50e77d36c5516335",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 New York President",
+          "total_votes": 7391954,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4fcae961-b108-589f-b45a-d12e95cfe2e0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "97bee9d5-0e11-56cb-b774-baa2f509af90",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "972ecd6c-23ca-5d6c-8138-54f3d970bbb3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 New York US Senate",
+          "total_votes": 6702875,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a312d439-0e66-5dde-92cf-f951f8faf06b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "652dc0f6-efcb-5eb7-b3eb-56eb0db66db3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a87f3224-eff3-5e8f-8cdf-dc6dabc77e3a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/OH-2004-202609151031.db",
+      "size": 724992,
+      "sha256": "7952e51765e2a2c1dc9e5fda50f55a56af1fbc959aa87ce5d97cfcdd19e36bb4",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Ohio President",
+          "total_votes": 5627908,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8d4f5961-155d-5f31-8a5b-bae47aa88c52",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "65f3dcbc-7f62-5ff3-a009-500c1a35fe0a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d85ed160-aa14-5fa0-b179-5f6877361f7c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Ohio US Senate",
+          "total_votes": 5426196,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e3f4378d-a595-5f44-bf60-ba227eb44492",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "514ec82d-960b-534f-975e-3d79c43be8b0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9fa29deb-2382-5f85-9100-ee5fad076924",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/OK-2004-202609151031.db",
+      "size": 778240,
+      "sha256": "b65892b8f9b87d3526b0cf57d4d41b3e1814cdbcb70f0f4d1f20ac9b60446dd0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Oklahoma President",
+          "total_votes": 1463758,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "6a3056ce-83ac-5638-9f08-9c76935b84dc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "be35d83e-f636-52d8-9d73-71b587c4cd33",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Oklahoma US Senate",
+          "total_votes": 1446846,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "865c3982-84a8-59b7-a836-8a3ba566b2fb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8cb79e39-92e1-550a-92c2-920dd9b0fe29",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a579c918-9076-5639-a561-e751b9cd26ac",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/OR-2004-202609151031.db",
+      "size": 643072,
+      "sha256": "cc70da9ae0b8d52af6c98909975367018f9652de726dc55c321e86c9eabca96a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Oregon President",
+          "total_votes": 1836782,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5d0d3dbc-d562-511d-8bd2-0429de60e09d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8e84e73e-f83c-5850-bc50-f9c078b5b27a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "23c05d5c-4852-5293-9a7b-c44dd0c63c60",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Oregon US Senate",
+          "total_votes": 1780550,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3e0c1ae4-8585-5f0e-b497-9a97995ab298",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5342e15a-a335-5d0b-ba3e-223eeb6cd667",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6ce38b6e-dbb5-5b98-a54e-6d1abd6730b9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/PA-2004-202609151031.db",
+      "size": 831488,
+      "sha256": "8a558e07716b82b79a654d0d3fa736b659c72e2fc72c593993a29a94f15fab9f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Pennsylvania President",
+          "total_votes": 5766120,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0d0caf15-53f5-51cd-a0c9-18060e90e875",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c8057db8-6d53-56f8-b586-c6c27ac86449",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "00b5bc87-c8b9-5ffd-98a8-3cddf57a681f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Pennsylvania US Senate",
+          "total_votes": 5558525,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c60abc9a-1b4d-5e96-a7ee-ed7fca046a3c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "93713f3f-f025-5efd-8e50-ae3eab55da08",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1a788a15-43fe-5e4b-b107-39356b683621",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/RI-2004-202609151031.db",
+      "size": 155648,
+      "sha256": "7d41ab45c6108b7c8c8911f5a94daf5ddffcb929b3a128f0bd8746989c312c4e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Rhode Island President",
+          "total_votes": 437134,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fc901447-2f50-5e15-bfbd-cb06bd4242f8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "64522a1d-24f6-5903-aec8-a8e6d52eeace",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "08ab50b5-9b96-5350-bf37-c479b74e63a7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/SC-2004-202609151031.db",
+      "size": 913408,
+      "sha256": "5bc5938d7c4755a0b9d4b16b8a0618166bcf54c1de8130904a1b65a530f1b850",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 South Carolina President",
+          "total_votes": 1617730,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "dd556b1c-653f-570c-ae92-0cc3cdb63ec5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6ded8e6c-8910-579d-9699-796843b4f3e2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cf14af71-1093-5ca2-9c0b-b13496fc7992",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 South Carolina US Senate",
+          "total_votes": 1597221,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "97ed7e87-4720-52fe-b0f5-457963e3bc58",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bd7a585d-3782-553e-be40-3b3bb77b8524",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "067bbc77-62a2-526b-97d1-ec6bc72f453d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/SD-2004-202609151031.db",
+      "size": 634880,
+      "sha256": "3aa9d45eab27523f84006fb2a951be35afba8277ecbd52a9a0d65c9fa365ee3b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 South Dakota President",
+          "total_votes": 388215,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "965ff444-49ef-5fcb-b348-d3b166dbd879",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ef635684-619e-58c9-a08f-7ea7b205cf6c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "11878c30-b84d-54b4-a850-2f2d3e3c2a08",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 South Dakota US Senate",
+          "total_votes": 391188,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "6bff1463-223d-5adb-8ef5-e0d2a9a300e9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aae289e0-9bab-56c3-a93c-fdc59902fe7f",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/TN-2004-202609151031.db",
+      "size": 1224704,
+      "sha256": "a5827a6f549f159eb97f95839862197034180e0f7f8cfffca3418522efae5910",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Tennessee President",
+          "total_votes": 2434949,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "71e5286b-4cfd-52e2-9432-12bc0e552a4a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1ee9f442-b165-5295-8da0-630e5b8d6b23",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d934c4a3-fbba-56d6-9d57-28a20136b3cc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/TX-2004-202609151031.db",
+      "size": 2449408,
+      "sha256": "de7b4ad82f329363fcbbf9caec7c82f5c37d491c8651fc5f2ddd17f2eeb26159",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Texas President",
+          "total_votes": 7410765,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8c491fcd-4c4b-55bc-b43d-ea972beb1c1f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0ac78d37-968f-5ad9-a0c3-6755ab6bd917",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1571b3a8-0e36-57a8-92c3-292a8bd2ea6e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/UT-2004-202609151031.db",
+      "size": 638976,
+      "sha256": "b1ef336fc54405e98a1355805685c4915d887d221b575621f1a6f51fdd8e7123",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Utah President",
+          "total_votes": 927844,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "45715d4c-50ec-5ee4-9261-6e800ecdac14",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7152dc41-9831-5a96-8636-823a7bcf1824",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9b152bb1-1863-5294-84a8-5a965d4aa98b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Utah US Senate",
+          "total_votes": 911726,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6b874654-38f6-570d-94c8-609d0f3d4d22",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5786064d-26c5-5a2b-b66f-b5a36ece2793",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a7c8507c-4d33-57e5-8ca6-ca0a33af693f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 Utah Governor",
+          "total_votes": 919960,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "986061a9-2667-5dd4-bd20-ba41cfd8ec08",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e2a251d2-e86d-5c52-9d0e-d790561bb216",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "11dcbb94-7d8f-57cd-825d-e64240576235",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/VA-2004-202609151031.db",
+      "size": 1544192,
+      "sha256": "ddd2c04a160c1f50ec4afef53ae0f5001b68e4324cec2734b7edd20e772e892d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Virginia President",
+          "total_votes": 3198367,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fdf20ad2-7c3b-5ac6-9fac-d6ee4233b498",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9dd1b7ec-32be-5850-9f59-62f3f6a80d4a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d73d8794-3003-58ed-a0c5-1eb1eb4b0a24",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/VT-2004-202609151031.db",
+      "size": 262144,
+      "sha256": "47045c82a8ef5201db812cbaca0edcbdfdf19d2b12b63fe7c2182bab33fc00a6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Vermont President",
+          "total_votes": 312309,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e6eb8590-568c-5677-a764-9b8b9cd4a940",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6af06237-db9d-569d-ac75-0423942351d8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7837dd45-d1f2-5912-bdbf-633056015099",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Vermont US Senate",
+          "total_votes": 307208,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7bbe43c8-8e72-5bcd-80bf-fc79409dfab4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "abdb63ed-1691-5acd-ba5f-299eda0fd90a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4feead40-3ed6-5e95-b07b-4d8007b371ad",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 Vermont Governor",
+          "total_votes": 309285,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "06d04d81-d51f-55d5-b5a3-e37f4639c03a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "69c39262-adad-5672-b38a-f05e0ef0541f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6c8a2943-fbab-54bd-8ee9-8b49c7a18f0e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/WA-2004-202609151031.db",
+      "size": 790528,
+      "sha256": "0c94b937c420ae416f27c740d492bd66d3d28928392524707f08047a424fd629",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Washington President",
+          "total_votes": 2861713,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fe704373-4bd7-5d1f-a617-f0569e614d2a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f8922912-5134-5232-822b-b9dce9d4e587",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "afa005f4-166e-56eb-89ed-63186bee14bf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Washington US Senate",
+          "total_votes": 2818651,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "af19998b-3002-53ae-a9c5-01b1b06970d0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d1beea71-c128-502d-9817-ce182616359c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1127dc63-ab8d-5a1c-a672-d82a0b71f24a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 Washington Governor",
+          "total_votes": 2810058,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "340449ab-9d73-5789-8d9c-326bea9a02f5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "587d70aa-60c1-5a70-b243-6e9227d04999",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ddb11e2f-e4a5-55da-ad50-6b14315aba8b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/WI-2004-202609151031.db",
+      "size": 761856,
+      "sha256": "b337ce806f192e0e917cc738f9aad28c531ea510f1a2b71ea1333af33bae0e89",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Wisconsin President",
+          "total_votes": 2997007,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b734a431-3cfe-53a8-b7ab-62c58db82f8a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cab8fa5a-c7df-5fb3-9b38-98045598506b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ca5f1344-39a1-53f7-aa0c-8aa053a2381c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2004 Wisconsin US Senate",
+          "total_votes": 2949743,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "204e38ca-44f3-5e2a-9fa9-7ab9cff6d1b3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7221c678-0f6f-5d15-8d79-d790dce09342",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "935cd412-0e0a-5d84-9d6c-a6524c813e59",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/WV-2004-202609151031.db",
+      "size": 839680,
+      "sha256": "c10a8bf4cb5aca5ebe8556724b464835a315511a6051e66edb97ccf156975778",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 West Virginia President",
+          "total_votes": 755887,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cd481e19-7794-565b-b43c-463c6ea0b596",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "888801e3-63e6-5f9c-b92e-f6464bcedc19",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "27865adf-6433-5d0d-81fb-3318395534b2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2004 West Virginia Governor",
+          "total_votes": 744433,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c905d2e1-70f0-5534-ba37-21a79c52ee52",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d1a090ed-42b2-5edb-a6e5-13eed148fe65",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4141c4da-1e0b-5ea2-ac12-233c2db3c3dc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2004.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2004/WY-2004-202609151031.db",
+      "size": 311296,
+      "sha256": "7e63df49a5e585583bb88f9d09c2a6514ea65aef0da6343e156703df88f87472",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2004 Wyoming President",
+          "total_votes": 243428,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "248bb4a1-1404-5387-8afd-e70a8a3fb31c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3cc9fbaf-cd0c-5250-a917-a7485d95957c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c586f369-0d95-5277-8063-69cc257df691",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

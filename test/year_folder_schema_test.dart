@@ -58,7 +58,7 @@ void main() {
     setUp(() async {
       db = await databaseFactoryFfi.openDatabase(inMemoryDatabasePath);
       for (final statement in [
-        'CREATE TABLE precincts (id INTEGER PRIMARY KEY, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL, population INTEGER NOT NULL DEFAULT 0)',
+        'CREATE TABLE precincts (id INTEGER PRIMARY KEY, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL)',
         "CREATE TABLE elections (id INTEGER PRIMARY KEY, office TEXT NOT NULL, name TEXT NOT NULL, year INTEGER NOT NULL, special INTEGER NOT NULL DEFAULT 0, source TEXT, total_votes INTEGER NOT NULL DEFAULT 0)",
         'CREATE TABLE parties (id TEXT PRIMARY KEY, election_id INTEGER NOT NULL, code TEXT NOT NULL, name TEXT NOT NULL, color INTEGER NOT NULL)',
         'CREATE TABLE candidates (id TEXT PRIMARY KEY, election_id INTEGER NOT NULL, party_id TEXT, code TEXT NOT NULL, name TEXT NOT NULL, district TEXT, congressional_district_id INTEGER, votes INTEGER NOT NULL DEFAULT 0)',
@@ -69,7 +69,7 @@ void main() {
       }
       await db.insert('meta', {'key': 'state_code', 'value': 'KS'});
       await db.insert('meta', {'key': 'state_name', 'value': 'Kansas'});
-      await db.insert('precincts', {'id': 1, 'name': 'P1', 'population': 300});
+      await db.insert('precincts', {'id': 1, 'name': 'P1'});
       await db.insert('elections', {'id': 1, 'office': 'President', 'name': '2024 Kansas President', 'year': 2024, 'total_votes': 130});
       await db.insert('elections', {'id': 2, 'office': 'US House', 'name': '2024 Kansas US House', 'year': 2024, 'total_votes': 120});
       await db.insert('parties', {'id': 'p-dem-1', 'election_id': 1, 'code': 'DEM', 'name': 'Democrat', 'color': 0xFF2166AC});

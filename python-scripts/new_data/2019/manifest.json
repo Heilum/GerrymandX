@@ -1,0 +1,120 @@
+{
+  "year": 2019,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:11:00+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2019",
+  "national": {
+    "db": "National-2019.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2019/National-2019-202609151031.db",
+    "size": 221184,
+    "sha256": "e148a119380e0b9f9f77364ad0a81e93af099f9c0e51fbc6826756489511d02a"
+  },
+  "states": [
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2019.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2019/KY-2019-202609151031.db",
+      "size": 1720320,
+      "sha256": "c7821f7fe4b727d6051ee5efee563749ed96a10beb7151b8adc821fa8279eb76",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2019 Kentucky Governor",
+          "total_votes": 1445873,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5aaa824c-26b4-5ea7-b447-1ae8702e0355",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "57a58c28-6d0a-5caf-a3fa-be71aa618ba7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dd3f5cae-2d65-5965-8043-9b6b1d59730c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2019.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2019/LA-2019-202609151031.db",
+      "size": 1249280,
+      "sha256": "ffdeed0d7f8c5ded04ba0d5b7a1e95d1658f5d75ac2e29d63560ab526635b004",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2019 Louisiana Governor",
+          "total_votes": 1508784,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "41db32d1-5648-5671-8dcb-ee7edfed2516",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8cd264e1-90b8-59ea-ad31-daaad4cf1233",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2019.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2019/MS-2019-202609151031.db",
+      "size": 798720,
+      "sha256": "671c7118b2d3c58eb4d159b0301efb8981e344cadcc18d7f47f16b7a0406bc63",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2019 Mississippi Governor",
+          "total_votes": 884911,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bddbf199-6f5f-52ac-8f2f-2b2f7714b559",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2f47cd1e-50f0-5f3f-851f-daf52d24f5d0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d27c008c-7a99-5762-acde-bb2c990910b2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

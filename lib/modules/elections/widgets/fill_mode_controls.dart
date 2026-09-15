@@ -18,6 +18,13 @@ class FillModeControls extends StatelessWidget {
       TextStyle(fontWeight: FontWeight.bold, fontSize: 12);
   static const _itemStyle = TextStyle(fontSize: 12);
 
+  /// Sizes a dropdown to the item it shows rather than to its widest item:
+  /// the button stacks one selected-item widget per item and takes the width
+  /// of the largest, so every one of them is the current label.
+  static DropdownButtonBuilder _showing(String? label, int itemCount) =>
+      (context) => List.filled(
+          itemCount, Text(label ?? '', style: _itemStyle));
+
   @override
   Widget build(BuildContext context) {
     return Watch((context) {
@@ -26,6 +33,7 @@ class FillModeControls extends StatelessWidget {
 
       final comparableElections = ComparisonSelection.comparableElections(
         electionStore,
+        context.read<MapDataStore>(),
         electionStore.selectedSubItem.value,
       );
       final mode = mapStore.fillMode.value;
@@ -52,6 +60,9 @@ class FillModeControls extends StatelessWidget {
           DropdownButton<FillMode>(
             value: modes.contains(mode) ? mode : FillMode.winnerOpaque,
             isDense: true,
+            selectedItemBuilder: _showing(
+                (modes.contains(mode) ? mode : FillMode.winnerOpaque).label,
+                modes.length),
             items: modes
                 .map((m) => DropdownMenuItem(
                       value: m,
@@ -96,6 +107,9 @@ class _FilledLayerPicker extends StatelessWidget {
           DropdownButton<LayerType>(
             value: layers.contains(filled) ? filled : layers.first,
             isDense: true,
+            selectedItemBuilder: FillModeControls._showing(
+                (layers.contains(filled) ? filled : layers.first).name,
+                layers.length),
             items: layers
                 .map((l) => DropdownMenuItem(
                       value: l,
@@ -146,6 +160,9 @@ class _OnlySeePicker extends StatelessWidget {
           DropdownButton<int>(
             value: focus != null && ids.contains(focus) ? focus : _none,
             isDense: true,
+            selectedItemBuilder: FillModeControls._showing(
+                districts.where((d) => d.id == focus).firstOrNull?.name ?? 'none',
+                districts.length + 1),
             items: [
               const DropdownMenuItem(
                 value: _none,
@@ -194,6 +211,13 @@ class _CandidatePicker extends StatelessWidget {
           DropdownButton<String>(
             value: store.selectedCandidateId.value ?? candidates.first.id,
             isDense: true,
+            selectedItemBuilder: FillModeControls._showing(
+                (candidates
+                            .where((c) => c.id == store.selectedCandidateId.value)
+                            .firstOrNull ??
+                        candidates.first)
+                    .name,
+                candidates.length),
             items: candidates
                 .map((c) => DropdownMenuItem(
                       value: c.id,
@@ -211,7 +235,9 @@ class _CandidatePicker extends StatelessWidget {
   }
 }
 
-/// Election and party pickers for the two comparison fill modes.
+/// Election (year folder and contest type) and party pickers for the two
+/// comparison fill modes. Any two elections of the state can be compared,
+/// including two contests of the election on the map.
 ///
 /// Parties missing from the comparison election stay selectable and are
 /// marked: picking one is how the user finds out, and the map notice then says
@@ -235,10 +261,22 @@ class _ComparisonPickers extends StatelessWidget {
       final folder = mapStore.comparisonElectionFolder.value;
       final validFolder =
           folder != null && comparableElections.contains(folder) ? folder : null;
-      final baselineParties =
-          validFolder == null ? const <String>{} : electionStore.partyNamesIn(validFolder);
+      final baselineParties = validFolder == null
+          ? const <String>{}
+          : dataStore.comparisonPartyNames.value;
+
+      // The contest on the map can't be its own comparison target.
+      final current = dataStore.activeElection.value;
+      final sameElection =
+          validFolder == electionStore.selectedElectionFolder.value;
+      final contestLabels = [
+        for (final c in dataStore.comparisonContests.value)
+          if (!(sameElection && c.label == current?.label)) c.label,
+      ];
+      final contestLabel = mapStore.comparisonContestLabel.value;
 
       _scheduleDefaults(
+        currentFolder: electionStore.selectedElectionFolder.value,
         mapStore: mapStore,
         parties: parties,
         baselineParties: baselineParties,
@@ -252,23 +290,41 @@ class _ComparisonPickers extends StatelessWidget {
           const SizedBox(width: 8),
           const Text('vs: ', style: FillModeControls._labelStyle),
           const SizedBox(width: 4),
-          SizedBox(
-            width: 170,
-            child: DropdownButton<String>(
-              value: validFolder,
-              isDense: true,
-              isExpanded: true,
-              hint: const Text('election', style: FillModeControls._itemStyle),
-              items: comparableElections
-                  .map((f) => DropdownMenuItem(
-                        value: f,
-                        child: Text(f,
-                            overflow: TextOverflow.ellipsis,
-                            style: FillModeControls._itemStyle),
-                      ))
-                  .toList(),
-              onChanged: (f) => mapStore.comparisonElectionFolder.value = f,
+          // Sized to their items, like the other pickers in this row.
+          DropdownButton<String>(
+            value: validFolder,
+            isDense: true,
+            selectedItemBuilder:
+                FillModeControls._showing(validFolder, comparableElections.length),
+            hint: const Text('election', style: FillModeControls._itemStyle),
+            items: comparableElections
+                .map((f) => DropdownMenuItem(
+                      value: f,
+                      child: Text(f, style: FillModeControls._itemStyle),
+                    ))
+                .toList(),
+            onChanged: (f) => mapStore.comparisonElectionFolder.value = f,
+          ),
+          const SizedBox(width: 8),
+          DropdownButton<String>(
+            value: contestLabels.contains(contestLabel) ? contestLabel : null,
+            isDense: true,
+            selectedItemBuilder:
+                FillModeControls._showing(contestLabel, contestLabels.length),
+            hint: Text(
+              validFolder != null && dataStore.isLoadingComparison.value
+                  ? 'loading…'
+                  : 'type',
+              style: FillModeControls._itemStyle,
             ),
+            items: contestLabels
+                .map((label) => DropdownMenuItem(
+                      value: label,
+                      child: Text(label, style: FillModeControls._itemStyle),
+                    ))
+                .toList(),
+            onChanged: (label) =>
+                mapStore.comparisonContestLabel.value = label,
           ),
           _partyPicker(
             label: twoParty ? 'Party A: ' : 'Party: ',
@@ -344,6 +400,7 @@ class _ComparisonPickers extends StatelessWidget {
   /// Fills in whatever the user has not picked yet, preferring parties that
   /// exist in both elections so the mode draws something straight away.
   void _scheduleDefaults({
+    required String? currentFolder,
     required MapStateStore mapStore,
     required List<Party> parties,
     required Set<String> baselineParties,
@@ -364,9 +421,11 @@ class _ComparisonPickers extends StatelessWidget {
       if (!mapStore.fillMode.peek().isComparison) return;
 
       if (validFolder == null) {
-        if (comparableElections.isNotEmpty) {
-          mapStore.comparisonElectionFolder.value = comparableElections.first;
-        }
+        // Another year first, as before comparisons within one election were
+        // possible; the contest type then defaults to the office on the map.
+        final other = comparableElections.where((f) => f != currentFolder);
+        mapStore.comparisonElectionFolder.value =
+            other.firstOrNull ?? comparableElections.firstOrNull;
         // Party defaults wait for the next pass, once the election is known.
         return;
       }

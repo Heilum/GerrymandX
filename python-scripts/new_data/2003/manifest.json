@@ -1,0 +1,115 @@
+{
+  "year": 2003,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:57+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2003",
+  "national": {
+    "db": "National-2003.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2003/National-2003-202609151031.db",
+    "size": 221184,
+    "sha256": "554f1f0d782c7b31a96d2a23f2ce09960aea59f2e79079f2eae8409d0f28626c"
+  },
+  "states": [
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2003.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2003/KY-2003-202609151031.db",
+      "size": 1572864,
+      "sha256": "c79cd583461b8f6f2a060a3fddc673a11628d73b557c8b4cdad274696471e15c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2003 Kentucky Governor",
+          "total_votes": 1083443,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "14fd0c04-cf92-5245-bb23-021decb54233",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3cd638d5-d2d0-5334-827d-ea7bb4af0580",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2003.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2003/LA-2003-202609151031.db",
+      "size": 1097728,
+      "sha256": "1f96188a6d52219e20ea99d67dca944a876ecff8d2e8de506a729c246cc428f2",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2003 Louisiana Governor",
+          "total_votes": 1407842,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "bc8b5bd2-546b-56c3-9066-3a54b6c2836d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "08e3b32c-6609-5025-8edf-25d2b7237195",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2003.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2003/MS-2003-202609151031.db",
+      "size": 774144,
+      "sha256": "d5d1fbd7981159d466baf76aa26bdc84b6126adc59f60745551d00b0fd56057a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2003 Mississippi Governor",
+          "total_votes": 894487,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8071d186-c027-5d1c-a9c4-eae722d9aa1d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ce45a663-8f55-50f8-9a36-5d7853d6a984",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "41edce85-2571-5cda-ae4b-4397c27c953e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

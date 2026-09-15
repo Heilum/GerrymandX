@@ -1,0 +1,2974 @@
+{
+  "year": 2000,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:57+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2000",
+  "national": {
+    "db": "National-2000.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2000/National-2000-202609151031.db",
+    "size": 3092480,
+    "sha256": "232c2f054266b1d132ab49768c075cb40f7c6458a66e589c83952c26c2917c0b"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/AL-2000-202609151031.db",
+      "size": 872448,
+      "sha256": "41ffeec1c82ba344bea1002abcdc916fb91974c9775ea7d75757694540796075",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Alabama President",
+          "total_votes": 1672551,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7c981728-a656-5ba6-af07-41efe6cb5e72",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "23618870-c9f8-542e-b706-1e79e9a64a8e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5950b218-ed34-5600-a7c7-85b10eca7c70",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/AR-2000-202609151031.db",
+      "size": 946176,
+      "sha256": "be9fc5af7ecbceef197d0577e64b53ca51ec8d1e4b802cf710909a72f0199da5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Arkansas President",
+          "total_votes": 921781,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e50360be-4a72-5f4a-86ad-6706639e0326",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7e406ebe-4e7c-5309-bc5c-c4629b899c00",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6dd04d98-ad2b-543a-bae2-f6e33d05e64a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/AZ-2000-202609151031.db",
+      "size": 401408,
+      "sha256": "76fb077510c8e2d51a46a756579f5af2f345e80eafe5668e1c526446e7960c7f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Arizona President",
+          "total_votes": 1534113,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "30700cdb-4685-5f8d-a280-cc90f1ffb475",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8c6a7833-9a73-5b86-9a6d-399271eb1626",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a87a55dd-8e5f-5e70-ab24-a67995dc1264",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Arizona US Senate",
+          "total_votes": 1397076,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "d37001cb-1d9e-5f2e-b4f6-5d5fabb17021",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5d5ce58d-5e4b-5306-843c-86901616aa9b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/CA-2000-202609151031.db",
+      "size": 1220608,
+      "sha256": "4eb7283f9a19dffd4bb0e022b05c42edf33045a604354708e0df5f870ce5f981",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 California President",
+          "total_votes": 10965856,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1dbd126c-07a9-5a1b-bf33-f4208c2c7953",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d6dcabaf-9342-5087-82c1-116b3ab8fbe0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "264fc621-3725-525d-9e3c-a517eecf4b1c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 California US Senate",
+          "total_votes": 10623614,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "24d9d99d-edd0-58a2-97ff-21b387bb828c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9acdf080-2ca2-57f7-a071-da4d96890d5a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4cf67540-7599-5ffe-b454-d048f8a1f3db",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/CO-2000-202609151031.db",
+      "size": 778240,
+      "sha256": "4f1c77aa39297ad54a681fed23660674ab50d79856b4885521b70bbedc025c96",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Colorado President",
+          "total_votes": 1741365,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "035c1013-edc4-579c-9832-ecb5a071872b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "35211ec1-f601-5aad-91e4-39884a0dd37a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fefebcb4-718d-5385-936b-e7d24a2247e0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/CT-2000-202609151031.db",
+      "size": 204800,
+      "sha256": "b02a0889756bd3b3b6e3fef89d29368727c2cfb74c2289d69e66a9a14d33c73c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Connecticut President",
+          "total_votes": 1459525,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c7d34abe-1d0b-50fa-839c-ff5f0afdd5a6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "031a9409-f7d9-5b40-ae56-4cb55ecd1c24",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "83151649-3b41-5105-b9ab-c940fdf4c50c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Connecticut US Senate",
+          "total_votes": 1311261,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c891f60b-4335-54f4-a3c0-a78b1500c0bf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7b004565-8345-5d93-87e9-a53421e8008a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "731f7606-9547-538f-9a26-7311e72c4dea",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "db": "DC-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/DC-2000-202609151031.db",
+      "size": 122880,
+      "sha256": "ec2a7784e78911d652a6b6e907ea12005b67a858277193ca2c558dead962e388",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 District of Columbia President",
+          "total_votes": 201894,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "59d0a61a-0154-556e-8673-ec8ef53be66b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "466c86ce-0f53-514b-a08c-3c038ca15089",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "61f1c420-d77c-55e3-8722-ba2f2780a6a9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/DE-2000-202609151031.db",
+      "size": 147456,
+      "sha256": "e71cb196392197273ae516f27c77593e334cab0d31eccbce4cad89dafda0f928",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Delaware President",
+          "total_votes": 327601,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "42149d6b-69b9-566a-bd4f-52218ccc75bc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d09a5b59-6811-52c2-acb9-68736594f25b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f6af9adf-c198-51b0-8cf6-74c1e083dbba",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Delaware US Senate",
+          "total_votes": 327017,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "29c539dc-1f4b-50e6-b0da-60780119f850",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f11f183d-d6fc-54cf-bce8-cc32311ba334",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6a73fee4-d91e-55d6-bf99-2fa47261859e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 Delaware Governor",
+          "total_votes": 323688,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "dd5e4818-25de-53d4-8e49-b08cfddd1690",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "566649a4-a3a0-5d83-8649-c819d5dd160f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0b28a11d-e3ed-51ef-bb24-4259547fca01",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/FL-2000-202609151031.db",
+      "size": 876544,
+      "sha256": "002af1e49e700e8e12bcd0653ac5a01a4828cea4964fab2f860a55eb310a763b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Florida President",
+          "total_votes": 5963110,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a29002f0-e13b-5cf6-87ba-d9da9ffd6c62",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "46586dc9-8ada-5578-8847-e99f393f7a55",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b43286ba-be26-59a1-b372-787bae279f6e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Florida US Senate",
+          "total_votes": 5854763,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5d4d85f0-c415-5f40-896b-9498a49fc25b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a3b456c9-4e2f-59f2-8543-89ec6d735eb7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c4ef9eb5-28ab-5f92-9e33-52da78f8f711",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/GA-2000-202609151031.db",
+      "size": 1634304,
+      "sha256": "25e14f2a2d51fd8126cc6cec35ab7cbe684eb86b45a14a982b91eeb956e6e2fd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Georgia President",
+          "total_votes": 2596804,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a7d1b26c-a8a5-55a1-a067-adff49d07c56",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e2317320-0397-539b-a607-9d31ec95f90e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c75f0370-4307-522c-82e9-81d12b770bd2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": true,
+          "name": "2000 Georgia US Senate (Special)",
+          "total_votes": 2428012,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cef77469-71cd-53fa-a3b7-05160ab6b0b1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "79bff215-afd0-5a5f-ae3c-45155a50347d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "49fe9bfe-bac7-5f9e-b7b3-29e68c9ec32a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/HI-2000-202609151031.db",
+      "size": 188416,
+      "sha256": "a0e803dfdb25e43d7f65f55053a27c358f42c0663cf61e57c17a487914054e2d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Hawaii President",
+          "total_votes": 367916,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b8bda764-a772-5e54-904f-56bed58764f1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "55fefb5a-26da-5dff-9c6c-15a94e184534",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0711c0e1-c947-55c8-8b65-c4931c98d5ec",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Hawaii US Senate",
+          "total_votes": 345552,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d018d286-652f-51b8-8e53-3b31aafa9652",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "73b39516-2630-59cb-ae81-be36c6125ecb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "440aa0f3-89a3-5d90-b0a7-a7823dd089d9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/IA-2000-202609151031.db",
+      "size": 679936,
+      "sha256": "4f230f29c10653c561caaf77fa1e1605b6bc377ef724ec6f56500e816942ed86",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Iowa President",
+          "total_votes": 1315563,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6234fb93-a1ea-5860-8094-4476de31268b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "625ea337-5f66-5389-8b21-fc3395f439a0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2572bb3a-017e-5131-9db4-00316ca7a98d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/ID-2000-202609151031.db",
+      "size": 794624,
+      "sha256": "da224e545e3df0d8b00c86923f2a8191e998d31b5bfb437647e2bdf092364b3e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Idaho President",
+          "total_votes": 501621,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "86187507-658d-56dc-adbd-e5e7a036d9de",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d2e83763-12d0-543e-8374-7f9a9f007601",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "36b94d8c-0e89-52d4-8922-45c52b680a28",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/IL-2000-202609151031.db",
+      "size": 1015808,
+      "sha256": "43d3a89fe8cf8f200e022664ccfc0a09f06217a10cef43636fa1ffdd8dfd1860",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Illinois President",
+          "total_votes": 4742123,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3b5f56ac-7c52-5a4c-a5a9-703ce1a3b24e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0db02e07-7a1a-5981-811e-d3c20f5f0bf8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0b4e8567-776d-586e-a29d-d2e566f853ce",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/IN-2000-202609151031.db",
+      "size": 864256,
+      "sha256": "b188189b45e838f1a7e60f4756de4838881539824b9c1e00c2fb56262448bf5c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Indiana President",
+          "total_votes": 2199305,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "01008b9a-5578-597c-9933-57614509b753",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8337770e-a30b-53da-b444-025a3d33624d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "61fd8133-6fd0-5315-b1c7-954409e58be1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Indiana US Senate",
+          "total_votes": 2145209,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "56a75b69-578b-5504-916f-03809762bbce",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fbee59fb-967f-5062-83ee-a7b8658dade3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "15dee1b3-1e83-5dab-932c-0f4dd4b384f9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 Indiana Governor",
+          "total_votes": 2179413,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "95b30f9d-dabe-576b-bef7-8aa07f021070",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8f34c3a6-d2d4-571a-bf58-0b28fe93c23f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "23188457-9353-5fe8-9411-0b36f4b6a549",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/KS-2000-202609151031.db",
+      "size": 917504,
+      "sha256": "0b03a4accf22bf2b58739af106d8070bce8b9bc1827059a8e078f5384e2f7fa8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Kansas President",
+          "total_votes": 1072216,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "93403535-0cc2-54ec-8c1a-a910889195a2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f3a74644-7202-5be8-921b-8e016c89693f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "12e00e14-a326-5b36-99d7-9dea5042f0ac",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/KY-2000-202609151031.db",
+      "size": 1433600,
+      "sha256": "1d8085a1e1293416190c73bacdc37f85755f843eb47937ab8cd6a017a3551427",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Kentucky President",
+          "total_votes": 1544187,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "188f1388-f0b0-5f2f-a45c-a5e0ff844f6a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "79a76059-70db-5b53-ac1e-e24a2cf66843",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a22662f7-a8bd-5c1c-baa1-82113ad7b427",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/LA-2000-202609151031.db",
+      "size": 1003520,
+      "sha256": "ead8e660983ccff9ba03fa9821e0077e612ffd76eb7af41605922de65cea5834",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Louisiana President",
+          "total_votes": 1765656,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d1ad5fc3-27c8-501e-bb05-0eb6b1f623b5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "22189aca-7001-510a-9862-93f716223433",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "871633ed-35d6-53b0-b579-4bea14a321d8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/MA-2000-202609151031.db",
+      "size": 294912,
+      "sha256": "ce3e18c5841d758e3c76f10bdb5898206c510a67106d46e2fe2e5ef4251e60d2",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Massachusetts President",
+          "total_votes": 2702984,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3878d019-53a6-519f-bc31-49c1da5b6e3e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2233c195-f346-5602-8db2-cb14d2ee9474",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bb6258cb-05f8-5336-a612-91adec3217ef",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Massachusetts US Senate",
+          "total_votes": 2599420,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f46326d5-927f-51e6-99bb-e220f0a734cd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d70ba413-f204-5539-b19e-8b70026da8de",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3a5f8bcd-7eaa-532b-ae8e-d98617f23fdd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/MD-2000-202609151031.db",
+      "size": 479232,
+      "sha256": "67739ebbb5ec533e395bc04bb834fa232d77cabd6e16a2357f0b8cccab9832cc",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Maryland President",
+          "total_votes": 2025480,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e8480591-dff6-53f7-a521-74a46da3f6a7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9f434a08-ebae-596e-b7bb-82bb40ba9ea8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "32b17df5-8f93-5f4c-b65a-c13bc9390578",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Maryland US Senate",
+          "total_votes": 1946898,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ddea9af3-6448-520e-8234-d5497b562106",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5bac328c-7d97-586a-a3d5-39423c3fca3c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8453d654-ed91-5c44-8757-0cf8777afaa7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/ME-2000-202609151031.db",
+      "size": 352256,
+      "sha256": "78a9bb849a09153a48ec7a81fa8c94c78bbc5b1ebd27a0b1c0659479026e9a33",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Maine President",
+          "total_votes": 651817,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "02adb5f7-c8da-5ad3-85d1-1fbbe4a0a441",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3fe3d053-bb78-5966-b41b-41b6f35548e1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "29185859-286d-59fd-9285-c92ec0dd72de",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Maine US Senate",
+          "total_votes": 634872,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "b9a8b407-0c2a-5c78-aba1-9b3ee113c3d5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cc61baa8-694c-50aa-89d7-56b816261a48",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/MI-2000-202609151031.db",
+      "size": 937984,
+      "sha256": "8729cbbcd919f060435ca8c8d8bf90583a1eeef9354f8f080ab264859aaea092",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Michigan President",
+          "total_votes": 4232711,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cf224663-985b-555c-8262-e12cec52e8c9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8b7fa3c7-8759-5b10-9fde-7233e03f15c3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d2100faa-4680-5258-8909-1ee206f680ad",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Michigan US Senate",
+          "total_votes": 4167685,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1accc630-df35-50fd-88a6-4bbfb15e3a05",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4588f4da-4080-5ad0-a882-68aea42f0b5b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "11121752-b767-50db-9a25-f94e69c60325",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/MN-2000-202609151031.db",
+      "size": 978944,
+      "sha256": "f04931fbe96e1476ec9e33996616cc2093f15bdd1e4c0df94d0dad8c41efd2a3",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Minnesota President",
+          "total_votes": 2438685,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7cb50c1d-6ea1-5ab8-b3e6-368cf982cf6a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "45da3bf6-abdc-5c27-9c45-9dae0ce615ac",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "94e83880-44cb-5d47-af0d-3bd76f375b56",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Minnesota US Senate",
+          "total_votes": 2419520,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ce608fc6-46ec-51d1-bd84-136ff49e37e7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0da622de-144e-50a4-9b40-edc592fa7fd4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1dc60df2-e099-5f8d-8e7e-02cb2a88ca27",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/MO-2000-202609151031.db",
+      "size": 1363968,
+      "sha256": "1a6cb001f62c6348f99353a85d26da3931fafd96caf84623b0e420c25d071ea9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Missouri President",
+          "total_votes": 2823648,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e20c5a32-09d6-54f4-afc2-a52ea066cf66",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5a722122-ad19-5977-b641-d323de78b4ed",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ba934b6e-7989-523b-8bc9-642b0f9a6f7c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Missouri US Senate",
+          "total_votes": 2361586,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7513e7a8-aeae-5111-81f3-8605f867867b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d0ce8917-e7e2-58fb-971a-33a816f9d690",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "28302cb7-f3db-5866-bf7a-7ad2ace3b687",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 Missouri Governor",
+          "total_votes": 2346830,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f7a9f52c-f9a0-55d4-8f46-62fdf95229f9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cbbc8235-b659-54d7-b7aa-155c4933890c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "880b7bbb-9e26-5eb6-8b9f-b3f7967ecf99",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/MS-2000-202609151031.db",
+      "size": 847872,
+      "sha256": "4cc0703baa7348a00df291f98aa12a3d358a894f471802d72a1fd1b0c529e0c0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Mississippi President",
+          "total_votes": 994926,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0d59939f-90b7-5470-8080-2fcb30739420",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "39b6e7d4-a7ff-5530-94fd-399188efde37",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b318ee08-0088-5090-81d2-e054b0d8be2b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Mississippi US Senate",
+          "total_votes": 994144,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "de7ba183-df60-51df-b723-b63bd89577d2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "72455cb5-8472-50d0-9dec-08852fdb5a9c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6e721c50-d2f4-5fd6-b1cd-850c86464213",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/MT-2000-202609151031.db",
+      "size": 1011712,
+      "sha256": "c380dd6a6a484123714aba6869b46b275eb36c1e149d09988bfa696f7a717388",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Montana President",
+          "total_votes": 410986,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "732e1946-20c8-58cd-8489-9e26538967bf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d213d1e9-0515-53a4-8cf7-49d70386d8ea",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4840f9f9-0a48-57aa-b9c2-4d271731c7d8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Montana US Senate",
+          "total_votes": 411601,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4ce5ad6a-0559-5db8-b7e2-28ea73086dbb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c42e7c28-93db-5636-b768-26f64a11c703",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "afd33143-a402-5c62-a878-0ac55d7d6013",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 Montana Governor",
+          "total_votes": 410192,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1898e322-4eec-5704-b7ba-28a34b3ce2be",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "05a76e81-4638-54a0-8c49-84b3f23dd6f2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3982b395-f5a9-5cf9-8892-b3590df3f659",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/NC-2000-202609151031.db",
+      "size": 1245184,
+      "sha256": "809b2e5a13dbe0e78d6a25384c676ee398d981a0791e98f94aef1fde20f6d30f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 North Carolina President",
+          "total_votes": 2911262,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a85c2022-9c1e-55a3-addd-c2fe87453b4b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "75027ffe-44df-50d5-9973-cd18db95b5b0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "18edc691-d2d0-5bc6-af17-0466389f1440",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 North Carolina Governor",
+          "total_votes": 2942062,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f3c1137c-9713-5424-a5da-ec3f33611c20",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b9e10345-0b95-599a-a851-a8168ca355d8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "32ecd4e3-538f-584d-a114-fbd876930692",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/ND-2000-202609151031.db",
+      "size": 675840,
+      "sha256": "0fee7e23bd1332250d25dd2da74c8d71c8d81ab9fd8688618eb6289f03231c21",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 North Dakota President",
+          "total_votes": 288267,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "797529aa-061a-58c5-8637-122b16847d9c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2d55d896-13dd-53d1-8ef5-8b9fdbb67b0d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cf435286-9422-5eef-98a7-b217f68f4b55",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 North Dakota US Senate",
+          "total_votes": 287539,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "6a8779f1-b26a-55ae-b133-f7bede651110",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "95d59f4d-b8ae-5e25-9134-2640f4033eb1",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 North Dakota Governor",
+          "total_votes": 289412,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d9f694ba-5ed7-5dad-95aa-6d7342d9c7d1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a342473d-11c9-52fa-836f-24bf122078df",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "aade46d0-83b0-54d3-9c11-340395c37170",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/NE-2000-202609151031.db",
+      "size": 716800,
+      "sha256": "2a1711d7213c4c7079686534857985a055899caa88b733a64c4addf635355528",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Nebraska President",
+          "total_votes": 697019,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "59d21c8b-22c8-5045-afe9-8b4198577fef",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c1d642a7-e79a-5033-9aaa-4798744923db",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "263bc527-a458-5bb6-85ef-975a61398e9f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Nebraska US Senate",
+          "total_votes": 692344,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0641b291-a38e-5aad-a7f2-f9d2d968f06b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "73db8293-6d12-56c1-8f26-41a5efd43004",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cc9aed4f-3083-56ba-9cf6-56437f1b5cf5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/NH-2000-202609151031.db",
+      "size": 245760,
+      "sha256": "ea553a35be4c12331031379517719d8c9e2958a2f7a6293e447fa664a5fda148",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 New Hampshire President",
+          "total_votes": 569081,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "359395e9-af9f-5a8e-8b03-d3806a1a46fa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b7ccbb10-ebf9-5ebc-a509-38d64fad13d3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "629465c2-6132-5cbd-9bab-bd1a374e11bb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 New Hampshire Governor",
+          "total_votes": 564953,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "df6639a8-a164-580f-8072-2cc28deb86e7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "76ec087d-f281-5edf-8f72-12a79e1de2b6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c3f867fa-9afd-5a21-a748-7f74690e8c59",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/NJ-2000-202609151031.db",
+      "size": 401408,
+      "sha256": "4d54337cea0ae287cdd0cbad099b09d75e99446738ec41140663b2b59c65e301",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 New Jersey President",
+          "total_votes": 3187226,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "63bd5db7-9936-546a-872a-0e83dfecb504",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "71e3abd1-84ed-56ed-9a25-ce1e24986d27",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "164ae2eb-30f4-5e2d-b941-051fd2911f48",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 New Jersey US Senate",
+          "total_votes": 3015662,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "43e02a68-8c0d-5001-8271-4e149cc9ec66",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "08581b7d-b5f0-528e-a4d7-ae4b2bebf0d6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6ae9ae09-e451-5739-95c7-1a7dde91cb79",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/NM-2000-202609151031.db",
+      "size": 430080,
+      "sha256": "aa998b8a440cb136755a38fad25ff80c841d55b12e9499f2bd3ad1dff7b446f5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 New Mexico President",
+          "total_votes": 598605,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "70566a51-8fe4-5348-8fde-f6669569a1df",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "47c652e3-49c8-5378-91db-2b5ea1bfb1fb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d2aebe69-3073-5a89-84a8-dbfe7d0bea46",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 New Mexico US Senate",
+          "total_votes": 589526,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "34e28fe0-6bcc-5fb0-ae68-565f32c2c1fe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "55856c8c-0ffd-5a75-9ac3-58397493cb14",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c82da551-905b-5370-8471-8b4ea84b00fc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/NV-2000-202609151031.db",
+      "size": 299008,
+      "sha256": "d6d45c9c54ed69e2aab787e5a332b25f75740ba95814ae68e39de19f112080aa",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Nevada President",
+          "total_votes": 608970,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6e2ecf20-10fe-53f2-be65-69e60e00b10f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5f8eac8d-aa99-50f0-904e-0f5928359f17",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8b49255b-65c8-5e18-8483-78e6563fa369",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Nevada US Senate",
+          "total_votes": 600250,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "73278479-f517-53f0-ab9b-41767ce7040e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "346cca91-48fc-5588-bd55-6e032e16f7fb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0895801e-72d6-54e9-b66d-72f6ecf79ce4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/NY-2000-202609151031.db",
+      "size": 794624,
+      "sha256": "1866ab8cae8334ccd4fc7858003b3675d25729fd448bb4e8b521893cf1574eb4",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 New York President",
+          "total_votes": 6831178,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "95dbcf3d-23a8-56d7-acc6-86dd5658e841",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a9a6a5d1-568e-5613-b3da-dfc7aa1ae5eb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "773d0383-74d9-5267-b100-d31990adc573",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 New York US Senate",
+          "total_votes": 6779839,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f79f3cbb-2b25-5beb-af0a-ec6fffa4418a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7c2b5bc5-4545-571c-be11-ec001e4fef9f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d0ea3777-924c-5124-b0ba-f90cff04c797",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/OH-2000-202609151031.db",
+      "size": 782336,
+      "sha256": "b66eea2591f7bcb3c80c5ac9686bdc41601b58d50051c42fd5c5d929980c9b26",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Ohio President",
+          "total_votes": 4705457,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5e6cb812-684b-5eb0-83a7-8749431f5ab6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9c309558-b2e2-5359-854c-9ded9caa7226",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1dc3a042-d354-50d4-be3d-8727d7fcdc4a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Ohio US Senate",
+          "total_votes": 4448801,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4b8e54f7-3c0f-59c0-b0f4-ede948e7b831",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c357bcdf-c638-5ae2-8ef6-6212990302f9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8c824b75-dd4c-5806-a2a9-31b334a7c3fa",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/OK-2000-202609151031.db",
+      "size": 831488,
+      "sha256": "cd603f5fc38063f74b38f378f1b1e6e2dead49a40f6b4de3a2c4a0d1b708410b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Oklahoma President",
+          "total_votes": 1234229,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "75783b5e-b0d4-5429-a913-85ffd79d6007",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "45c04ced-af21-53a8-8d2d-04e366d040ed",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8eba5eef-0da6-5f29-a694-461eda7c857c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/OR-2000-202609151031.db",
+      "size": 638976,
+      "sha256": "f0a9a779efed6de4467152243f69e94fa6d26b7fbbebaf128269a894bd729b65",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Oregon President",
+          "total_votes": 1533968,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e0320dbf-3952-5f8b-9055-27a8f6ab591f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "73190642-43cd-52fb-9d19-2640d09336b4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "51e70a8b-4de5-58af-837a-8291e662a673",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/PA-2000-202609151031.db",
+      "size": 897024,
+      "sha256": "bdc6237f0de1b52ddc4f7808eb0da3ef042ac6b366c0bcccdd1b9e85d48bfb3f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Pennsylvania President",
+          "total_votes": 4913027,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f6bb8dcd-b051-5ade-9f20-a3e197a61206",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c4a49f92-fe52-56e4-a5dd-10afa39fcd46",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "136d76d6-7912-5556-b616-ccc3a2f819f8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Pennsylvania US Senate",
+          "total_votes": 4735116,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3fbe3a96-6414-596f-a532-192ab03aa3d8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "49c53421-351e-503e-80eb-15073292a32d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4a435314-2b9a-5518-b8aa-838616251144",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/RI-2000-202609151031.db",
+      "size": 163840,
+      "sha256": "b4dd12349023cfbe83c80308e88ba5981739ef7663e952f885f6d2cf657094cd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Rhode Island President",
+          "total_votes": 409112,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "21a8623c-cb9d-5a60-beff-50a4d0e573b8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a37c7769-ecac-5ef9-9074-a0f28937d75b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9d2bd9e9-98b6-5c8f-84ab-6f3640069cb5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Rhode Island US Senate",
+          "total_votes": 391353,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cfffbdc9-60cf-5d51-b4b9-a2fe5f8bfc8e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "507c290a-8bd7-5f51-8092-ddd8b6f5d021",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c4493333-6467-5ec6-956d-e878f4c0ab40",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/SC-2000-202609151031.db",
+      "size": 819200,
+      "sha256": "25314787285f268903a2574a139ebfd0c0724300769a0e16471b9362131e4e4a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 South Carolina President",
+          "total_votes": 1383777,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bc019372-86a2-5bae-882f-e5a6d768116b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d4ed146c-7dd4-5853-9ede-4b549f1fb7bb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "48d111b7-3a3b-58ec-b6c3-ca0da1ab04a7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/SD-2000-202609151031.db",
+      "size": 651264,
+      "sha256": "ccd526e471eb9f3c36131fde3a45de688fa7345a80424970da80cd8845027276",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 South Dakota President",
+          "total_votes": 316269,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "47fdc401-c856-583a-8635-ea08750c612a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4538d8d3-a468-59c7-ae66-935c5a948749",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4782bcc8-318d-5a96-8556-84da31267a98",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/TN-2000-202609151031.db",
+      "size": 1216512,
+      "sha256": "b88145523f3dcd359dd232cc724eb7f6e8230f70c7b9d9ec4b85b7e07f5203a0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Tennessee President",
+          "total_votes": 2076181,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "53735925-8fde-5c86-992d-c3fa2d46365f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5445d8d2-3371-5453-b2ef-a390f2410be3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "31acdd40-64dd-5581-9ab0-62d9dc61004a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Tennessee US Senate",
+          "total_votes": 1928613,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "55d45ec0-713c-5a61-9485-7f31c58cf258",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7db11faf-9d27-5f9f-a670-795a969bffb8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cc51ecf2-34e5-5e9d-afe2-4c1fa6cae436",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/TX-2000-202609151031.db",
+      "size": 2306048,
+      "sha256": "f7628bea9f7783e62dff0114a0ac6e9bb518aa621ba771ec53fc55dd37daf1c7",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Texas President",
+          "total_votes": 6407637,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f64c6177-4c27-52ae-b742-b377307649b9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1a48640a-96cf-5120-9c22-56b0a55383a1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3f320fa8-e789-53e0-8cf9-279c5d00ca79",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Texas US Senate",
+          "total_votes": 6276652,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2cfe4fbc-361d-50fc-ba6a-2b0910952b11",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "91e0d7a1-0d62-55dd-9aa6-e9f3ffdbec44",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "617629d9-0afb-5eda-86a9-9bdff30bba57",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/UT-2000-202609151031.db",
+      "size": 573440,
+      "sha256": "fd31ae52b67fd8a030b77a31baf98d93c204627d34519de0656d2e3957980d44",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Utah President",
+          "total_votes": 770754,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "30cf20a0-43f4-5507-8922-7d2a185125d2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "86c5ea01-4293-53e2-9d30-42eec571550b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "21da3903-41ad-53fa-9426-bce44871b2ed",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Utah US Senate",
+          "total_votes": 769704,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5a8b07b1-0948-54d7-ae35-35b41ab325d0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e7bc2b03-7044-5e8e-ad22-7c0fcd084d6d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "329179ef-28b0-5622-b5ad-44df52b3c6d2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 Utah Governor",
+          "total_votes": 761806,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2343e09d-a865-5f8e-a39d-74933a5d2ee9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f0dfa96c-0175-5127-b843-d96066055476",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fdd2ab3b-20be-51da-9308-0d97ca5194f2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/VA-2000-202609151031.db",
+      "size": 1523712,
+      "sha256": "0c8f3e9043f8704ba1015ffc8c74d385de3565857aa779a5a4389e4866bd976e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Virginia President",
+          "total_votes": 2739447,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cf5f08d5-c6af-510c-8d4f-5417feb137ad",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8c943355-6f53-5a67-bf65-03147b7c462f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "affaa845-7083-5503-be91-815137af93b9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Virginia US Senate",
+          "total_votes": 2718301,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d1d318bc-1f7d-5a1f-b63f-29c40d443816",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d49a2fed-2564-533d-80b0-b583b37f727f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "222c01b6-c6a4-5e14-afeb-a3a9f1e0db36",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/VT-2000-202609151031.db",
+      "size": 278528,
+      "sha256": "4d3142f2c963c6e5521e02bb602b26794999d1e245c7cce133079298abef5639",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Vermont President",
+          "total_votes": 294308,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "959955c6-355e-5a9c-9f0f-f11a6496b6d6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "57e6a38c-e67c-5518-a113-5480f38a7291",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ce9ef3ec-e384-5b59-8841-7217376d5399",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Vermont US Senate",
+          "total_votes": 288500,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "620c4880-bb98-5a5a-bae3-e649ee890903",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "814254c8-9596-5ebd-84e6-bf93f0e2ffd3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "52fbcc5e-502b-5391-99c3-01b928bb6b45",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 Vermont Governor",
+          "total_votes": 293473,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4002f8c1-7f33-5cbc-9cde-59d55c03420e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "95d41f3b-53f7-56cc-83cd-2767f0eba543",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8f2a6356-9559-559d-acdc-c5cd03087f61",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/WA-2000-202609151031.db",
+      "size": 733184,
+      "sha256": "ee4731991d061d294f298f4282c03d64a1f8d1e2069808145592186f7170d3c5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Washington President",
+          "total_votes": 2488745,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4ed12ecf-d87d-5bf5-a657-5e852031e6fb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bea8efd8-1ca5-5d9b-a5a0-e0dcf0cb04e5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "87e3f207-52d2-58c1-bd11-e15e07754d7b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Washington US Senate",
+          "total_votes": 2461379,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bff0841e-0664-539a-b7a8-1047976a4a6d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cb82b4c1-35d0-5964-8726-8054c7308437",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7225b5f3-f61d-5012-9948-4eadd5f1fb84",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 Washington Governor",
+          "total_votes": 2469852,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b51317cd-da18-5545-8a26-87b79382dc75",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3a933793-e6ff-589c-a542-a1ea280d086f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5d0973f7-e9a2-5b99-aa93-dda5d6301ab5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/WI-2000-202609151031.db",
+      "size": 843776,
+      "sha256": "1caff453ee1e82eb01c4c85982875981dc3b5fc79e76056677df3d6195608722",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Wisconsin President",
+          "total_votes": 2598607,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c382d369-0f62-5ac3-a807-127384d61b5f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a95e38fa-d63f-5b88-93fc-a65908828227",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6b1ee225-2948-5dd8-87b9-b2a12a0953be",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Wisconsin US Senate",
+          "total_votes": 2540083,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7ea6ef3f-4ce4-5127-9bf2-5c28bc7ba578",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ae440849-bee8-5416-b373-b3ff760c5ed5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "aea8cf4e-bef0-50db-96e9-ad17b0400724",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/WV-2000-202609151031.db",
+      "size": 868352,
+      "sha256": "909ba0548cc5770720c8e4be120f1ba83d5836f55d46cd68095db24be6dc699b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 West Virginia President",
+          "total_votes": 648124,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cbf0e55d-8124-57fb-b6ac-61fceaf800a2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "91500489-b22e-5f9c-931f-c082ce2f098e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fb473967-cb9a-511e-b563-de84afb3377f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 West Virginia US Senate",
+          "total_votes": 603477,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ba1373d2-0a18-57f4-acaa-33fcc4315910",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1db9cbef-c1ac-58f1-b030-b25b8bc51605",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e0e1cf5a-fb22-5bad-a520-5d0e6e5a7338",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2000 West Virginia Governor",
+          "total_votes": 648047,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3564253f-39b7-5a0c-824e-a578f91db4fb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5bbd528b-3414-545c-b515-a2441e60b0cc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b6f43e65-65d5-5265-ba2a-7b41f06d1f30",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2000.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2000/WY-2000-202609151031.db",
+      "size": 327680,
+      "sha256": "cdbcbe34a48b8e979f223e6a3ddf930dfc7bc1827879ad1161b8d757f93af82c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2000 Wyoming President",
+          "total_votes": 218351,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "16b1ec5d-355a-58c9-84f3-3de493fad187",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2d9ca7a1-2553-5a7c-a569-651bb0709c75",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7c5935d3-90ce-54df-b171-44732d88c261",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2000 Wyoming US Senate",
+          "total_votes": 213659,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d7c7b24d-3e4b-5988-b915-21996927a70b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5179dc4c-c998-547e-a31a-b6df1bbef93f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1cab99e0-5e08-57c4-beaf-b54f7b76f198",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

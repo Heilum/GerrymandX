@@ -17,7 +17,7 @@ GerrymanderX asks you to sign in before the map opens. Signing in with your Goog
 2. Open the **Elections** tab and click the list icon (☰) in the toolbar to show the election list.
 3. Switch **Source** to **Remote**, pick an election (for example *2024 National President*), and click **Download All** — or download only the states you care about, one at a time.
 4. Switch **Source** back to **Local**, expand the election and click **National** or a state to load it on the map.
-5. Hover over the map to highlight a region, click it to open the **Inspector** with population, turnout and the vote breakdown.
+5. Hover over the map to highlight a region, click it to open the **Inspector** with the vote totals and breakdown.
 
 ## Getting Election Data
 
@@ -47,23 +47,22 @@ The **Fill** dropdown in the toolbar controls how regions are coloured:
 | `winnerOpacity` | Winner colour, fading from white at 50 % share to solid at 75 %+ |
 | `singleCandidateOpacity` | Pick a candidate; darker means a larger share |
 | `winnerDotDensity` | One dot per region, sized by the winner's vote count |
-| `turnoutGray` | Greyscale by turnout |
 | `singlePartyComparison` | Change in one party's share versus another election |
 | `2-partyComparison` | Movement of the Party A − Party B margin versus another election |
 
 ## Comparing Two Elections
 
-Comparison modes appear once you have the **same state downloaded in at least two elections** (for example the Texas database from both 2020 and 2024) and a state — not National — is selected.
+Comparison modes appear once a state — not National — is selected and there is **another election of that state** to compare with. Any two elections of the same state can be compared, whatever their year or office: 2024 President against 2024 US Senate, or 2024 President against 2022 US Senate.
 
 1. Choose `singlePartyComparison` or `2-partyComparison` as the fill mode.
-2. Pick the other election in the **vs** dropdown and the **Party** (or **Party A** / **Party B**) to compare.
+2. Pick the other election in the two **vs** dropdowns — its year, then its type (President, US Senate, US House, Governor) — and the **Party** (or **Party A** / **Party B**) to compare. The type list of the year on the map leaves out the election already shown.
 3. The map colours each region by the swing; the Inspector shows a swing headline and side-by-side party totals for both elections.
 
 Parties are matched by name across elections. Counties and districts are matched by name; precincts are matched geometrically (by location), because precinct numbering and boundaries change between elections. Regions with no counterpart are noted in the Inspector. A banner above the map tells you if anything needed for the comparison is still missing or loading.
 
 ## The Inspector
 
-Click a region (or the ⓘ button) to open the Inspector on the right. It shows the region's name and layer, **population**, **total votes**, **turnout**, and **Votes by Candidate** with party colour, vote count, share bar and the winner in bold. In comparison mode it shows the swing and both elections' totals instead.
+Click a region (or the ⓘ button) to open the Inspector on the right. It shows the region's name and layer, **total votes**, and **Votes by Candidate** with party colour, vote count, share bar and the winner in bold. In comparison mode it shows the swing and both elections' totals instead.
 
 ## Custom Layers
 
@@ -71,7 +70,7 @@ A custom layer is your own set of **group cells** — named, coloured collection
 
 - In a state view, use the **Custom** dropdown in the toolbar to show a layer, **+** to create a new one, and **Edit** to open the editor.
 - In the editor: rename the layer, add groups (**+**), pick a colour from the swatch, then click counties, districts or precincts on the editor map to add all their precincts to the selected group; click again to remove them. A precinct belongs to at most one group per layer.
-- The group inspector shows the group's composition (whole counties, whole districts, remaining precincts), population, total votes, turnout and vote breakdown — updated live as you draw.
+- The group inspector shows the group's composition (whole counties, whole districts, remaining precincts), total votes and vote breakdown — updated live as you draw.
 - Changes are saved as you make them; there is no Save button. Deleting a group asks for confirmation when it contains precincts.
 - Custom layers are tied to a specific election and state database. Deleting that election deletes its custom layers too.
 - **Custom layers stay on this Mac and have nothing to do with your account.** They are stored under `~/Documents/GerrymanderX/`, never uploaded and never synced. Signing in on another Mac will not bring them with you, and signing in here as somebody else shows the same layers — they belong to the machine, not to the account.
@@ -95,7 +94,7 @@ Signing in tells us only what Google hands over: your name, email address and pr
 
 - **Sign-in does not complete** — the authorization opens in your browser and must be finished there; if you closed it, click the sign-in button again. A failed sign-in also needs a working internet connection.
 - **The Remote list is empty or shows an error** — check your internet connection and press *Retry*.
-- **Comparison modes are missing from the Fill dropdown** — select a state (not National) and make sure that state's database is downloaded for at least two elections.
+- **Comparison modes are missing from the Fill dropdown** — select a state (not National) and make sure that state has a second election to compare with: another downloaded year, or another office in the same year.
 - **A region shows no votes** — some precincts have boundaries but no reported results, or vice versa; the source data is incomplete for a few areas.
 - **The map is slow at precinct level for large states** — hide the Precinct layer while panning, or zoom into the area of interest.
 - **I want to start over** — delete the elections from the Local list, or quit the app and remove `~/Documents/GerrymanderX/`.

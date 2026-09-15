@@ -274,6 +274,17 @@ class DatabaseHelper {
     return db;
   }
 
+  /// Closes every handle on [electionName]/[dbName], so that the next open
+  /// reads whatever file is at that path by then — a newer version, say.
+  Future<void> releaseDb(String electionName, String dbName) async {
+    if (_currentElectionName == electionName) {
+      final db = _stateDbs.remove(dbName);
+      if (db != null && db.isOpen) await db.close();
+    }
+    final comparison = _comparisonDbs.remove(join(electionName, dbName));
+    if (comparison != null && comparison.isOpen) await comparison.close();
+  }
+
   Future<void> closeComparisonDbs() async {
     for (final db in _comparisonDbs.values) {
       if (db.isOpen) await db.close();

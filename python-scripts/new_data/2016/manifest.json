@@ -1,0 +1,5666 @@
+{
+  "year": 2016,
+  "schema": 2,
+  "generated_at": "2026-09-15T06:53:10+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2016",
+  "national": {
+    "db": "National-2016.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2016/National-2016-202609151031.db",
+    "size": 5242880,
+    "sha256": "19c5ff166cf66797d581daa693fdbf75277eff5269e26c2c8592d7eb40060349"
+  },
+  "states": [
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "db": "AK-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/AK-2016-202609151031.db",
+      "size": 19329024,
+      "sha256": "bc9d9be870887af567cad7bef4cad4550ec14ea5d9fb8d8c897d7fcb3e8ea3fd",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Alaska President",
+          "total_votes": 318608,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "60fd007b-637f-5ef1-b584-33714899714d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a8928f2d-b9f7-5ad1-b1e8-4864d93dea5d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "93bbf4c7-b236-5c6a-9bda-d4b25f6e0551",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4396db2e-5ede-59ff-b7a4-b13e4f4fc567",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "34b49ef4-28a7-5835-9d15-191812e7803d",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "a20991c1-214f-5826-a4fb-6d1de6e4cf62",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "a5bc3414-2b73-5ba5-9587-eba8679b62a1",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Alaska US Senate",
+          "total_votes": 311441,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "78b47bf9-2bb7-5feb-b8f5-62f5e04b6f3b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "560c8908-2ad1-51d2-ad22-b8933a0c2eec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0ce9a797-8d26-57c7-99b4-6f4c4b5e9794",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c4e51336-d8e0-54b7-9de4-bd62da457ccb",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "6a1aa237-e714-517e-967b-6ce5a1aec173",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Alaska US House",
+          "total_votes": 308198,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "6726cf0e-87d7-5781-b17c-349246f591d7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dc2b394c-79c5-59f2-83f8-32c6b8b1c9da",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aa40bc49-ac0f-573d-ad15-2330809b4b74",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f4638339-a23a-5d6b-ac38-0a6be919896f",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "2ace99e8-875b-5063-b30b-98240b367b61",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/AL-2016-202609151031.db",
+      "size": 38088704,
+      "sha256": "ad7a6d6f7d7467a3e5ada884ca404fa14cd7e693b1bc3c7103961cfc6760f6ee",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Alabama President",
+          "total_votes": 2123824,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "477cc019-b2cb-5567-9bcb-db524eec8f15",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "58dce6e3-ba17-5240-b524-c44a839ad562",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "853bb1f0-c19b-5018-a9de-b2091b79f07c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bf9c14ff-f870-59f3-b4cd-903bc5dcf8de",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "b996cc6e-9ffc-5bba-9dc2-39627db79d25",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Alabama US Senate",
+          "total_votes": 2087889,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "016c5d59-8474-50df-ba53-599af2ebc1f3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2616b9cd-e7e0-50c3-985e-884e6169f2da",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "55dcbe82-4684-5481-9b57-01a48f1c5b64",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Alabama US House",
+          "total_votes": 1882299,
+          "candidates": 18,
+          "parties": [
+            {
+              "id": "f8210e9e-f522-5d5e-a5cb-a921f135227c",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "f11ea1a4-f404-566e-a2fb-ff0ad45106c4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "236de89b-cd57-5be1-b04e-3b2e24dcd504",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/AR-2016-202609151031.db",
+      "size": 32133120,
+      "sha256": "a812c88abc95d0a1c63ed2e1a6e672fca04f25314084213d2f0d82d72123e86a",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Arkansas President",
+          "total_votes": 1130676,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "3777e4bc-c029-5c11-ae38-1f7322b89b98",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f6dbbcf2-0f14-5ff8-b133-67370f3ecfe9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "627d6e5a-8e4e-52b6-97e5-e6f0d126a42b",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6622a441-70e2-5866-bb94-026518ef0be0",
+              "code": "BFA",
+              "name": "Better for America"
+            },
+            {
+              "id": "1c260f55-5616-5c0c-9578-385b7aab187d",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "d4922cd2-1ab4-5297-822c-16b370541ae8",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "3258833e-dab9-5bd5-8322-7b86d240e5a5",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Arkansas US Senate",
+          "total_votes": 1107522,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "52e59c14-bf9e-509b-9387-90d25fceffa3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c951c58e-fa63-5387-bd87-d77251896432",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ba13c037-6fe8-5977-bc91-6e8179f11607",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6ba9ed23-651d-5f79-a0e6-f3505cc1bb84",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Arkansas US House",
+          "total_votes": 1068577,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "9bf73b32-435d-52ff-929b-2159faee4940",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bbcf7ee1-094f-5d30-9a4e-60161a57825f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "305fe94b-3404-50d9-bca4-a7dea3cd7ee0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "872b0874-4f38-5a91-a7b4-b6b909691835",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/AZ-2016-202609151031.db",
+      "size": 17526784,
+      "sha256": "61f24698997d2f082e5daf598685c6626a85e074ce2ef1cec6374d5ab36c4943",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Arizona President",
+          "total_votes": 2604657,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "f84757af-f3c7-53c0-8dd9-f3e06f6eaa0c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c697801f-7a03-5b28-bffc-13a3671bb342",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bd400881-81ec-5911-be90-dd690ad7d182",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "954f24a4-5beb-5721-9d07-cf46df10ad69",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "2576d163-4117-5039-bbdc-96351b295221",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Arizona US Senate",
+          "total_votes": 2547060,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "9f3ea9b6-9bba-5ec8-93b1-1db304627ce8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c3a220e5-2ca2-5df4-b225-99ebd7e42b34",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4db688e2-f728-5d4c-98b1-b0e2c5a4c263",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "044c285d-a5ca-50ab-8227-87cd12bd7411",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Arizona US House",
+          "total_votes": 2428193,
+          "candidates": 31,
+          "parties": [
+            {
+              "id": "d938fe24-eced-5703-86d6-b58f735499a0",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "ab4985ab-ed6c-5de5-80ca-4dc1b8d69f24",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "86be9913-9d70-56d4-9950-3c1a0c5c3434",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "04b726ac-3379-5fc8-a9b1-7b8da0e46534",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9aaf431c-e756-5364-bbbb-5c6391ce7d46",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/CA-2016-202609151031.db",
+      "size": 122241024,
+      "sha256": "e089eb53a4c6c958e697b933911adb188cf445f84b3c0a95af6a9a57e93d7361",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 California President",
+          "total_votes": 14058363,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c6ebc067-a006-51f5-bd0b-c4d372b94152",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2ea2fa80-c489-51d6-be5d-ada62e5aa539",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "249faa11-753d-5fde-af23-25eb57fee093",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "27e9d733-c239-5850-a607-8d22d5475b34",
+              "code": "PFP",
+              "name": "Peace and Freedom"
+            },
+            {
+              "id": "12b66e8b-2e04-59d2-b3ce-ecae15ba9b61",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 California US House",
+          "total_votes": 13406592,
+          "candidates": 106,
+          "parties": [
+            {
+              "id": "07ed2bc9-8c1f-5a62-836e-f076455e2c1d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ba066e8f-caad-56da-8ff2-2f22ddc7ad88",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3454675b-c5e9-56ed-a114-7d1ef53e1c7c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/CO-2016-202609151031.db",
+      "size": 36352000,
+      "sha256": "39d706afb53f4f8ee576c3c377de5ddf1371cd0f9dc56cc60f1ef30d04a618ef",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Colorado President",
+          "total_votes": 2780247,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "066387f2-1780-5e1e-83dc-3c21ee658db4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aa9c2c95-5d3e-5e15-97da-8d7f5df65860",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "36ea7b68-66ad-5af1-8215-208cd43ebcc1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "fbf2709c-4361-5dc2-b18f-a5e798924c46",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "b4789771-aa6c-5164-b710-bf83a6554e03",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "e7d10f70-be28-50a3-9afe-448ebb506456",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Colorado US Senate",
+          "total_votes": 2743029,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "a15b88e3-c493-5e1e-b453-c9741cb77e48",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "436db35e-aaf4-53c7-bbd5-fa98b7bae1c5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4b309e18-2b91-590b-a391-80bbedf7b5ff",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a39a0534-782c-5375-96f4-b4c38468b90b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "34a5b632-3c34-5f93-b0cc-1f1f2a45e817",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Colorado US House",
+          "total_votes": 2701534,
+          "candidates": 24,
+          "parties": [
+            {
+              "id": "eceb8dc9-2aa6-5c60-b4d4-aa5a6ba69b41",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4f898021-fe02-57ec-9c3b-d6e1d59f38be",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5c6fc147-eec5-57d0-9584-7f5fc98d631f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5968bba4-b220-51a3-8e5b-9004032ebfec",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9e8a5e9b-a0fe-592b-ad9e-ee6145e83a45",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/CT-2016-202609151031.db",
+      "size": 7340032,
+      "sha256": "260c4b65458b263406ca8ad80640fdcf20ef4b844dbfec4576dd4935f3d7834a",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Connecticut President",
+          "total_votes": 1644920,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "3d933be9-eef5-5b43-a216-d00e4510a64e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "70822f93-881a-5791-b73a-d12928ccd86a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b10abdb1-95a2-591e-abd4-6c3441ec5cbb",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b76604c2-7990-57a6-a056-bc7ae656d6fd",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "6c0e68dd-86b3-5eb5-a28e-949ed7d791e2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Connecticut US Senate",
+          "total_votes": 1596276,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "48935ad5-cb87-5322-9f8f-da94000dee3c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6ff086e4-75f2-5ab0-8881-ca555f57f83f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "86a1c214-a397-53cc-b45e-a8c1581d0ec1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "06163e13-30c0-563e-b2e7-b92ea9e721fb",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "1e5a7438-c2dc-51cd-9dc9-505ffd33d331",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Connecticut US House",
+          "total_votes": 1575182,
+          "candidates": 24,
+          "parties": [
+            {
+              "id": "70254b11-71bf-5393-bd88-91c7a990211d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4d7c2ea4-46fe-54ea-a5ee-ad02144f498a",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4da6d175-d97f-5c47-9bd4-58850b9f5c22",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c171b4e6-9872-5e06-b905-01d21423b5f9",
+              "code": "WFP",
+              "name": "Working Families"
+            },
+            {
+              "id": "1de07c5f-4015-506a-b5d9-fea7084b67d2",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "7424e6a1-9517-5a71-8b6a-789ce7639757",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "3ab1ec89-f326-598b-9695-9aeb26727894",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "db": "DC-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/DC-2016-202609151031.db",
+      "size": 1748992,
+      "sha256": "669390177c66564e895606813312be410cc2ad450dcfbd1f2e8c75bc3c225c12",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 District of Columbia President",
+          "total_votes": 311268,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "e4993667-c48e-5efa-913f-f95df6c9478a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6f4120e4-6eb8-5a9b-9b0f-3f3abad476d5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3189bd00-bb88-537b-bc33-bb8723c25bd6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "362ec7f3-a40d-5e32-aec8-99eca7502c8c",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c918f604-5639-592d-b982-7a65b84b1d39",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 District of Columbia US House",
+          "total_votes": 300906,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "c582d7f5-8142-58b4-954a-f930fcd3ed4a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "782054d3-688d-513c-b236-dd7e6c715750",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "279066f0-a105-5c8a-b664-426176eb12e5",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "ada0cd33-d7b9-5de4-8bbc-2f4f11bcf18e",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/DE-2016-202609151031.db",
+      "size": 3940352,
+      "sha256": "592e113ce7484d2da9411603113045e349d2a5d40de34386c4aa75578c183301",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Delaware President",
+          "total_votes": 441590,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "40be0502-647f-5266-bbb7-fa5b3617f94c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e4b9f111-f765-5f89-9bf6-89a5eb4ec66a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "60fb24cf-96c0-5070-9052-987483b9614d",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "7e0d4e71-0062-5f10-8b9e-5641ec2878ea",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Delaware US House",
+          "total_votes": 420617,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "ed2557e5-6249-5c6e-9c01-6f379762591f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7737a76d-5e69-5ea2-a054-57b567c779c7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7781df7b-49fb-536a-9381-09ae8e6fde97",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "73f32ecd-4f12-56a0-9d5c-11bd63a5c543",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 Delaware Governor",
+          "total_votes": 425784,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "7466041f-46c1-5f19-b486-6aec6bccb9b5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c2eea0cf-1567-53ba-b42c-f2e620225761",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a3ca739a-fb35-508d-b14e-8695cd95ea79",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4aae4480-7aef-5fa5-ab5f-90e79a7cbc45",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/FL-2016-202609151031.db",
+      "size": 72593408,
+      "sha256": "1db44a0550c9eac4fa2b24807b527cdaa423e9b10c7b9aa07d61489e048cbf9a",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Florida President",
+          "total_votes": 9497417,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "26b1a1e6-45c3-5483-88ba-bf68bd8c3abc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bfb54250-d7c0-5b5f-a0c0-61fb48dd207a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "68ccba4c-1681-50a2-97a7-4d2c3a0714ed",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f2a03110-980a-507d-af69-add20387507f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "fd636b22-5164-58db-b23e-9670b180b87f",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "8be0ff1d-808e-536c-a954-650f5819e3c6",
+              "code": "REF",
+              "name": "Reform"
+            },
+            {
+              "id": "87c07ece-9ff1-5f7f-98b0-894d4fc9c70b",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Florida US Senate",
+          "total_votes": 9315176,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "53c3cbfc-3b50-5c7a-8d5f-e440fe891627",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8d5d3711-1dd2-5294-8666-aa0640c28858",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "88c61f17-7fe3-5544-bec8-e5f4d158af3a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "628c39fe-8d47-5fcb-a834-ad5e1edff865",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "e40b2a2a-63ab-52ea-b4bf-0de278766cad",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Florida US House",
+          "total_votes": 8837617,
+          "candidates": 64,
+          "parties": [
+            {
+              "id": "08d84392-5a36-584a-b2ba-db87a8e484ca",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "29ced12f-1394-5d91-9725-c6d868803ff1",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "95a914a3-24ce-523d-876e-107b07a26e93",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "df24f1c6-40d4-5e2a-bbee-ec647fe245ce",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "52bc045a-670d-54ed-b73b-48421d75c356",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/GA-2016-202609151031.db",
+      "size": 44875776,
+      "sha256": "3f0a9a71293e558153d3b70d585d15f2c20551ef1c8bda2b9d87b747694de46d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Georgia President",
+          "total_votes": 4092373,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1e34ded3-5041-5f7b-863e-9a950b06d2d7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fc0e4691-9ba1-5d45-8cb0-16b72e258ef6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "62a37646-04e8-50ce-b32f-7773d6725caf",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Georgia US Senate",
+          "total_votes": 3897792,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f634b6fc-77fd-5609-8fcd-3252aeddf31a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cbab7004-3049-547f-afea-cf20a9b945ac",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "76c50a3e-c882-5c6b-9db0-14d00ca83259",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Georgia US House",
+          "total_votes": 3772862,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "6c8ecfe3-52d3-5441-b6cf-e2d3c2bc29f7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d006b81b-91c6-5e46-bd23-33a05b44284e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ffb7666b-d3d5-5281-8531-3621a00dc5d0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/HI-2016-202609151031.db",
+      "size": 6664192,
+      "sha256": "93fca915f36582d3121b69f4ccff53b56428d96a15695d61f62ddde2a523060b",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Hawaii President",
+          "total_votes": 428937,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "324d4cfd-d2bb-57d9-bb90-2a211df68f48",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2d85eea2-5986-5f3e-836d-0fc6a65bd25a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f3c330e4-e804-5c8a-974c-793990b80493",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8cd35802-a2c3-5b1b-ba26-f5d018b8f84e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "78369235-1052-52cd-aedd-886d1ae8faf6",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Hawaii US Senate",
+          "total_votes": 416562,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "98da5faf-ad33-561a-8b45-6cf512f88d97",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fde16912-7e21-5906-bfad-8277def35c6d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2f481282-41fc-5cba-91bb-413e5f6bfed2",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "df87228f-2016-51bd-b981-fadc5d7fadaa",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "df629faa-04c7-554c-9aa5-6c15970e6357",
+              "code": "AME",
+              "name": "American Shopping"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Hawaii US House",
+          "total_votes": 610877,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "50184d5f-cf8c-5470-807a-d3ee9c640ae0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d3c27995-9e53-5420-9d53-b947b26db109",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e41890b1-aee6-5c46-99cc-a764e95e6530",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "fa7e606c-75ed-5654-b0c5-892d5b1408bc",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/IA-2016-202609151031.db",
+      "size": 16777216,
+      "sha256": "c3d98198c53ec1ba180bdc38cc672a78b53ab33260d7c06a6ef39ea7486b8cbd",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Iowa President",
+          "total_votes": 1566031,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "7a059ebd-43ec-5674-a783-f2d056069f40",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "20199faf-87be-5bf3-a487-1b712ede1789",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2f8ac442-aeee-5dda-9b2b-07496c1949e9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e736cfc7-4fb5-5f30-8d6a-9db4a5c6c2cf",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "5977f504-4c51-5c73-b36b-5a17c8e5358d",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "fb8cd6bc-6edd-5bcc-aaf8-bd1480e8e615",
+              "code": "LMN",
+              "name": "Legal Marijuana Now"
+            },
+            {
+              "id": "11bb0613-7e42-52e1-80b0-f2cdf59c7bf4",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "f690c2f5-2287-593b-9c51-0739a7f36ce4",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "aefd61f0-368d-5ddd-8943-1ed4e84a4456",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Iowa US Senate",
+          "total_votes": 1541036,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "2faa8dd0-ca74-5d5a-945b-9dce50cf08d4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "10c4d6a9-23e1-56fb-ab66-0707d3d99dba",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aa1c4e2c-9d41-527f-83ed-69a80eb87300",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f65029e9-b712-5542-be57-d7e0d0858241",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "8224270c-5117-5a83-b18a-8e45b754a5f2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Iowa US House",
+          "total_votes": 1515555,
+          "candidates": 15,
+          "parties": [
+            {
+              "id": "ba69b907-beb3-55f0-867e-ab46d155c09e",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "05dfd08c-687c-5049-9fda-3dc21e74c7e5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a5fd9e39-db1d-57d8-ad0e-cb0e684cc721",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "14a223b9-275c-54ad-8e55-5db049f86825",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f61411b8-ed01-5c7a-8562-6fe1d756d7ea",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/ID-2016-202609151031.db",
+      "size": 18071552,
+      "sha256": "4f310c79a0620803e997c3b7a075dddf2609ca628b85180f44591b89bf4f746e",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Idaho President",
+          "total_votes": 690433,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "d158889c-116e-51b8-b234-34cd6cef042e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b4338916-2150-5658-8cda-ee4d53c4176a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "626219f9-9da5-57a4-8c8e-f8de469e96c0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d416e7d9-fadf-5b22-8ec5-b5473997f358",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "1551be1c-640c-52e1-9189-ab8323c14b5f",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "bfcec221-bc42-504b-8281-e7f6f7d33874",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Idaho US Senate",
+          "total_votes": 678943,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6cac4d15-ab37-56e9-8b9d-05f0b087a1af",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "492bd25b-efd0-5697-9e85-7fa137bf5b39",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e74100fd-b1ed-5faf-a51f-c495eb4ddedf",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Idaho US House",
+          "total_votes": 681472,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "5d833af8-5e8a-5bfa-84bb-acc3358eab9b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d231407d-3e6e-5f64-8ddd-1e04c4ffe599",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "cf37c056-1b0a-5a86-9c7e-ca6db2ab2e7b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e3a34d42-7106-5742-abe8-6b86ff784709",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/IL-2016-202609151031.db",
+      "size": 57356288,
+      "sha256": "377226cf900267b63e7c8fd1974787c47e38efbb0993b7b93d3d8972124c2ce2",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Illinois President",
+          "total_votes": 5589925,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "abf099bd-2666-554a-82a8-029acc3f55c5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8b4ffd82-f439-5e6b-b1f5-8eeaa3a8231a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "58f46e36-7209-5cdd-a6c0-055fe2688bc4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a77781a3-6046-5046-b7b3-14608ec84f27",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "62129d3a-87b3-5ffc-aaef-de1a9997cfde",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Illinois US Senate",
+          "total_votes": 5498006,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "3bcf2685-88d9-5d6f-94fe-4f8e0df3f5c1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a081e5cc-5032-5c5e-9a3b-52ea11d6afcd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "420024ba-e5fe-5e32-b281-05b98dba6ae0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4d285da6-9997-5fad-ae2a-8d83c79e3fee",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "924c6dff-c8e1-57bf-a8b5-0a6f2e1ccd84",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Illinois US House",
+          "total_votes": 5258388,
+          "candidates": 46,
+          "parties": [
+            {
+              "id": "bd00a58d-8aa4-5d2f-ae1b-4701bdc13759",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "81940dc3-0fda-5f33-9df5-665a8aef3dd1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4933983f-0eea-5836-9c92-80418addbda9",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "c4b422f4-281b-54d4-bb5e-a7fe836c463d",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "0eb2a800-a508-5e5d-8c78-60ac8e48eaa5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/IN-2016-202609151031.db",
+      "size": 37994496,
+      "sha256": "4fdf7f8bb52d859f3558dfd02357310cf39c11f714e5dcdfa1249c79525f9a48",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Indiana President",
+          "total_votes": 2760528,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "17d89fe2-a385-5ab0-a608-e9175e50ec31",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "77df5383-1dc8-57a6-8d68-19cd5779419f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fdcde2f6-3746-58ae-b6df-9118fc7b5eb3",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "37a207a2-7294-5a97-af24-feaab5fdedfa",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Indiana US Senate",
+          "total_votes": 2733628,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "7b3113b4-e61a-5b43-ae65-a5b966ae6232",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f4226c6a-0463-5837-b561-4610e914ea2a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a2c363de-d2cc-59e5-b79f-095c002312b1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7b3d2b3c-3597-5256-8106-9da4abb86438",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Indiana US House",
+          "total_votes": 2669817,
+          "candidates": 38,
+          "parties": [
+            {
+              "id": "0b43b44a-cbf9-5c8a-8fe5-7a3a24a065d4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9d71fb76-c307-54ca-81fe-5dae05d01e09",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "632b9811-558f-5075-84ab-6cfe0282d18f",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 Indiana Governor",
+          "total_votes": 2720338,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "c37f2085-f6a2-58e1-832e-2bf739993e69",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b9978e06-4733-5ab8-b738-fdd7778b845e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "619d6fc1-e9df-5d35-a436-774ada3985dd",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8008bebf-86d7-5a8e-b22d-02049e01ada8",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/KS-2016-202609151031.db",
+      "size": 26595328,
+      "sha256": "8d682f004f1acb2e4cc7164a95eb141308e5ad34c35da900159c0f27f81aad06",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Kansas President",
+          "total_votes": 1193685,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "acbed32c-2984-549f-9138-51f3b8e63001",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "34cabcdc-7ef4-50ca-af74-39aee2ea1cb8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cb2057fd-4da7-56e3-885e-ecf1ca15dae7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "062305f1-5bc5-56f7-a65a-7018c676f64d",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "8e2576f2-a1fc-539b-95a7-030da42e88e2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Kansas US Senate",
+          "total_votes": 1178495,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "732282da-624e-5aee-a0e2-1ffa0e5432b2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "24c501af-844c-5f0e-bd9c-9acf18df2f79",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3cc8fc6c-4ad4-518a-bdde-6152b49a7eec",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6f2c777e-e359-5f99-9cda-c9ba65753d16",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Kansas US House",
+          "total_votes": 1174219,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "1e476ca9-75cf-57c7-b071-112104298005",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d5826057-cdf2-5daa-89ce-a0dcfa116ffc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4a692033-73aa-5e23-b046-aa3e39e1fbbe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "34177435-fab5-5bbb-b6f2-530cfd282fde",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "a880fc52-18e4-58fa-80fc-9a3436165381",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "75717d16-1867-5e27-90b9-b9d482cc826a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/KY-2016-202609151031.db",
+      "size": 48037888,
+      "sha256": "da0b15ef9ff5b5084ab03911d3dc36f2e39e373d855b2669242fb95429cc4a14",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Kentucky President",
+          "total_votes": 1923375,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "89fe2f1e-4767-5158-a13a-35286df8da27",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "87360893-bc12-515e-afe3-93a788fcc523",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b51b11a3-7b3c-51af-899b-f79ab9624e66",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "52717f29-9ffe-591a-9309-067729814803",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "3300deac-6a60-5cba-9ece-6097027886bc",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "5d2b7f82-be2e-561b-a7a7-cdb9fc30afe8",
+              "code": "ADP",
+              "name": "American Delta"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Kentucky US Senate",
+          "total_votes": 1903399,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "02409a8f-c24b-5526-8c6f-f452541172ed",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "49375f88-925b-5d3f-ab11-7dcd00a7981a",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Kentucky US House",
+          "total_votes": 1765435,
+          "candidates": 15,
+          "parties": [
+            {
+              "id": "a64bc32d-5b1f-5fb4-a79c-e9fb8731d314",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3f91ff5c-f2aa-529c-a846-d3960c202bec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7510ca72-1092-5106-be9d-525f25cf3b4f",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "c1fca0f0-723a-5806-af19-f070d32a420b",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/LA-2016-202609151031.db",
+      "size": 49696768,
+      "sha256": "01687400fc7a8f9b228b745bcd04722f3a1c1bd6718e50decc9996331edc1e92",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Louisiana President",
+          "total_votes": 2029032,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "c4fd64e4-76af-5291-a4df-da0601a6b182",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1d037e0a-9bfd-5a80-9c9f-209d5a0a1a72",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e56335c9-d0f5-5a22-b52a-34debf5462c7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "dc3a2132-5516-51c6-97d2-16c52453ddb9",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "ef07d1c3-1478-5cf0-967e-c7e0563db67c",
+              "code": "CCS",
+              "name": "Courage Character Service"
+            },
+            {
+              "id": "9747898b-b362-5797-8b13-2c37510f50be",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "e5c01bbb-1296-5d1b-ba14-cff24809916b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Louisiana US Senate",
+          "total_votes": 1933635,
+          "candidates": 24,
+          "parties": [
+            {
+              "id": "53912860-b665-5613-9b71-34a72f4f9f02",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1e21b95f-94bd-59ff-b396-970e742a558c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5e9ac732-9652-5e1e-a1bf-376eebfa8942",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "dc89074d-9819-58da-9837-30b72a56983a",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "141af2f6-93a6-51f0-b519-ff576980351f",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Louisiana US House",
+          "total_votes": 1804256,
+          "candidates": 37,
+          "parties": [
+            {
+              "id": "57c12c13-fd24-547a-b3ba-9c36a1e9ef95",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c02ebc12-4c8e-5dfb-8975-023909e76c8f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "52e2c784-d627-5e2e-a1b0-88489e7a515e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7d68d49c-deec-5b35-8d72-1dfa99c423b4",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "1bd39bf6-88e4-5bc4-b10e-bdfb6bcf4aeb",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/MA-2016-202609151031.db",
+      "size": 21925888,
+      "sha256": "b8e5d25d0c00dd587e825f83cc27d69b9e7fbb419e795ab4f227a3dd7f018cac",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Massachusetts President",
+          "total_votes": 3325046,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "2b95b1dc-b16c-5e44-8728-ce139d85038c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "74652fd6-5f0e-52bb-a874-654f525d1fde",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a8a84d22-1c5d-57d5-8a38-04502b07fd78",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "57345c31-5136-542f-86b4-77c9f3a31f69",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "d532508b-e237-5ef3-94b6-761b89e31db0",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Massachusetts US House",
+          "total_votes": 2940688,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "dade39a0-cddb-5cfd-a868-438f2b42c808",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "094aa691-8ed4-57ce-921e-58b1da4741b6",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "5468aec8-6ad1-5d95-8b7d-15dfeddcf1fe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eb7e75e1-99a4-57b4-bee2-0557787deb94",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/MD-2016-202609151031.db",
+      "size": 73072640,
+      "sha256": "a021375055be648fa31a0ae018610aeab51d1d44aa1da7f7ca01183db69470a0",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Maryland President",
+          "total_votes": 2781446,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "cb3e49f9-1a18-5742-9e0a-46323d90acc8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c1c53e8f-0a5a-5cfe-8766-fb4b05e21b2b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0b105618-e664-504a-af08-10e339f4afa9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "0f7a9083-159c-5b57-aee1-7427c5ba3305",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "89c4f532-dd70-5987-bca8-d630316ec349",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Maryland US Senate",
+          "total_votes": 2726170,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "797713b1-1a2f-5f19-8a66-308a396d31c7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a37962dd-2e18-51c0-9fbf-6093adf196d3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bab05b78-3dca-5c83-a9e4-c76fb7b5329e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "dfefb642-1b8c-53a3-a444-240bfe621cb1",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Maryland US House",
+          "total_votes": 2707745,
+          "candidates": 35,
+          "parties": [
+            {
+              "id": "5070d06d-eccb-5f82-b6b9-788bd455dae6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "80e347be-abfb-58ba-835a-881a0551e0fd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0dbb266e-c1c1-57fa-8994-0ded7652bdb1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "0b4b4326-4da3-5586-9e76-f0a25ed2088e",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "c45fa930-ff31-5054-86cb-fe9441d45a0f",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/ME-2016-202609151031.db",
+      "size": 9588736,
+      "sha256": "3ec5be6b15aa73d9049287e84174e2bc1d5726d98cc05a3cc607d59f4be81ced",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Maine President",
+          "total_votes": 747935,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "6314376f-f701-5dd5-b4d0-a93a88a03c31",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0ebe7451-f79c-548e-b3cf-86eca2cf775f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "688a911b-995f-51d7-9b10-d5f60d85e648",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "72f7b04d-5feb-50e7-8f35-2e6c57290ff2",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "368c5497-7d5c-5d95-a3f5-36a05b66f964",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Maine US House",
+          "total_votes": 738220,
+          "candidates": 16,
+          "parties": [
+            {
+              "id": "8f8c22a1-b6f4-5897-ba80-a8001c3355cb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bc046773-976c-5ad3-a300-dc9b8126eb38",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "07092df1-2874-5964-9684-54ec1e1b3d40",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "99c85f7c-6eca-5d64-995d-d5bc35bf9b3b",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "ae3c559a-714b-5398-864c-14d1b95c2fba",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/MI-2016-202609151031.db",
+      "size": 25985024,
+      "sha256": "bc16fe50b8c278f0eea80765f06a5575de9c45b5df95cd6e9c7675e994243bef",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Michigan President",
+          "total_votes": 4790326,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "bd33c5a4-4ee7-5878-ab87-97fca0501d15",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "eab76698-273a-5955-8808-b344192b2fb7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fed1d94c-6f05-5a43-92f0-7a199bff3203",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3e886ca1-a612-525f-86ac-b0fde034e5d3",
+              "code": "UST",
+              "name": "US Taxpayers"
+            },
+            {
+              "id": "05433ea9-a84d-52cb-ad35-45a32e17fa08",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "fd859660-e450-5a4e-bf16-93cba573984e",
+              "code": "NLP",
+              "name": "Natural Law"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Michigan US House",
+          "total_votes": 4670124,
+          "candidates": 62,
+          "parties": [
+            {
+              "id": "59ff4208-9f2f-507b-b21b-29331daa65f0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5bb694de-b2d4-5a9d-bf82-c2985a69c39a",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "66ee9650-6d9b-5008-b126-4fda7c1db219",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "13131091-12f7-5c34-a8d1-d447af8026ce",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "541aed5c-59d6-5725-8799-a70103220f11",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "25bf807a-2752-5f4a-8517-25371f7c2982",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/MN-2016-202609151031.db",
+      "size": 21843968,
+      "sha256": "f8dd1cb05c4a9e4af7a848e63e3f2b5f995cec5a540b0ad4a97714a031f185d8",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Minnesota President",
+          "total_votes": 2944813,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "425c6097-d993-534e-a4a6-31eff9b860d0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7a625869-540c-5c9d-a93b-abb5f11f9e37",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "88584501-1242-53f8-a110-1ef56e1c78b1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "33fef1d7-c10c-5889-b9a2-7c84675f5fa8",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "d8d5b6aa-ad15-5915-98cb-a3f2f952ed00",
+              "code": "IDP",
+              "name": "Independence"
+            },
+            {
+              "id": "7925d5e3-98da-53d3-8a28-c0a1323b3709",
+              "code": "LMN",
+              "name": "Legal Marijuana Now"
+            },
+            {
+              "id": "9b9abb42-2df2-5117-8a33-414595165eae",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "502da7b0-f379-5e44-bc02-75cc9bae411f",
+              "code": "SWP",
+              "name": "Socialist Workers"
+            },
+            {
+              "id": "31e414fd-8d1a-5321-a482-ebfe908dbb4f",
+              "code": "ADP",
+              "name": "American Delta"
+            },
+            {
+              "id": "127c2d6b-6ab3-527c-910b-fcc60b913c1a",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Minnesota US House",
+          "total_votes": 2854538,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "e573f3f6-a4f9-54f6-a736-785c9893201a",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "b8223ed4-cdff-5276-847a-d1a811924bdf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b1dd7257-3a08-58c7-9ff6-f1f6a07e8411",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "67f428d8-32c5-58d1-8431-b22cb5c3d47e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/MO-2016-202609151031.db",
+      "size": 34304000,
+      "sha256": "0e17d8df4f42cf860f8fe577a01669b2f530d606daac8d4a1092976b08a85b08",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Missouri President",
+          "total_votes": 2801449,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "24c85ac0-7d8a-597a-a83e-19d900dac524",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "904eea69-88a4-5b66-ad08-fe386f0233a9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "72417f19-7fdf-59cf-8a8c-ff4c97e720a6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ee79e77f-487a-5dd3-b529-59a3e6950ed7",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "0b6bf9f3-2e27-506a-b1f5-175e70e968ac",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Missouri US Senate",
+          "total_votes": 2802546,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "1f4e6f44-ea36-5791-8852-55b8a11dfd1b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1221a2f2-2254-5325-8fd1-44cb0eabe925",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ae5987d0-4325-5ec3-8dde-62d013493d45",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7a4a1c27-75f7-5415-b4a0-0ff7288c61be",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "db1d3cc8-7638-5cf4-b837-1120978cb08b",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Missouri US House",
+          "total_votes": 2750079,
+          "candidates": 29,
+          "parties": [
+            {
+              "id": "6ac0df23-37d6-5c5c-a902-89819556168f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8db0391c-7d0d-5b96-8a30-aa0b9fdf6c37",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e6b89192-6473-54d9-b968-88ea49f2e13f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d7dd7120-0002-5bd5-bb7a-664c2f040252",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "abe203c0-190b-5154-8433-2280855a5a97",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "88f42580-9617-57e4-89ae-0a3a8299ccf7",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 Missouri Governor",
+          "total_votes": 2803018,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "af89a501-9efb-5e2d-a0d1-5e4a3f65808e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "97fc8865-d5ee-57d5-a5c6-339489cfb65a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8bbaec4f-966e-59cb-b931-20f80f2d2020",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "01f80164-4a74-58dc-9fd0-51d7d37a7c62",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "ef90a66b-3b12-5f2b-a15f-16037161d062",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/MS-2016-202609151031.db",
+      "size": 32006144,
+      "sha256": "67d78850d0b23dd0af3d268c669984d2c7a8b81245c39cb1109ec3f6b0532693",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Mississippi President",
+          "total_votes": 1209357,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "a0fd514c-539d-5d3d-8c7d-4baea7f2fbc0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "030fea59-120d-5dcb-97b8-c365bd73a98e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b09abc37-649d-5eb4-981f-e7db9f7bcdbb",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8ba65e4d-5772-526e-b569-bda854439038",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "2d23d7ed-d460-5a8c-9e03-0da3cf6ff040",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "384d689b-4254-5d96-b6b2-5cdfb47ce748",
+              "code": "PRO",
+              "name": "Prohibition"
+            },
+            {
+              "id": "616e6f60-51ef-51ba-ae1f-6ff2323874fe",
+              "code": "ADP",
+              "name": "American Delta"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Mississippi US House",
+          "total_votes": 1183513,
+          "candidates": 17,
+          "parties": [
+            {
+              "id": "1702902b-55bc-5304-9b02-90688118c617",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "71af24fd-4816-58b1-b2a9-6e949cfb9639",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "121bdf08-a1aa-52fa-b6f2-7d4d3f764793",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2131d48b-0b32-50da-b4c2-9d23d7617e9e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b493241e-e9a3-5e6d-9965-16d1a18ae25c",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "dbd4b3f9-00de-553e-a2a2-d3ec0bae79e9",
+              "code": "NON",
+              "name": "Nonpartisan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/MT-2016-202609151031.db",
+      "size": 16691200,
+      "sha256": "11fcb25052d82edae390cf55b246b1b24479057d01d25870f79fa5b4068de334",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Montana President",
+          "total_votes": 494526,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "38fe8ab6-1863-5b51-a7d7-a0cfae261635",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d6a54dcd-4d76-55d5-8666-d9eb4df4650e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9d210427-63c9-594f-946c-0714acdb3235",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6d910d38-d1ef-545e-b218-518feba95a1f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "1e16d599-9b18-5b40-a01d-4197ef11161f",
+              "code": "ADP",
+              "name": "American Delta"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Montana US House",
+          "total_votes": 507831,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "91df459f-18f1-5436-876c-0803ad314a9e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7472b578-3c6c-5408-a18f-af39a1260bd6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f4185da4-46c3-5920-a51c-b48bfd520a0d",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 Montana Governor",
+          "total_votes": 509360,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f09b34b1-4be6-511c-b950-dedb31a8090e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "31b328e6-f92c-5069-9707-1370bd0f78b6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bc2f2069-8587-5bd6-b871-6c9bd36ba831",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/NC-2016-202609151031.db",
+      "size": 41975808,
+      "sha256": "d920db0ae092b8e3fd953a1b1283fa43da3324c0937d89cb19220150a0be68bc",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 North Carolina President",
+          "total_votes": 4741564,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "28010e7f-266d-508a-b0e9-32f9bc948eed",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6e71617c-6836-59d5-b1d7-231780598955",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "07dafeb7-2532-57e7-9333-f45804bd77b4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "896ec069-e18e-5fb6-82ab-9efe77c2dbc5",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 North Carolina US Senate",
+          "total_votes": 4691133,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0c68129c-1aee-5d84-b89d-f3be92cf7d69",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "42e82f78-7146-5520-b155-b1d18a17e312",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "742f08b0-b2b2-5a23-a8fc-94697bd2668e",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 North Carolina US House",
+          "total_votes": 4598458,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "5e19e7c5-430d-5356-bfb5-52f673d9679d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f1b25330-1de9-5c26-88ad-c52b92649de5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f973a895-7606-5fcf-ab56-bcfa1756cf22",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 North Carolina Governor",
+          "total_votes": 4711014,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2e2fd034-5154-5d3c-a32d-71c17af81d75",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e8a202c1-5f4b-5ef9-839e-8315ebf541f7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c15bff98-c903-5de3-b5d9-e544d8aedea8",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/ND-2016-202609151031.db",
+      "size": 8208384,
+      "sha256": "4c00bd5cab02927f517c3e851409ff3bb175e15489e98a85d439bddb2204dd64",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 North Dakota President",
+          "total_votes": 344360,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "567a01d7-3b88-5647-b8d3-5949df680ba9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "78e1dd16-1dbf-5740-bda0-f12cdc0a78f6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c69caadb-4623-59f4-98ef-b3b80a838785",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "de30b95b-4267-57a2-bce5-13e0a8da579e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "7c66a9ce-6516-56a6-abc5-d96848d5827f",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "3549c2d7-89e1-5d2e-b223-65d6598c7af1",
+              "code": "ADP",
+              "name": "American Delta"
+            },
+            {
+              "id": "9084596e-c0ff-5c90-a686-c53ecd0caa38",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 North Dakota US Senate",
+          "total_votes": 342501,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "29946f34-aac8-5aea-8606-dcf1467d57bd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "53386ecf-c346-5516-8b5e-4bbd7cddf54f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8875e8ff-0013-5dc3-b3fe-cda6522bb37d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b494edda-da43-5c8e-b603-2d3ead9f2b1b",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "ba481232-1c03-541e-b60b-2f2cb1d93e4f",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 North Dakota US House",
+          "total_votes": 338459,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "77302e8c-8687-5ed9-8a64-5990ede8de95",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "081926d3-e979-5531-80f0-4699bbaefe83",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "39573c8b-de8b-5040-8e66-64d9a5766584",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f502eb07-0790-5289-88e7-de9ffd24a8df",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 North Dakota Governor",
+          "total_votes": 339601,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "1cc0460c-5dd4-5444-9594-d55a86936c29",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4a4be1d0-8f6c-5bb7-b1fa-7c5b29f7fc95",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1de36897-142f-562c-811d-5858e8e8b6ed",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "da9b2224-c7ea-532e-b898-49a7b68c7862",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/NE-2016-202609151031.db",
+      "size": 11259904,
+      "sha256": "fd23595d94e17fad6338ce7c6cc1da9fd0ee3e14bd51038f3b3bb17f4cb80032",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Nebraska President",
+          "total_votes": 828176,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "f6e0f2ac-2be8-5d4b-8299-9bb6dccbcb76",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d905ee38-773d-5a0b-b6dd-c80fddc4a279",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "91b38def-10e5-5655-833e-d136a98150ef",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9517cca6-cedb-51a9-bfbc-560193053613",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Nebraska US House",
+          "total_votes": 788453,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "f959ab65-3fe0-55d9-9cc8-0967fc9d559a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "337bcb78-4046-5947-8573-9ab45ef895d8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "835068b4-e4ba-509f-a3ac-215b70a5a879",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/NH-2016-202609151031.db",
+      "size": 4337664,
+      "sha256": "19b6418fe293b1309d2aeafcb8102adfe3daafd7e49d3ac3ff3f8f33b3b508f4",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 New Hampshire President",
+          "total_votes": 744296,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "3ae38c91-0143-537b-a8f7-c94844acc136",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d75c490c-1b4d-5e19-9016-9315a0963fe1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1381d0ec-755f-5206-a191-e03ea3d80550",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "436dedb1-38cd-58c7-b2e5-a1b7b91b220f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "1bcc5999-1771-518e-8424-f7b946c9ea4f",
+              "code": "ADP",
+              "name": "American Delta"
+            },
+            {
+              "id": "ac3ab1af-e9cf-5e55-9701-e83d95b0aede",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 New Hampshire US Senate",
+          "total_votes": 739140,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "4257d878-5784-5483-a02b-9acf364f38fa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f61e9aaf-32af-5506-b07b-f15a154f192b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "49aad706-3d79-56e7-9924-d70cfade6a09",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3bc2c272-a07c-5704-a71f-0e46f7c2c0c3",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "784a60db-d43e-5731-8c3f-a14d0e95c7ae",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 New Hampshire US House",
+          "total_votes": 715844,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "0b5b3687-4074-52eb-be00-4967bc20ad73",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "d5b8b62b-b36a-51cc-9e2e-5d797d667b19",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bd843277-11b8-5e51-aa53-08db6aa622f9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8151a254-9a10-5786-b520-9359df88d2b4",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 New Hampshire Governor",
+          "total_votes": 724863,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "5fe51e4e-90fe-5c8b-866c-9659bc6534c6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f0305cb0-f888-55c5-a995-ea063b2b7490",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b7b86032-df33-5972-9f58-8b1322065f50",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "fc97a4cd-1770-5a6c-8128-4ba884abe4d3",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/NJ-2016-202609151031.db",
+      "size": 39911424,
+      "sha256": "7d9d5cc6a9ef08a3b60302bf16a38c35b738481b287f5a5e09d5b7bcb3b09add",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 New Jersey President",
+          "total_votes": 3874046,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "d56cf331-3fb0-5f09-8374-b56e2a715d4b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aef4dbb2-9e8a-5de1-8299-e81e3bf4578e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "41b489ba-72a9-5af6-b6cd-7b20fdbe2a37",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f5551055-3e10-5183-9fd8-583dd71bde4b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "091e1636-7b5d-5f8b-8cbb-502d649d8df8",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "fe0e5c5e-c8e4-51fe-9507-6254e6dee2cb",
+              "code": "SWP",
+              "name": "Socialist Workers"
+            },
+            {
+              "id": "32d07f2a-e64a-5ce0-9599-8a9d71be5c58",
+              "code": "ADP",
+              "name": "American Delta"
+            },
+            {
+              "id": "978078f4-89a8-50b3-980e-9ec56e262ba7",
+              "code": "WWP",
+              "name": "Workers World"
+            },
+            {
+              "id": "087509f5-9d88-50d4-a894-770ed451895b",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 New Jersey US House",
+          "total_votes": 3460019,
+          "candidates": 117,
+          "parties": [
+            {
+              "id": "230bbf89-e3dc-5b22-8b04-8bffe3a0f138",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c4d98119-08bb-5904-b69f-2353636baa26",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "5ac3325d-5f9f-5a99-aa54-b8154abe0665",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "93cc22a0-107f-53b3-a44f-8d6fcf60d3a5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1000fe88-2781-584c-80e9-6351fd812be9",
+              "code": "PRG",
+              "name": "Progressive"
+            },
+            {
+              "id": "88160f04-bb97-5a41-ba2d-da7f2089a0d5",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "ae6b2f79-1e5e-5a6a-8da8-b06e38a61b78",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "9f85312c-757d-5447-872a-9613c12c2e95",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "54f74283-bfd1-540a-b27f-ebb1d1e7a17f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "0383853a-82fd-5d4e-9159-de538d6ea3d4",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/NM-2016-202609151031.db",
+      "size": 22208512,
+      "sha256": "cb0a146ec25c471e0abc905a086f1f104d6b5addc239660287dc1ac6628649d6",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 New Mexico President",
+          "total_votes": 798319,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "abf14854-f679-549a-a1b0-72b854a65b1a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1f1224ce-7c3f-5cf3-898c-40c90cdfab31",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f5c6f269-b560-5446-9849-cd5ac9a147dc",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "769626cf-bad6-50c5-b532-581ba376bf1f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "66fd0601-14d9-527e-8c1a-f14ba761e235",
+              "code": "BFA",
+              "name": "Better for America"
+            },
+            {
+              "id": "3d9b83d1-91c7-529d-a707-13b2b59b8052",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "0f521382-0112-5822-b19d-941ed7f8d547",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "4b6b6b61-5c50-5983-9b9b-8d2b9576ddf5",
+              "code": "ADP",
+              "name": "American Delta"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 New Mexico US House",
+          "total_votes": 780126,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "4c9b0475-846b-50d1-9004-14de372773ba",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d38e89a2-7299-5356-9632-0fba8486bd17",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "17fd7283-0790-51be-8462-4b8cb2956bd4",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/NV-2016-202609151031.db",
+      "size": 15654912,
+      "sha256": "df01047891c108a2d891c138706014a1ea20c90a8a53debf9797cbe903cdfcd8",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Nevada President",
+          "total_votes": 1125385,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "b217db42-4743-54cf-97c4-5db391daa77b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eedebfed-4651-531e-a38a-70dcb5ff2574",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0369a6f0-8b4b-5a0a-9f26-8a7d7e3959dd",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d199f836-4d1e-55e6-8659-56be2abc44db",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "0ba44510-9c61-5799-8ac0-e0dc15e65954",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "756f95bb-2642-5262-bfc4-66916f27eef9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Nevada US Senate",
+          "total_votes": 1108294,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "ee0f8acd-9c36-53f4-8d98-524a7d71d276",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "047c931b-97ce-5f87-b49c-017493d6db75",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9f5db66d-8a5e-5f08-ac78-c4914f19622b",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "ab70dc4d-133b-50a2-bdf3-a4f044b56485",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "bad45610-729d-5225-8e07-d36cc5b8f86d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Nevada US House",
+          "total_votes": 1074116,
+          "candidates": 16,
+          "parties": [
+            {
+              "id": "206d0b2c-36a0-5718-b1d2-eed29778d07b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4ee530ca-bbb6-5ddb-ac18-5c092c385859",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bf27b78b-c4b5-58ce-8cad-37f2a2a03151",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "0ccd962b-b19d-5298-a439-c6634385d1d1",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "32dc0b2f-b553-58d6-b5af-5c0a734100fc",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/NY-2016-202609151031.db",
+      "size": 94257152,
+      "sha256": "e42798fd73c74d98605f191bec413a6d2feb19ea3f0ebc610c2fb386b3565969",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 New York President",
+          "total_votes": 7720570,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "7750f8c9-e8a4-5fbc-bb17-935c0d6d3d44",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "26557667-8542-50ad-8bad-6404b3e95ee7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c7917a61-8662-58be-9b44-ca509e4f5d17",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3bd0f6e5-a94a-5f13-ae7c-f47a1d57bfb5",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c052928d-f88b-55fe-924b-46eea9b343c8",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 New York US Senate",
+          "total_votes": 7396364,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "78a29e45-377b-51a7-b9e6-dc8f555f23ca",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ddb505c2-343f-56fc-b357-543db278e7ae",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a964d35a-4ae2-5c6d-a4da-985e7d49ddea",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4211e4be-7b07-5bd6-806b-5e232c0aae34",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "d2cca9f5-eb92-5b9a-9aaa-2b176896ac27",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 New York US House",
+          "total_votes": 7304900,
+          "candidates": 203,
+          "parties": [
+            {
+              "id": "8d024922-765b-57f5-b315-452b09a6dc79",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b675b2d0-9d99-5774-aec2-4b2391f5b3b8",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "3e790b6c-944e-51f4-aad3-c3def860b482",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "a4a4cce0-899e-5a4c-a153-16c7f2c18f07",
+              "code": "WFP",
+              "name": "Working Families"
+            },
+            {
+              "id": "b13b252f-bb8a-54ca-9056-7d53b75eb611",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "f00f65f7-e252-5330-85bf-a8196cdf6007",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2073dd80-4b0d-5eca-9314-7917b1b68bc5",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "bdb5e7ae-51e7-5273-9bfd-e00b206ae5c8",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "689b00ed-b873-510c-ae15-5051d6e51bf8",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/OH-2016-202609151031.db",
+      "size": 56492032,
+      "sha256": "cea0ce591fa7f174c70a05cb37d8af7e197d38650d73b8a3f5f6d7dcc7826c61",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Ohio President",
+          "total_votes": 5480173,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "e7f9db2d-02e4-5e27-b775-6636fcab1bf0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f1a7484c-e205-5f35-92be-be397cf0f331",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e2a7c27d-a556-56ea-bbf8-7671763c9f0e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f0a13015-dbe4-5267-8639-1195932bab76",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "18171660-180c-52d5-bcf0-3c5e4bc94385",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Ohio US Senate",
+          "total_votes": 5374053,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "2c7257bd-502a-5b59-a0e5-b9bf315ed005",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bcee0aff-0099-50ff-a36d-a3abc96a5f8c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eaa9f661-99f7-5b3a-847e-3ac90217439e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "699e1224-8442-5f2e-a93a-df32f3b325cb",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Ohio US House",
+          "total_votes": 5218355,
+          "candidates": 43,
+          "parties": [
+            {
+              "id": "7a249c91-d4f4-5665-8280-c5f8b1bf38b3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b425122a-5c42-58ba-8b3e-392b18e15357",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0f4c7126-057b-525c-a90f-8f662a3bfd71",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "ae043364-bf27-5a99-afca-c297436c2746",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "3881b6c8-e581-5076-9b9d-9c2878963aef",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/OK-2016-202609151031.db",
+      "size": 26660864,
+      "sha256": "b4496870670874675b24a61ebd746e17fe11952dc784c1ccc7ff80ebaa04caa5",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Oklahoma President",
+          "total_votes": 1452992,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "50b88eb6-9b06-5f8d-9324-8c8b070488f7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8e4f582b-5dc6-5878-9ed6-369c73de9952",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0045f82c-8703-5186-ba1f-2c353ec8f6eb",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Oklahoma US Senate",
+          "total_votes": 1448047,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "66ddc648-e84b-5dd1-b42d-21c3c6f13389",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bb90ffdd-5388-53a4-bcd6-8c2b64159a72",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "71a4a2e4-a098-5382-93e8-a22403315b14",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "30b6de49-6562-52f7-874d-b5af8490bd3b",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Oklahoma US House",
+          "total_votes": 1133244,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "a775fea6-3317-525e-87dd-a7bf5df53d34",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "9d1a88aa-8f0c-5012-8832-93d498acf922",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "34b43fe7-bdd6-5fbb-8faf-12e68a2239d3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "67ccb215-1f12-55c9-9bb6-5230ca6d30be",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/OR-2016-202609151031.db",
+      "size": 26669056,
+      "sha256": "6a46e97d0cfa9dfcb150a1f3ba8f28a149bfa1df1b9488c10c629e90b4d7e2ca",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Oregon President",
+          "total_votes": 2001336,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "695a846b-5974-52f5-a332-eb16af70ca31",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5a8ce2eb-0c03-5a31-b98e-9c91926de8af",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0b61b704-2338-546a-b4d0-97638bfb4e93",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "19a9b46d-f852-5345-88a8-a5575a13934f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4ad729f4-4199-5405-a91b-d3730da2e9d6",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Oregon US Senate",
+          "total_votes": 1952478,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "ffd82716-a7d2-5ccf-9863-111e3a7d2ffc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cd04457c-a648-517d-9fb1-b08ecc0227d1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "849cfb9b-d41c-595a-8d18-7f22d830eaca",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bba369f6-8a17-5487-958d-968e2a28b79f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c123cc1e-33e4-5c0a-97e7-eb581e3ce1b5",
+              "code": "WFP",
+              "name": "Working Families"
+            },
+            {
+              "id": "9255174d-7606-5085-be8e-58371d9e42a6",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "1db0e9a6-977e-5c56-ada2-c102808c7f72",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Oregon US House",
+          "total_votes": 1901186,
+          "candidates": 20,
+          "parties": [
+            {
+              "id": "6028e2e6-fa63-5d1c-a643-ae9be3199830",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "989c5e77-920e-5069-85f7-f61de066a153",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "348f7388-7a09-55b7-afda-6b2ad8057c19",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dd79f0e1-68b0-5c04-b67d-380af7306c10",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "6bd47a37-fb22-53e8-8742-93d776387bdd",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a9ee5223-a7d5-5cfb-996d-c49ea84d3637",
+              "code": "PRG",
+              "name": "Progressive"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 Oregon Governor",
+          "total_votes": 1946046,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "25d93a18-1535-589c-a453-5d96b79d2bd3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c60c705f-7a81-50ba-ba2a-39c1d3e7f61b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f8951bd3-e1cd-5cb5-9cc5-a70c84fe5480",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "019668cd-16fe-5d3f-a735-a1e3cf3282d2",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "dca6a636-4083-5ffb-b451-42aed02d3649",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "979cab21-b2ac-537f-82d9-71ee2093e0b0",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/PA-2016-202609151031.db",
+      "size": 59174912,
+      "sha256": "1925f523c68837474fce844ecf29e464fc860e883cf6106588c793732ddb2bbd",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Pennsylvania President",
+          "total_votes": 6115691,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "5322810f-0599-5509-abbc-f2739a742ab5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a7ea08b0-d0e4-50ff-b4f9-00457e1ea715",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7c315167-5e31-5f7f-a661-fe8886e0528e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9e739eec-38f6-5db3-bf0e-1a5485110012",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9695234c-cd92-5452-93db-76d8c46e42e4",
+              "code": "CON",
+              "name": "Conservative"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Pennsylvania US Senate",
+          "total_votes": 6052373,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d3de0e8d-c65f-594a-9ea0-dd24693d0506",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7708830f-87de-53b2-9f1c-d363f0b473ad",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6d6b5f25-9f1d-5440-b07d-f7f91b7992f9",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Pennsylvania US House",
+          "total_votes": 5743976,
+          "candidates": 35,
+          "parties": [
+            {
+              "id": "76b10492-a3b6-52f9-bd7e-981322d11081",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7f08bb87-c0ab-53a4-abdd-a5bdfc3bd06d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8386c0ce-a8b4-545c-8897-e9a94b5defd0",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/RI-2016-202609151031.db",
+      "size": 3735552,
+      "sha256": "40721be3d0b37c629ca9730b2022a34e13b7cf2ffd701beccc8931e39aa78567",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Rhode Island President",
+          "total_votes": 464144,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "80596cd6-9b95-59b8-85d0-fcec912de7fa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "12eba811-0df3-54e1-ab34-2106dd3c258f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "90650720-ed23-5c23-8b4f-3d5a010aa046",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e683f3df-dc66-59b5-866f-05b395523c41",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "adad5209-2a9c-5a01-9a86-fe57075745c3",
+              "code": "ADP",
+              "name": "American Delta"
+            },
+            {
+              "id": "9ad7f403-661f-5382-8bb8-02ec67baf851",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Rhode Island US House",
+          "total_votes": 429595,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "5a24b497-08f5-54e7-94a8-da90e260118a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "522a6d58-ecf5-5aee-9855-dfeecf5ae264",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4c154b80-82ec-5f65-8671-80e9b5fe976b",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/SC-2016-202609151031.db",
+      "size": 28364800,
+      "sha256": "11c408e276c236aec6320ca76306696b82c3b2007cc44d78ac30959f0e0ab242",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 South Carolina President",
+          "total_votes": 2103027,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "d2108040-a2be-5933-a394-52ef775e5941",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b48a8e3c-81d2-5cfb-9bf0-f16d94b31bb3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b182462b-9656-5f86-84a2-cb9ba9225ac7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "37ee86d2-addf-567a-ba9a-a58d83923254",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "fb979205-10b9-596b-9fe1-ff87d1814e27",
+              "code": "IDP",
+              "name": "Independence"
+            },
+            {
+              "id": "f2513466-2b18-5070-bdc2-239b112760c2",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "0c3e7b88-97ad-539d-8a89-ce251c8fae05",
+              "code": "AMR",
+              "name": "American"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 South Carolina US Senate",
+          "total_votes": 2049893,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "8872a0f9-39ae-5b31-a145-2b77ba95de7a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b703c4de-f9cd-5fdd-a83c-1a8054a23079",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b076cb19-cce7-5b86-b85f-374dade01525",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "503d4eba-3cb0-56ce-9fce-d2430fcdd0fc",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "b5635427-5ba2-5d71-98b5-0306283ff238",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 South Carolina US House",
+          "total_votes": 2016786,
+          "candidates": 28,
+          "parties": [
+            {
+              "id": "e61c8542-dd68-548e-86c5-4fde973ba237",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "1fea0aa3-c45c-527e-8db3-06c1558e28c8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "55a7c4f5-c428-5d9c-8ea7-b9c3c46f5863",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f42057dc-7135-52bb-bac0-49672695ebba",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "25a5f287-f377-5500-abd9-4f3bceb18c28",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "59aebf72-e356-55f0-8845-dcb92c4e898f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "28fb1043-11bb-5353-8777-b42a848d0274",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/SD-2016-202609151031.db",
+      "size": 13545472,
+      "sha256": "84d727433a208e8037e1ff441bee9c4bda4caedcb20e9eb9082854069264899a",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 South Dakota President",
+          "total_votes": 370111,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e52e664e-2fe0-5142-9892-70107734fe87",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "accff8d8-df0f-5661-a977-5a278d0e952d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e19f44cf-8ff7-5c2e-b4de-4e61d5546fba",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "345c4d8f-2cbe-5bbc-8606-181f37820b42",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 South Dakota US Senate",
+          "total_votes": 369674,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "4d10f4a0-3bec-54f4-a280-851d0fe085a3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3df10e0f-5dd7-5140-9fa8-83bd5cc8f858",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 South Dakota US House",
+          "total_votes": 369991,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "d3a519ec-18ca-5269-ba0a-31d287913d5b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7f8692be-c986-596c-bf2a-27e70b22c8b4",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/TN-2016-202609151031.db",
+      "size": 45924352,
+      "sha256": "5099e84d7ad70f1ea2f9d3bf780f05080987fa29c5125796f66e19ddc36077a5",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Tennessee President",
+          "total_votes": 2508027,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "a0626366-c728-533d-a043-f7af1693e65e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "009266c9-6e8d-52c5-b21f-74af9b8e302c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0f9c2fd8-964e-5b5c-a6e1-b5d842129ab3",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "dab03ef6-bdcb-51e9-8300-b3115e36de2c",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Tennessee US House",
+          "total_votes": 2391061,
+          "candidates": 31,
+          "parties": [
+            {
+              "id": "7236097a-d33a-5815-980b-b1c8ae99852c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c09e334e-3b39-52d6-ac36-c944ad4a24e5",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "ddba081c-dcea-559f-9151-aefe0ce7120f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "077d10fc-4de6-528a-982a-5dd89ac62fd5",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/TX-2016-202609151031.db",
+      "size": 104185856,
+      "sha256": "7577ac5bf332e9af26177c99fdf32e6d0acd4e5729d032250e58671620c7396b",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Texas President",
+          "total_votes": 8983408,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "366a5ccc-1352-5fa5-bd6e-d3362f8c5c6b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "918cec37-21b2-5823-bfa7-8f18bbc67b05",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4ee737a5-0cd6-5e0e-a957-c9cd3f1aa281",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f651cfb1-5f91-5873-95cb-2823321b3749",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "db564259-c578-55de-bc26-bb9982b13faa",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Texas US House",
+          "total_votes": 8290392,
+          "candidates": 103,
+          "parties": [
+            {
+              "id": "50d822bf-6da5-5981-bdad-4e5002146de8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d833c363-6ab0-52a3-b03b-c9213bb3b1f2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b1189b59-9e67-5b89-9487-5888985e8e4e",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "f81b6bf1-0046-550f-ae04-c531169f21db",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3655ed0e-1c7b-58b5-83cc-8cddeddda4e4",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/UT-2016-202609151031.db",
+      "size": 25915392,
+      "sha256": "23d2e1d74d5e5e0797dc2aaceb11ebc5905f0ccc5f96917d31d880773e2db7dd",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Utah President",
+          "total_votes": 1131375,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "4c4cd81b-5f4a-5ce6-87fe-330f6dce2a16",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "666bc503-fe86-55b5-a94b-a435a1442589",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "529a1091-b388-535f-b4c9-e4fb4ea58c9f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ea6adceb-6abc-5e0a-b6f1-2551557f7ef9",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "ef91553b-f3b3-56e7-9e72-b5b8bec2f5bb",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "03d74b3f-65c0-5116-af65-ac00ff9d236c",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Utah US Senate",
+          "total_votes": 1115608,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "9afde60a-8919-571a-90fc-6950fc992d86",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7b8c11d6-5da0-5ede-b53e-2d751d105565",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ef6de321-2fb7-55e2-a374-fec857926937",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "af02a513-9a3d-51bf-b302-cfc16e6f9a06",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Utah US House",
+          "total_votes": 1116337,
+          "candidates": 17,
+          "parties": [
+            {
+              "id": "4dd655f3-0bfb-5941-bcf9-63bbe1873b19",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8183b7b2-7db0-5833-8d0b-dc8964672dbf",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "165df4ac-c06d-5473-a761-a45efc80fe36",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6d0581d7-3df5-5e04-b88a-d34960bd7ab6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "520dfe42-af23-5713-adfa-65da6b353206",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "639899d6-56ef-5247-8e66-a80ea30f1b55",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "f6c782be-c15f-5204-a3bc-e740c98b347e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 Utah Governor",
+          "total_votes": 1124938,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "40984b4b-3861-5a9b-94d8-071f997b16cc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e95b5162-f3c5-5491-b9ef-d8989d388618",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "347f5ed9-2185-5822-a3ae-8bb2ccc9427e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d9d31913-e813-5ad3-bac4-a720c1d2ac33",
+              "code": "AMR",
+              "name": "American"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/VA-2016-202609151031.db",
+      "size": 51003392,
+      "sha256": "cb1ad311c0c2150046c867107cb6de2f1c58c38807a46a5f204ee8ef5d894eab",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Virginia President",
+          "total_votes": 3982752,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "7d347d47-d4b2-517a-9e66-80147859ca60",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3c8a7ded-910b-5cd7-9764-e0c799e64009",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3ed48486-7d23-55bb-9e1e-09a94b03e502",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "feeff8aa-4d2d-513c-8920-859c2f9f0053",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "900cf3c1-ad96-54f0-b173-b3e91370bcff",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9ed4f469-e5ba-5bf0-9a12-1407dbe8f69b",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Virginia US House",
+          "total_votes": 3782248,
+          "candidates": 35,
+          "parties": [
+            {
+              "id": "0dac4a23-7fe2-5ac4-ab5e-a9958dbf8b52",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fc063784-4e4e-5d18-b069-05d61245935c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f65796a9-3e78-54cc-ad5d-30a80ab8233d",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "e56c1c0c-e616-556d-8b54-12c45d35f4b3",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/VT-2016-202609151031.db",
+      "size": 2961408,
+      "sha256": "1bfecdcb91974429110ae667510378966bf8d41e9e01509b026182a5350ce6f5",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Vermont President",
+          "total_votes": 315067,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "1d7e84fe-f191-593b-885b-1f57652a9e13",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5d09c223-ae09-5376-aaed-57cc9e2179cb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1ff60266-0ffc-536b-b484-030da0c58204",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "0ed069e4-da14-519a-bc5b-f145c593828b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "9c85aa89-69dd-512d-a7e2-3b89fb7ca8c2",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "3d5207f1-edd2-551e-93f5-ce51303a3849",
+              "code": "LUP",
+              "name": "Liberty Union"
+            },
+            {
+              "id": "28e41291-299a-5aa0-b206-329053349ad0",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Vermont US Senate",
+          "total_votes": 313809,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "eec95659-3dec-59ec-abfe-11ac05178b2c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9d3f935c-a73a-5e94-bf43-d70757f60e04",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4c45dcb7-6b55-5a88-a69f-19285470b7f5",
+              "code": "USM",
+              "name": "United States Marijuana"
+            },
+            {
+              "id": "00a34b79-c539-58ec-bf65-0ccebbf8a1b5",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "bb0ecde3-c812-56de-968f-e3a21a573c05",
+              "code": "LUP",
+              "name": "Liberty Union"
+            },
+            {
+              "id": "a826ed9e-e529-5bbe-82a3-5c1495e3f80f",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Vermont US House",
+          "total_votes": 295334,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "48a0986e-aae9-57ad-97aa-18ed4b8f6817",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7e9a2310-b9f7-5fd6-8987-dbbb11ede1cc",
+              "code": "LUP",
+              "name": "Liberty Union"
+            },
+            {
+              "id": "21534cf1-77bd-57e9-94e4-299868f5af16",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 Vermont Governor",
+          "total_votes": 315295,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "70a9154a-fda8-5ed4-b408-3d6a6256a298",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7e77ef1d-b656-5a0a-b21c-3fcec5c4c857",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b6b072ff-7e99-5397-9c0a-24f4384b6b7a",
+              "code": "LUP",
+              "name": "Liberty Union"
+            },
+            {
+              "id": "bda6dbfe-3867-5527-8cfe-a2005f9660b5",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/WA-2016-202609151031.db",
+      "size": 73990144,
+      "sha256": "24e0d0362ffcf56d1d8a2f5ae3349568f652ae7e07b9cb57ebc3ab6b36d9aef6",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Washington President",
+          "total_votes": 3209214,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "d56b785e-7244-54aa-9662-326c5e323c55",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3b6e11f8-1afa-581d-98c2-29b515c1faa1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e02493a1-8ecf-5f22-9448-f7b58d4977b9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f4fe21a7-2667-5855-af3e-b24c3e952ed7",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "bcc5e0e3-5137-53c4-a0ba-19f731723994",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "fe444f8f-5d73-5039-aa13-3d66defcafd9",
+              "code": "SWP",
+              "name": "Socialist Workers"
+            },
+            {
+              "id": "967189bd-43f8-5df0-863d-7aa41cdc130b",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Washington US Senate",
+          "total_votes": 3243317,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "45c502b3-1c98-5d32-b5c8-57c921d13cba",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4c4577d2-3c26-57b9-a1a4-86a7e362ac10",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Washington US House",
+          "total_votes": 3136499,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "dad5926e-b919-5799-af7b-fe70e3dd8475",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e4bbc6f2-4ed6-56f5-8df9-e5c81bc86b2a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1e6e03ad-dc58-5afe-8544-9e19b8ad2849",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 Washington Governor",
+          "total_votes": 3236866,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "4620c150-4dca-5114-9f59-35526751c637",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9225da2e-0d1b-57fc-8de7-75c356d4a5a5",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/WI-2016-202609151031.db",
+      "size": 58527744,
+      "sha256": "e5bfb458713fddfcc91b2689783fa7f7a000e3c01ad6a78171b75a8ac95d9818",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Wisconsin President",
+          "total_votes": 2976150,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "017df983-b526-5296-b442-3e1ca32e50db",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d4baaddb-864c-5f1d-8912-a9d89f39c476",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e891d449-962e-5c37-968b-7eec4d76c7eb",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "930ba490-2efc-50df-94ec-053677d86fdc",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "29da96de-2c8d-52b1-907a-13263b9011a6",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "588c891a-f514-5792-b895-dc6443906f4b",
+              "code": "WWP",
+              "name": "Workers World"
+            },
+            {
+              "id": "f9741e92-ac84-56e8-8a91-b933a106feca",
+              "code": "ADP",
+              "name": "American Delta"
+            },
+            {
+              "id": "b9ffb19b-b2f2-50e0-8f6a-19311551c635",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2016 Wisconsin US Senate",
+          "total_votes": 2948741,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "0d604528-7f9b-580e-ad5a-e9c482dc4636",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a7d2e2ba-e3e8-5c69-bb73-dd80d747f9d7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "64e9f341-78c5-5652-a5f2-72ee12e0b92f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "64715ffa-3677-52f3-83cf-4c28ee3e8d94",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Wisconsin US House",
+          "total_votes": 2768094,
+          "candidates": 23,
+          "parties": [
+            {
+              "id": "ea494e8c-0ea1-518c-a827-002c36817ccd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "038fc928-ec2c-5e47-b873-01b9080a3673",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9aed2d34-84ca-5fdd-9353-8fc645099c10",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "f4765385-e992-5239-8f87-28b694093c8e",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "cd906c5a-f0ca-592e-9660-51e42bf56b4e",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/WV-2016-202609151031.db",
+      "size": 32043008,
+      "sha256": "ec979e43dc1c7e8f495c085ed588f67975cbcf7e8365253e27a332e56cf38d10",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 West Virginia President",
+          "total_votes": 713049,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "a5a27954-e244-5ed7-92fd-105057e662b3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "388c0fbf-e0f7-544d-bafd-9f4980dd6af3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "67d26bad-18d6-5116-b025-ed8d5141e5e9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c6469bf9-0833-5bbc-ac64-26f3db4635fa",
+              "code": "MTN",
+              "name": "Mountain"
+            },
+            {
+              "id": "e63fc0ee-0928-5f51-887e-31b7d1a50598",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 West Virginia US House",
+          "total_votes": 686321,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "4922452b-d412-5b62-a7d9-7dc6fbfa6137",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "176d76a9-8cf4-5d36-8676-b040c1dfbd42",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4a00a710-50c5-5654-ba96-da84d3e94219",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2016 West Virginia Governor",
+          "total_votes": 713855,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "1ec468ff-5cef-505e-873b-7084808393ba",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "95532192-0470-5045-bab0-0c1b0ed35aa6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d3695148-4a54-5b5f-97b9-5d482b664cdc",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "13a91f50-eb7f-5ac8-a3aa-977df87cb368",
+              "code": "MTN",
+              "name": "Mountain"
+            },
+            {
+              "id": "824b1ba7-cbb5-579a-9393-d5272baeca6e",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2016.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2016/WY-2016-202609151031.db",
+      "size": 9318400,
+      "sha256": "610d28b4d59aa538c342a167e1ec886ce562ee83a14d9a9f20fc5c6189c34da5",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2016 Wyoming President",
+          "total_votes": 255849,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "02ff2571-96dd-5272-a5ce-4be3f404a0c7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "badba6b5-6671-5a24-a8a6-01e0910d7a41",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "50dd3cec-f6ac-50f6-b732-8adfb6143351",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9abd7faf-fcb8-5b8a-8e3a-41bb745472a5",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "174a5695-41fa-5249-8861-c611d4b31c3f",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "33500f36-3cde-58ab-93f4-4c2053e78728",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4250decd-c656-5772-8e7c-303d254a4fba",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2016 Wyoming US House",
+          "total_votes": 251776,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "8bc80800-8537-5239-810d-21ec7e1f48e3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c842d070-9f0c-506c-bfc9-989fb3bac832",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6ba81808-3959-5bf5-a657-696343ba0217",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9ae78f99-35b3-5b81-bd61-a7dae32b9f57",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "2174ab5a-0d67-553f-af64-09ec5fff4e88",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

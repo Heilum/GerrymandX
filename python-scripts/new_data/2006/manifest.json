@@ -1,0 +1,2236 @@
+{
+  "year": 2006,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:58+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2006",
+  "national": {
+    "db": "National-2006.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2006/National-2006-202609151031.db",
+    "size": 2822144,
+    "sha256": "296c6758998b574bbdf7d8ef5d51ffdc7c68ce8af7e1fb4a4111d80851146f5c"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/AL-2006-202609151031.db",
+      "size": 913408,
+      "sha256": "e41c329dc88d6d7ec9f65388364104caaf25363d2267d56b286eedfaaebac52b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Alabama Governor",
+          "total_votes": 1250401,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5838d77f-5d7a-5095-8b63-6e3116b4e2a6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "90dfdf1c-e2d9-5542-92d6-7407cba0d97d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "16410ae8-e354-5dc2-b3ae-fee309977968",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/AR-2006-202609151031.db",
+      "size": 1011712,
+      "sha256": "cf91903b51c50f9f50a61669c7a779d5ae922ff57962008b4a9fafd762db859f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Arkansas Governor",
+          "total_votes": 774680,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1d81f487-de1f-5929-8c11-87a1810703c5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8c3c7a40-257f-5776-9813-6f27e0f8a67a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f47c6118-77cb-5553-bf30-738520c96104",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/AZ-2006-202609151031.db",
+      "size": 458752,
+      "sha256": "79ca09d524b0f0f1fd941d83ed7cd2ac6c18b81dc14bdfcf2ca4a0c2c8667cf0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Arizona US Senate",
+          "total_votes": 1526782,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a7115097-c5fb-5744-af48-4a19311f69cd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0a3e4c05-96cb-51f6-bfc0-4d6c07befdb9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "283462c6-6066-5efd-a975-39c1f2fd218e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Arizona Governor",
+          "total_votes": 1533645,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7c7421db-52dd-5cee-b871-d2dc696d3060",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "464ac264-1790-51c1-8c95-58a60044398b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e41b50ed-a9a7-55f0-addb-a672e65eba55",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/CA-2006-202609151031.db",
+      "size": 1462272,
+      "sha256": "965f33f7051a7b788b51bc9e30ce0aa63bd8d76cc6a33dc8f5a18aff5bdb1992",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 California US Senate",
+          "total_votes": 8541476,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "03004b85-cd57-598f-8ec3-b0e6aaeb9424",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "39702a0d-650d-531c-927c-e62f7efd6128",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a2d5344b-81d4-5c9a-83d6-71d7ad4c44c0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 California Governor",
+          "total_votes": 8679416,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fd4193ef-3c8f-5ee3-b293-58a8b540f3e1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bf427763-8e44-5545-b63e-4ac407a6d530",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "10f386e7-bbf5-527a-90c1-84c851b756e9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/CO-2006-202609151031.db",
+      "size": 851968,
+      "sha256": "411ab3f942b8bdd6bb9583c52a9f7bca08947b1a56c6a22a2a0374a52dea4fcb",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Colorado Governor",
+          "total_votes": 1558387,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0c092568-d399-5ef4-a98c-7479a1f11d0b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fccb6935-d5d6-5ec2-9fac-b10e25796b1f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "77ec4978-3d6a-5ef5-8df1-2580d4c1d250",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/CT-2006-202609151031.db",
+      "size": 204800,
+      "sha256": "e6b7d3709e3784f01414aa12d4a34cabdf93baa18ea438e553342f1c5543be97",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Connecticut US Senate",
+          "total_votes": 1134697,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d3d483ce-2d59-57a8-b392-aa72266b94bf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7d9ae036-b948-52d4-b567-6e776868f99b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "694dcb3c-c58c-59c6-a4a7-fc50a1a6064a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Connecticut Governor",
+          "total_votes": 1123412,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "613acfd8-bd18-5095-8d9a-89010260a745",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "177b11ce-9821-5c11-add1-4e5a48df97fa",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7e5fa029-e63e-571a-b5f9-3bd7452da6b0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/DE-2006-202609151031.db",
+      "size": 147456,
+      "sha256": "f0cf315fcf1f1bed45d90e607d07775db1accc36e5769c5aa29a81a2b57d0bc0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Delaware US Senate",
+          "total_votes": 254099,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ce627124-eb4a-5e03-8a33-ba646d0f6f93",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "09273240-e324-55d3-982e-e79316ae1947",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ca9c2515-033c-5131-b5e3-18320fa41ac1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/FL-2006-202609151031.db",
+      "size": 1036288,
+      "sha256": "0e4fabc498ce2bf7400480c331983b9773da8a19cf134e17b20882aec5cd29b3",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Florida US Senate",
+          "total_votes": 4793534,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d17b6b04-9d60-5588-abc7-b17c07cbbd98",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fe8f84cc-0ed0-5bbb-b8ea-56ac2dcc4796",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "731ac461-ca24-57ba-a3b6-55e5511a938d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Florida Governor",
+          "total_votes": 4829270,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3306dd09-e5e0-57e7-8f8c-154ab5d264a6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "11a97148-664b-5270-b153-baef328dd2a5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5f0d977f-16d8-5eac-bd32-500e6bcd5c69",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/GA-2006-202609151031.db",
+      "size": 1691648,
+      "sha256": "cf7240b8a30a08996f0857c9c89d4c252d35c8efe0f72fbcdc1f186542c63178",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Georgia Governor",
+          "total_votes": 2122258,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e38eea81-eb0c-552f-bf27-8588bdc965bc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3a1407a4-ed3f-55b6-848b-ee789dea4339",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "304b07f1-4176-5ccb-8f75-a21c1289ed37",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/HI-2006-202609151031.db",
+      "size": 204800,
+      "sha256": "dfac975ff57fac1156c6bbb7134fdd51843452acc077767ed35ddde75cb2ec01",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Hawaii US Senate",
+          "total_votes": 342606,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fd8a204a-b76b-5976-aaa3-4e8da8ac85cf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f516faa3-25c8-5a43-a0d7-69ba22d3a3f1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b1478f71-a239-5efa-bacb-1a8945dc237d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Hawaii Governor",
+          "total_votes": 344315,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9d5f7bd6-95eb-5c12-857c-cb25bdc47094",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dfab090a-2544-56fd-ae3b-7c7ef8c5a9a1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "07e28559-0a75-512a-8be2-b321edbf69b7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/IA-2006-202609151031.db",
+      "size": 557056,
+      "sha256": "09a11874481c76bf465e5d40e52984ec81c0c65a0c312fb1d9c1216c1c28adf6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Iowa Governor",
+          "total_votes": 1053255,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "24cf3277-faa6-5fe8-80f9-81084f3bedb8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ed5ade47-e5ae-5788-b333-5a0cb5f36a02",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "102d48e9-24a3-53f4-9ea0-482c03429cbf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/ID-2006-202609151031.db",
+      "size": 819200,
+      "sha256": "1efd8dab231c6ed9f3a872f9173c629911aa96ea15a2f9dc4ebffff760fff6e5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Idaho Governor",
+          "total_votes": 450832,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6199e04b-b8cb-5276-b8f2-8de5d1db9c5b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "40242517-2d21-51c4-8d18-495c4d853b52",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "834ee317-02b1-5aab-9681-365187ae525c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/IL-2006-202609151031.db",
+      "size": 901120,
+      "sha256": "69bf50bdb1164772b8ba76732b671ad1b032db7dc4fb2c192290ea9972072299",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Illinois Governor",
+          "total_votes": 3487989,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "71cf0979-ed89-5a66-bce6-3db326eaaea2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "07d6de79-7cd9-5189-b80b-ac831a60f886",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3c7520b8-bdc7-5e3a-8622-876451d8b12e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/IN-2006-202609151031.db",
+      "size": 626688,
+      "sha256": "2a50c60360a79ca6a6d3682e603a95d6e9c2e9c1eb9c8494e81e9aedc5596255",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Indiana US Senate",
+          "total_votes": 1341111,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "593d7c3a-0525-5ca6-b5b9-516ecc92d8f7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "202a1b54-3624-55b2-8048-e02161f31b3c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/KS-2006-202609151031.db",
+      "size": 557056,
+      "sha256": "b662f05989acfc25cfb853b97695631d12d62f0c9d7ce8df22fb6c9d4aa1c448",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Kansas Governor",
+          "total_votes": 849693,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d51fc587-f068-57b8-b507-25f7245ca387",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f22036a5-b394-5d55-afe0-be60d4c267d5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fc5727f2-8851-58a0-94b2-bb1af6938964",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/MA-2006-202609151031.db",
+      "size": 344064,
+      "sha256": "3c82836709b208c60fa7a699120b42c7cd05a87f49bff4e1ad0d933b2d78ac7b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Massachusetts US Senate",
+          "total_votes": 2165490,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0e852a90-17b1-5b13-ab18-20cac6dde049",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0ac88975-926d-5ff2-81a8-a5015d5f4621",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bff11609-c931-544f-870b-1be27bb5bea7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Massachusetts Governor",
+          "total_votes": 2219779,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f2d376e6-be43-5986-9d0f-69e42d860502",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b4b55703-b937-55b4-adc4-4110397e280d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f4fba6c4-9b1e-5a4b-827f-3bc5e47f6c5d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/MD-2006-202609151031.db",
+      "size": 520192,
+      "sha256": "e98ea51e6c23eb1e76a344deff6a490f4656a5d7d5aeb5d1ecc74fa4a3ec8383",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Maryland US Senate",
+          "total_votes": 1781139,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0201b0a8-a3ca-5a5e-b468-8d66877c2417",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a9a39177-7e9f-534e-b942-1f69e46072da",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "051e34e5-70ab-5e88-a428-a18ef1169466",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Maryland Governor",
+          "total_votes": 1788316,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cec58983-b41a-5609-95d9-fcdf5214dcc9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d2fe1620-d515-5e03-9a15-ca826be6d127",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "48cb1258-071e-561e-9b1c-13546efbb2b6",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/ME-2006-202609151031.db",
+      "size": 458752,
+      "sha256": "3a739935dd3ec5377e50396c411b724d448a00eff3c85f53185e18920c292019",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Maine US Senate",
+          "total_votes": 543981,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3aaadc30-3ab9-53db-b623-9a9574dd0890",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e463be11-a108-57b1-b4ef-04b1f14539d1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "05158850-8039-5adf-8d81-12efcffb3fbb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Maine Governor",
+          "total_votes": 550865,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3b870889-f15a-56e1-b6ea-c5b2ccc6d721",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cd6a580d-db8c-58e3-a682-4cbd3c9dba67",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "88672693-bf2c-5b31-b1ad-8eab62099b67",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/MI-2006-202609151031.db",
+      "size": 864256,
+      "sha256": "44c051d5a32a38bbd76a8cf147ba861e293ebd1b38fccc14b4413a1a918a008a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Michigan US Senate",
+          "total_votes": 3780142,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ee587471-8f83-5f1a-a691-1e986027dde5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3c14572c-70e6-5988-90d0-7cc4633275fd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6b6b5c15-8602-5fb4-a04a-2de403c52f3a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Michigan Governor",
+          "total_votes": 3801256,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a3103400-c8e4-5772-8da9-33bd1c468fb6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "763eefc8-d0e4-56f4-90f0-a0a6f3e3be60",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "18a992bb-0f7d-5bb6-a514-8852c41fd703",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/MN-2006-202609151031.db",
+      "size": 892928,
+      "sha256": "a377f9bf02a15430c939e12dc66442e614c99f6e21772047ea631ce38526ae91",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Minnesota US Senate",
+          "total_votes": 2202772,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d7b47ff4-d769-5c33-9555-4a47545d656d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f431892c-01ed-54ed-ad0b-218489c28c90",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7a649436-e48c-5fdb-af1f-d54c654ad88d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Minnesota Governor",
+          "total_votes": 2202937,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "38bd9951-1552-5bc4-a890-856c01d1a443",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "91674c4a-e625-5f6e-ba0c-398ffc8b3d7d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d2a29e19-bdb1-593f-98dd-123037a90f1c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/MO-2006-202609151031.db",
+      "size": 966656,
+      "sha256": "1c77d814bc913d4478a9e95f8394b2c562cc3911f56836ea3c8fdb19ba182f6c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Missouri US Senate",
+          "total_votes": 2031480,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "24754323-46cb-5985-ae46-7e1286c88925",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2ee783cf-58e3-51a1-b26f-5f5aa865d98a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cf8e77d9-4ea9-5a26-987d-2412589497db",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/MS-2006-202609151031.db",
+      "size": 774144,
+      "sha256": "7d0b9a18471c1f53f35a8da55a8298e3b174400435936e7e29e49c8481a95969",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Mississippi US Senate",
+          "total_votes": 610921,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f2d635db-5360-5f2b-a6ac-0090030f5a24",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "44c8eb23-8a71-5ae8-84ee-43301d35c903",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b56f0472-f194-5bd6-9429-4a5a6f99341c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/MT-2006-202609151031.db",
+      "size": 1003520,
+      "sha256": "aa492ec3584b8761be65cf9269e4f64445bab6a14dd6832c94c687bc77f1d410",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Montana US Senate",
+          "total_votes": 406505,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2bb463a4-2917-5b04-8cb2-44fd4958f0d8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5e284372-524e-5e33-b656-b79903bc5b0b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4494fa70-9d43-5cc8-ac00-e63cbb80abfe",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/ND-2006-202609151031.db",
+      "size": 532480,
+      "sha256": "3170f1a371ac50e75f510373463c8a754a12d75c1084aac6091540e0af45428f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 North Dakota US Senate",
+          "total_votes": 218152,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2a01a590-3a27-5924-80ee-8821bb29e32d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eff7e146-7757-57df-9229-6163ae70d6ee",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "03ccca4c-6484-574a-ae37-760275256bfb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/NE-2006-202609151031.db",
+      "size": 602112,
+      "sha256": "3b16f62947ffeb2618d622b6608338be3d1e119453c6fa855dca97cc78cd8022",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Nebraska US Senate",
+          "total_votes": 592316,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "3cfc0be1-e343-5c66-a5f4-f9bff41442e4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b91a0763-e785-512d-8589-03f5918402b7",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Nebraska Governor",
+          "total_votes": 593357,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "94350618-0827-556c-9c3b-410ca4b62260",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5e415b76-4e0d-55a6-874d-cb3fed025dee",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a3ffa839-554c-5b11-8dc4-5c67a32f00dc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/NH-2006-202609151031.db",
+      "size": 229376,
+      "sha256": "fb19f272e3f9e9b6aefe515f2844dc3857d88af422788b697665397c00dac6d1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 New Hampshire Governor",
+          "total_votes": 403679,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "aa028f0c-416c-5ca5-ad38-6a8e35d0a490",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0415280b-6902-54af-aa9f-7ab765c9490f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5ba0c59c-18de-5278-a84d-af348fd59425",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/NJ-2006-202609151031.db",
+      "size": 417792,
+      "sha256": "0627153c6e1a0089068ae89aa7a1f1f23bb05e08ede21397169b274597151e0d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 New Jersey US Senate",
+          "total_votes": 2250070,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b4a5ef1b-1a7a-58da-a70f-b4a8da738301",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "516cfc37-3505-53c1-9415-b5780ff59938",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fc0ed82b-78fe-5d1e-b692-ac2cb07410d4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/NM-2006-202609151031.db",
+      "size": 385024,
+      "sha256": "2285e0b07fdea0f087e6cb5d2d8be709e819cc8c6e5b0fe02fe14dceb4afea50",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 New Mexico US Senate",
+          "total_votes": 558550,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "898bd832-61c0-5521-bfbd-4671d72b9795",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "062963ac-c683-5fac-a4a2-28da0506aab6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "95fffe87-1e07-5b15-8fff-b0fe60951b8f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 New Mexico Governor",
+          "total_votes": 559170,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "b918cc31-87fe-5bd0-b585-d0229f0cefef",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b47fb491-80e9-53e9-a85f-3a180f454c54",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/NV-2006-202609151031.db",
+      "size": 294912,
+      "sha256": "6e09ef3506080f123e26b819bde2830d644a5d896b62aa7f181666fb82f52827",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Nevada US Senate",
+          "total_votes": 582572,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d7c4d525-82b1-5f76-afe5-9a980f4f0f1d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d19372c2-5eee-5eb4-bc5f-7daecf76a692",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bd573b6c-750e-58d5-b68a-cafd3f95c2af",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Nevada Governor",
+          "total_votes": 582158,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4524f5da-8899-5cc3-84f9-379d70bf97a8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b8dfc868-102c-5c6d-b288-b578bae1e9ef",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "79ab9d87-c32f-5bf9-a4cf-02d69d1bceec",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/NY-2006-202609151031.db",
+      "size": 835584,
+      "sha256": "343adb3781d7c7d755fd3f3c8a679f429f615ecf0dc0b0e3e56350acd4c04e26",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 New York US Senate",
+          "total_votes": 4490053,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3ee690cf-72d8-5ef5-ad0c-ce00d313c9bf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "26f5d15f-0d20-53af-ad52-21899ed26627",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8a7778fb-52ec-5594-a879-6c07cfee7752",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 New York Governor",
+          "total_votes": 4437220,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "54139408-2075-5e4b-8972-2220532d1147",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5ffe1663-9af2-52ab-ad05-75da535044a5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dbc75749-20a9-5499-a240-63c6a7525fd3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/OH-2006-202609151031.db",
+      "size": 749568,
+      "sha256": "6e24391c148b301550b50396cf59ccd1c28c9283437dc4b9ba65e91aa50421ae",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Ohio US Senate",
+          "total_votes": 4019236,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c2dd7b4d-f2fc-5a1b-973c-99765aa9d1d8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0e626d8b-c726-5c97-b8da-e2cbc2faf64d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bdb610d9-0cf4-5df3-ba63-336d8f2a8c81",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Ohio Governor",
+          "total_votes": 4022754,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3288c0e5-63ab-553a-98b8-eaf4169ec202",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c60cdbb4-f019-565b-aec6-ed2450ac93f2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1750d5fd-518d-5682-bd7f-9232481a893e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/OK-2006-202609151031.db",
+      "size": 741376,
+      "sha256": "e0ebe6e75305865f90081465e152d6cd2fb366db735f9c9f0f21ac5d0132e368",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Oklahoma Governor",
+          "total_votes": 926462,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "5b9f88e1-1e8a-5129-9a14-3e4656e3541a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "71d05cb4-d88e-564b-a3bb-045f29b9ecbf",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/OR-2006-202609151031.db",
+      "size": 630784,
+      "sha256": "b136ca9d92fece7cdb48c3389f2c15b637e74833734e9d48def0a4cdb0a269e5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Oregon Governor",
+          "total_votes": 1379475,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0119b4a1-cd92-554b-ac30-2dbd9b53ffca",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "916a1d15-5f68-57f6-8b6d-3c7d50f88e9c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9880820a-10ce-5797-b13d-31a1c02875ba",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/PA-2006-202609151031.db",
+      "size": 827392,
+      "sha256": "9a660d7a7a3f363703435d42379a6825fb0f46542082b40892870c803ed70edf",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Pennsylvania US Senate",
+          "total_votes": 4081043,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c83568c8-c6ff-552d-aa81-6cb8f0ee4cfa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "98e8b4ad-a1e3-5ab2-8781-397e73cd85d2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fe7efe97-43ca-5239-aebf-663f1f200375",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Pennsylvania Governor",
+          "total_votes": 4096077,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bb1bd066-c68a-5788-a71c-61c8e6627ace",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "819d7041-8726-505b-b1cc-ee5fd226e095",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8851db11-f749-5b7d-8dab-ac233f81f0f4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/RI-2006-202609151031.db",
+      "size": 155648,
+      "sha256": "4195cfe726d96ba34aec13e424664e45ee44b508b3c85c43e8f21d91751cb260",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Rhode Island US Senate",
+          "total_votes": 385109,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "28a79f07-686e-595a-879b-9ec093f8fdd4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7f706175-c7b3-5580-b5be-6f7118a795c1",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Rhode Island Governor",
+          "total_votes": 386928,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "52ae8c68-3175-525d-8542-96c083d40f6b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "40510e15-d380-59c4-a231-7853387859f2",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/SC-2006-202609151031.db",
+      "size": 892928,
+      "sha256": "1118b38f651e9871c18dd737d813af809b6e4fb2502ff39e8ae8274c889ae73c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 South Carolina Governor",
+          "total_votes": 1091952,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "57936b45-a98b-5867-987f-51fc4c237376",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3e23e6ad-2618-51b0-90d4-14a98398d2e7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6636f306-c28d-5cbf-bb3b-b8f6af661d4a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/SD-2006-202609151031.db",
+      "size": 618496,
+      "sha256": "228b4b72811b01704c18855a45453ea64b411c6fcbfe12f689d866e6ea3033e0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 South Dakota Governor",
+          "total_votes": 335508,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7f00b767-c8cf-5af4-81db-679c60447bdc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "518fff6c-09a5-53ee-b3a4-6604d910b0d7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c393c2e0-1728-5594-92f4-7468a5863332",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/TN-2006-202609151031.db",
+      "size": 1282048,
+      "sha256": "11df56724ddd80f97b11c3ef2501c9f50e85b126f96a490bf55a18a0c63850dd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Tennessee US Senate",
+          "total_votes": 1833695,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "558b74f5-10a1-57f2-b7c9-51d508f0e0d4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dafb5f78-4909-5e23-b99a-6a2cb2499eed",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9d804072-688c-5b28-ba9d-cd70e2511e71",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Tennessee Governor",
+          "total_votes": 1818549,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "32bd3253-da13-51fd-989d-1b4ff17e5c62",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "835ea90e-bf75-5207-a7b5-7401ce393a8c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "04518772-2a55-5919-9d77-e495ddd6dbd2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/TX-2006-202609151031.db",
+      "size": 2576384,
+      "sha256": "352a1cb194e7143db078a136e62420b028400e47267e60c0abc67dd4f2dde867",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Texas US Senate",
+          "total_votes": 4314663,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6dfc5113-1f62-5be8-9987-be3fd9d0aca5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a2225135-66ee-537d-8e1b-8ff8b891f5dd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "37bf1e94-b8c5-59fc-ab5e-84b27eb08a83",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Texas Governor",
+          "total_votes": 4399116,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "33f64c8a-f95f-5d44-97b8-ffd51bf65328",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1839b159-ad83-5426-b76a-4ab02d16d843",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4d10c775-d556-5e2a-a9f4-083ed004a6e9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/UT-2006-202609151031.db",
+      "size": 606208,
+      "sha256": "ed6d5babd8121221203f1123caab33f0036fda586aa0ae26f7710670a96076a5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Utah US Senate",
+          "total_votes": 571252,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5833a61e-0cc7-50ae-9167-2b829472c67c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3799a25f-e3b4-598b-a746-b1af322c33bd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bb3eb050-ecef-521c-8939-ae00c6170a44",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/VA-2006-202609151031.db",
+      "size": 1544192,
+      "sha256": "735bbd63f505829444219c7c3c8ae11806a8f47e329085369a19cfdda1012946",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Virginia US Senate",
+          "total_votes": 2370445,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "87003690-f1fe-5a6e-84df-4267d72bc99b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f0631da9-f81b-513d-b589-33322ca4213c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1f6e0578-18a0-532f-8a14-186ca854f778",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/VT-2006-202609151031.db",
+      "size": 245760,
+      "sha256": "283eecbe1c2ef2c2a0ec4649a26057fc078a4ab1537e17962dee2888a97a8b92",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Vermont US Senate",
+          "total_votes": 262419,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "372c33dc-902f-5343-9f69-d77d8fcc6d7a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c31370d6-0faf-5a42-a722-c19caeec295b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ad2579ca-1abd-5162-b4dc-a8c5f2cbc0ab",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Vermont Governor",
+          "total_votes": 262524,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "657a4153-5bc3-53c9-868b-33abad27ff95",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5fe95841-b6fd-5ca5-9f89-cefaf4e33625",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9236914b-0946-5208-89e5-8d68bece59f4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/WA-2006-202609151031.db",
+      "size": 761856,
+      "sha256": "e3e71b2ee922f05dd2f3d7bcea274c6aaba1851febc513aa15b7195287bb5ece",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Washington US Senate",
+          "total_votes": 2083734,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "31f391fd-163b-5d95-bf61-9baf8751ef67",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "26d0db67-f751-5e5e-b92a-6ddff0152408",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "69854259-c87f-5302-94f9-f0bbb654f5dd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/WI-2006-202609151031.db",
+      "size": 761856,
+      "sha256": "bbbd75b7da94bb7e291c68532dd951f55827b06f573da297a35234d1830412d4",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Wisconsin US Senate",
+          "total_votes": 2138297,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6f780bb1-f795-5403-83d9-f111776ae43a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f1dd6fb6-e662-593f-b1d6-329edb99d586",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4e28ce7e-31af-5002-9f65-786b8057cf52",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Wisconsin Governor",
+          "total_votes": 2161700,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "abd8d685-5203-529d-9c2d-6c8bf2cec141",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c6743481-c7da-510e-9247-bb93077922a5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "75df527f-36e8-5ec4-92d7-e54df0bc6b45",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/WV-2006-202609151031.db",
+      "size": 811008,
+      "sha256": "3a436957574c46e2f9625f873ea3ad3a6a36eea75c315623121c0f9378af06cb",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 West Virginia US Senate",
+          "total_votes": 459884,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5e85c013-c061-589a-badd-333bb55cc624",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ecf24b13-45a9-54ed-9640-0f35495e9af6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "918893df-f121-5b9c-8c61-7fc1a5fb0d26",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2006.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2006/WY-2006-202609151031.db",
+      "size": 335872,
+      "sha256": "2565543b0f0e6bc9fb183fbdebd499a3080b9404be6c15c79e84b536f59a40b2",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2006 Wyoming US Senate",
+          "total_votes": 193136,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8a92aff5-e70c-537c-97d7-24e4fb7a82f6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "62d320dd-7b00-5db1-a8ce-7e6fb6fff8cb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f86ddf4d-9fda-556b-aab2-1298656190ab",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2006 Wyoming Governor",
+          "total_votes": 193892,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "61c9e261-8e7a-5d6a-b890-d5c057e29d8a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "482d8018-ee74-58f7-a9de-6c3b8fa16107",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f82f8eae-7a1f-5eaf-a339-bf976604b4a5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

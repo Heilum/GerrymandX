@@ -56,6 +56,7 @@ class VoteRow extends StatelessWidget {
     required this.votes,
     required this.sharePercent,
     required this.isWinner,
+    this.detail,
   });
 
   final String candidateName;
@@ -63,6 +64,9 @@ class VoteRow extends StatelessWidget {
   final int votes;
   final double sharePercent;
   final bool isWinner;
+
+  /// Second line under the name, e.g. who ran for a party.
+  final String? detail;
 
   @override
   Widget build(BuildContext context) {
@@ -95,6 +99,15 @@ class VoteRow extends StatelessWidget {
                   style: const TextStyle(fontWeight: FontWeight.w600)),
             ],
           ),
+          if (detail != null && detail!.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(left: 20, top: 1),
+              child: Text(
+                detail!,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 11, color: Colors.white54),
+              ),
+            ),
           const SizedBox(height: 2),
           LinearProgressIndicator(
             value: sharePercent / 100,
@@ -136,6 +149,22 @@ class InfoRow extends StatelessWidget {
     );
   }
 }
+
+/// A party's candidates in one region, strongest first. A House party runs
+/// one per district, so a region spanning many names its top two and counts
+/// the rest.
+String candidateListLabel(List<String> names) => names.length <= 2
+    ? names.join(', ')
+    : '${names.take(2).join(', ')} +${names.length - 2}';
+
+/// Candidate names of each party in [votes], strongest first.
+Map<String, List<String>> candidateNamesByParty(RegionPartyVotes votes) => {
+      for (final entry in votes.candidateVotesByParty.entries)
+        entry.key: (entry.value.entries.toList()
+              ..sort((a, b) => b.value.compareTo(a.value)))
+            .map((e) => e.key)
+            .toList(),
+    };
 
 String formatNumber(int n) {
   final s = n.toString();

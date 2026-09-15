@@ -1,0 +1,103 @@
+{
+  "year": 2021,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:11:01+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2021",
+  "national": {
+    "db": "National-2021.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2021/National-2021-202609151031.db",
+    "size": 151552,
+    "sha256": "4880e90a25070c053375e24bbcf194f89c069f12df555c08bd3a7b877e95ef40"
+  },
+  "states": [
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2021.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2021/NJ-2021-202609151031.db",
+      "size": 33357824,
+      "sha256": "1ee178870d7b205fc4c3a57f3b41997e831aaee4fa96f464f8cdbe7b0caacc6c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2021 New Jersey Governor",
+          "total_votes": 2614886,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "793fc581-cd80-559a-8bd6-c4da950e91a3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "09ce023a-ccf1-5146-9f18-87823fb78bc6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "136a9bdf-02c4-5b08-863f-5e2a59df812e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e7e205f4-2c81-57f7-be38-4d5df39c64fc",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "bd774ceb-d876-5bba-a9ec-b6a197891952",
+              "code": "SWP",
+              "name": "Socialist Workers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2021.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2021/VA-2021-202609151031.db",
+      "size": 48975872,
+      "sha256": "23360114cfb9e0d3ee7de41f1222ea24884a4061f1a548cf0ed46c3c32624854",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2021 Virginia Governor",
+          "total_votes": 3288327,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "42885e02-20d0-58e0-aebb-13bd30b36470",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ceda8cde-7fd2-541a-83cc-537264e0c295",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ab00a3b8-7369-5b74-adf9-88ee412cf29c",
+              "code": "LIL",
+              "name": "Liberation"
+            },
+            {
+              "id": "d18a3d28-5969-5c5d-9bac-dc11f50b5f35",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

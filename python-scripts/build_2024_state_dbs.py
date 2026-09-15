@@ -986,6 +986,9 @@ def write_state_db(code: str, state_name: str, contests: list[Contest], source: 
         DROP INDEX IF EXISTS idx_precinct_results_precinct;
     """)
     db.executescript(NEW_SCHEMA)
+    # The geometry databases predate dropping precinct population; don't carry it over.
+    if "population" in {row[1] for row in db.execute("PRAGMA table_info(precincts)")}:
+        db.execute("ALTER TABLE precincts DROP COLUMN population")
     district_ids = {name: did for did, name in db.execute("SELECT id, name FROM congressional_districts")}
 
     order = {"President": 0, "US Senate": 1, "US House": 2, "Governor": 3}
@@ -1159,6 +1162,9 @@ def write_new_elections(reports: list[dict]) -> None:
     payload[str(YEAR)] = entries
     NEW_ELECTIONS.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
     print(f"wrote {NEW_ELECTIONS.relative_to(ROOT)} ({len(entries)} entries for {YEAR})", flush=True)
+    # version + per-database size/sha256, which the app's update check reads
+    import manifest_version
+    manifest_version.stamp(NEW_ELECTIONS)
 
 
 # --------------------------------------------------------------------------- drivers

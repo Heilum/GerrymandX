@@ -1,0 +1,4312 @@
+{
+  "year": 2018,
+  "schema": 2,
+  "generated_at": "2026-09-15T06:50:05+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2018",
+  "national": {
+    "db": "National-2018.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2018/National-2018-202609151031.db",
+    "size": 4952064,
+    "sha256": "9538bb32d1c5094e6faaa60f39bc1a22d6c1110a8093b7ffd81440b37654466d"
+  },
+  "states": [
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "db": "AK-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/AK-2018-202609151031.db",
+      "size": 18616320,
+      "sha256": "d1847eff53e9f03598c6da6a2315337cc0348140261504bc9c0eb86f64ce5619",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Alaska US House",
+          "total_votes": 282166,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1de724bc-fe8a-5580-a3ce-ce318b5bd192",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c13fa726-fb59-59da-87d2-a50b45815fac",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "82bd5223-ad9b-5056-8144-c3ac58338b7c",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Alaska Governor",
+          "total_votes": 283134,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "6aa9ed06-bedf-5724-9a58-70cb52c904a2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a199d8ec-1e3a-5d7c-9a6d-77305263522e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "30676530-fb99-523a-a0ba-a30cb9a63f4f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d1ef5720-0742-510a-b798-412abf251d2b",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4dd2755c-94e2-5485-b50c-54130c9d38ef",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/AL-2018-202609151031.db",
+      "size": 36724736,
+      "sha256": "8214acedeaf18b40ea225101b734055404b820f271f4fd92339105d33bf54a49",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Alabama US House",
+          "total_votes": 1658202,
+          "candidates": 20,
+          "parties": [
+            {
+              "id": "02f49147-726e-55c4-8529-d1b05536309e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b22e39b5-6763-5590-8fb0-624f38d9e32f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d56834c5-24c2-579e-9763-58f0a6a17cac",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Alabama Governor",
+          "total_votes": 1719589,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ff803423-6aec-5bf1-867c-a9a59b8580ef",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "38a345bd-5177-5494-86f8-07bd4b258d6a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7ff8c8f9-fbd7-515e-a579-d3bb26358265",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/AR-2018-202609151031.db",
+      "size": 30179328,
+      "sha256": "d4f14f1a1892b5c3b1ba89088825733b66d15aea9f1b6479c979f397b4992837",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Arkansas US House",
+          "total_votes": 889298,
+          "candidates": 14,
+          "parties": [
+            {
+              "id": "a9e8f0eb-71bf-5a03-96a5-d6c1fceddd4c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0ff706df-b0ed-5257-b912-3abdfacbc0e4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ca5718d8-0033-5433-bacf-e41911ac00c0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "59c4f70b-81aa-5e8f-bc75-60257c3370ce",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Arkansas Governor",
+          "total_votes": 891509,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "19816fdf-dff2-5dd4-8500-078d97310bf7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "495f1464-ada6-576b-9fd4-9d21538586bc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0f2f638b-2157-588e-a908-303f07b8cf46",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/AZ-2018-202609151031.db",
+      "size": 16936960,
+      "sha256": "739ccc479a45ed8a6db9e74f7da3b41d2203069c2f916c10120a60fcad9d8ef8",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Arizona US Senate",
+          "total_votes": 2387543,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "45f8c08e-3b59-59d7-8ed3-e519179b0348",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "373ef833-17d0-56b9-86d3-52ea440c7422",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "50257efe-df14-582c-89e9-5b8315f8a665",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "61fcbfa0-0ed8-5dc4-a3b4-49b67a339fe5",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Arizona US House",
+          "total_votes": 2305954,
+          "candidates": 28,
+          "parties": [
+            {
+              "id": "15850950-0c6a-5ec6-a018-2e1688257cda",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "caf8762d-82f3-5ecc-b3dc-69de3cddbf8e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7e6daa98-8bea-523f-ac60-260e4b938459",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0b27e0cc-d9b1-5c14-bb5e-937c6ad4e61a",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Arizona Governor",
+          "total_votes": 2379369,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "49efc32a-9c9b-59c0-a0e4-af6d8730a12b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9d35036a-5cee-5a5d-a175-b253f9b5923c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5df0226e-cdd5-5950-a9fa-ea1644e8cdc0",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4d2c05a5-9754-5a36-95c9-7c017c52886d",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/CA-2018-202609151031.db",
+      "size": 2875392,
+      "sha256": "b0b7f4b58208791a1c28cd4a687525af29fea8070dd4b0edfc8000e04986428e",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 California US Senate",
+          "total_votes": 11113364,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "6c726b8b-7950-5bac-a285-4ee5d81c1657",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 California US House",
+          "total_votes": 12184522,
+          "candidates": 106,
+          "parties": [
+            {
+              "id": "fc2a757a-2976-591e-a4a1-392faffdc94b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7b9c4154-c0d5-53ae-b5b7-2504e6b70019",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4d138371-2975-54ce-9c23-9b8ab305cd08",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "5af0ab73-083c-5269-8092-813b68038826",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 California Governor",
+          "total_votes": 12464235,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "c3d41747-c57c-564d-831d-5c36cb96d2e4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "29bf60b1-755e-5b7c-8997-f259ff23e3d3",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/CO-2018-202609151031.db",
+      "size": 33259520,
+      "sha256": "9f0cd0c13a491c30b6b99404a7f44265ee37407671670b0ff4fd422f4794ba9c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Colorado US House",
+          "total_votes": 2513906,
+          "candidates": 30,
+          "parties": [
+            {
+              "id": "722fefd9-c68d-599a-b90d-bcb7e441c27f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "89ac9dbc-deb6-51aa-96e1-718d612130e9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bf0ad651-041f-5632-82c6-66a95554858f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ca156c97-13de-576d-a434-4248fec67207",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "fae6c744-ef52-51f6-b5ae-663611723f95",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "7e68671a-dcec-5772-bc44-41ee51845312",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Colorado Governor",
+          "total_votes": 2525062,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "940d4b0a-c7ec-517c-b139-3c705aec6355",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9ca9aa92-ac46-565e-a6c3-c5b0359980cb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6f6f106a-b82f-5194-b6c7-a7cff14426e5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "db01e8f8-81d9-5b38-9eb2-7de706e38bbe",
+              "code": "UNI",
+              "name": "Unity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/CT-2018-202609151031.db",
+      "size": 7340032,
+      "sha256": "bb58972861722546e4d5c0faeecbdb0749d1951228d54e3aafec4bce638cdc8f",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Connecticut US Senate",
+          "total_votes": 1386840,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "37e5662b-25d0-5c7d-9a5f-b593d69a3a61",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "00669d20-8439-59f5-be08-9e12971ceb4c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3977336e-6f3d-5e27-9a73-a4a77bb737e2",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5a06c9c6-3a6e-590a-8fcf-63b0c0a1ece6",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "488827f2-8df6-583a-a39d-a6e6c9c6d914",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Connecticut US House",
+          "total_votes": 1379807,
+          "candidates": 21,
+          "parties": [
+            {
+              "id": "fa91c03a-d4d1-53ce-a2b9-abe0e1268856",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "baac3ed5-324b-5b77-8702-f84ca2284adf",
+              "code": "WFP",
+              "name": "Working Families"
+            },
+            {
+              "id": "86eb561f-be6c-5b03-b4c1-d401f1900f0b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4b45a1a7-25d2-595c-9449-13a2a5b4e5c2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "286b5382-7759-5b94-9ba3-0a1b5102a132",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "49e5f052-bc80-5ccc-8d72-9b006f3556ab",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "51af9cae-50f3-57da-a549-09d2c9b290ca",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Connecticut Governor",
+          "total_votes": 1406803,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "2ddf1818-1c67-591e-b80a-94acd0c75f63",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "57b8a4b0-0ae1-5dbd-8757-2a30ae3856af",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "be0fedb1-6cd2-51f9-be8f-6f415a7c3e90",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1d089466-d7a6-5dc6-9c8b-22874a6b4af4",
+              "code": "GFF",
+              "name": "Griebel Frank for CT"
+            },
+            {
+              "id": "13da1345-609a-5afa-b9ff-73ad87bedf00",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "2ed38c89-03b9-531d-974b-ea58941031da",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "db": "DC-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/DC-2018-202609151031.db",
+      "size": 1683456,
+      "sha256": "40a236cc800546c18ea3c3cf0dddc92372805189d4e62abbf2a7bf2b6ffb88cb",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 District of Columbia US House",
+          "total_votes": 228769,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "ac827a64-94e1-5a64-9b82-c8638314357a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "869bef74-f970-5de0-bcaf-0567adaad8ca",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d9dae9fb-2d34-5f56-8a63-675d260f6362",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8f1a5c2a-bef4-5247-b486-94f3587bd68b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "05318cfb-09a4-50d2-b407-213f69c891de",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "82db29ff-0e9b-5bf0-87b6-bc087f3b6629",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/DE-2018-202609151031.db",
+      "size": 3551232,
+      "sha256": "137232518a332d673addea01e17a26bde6854b1f2c92381093506006469c3689",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Delaware US Senate",
+          "total_votes": 362592,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "8155c233-fa5e-50cc-81bd-afb3243816eb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e3087c47-f5c9-560f-8564-737d635618f8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "34e2240a-c89b-5e7a-b3d7-9bdeda12fc9a",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "774b25eb-ea74-5023-a4b6-78918d63f896",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Delaware US House",
+          "total_votes": 352737,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "fcb5102d-f005-548e-acc7-531d9055add6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "087a8afd-1a8b-5ff4-9330-5848984add76",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/FL-2018-202609151031.db",
+      "size": 67645440,
+      "sha256": "487e0a01ce38870e453357ffd59e9de92c050dbcdf746f0d44830188a45a472d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Florida US Senate",
+          "total_votes": 8211517,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "49db41e7-dd3b-5252-a567-6af30b89f1d2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7b62804a-e693-5434-9d74-06a7f236192b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "071adc8b-5db4-55fb-b244-9848007ffde3",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Florida US House",
+          "total_votes": 7030332,
+          "candidates": 56,
+          "parties": [
+            {
+              "id": "fe726d6a-5369-5b4f-8dbc-4ce6bc39b79b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6e859ca5-489e-5341-b468-02d5ff0e4cd2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "93dd0513-30cf-5c24-93a2-2ae7a2b0a4e5",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "5588707b-3650-5d6c-b2f8-13528ba01adc",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Florida Governor",
+          "total_votes": 8228238,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "ebda769d-937d-5e4c-9f52-03ffc7954672",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a94ddb4c-6c6a-578c-a80b-30366192794b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dcf8934d-3d7f-5a39-a556-47530d75154a",
+              "code": "REF",
+              "name": "Reform"
+            },
+            {
+              "id": "6243cf50-9405-5a5b-ac33-c42217677964",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "c550e113-c16b-53fb-9610-4c2644dbeefb",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/GA-2018-202609151031.db",
+      "size": 43147264,
+      "sha256": "bbe6db40837b0fa61d8c1941babad2fdc99392b81a161205a7de81da0a83b128",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Georgia US House",
+          "total_votes": 3801660,
+          "candidates": 26,
+          "parties": [
+            {
+              "id": "82900c39-387f-5b51-ae37-da1d5ad430b8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "613d1f74-e5e5-5ac8-a439-6ad8d3350e37",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Georgia Governor",
+          "total_votes": 3939328,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5a10fc81-96bb-52fa-a731-5ec82b20f72e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3a2db9d2-ffc4-5cb3-9cfc-43697bafbaf6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9391f4a4-74b2-5070-a379-b67d25f42de1",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/HI-2018-202609151031.db",
+      "size": 7073792,
+      "sha256": "707c0be99c3a1d6ead227f2433ba669413bbaceab0a2e9df9dda5f6f54488aea",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Hawaii US Senate",
+          "total_votes": 388351,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "3a60d366-7f1f-5875-b947-c8094c188e5a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a0913b51-a334-5d0c-babc-1e9008b1e6cd",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Hawaii US House",
+          "total_votes": 382332,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "2547e1ea-440f-5437-804c-0c2bf0d41a2e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ee81f842-8ef1-5be0-ab92-c684ae42ff5c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c59becd3-c2b4-5e05-8924-61528c99d9b0",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "7e4a2995-c747-55fd-9b80-67fecc167f7f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "fd27ae11-a3dc-59e6-9c7e-dbb6a340930c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Hawaii Governor",
+          "total_votes": 390843,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e38d3eb0-57f0-5bc5-b46b-55325d33328b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3bada2e8-88a3-50e9-8242-2ded352de6c3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d82657a8-815b-5bb5-af50-5c0c7a69ba50",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "301fc686-f005-5654-856a-2db0f452983f",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/IA-2018-202609151031.db",
+      "size": 14626816,
+      "sha256": "17e74a83551502412d40d724323d64b8fe244f8864f452d1283939e23e58164e",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Iowa US House",
+          "total_votes": 1316648,
+          "candidates": 21,
+          "parties": [
+            {
+              "id": "47e7ba87-1ecf-5a43-ba1c-4bfeaedd76d2",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "b92ee63e-cd85-54c6-b465-747229fbc226",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2dd20ff5-1400-5561-9c4a-d9f04b039622",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6590ef50-eb09-5707-b2e6-e3796731f657",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d52bde6a-0b0a-50e2-831b-39c69afd176b",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "1e289a06-2819-53fe-9d0f-98116fde6d92",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "ea4a849d-b17e-570a-8d3d-03fa323db010",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Iowa Governor",
+          "total_votes": 1327638,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "812dac22-2b60-5bdc-853b-54ab42481206",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1ae35986-f861-5a1e-bd70-f21eee09dde5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1e5b5837-19ae-58d4-b964-547e8a0c8dc6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "94f7b35a-5512-57f9-8d6a-862ae6fa0715",
+              "code": "CLE",
+              "name": "Clear Water"
+            },
+            {
+              "id": "33f93a72-2bb3-5d37-ae40-76e396d12c07",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/ID-2018-202609151031.db",
+      "size": 17551360,
+      "sha256": "625f17951453d05ef705ac0c8ad05f331d263e91589e4956259c9f846cc79e82",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Idaho US House",
+          "total_votes": 595724,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "18c29b23-e77a-5bd1-b19f-b3d714272569",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6148c56c-472a-54b9-a6d5-31c2b3e264ba",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4cd79285-1d6a-5b48-b3e8-c54df0fd093e",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "41103d2e-94fc-527a-adde-1d59e65b7a87",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6d89965b-bab1-5773-aa86-4d557906e677",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "f8031095-442b-57d3-bd8d-2aa6df1181b0",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Idaho Governor",
+          "total_votes": 605131,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "12175942-075d-5231-8c41-e7738e0e5101",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7a350a24-78a6-500b-9cc4-60d3d351d198",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b96b29db-c4f3-5dd0-a0a9-1928b753b46a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "667a2ac2-9ec9-563b-9bcb-d6345772b5a6",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "4d83c206-60e9-5133-965e-1bd4947a2c46",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/IL-2018-202609151031.db",
+      "size": 49512448,
+      "sha256": "08dfd37c68af6ac25cc029379fb83d1280e423054f58ffa63cfd2bb1061d3c1d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Illinois US House",
+          "total_votes": 4545103,
+          "candidates": 49,
+          "parties": [
+            {
+              "id": "d108a320-2c87-577a-b2b5-7b50828502d0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aa75649b-68e2-5143-9f32-4ae6dc122116",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "42655e43-66c0-5e89-bfcc-1baaacc7c8bc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "79974f07-706e-589e-802a-ac66b1f66bbd",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "de17b961-2379-5b83-8167-4193231e69c1",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "9dd45679-e830-52ec-b0e0-cc4a5e0fb713",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Illinois Governor",
+          "total_votes": 4547542,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "023e7173-8c33-5cca-b299-c4e749c6296a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b61e7b27-61eb-5a39-a44e-28aa945a51ef",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "88cfa0fa-ce6e-556e-bd8a-512cb65fc174",
+              "code": "CON",
+              "name": "Conservative"
+            },
+            {
+              "id": "f9e0d124-bd89-51fd-89a5-ce2d591003a7",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/IN-2018-202609151031.db",
+      "size": 31653888,
+      "sha256": "43dd0c0200f03368e7a216c7d5319ef926cf98d0e950ff66acab2a4f9045452f",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Indiana US Senate",
+          "total_votes": 2271044,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "74ca786f-c50f-57bb-b240-4cc0854a653d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "13ae48dc-dff9-59ea-bfd2-f8974c2fc115",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "543397ee-93f0-5a90-9d9c-2194cd0e1b36",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Indiana US House",
+          "total_votes": 2279690,
+          "candidates": 32,
+          "parties": [
+            {
+              "id": "d5cd3389-e503-500a-b153-b426de6bd3e7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a565755c-e69e-574c-8434-970c78e39587",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3d3ce6dd-5194-5971-b65d-8ca44bd607a3",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "4b91287c-e386-5511-99c3-ca62a01ddfa7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c0a0305a-f7a1-591d-826c-0b53a26162bb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/KS-2018-202609151031.db",
+      "size": 24547328,
+      "sha256": "83819e74bfd28cb9e67f9db97231507db732d0ab7010e9df6f3778dc84dd0067",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Kansas US House",
+          "total_votes": 1049899,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "5872fc37-94ca-5370-add4-fe08624299d4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4198bf7c-6a00-5339-8809-d537406c2fd3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "54d6d354-ab12-5d41-9c45-bbbdade5388c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b7aa2ee4-68a8-5c47-b50b-a672a0fac235",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Kansas Governor",
+          "total_votes": 1054622,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c56e9bbb-c6e9-5b67-8d84-9c45574535cf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ff4ef962-f897-5b54-9c43-cf3d77a5f3ea",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "014d9506-90ae-5f3c-a54f-72931f4a5199",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "40cd900c-75d0-5136-aa56-28b40b442cde",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/KY-2018-202609151031.db",
+      "size": 1961984,
+      "sha256": "7098488a156869e445ca778c0f0a8b70e5900fc490f51c03013ca3109dfd5ec0",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Kentucky US House",
+          "total_votes": 1570074,
+          "candidates": 18,
+          "parties": [
+            {
+              "id": "e057680d-1d5f-5bf1-a5e0-dce4fbb2c968",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0ef9ae5c-fbc5-557c-8c50-4ab2314e0aa4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a1789020-90b3-5e1f-8ecc-17a8f4c28d6e",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "6f1ba2bc-d0bb-505b-90b7-41f0cecdeb94",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/MA-2018-202609151031.db",
+      "size": 22294528,
+      "sha256": "9c3c5b1de82eb8a9039b70cbfb3ce5578ce86b47c8235aa5f0b3eed87cb375f3",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Massachusetts US Senate",
+          "total_votes": 2707090,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "61c0a042-2a7b-5ee5-86d8-806b15772499",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d4bfc6f7-7407-567e-abae-8760968d2f63",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2d474925-857a-5cc2-a92d-c7d890261ec1",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "04a763b8-0f2b-5487-9ca6-530e7b336985",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Massachusetts US House",
+          "total_votes": 2485081,
+          "candidates": 25,
+          "parties": [
+            {
+              "id": "2da1e0e2-40af-5485-a4cd-ffd876f00b62",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "3a81eae9-4e01-5587-99fb-751a1bc5cb6a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f8cdc75e-fe8b-520c-96a0-b0bfa21ffbb2",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Massachusetts Governor",
+          "total_votes": 2674615,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3232b6a2-2bc4-54a2-ab20-5d510686d216",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "75f7c8ec-8e98-5b83-bc67-5cfc7ffb66f6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a18b6517-9ff2-5467-820a-dbc98991e6f2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/MD-2018-202609151031.db",
+      "size": 73109504,
+      "sha256": "71ad184c261f363bdd9ba637afa34c6bdb596ae79ed4bd8566a8ff8c1ddfab07",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Maryland US Senate",
+          "total_votes": 2299889,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "4c98d326-17b2-528d-844b-2a0cb2b5c0ee",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c929bf0f-350d-5dbc-b54a-de0948ae415f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dde8cf8a-e226-552b-bec5-de1daa98e183",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9d91ee06-7c93-59c0-863e-190efe113c06",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "d338a906-99e2-5a7c-b311-b08da30e2c82",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Maryland US House",
+          "total_votes": 2286284,
+          "candidates": 35,
+          "parties": [
+            {
+              "id": "a21ab5e6-3fd2-56f8-a804-b7748c8ab6d1",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "408ed68e-d838-5441-9591-5414dcbc0fa6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fcbaa1e4-64b5-51d0-8272-24bf672844a6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ecf947b9-dfaa-579e-bd06-48dbf16c8922",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5a02df88-1a09-5a4c-a540-8629e2b265de",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Maryland Governor",
+          "total_votes": 2304512,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "25138fdd-7f23-5ad6-82fe-7ee5c9efb490",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "017adbd6-44c6-5eed-ada8-11f4be35f13b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5a28a1bc-6c05-5ef6-8fbd-e54bbb378eb0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b875194b-2f88-57b7-ab5d-27ee7238a640",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4d77da5a-95fc-5798-a8e6-cc90884cdccf",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/ME-2018-202609151031.db",
+      "size": 9469952,
+      "sha256": "2d611fa569389440fa64866601500c04a7709e7003584b8c71cef17ad1cf8ef4",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Maine US Senate",
+          "total_votes": 633944,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3662a612-0128-5a89-ba90-9582f360d262",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9a7ecc0b-1f21-541f-9dff-ad241a1dea26",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "552a1f9a-60c8-596b-aeab-45944a90df90",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Maine US House",
+          "total_votes": 342053,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "09afae3f-c8f6-55da-9efe-4b1fc137b4e6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fcc959d2-5272-59df-b78e-fac8230a1f0a",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "f7ab3555-3417-5258-bc0d-a203d6badffe",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Maine Governor",
+          "total_votes": 630541,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7e3f6172-307a-580f-aab2-82d74dd8580a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3b2536d5-8893-5480-aafb-5c36920d41eb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e5bd5830-fdeb-5594-9c02-5c41436d5dc8",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/MI-2018-202609151031.db",
+      "size": 32133120,
+      "sha256": "ae654c7e1ff32954cb3f9e740b6137fc018a7c2162c5e04ea5a5ec7bd48781c3",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Michigan US Senate",
+          "total_votes": 4237252,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "a606e081-f6c5-51dd-acad-92912bed5487",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9e65dea8-a994-52da-b6b3-e2c77b10ab3f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a42eaa49-2622-5173-9745-aac65584c62b",
+              "code": "UST",
+              "name": "US Taxpayers"
+            },
+            {
+              "id": "cf1d9196-65fb-5592-a8ef-7245d18e46a7",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "1c7cefe1-27d4-5062-ab1f-febdbc8aa038",
+              "code": "NLP",
+              "name": "Natural Law"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Michigan US House",
+          "total_votes": 4154703,
+          "candidates": 46,
+          "parties": [
+            {
+              "id": "2e70d31a-3a18-5737-9df5-669aa8f8b14c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6a9bb384-45de-54ca-8335-0b4d0d95be90",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "97695cff-433e-59bd-8868-eecb7a55392f",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "fc6fec3e-7e86-54f6-9266-c514e25e229f",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "13d874a8-fdd1-548a-83cb-e5ea680f531f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4db72426-b7e4-5d8d-9d69-fabc10838528",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Michigan Governor",
+          "total_votes": 4245923,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "85d81b38-b533-52cc-a789-d11b8efa4278",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e90b062b-c08e-50ee-81d1-41ad8f8c87be",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c01621d2-6063-5c76-a41a-a254d63f4be8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1c4403a6-e1aa-5dc6-bf8e-b42b80f33ca3",
+              "code": "UST",
+              "name": "US Taxpayers"
+            },
+            {
+              "id": "ad4f9ded-0f8d-5fd5-9292-fb3b7dca4c9a",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "aa878bd6-2a55-53b8-88ad-1130b2743cef",
+              "code": "NLP",
+              "name": "Natural Law"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/MN-2018-202609151031.db",
+      "size": 24678400,
+      "sha256": "1b2314c4d00737b44c8750d0de520c654aefb5e4d34e2fe57c5081b58e74666c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Minnesota US Senate",
+          "total_votes": 2596879,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "9d739571-17be-522c-84d0-b1bf196fad84",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8f44c129-d67d-5d79-ae69-fb54b9e0b756",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c67d1853-243a-5ec6-ba79-b92b6bc7138f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "c1c308f2-2a17-51d2-bf71-0745429226eb",
+              "code": "LMN",
+              "name": "Legal Marijuana Now"
+            },
+            {
+              "id": "7aadc07f-0260-516a-a163-c90868a4bc77",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": true,
+          "name": "2018 Minnesota US Senate (Special)",
+          "total_votes": 2587356,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "fda5423a-992b-5dc7-b254-c6746bcca616",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c29133bf-49de-5921-8eeb-eeff45dba05b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "57ed0cbd-1e67-5e59-983a-0df4ee34f788",
+              "code": "LMN",
+              "name": "Legal Marijuana Now"
+            },
+            {
+              "id": "89785841-4abe-5b4e-ba79-e2fef6e0ac0d",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "69f04bec-1b2a-5e02-86b8-7eddc416badb",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Minnesota US House",
+          "total_votes": 2576996,
+          "candidates": 26,
+          "parties": [
+            {
+              "id": "46f9e477-2558-5a51-95c0-e260e3033747",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3bc7aa80-5d20-5b9a-b900-75997472bcca",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bdb596b2-4425-5944-820d-0067f51e6720",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "d6874bff-98c2-5bd2-b67f-97bcd2db4a93",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Minnesota Governor",
+          "total_votes": 2587287,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "229a154f-6099-58a2-93af-44f24ec72501",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8a5056e6-c93a-5084-8c1a-9ea8784f92fd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "eb5a229c-86f5-5719-8f9f-6a3857c397e0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3f467480-16ae-5878-8707-559d97fbdf7b",
+              "code": "GRP",
+              "name": "Grassroots"
+            },
+            {
+              "id": "2543f308-cca5-5220-b813-1724a8a53db8",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/MO-2018-202609151031.db",
+      "size": 29483008,
+      "sha256": "f28553dbd7cd47c742df6f0e033106f1d4824eb03d93c8968f01ef2f5adc7d0b",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Missouri US Senate",
+          "total_votes": 2442282,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "d8f0d132-e9f8-5a15-838f-50f293ff7035",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "84a9f4c4-84e3-5be6-8b4a-52c35b04d10b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0a0744df-0e8d-51c9-a3c7-eedb179bdfe7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "49c6fde8-2141-5aa5-a00e-a20bd690ed4b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "10fbcd14-c72a-5176-ab83-e3023bed5a00",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Missouri US House",
+          "total_votes": 2418438,
+          "candidates": 30,
+          "parties": [
+            {
+              "id": "711e8a29-c14b-5587-88c3-35e4b9a55844",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d5dd4da9-47ff-5e53-8a94-f0ebb4fac87f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "25a41e07-e23c-51d2-b319-a313be4679f7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d6c43e56-936d-55ef-8983-e8148360bfec",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "8f6e4634-9071-5634-8a0b-c1ba529179e8",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "0de8bc26-1381-5454-bc5e-d2219f641bc5",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/MS-2018-202609151031.db",
+      "size": 32391168,
+      "sha256": "d77e0f2d5147ab68f9a9e27279aea5f927ef79e925f9d7d2ba9cdddde7018ea6",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Mississippi US Senate",
+          "total_votes": 936215,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "f58686ed-155e-5311-be6f-c1ef721de467",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cddabdb3-bf24-5567-b3d4-0e9c155148d5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4ff470da-0fb1-5088-bad6-57119a3f9ad4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ca0fd351-b541-5c62-b998-1c3817b78277",
+              "code": "REF",
+              "name": "Reform"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": true,
+          "name": "2018 Mississippi US Senate (Special)",
+          "total_votes": 945467,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "83e8ebfc-608d-57e2-aeb6-6163c6ee99e9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c433d93e-7c7c-5496-8bd7-d0d1380ee7d9",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Mississippi US House",
+          "total_votes": 938903,
+          "candidates": 12,
+          "parties": [
+            {
+              "id": "3be6ed10-a782-5c1f-b722-b50cf917de96",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ebf854c3-4ab7-515a-8455-59b1d6d5659e",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "b56c8c73-4eb3-5676-a034-a258b62b3441",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "68aa4b08-9c7d-5c4e-bb39-bbafa38ee31b",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/MT-2018-202609151031.db",
+      "size": 15933440,
+      "sha256": "67a5084f5418c5d5238411c5d7681342a4322fc40e71c3f61a7b6f281059ee70",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Montana US Senate",
+          "total_votes": 504384,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "74688e57-1136-5635-b31c-851913899975",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5eb26a70-2ca4-565a-afec-60831efb03d9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9194d01c-5ff8-55cc-aab9-b937d3c5951e",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Montana US House",
+          "total_votes": 504421,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d2d99888-b445-552d-958e-08b0e2e90e02",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b8663281-e2ff-5200-b242-bb6ec743de2f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cc312a8b-1f49-50dd-8e53-196f3c4b6212",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/ND-2018-202609151031.db",
+      "size": 7438336,
+      "sha256": "7f68d8869175338b84775fbe0ddd6db817d69d4b37bd017ab8453c7da8bb9a71",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 North Dakota US Senate",
+          "total_votes": 326138,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f5bc012c-b7a6-5346-93f8-963169d73ede",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8682545a-a0b6-5230-9db9-8afcd030b30b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e9d94bd4-f6ee-506e-a1df-3157caf4b550",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 North Dakota US House",
+          "total_votes": 321532,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "ce56654d-7e09-5d9a-9b03-febfc174d2ea",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d2a876a6-e8d7-585a-95e2-0bbc25d324f1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e30105a6-20be-5f04-a9f7-f077b2423584",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "d2fcbe38-6efc-5dcd-ab74-84c6a2fbc11a",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/NE-2018-202609151031.db",
+      "size": 11476992,
+      "sha256": "5485582b4b8c6dddc132089fbdf3e6178f74a6cd80a8c334c91e3f65a1a7088e",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Nebraska US Senate",
+          "total_votes": 698417,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "969c8c5e-2569-54cc-9722-21b12a2a95f1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "85a82d3d-2261-5ccd-98d7-afb345507b8c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9b18654f-b88c-50fc-8e29-b6aaa4915579",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Nebraska US House",
+          "total_votes": 696570,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "ccddd23b-21ce-5622-a985-8144e7441367",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "946d1d8a-7450-5cb4-b1ac-4e9043358d11",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Nebraska Governor",
+          "total_votes": 697981,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "6ce21bbb-0c5c-537d-9903-2a69900f07a9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "569d2e71-60d5-56f8-ac7c-5133fed4f745",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/NH-2018-202609151031.db",
+      "size": 3817472,
+      "sha256": "2c5a79326ad4383adb814710a8bf465886865db84afefa088c067a89ddbea1e4",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 New Hampshire US House",
+          "total_votes": 570744,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "9a75bb05-9c58-5e17-a58d-c0e3b25c9570",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6d6d1bff-e4ee-57b4-aa86-4f185977feb5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6c861214-655e-5ac4-95d7-b04d821dd36d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "054ecd1e-6d46-528a-b1b1-d88ec5163e96",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 New Hampshire Governor",
+          "total_votes": 573602,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "a6064536-4dd8-5e21-aab4-5ed2cc989a63",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3aa5c27e-7fbc-5d91-8f58-5a0340abe39f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "029b9e7a-a380-5fb8-ae95-f935d47fcc28",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "072cda97-21ce-5001-8526-c9f6f1aabaa1",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/NJ-2018-202609151031.db",
+      "size": 40595456,
+      "sha256": "032510c6e037e250d4394ffc85e50b819f3964438d198647c8adda738cd36d6b",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 New Jersey US Senate",
+          "total_votes": 3169310,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "0f5e912e-3229-5701-b74e-9ce8c8966dce",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f0ff5e98-0ce8-5438-81c0-07e8da4f545f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "98f55c50-cd11-5fd5-84bb-44aee778eda6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5d4c6e9b-7eb2-5614-9984-056f250d8707",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4526d002-8fa3-5aea-8f85-9f0ab77005a5",
+              "code": "FOR",
+              "name": "For The People"
+            },
+            {
+              "id": "f26fc125-293c-5777-8768-f3d135be3403",
+              "code": "NDN",
+              "name": "New Day NJ"
+            },
+            {
+              "id": "cf625325-a023-5a7c-b0f7-ab0eb141ab0b",
+              "code": "MIS",
+              "name": "Make It Simple"
+            },
+            {
+              "id": "fe9af504-5138-58cc-a979-76caf72dfb7b",
+              "code": "ECO",
+              "name": "Economic Growth"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 New Jersey US House",
+          "total_votes": 3053723,
+          "candidates": 64,
+          "parties": [
+            {
+              "id": "69a92bc4-26ea-5c01-bf40-ae816622d27a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "263e49c5-42ca-501c-8c72-cc3a0466fd06",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "c42978ef-daee-52b7-82dc-0dd7b3f014e1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "77aadb08-87e4-51cb-b833-b5e1e853c72d",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "af9872e3-cfb7-512b-bcbb-e29bb302cfb3",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6a0a0be7-781f-55f3-bdf9-260e1fd5eb79",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "febde06e-774d-5d44-940f-63170f5de58d",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "245cefbd-97b5-57ce-a130-4e2fdd2b9943",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/NM-2018-202609151031.db",
+      "size": 22151168,
+      "sha256": "f8c45e6e8f9694dc4ea14d98ec280d4202d1f83bf582769f2dc4e126fa42ef75",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 New Mexico US Senate",
+          "total_votes": 697012,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a265a977-54bc-5743-ab43-6c3082b75d9d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5bb2ffa6-6903-52f1-ad16-e4ce8876d9fd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "79accc06-c3cb-564b-84ab-9dc911ec2f44",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 New Mexico US House",
+          "total_votes": 693311,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "0b4e261b-1ff7-5d88-b68e-6171da9b94fe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a570516a-be79-555c-b2c6-b7de8feda28e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7f102e0e-8806-5015-8444-44363dfe526e",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 New Mexico Governor",
+          "total_votes": 696459,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "f87cb1fc-b3c1-539d-a65a-806430f9bccf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9bcaabc5-db4d-512e-abdf-440354347def",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/NV-2018-202609151031.db",
+      "size": 15622144,
+      "sha256": "c839fc62f1c1e08bfa3a5a3809f88bbfa3a2a6529cec0117988d77e2d920f3b5",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Nevada US Senate",
+          "total_votes": 972132,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "d833a9f3-cadc-5495-b6de-7da94893a7ca",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b27fa689-4bb3-5ca8-8c16-93dca03f1fb7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "95fd3189-eba8-59c2-b215-558a3cbe3a6b",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f30646d8-2f57-58bd-8890-6ab0d1fff37a",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "aadf7c33-31f4-5428-9def-707ad7667c8d",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "6385922f-1e4e-54ce-95d9-2d97c89b6d69",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Nevada US House",
+          "total_votes": 960774,
+          "candidates": 19,
+          "parties": [
+            {
+              "id": "934cf746-9188-5de9-b970-2e45ded5777f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "89157271-89dd-5ab6-b430-c53cf6cdc151",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "af40bc62-390c-5095-bbde-b8888d04fd31",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "12634c07-9b22-5d1e-b821-0cced4ed2b56",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "285048a6-9445-5da2-a5ed-7069c30ae889",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "c0914914-25cf-5565-aa30-6509f0ba0c36",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Nevada Governor",
+          "total_votes": 971799,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "7478ad11-0aeb-56b1-8f24-7e4d85279026",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "50fdd868-2044-53c3-830b-013ec128d6da",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fc51a7dc-fee3-5f2b-ac39-141519fcb599",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "fab52019-961a-5257-9ae2-16ccf7264316",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "23e1cf9e-5dc6-5af4-94b7-8648b5acbc14",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4af517ba-db99-5cad-89c2-91de3e496f20",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/NY-2018-202609151031.db",
+      "size": 87318528,
+      "sha256": "c262d3bad204ccc6537eb5eb431af54bef8ecce2593d88748f1c2e64699192bf",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 New York US Senate",
+          "total_votes": 6059687,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4438a464-11bf-556d-a2f1-9efda1e161b9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6282ed50-dc3a-5a43-acb8-c5c6028b76aa",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "be75e153-0fa3-5ba4-8994-86331da885dd",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 New York US House",
+          "total_votes": 5840655,
+          "candidates": 170,
+          "parties": [
+            {
+              "id": "c991a656-a20e-59ba-9cba-df573767f12a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "408f89be-27ce-589c-8417-5a5d4ec02d8e",
+              "code": "WFP",
+              "name": "Working Families"
+            },
+            {
+              "id": "1b7c85e8-5943-574a-8b9b-ff3e9912b730",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "c8c26f52-96f7-5c45-80de-4f0165501e7c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b4574e77-a273-541d-bbba-f967564e0c0b",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "140ca9d2-e2e2-52bb-9d08-34cb093b5cfa",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 New York Governor",
+          "total_votes": 6105117,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "5d51dd6a-5b22-5060-a89a-24b777257ae5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b3fbb52c-93ce-5ca6-9357-9dfa31bad450",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9ad8984b-2f69-5e38-a586-c6937f7166d4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9682327c-c495-5b64-86f8-13f62119a287",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "f48864f3-212e-5335-a30e-61b07ac3677a",
+              "code": "SAM",
+              "name": "Serve America Movement"
+            },
+            {
+              "id": "4fb424b0-049b-5bd9-93e0-5e85d94808a1",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/OH-2018-202609151031.db",
+      "size": 50896896,
+      "sha256": "821f3e7334919cf6715abf5c1c8122130ef6cecab6135282adc28225f1c3c267",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Ohio US Senate",
+          "total_votes": 4416067,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "b7920f4c-ceb1-5e17-991c-5ff66f1de290",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "81abf554-5c4b-5e13-8d43-e1b965843489",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Ohio US House",
+          "total_votes": 4412408,
+          "candidates": 38,
+          "parties": [
+            {
+              "id": "8e008aed-c185-52a6-b6ab-0c611258c1a0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0c230a5a-75a4-5da4-b27c-1e5888731a5a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d19b4597-438e-56d9-a0a5-d7c878a06580",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2d659408-bb03-5a1b-a0fa-0df4e1c294c6",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Ohio Governor",
+          "total_votes": 4435462,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "3c39be0e-0af5-5536-895c-f25e120fa7d1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b02a4946-a6c6-52dc-9084-b5425ff9f21c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0645615b-1077-539d-be42-a3d7ce04abb9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b062caab-37ae-58f8-a623-1693029d082c",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/OK-2018-202609151031.db",
+      "size": 25206784,
+      "sha256": "1686da5c62a5f849745cdfed404dd03b5431bfd3c31c07d0acfdff31c4db07e0",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Oklahoma US House",
+          "total_votes": 1178836,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "360ece46-a7b4-58e4-bd3c-fbc97a27f66a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e6d36b3b-0fb5-5fea-a20e-a17139ca5370",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "76ca3f95-7ca2-58a4-972e-dbbba1169841",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a4cc1470-8276-597c-a051-ff42c0c3a374",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Oklahoma Governor",
+          "total_votes": 1186385,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3bdca866-5bad-5cbe-84ad-9d4beee31f9d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "df00d61e-c5a4-5131-ac4a-6a0743c05111",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ead07f3c-5975-5a44-ae3b-efd67270a6a8",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/OR-2018-202609151031.db",
+      "size": 24645632,
+      "sha256": "bcc0edb7e879b429a43c3ce013827da54e9238ffe502dd11ae75bf10555dd518",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Oregon US House",
+          "total_votes": 1860581,
+          "candidates": 24,
+          "parties": [
+            {
+              "id": "a0505a9a-70c2-5640-838c-f8018f2147f9",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "208a96f5-dc56-52c3-86bc-a4f066bd6236",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a9785f0f-5ec0-51c6-a97a-2b201a5d85bd",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "118e14f0-23a8-5323-810e-cdf77de38add",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c2590095-3ec5-5214-a11d-28e6bcba1aca",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "156b6af2-7221-54ec-b345-800842fa0d50",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f387c971-6480-5109-ba52-8fe6a1faaaf5",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Oregon Governor",
+          "total_votes": 1866997,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "6815bc76-ac68-54f9-8b6d-9d2cfa21567b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "11f6de9d-ba0a-5921-a841-310d7d51ccbc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f94a67fe-b3b3-508d-a1b5-575bb7b29da6",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "1301d778-e1dd-5c74-981b-517ce8ee9a45",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e18a139d-5a0a-502c-828a-4f3469de6e89",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "125c2e0a-0669-5a20-b096-181e051a70fd",
+              "code": "PRG",
+              "name": "Progressive"
+            },
+            {
+              "id": "eee25225-d5c2-5a2a-9ad4-467e4c36e384",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/PA-2018-202609151031.db",
+      "size": 57929728,
+      "sha256": "38dc550c80a83c90f03193342301234d8689a496f13929362eefa894c9a687d5",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Pennsylvania US Senate",
+          "total_votes": 5010032,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e782a67b-89a7-53fd-8544-97e4e9c750b9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2021bcc5-b687-5843-b2c6-f5e259369a39",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e796b906-9957-5017-ae46-2131a547663d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "54625a35-9a26-513f-b625-ba073817a593",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Pennsylvania US House",
+          "total_votes": 4931756,
+          "candidates": 37,
+          "parties": [
+            {
+              "id": "173b8fe2-2356-53b7-a8f9-cceaa351099e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4bede489-04c1-51da-9768-4215b37140ec",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "04cef6f1-7519-5071-88ed-1dc224ae02bd",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Pennsylvania Governor",
+          "total_votes": 5013259,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "43e916ef-e882-5779-925a-b040581a41cd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "544af77d-70b4-5429-bae8-4541caf958c4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1da7f7ee-3732-5b23-9f31-279df4837972",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "faf9e659-fc49-52be-a461-cdf798881a08",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/RI-2018-202609151031.db",
+      "size": 3993600,
+      "sha256": "8bb4e49277e6913173a3cea01c8513a3a64bba47d59494b5389cabd974e0e5e3",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Rhode Island US Senate",
+          "total_votes": 376738,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "45d25973-1b6e-523a-8e3b-f6e64a6712cc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "52d15e6a-5705-5e21-a0ae-68a151abf14a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7e70a3c3-3705-5480-9c11-b9f97acb5b1d",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Rhode Island US House",
+          "total_votes": 373139,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "28ce7f0b-99ef-5c6e-8f9f-5710f3c34671",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d7fb5f83-715b-5d35-b0e2-cb10d1c6566a",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "6505faf2-195c-5ef9-912a-a56b7de85cb7",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Rhode Island Governor",
+          "total_votes": 376401,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "be69bdb3-5ae2-5a9e-b716-1213067d637c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9e6d53ac-10b0-5537-9ac9-693bdfcc9356",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7d3c2599-f991-5a12-9a7d-7070a8c5c1db",
+              "code": "MOD",
+              "name": "Moderate"
+            },
+            {
+              "id": "2ce57308-008f-516b-a2c1-32f2db740de4",
+              "code": "COM",
+              "name": "Compassion"
+            },
+            {
+              "id": "6dfa52ab-dc56-5ff5-85cc-db31a874cc71",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "50af57e8-612c-54a4-a2d0-7d3852d704d5",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/SC-2018-202609151031.db",
+      "size": 27332608,
+      "sha256": "b9bc1b1ac60217b03aee27efa784093eada5e76686351078afa7a7165f8d2112",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 South Carolina US House",
+          "total_votes": 1709292,
+          "candidates": 26,
+          "parties": [
+            {
+              "id": "fc39bebc-dfb1-5761-a1cd-f1b2aa332eac",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9d1e6c61-6f49-5927-8991-e50c7f1e20e6",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "560234e5-e6d9-502e-a2db-b13c44d2d12f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e545a970-07d8-5ddf-9c19-4533e8b0fc57",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "ed0402f6-98ae-546e-8916-f72f9b1db1b5",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "ee651705-79b6-5457-aebb-04be3383a6dd",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 South Carolina Governor",
+          "total_votes": 1707569,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2d093b98-d3b9-581b-b530-79bf7c949094",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9b4f20bb-bc53-59e9-9b3f-a78bbea9d662",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7d32162e-7da3-5fff-8ba7-cd404e3cd2a4",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/SD-2018-202609151031.db",
+      "size": 13266944,
+      "sha256": "90537309d4e2fa7ae5788be68b7116ef09f7b34a3b9a1324633416aed28a2e4d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2018 South Dakota US House",
+          "total_votes": 335471,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "d925f046-825d-511f-b6cb-808c075f73fe",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "65806808-ba8f-54d9-a2ed-29e72b5595b0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e3afbf9f-494e-5d8d-bd97-39a4b41eadc0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1be619ae-a716-58e2-a9de-50e57a1ccaa6",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 South Dakota Governor",
+          "total_votes": 338715,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "aa1c4edf-280c-5537-bef6-9f1562662993",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b1f93331-1ade-58c2-a573-f6c800c51f55",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1df118e0-3755-5b6f-91dd-191c8a8138a8",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/TN-2018-202609151031.db",
+      "size": 44838912,
+      "sha256": "2f2d0148310b6dc354457e65d38b40fe99d97f40ecba616a41cc8207dbbf80cb",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Tennessee US Senate",
+          "total_votes": 2243740,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b2cade81-4940-534d-8e37-52440227d559",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fdfb3950-dd63-5fc3-be3b-528ecb74f069",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "00360825-3426-531c-984f-d7c3f2aa98b4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Tennessee US House",
+          "total_votes": 2159825,
+          "candidates": 33,
+          "parties": [
+            {
+              "id": "ae972f11-cdf8-5de2-9f7e-87f26dd3b831",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a8f92c4b-4ac5-5e5c-a39b-c8477bb9773e",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "591509cd-953a-59bf-a379-3d7635c9e962",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "af1fea96-c8c8-592b-8386-cb9162d6f300",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Tennessee Governor",
+          "total_votes": 2243294,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "af384488-3100-55c4-b1fc-e9d09a852d2e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9b8e8225-a286-51ac-9a63-eb1d6caf4fa8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "34299c9e-74b4-53da-b8bd-758c3d9cd327",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/TX-2018-202609151031.db",
+      "size": 106618880,
+      "sha256": "b8cc81a0a04e432570f32d3f8bc316ef98c97c11b577ec4bc5a4a7c83fab091d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Texas US Senate",
+          "total_votes": 8371565,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9ac85a24-c363-58e9-9ac7-900872d8b6a3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cb1bcffe-2102-5063-a3a0-ee11e7dd098d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5a2ecd9b-cd37-58e1-bcc2-9fa2e050528c",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Texas US House",
+          "total_votes": 8201583,
+          "candidates": 108,
+          "parties": [
+            {
+              "id": "a8ebf8be-6a19-5117-bd88-f2be6426009e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a2d398d8-2bd3-5776-86ba-d01a1b730d03",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "dd102205-d4a8-5cb3-8018-cecebac34a64",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f545cc17-4bc0-54a0-94dd-d438877ae526",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "40084321-f0ff-5e2b-9418-386fa9dcaf0f",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Texas Governor",
+          "total_votes": 8343440,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "405f2a60-a5ae-57e4-a128-e886f8343817",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "414c7af3-8d16-5a50-acf0-c2e6804e7129",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "47e1ccf0-50d8-51c5-b1fe-390b1907b8c0",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/UT-2018-202609151031.db",
+      "size": 23474176,
+      "sha256": "ed5406b34ef80dd2b5753e6a454cc68bcd53ca098d29a8463dd4e0e52dad1a2d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Utah US Senate",
+          "total_votes": 1062845,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "8fde800a-fee9-5f48-a398-a128c426c369",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ddc255be-f8be-586f-a1b1-57e3c4559109",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bcfff6e5-ec6d-56cb-97ef-988da8351c25",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "92b1e150-2406-5061-939c-b217d5a34d81",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "3f586e69-2580-5033-ba10-a098c7374eeb",
+              "code": "AMR",
+              "name": "American"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Utah US House",
+          "total_votes": 1053700,
+          "candidates": 19,
+          "parties": [
+            {
+              "id": "ddea9d18-9e49-5884-98b7-2ac5b3b24532",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "291bf5d0-a8e1-5ad2-8d27-c3f8dfbad1d8",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "f07c2602-564c-502f-9c43-f821a86366b9",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "de305b26-6b4a-57a5-a104-1c8e88c2b06c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2c631e4c-780c-58f6-be56-906df5493c50",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "63eb1e1a-b15d-5ab2-bda1-74f3e763194f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1df5dae9-a5f1-5bc8-ba6f-ba831930707e",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/VA-2018-202609151031.db",
+      "size": 50163712,
+      "sha256": "a48a14cc87da83fe8b8c319affe79a0fa4b2dfb7e9b61a92464adb2289ad8b52",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Virginia US Senate",
+          "total_votes": 3351757,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "0f06ac90-9d79-54d5-bbb9-c22476f4839e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1d3c3f58-f81d-5c7d-a763-b02771582ebd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "57a53a60-f277-5955-92d8-07a88ce64351",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8729a892-ebd1-5638-b8fc-ade75b60fdc1",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Virginia US House",
+          "total_votes": 3313227,
+          "candidates": 35,
+          "parties": [
+            {
+              "id": "2be83c1c-2e58-5e99-a843-3a83e7097b77",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "6f042895-8701-5fb5-b272-40ed699849f7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "997b5160-0969-5ce6-a18b-3170a464d524",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "00729813-2aab-520d-9934-f985a38ead1f",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/VT-2018-202609151031.db",
+      "size": 3055616,
+      "sha256": "387c1729ec1bf340550c3f46377636a0ad7751892e06ebae2bae5f766d5ff81c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Vermont US Senate",
+          "total_votes": 272624,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "a7637714-9c07-5f51-bfd9-5e17fc895468",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "8faceae7-e661-57ec-b7e3-7a8072f3731e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3f1b186d-fb8a-53f5-a82f-c3653cc6a627",
+              "code": "LUP",
+              "name": "Liberty Union"
+            },
+            {
+              "id": "6c2955c1-d59c-5a7d-85ea-848015e5b571",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Vermont US House",
+          "total_votes": 272451,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "4154fb58-0d20-5edc-b134-47d21553d52a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1fafa45d-96f4-590b-866f-ef4a126f9760",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d2b043e5-f7e7-5462-81d3-ddda90f2f80b",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "0038c860-3def-53e5-a065-ecad6e8890b5",
+              "code": "LUP",
+              "name": "Liberty Union"
+            },
+            {
+              "id": "c3290013-c1cd-5ef2-bf53-18537bc8b29c",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Vermont Governor",
+          "total_votes": 274087,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "638da8b4-eb30-5b05-8a53-02302c4dde85",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a6ba885d-08e8-5bcb-9a5f-3399131e4d29",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "56191183-1dfe-5853-af14-5dab6e7facd8",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "c05b6753-44a2-58b3-9a23-3bd2add51dae",
+              "code": "EAR",
+              "name": "Earth Rights"
+            },
+            {
+              "id": "d3f38937-2a0e-5590-98ef-e13fc56d803e",
+              "code": "LUP",
+              "name": "Liberty Union"
+            },
+            {
+              "id": "aee2dfa8-f8bd-5698-bb3a-65b1db6891ca",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/WA-2018-202609151031.db",
+      "size": 64094208,
+      "sha256": "e1bf229c85471fb6dcbde0884f1fdbdc41d7caede9e501a0dadbcb3da5003e87",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Washington US Senate",
+          "total_votes": 3086168,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "ca27d0c6-dfe8-55f9-8213-d022e189b4bf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fb557d04-e248-5207-a161-86b1227378b8",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Washington US House",
+          "total_votes": 3028794,
+          "candidates": 23,
+          "parties": [
+            {
+              "id": "8ef4905c-5ef7-55e2-b333-545e19729772",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "624effaf-7dcc-58fc-8ea4-df61333d0c28",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cf5ce86d-06e8-5ad9-a632-3fb578ac4a63",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "782e61f3-1259-5fc5-8be9-77bc27500b18",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/WI-2018-202609151031.db",
+      "size": 56848384,
+      "sha256": "22a62b183b56667d5a8055b8fe8ac46a4be0b310632cf95af922c7ef2c225463",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Wisconsin US Senate",
+          "total_votes": 2660763,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "534170bb-af6c-517a-89a0-b91d34665506",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0f54c8b8-b926-5097-8957-2b3316b77293",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "373bd82b-b7f2-5b4d-832b-7da219c344ec",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Wisconsin US House",
+          "total_votes": 2562097,
+          "candidates": 22,
+          "parties": [
+            {
+              "id": "2ecaaaad-63e1-532c-bdfa-52b68694abe4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f082c48c-080f-52da-8791-165555f1112d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7f0d1f9c-6ffd-5f5f-853e-4c1f6e00b53c",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "045b58d8-fa47-57ae-8b0c-443147a154d6",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Wisconsin Governor",
+          "total_votes": 2673308,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "ce4fe976-11f4-5850-aa7c-94affbe4c42a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "92b5d789-8176-57b1-bc78-c01c4f211e46",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e051a80e-55cd-51be-91d9-4583776b91ba",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9352016e-d4ab-5417-b1a1-94cc6037c679",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "a52f638a-8363-5c7b-b405-42481c04a1e3",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "f6751120-48ca-5a1e-851c-4cf9dba2d300",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/WV-2018-202609151031.db",
+      "size": 30302208,
+      "sha256": "21369fa321eee6886551590e4ca35df8e1ffbaee2bd6c4881fff5ec786eac59d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 West Virginia US Senate",
+          "total_votes": 586034,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "26a8a959-1630-52f1-b7c9-9d82b628931e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cf6c1cf1-2b9f-59f8-8d41-bf71140a917e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9905e377-bb4a-5702-8ff3-ca7dd24b1670",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 West Virginia US House",
+          "total_votes": 577991,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "d4ff66f6-1448-5d45-99bc-f19c5d1cbf93",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "936da6b7-fd7b-5cec-be3b-73bb270a33d9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a11bb44f-d83e-5a87-858e-045270c4271c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2018.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2018/WY-2018-202609151031.db",
+      "size": 9453568,
+      "sha256": "c01196100ecc5342bded0fba135452cd1a480d5df6caf677504ffe5b11705cce",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2018 Wyoming US Senate",
+          "total_votes": 203420,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e0b86a00-b31b-5302-b1e5-2a55b8e85ede",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b126b74f-2420-5756-a1d5-b9ccf8d0c9f0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "789122ad-f923-560e-a1ff-28fd8e55f89b",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6e67f4f1-07e0-5f6e-b16b-a7e64d8bde40",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2018 Wyoming US House",
+          "total_votes": 201245,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "af9d3014-2bcd-5f39-9361-aeadf6fef759",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "028dee1b-0aed-5363-97b0-33a5359f45ae",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c1366d3c-c4ab-5dd5-886f-9aa605b5a55d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1ee76891-f277-5f10-91eb-e55c4cca6151",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "0021127e-8645-5ce5-9f52-28196a4bee00",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2018 Wyoming Governor",
+          "total_votes": 203238,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "bfeb7914-8482-5498-b8ab-825f15b860f3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "27013b70-0f70-5764-bbc3-59113da5912c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ee2a6c86-7bf8-5944-bbed-981ae975b6a0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7701465e-a377-5719-89d7-7e1316392f59",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "ceaaff2a-bd5a-5dc8-8422-986bef7f5182",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4234 @@
+{
+  "year": 2022,
+  "schema": 2,
+  "generated_at": "2026-09-15T06:48:13+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2022",
+  "national": {
+    "db": "National-2022.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2022/National-2022-202609151031.db",
+    "size": 5226496,
+    "sha256": "e31deaa37b8ea2c1b5c20f57bf0a61ed1cdbd759dd2806e012524ce437f56afc"
+  },
+  "states": [
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "db": "AK-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/AK-2022-202609151031.db",
+      "size": 6115328,
+      "sha256": "3d0e438d94b6ff005680eadbc3122caf293d0fb69d8ecbd5e6365d91eadac51a",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Alaska US Senate",
+          "total_votes": 261601,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c57c2b0c-dd49-5b9e-a7ee-40c3d141a8ff",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d7498470-b5d9-54cc-9b8d-050adc9a63b8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a4f76e54-2f2f-5bc4-b0fd-91f30d2aa2a2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Alaska US House",
+          "total_votes": 263506,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "38846eae-e548-548c-96e6-3caeb0482fb4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ce435386-036d-562f-aafd-10f633101ed6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "fe25fbe6-3e7f-555e-8bbe-0b5a3e2215b8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "edd774d8-57cb-5ef3-bfd4-c7a6e6097325",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Alaska Governor",
+          "total_votes": 263752,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c5834393-d320-5a01-b638-69787ae40b11",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "eec28996-1e58-5187-9b20-bbe4882b6b2e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0352b298-a84e-5f73-b7b7-10931389e10c",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "da25e541-2ba4-55b1-b27c-379fb164f159",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/AL-2022-202609151031.db",
+      "size": 1310720,
+      "sha256": "887a3191154c63442ddbc948f006a2fdcdbd3aa8fe595930c4023d13ebc3299b",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Alabama US Senate",
+          "total_votes": 1414238,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "c7c03d75-8500-5f8a-94ba-8722d637e0aa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9422a6a7-ae39-5733-9c4a-8f0d59f4dcee",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fa5a968b-b15c-542d-a93b-fc6942e2aed1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5703783c-fa22-594e-aba8-6cfcf7b7dff8",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Alabama US House",
+          "total_votes": 1343710,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "04a36d7b-1401-56c7-a166-629ede403e5a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "03ac58ab-1944-5f1f-8ee4-bd4404e3c848",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6dbe84e5-0d85-514a-91ae-4f8f4e25718e",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "09392cb3-16b5-52a2-b07a-f38367b03ba1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5d408a37-1d0a-5aec-983c-a8112d5f9d14",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Alabama Governor",
+          "total_votes": 1415283,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "4b0f42c7-cb8b-5888-bd2c-fa52417cbd5e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "08d6522b-0fe1-593a-a16d-aed194a2ac4c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6394934f-093a-5025-8d51-d0e6a17da66c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "155c2c0a-8eb8-5e3e-b752-1c7779f5d9b2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/AR-2022-202609151031.db",
+      "size": 1232896,
+      "sha256": "eb6f806907bc938eb119fca90d351c74bd141ae771e492ef82a79fb6a191fe56",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Arkansas US Senate",
+          "total_votes": 897030,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ba4842c5-994d-5901-8df2-6d481fab7bf5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d5e1e857-eddc-5465-bca2-dcb1faa7347f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "83267bd4-c9af-5bf4-b806-148b6a6392fb",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Arkansas US House",
+          "total_votes": 890949,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "4d7ac10a-8833-5de6-adfc-a207c2682dd6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6013af77-796e-5a00-9be9-e55e1f57cf02",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9a428472-ab9f-5f6a-98c9-1812a4c7ecee",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Arkansas Governor",
+          "total_votes": 902671,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4708ebd2-697c-57e2-b4e0-d677bd9d99be",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1d78d5ae-db5a-58ba-8f59-807488cbfdc1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a1635c4a-12d5-54bf-b25d-e9b95057f4c0",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/AZ-2022-202609151031.db",
+      "size": 815104,
+      "sha256": "efd8b66280cd50d24d12cec7c8ba8f6b7504d4565ea5584284ad73e9f3042d6c",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Arizona US Senate",
+          "total_votes": 2575722,
+          "candidates": 12,
+          "parties": [
+            {
+              "id": "2002dd83-12cb-5e8c-ae03-7ecff4326456",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "81f96fc8-5e71-51b9-92ec-2a6ceaf7e6e1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cad77a22-329f-5ca7-a7cb-299e8dfeb89e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "325d8c8e-1b05-5545-98f8-c2d99858c887",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "cbea6174-ef4f-5468-ad09-0e73fc3b6719",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "0cad5252-5e6f-596f-8609-4b889fc7fa02",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Arizona US House",
+          "total_votes": 2412018,
+          "candidates": 33,
+          "parties": [
+            {
+              "id": "38da9089-c84e-5b00-9403-d5cb54c6f627",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ebb546ce-8680-5fb3-a0dc-e54cab602dcc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ebb2a085-2d81-5adf-88f3-29b6158bc2f3",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "dbdae7a9-c881-56db-8794-95174523efbb",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "619d4bd6-eb5e-51d7-aae6-20fb79258023",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Arizona Governor",
+          "total_votes": 2570892,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "ada4c4d0-d23f-5103-b626-6b671ea25194",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "380a1dfe-ad9a-545d-beca-72b7ad34cfb7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "334db966-3d0a-50eb-bc4e-1f61e63fa46e",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "2f9902fa-4f7c-56bf-b907-0694fd5d60a1",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "5749b8b7-4dd4-5704-9af4-8e4007d6f26d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d74dae44-722e-5c47-9755-748276bc4220",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "0863dc41-13c1-5a5e-b64b-f554ddc7ed22",
+              "code": "NON",
+              "name": "Nonpartisan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/CA-2022-202609151031.db",
+      "size": 3117056,
+      "sha256": "2e095c5a2dbd2cafec37fda3866a89c5df46b1630235202e82b3246aaff6b5e5",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 California US House",
+          "total_votes": 10655434,
+          "candidates": 104,
+          "parties": [
+            {
+              "id": "66be26b2-1320-569b-806d-95c890ccde05",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d5e561ac-d660-5483-b1db-ee962d6c2389",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6e551de4-9167-5a9d-aea9-2288ddb2c0c4",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 California Governor",
+          "total_votes": 10932079,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "9a5f813b-aecf-5992-8658-97af98f2a553",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3d0f7374-d477-55bd-b1c9-c252254464c2",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/CO-2022-202609151031.db",
+      "size": 1249280,
+      "sha256": "84ef60ff2401487b34446b6c59367574f5361fd3db24ae16c4040630c71cf899",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Colorado US Senate",
+          "total_votes": 2500201,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "fb072638-eb5f-53ae-bbe8-21b1a5a386cb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0b371ac7-39ca-51c9-a6b7-40f6100a63fc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "27b69f3c-e153-5cc0-b5ae-a72f66849b58",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "6b26cac4-9332-5bb7-8d63-0db821ae67c0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8f4b0148-12f6-5fb8-a6c6-10b8bbcf5340",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Colorado US House",
+          "total_votes": 2472141,
+          "candidates": 34,
+          "parties": [
+            {
+              "id": "9693575c-3669-5afe-9244-f9e9af3e07eb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "becb05f4-6b25-52a8-8d3d-049e42aa363b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "caf8b1b0-9f0a-5eaf-901a-c1830e4f3523",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "402f1f98-5c67-5b34-bbf6-875cc5dc675b",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "cd11c9ff-d5c6-5a49-8d77-8993e5be15e3",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "ae7e55ac-e2de-5370-b443-8ba273eb3810",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "e91fde45-4f35-5b5b-b299-280b2ecf449a",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Colorado Governor",
+          "total_votes": 2508830,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "bb522ecb-fdff-57a4-a099-9dc79ae74ac1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3e175128-5286-50c6-9a92-a108e162255d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ed772332-3cd9-56f1-a48e-49e1f5ca5ad1",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "1964adf2-86c6-58b8-92f8-33c005141991",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "cf71794c-131f-56a4-b053-d90960adcabb",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e6919a7e-e206-5a74-8c21-08afd3f6d9e6",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/CT-2022-202609151031.db",
+      "size": 348160,
+      "sha256": "24a7cfc5f5de47bb3f90d5fde8d533d2a04b3c75419f1d9ed5f610c27a1bec3a",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Connecticut US Senate",
+          "total_votes": 1259886,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d2ee3e32-7ccf-58bd-8a99-c41852719e5c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cc9a4d27-bc14-5711-a34e-3fa58f3d59b4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4c0bc4f3-91ad-56ff-af1d-be8c017b5f05",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Connecticut US House",
+          "total_votes": 1261336,
+          "candidates": 15,
+          "parties": [
+            {
+              "id": "4cdaae9b-37cf-5859-b966-66ad0e993843",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "096257ae-020b-5f44-9c47-978eb042e1e6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8e3f214d-0c93-5a8b-8870-2ea947032468",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ade93dcb-5986-561a-adc5-66ddb2c2da2d",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "0436eded-257a-569c-8afa-ed3964226599",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Connecticut Governor",
+          "total_votes": 1267810,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "5baa2f67-9e2e-58c9-928b-34b153345313",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "46859fb8-4288-5e2d-9023-761ebc6dd243",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e6172ab8-2e45-5145-90d8-4d0115071595",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "3c503278-1a00-5a70-bb3b-aa5b18092ebc",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/DE-2022-202609151031.db",
+      "size": 155648,
+      "sha256": "03c4454744814e24c918e5e07fcab3007ce0a05be0188ba5fcb731bc0fbdcfa1",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Delaware US House",
+          "total_votes": 321649,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "6d334623-8f6a-5b6e-88f2-6cbd6f0d0b11",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6f3cdb2d-8ae8-597d-9bd8-3e904600fc60",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "de9d26ba-2295-5461-9d20-be35e0181ad0",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ed39156d-1dae-54b6-bfdc-08bfebb71b53",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/FL-2022-202609151031.db",
+      "size": 1761280,
+      "sha256": "4f6d6982e48d7fd03e12baf7df907c3ab76edb0200bc31f6326f9eedb8a113b2",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Florida US Senate",
+          "total_votes": 7761093,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "0d6bfc14-ab05-5c87-bb3f-a7608b6f1e9a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b5b0cfb7-16aa-56b8-afed-b53d1f823d6e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3cfa4d60-cdb8-55b3-9428-ce2560c362d9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e99a961f-eadf-5dc5-86d8-99681ffb6c34",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "2379835f-b0e3-5251-aefb-54e69020c7fc",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Florida US House",
+          "total_votes": 7335716,
+          "candidates": 70,
+          "parties": [
+            {
+              "id": "41e98794-b2ee-5fd6-8e56-6cf130160052",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8ee03f74-90de-5edc-aec8-ab063a5e8af8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7038280a-be9a-5c24-8ed0-0303c343c6c4",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "68bfb3e5-0628-598c-91e1-f8455bbfe55a",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "db3c7c61-762b-52be-878f-b9b6e600d94e",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Florida Governor",
+          "total_votes": 7771398,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "8ab25b1c-0196-58c2-a11b-5d0d25521b03",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7159874e-ea2f-5ca9-b7f5-9801a2414123",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8a5eb25a-3ece-5290-afc4-3ab613b445e7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "fdea49d1-5ffa-5e6b-bb39-41c03f92d8ef",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/GA-2022-202609151031.db",
+      "size": 2420736,
+      "sha256": "6276ce968ac9b447359bc99335d228ef1ce1c0eade99ca408037e554a7c0fda5",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Georgia US Senate",
+          "total_votes": 3935924,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9cfdc0d2-0df3-5eec-b277-811e224321ea",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bdd4e33c-dc50-5568-b49f-fd7b88028920",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3167669f-f3c5-50fe-b7a3-2a7c5ac8e4d6",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Georgia US House",
+          "total_votes": 3907972,
+          "candidates": 28,
+          "parties": [
+            {
+              "id": "b02c17c7-fd4f-5dfa-a5b0-eafe5e570bc0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f92b69f0-b3a9-5820-8955-2b58c5bcc6f8",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Georgia Governor",
+          "total_votes": 3953408,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a994c093-6f29-5245-81e8-3a091f08d256",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b47461ec-8f39-5d8d-bd5f-904717f13651",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "da8af0b0-4b29-512c-843b-e94595e903ab",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/HI-2022-202609151031.db",
+      "size": 294912,
+      "sha256": "1a9b69a9014c6906ccbf8071f4bca5109213c1dc5c1f6b05eb5617cece9165a6",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Hawaii US Senate",
+          "total_votes": 408517,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "2ac61c27-956e-561c-9525-be6d4c3464ad",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "14d767a8-fb75-5b24-825c-da33462d3a29",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "7c1fd8e5-cbed-5daa-9cd9-f0f89237ca22",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3994a8e4-97ff-5022-957c-206d46167a94",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "f1f519e8-2db9-5dd0-b494-fd0f1a050b61",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Hawaii US House",
+          "total_votes": 401174,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "80498630-8078-535f-b40d-2d8bda5ae15d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f36472eb-38e5-5d08-bdba-24ca505e479e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "95d5e755-5e50-5c9c-b4fc-9fecd0da2701",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Hawaii Governor",
+          "total_votes": 413262,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "c7314200-93c2-530f-a9e9-90aafae8b2e3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4fd5add9-7849-58bf-a924-a430d5beaf79",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/IA-2022-202609151031.db",
+      "size": 757760,
+      "sha256": "f12342c0f1b10efb2abc1bdd5de2aac086e4d80385c38c1aa0a44bdd08bb5d14",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Iowa US Senate",
+          "total_votes": 1216646,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "913e64ef-7640-52e8-a91c-2761afc1dae3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "be31ff81-3ec5-537f-a9aa-2c5e5fd2a5c5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d7c66983-c017-5eeb-9c4d-2e42e3318e5f",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Iowa US House",
+          "total_votes": 1211700,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "114aaea5-07de-5b99-a8d9-0c26fe525267",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7d23d309-c212-5c66-9281-8a920a09eede",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5b4655d0-c588-541f-83fd-1c54b81ab2dc",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "5e201372-c99a-5296-b139-ec9aa53dfe58",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Iowa Governor",
+          "total_votes": 1221864,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e7d136ca-e926-53d9-862d-da0f16e15209",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "56fe1920-58a2-5d0c-92ff-27abe8a46106",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1cae0bef-9d29-57f9-a463-bc44be81a744",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "98b53edf-4efb-5955-ba53-25e59ea275bc",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/ID-2022-202609151031.db",
+      "size": 1097728,
+      "sha256": "0bf6618ba78890f301d03fd2846969cfd087d1aedc372732bd471bc4395d65e4",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Idaho US Senate",
+          "total_votes": 1177836,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "6267c657-1957-5709-b01c-96ef3f88751b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "36b0f234-4040-5301-b5a5-7f21af3a896e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b07d9014-7154-5991-a5ca-3d61eef617d6",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "84d9b9ba-ba79-5579-b051-4590d74f0684",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1521278c-f656-5548-8ae3-9f2a3dcb2765",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Idaho US House",
+          "total_votes": 1163392,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "8570e9d8-275c-549b-a77d-d59930cbc86c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1a41b80e-1043-5c23-a4b7-dae7dd834b5b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7248c254-7207-5919-8161-8d6fcf63c788",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Idaho Governor",
+          "total_votes": 1181304,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "005dacb2-6f7d-5633-908d-711201048b4f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "039095a9-4bc5-5d3e-9a01-5dae2f987f20",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b6ec16ff-299e-5dff-b91f-4940a7986699",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "c455f48c-2ccf-5ad9-8a8f-48ce14a9772d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b69b9040-b881-5780-9cea-b24274c4b0ec",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "de06db20-fb1a-5310-8e8e-212d2da3b594",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/IL-2022-202609151031.db",
+      "size": 1671168,
+      "sha256": "68b367aef8c3211b16e68bf9faa8b2715c7cfea206700b3097a72e8117b63692",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Illinois US Senate",
+          "total_votes": 4100287,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e0ca9ecc-bc94-56a3-9a3d-b0cc9e6fcca6",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "8383c94a-294a-53b3-a6e4-7ebce265e9e7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d4a556c7-f158-5422-97c2-05fb098815f7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b8f115a1-5cec-568f-b330-d80aa835cabb",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Illinois US House",
+          "total_votes": 4050682,
+          "candidates": 56,
+          "parties": [
+            {
+              "id": "8947fb85-e93b-5e21-b2aa-9889700d3017",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "64086f15-5fde-564c-a13a-d0eea5965f87",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ce692c64-ca35-5475-8bef-6f6d233aa21c",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "1450e8db-3d7d-59ab-af2e-37694e8b9a0f",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "fd60e191-5ca7-5a17-81bd-056a36dac189",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Illinois Governor",
+          "total_votes": 4106208,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "4044f6f2-e894-5fb1-888c-4d44bcbee880",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "dfdeb668-071c-5ecf-ae34-539ff16ed725",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ef655aa5-24e1-58a0-a373-d504181a7ef1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5dd27911-00e7-5949-be01-9705c07c746f",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/IN-2022-202609151031.db",
+      "size": 753664,
+      "sha256": "8b2a9d8a4c518ad816b3a54e44831653519a5c70955facab9a24339c5cca13d1",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Indiana US Senate",
+          "total_votes": 765427,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "dc5af4c5-66d9-5324-9d55-eeb376dc4027",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "58368249-24cf-5667-8b76-34ae3d1c4e5e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "46541f4a-5767-5c85-9566-f0a792c04bec",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a4bc238a-444a-5dec-872a-e9d654df7546",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Indiana US House",
+          "total_votes": 763595,
+          "candidates": 23,
+          "parties": [
+            {
+              "id": "381bde45-677f-5ec5-bfcb-c674e19b9c97",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8bfd3092-7b38-5e7b-8373-71078d36345f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e7311032-6e24-5d78-aa39-d22c75294167",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "2520bea4-c473-5f9d-b93f-b3144f43fced",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8fba4798-988c-5776-a838-eae4f2ca001c",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": true,
+          "name": "2022 Indiana US House (Special)",
+          "total_votes": 26945,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d1ef8b88-bc8e-5f8d-ac7a-68ad451adee4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ed529f10-f917-5275-bfc3-5a4cc3d94192",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "54f90007-f65a-5656-b57d-b6ec818bbbbb",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/KS-2022-202609151031.db",
+      "size": 761856,
+      "sha256": "05faa8428287a8003342c71d7c4ca156432b76eb7e208237c029f1b859c7d643",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Kansas US Senate",
+          "total_votes": 1004948,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "411f0c92-e45b-5533-b1f7-2ca33dc2fb54",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7d3ac332-9629-5aa6-a5f5-4eaf7d9b024a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "212aedd8-8a23-552e-ae27-208ff03c03a4",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Kansas US House",
+          "total_votes": 1002062,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "64880ae7-1765-5541-8473-b3fd161a6e16",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d084f78f-97a7-5642-9d0a-ab5dde2d7629",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6b9ce5d0-6c64-51c4-904f-3f85abaf5299",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8878a4ac-e9e4-5912-ba89-d067fb0343b8",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Kansas Governor",
+          "total_votes": 1008989,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "ac1a510f-fc29-5d65-b792-9790af1a4505",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bdd79a97-8dc1-567d-acf0-0dbeb0e6829f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e5c7be0f-8e68-530a-9788-bd8966096a76",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "59c1188b-37e9-5d09-88b7-6ea71340076c",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/KY-2022-202609151031.db",
+      "size": 1990656,
+      "sha256": "cc98e7aad6cfa7081bb83e184e278f1586005349e5630e7045e43490b31814b8",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Kentucky US Senate",
+          "total_votes": 1477622,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4ea4b6e4-0cea-5472-b964-d9a13cc64531",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5faa1627-bb8f-5fb6-993e-b8a66ac661ab",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d772f5b0-19e7-5f8e-8255-30b7c1b1205b",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Kentucky US House",
+          "total_votes": 1462592,
+          "candidates": 15,
+          "parties": [
+            {
+              "id": "09c979c5-c654-5d07-8b03-1a42a9d47fd7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7a975597-268d-5070-b3eb-9b852561d997",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "234fef7f-f9d6-553e-a90e-7068b2afb65f",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "66251e28-69d9-57b4-94b3-429b6aba2d75",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/LA-2022-202609151031.db",
+      "size": 1740800,
+      "sha256": "4123f30aff0f025cbaaa53e59530fd7fa51245e749a3df7b493dd11678f8d583",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Louisiana US Senate",
+          "total_votes": 1011323,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "f30d6a36-4865-5a14-9635-5721b496ef6f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "06ea0177-38e8-5c1a-9b54-4014002ab677",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "90a62cc2-7da5-5f88-8ec6-f9e8c953dd88",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e8066bbd-0216-5481-9641-a3c3f27d7f27",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "9c1ee8a2-dffb-515a-828e-38980814ee87",
+              "code": "NON",
+              "name": "Nonpartisan"
+            },
+            {
+              "id": "0feec070-5ffd-55b9-8d86-5fd23c45e068",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Louisiana US House",
+          "total_votes": 824468,
+          "candidates": 21,
+          "parties": [
+            {
+              "id": "aad73c1e-0cf0-5cf6-aa8c-b4419da5f35f",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "c20d6742-7f88-55ca-800d-34d68996ecf2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5716d835-7a9c-50d4-ac54-bddccc7cc6ab",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5be33832-4cff-517d-b6e5-ee4afbf82a49",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/MA-2022-202609151031.db",
+      "size": 561152,
+      "sha256": "9d612b907def3f0580a6858e0bed2f6dd19f704d2a719dc333a0abd2d4dc0ece",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Massachusetts US House",
+          "total_votes": 2357997,
+          "candidates": 27,
+          "parties": [
+            {
+              "id": "0c80dec5-e1b9-5735-841a-6b209f07995d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "32b83d58-7be5-58a9-a6fd-499d2918ece6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4dd0103b-d856-5ca0-b561-c48171c7afc1",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "9d6304f6-8ee2-5af9-ac78-1e840ee5cfa7",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Massachusetts Governor",
+          "total_votes": 2485796,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "05f52fcf-4816-5f58-9394-b9f78115a1a3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "62f91f5d-f907-5175-a9fa-79a7915f47b3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "56abbba4-2655-5fe1-b7bf-24e9888186cf",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5735b13e-6aaa-5bd6-9290-2e71844f2c27",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/MD-2022-202609151031.db",
+      "size": 913408,
+      "sha256": "a3436c1c34ff8b03e0b6ad6a91430048c4706cac6dab4116f48e0c3854f2dbf5",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Maryland US Senate",
+          "total_votes": 2002336,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7ff3d212-2485-51fd-887a-8019fa47b9fb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ecdb0a65-4e61-5a07-982c-875b9a0926c9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9398388b-6f27-50ff-bcf1-271dd7d35568",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Maryland US House",
+          "total_votes": 1995728,
+          "candidates": 26,
+          "parties": [
+            {
+              "id": "455f1f5b-c3ad-5462-b217-17e99c5ea2b0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "619bf039-ef83-5209-af46-f0bda66d1fc5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5c3a0065-b32f-5461-9233-c669fdccc59c",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "9b5ff105-15df-572b-b796-65dcaec0fc5a",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Maryland Governor",
+          "total_votes": 2005223,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "06801acc-e4cd-54b4-ac57-1eb82946ba82",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5a33a192-137a-51f5-9adf-34cdc765d9fa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "469d04fb-48af-5a7c-8321-e023993ab77c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "214c5148-f601-5f89-abf6-20b007d74bf5",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4fa59f1e-bb16-5d92-9e0f-483fade13c0e",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "6810cf1c-6d39-5383-a5a8-17e766c46edd",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/ME-2022-202609151031.db",
+      "size": 688128,
+      "sha256": "670d8bde223c3dc7a81e64c0c82d1c01bca3b4fb12a7b7a1eae5197620edec17",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Maine US House",
+          "total_votes": 663133,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "0519f5f1-7482-5d6b-a7ad-bf7136242fb8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e0c15ece-2899-58bc-9c5c-861daff9d114",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "11236619-7395-5c18-825e-3fc663ef34dd",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "9e80c143-1460-547f-bd21-c5bac3e6fdc3",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Maine Governor",
+          "total_votes": 674981,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "55517c4b-9829-5110-b0e4-9d235971fad3",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "02dd0e5b-e10e-56f3-bf12-61f0180ac3cf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2e5022f9-03c0-533c-9481-fc6c1e01fd2f",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/MI-2022-202609151031.db",
+      "size": 1392640,
+      "sha256": "05cfbd4aa03b09caf2ae9104abbf42b5539c9ad240e9223a6775b7cb867e5572",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Michigan US House",
+          "total_votes": 4349092,
+          "candidates": 61,
+          "parties": [
+            {
+              "id": "0948a285-61f2-5570-a4fa-0b93e2e8ca6a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "323b71b4-9f76-568a-ada6-6b6e5c92533f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "be06a68e-81ae-536b-9596-c02d2aedcd61",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "51eb879e-acab-5cd5-bbdb-feb689d8bfee",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "414088db-f4f9-552b-9292-7fe667447c13",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Michigan Governor",
+          "total_votes": 4431543,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "aef7c5cc-aae3-5557-a91d-9e07c1a15ee8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "459c2c45-b94f-55aa-b328-7d9815b83f3d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9c512c4a-7d6a-52c6-a418-772b19ac08e5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "10dd044b-a943-524a-8974-738d713d9448",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "7a8b479d-62ce-51ec-8098-f5a0138d0ad8",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "7f714fe6-d3b0-5e81-8953-f0eda30b9f13",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/MN-2022-202609151031.db",
+      "size": 1269760,
+      "sha256": "c8d2d10e2913d65713003ed58b35f824e74423e43376b243edff3df3dcb26bcf",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Minnesota US House",
+          "total_votes": 2495832,
+          "candidates": 28,
+          "parties": [
+            {
+              "id": "aff5061e-7668-5572-8470-d1e55332f41b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "46ef9972-8419-53bc-8214-209dbfd54001",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "93950d57-911a-542a-9ce6-2483396fa0bb",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "0455fbb6-8418-5f33-94c3-199cba0d8239",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Minnesota Governor",
+          "total_votes": 2510661,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "3775f9ff-5cbd-58ae-a2d1-75c7ee68ebfc",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "a4acf17a-a7d6-5e8b-9050-0f4700e566a4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2e5769a2-ede2-539a-8552-ef2d42777bfc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8fdc5844-4e2f-5961-989f-40e8d464d803",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/MO-2022-202609151031.db",
+      "size": 1286144,
+      "sha256": "96101cab95a733ec84efabe2d46e37c416f13c5a52e92bd4a38b816b5393912a",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Missouri US Senate",
+          "total_votes": 2068008,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c5681783-73b2-572b-8123-258f9d09d3be",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7a6244f7-ff9b-5731-83a6-585e13d1df22",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0b86d2d7-faa5-5998-be60-54f682a0564e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5a9c324d-c0b2-5ed1-bac2-3a41a217943c",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "0fd99583-223c-52c9-b1b1-5ba63a392696",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Missouri US House",
+          "total_votes": 2058977,
+          "candidates": 25,
+          "parties": [
+            {
+              "id": "25376f8b-24a6-5bc0-94b1-780b466aea47",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "421e58c2-2200-5cbe-afa8-a782c0ece2f6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2300e4cf-8b47-5571-9697-79c21a578b6f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "90b847ac-f74c-51c2-8cf3-b3c43cb5a20b",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/MS-2022-202609151031.db",
+      "size": 909312,
+      "sha256": "de35cdd3e5045aea35ed73a95730df5f7fa9f653b8d314b02f8ebd769fa26986",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Mississippi US House",
+          "total_votes": 714412,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "ce1861a0-7b74-5f5d-b9f1-2cccf2f95072",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "516b8d54-37e6-54dc-9087-86e6e7e04234",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "748a83d6-725c-5ef8-964f-a911e6fa2b5a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c3530416-9ede-5c66-9445-8f28b7a49ede",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/MT-2022-202609151031.db",
+      "size": 1216512,
+      "sha256": "ceb1576428b54c4d1fe970940737acf898bb5d3b9289ce82c4a256b0d49bbd7c",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Montana US House",
+          "total_votes": 463632,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "ccaf3974-81f6-5b1b-838d-6d64e5caec54",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "317c7bbe-b196-58be-bd4a-664d5d3aad88",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "54279e7d-fa1a-5ba5-b51c-2f16b296539a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "eab92a07-6cc2-5b54-85c7-fa0df04ad7c0",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/NC-2022-202609151031.db",
+      "size": 2002944,
+      "sha256": "fbd7db4cabcfeaf66fab086f5078e05fd03758efd0cddb4c0cd6a138a55fa725",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 North Carolina US Senate",
+          "total_votes": 3773555,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "8b409afd-f861-5253-8028-376eb6bad45b",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "ce8c5f02-732f-5fbf-9279-64d59860136b",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "99b0ea65-f7ee-5982-9ab6-3ee557c3b1ab",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "470778a1-ec1a-5e76-85ff-9cb254baa182",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "323d6324-2426-5119-bf6d-286064209b04",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 North Carolina US House",
+          "total_votes": 3760381,
+          "candidates": 31,
+          "parties": [
+            {
+              "id": "8e0b1f55-067f-569c-86e7-1849675d0180",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9733d437-5603-530f-ba24-05e8304a6c92",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6355ce9f-08e3-5f84-abeb-ca9808e91b2f",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "8d557f05-5b40-5667-ad36-4922fc83e85f",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/ND-2022-202609151031.db",
+      "size": 684032,
+      "sha256": "5a88045b90741a6a75882155a4786f7befdf620008a1f82ca9f6d3bd3a976e53",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 North Dakota US Senate",
+          "total_votes": 240140,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "f81135b6-133c-5a83-bf8a-b45f3d3e0034",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "38af8a0f-2dfc-5a6e-8097-7113313e4fa2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4787640f-2851-5833-b756-358e3431cf7e",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "2a946c98-3e8d-5c2c-905d-1091a0f385aa",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 North Dakota US House",
+          "total_votes": 238586,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "75e8fcb2-05df-5db2-a086-dac51469973e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "45a7d0b2-020b-502d-85ff-26580c5fdf9f",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "71123e25-9092-552b-af09-3ae8920e25e3",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/NE-2022-202609151031.db",
+      "size": 729088,
+      "sha256": "951ce2a51917a114c4f36407475a02e1c81c76a69aa8ac716b74ac5970b0489f",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Nebraska US House",
+          "total_votes": 663187,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "e6f9ab5d-d0ee-5f2d-92c6-256e97ab2c21",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d90d4c1c-52e6-5623-9404-1f984d664948",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d22966dd-b919-50ca-b69e-cd146cadd6e4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Nebraska Governor",
+          "total_votes": 666795,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4e958089-8135-593c-876d-0813bb038e87",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4672db5e-f182-52e9-8b21-84ce765316b8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3a2abd49-47b1-5f83-b909-bfbc28456478",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/NH-2022-202609151031.db",
+      "size": 311296,
+      "sha256": "ca786e1e3b963a0dd75701ea349a2be5f7aaddb96eecb257755ad8e0a192370f",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 New Hampshire US Senate",
+          "total_votes": 620511,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c07ca1e6-d470-5c17-a536-43170085c764",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "357aa808-fb7c-5b07-ba04-b22b94a79d40",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "482d789e-9d34-540b-b14d-8ad664c4ca94",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 New Hampshire US House",
+          "total_votes": 616835,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "cb24f952-ad34-56c6-8dc4-3a25b8818d78",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "65cfc4ed-8f60-56b2-9c5c-6b3f8c6443f8",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 New Hampshire Governor",
+          "total_votes": 617422,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "7022000d-2def-5c13-97d2-d92f3167f6aa",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "23c0b2d9-b52e-55f4-8c8a-7552d7c6d485",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8511fd46-38fd-516e-bb11-9ea3f884914c",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/NJ-2022-202609151031.db",
+      "size": 671744,
+      "sha256": "44acfeb38d81861b54ed98d43e466113ff0e365967a116e8b2bd86f619477eaf",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 New Jersey US House",
+          "total_votes": 7829084,
+          "candidates": 53,
+          "parties": [
+            {
+              "id": "93fb9259-a408-5928-9bff-a6c9e7426064",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "136cbf07-f5ea-54b8-a805-929f24d0b610",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8676072a-38ce-5920-9696-ac664b549d9a",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "887ea9fb-72f0-5d48-bcd8-9ae797b97f50",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/NM-2022-202609151031.db",
+      "size": 507904,
+      "sha256": "9b1e6785c5efc6955b1afa33b8d7d2a6703afcff26dad5edcd3265c4e741a2c6",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 New Mexico US House",
+          "total_votes": 703959,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "bbb32026-4ea8-5b4e-b6ee-80b7128f940b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2d39a819-c78b-55d6-9efd-64a802d83edc",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 New Mexico Governor",
+          "total_votes": 709514,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8ec68a5f-8217-5282-a8a7-9434d6790749",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/NV-2022-202609151031.db",
+      "size": 376832,
+      "sha256": "34adbb23e714e48ad0d299be1d708f616ccb8dd66a20c91108d0dfd93d22eb24",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Nevada US Senate",
+          "total_votes": 1020481,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "967a556e-5cd3-5536-8fe5-6b62e6a55773",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2f1570b1-c1bd-55d9-be22-a1f659eb6a22",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "72532496-9ea5-5460-81dd-cf2e537b11e7",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "56c7940a-c7ed-53b2-8c61-f6d6c83971b3",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "4e6b5e2e-5987-573b-83f7-6259017ae05c",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Nevada US House",
+          "total_votes": 1009145,
+          "candidates": 11,
+          "parties": [
+            {
+              "id": "a240318b-8f50-53e7-814c-e22dd99f0ff4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6b9e8396-8e14-5d37-90cf-44875a53dde9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ae5c400a-c0c3-53a8-bba4-a98eb80520f4",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "c3ec6617-528d-5240-8ba0-892be2aa7e23",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Nevada Governor",
+          "total_votes": 1018705,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "88ed89a3-00c4-50b7-88b4-ffd28bab4bd9",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "d0d009fc-5b33-566f-8dee-bdd041ae4463",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "87722e1d-d757-56ef-ad53-abde26cc9284",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fa8e8504-a4e0-5079-b9fb-aea98919dc0f",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "984a0dea-6528-57f2-ab47-2e9f77012c6a",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/NY-2022-202609151031.db",
+      "size": 1404928,
+      "sha256": "cbe09c1c82a2c35a1e70eae897e308042b2e81d322bb455ac7293447ac044050",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 New York US Senate",
+          "total_votes": 7677286,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "05bd06f0-ba67-5b35-b97a-c330976c8d3b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "427b40d5-1c76-52a6-be94-92b4ec54a620",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f502f478-25b4-5c66-9500-c050024abbb8",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "68abcfbd-479d-5c80-ac8a-a40a22d81b6c",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 New York US House",
+          "total_votes": 7585102,
+          "candidates": 129,
+          "parties": [
+            {
+              "id": "49977be2-5eee-538c-a713-5b85710a6f4c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2c6c8933-0d6a-58aa-adbc-f8ce4a2f3e93",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "107e0cfa-daee-5d34-802c-5f32fa74e7fe",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "40f44a9a-7a64-5919-a703-bc2ab0f27a2b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 New York Governor",
+          "total_votes": 7812441,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "f072441b-2e4e-50dc-b527-8b0a2cef2c21",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dc85d2ce-fc9d-5ade-a853-6006a93fd515",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d117b2f2-8ce6-5e3a-9683-afc7fa49ab26",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "18a50ecf-6c56-580c-91f0-2ca5e695aed9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/OH-2022-202609151031.db",
+      "size": 1064960,
+      "sha256": "436197b911b69b530d5c57cb234d9545ff55250f9df586bf4048c15bed525d7b",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Ohio US Senate",
+          "total_votes": 4133342,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0a4a05cb-13b4-5750-a31d-a9d7b743c2a4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "feb2aaf3-38dc-55bc-96cf-bfe8027e3fa3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "64ac1689-81d2-5147-a071-f7b8a4579a6b",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Ohio US House",
+          "total_votes": 4109711,
+          "candidates": 32,
+          "parties": [
+            {
+              "id": "306df95c-df60-581a-a713-19a18dee98dd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "02651a13-99c0-5785-bdc9-068e2fda7eff",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b979d150-bde6-5ba0-b00b-c6ec70275969",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Ohio Governor",
+          "total_votes": 4134877,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6744c5b3-645a-5146-a0e3-c93290a43890",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fa30085d-1137-507e-a794-222eed60e7aa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fe345ab1-2f35-52d8-adc2-f5cbc2cba2fb",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/OK-2022-202609151031.db",
+      "size": 1089536,
+      "sha256": "20eef041fabdc76d00f415c15bff6c60a32b4d56b448ae5a52b488d175f25366",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Oklahoma US Senate",
+          "total_votes": 1150732,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "8083ee10-db46-57b2-9fdf-825127950c0e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "665e3aa6-d3a3-5e73-91d4-e842ee56a949",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "05b1259c-069e-5dbb-af2d-1ec1d6a39e3c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bd48ee6a-2906-5597-ac97-668114ec262a",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": true,
+          "name": "2022 Oklahoma US Senate (Special)",
+          "total_votes": 1150481,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "e534d3dd-c8b4-544b-a47d-de41a6444208",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d171ab63-a448-5faa-9dd0-ab56bb85a823",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "899e259a-3195-5075-9df4-5f4036126967",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "09fdee6c-a46c-5e91-a2c7-fcc0a74b152a",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Oklahoma US House",
+          "total_votes": 1146311,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "8d9adde3-8ad9-5132-a5c2-c46281975322",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8795822a-6c20-53c5-b172-a1e63365672d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6cd40755-9d0d-5e64-8769-945beabd9c30",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Oklahoma Governor",
+          "total_votes": 1153284,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "a87591a4-7ae8-597e-80af-418b1a800d27",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "22068980-6bc7-5966-9fb7-f05e8ae74a2c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3a08613f-0bf7-5568-ba90-fd4e49757b62",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "35f21d82-cd76-5e5f-a356-11380f4748f1",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/OR-2022-202609151031.db",
+      "size": 1019904,
+      "sha256": "cac4a2ae899fef831eeb076000638805c1f4929b84668059b3aaeea5460b6465",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Oregon US Senate",
+          "total_votes": 1927926,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "9c00c39c-8575-506e-9685-29ceffc5720a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f24cf570-0473-51c3-83cb-a24de1dc2162",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "2c4d409a-5ac2-58b5-90ee-9a221583377c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c4cde286-3f2c-57a3-80a4-2a52aef9e66f",
+              "code": "PRG",
+              "name": "Progressive"
+            },
+            {
+              "id": "65bb641f-d50b-5ade-9c05-9bed468f18f3",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Oregon US House",
+          "total_votes": 1904108,
+          "candidates": 23,
+          "parties": [
+            {
+              "id": "90e4a6f3-abe0-56e2-8e14-d574105c204d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "860d1954-fa64-5b85-995d-5a15f282d26b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "24ec0778-2186-58de-aff3-4f20588899f0",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "3dcbd298-44c0-5919-92c8-a757e55b4811",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "08861305-caff-58cb-8478-34b228868426",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "57e48757-1d8d-5fd0-ad57-fcc472dec882",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "6101dadc-8b38-55d1-ba9b-3d1db1f07080",
+              "code": "PRG",
+              "name": "Progressive"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Oregon Governor",
+          "total_votes": 1952844,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "d77cd68f-5601-5820-9a40-22352310eaf7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c8eee7bc-c784-5eea-9cd3-735e04bd399e",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "6314ca11-c28c-5154-abcc-f6d1e21084c4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b288e957-1e99-502a-88b0-c43cec573647",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "b170dfc3-d34a-5182-9385-8e590c7757f0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "039cb878-2246-5b2d-93da-a0b064b23f74",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/PA-2022-202609151031.db",
+      "size": 1253376,
+      "sha256": "536d27cadba59f933d4f34d23fea437d8ada3aa7efe997ce5e6cf43213db3c74",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Pennsylvania US Senate",
+          "total_votes": 5366638,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "2efd0c26-8374-56ce-8d36-0518248c654e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b822fb83-cbdd-5ab0-9351-8102bb8f3fde",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a8e3d399-f17d-5198-89b0-532351808d8c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c84f6824-ebb2-563a-980d-39f7dc5703e2",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "0efa3191-3195-523c-9531-1d4c09af9cad",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Pennsylvania US House",
+          "total_votes": 5149398,
+          "candidates": 32,
+          "parties": [
+            {
+              "id": "bd57bdd5-42bd-530e-b3eb-97c952cb0661",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5e458940-126b-57ca-b795-8b3fa69d29d9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b154374d-cf08-58fa-a16e-e77e0cc57807",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Pennsylvania Governor",
+          "total_votes": 5365929,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "b93a6c9a-50ab-5c96-9490-cb3392d15383",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "03d92274-4b95-50de-adf2-d3d539de0cbc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6fa0a888-fa3d-587e-98c5-0bfbc7ce51de",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c79f6fa3-88fc-593d-b8ad-5e0e6942e06b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "e0050e41-d4e5-5d53-acb7-88a0609f2eae",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/RI-2022-202609151031.db",
+      "size": 221184,
+      "sha256": "30650182193225901f67da4d8a87a0c4e267bca22364eb1a74418c714f9dee5c",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Rhode Island US House",
+          "total_votes": 357648,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "2f77d97c-4ac0-5812-975a-0116fa2a0d2d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c9dc476d-8ee8-5570-8781-578913bb9ae5",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "f8039255-ddbb-5c0a-9429-3e9bdc9ac09c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "45d63a29-98e8-50d7-bba1-358e83070a02",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Rhode Island Governor",
+          "total_votes": 357670,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "7227467e-f3bd-5739-a2c9-f4cc56adac7a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6e0c6ca3-18be-5c01-9693-5a71224b8e3c",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "c9cc4c5a-f003-5145-946f-6a69b21def92",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "49b3c127-5a11-5f12-aac7-1f82135af3e0",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "6696d593-2290-5e70-a6e8-dbf230370c15",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/SC-2022-202609151031.db",
+      "size": 1368064,
+      "sha256": "7b41a4e29def495916cca7b15fdc984b60894a92203fd7f2a232573f711fa910",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 South Carolina US Senate",
+          "total_votes": 1689648,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e376a612-0478-5c57-9b9b-55abebf05ee8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "03940f26-e297-5e10-93d1-a2f580f85bfe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ed72467f-e80c-5a45-813d-9b94b22ef92f",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 South Carolina US House",
+          "total_votes": 1596824,
+          "candidates": 21,
+          "parties": [
+            {
+              "id": "041f832a-95ff-562e-a64f-b0ab3832beb5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "274eeacd-bf91-51ac-ae67-06b8586d13b1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "61d06afb-a359-5b75-a73c-ed6d38607d7e",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "b4fd4386-82c1-51fc-ba19-16c0fafc0cb2",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "1ac073bc-1d83-5454-b243-6e7cd6212240",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 South Carolina Governor",
+          "total_votes": 1697115,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "c755e9db-ba40-5fb7-b714-922f69f3cc37",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b44421f7-9e07-51c8-bc93-2442f201d49a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "daa338be-35f2-5aac-a2f0-cb2b37b93596",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ffee6b3f-e824-5e09-b145-fb08e6418cb2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/SD-2022-202609151031.db",
+      "size": 708608,
+      "sha256": "b7ea780d02a2e39ecfb45d1928af88b989d2e650e82ccea4683631637b02fde8",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 South Dakota US Senate",
+          "total_votes": 348020,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "884b4d84-175b-58ca-9205-69ea11b4e994",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e1abcf91-c9ab-5e70-9a41-0f557ecf4dec",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "2d8728a6-f8dc-5232-a056-1a5bcab1eaa5",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 South Dakota US House",
+          "total_votes": 327841,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "b1479e0c-7313-51c5-b200-9879563e33d6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "2472cb7a-daf6-5a1d-a749-7f062eb249a8",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 South Dakota Governor",
+          "total_votes": 350166,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4e35fe0a-eb5e-54ef-acb1-b7ecc77a8b26",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5dabfe79-26d1-562b-848f-3c856cc15bbc",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b4f02be4-3e6c-5048-bc6b-9265994fc6da",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/TN-2022-202609151031.db",
+      "size": 1642496,
+      "sha256": "e86eac6009ada0f8efe75a93bfb53d6e388805302c0e10a13790aa0b73dfe34c",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Tennessee US House",
+          "total_votes": 1710425,
+          "candidates": 37,
+          "parties": [
+            {
+              "id": "8a8597ab-7d35-518c-a2e3-1d7d1c3eec28",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c82debd7-7702-5811-8191-1ae771ce5ac2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "72176b94-7bc0-566e-b53d-905b6bbeb6cf",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "ee9b075c-0da9-5011-8ca6-133d14619220",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/TX-2022-202609151031.db",
+      "size": 4317184,
+      "sha256": "355ceccbf325c532720a0a6d1876c5b7c84578b2a1c642ffb5f43f4f71dd014f",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Texas US House",
+          "total_votes": 7752546,
+          "candidates": 93,
+          "parties": [
+            {
+              "id": "dd101897-bc65-5b55-95b7-fb89aa091a77",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4724789d-814d-5e3c-b102-8c74a6960b31",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ceb61d61-a8e6-5aca-bc42-f4d04ab29337",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "64c8bb68-c87c-55ef-92a9-ea70b0e15bf6",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "17cd7d12-1cbf-5200-828d-99ab2ebf9719",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Texas Governor",
+          "total_votes": 8106768,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c5667f56-6e6c-5e2b-bd0d-386dec3875e0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8ac07885-c13a-5c52-b27c-e7f3ef5ebef3",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "9e5149ab-96b4-5dcd-b369-0c9b1dd1250b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fee59d86-4cd6-5881-b13a-f358f2c0c00a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e6c988c3-5eac-5f90-aae9-e7dd278d09cb",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/UT-2022-202609151031.db",
+      "size": 843776,
+      "sha256": "2eac0c3ec446911116528224fb81a89fcdc40920907bee47b1a33a124df987e4",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Utah US Senate",
+          "total_votes": 1076185,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "45164cdf-ffdc-5d1b-ac14-8d4de2f73689",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "77bdf65b-c546-5d5c-b59a-3a9a4dd155d8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9eb7e9a9-8e47-57ee-b357-49f1860e5704",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8160d28a-547d-5990-8e6a-61e611004da6",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "686c08a5-9e81-57d2-88d9-0ad1ad12b05e",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Utah US House",
+          "total_votes": 1063168,
+          "candidates": 17,
+          "parties": [
+            {
+              "id": "4a983d5f-9575-5c58-a029-08b3eda27de1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1ab0e44a-8793-576c-99a8-195882ecc6db",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b69943f7-d10f-58f0-ab33-e915f7d54342",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "c012b6a3-9bf7-5d59-809d-ae2c84461db2",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "28caf072-4487-5856-9ab7-06442ea6b039",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "cd5e2684-76c9-5fa0-8fbc-c05570fe46dc",
+              "code": "IAP",
+              "name": "Independent American"
+            },
+            {
+              "id": "f109fa10-e631-5d9a-ac08-fe473fc0d6ab",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/VA-2022-202609151031.db",
+      "size": 2129920,
+      "sha256": "c1184d3758c65059a7815308691e03abd2831f057c762a556df0d52b0ade34a9",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Virginia US House",
+          "total_votes": 3047574,
+          "candidates": 35,
+          "parties": [
+            {
+              "id": "74c23cf2-8ecb-52e2-8922-dac60ca2da8b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ffc41722-a69c-51c1-b30f-1980145c827c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "17af2a75-f8b4-5e5c-8cd4-923f21d398c3",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "788f6986-10bf-5fa2-8a70-b8c317558828",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/VT-2022-202609151031.db",
+      "size": 356352,
+      "sha256": "b6f845d6cbb82df456aa0a0a90c8f04a94ba80f35843b9da869eb07da13071e4",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Vermont US Senate",
+          "total_votes": 287077,
+          "candidates": 31,
+          "parties": [
+            {
+              "id": "fd8c0364-a13e-5c85-b1fc-9d1743aa2f7a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4ca30976-0bf5-5cb7-aeb5-5d2b410d17c3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b16dbbde-4eaf-50e7-a776-5fa0311ed48f",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "0076a3ea-3232-583a-b388-35180e7cf88f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "cb512d6c-0958-564c-9c8f-82e5896c51f1",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "83b0f514-aa3a-51fe-af46-2f134ea1e77f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Vermont US House",
+          "total_votes": 282021,
+          "candidates": 25,
+          "parties": [
+            {
+              "id": "943dadb1-4a2a-57e3-bad5-15fdb747e74b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "852ba1d6-d768-5140-9dc7-47c6fe706360",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9985246b-2f0b-5e19-874d-0a71dfa1a805",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "64fa52ac-65a3-5918-a43a-399c49393291",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "d3ed18ff-dadd-57fe-be58-d45121b9915b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Vermont Governor",
+          "total_votes": 284786,
+          "candidates": 41,
+          "parties": [
+            {
+              "id": "d86b8e0b-b20a-535f-8749-4cf1c1a228f9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "91668c4a-d60f-59a2-b69e-2a21f880b737",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "035c6b2a-1326-5127-8732-6f27155110ec",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "b548c478-933e-5c0d-a87e-79ff8ffa2a82",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "412a0b8d-82e5-5ee6-ad4d-b8a400754a98",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/WA-2022-202609151031.db",
+      "size": 1212416,
+      "sha256": "678dc2d7a33cdda2b0e30ea793e8a4f08f7b5adda56a078deaf54c8aa2230c93",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Washington US Senate",
+          "total_votes": 3045897,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e69378d9-cc1b-58ff-acf4-bafc06268fb9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cd398f99-d6ba-57fd-9c42-364ede61d5ea",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b483b653-0d15-5ca8-aef7-61d0e36278b6",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Washington US House",
+          "total_votes": 3023462,
+          "candidates": 30,
+          "parties": [
+            {
+              "id": "cea69706-fd8c-5686-8bc8-a1930fe9f656",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d0688c46-db53-5ff6-ae39-aee5f4f84b70",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "271c5e1a-c9d0-5aab-b4d8-6f9254c21845",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/WI-2022-202609151031.db",
+      "size": 1024000,
+      "sha256": "fc889bf3d1d6968c82c1728f53e7958b8f5a5fbc40808dba0fffb740a6a0336f",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2022 Wisconsin US Senate",
+          "total_votes": 2647719,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8e13de0b-fef5-5442-bce9-a8626459c18c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ed03e9de-21dd-59b2-aa98-fa49da88d7fb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f29b981c-d7c8-554f-8f6f-33ea4d953fa2",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Wisconsin US House",
+          "total_votes": 2515723,
+          "candidates": 21,
+          "parties": [
+            {
+              "id": "87f4a9b4-1b9d-5526-9e41-fea1fe69686b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6ec1a54e-e194-5169-b46c-06d7c0ff95a2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9c2c2119-87e2-50f7-a3e3-9742b89e02ab",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "1f86e143-b60f-5b9e-89fb-d9bfedb03fb0",
+              "code": "WRI",
+              "name": "Write-In"
+            },
+            {
+              "id": "1da186f8-d1e2-5c60-a17f-0a37b0864bcb",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Wisconsin Governor",
+          "total_votes": 2654507,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a7600218-ec34-5bcf-87ac-e9a7839f9843",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d8f707e9-9c64-5784-9e80-44f1bf33db7e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "aaa42a08-3af1-529e-ba43-837a1bbbc5e8",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/WV-2022-202609151031.db",
+      "size": 974848,
+      "sha256": "7f9912f4946d7a5c6cd8a173fe4162a0670cd8cd07a84a699efbb35b5658b50a",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 West Virginia US House",
+          "total_votes": 471967,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "235989a8-7727-5603-94c9-bc0c1a76b2af",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a96ae965-4851-5cac-9d1d-1f8596bc2a50",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "957f8f3c-d7c9-53dc-8ae7-68a71f087f2a",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2022.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2022/WY-2022-202609151031.db",
+      "size": 344064,
+      "sha256": "2b6c07abcf9c8ebcfafeef21d64db66191e144b24128a1ec6afbb18a21e040d1",
+      "source": "MEDSL",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US House",
+          "special": false,
+          "name": "2022 Wyoming US House",
+          "total_votes": 193902,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "9f1ff2b9-503a-547c-87ef-74ecda7de9b1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d3eaae33-4e1c-553d-8698-785cff4c8ed8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "77600695-8bfe-53b3-845b-a0367dcc2868",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "6c33c97e-7650-598b-ad17-e120d5884143",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2022 Wyoming Governor",
+          "total_votes": 194000,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "80969052-8ea0-502c-8a1b-6c65821cb77e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ea3e1489-44ca-5d0e-8e8a-014b7565d477",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8da5efc3-b191-5029-b899-b8fa1da348e9",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

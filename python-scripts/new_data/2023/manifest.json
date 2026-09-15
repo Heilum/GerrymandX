@@ -1,0 +1,130 @@
+{
+  "year": 2023,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:11:02+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2023",
+  "national": {
+    "db": "National-2023.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2023/National-2023-202609151031.db",
+    "size": 221184,
+    "sha256": "9304199973d4a1d1442c36b1d81bd11897dfa604357af6e73fbba293feb46e26"
+  },
+  "states": [
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2023.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2023/KY-2023-202609151031.db",
+      "size": 1712128,
+      "sha256": "4a0767d7be564274cf6d989cba1d28f3d032b65af0b730a648eb6c1bbf37326d",
+      "source": "OpenElections",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2023 Kentucky Governor",
+          "total_votes": 1299569,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "76bec50e-14ce-5bda-9217-390c739352ab",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c8befccd-679c-52f3-b974-3f74ee5a1d56",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dde3c8f6-f258-5b81-ada3-89ee63c7d093",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2023.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2023/LA-2023-202609151031.db",
+      "size": 1368064,
+      "sha256": "fe87bc2064b2da0207c336a563cd8b510dd7b59ed12d8f3a603594bda4a1e9ab",
+      "source": "LA SOS",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2023 Louisiana Governor",
+          "total_votes": 1062498,
+          "candidates": 15,
+          "parties": [
+            {
+              "id": "f3cfce85-4871-5e0c-a934-783d2664899d",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "5d0d2200-f2aa-52e8-ac89-434437ebb303",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7bf02cf1-63cd-54a9-aff7-02e126628729",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d248af27-feb5-53fc-b00a-810a7b74a147",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2023.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2023/MS-2023-202609151031.db",
+      "size": 790528,
+      "sha256": "4bcb9310f6eaa0627850a29ac1ff69b8a804aad0b86878a68b45b5ce67387b58",
+      "source": "OpenElections",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2023 Mississippi Governor",
+          "total_votes": 821000,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "80beb46d-b4c5-5652-aad1-71f0514cd1c7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "22e1667b-a694-5df3-9c1a-52eab2911a8b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "171e92e7-1595-59ce-82c6-1a96c74abc57",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

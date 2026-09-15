@@ -1,0 +1,2934 @@
+{
+  "year": 2008,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:58+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2008",
+  "national": {
+    "db": "National-2008.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2008/National-2008-202609151031.db",
+    "size": 3092480,
+    "sha256": "f57e8e073afede849fb021fa158c3f83025148466326d9d408f294f2b76b18f2"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/AL-2008-202609151031.db",
+      "size": 937984,
+      "sha256": "d387ef9720477439502a5f3da894ae3adde24c9335df4b87c6d4dce95a94f46d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Alabama President",
+          "total_votes": 2099819,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "77622d10-4955-58ea-afb7-cdfdfc4d401e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3ee67516-8373-5f35-814e-f119abd33810",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9b1dcf50-622b-5ea5-874c-bd9a166d4009",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Alabama US Senate",
+          "total_votes": 2060191,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "72aab483-8cb0-55a7-9f12-b1c58eb9dddf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "467b7537-60e2-5d21-850d-3dd9752d96b2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0068bd25-aa21-56c6-9fe5-2f78b314d0dc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/AR-2008-202609151031.db",
+      "size": 1036288,
+      "sha256": "16ead3c8b13268ee27596e71a3c9876df68696a79210ce8123d7d66f7b573d74",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Arkansas President",
+          "total_votes": 1086617,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "85c5a571-8b48-552e-b867-0608bc83909c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "69f344df-96d0-5447-aaa4-f5f9af16c16d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "091cbe51-fe8c-5696-8608-bde73d3a7510",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Arkansas US Senate",
+          "total_votes": 1011754,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "75ea07d9-319d-5857-ac90-7a2dc985a1ec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "295f1e2e-b8de-58a4-8e5a-b787a680897a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/AZ-2008-202609151031.db",
+      "size": 450560,
+      "sha256": "57c8a4474d31c15adeffe7bc0337d99fcc4125331ac076c5841f002a80a12946",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Arizona President",
+          "total_votes": 2303838,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "71e8bd96-1bd2-5cd2-a90e-65eedf2c628a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6da366d0-1ca6-5315-9ae9-8956cbead139",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "562fe453-3283-58a6-bb8b-046e1dc9f428",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/CA-2008-202609151031.db",
+      "size": 1437696,
+      "sha256": "edd2443e5baef37706d48a675b5adc0796b393c07313fc4111e5b76253471dcd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 California President",
+          "total_votes": 13583083,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f3987426-cb01-5e3b-83f5-d1c452be9ce7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1bd30424-d490-5325-a5a4-0811dba39653",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7ed7733e-d510-529a-9713-08cb900a18bd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/CO-2008-202609151031.db",
+      "size": 876544,
+      "sha256": "ea8a27bbce5a022b2f338dfe504a8e898b88788ddb8ab42d7aebd8b491ae3419",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Colorado President",
+          "total_votes": 2401462,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8c788813-a64d-5810-9547-56522af025e8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "35f4054d-9215-5b67-8097-d3714a3a09e6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bff470c9-352f-5c5a-91f5-fe99e3b2288b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Colorado US Senate",
+          "total_votes": 2331712,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ab8f559c-aae9-580e-9643-fceccced1645",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "99e4edd1-d764-5c71-b14b-3dcd005e99f2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "231f65cc-b77e-5de4-a350-f3819908d606",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/CT-2008-202609151031.db",
+      "size": 204800,
+      "sha256": "d30a4c1c3f2d609ae353c81e03c8fe51b3ac6a4314e428080bbd4600681f9726",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Connecticut President",
+          "total_votes": 1646793,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f621fc6d-7b45-5b3f-bda2-bf84ee9ec07b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3da8d1ec-d395-54a8-af39-5415d518c8e2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "85356adf-118a-50ab-8f80-4d17056c0a9f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "db": "DC-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/DC-2008-202609151031.db",
+      "size": 122880,
+      "sha256": "a56fb58e223c44f3b32c6906d060e5e99f6a9298ec0bb8ba0ca24155bcb63b2f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 District of Columbia President",
+          "total_votes": 265853,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "601a4bd2-3426-5b5e-82cb-e1c82341a487",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "84ea70ce-e554-5c03-a796-04c6374de2d2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6a5c11f6-78c2-51ab-acfe-cec88e9cffbf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/DE-2008-202609151031.db",
+      "size": 147456,
+      "sha256": "cc172a77aa164bb3673cbab9f613f7b62c0dae6bb3954cd69cafe2da73d67a0c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Delaware President",
+          "total_votes": 412616,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "54de0484-e257-54b8-8706-e0ca73688080",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1a02078f-91fb-51f7-933c-f75bb191f86f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "403845a2-f94a-5f6b-a98d-e76c8efd9d51",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Delaware US Senate",
+          "total_votes": 398134,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "7f352f63-2ea5-5662-835d-b89caa659202",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "90ce7da5-3284-5328-821e-38f623d55cff",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 Delaware Governor",
+          "total_votes": 395204,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "26ae984a-6291-578e-8f20-322d7f1e708e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dc8beab1-2b47-5dd8-8a8e-ba8e6cabe30e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7c6addcd-1313-516e-9836-daf25561ee32",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/FL-2008-202609151031.db",
+      "size": 1011712,
+      "sha256": "1da91b11e7a4fccbd551b82b9b1aa88b1961536cd41d36772f96b77824ab38a4",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Florida President",
+          "total_votes": 8412248,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cf19e602-c4c0-5c33-8859-24c50f5148fc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "256be08d-80bb-58bd-a333-aa7712a281a8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9c6b1006-9a2d-5d27-af61-0dadd498f78a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/GA-2008-202609151031.db",
+      "size": 1740800,
+      "sha256": "81a8f03ec0d185db70b8cc8a52e443ca94ffe853abdf405c9ffadcaea077cdb6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Georgia President",
+          "total_votes": 3932158,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f2a74527-b7cc-54b9-99e2-cbaaee7bb53b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aeadc263-63cb-5a11-a08c-1b88a65dee70",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dd532791-bebb-5e57-b51b-60071345d015",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Georgia US Senate",
+          "total_votes": 2137956,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "763bd064-923c-532e-8382-3e886bc0eb7a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ebaeb634-0d21-5314-b128-9385fd359303",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/HI-2008-202609151031.db",
+      "size": 204800,
+      "sha256": "a4fd2d8cff06f3340907cf5a8b885f83908f6e9e297ffae38b3cf6e2b026177e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Hawaii President",
+          "total_votes": 452774,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b292413c-44ab-57e6-840e-668a5eeb13e7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ba0a1c5a-5060-50ab-9754-c251c0b2319e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "328f6484-6222-50a8-8582-37d3fee15dae",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/IA-2008-202609151031.db",
+      "size": 614400,
+      "sha256": "91dd595bb88bcb2c9caab15c089a1665f72f676caf5eb595c240115c1b0bde69",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Iowa President",
+          "total_votes": 1537123,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "582a9a43-053d-56ef-83e1-4c9d1f51fc69",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fd9863eb-4454-5d97-a94d-2a866b762357",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f38965e3-4b06-57cb-8a1a-a3e671bd15df",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Iowa US Senate",
+          "total_votes": 1502918,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fb3c20da-3dac-551c-91d1-df8db4418302",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "56b83e44-40d1-54de-b07b-7dcf3f94b0a5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c3fdae02-1e57-557a-8a81-445feb8f2f19",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/ID-2008-202609151031.db",
+      "size": 835584,
+      "sha256": "d4989d61c0c9872e50c04b00f074b50b799a17788aa119550136faf15573784b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Idaho President",
+          "total_votes": 658454,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "74c9cd13-9a2f-5fab-ae08-7a0285e33c30",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f1f66088-3453-5dd9-a929-4abb058c36bc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "48faefb3-3cc4-57a9-9d41-648d3db07097",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Idaho US Senate",
+          "total_votes": 644777,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "98c3d9a3-399c-5ed4-8544-badd0e5b1144",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "818be703-3e22-515d-aa45-a8eff8e4e9ac",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4ef37bae-4bbf-5711-9524-5559aa0496af",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/IL-2008-202609151031.db",
+      "size": 958464,
+      "sha256": "704b661bffa5f4615decb98f6457280094c1cce2408e65f5ec92f57edbd036f1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Illinois President",
+          "total_votes": 5530179,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f2938dd1-7c22-51ba-9ab1-aa11f264805f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7e07cd1d-83b6-5203-955a-11bafbdc2e4c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "84c642df-c2a1-5cfc-9bc7-84f50d19ce1a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Illinois US Senate",
+          "total_votes": 5329884,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1b932d46-8f01-5ce2-9540-d38c0052a11c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fdab077c-92d4-5e22-98ed-357111fccf53",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "aa3dea97-d183-52c6-992d-2c2508fb7d9f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/IN-2008-202609151031.db",
+      "size": 692224,
+      "sha256": "a4c907e87e4968363f4d0093f5c8b468dffd0a87e9689641fc03537d880702ff",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Indiana President",
+          "total_votes": 2756658,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fb89cc12-f765-5440-b1ea-686933939571",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "20488839-fb8d-5492-89ba-7df4fc3e5602",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "86ce0bde-c936-5e37-a65d-3f541f74c977",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 Indiana Governor",
+          "total_votes": 2703752,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fd69479c-8f3c-523b-9251-cc90b86f360f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5a96367f-1e02-507f-b3e7-32cdff062ff8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ed40a8bd-7986-57bb-80cb-5ead8a0e8daa",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/KS-2008-202609151031.db",
+      "size": 618496,
+      "sha256": "b2d5bf7a5a715e950f6b9f610a5632a67038e634561b2a1aa477395a2f04fcfd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Kansas President",
+          "total_votes": 1238873,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c66b4ecc-337a-502a-ab40-c6d5e9f410d5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "672e6c50-58ec-5091-ab24-1377c9b156b8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f22f7274-9a95-56ea-96d8-b219bab5a538",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Kansas US Senate",
+          "total_votes": 1210690,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8c0c9f08-f528-54e0-8d3a-e49552f6228f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "feaa6766-c6d5-5d8a-b437-92cacba7b913",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0c86348c-adde-5292-9727-b53b6a4479cd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/KY-2008-202609151031.db",
+      "size": 1642496,
+      "sha256": "5bc391262da83922e74cbc9bcffdc3058e32c137abfd2683390a503ecb192ec8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Kentucky President",
+          "total_votes": 1827561,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c57e5d47-7b21-5d60-942d-0cc1f1f0dc5e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "039ef73e-29c2-53bd-8a28-3aaa3f06a57b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "77fc4ca2-7d74-5c94-aecd-0cbe61b76aa6",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Kentucky US Senate",
+          "total_votes": 1800821,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "83ce7ed3-46bb-5882-a155-b6f0568279f4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4f6d1cb2-8f9f-5f5c-8cc5-90da91067a7f",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/LA-2008-202609151031.db",
+      "size": 1134592,
+      "sha256": "9cdb849b66854d3e41a79a0a5b0f3c96dc7fa3ac98abcb447d2c6fc86cc1f4ce",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Louisiana President",
+          "total_votes": 1960761,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3d69a136-72f0-5669-8d24-55bb63426075",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f42722a0-d0a9-5e9a-8fa3-6fc6877960e0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ee752db4-9e55-5147-9ba6-759ad9a517af",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Louisiana US Senate",
+          "total_votes": 1896574,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "70c57ec3-d02b-5c5c-a853-d4d2bca71c9d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "85efa8de-03c9-5754-81b1-ca56d83a41e8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "328721df-cc2f-5857-a311-5fa6fb3ef0e0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/MA-2008-202609151031.db",
+      "size": 344064,
+      "sha256": "0a0f88b2eecbaffadc1a219f3efd3a8e97c452e0ebf2f869462644a78b899eb6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Massachusetts President",
+          "total_votes": 3080985,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "94a0e120-ac97-564e-963a-27f0bfe575b7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "201a0ad7-d40e-5b16-8609-0d7a8a47051f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a7123503-b137-5a9b-a652-6b56160b17ba",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Massachusetts US Senate",
+          "total_votes": 2994247,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b3ba32d5-201e-5633-a8d7-9306dfbef0b5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bef3896f-b470-5dcf-a173-7cf00c17456b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fb7add14-dda5-5d52-a59a-f8befa5f55eb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/MD-2008-202609151031.db",
+      "size": 495616,
+      "sha256": "2d82d53fb527d60744c4e55779040be57b5483f2d4adfb357343400d796c7fa9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Maryland President",
+          "total_votes": 2631596,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "dee6634c-1636-5362-b3c7-ec882f80860f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cb66e851-96d9-592a-a1a4-e0c7ef9b795d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e202115e-980d-56d1-b1f2-02219af15572",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/ME-2008-202609151031.db",
+      "size": 450560,
+      "sha256": "175e2d1c15745d5a7328dc485f7d25309f4bb421d731e54e1e55cf2e11d2167f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Maine President",
+          "total_votes": 731063,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f4228da2-bf1f-59d4-b211-8489a3c51232",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f575cd0f-df52-58af-9dad-0348e4cfca74",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cd93ba5e-8d69-5218-8a97-52b29451c25d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Maine US Senate",
+          "total_votes": 724430,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7531605e-4035-5029-896b-59edc8ea930e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5417d6e0-a833-55f4-a59e-0c9da29658fb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "391ef5ae-a0e3-528e-b392-c67a3dc6b4cc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/MI-2008-202609151031.db",
+      "size": 864256,
+      "sha256": "aabb8f286bc9d5902c971fe7b94e0dc47aa63fd499d71cf334e3d1f8f14d4099",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Michigan President",
+          "total_votes": 5010606,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d2cadb67-857d-52a3-96c4-ed787a34f097",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7fa6b648-b8ac-5491-9d59-94541da80e72",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "50d77e54-58e6-5e29-b631-c633b01ab2d7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Michigan US Senate",
+          "total_votes": 4848620,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6ca60bf4-d333-5708-87d3-b493d3d6ae9b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e52bb9d7-499d-5bc1-aefb-1899f6786529",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0a0a98f7-1032-5365-80ad-a2fc40d7237e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/MN-2008-202609151031.db",
+      "size": 892928,
+      "sha256": "d883d87d389a7a6b1ee71fa6ab69eca1d87cad8103b28cbb4e46b5372483c074",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Minnesota President",
+          "total_votes": 2910369,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "aca1511d-9983-56e2-aa3a-59a44093b1de",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4db9060f-7ddf-567a-9baa-524af37b9919",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ad17c146-25d8-5e80-8e3b-a46923bfd47f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Minnesota US Senate",
+          "total_votes": 2886441,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cffad47b-4eee-5be9-b9a1-7bd8b6a6af88",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3b40a7b8-ea27-5054-a970-6853f0368550",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "60a7f9d9-187e-58c0-8935-3c584ff1a57b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/MO-2008-202609151031.db",
+      "size": 1032192,
+      "sha256": "2fae43b0cce334fbf0cc42099aea451c69ef8c986a57941c96cbb59b34f6dfa0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Missouri President",
+          "total_votes": 3478913,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "40ca186a-ee9d-578e-bd16-338181dd5158",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c46b062-babe-5821-9f15-af186b61cda9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f989199f-8768-57eb-9238-d73d9e0cb19a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 Missouri Governor",
+          "total_votes": 2728539,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a953a1c5-dfb2-58cc-954f-dfcb606b5c3f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "185666a5-b246-5922-8b8a-35fdd7f9bf87",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "13eabf42-0a14-5340-b08f-7ea21b9ff8db",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/MS-2008-202609151031.db",
+      "size": 843776,
+      "sha256": "4b177ef27ed6cb090606436ab901a49ff3de5edbae9d927178bcfca241f052a7",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Mississippi President",
+          "total_votes": 1289939,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c1c0c2c3-7517-5dd9-b2dd-ffa18be95081",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "664c503a-e053-56a7-8ebe-8f28ed48b2ce",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "41da5324-abca-5df9-8678-73b2d28aae1d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Mississippi US Senate",
+          "total_votes": 1247026,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "3c603b18-a21a-5b33-8463-061421c9b4a2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "857e50d7-4659-581d-b6e5-9723cf82d381",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US Senate",
+          "special": true,
+          "name": "2008 Mississippi US Senate (Special)",
+          "total_votes": 1243471,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "ae463c2a-2be1-5db0-9c76-6f28ed7c5f13",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f557cab1-444d-5261-bac6-1d244f8b24f0",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/MT-2008-202609151031.db",
+      "size": 1040384,
+      "sha256": "ef238102941737c9016bec4416cbda0e1b90d97a5bda8a15905727d2870e3cd2",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Montana President",
+          "total_votes": 492750,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "dfb50940-5d50-5c04-ad4e-56b7d27d2c01",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "13726e5e-73cc-5347-bb75-6c63a8f43993",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "528cec23-66ad-53b2-9cb7-63bf4c3af2e3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Montana US Senate",
+          "total_votes": 477658,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "6031de8d-b07d-502a-9270-b1d7b44187c3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "50ed4cc9-ac74-5e9b-971c-9ffb19dce9a4",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 Montana Governor",
+          "total_votes": 486734,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5a9184a3-4cb8-5e43-8595-af4ebbdddaba",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6be43c3b-89a0-556a-b2bd-92f18c1168f5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2d57ba16-a675-5e46-84a4-fe584bcbcce5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/NC-2008-202609151031.db",
+      "size": 1392640,
+      "sha256": "c290c7f9297a0d02bf96c89558b4c6473d74aac3b24b3fb462f27b33b2edd460",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 North Carolina President",
+          "total_votes": 4310789,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c57cdb32-b63e-5a44-a962-1b511cf64769",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d76c1937-afd4-5400-81b4-d0197204b930",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "82bd3c59-ef34-5ba1-8419-f26b4b8d29c5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 North Carolina US Senate",
+          "total_votes": 4271970,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f3a0d51b-9a10-5855-999d-18cc6dcdeeea",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c76db5e-2222-531b-8ac2-6384651ff91e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0ebe64af-4f4a-5b1b-89f3-ddba979d5960",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 North Carolina Governor",
+          "total_votes": 4268941,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "dce28612-b2da-5fdb-8c25-32775605993a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "15c5da96-e70f-533b-9a4e-8f3e74633f02",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "57b3e08a-ffca-55e3-aa32-4e8521ed2372",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/ND-2008-202609151031.db",
+      "size": 557056,
+      "sha256": "ce60987b85634d1c59b67ae6f382b6fab3d52cd8be178509d8fad343895a2a26",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 North Dakota President",
+          "total_votes": 317738,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8b775418-3207-5b79-b500-84c6f72505a6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "458ff6e7-229d-54b9-baa6-2c7b9c4ec347",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f9f5d926-933f-54c0-bca4-87d38e03493b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 North Dakota Governor",
+          "total_votes": 315692,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d2fb8968-90a4-5b9d-88bb-638435483e3b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6daa5eca-d583-5b61-bafa-10c1f5317b43",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2e169750-89b0-51ce-a17d-1eb3fdc9fed7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/NE-2008-202609151031.db",
+      "size": 630784,
+      "sha256": "de174833cae0cdf57b60aaf73783fea684ed298a2f243d7f1dbec577bd9c8a58",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Nebraska President",
+          "total_votes": 801281,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "afce0643-2c83-595d-a7ac-2cc31175bde1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "75ecd0ab-59d3-5ad5-ae6f-8a7500f993ec",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d5cf40c0-7a5d-5537-a70f-507c13fb1ca9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Nebraska US Senate",
+          "total_votes": 792511,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9d60c524-5c24-5d24-a31e-8a5aefde1894",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "83543c95-2bf7-55be-ab7e-f0ddc0e3695c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6f01a951-b2e6-5789-a776-4c9f6b01cd41",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/NH-2008-202609151031.db",
+      "size": 237568,
+      "sha256": "95115a26fcca29c89e132fb15a1a3bc49df3a85a34bd7fd5a578ff6904184b1d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 New Hampshire President",
+          "total_votes": 710970,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e8841111-4438-5f72-9001-40f8055f7cbf",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0e67fcf2-38c4-5d30-9080-764eeb51eeb7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "99142ee4-b8bb-5b0d-a7e2-a2684d1c1c2c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 New Hampshire US Senate",
+          "total_votes": 694787,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "120a0c2f-a075-5dda-be0f-6b008c579879",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d1b0dec7-025f-585a-9860-22d26c38f49f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1b56544f-bede-56bd-8c6a-2900201ff070",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 New Hampshire Governor",
+          "total_votes": 682910,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1fbaf886-4bd8-5fbc-98fa-3d1619a98352",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a89383da-ec13-5c34-baa5-a651dee8d005",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e5cb4c7f-a44a-584f-afc8-67a92212f290",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/NJ-2008-202609151031.db",
+      "size": 442368,
+      "sha256": "8e63e23e82763084b1922083c004fe109cd76e6a1a79c5822bb65c4d6a328fa3",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 New Jersey President",
+          "total_votes": 3877407,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bb0b4c8b-3b32-5f55-9f1f-682dd6b9b58f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0c191302-1d7a-5640-b7e5-b420ee306cc4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1a425379-fe61-55a9-ae46-8583685ea742",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 New Jersey US Senate",
+          "total_votes": 3482445,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4d63d0db-cde6-5db6-a317-e32fe32a22f1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5f7cd465-ab5c-55ea-92f2-ea3be58460b3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0d62c403-042f-5adc-a21b-bb755ef1f1a3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/NM-2008-202609151031.db",
+      "size": 389120,
+      "sha256": "d54843f14ba2357e3a02537b617c641333e58fdcc7ccd377d8242f4d6fe7cabf",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 New Mexico President",
+          "total_votes": 830158,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c535c4a1-cb0e-5fe3-98b2-225bcdb9a0d1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2ed5a514-cb63-59b1-9314-b1992ec62b0c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "04f85626-0eda-538e-9b41-832cf26dde24",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 New Mexico US Senate",
+          "total_votes": 823650,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "9057c2a1-eda7-5e5a-a62a-fb9b9bfd8dc3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "277388c1-0e15-53e6-9f2e-73d9b7b96df2",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/NV-2008-202609151031.db",
+      "size": 270336,
+      "sha256": "9889a8889c030323a54a11249cfd55c8db0d229adb15c83d39375764810f128f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Nevada President",
+          "total_votes": 967848,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f08654b8-b2b3-5686-8383-175625d49490",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "31d41604-ad6d-5efd-833c-e32aeee4866a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "95b3298f-dac3-581d-9c9f-14606e282bd7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/NY-2008-202609151031.db",
+      "size": 811008,
+      "sha256": "19ee953cd9012126059dfa1acacfc18a88b8ff75f4304796fc6fe2c4fd7b4605",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 New York President",
+          "total_votes": 7640948,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a6a97910-c588-529a-a83b-3b6c5d6a52a0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3aa58af7-80db-576b-9d17-70a29f8bab6a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3df936a0-1c20-5df4-b8e6-eb807e201646",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/OH-2008-202609151031.db",
+      "size": 696320,
+      "sha256": "d97088401c6c6015453558b5e7145c124b43adc5cd456e1a92a25095461ca5cf",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Ohio President",
+          "total_votes": 5721831,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2744b7dc-d419-54dc-ad4b-bd32f04a55c9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d1e806e5-0222-5aa4-8fbd-11d820402943",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2e336fea-c7ff-52d8-b97b-9468e796e0a7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/OK-2008-202609151031.db",
+      "size": 778240,
+      "sha256": "1bdac53b20e93d90b2926355466ade5772a53b1cadb078067029c50ff4a69ae5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Oklahoma President",
+          "total_votes": 1462661,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "4b8a73d8-63c1-5875-b50f-a1f4ab24da3e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "be8e2ea2-59d9-5687-9def-e09b7ff09015",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Oklahoma US Senate",
+          "total_votes": 1346819,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "251c5e8c-57d9-5c62-bd33-53c43db3c599",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ccd2998b-ae48-5a04-b382-eda00bf4537c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "56432985-87b9-5dc2-b6dc-4456e4968b78",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/OR-2008-202609151031.db",
+      "size": 643072,
+      "sha256": "6c104ac1007865969cb66f0e484d6eca06310fc657f6c71f4138a5a3b14b017e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Oregon President",
+          "total_votes": 1827864,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d4cc2358-6db5-51c5-aec1-9544cc2469b8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1bdea51f-b64f-58f3-8c7e-2e05aecbff8e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e3d79422-7e8d-53df-8ada-f8e7b3d8f128",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Oregon US Senate",
+          "total_votes": 1767504,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "aaa34f75-5986-5789-89dc-236d059d67e0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "880f2a18-1374-5cfd-a128-1224b67832ba",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4a980e35-7962-5e1c-93c0-93ba96845a0e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/PA-2008-202609151031.db",
+      "size": 806912,
+      "sha256": "a03eb6dc1220d8dbce8b05bf50762f6b27e1f3b1303cf3d216976dee5818d131",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Pennsylvania President",
+          "total_votes": 6015476,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "595fface-8936-5e9d-8658-36ed6a4c221d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "863c7341-6f1a-505d-8b8c-5ac14640b703",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "60dd00e1-5746-5317-92f2-27093c5a267c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/RI-2008-202609151031.db",
+      "size": 155648,
+      "sha256": "d5ab962a63681199651491dd7b719c729a422ee450b0b63fee229f1b1f9a4b43",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Rhode Island President",
+          "total_votes": 471766,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c04da827-98e6-57f4-b391-f131acae9cf3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b3cf3387-54b6-5490-a4b0-786a7b1d9e14",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "488d3df8-64fc-50a7-a961-f7dde58c506b",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Rhode Island US Senate",
+          "total_votes": 438812,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "131f7926-9146-5fab-8770-31e4234077ef",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fbac8741-ed8e-5ba4-b9e1-f12e239b7213",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "43909fc7-ce02-5c17-bf80-0fb42d25d6f7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/SC-2008-202609151031.db",
+      "size": 913408,
+      "sha256": "f5f89e52d8600eefe95865acb35db086f381d23bf77c93673bf17099c16e1aba",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 South Carolina President",
+          "total_votes": 1920969,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "dc5ffa90-a366-5c53-b798-8bdcd4ece96a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "66d14857-ad12-5e99-b62a-b5713863338c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cb38b488-7e50-50da-b3ca-0d4af00ffd7c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 South Carolina US Senate",
+          "total_votes": 1871431,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b4d1f45e-0031-5d89-9419-b22312dd8bff",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aa681aa7-2c73-59e1-b845-d430f0737e4c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cd48a4cd-3ee5-5287-b9eb-d6509c338973",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/SD-2008-202609151031.db",
+      "size": 634880,
+      "sha256": "7dffe6eff1bf15fd22033f6df2f856a63cb8bf079424cfef7b723be3c54deda1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 South Dakota President",
+          "total_votes": 381975,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "995d47b9-adea-5418-97df-8f8426378ca0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e5110d2e-884c-5c9a-942c-9c95279f915d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "caa09ad9-b257-5fec-8bd2-b40766625c9e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 South Dakota US Senate",
+          "total_votes": 380673,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "7ca75a2b-e79e-59bf-b5b3-2927803a7751",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c9a89e8-4c2c-5939-adba-40d4dcb7355c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/TN-2008-202609151031.db",
+      "size": 1282048,
+      "sha256": "3d66fdd6d935504982892fa67b7034b5112d92ea8b127fd03d1e83d067f44801",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Tennessee President",
+          "total_votes": 2601982,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5ff1f551-d8f5-5440-9cae-bf7ae3faa100",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6846b47f-ca7c-5a51-9fba-f4ea922f81a0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f26de5c1-134d-5097-b532-64c2bd63232c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Tennessee US Senate",
+          "total_votes": 2424585,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e30462f7-6e5c-5e3d-b232-404326fcca51",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b8edd3db-6037-5475-b2e1-d1dae21909ea",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "098637d1-f0cf-5483-8177-96fe1a4ffe7d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/TX-2008-202609151031.db",
+      "size": 2576384,
+      "sha256": "8b376b767c1a3656ef31f316fab3d10854d462f17e2967ade6b2f90d8d42791e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Texas President",
+          "total_votes": 8087791,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e0c92e94-756a-525e-8221-95225d03fd98",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a0ef7995-777c-50e8-8d4a-7ed8dac163fb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c7fbc140-50a3-52b9-8cea-15ce8108231d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Texas US Senate",
+          "total_votes": 7912075,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c258d13c-1a2d-56c9-91ff-98acc65fe035",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4a2fb300-e2be-57a6-b2bb-5ea02a86cb68",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "930728cf-a701-54c5-9409-9e73ddf7e09f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/UT-2008-202609151031.db",
+      "size": 626688,
+      "sha256": "e45db9dfb26d90095ed18d0c8f40d6b3bceb24b8dece9d2fe392b39fa33ad835",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Utah President",
+          "total_votes": 958996,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "25d7179c-309d-5b9c-88dc-c436c76f3a76",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "da55b5e4-1031-53f4-bf77-36a97377bc84",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f2a8d1e9-b91b-5e5f-95c1-d75a38f76d50",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 Utah Governor",
+          "total_votes": 945525,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "251d6f09-9e67-5293-9ceb-3851e6f47a39",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f24f2bbe-c2a7-5e00-8bdd-83ff24b65a9a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0dc4a213-d66d-5aa9-bd63-eecef5e52e42",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/VA-2008-202609151031.db",
+      "size": 1617920,
+      "sha256": "b1595bd58ba2587eab3a0b902d3ee64025d88a06257ae3f15e4735793a86abf8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Virginia President",
+          "total_votes": 3723260,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "59872dcd-f483-51b1-ae2b-8022c99fe653",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ed800e13-33bf-5559-9ad0-25e41ad3435d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3d134878-d8f3-5a77-80f6-125eba45d712",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Virginia US Senate",
+          "total_votes": 3643294,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6f3dfac9-29de-54f0-9ac0-a983c1354c56",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "65be2fee-0700-501a-b410-2eda6017ae21",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d49e3b5a-f251-54c0-ab8e-72541569dc1f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/VT-2008-202609151031.db",
+      "size": 245760,
+      "sha256": "545438c7378a39ed312aa431a16f6beea22f8f2f020752bf9903cc717aee486e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Vermont President",
+          "total_votes": 325046,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4740b822-6619-5e9c-a252-758844419e80",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f4e5be55-c142-51d3-82b7-188600a72894",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "92615b34-9b6f-504e-82bd-ea580871f798",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 Vermont Governor",
+          "total_votes": 319085,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4ca8814b-7622-5058-acb3-2b3dcb0b6166",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8666be81-9216-54b8-8ae0-b5c2f743dfb7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6487c1b4-6eec-59da-b9f5-87a0b53491fe",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/WA-2008-202609151031.db",
+      "size": 774144,
+      "sha256": "4ea990844fca402bb566de02fc9912dca61dae606a859d8041d07993b650cd1e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Washington President",
+          "total_votes": 3053261,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b3906c90-c573-53fa-ba38-b14ae667429a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f14a53ef-7bef-53da-9ba1-92c97b68146f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "787759aa-7a08-5811-af63-daa998f3f466",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 Washington Governor",
+          "total_votes": 3002862,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "8e4a7e06-9a7d-5660-88fb-4c2cbc5afa47",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9fa60c0b-0c62-5488-b747-0917bfb153df",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/WI-2008-202609151031.db",
+      "size": 733184,
+      "sha256": "81e1c2d4de4e5587ec03495ac233d93e0dab1fd6499793b690aec9b09c35e200",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Wisconsin President",
+          "total_votes": 2983417,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a0984fa2-8747-5ce6-ae43-ff88537bb5a7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "54d45e55-1b62-5cb1-b3d1-580df4ce6946",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ea58919f-713e-5802-806a-28b370962ed4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/WV-2008-202609151031.db",
+      "size": 868352,
+      "sha256": "9e4da7f6c2a25e2feac3e2a2fe4bdccceb8f44783343165e3dce72a0470dd802",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 West Virginia President",
+          "total_votes": 715123,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f37c768a-ca8b-58a4-8498-84add047f754",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c28865e0-ffa0-50e6-9f64-2e98be74b412",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b242f71e-67a6-5348-b438-1e991acd2f06",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 West Virginia US Senate",
+          "total_votes": 702308,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "61020672-eecc-5f11-9aed-ae5180c6620e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f840b78f-d05e-5b2d-9ed1-b09d538b545f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1e640acc-cdc5-51c2-91b1-3d737d39d7f0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2008 West Virginia Governor",
+          "total_votes": 706046,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cec7575d-5719-59fc-8dcf-d2fc0acfd680",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bdb7e2bf-e6b1-5571-bb3a-7c618a775e62",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "836ef8a1-b20e-5b49-832b-cd7064bc6d31",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2008.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2008/WY-2008-202609151031.db",
+      "size": 348160,
+      "sha256": "ad88092862a0372fbaf51222eef995e5f442d23b329a5ff36d6ae2277290366c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2008 Wyoming President",
+          "total_votes": 254658,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "db75dfe4-c4fd-5f27-94e3-dc3e6c43d34f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "82db3406-8598-55ca-8a62-9bc40ad3fc89",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8ebd25d7-4731-53c3-9efa-f2539d2b26ba",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2008 Wyoming US Senate",
+          "total_votes": 249946,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "311101be-5f7c-5ded-9046-fbe5e4c2e26b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ef966d1d-80bc-5fb7-8493-51f95be0c5c0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e9b49d8a-51ee-5fb9-b53b-20ebd31aa932",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US Senate",
+          "special": true,
+          "name": "2008 Wyoming US Senate (Special)",
+          "total_votes": 249558,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5fdae1d4-f36c-510a-b22c-5254d122f93f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1ac887e6-209f-57c6-8da3-9b46eb46fc43",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8d8c42ff-0fd2-5cf4-99d7-1bd86ecc5e33",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

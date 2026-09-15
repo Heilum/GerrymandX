@@ -38,14 +38,12 @@ class PrecinctVoteSummary {
   final String? winnerCandidateId;
   final int winnerVotes;
   final Map<String, int> candidateVotes; // candidateId (UUID) -> votes
-  final int population;
 
   PrecinctVoteSummary({
     required this.totalVotes,
     required this.winnerCandidateId,
     required this.winnerVotes,
     required this.candidateVotes,
-    this.population = 0,
   });
 }
 
@@ -112,19 +110,43 @@ class BaselinePoint {
 
 /// Party-level totals for one region of the comparison election.
 ///
-/// Only party aggregates are kept: the other election's candidates are
-/// different people, so a candidate-level breakdown would not line up with
-/// the current one.
+/// Fills and shares use party aggregates only: the other election's
+/// candidates are different people, so candidates can't be lined up. Who ran
+/// for each party is kept alongside, to be named next to its totals.
 class RegionPartyVotes {
   final int totalVotes;
 
   /// {partyName: votes} — names, because party ids are minted per election.
   final Map<String, int> votesByParty;
 
-  const RegionPartyVotes({required this.totalVotes, required this.votesByParty});
+  /// {partyName: {candidateName: votes}} for the candidates who got votes here.
+  final Map<String, Map<String, int>> candidateVotesByParty;
+
+  const RegionPartyVotes({
+    required this.totalVotes,
+    required this.votesByParty,
+    this.candidateVotesByParty = const {},
+  });
 
   double shareOf(String partyName) =>
       totalVotes > 0 ? (votesByParty[partyName] ?? 0) / totalVotes : 0.0;
+}
+
+/// The whole state's result in the comparison election, for the state
+/// overview: its party and candidate totals, the seats when it is a US House
+/// race, and its own parties, for their names and colours.
+class ComparisonStateTotals {
+  final RegionPartyVotes votes;
+  final HouseSeatSummary? seats;
+
+  /// {party code: party} of the comparison contest.
+  final Map<String, Party> partiesByName;
+
+  const ComparisonStateTotals({
+    required this.votes,
+    required this.seats,
+    required this.partiesByName,
+  });
 }
 
 /// How a group cell decomposes into the built-in regions: the counties and
@@ -270,6 +292,27 @@ class MapDataStore {
     return (cdPrecincts.value[districtId] ?? const <int>[]).toSet();
   });
 
+  /// Candidates who ran in the "Only See" district, or null when votes are
+  /// not narrowed by candidate.
+  ///
+  /// A precinct split between districts carries ballots for both races, so
+  /// keeping its precincts is not enough: the other district's candidates must
+  /// go too. District cells are named `District <label>` after the candidates'
+  /// `district` field. Candidates without one (a legacy manifest) can't be
+  /// matched, and then no candidate is dropped.
+  late final ReadonlySignal<Set<String>?> focusCandidateIds = computed(() {
+    if (focusPrecincts.value == null) return null;
+    final districtId = mapStateStore.focusDistrictId.value!;
+    final districtName =
+        cellAt(LayerType.congressionalDistrict, districtId)?.cell.name;
+    if (districtName == null) return null;
+    final ids = {
+      for (final c in candidates.value)
+        if (c.district != null && 'District ${c.district}' == districtName) c.id,
+    };
+    return ids.isEmpty ? null : ids;
+  });
+
   /// True when the loaded state database carries its contests in an
   /// `elections` table (year folders); false for a legacy database.
   bool _newSchema = false;
@@ -287,6 +330,41 @@ class MapDataStore {
   final countyPrecincts = Signal<Map<int, List<int>>>({});
   /// {cdId: [precinctId, ...]}
   final cdPrecincts = Signal<Map<int, List<int>>>({});
+
+  /// The reverse of [countyPrecincts]: {precinctId: [countyId, ...]}.
+  late final ReadonlySignal<Map<int, List<int>>> precinctCounties =
+      computed(() => _invert(countyPrecincts.value));
+
+  /// The reverse of [cdPrecincts]: {precinctId: [cdId, ...]}.
+  late final ReadonlySignal<Map<int, List<int>>> precinctDistricts =
+      computed(() => _invert(cdPrecincts.value));
+
+  static Map<int, List<int>> _invert(Map<int, List<int>> regionPrecincts) {
+    final byPrecinct = <int, List<int>>{};
+    for (final entry in regionPrecincts.entries) {
+      for (final pid in entry.value) {
+        byPrecinct.putIfAbsent(pid, () => []).add(entry.key);
+      }
+    }
+    return byPrecinct;
+  }
+
+  /// Names of the counties and congressional districts a precinct lies in,
+  /// read off the region membership tables rather than the precinct's name —
+  /// a name only carries its district when its county is split between
+  /// several.
+  ({List<String> counties, List<String> districts}) regionsOfPrecinct(
+      int precinctId) {
+    List<String> names(List<int>? ids, LayerType layer) => [
+          for (final id in ids ?? const <int>[])
+            if (cellAt(layer, id) case final c?) c.cell.name,
+        ]..sort();
+    return (
+      counties: names(precinctCounties.value[precinctId], LayerType.county),
+      districts: names(
+          precinctDistricts.value[precinctId], LayerType.congressionalDistrict),
+    );
+  }
 
   // ── Cross-election comparison (FillMode.singlePartyComparison / twoPartyComparison) ──
 
@@ -313,6 +391,23 @@ class MapDataStore {
 
   /// Bumped whenever the comparison data is replaced, for painter cache keys.
   final comparisonVersion = Signal<int>(0);
+
+  /// Contests the comparison election's database holds for this state, for
+  /// the type picker. Empty until that database has been read.
+  final comparisonContests = Signal<List<ElectionContest>>([]);
+
+  /// The contest the comparison is read from; null while none is loaded.
+  final comparisonContest = Signal<ElectionContest?>(null);
+
+  /// Parties that ran in [comparisonContest]. Parties are matched across
+  /// elections by name, so these are what the pickers check against.
+  final comparisonPartyNames = Signal<Set<String>>({});
+
+  /// Statewide totals of [comparisonContest]; null until its votes are read.
+  final comparisonStateTotals = Signal<ComparisonStateTotals?>(null);
+
+  /// `<comparisonElection>/<stateDb>` whose contests [comparisonContests] lists.
+  String? _comparisonDbKey;
 
   String? _lastLoadedFolder;
   ElectionSubItem? _lastLoadedSubItem;
@@ -350,8 +445,10 @@ class MapDataStore {
       _syncComparison(
         isComparisonMode: mapStateStore.fillMode.value.isComparison,
         compareFolder: mapStateStore.comparisonElectionFolder.value,
+        contestLabel: mapStateStore.comparisonContestLabel.value,
         stateCode: electionStore.selectedSubItem.value?.stateCode,
-        office: activeElection.value?.office,
+        currentFolder: electionStore.selectedElectionFolder.value,
+        currentContest: activeElection.value,
       );
     });
 
@@ -455,14 +552,12 @@ class MapDataStore {
     final fill = Path()..fillType = PathFillType.evenOdd;
     final coords = <GeoCoordData>[];
     Rect? bounds;
-    var population = 0;
 
     for (final id in group.precinctIds) {
       final rc = precinctIdx[id];
       if (rc == null) continue;
       fill.addPath(rc.path, Offset.zero);
       bounds = bounds == null ? rc.bounds : bounds.expandToInclude(rc.bounds);
-      population += rc.cell.population;
       final wkb = rc.cell.boundaryWkb;
       if (wkb != null) {
         coords.add(GeometryParser.parseWkbToCoords(wkb, projection: projection));
@@ -474,7 +569,6 @@ class MapDataStore {
         id: group.id,
         name: group.title,
         layerType: LayerType.custom,
-        population: population,
       ),
       path: fill,
       exteriorPath: RegionOutline.outlineOf(coords),
@@ -545,8 +639,10 @@ class MapDataStore {
   void _syncComparison({
     required bool isComparisonMode,
     required String? compareFolder,
+    required String? contestLabel,
     required String? stateCode,
-    required String? office,
+    required String? currentFolder,
+    required ElectionContest? currentContest,
     bool force = false,
   }) {
     // The other election names the same state's file its own way (`TX.db`
@@ -554,20 +650,71 @@ class MapDataStore {
     final dbName = isComparisonMode && compareFolder != null && stateCode != null
         ? electionStore.dbNameFor(compareFolder, stateCode)
         : null;
-    final needed = dbName != null && dbName.isNotEmpty;
-    // The office is part of the key: a year folder holds several contests
-    // and the comparison follows whichever one is on the map.
-    final key = needed ? '$compareFolder/$dbName/${office ?? ''}' : null;
-
-    if (key == null) {
+    if (dbName == null || dbName.isEmpty) {
       if (_lastComparisonKey == null) return;
       _lastComparisonKey = null;
       clearComparisonData();
       return;
     }
+
+    // Within the map's own election the contest on the map is not a
+    // comparison target: comparing it with itself shows nothing.
+    final exclude = compareFolder == currentFolder ? currentContest : null;
+    final office = currentContest?.office;
+    final key =
+        _comparisonKey(compareFolder!, dbName, contestLabel, office, exclude);
     if (key == _lastComparisonKey && !force) return;
     _lastComparisonKey = key;
-    _loadComparison(compareFolder!, dbName!, key, office: office);
+
+    // Another database lists other contests; the same one keeps its list, so
+    // the type picker stays filled while another of its contests loads.
+    final dbKey = '$compareFolder/$dbName';
+    if (_comparisonDbKey != dbKey) {
+      _comparisonDbKey = dbKey;
+      comparisonContests.value = [];
+    }
+    comparisonContest.value = null;
+    comparisonPartyNames.value = {};
+    comparisonStateTotals.value = null;
+    _loadComparison(compareFolder, dbName, key,
+        wantedLabel: contestLabel, office: office, exclude: exclude);
+  }
+
+  /// Re-runs [_syncComparison] for the state just loaded, outside the effect.
+  void _resyncComparison(String? stateCode) => _syncComparison(
+        isComparisonMode: mapStateStore.fillMode.peek().isComparison,
+        compareFolder: mapStateStore.comparisonElectionFolder.peek(),
+        contestLabel: mapStateStore.comparisonContestLabel.peek(),
+        stateCode: stateCode,
+        currentFolder: electionStore.selectedElectionFolder.peek(),
+        currentContest: activeElection.peek(),
+        force: true,
+      );
+
+  /// Identifies one comparison load. With no contest picked, the default
+  /// follows the office on the map, so that office is part of it; so is the
+  /// contest left out when comparing within the map's own election.
+  static String _comparisonKey(String folder, String dbName, String? label,
+          String? office, ElectionContest? exclude) =>
+      '$folder/$dbName/${label ?? '@${office ?? ''}'}/${exclude?.label ?? ''}';
+
+  /// The contest to compare against among [contests]: the one labelled
+  /// [wantedLabel], else the one for [office] (see [_pickContest]). [exclude]
+  /// — the contest on the map, when both come from the same database — is
+  /// never picked.
+  @visibleForTesting
+  static ElectionContest? resolveComparisonContest(
+    List<ElectionContest> contests, {
+    String? wantedLabel,
+    String? office,
+    ElectionContest? exclude,
+  }) {
+    final open = [
+      for (final c in contests)
+        if (c.label != exclude?.label) c,
+    ];
+    return open.where((c) => c.label == wantedLabel).firstOrNull ??
+        _pickContest(open, office ?? 'President');
   }
 
   /// Loads the latest requested selection, then whatever was requested while
@@ -584,6 +731,11 @@ class MapDataStore {
   }
 
   void clearComparisonData() {
+    _comparisonDbKey = null;
+    comparisonContests.value = [];
+    comparisonContest.value = null;
+    comparisonPartyNames.value = {};
+    comparisonStateTotals.value = null;
     _baselinePoints = const [];
     comparisonRegionVotes.value = {};
     comparisonPrecinctVotes.value = {};
@@ -612,7 +764,9 @@ class MapDataStore {
     String compareFolder,
     String dbName,
     String key, {
+    String? wantedLabel,
     String? office,
+    ElectionContest? exclude,
   }) async {
     isLoadingComparison.value = true;
     try {
@@ -624,42 +778,66 @@ class MapDataStore {
         return;
       }
 
+      // A legacy database holds a single presidential contest.
+      final newSchema = await _repo.hasElectionsTable(db);
+      final contests = newSchema
+          ? await _repo.loadElections(db)
+          : const [ElectionContest.legacyPresident];
+      if (_lastComparisonKey != key) return;
+      final contest = resolveComparisonContest(contests,
+          wantedLabel: wantedLabel, office: office, exclude: exclude);
+      if (contest == null) {
+        debugPrint('Comparison DB $dbName in $compareFolder holds no other contest');
+        clearComparisonData();
+        return;
+      }
+      comparisonContests.value = contests;
+      if (contest.label != wantedLabel) {
+        // Record the default (or the replacement for a type this election
+        // didn't hold) as the pick. The key moves first, so the effect this
+        // write sets off finds nothing new to load.
+        key = _comparisonKey(compareFolder, dbName, contest.label, office, exclude);
+        _lastComparisonKey = key;
+        mapStateStore.comparisonContestLabel.value = contest.label;
+      }
+
       // {candidateId: party code} for the other election. A year-folder
-      // database carries its parties and candidates itself, per contest, and
-      // the contest compared against is the one for the office on the map.
+      // database carries its parties and candidates itself, per contest.
       // A legacy database's live in meta.json.
       final partyNameByCandidate = <String, String>{};
+      final candidateNameById = <String, String>{};
+      final List<Party> partyList;
+      final List<Candidate> candidateList;
       int? electionId;
-      if (await _repo.hasElectionsTable(db)) {
-        final contests = await _repo.loadElections(db);
-        final contest = _pickContest(contests, office ?? 'President');
-        if (contest == null) {
-          debugPrint('Comparison DB $dbName in $compareFolder holds no contests');
-          clearComparisonData();
-          return;
-        }
+      if (newSchema) {
         electionId = contest.id;
-        final partyNameById = {
-          for (final p in await _repo.loadParties(db, contest.id)) p.id: p.name,
-        };
-        for (final c in await _repo.loadCandidates(db, contest.id)) {
+        partyList = await _repo.loadParties(db, contest.id);
+        candidateList = await _repo.loadCandidates(db, contest.id);
+        final partyNameById = {for (final p in partyList) p.id: p.name};
+        for (final c in candidateList) {
           final party = partyNameById[c.partyId];
           if (party != null) partyNameByCandidate[c.id] = party;
+          candidateNameById[c.id] = c.displayName;
         }
         electionStore.rememberPartyNames(compareFolder, partyNameById.values);
       } else {
         // peek(): this runs inside the comparison effect, and subscribing it
         // to the meta map would re-trigger it on every local-database rescan.
         final meta = electionStore.localElectionMeta.peek()[compareFolder];
-        final partyNameById = {
-          for (final p in meta?.parties ?? const <Party>[]) p.id: p.name,
-        };
-        for (final c in meta?.candidates ?? const <Candidate>[]) {
+        partyList = meta?.parties ?? const <Party>[];
+        candidateList = meta?.candidates ?? const <Candidate>[];
+        final partyNameById = {for (final p in partyList) p.id: p.name};
+        for (final c in candidateList) {
           final party = partyNameById[c.partyId];
           if (party != null) partyNameByCandidate[c.id] = party;
+          candidateNameById[c.id] = c.displayName;
         }
       }
       if (_lastComparisonKey != key) return;
+      // Published before the votes are read, so the pickers can mark parties
+      // that didn't run while the rest loads.
+      comparisonContest.value = contest;
+      comparisonPartyNames.value = {for (final p in partyList) p.name};
 
       final precinctVoteMap =
           await _repo.loadPrecinctVoteMap(db, electionId: electionId);
@@ -672,7 +850,8 @@ class MapDataStore {
       if (_lastComparisonKey != key) return;
 
       final baselineVotes =
-          votesByPrecinctId(precinctVoteMap, partyNameByCandidate);
+          votesByPrecinctId(precinctVoteMap, partyNameByCandidate,
+              candidateNameById: candidateNameById);
 
       // Reduce the geometry to points before anything else: the paths are
       // needed only for the precinct match below, while the points outlive
@@ -693,6 +872,21 @@ class MapDataStore {
       };
       comparisonPrecinctVotes.value =
           _matchPrecinctsToComparison(baselineCells, baselineVotes);
+      comparisonStateTotals.value = ComparisonStateTotals(
+        votes: sumRegionVotes(baselineVotes.values),
+        seats: contest.office == houseOffice
+            ? HouseSeatSummary.compute(
+                candidates: candidateList,
+                candidatePartyMap: {
+                  for (final c in candidateList)
+                    if (c.partyId != null) c.id: c.partyId!,
+                },
+                parties: {for (final p in partyList) p.id: p},
+                candidateVotes: _candidateTotals(precinctVoteMap.values),
+              )
+            : null,
+        partiesByName: {for (final p in partyList) p.name: p},
+      );
       comparisonVersion.value = comparisonVersion.peek() + 1;
     } catch (e, stack) {
       debugPrint('Error loading comparison $compareFolder/$dbName: $e\n$stack');
@@ -760,6 +954,7 @@ class MapDataStore {
     final index = SpatialIndex.build(currentRegions, bounds);
 
     final votesByRegion = <int, Map<String, int>>{};
+    final candidatesByRegion = <int, Map<String, Map<String, int>>>{};
     final totals = <int, int>{};
     for (final point in baselinePoints) {
       final hit = index.hitTest(point.centre, currentRegions);
@@ -771,6 +966,11 @@ class MapDataStore {
       point.votes.votesByParty.forEach((party, n) {
         acc[party] = (acc[party] ?? 0) + n;
       });
+      final candidateAcc = candidatesByRegion.putIfAbsent(regionId, () => {});
+      point.votes.candidateVotesByParty.forEach((party, byName) {
+        final names = candidateAcc.putIfAbsent(party, () => {});
+        byName.forEach((name, n) => names[name] = (names[name] ?? 0) + n);
+      });
     }
 
     return {
@@ -779,6 +979,7 @@ class MapDataStore {
           entry.key: RegionPartyVotes(
             totalVotes: entry.value,
             votesByParty: votesByRegion[entry.key] ?? const {},
+            candidateVotesByParty: candidatesByRegion[entry.key] ?? const {},
           ),
     };
   }
@@ -824,23 +1025,94 @@ class MapDataStore {
   @visibleForTesting
   static Map<int, RegionPartyVotes> votesByPrecinctId(
     Map<int, Map<String, int>> precinctVotes,
-    Map<String, String> partyNameByCandidate,
-  ) {
+    Map<String, String> partyNameByCandidate, {
+    Map<String, String> candidateNameById = const {},
+  }) {
     final result = <int, RegionPartyVotes>{};
     for (final entry in precinctVotes.entries) {
       var total = 0;
       final byParty = <String, int>{};
+      final candidatesByParty = <String, Map<String, int>>{};
       for (final v in entry.value.entries) {
         total += v.value;
         final party = partyNameByCandidate[v.key];
         if (party == null) continue;
         byParty[party] = (byParty[party] ?? 0) + v.value;
+        final name = candidateNameById[v.key];
+        if (name != null && v.value > 0) {
+          final names = candidatesByParty.putIfAbsent(party, () => {});
+          names[name] = (names[name] ?? 0) + v.value;
+        }
       }
       if (total <= 0) continue;
-      result[entry.key] =
-          RegionPartyVotes(totalVotes: total, votesByParty: byParty);
+      result[entry.key] = RegionPartyVotes(
+        totalVotes: total,
+        votesByParty: byParty,
+        candidateVotesByParty: candidatesByParty,
+      );
     }
     return result;
+  }
+
+  /// Adds up region totals, candidates included.
+  @visibleForTesting
+  static RegionPartyVotes sumRegionVotes(Iterable<RegionPartyVotes> regions) {
+    var total = 0;
+    final byParty = <String, int>{};
+    final candidates = <String, Map<String, int>>{};
+    for (final r in regions) {
+      total += r.totalVotes;
+      r.votesByParty.forEach((party, n) => byParty[party] = (byParty[party] ?? 0) + n);
+      r.candidateVotesByParty.forEach((party, byName) {
+        final names = candidates.putIfAbsent(party, () => {});
+        byName.forEach((name, n) => names[name] = (names[name] ?? 0) + n);
+      });
+    }
+    return RegionPartyVotes(
+      totalVotes: total,
+      votesByParty: byParty,
+      candidateVotesByParty: candidates,
+    );
+  }
+
+  static Map<String, int> _candidateTotals(
+      Iterable<Map<String, int>> precinctVotes) {
+    final totals = <String, int>{};
+    for (final votes in precinctVotes) {
+      votes.forEach((id, n) => totals[id] = (totals[id] ?? 0) + n);
+    }
+    return totals;
+  }
+
+  /// The comparison election's result over the area the state overview
+  /// covers: the whole state, or under "Only See" the votes re-counted inside
+  /// that district — so both elections are summed over the same ground.
+  /// Seats are only meaningful statewide.
+  ComparisonStateTotals? comparisonTotalsInView() {
+    final state = comparisonStateTotals.value;
+    if (state == null || focusPrecincts.value == null) return state;
+    final districtId = mapStateStore.focusDistrictId.value!;
+    final inDistrict =
+        comparisonRegionVotes.value[LayerType.congressionalDistrict]?[districtId];
+    return ComparisonStateTotals(
+      votes: inDistrict ??
+          const RegionPartyVotes(totalVotes: 0, votesByParty: {}),
+      seats: null,
+      partiesByName: state.partiesByName,
+    );
+  }
+
+  /// Candidate names of [partyName] within an already-aggregated region of
+  /// the current election, most votes first.
+  List<String> partyCandidatesIn(PrecinctVoteSummary summary, String partyName) {
+    final ids = candidateIdsByPartyName.value[partyName] ?? const <String>[];
+    final withVotes = [
+      for (final id in ids)
+        if ((summary.candidateVotes[id] ?? 0) > 0) id,
+    ]..sort((a, b) =>
+        summary.candidateVotes[b]!.compareTo(summary.candidateVotes[a]!));
+    final nameById = {for (final c in candidates.value) c.id: c.name};
+    return [for (final id in withVotes) nameById[id] ?? 'Unknown'];
   }
 
   /// Party totals for [cell]'s region in the comparison election, or null when
@@ -1001,8 +1273,7 @@ class MapDataStore {
   /// {precinctId: summary} from the vote rows of one contest (or of the whole
   /// legacy database when [electionId] is null).
   Future<Map<int, PrecinctVoteSummary>> _loadPrecinctSummaries(
-    String dbName,
-    Map<int, GeoCell> precinctsById, {
+    String dbName, {
     int? electionId,
   }) async {
     final voteMap =
@@ -1026,7 +1297,6 @@ class MapDataStore {
         winnerCandidateId: winnerId,
         winnerVotes: winnerVotes,
         candidateVotes: cvotes,
-        population: precinctsById[precinctId]?.population ?? 0,
       );
     }
     return summaries;
@@ -1062,11 +1332,8 @@ class MapDataStore {
     try {
       final db = await _dbHelper.getStateDb(dbName);
       await _loadContestMetadata(db, contest);
-      final precinctsById = {
-        for (final rc in precincts.value) rc.cell.id: rc.cell,
-      };
       precinctVotes.value =
-          await _loadPrecinctSummaries(dbName, precinctsById, electionId: contest.id);
+          await _loadPrecinctSummaries(dbName, electionId: contest.id);
       activeElection.value = contest;
       // Candidate and party ids are minted per contest, so a pick made for the
       // previous one means nothing now.
@@ -1079,13 +1346,7 @@ class MapDataStore {
       _loading = false;
       dataVersion.value = dataVersion.peek() + 1;
       isLoadingData.value = false;
-      _syncComparison(
-        isComparisonMode: mapStateStore.fillMode.peek().isComparison,
-        compareFolder: mapStateStore.comparisonElectionFolder.peek(),
-        stateCode: ElectionSubItem.stateCodeOf(dbName),
-        office: contest.office,
-        force: true,
-      );
+      _resyncComparison(ElectionSubItem.stateCodeOf(dbName));
       if (_pendingSelection != null) _drainPendingSelection();
     }
   }
@@ -1139,7 +1400,6 @@ class MapDataStore {
                 winnerCandidateId: winnerId,
                 winnerVotes: winnerVotes,
                 candidateVotes: cvotes,
-                population: cell.population,
               );
             } catch (e) {
               debugPrint('Error parsing state vote_summary for ${cell.name}: $e');
@@ -1202,7 +1462,6 @@ class MapDataStore {
           final rawCounties = await _repo.getCountiesForState(dbName, countyIds);
           final rawCds = await _repo.getCongressionalDistrictsForState(dbName, cdIds);
           final rawPrecincts = await _repo.getPrecinctsForState(dbName);
-          final precMap = {for (final p in rawPrecincts) p.id: p};
 
           // A year-folder database holds several contests with their own
           // candidates and parties; a legacy one holds the presidential
@@ -1228,7 +1487,6 @@ class MapDataStore {
           final cdPrec = await _repo.getCdPrecinctMapForState(dbName);
           precinctVotes.value = await _loadPrecinctSummaries(
             dbName,
-            precMap,
             electionId: _newSchema ? contest?.id : null,
           );
           countyPrecincts.value = countyPrec;
@@ -1295,13 +1553,7 @@ class MapDataStore {
 
       // A comparison chosen while this load was running matched against
       // precincts that were not there yet — redo it now that they are.
-      _syncComparison(
-        isComparisonMode: mapStateStore.fillMode.peek().isComparison,
-        compareFolder: mapStateStore.comparisonElectionFolder.peek(),
-        stateCode: subItem.stateCode,
-        office: activeElection.peek()?.office,
-        force: true,
-      );
+      _resyncComparison(subItem.stateCode);
     }
   }
 
@@ -1322,44 +1574,47 @@ class MapDataStore {
       case LayerType.precinct:
         final pv = votes[regionId];
         final focus = focusPrecincts.value;
-        if (pv == null || focus == null || focus.contains(regionId)) return pv;
-        return _noVotes(pv.population);
+        if (pv == null || focus == null) return pv;
+        if (!focus.contains(regionId)) return _noVotes();
+        return focusCandidateIds.value == null ? pv : _aggregate([regionId]);
     }
 
     if (precinctIds == null || precinctIds.isEmpty) return null;
     return _aggregate(precinctIds);
   }
 
-  /// What a precinct outside the "Only See" district reports: its people are
-  /// still there, its ballots are not.
-  static PrecinctVoteSummary _noVotes(int population) => PrecinctVoteSummary(
+  /// What a region outside the "Only See" district reports: it is still on
+  /// the map, but none of its ballots count.
+  static PrecinctVoteSummary _noVotes() => PrecinctVoteSummary(
         totalVotes: 0,
         winnerCandidateId: null,
         winnerVotes: 0,
         candidateVotes: const {},
-        population: population,
       );
 
   PrecinctVoteSummary? _aggregate(Iterable<int> precinctIds) {
     final votes = precinctVotes.value;
     final focus = focusPrecincts.value;
+    final focusCandidates = focusCandidateIds.value;
     final aggregated = <String, int>{};
     int total = 0;
-    int pop = 0;
     for (final pid in precinctIds) {
       final pv = votes[pid];
       if (pv == null) continue;
-      pop += pv.population;
       if (focus != null && !focus.contains(pid)) continue;
-      total += pv.totalVotes;
+      if (focusCandidates == null) total += pv.totalVotes;
       for (final entry in pv.candidateVotes.entries) {
+        if (focusCandidates != null) {
+          if (!focusCandidates.contains(entry.key)) continue;
+          total += entry.value;
+        }
         aggregated[entry.key] = (aggregated[entry.key] ?? 0) + entry.value;
       }
     }
 
     // Without a focus, no votes means no data; with one, it means the region
     // lies outside the district being looked at, which is worth reporting.
-    if (total == 0) return focus == null ? null : _noVotes(pop);
+    if (total == 0) return focus == null ? null : _noVotes();
 
     String? winnerId;
     int winnerVotes = 0;
@@ -1375,7 +1630,6 @@ class MapDataStore {
       winnerCandidateId: winnerId,
       winnerVotes: winnerVotes,
       candidateVotes: aggregated,
-      population: pop,
     );
   }
 }

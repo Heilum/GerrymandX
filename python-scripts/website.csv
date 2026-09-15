@@ -1,0 +1,28 @@
+Table 1
+Election Sources,Year,Type,Site,Precinct-Level
+,2024,All,Current Data,Y
+,2023,All,Refer to Redistricting Data Hub for Map + Data https://redistrictingdatahub.org/data/about-our-data/precinct-boundaries-and-election-results/,Y/N
+,2022,All,"Refer to Redistricting Data Hub https://redistrictingdatahub.org/data/about-our-data/precinct-boundaries-and-election-results/,Data only: https://github.com/MEDSL/2022-elections-official",Y/N
+,2021,All,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/FDMI5F,Y
+,2020,All,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K7760H,Y
+,2019,All,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/A0VJ3B,Y
+,2018,All,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UBKYRU,Y
+,2017,All,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VNJAB1,Y
+,2016,All,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NH5S2I,Y
+,2015,All,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KTXHEW,Y
+,2014,All,Senate/Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2013,All,Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2012,All,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/B3NTZR,Y
+,2011,All,Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2010,All,Senate/Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2009,All,Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2008,All,"President only at https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ, Senate at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI",N
+,2007,All,Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2006,All,Senate/Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2005,All,Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2004,All,"President only at https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ, Senate/Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI",N
+,2003,All,Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2002,All,Senate/Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2001,All,Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI,N
+,2000,All,"President only at https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ, Senate/Governor at: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DGUMFI",N
+,,,NOTE: NO CD ELECTIONS BEFORE 2016 AVAILABLE,

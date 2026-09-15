@@ -1,0 +1,2189 @@
+{
+  "year": 2002,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:57+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2002",
+  "national": {
+    "db": "National-2002.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2002/National-2002-202609151031.db",
+    "size": 2838528,
+    "sha256": "ef0b28299b5340fe04c1ccb24b7830c4282a57e3df6c9f37376e3120ecc596b0"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/AL-2002-202609151031.db",
+      "size": 937984,
+      "sha256": "d885733dc2bfc8cd8a9edc0d4d2bee5ed845598c04d10df144523030912b4897",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Alabama US Senate",
+          "total_votes": 1353023,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "736794cd-11a7-5340-bdf4-f08f9e228b02",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "961cf1cc-e9d8-50f7-8473-f3e684f108b4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bf8291d6-b190-5a7a-9cc4-dcf5b815f996",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Alabama Governor",
+          "total_votes": 1367053,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8d67de71-58aa-56af-b209-3e766213594e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2dded3ee-3095-5f33-a49c-60b816a05f71",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "58d707a6-0459-59fa-b7a2-09afc8a06221",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/AR-2002-202609151031.db",
+      "size": 1024000,
+      "sha256": "beb63a239704dbef07be0f393ef8cee50dd4f8b0060ea5f2dce3af9115c5e248",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Arkansas US Senate",
+          "total_votes": 803959,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "55609b16-3c80-52c7-adee-94965cc4a85f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "44eb8b90-b092-56a3-8af2-9ed9056a122f",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Arkansas Governor",
+          "total_votes": 805696,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "df946e20-1538-5293-8c0f-b231b7a443df",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b7db68b0-e098-58df-9411-8b67925f65e1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f19a0886-aa1f-5567-9d7d-fa0794b1b752",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/AZ-2002-202609151031.db",
+      "size": 450560,
+      "sha256": "135922293068a48e7593e3e91ca5dd48b8e6c85f2ec1d404fcff2f2ae8a35e8c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Arizona Governor",
+          "total_votes": 1226111,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "dfefd3c5-b27b-534a-92d2-0f43b5f2939e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9ab2f67f-5bef-5d92-acdb-15d0d74c0d63",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1d2758a4-2fb7-5fa3-873d-83d347397a2d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/CA-2002-202609151031.db",
+      "size": 1437696,
+      "sha256": "f74d2a21e036e584db4b2e2c3c5f8fcbec874fede0621541d94dd7dcaa597deb",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 California Governor",
+          "total_votes": 7476311,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "81d4fb62-bae8-55ba-b6fe-ca5095362c91",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3455421b-df79-5023-8b3d-343243acbc15",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1c137643-421f-54f8-b8ec-69b0e5f1f30a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/CO-2002-202609151031.db",
+      "size": 876544,
+      "sha256": "4f9983d48e72c789b7783a3baca566312f3a5e3d7159eb0d4929e5c50aa34271",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Colorado US Senate",
+          "total_votes": 1416082,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "68141219-21a5-561b-9c86-b2d085ace9ff",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "afc26868-72e7-5cbb-b92d-cb083a177eeb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bfdeb365-730c-5dc4-ae70-ad6521651f78",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Colorado Governor",
+          "total_votes": 1412602,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1bd07009-ca4c-5790-b412-92780cf071c1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "557ff3ab-9446-5eac-9693-8c424a07dca2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f734fdde-d4ba-50c7-8c24-3ac17bde669d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/CT-2002-202609151031.db",
+      "size": 204800,
+      "sha256": "603b94ccfedb5aea254e39dfa0078dd1d6e8d28bbb161c9cf237d0d3e590a8a0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Connecticut Governor",
+          "total_votes": 1022942,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "3e45554d-985e-5369-8e89-69ada701b6ef",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "18a6d7c8-4dca-5083-849c-567ead550d68",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/DE-2002-202609151031.db",
+      "size": 147456,
+      "sha256": "95d773c2158636f8021697376f1401a7f20992ebfe9ba8091e1f3f7485f8fe90",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Delaware US Senate",
+          "total_votes": 232314,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0f7670a4-995f-51a4-bdd4-1cfcd68af1b4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "17f5bf15-ff13-50c8-a879-5301fd2b7d87",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f680c562-ff98-5bf6-8094-299ec737de58",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/FL-2002-202609151031.db",
+      "size": 1011712,
+      "sha256": "a08b18f520eed0d2a7c306b8d1a71ea88d9618b298ffac6cd771b78f06698301",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Florida Governor",
+          "total_votes": 5100581,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "374f0e4a-0da4-52f9-8c87-05a077fd7e66",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4d5db5b9-9c79-545d-8039-ab4c480b0dd8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "45b3ac1d-df2d-5cd7-977e-00c51c759d38",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/GA-2002-202609151031.db",
+      "size": 1769472,
+      "sha256": "021dd1a40d952084c9978c772bb4e7d37d099da8c0370418e7381518740aebe4",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Georgia US Senate",
+          "total_votes": 2029991,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d3d74c10-028e-5db1-b85f-b1629a6ce9b2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fe92a128-ef93-5abc-aad1-863cec7d0084",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d0899fc6-9b50-5431-8a2b-064c3bee5543",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Georgia Governor",
+          "total_votes": 2027145,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8e0dcbcc-2b07-580d-8872-00382eadb4fe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f22735da-c94f-59fc-a703-da858ff1f5d1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3e1814b4-efa2-581a-9a7f-181d800cea1a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/HI-2002-202609151031.db",
+      "size": 204800,
+      "sha256": "4d31194a98ed09bb1693e472b0e3c0dcc0a1d09cf65d385ca407b5571d0aecf9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Hawaii Governor",
+          "total_votes": 382110,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "33f7a83c-834b-5253-a582-3ac4c016c9d0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ebd1b7a7-5e0d-5b91-8d5f-0b161b880516",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a06912d3-70eb-5ca9-addc-05a4f7a9428a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/IA-2002-202609151031.db",
+      "size": 614400,
+      "sha256": "9fc679c6604511935c6a1f77f5c84cc678e700f017a7b6b1eba2b968c4fe6b20",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Iowa US Senate",
+          "total_votes": 1023075,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "10e551d4-e5fc-53b6-a860-43dc45fa0f86",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9cc831e9-4db5-52bf-a1e2-1a3d1894dc31",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d7a9a9ac-b7a5-56f6-8b03-f54ecf8049ce",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Iowa Governor",
+          "total_votes": 1025802,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "27be0b17-4347-5e8c-b162-dbb70786fe4e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3a1dfd10-00e6-5bcc-a588-e48e08986fe5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "53a1afa7-091f-5087-a1a5-2418713115aa",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/ID-2002-202609151031.db",
+      "size": 835584,
+      "sha256": "88138afbe9bcac723f1b49b49a7b01cdb949e116fb59692e041c59f012a6eef1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Idaho US Senate",
+          "total_votes": 408544,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "436f022c-7dc6-502c-a7f6-b833368c7060",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c3b065c0-fb24-5535-94ae-e0bf35b6b7e6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8340ea64-b43b-55fa-858c-4bab9f95b337",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Idaho Governor",
+          "total_votes": 411477,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "11c8af34-b348-573b-847c-a2decec0ea2b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fe15e320-e09d-5fb6-a6ef-876b4e384aa2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2a2fb1e6-12c3-5be7-9978-fbcb9a430a55",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/IL-2002-202609151031.db",
+      "size": 958464,
+      "sha256": "7da44941ec99fb8147b646bac9a083d1b6e8664c9b570af378faacd9577e46b0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Illinois US Senate",
+          "total_votes": 3486851,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c5d915a2-59b1-5b88-8b84-583408344c65",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c5b0c000-c584-53ed-ae55-8c1c4c5c51bb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d53d9ffd-8d26-5533-8c24-e521a86375b2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Illinois Governor",
+          "total_votes": 3538891,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d7068bf1-b715-5603-83de-de1348a5a01d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ba22b6b5-ccdd-5c1f-8741-1972e5d4d04e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "941ad379-6582-5b18-88d2-cbabbfd1687e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/KS-2002-202609151031.db",
+      "size": 602112,
+      "sha256": "9e512be5264fca1ba58777789791955aff892890c9a8b84914a81a6561f69400",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Kansas US Senate",
+          "total_votes": 776850,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "dcb38125-61ff-5194-8b96-3cdb2000010f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a66d5f8b-1886-55b9-9e56-1f869b6fe418",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Kansas Governor",
+          "total_votes": 835692,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c28e1190-35eb-5384-9440-d3c58c0e534a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bbbed4f7-c961-55c5-b8a6-103c83b7327c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b67dff1f-cc26-52b4-8bd5-f761d4775d35",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/KY-2002-202609151031.db",
+      "size": 1576960,
+      "sha256": "1de3d634636216ef98f442bfc9c4fed371231a6f12b117deeb0c4d03ab6a1cc0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Kentucky US Senate",
+          "total_votes": 1131475,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "92ae9bf7-ef2d-5111-99d8-9a538618a129",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "35a2f8d3-6bcb-5312-a22c-2d5daa8659f8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e23f286c-f10d-5edd-b114-9679a9b15ae2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/LA-2002-202609151031.db",
+      "size": 1097728,
+      "sha256": "8c00ae9c7e7a95c0b82c637a1313bd1031c6c77ba9f077b8e45a990e5043898f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Louisiana US Senate",
+          "total_votes": 1235296,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "615e4e77-95c9-521e-ada6-c95a717f2378",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a46fb842-9feb-57c8-a410-1c9ca28d3f52",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/MA-2002-202609151031.db",
+      "size": 335872,
+      "sha256": "02dc5f823fd0e64a73b3df8063bf6e682efdb2d1b47df758836286c2d64d75b8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Massachusetts US Senate",
+          "total_votes": 2006758,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "cda5a1b4-9445-59ca-af30-cd4a497ede95",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f7532809-fba2-5fd6-b413-be6320e8d7f9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Massachusetts Governor",
+          "total_votes": 2194179,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8ef57d44-7cea-5efa-8ca8-110080bb4208",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0a53db94-f1cf-5c7a-957f-fac244fd0ff3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d5804583-c740-5d29-bbe1-e239a33b3913",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/MD-2002-202609151031.db",
+      "size": 495616,
+      "sha256": "97e4548719cd36d577247d69c5ad0c7e94f62d316f68d6b509a06dceaf9f7c53",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Maryland Governor",
+          "total_votes": 1706179,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a3165f84-500f-57d4-8637-9b3257cbb2e6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4130d7cd-efeb-5475-915c-757cb8495c0f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "23141f9d-f9cc-5229-a715-43fda693c871",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/ME-2002-202609151031.db",
+      "size": 434176,
+      "sha256": "87ffb5e8c0962a3dbfae4c6557099f690c18b57450e17c4cd0d6fadb052c8d6a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Maine US Senate",
+          "total_votes": 504899,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "e052cb59-fef3-5856-957b-670cf9c97209",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e9ad362c-1d7f-54d1-ae0f-d7019f8c5951",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Maine Governor",
+          "total_votes": 505190,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "08a38e20-99f1-5db3-b7fe-2c0fa227a1a2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "911e461e-8873-5374-be9c-6d99874ad8b1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "58ea574c-2510-5fee-8e1c-2ae1291af9ea",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/MI-2002-202609151031.db",
+      "size": 864256,
+      "sha256": "8f4a4a606c0ddc13f5206080864dc915e5a0baed6de8adedd5a934fa8912c904",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Michigan US Senate",
+          "total_votes": 3129287,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6cb994e2-702e-5f3d-a3c2-b9826c55b0a5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4057943f-8d8c-5257-bb65-5b0511229bb1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7c98d002-9e77-5e8c-852d-750062aa0f49",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Michigan Governor",
+          "total_votes": 3177565,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "66ff7419-0283-5d03-8ed4-56eb70a49008",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "656ce282-6248-533e-a6d2-bb927a22a50a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6f14bec0-491b-5960-aa54-697e548f7031",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/MN-2002-202609151031.db",
+      "size": 892928,
+      "sha256": "b9d51fee0a8940ec1a53c8d84b5bffce29f14a57ebe6337fc5a91d880d63ca44",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Minnesota US Senate",
+          "total_votes": 2254639,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b2876d00-7491-5cc3-b995-670a45aaf936",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9c26b0f9-1ef8-5ece-94eb-2c0a4b135cf1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "57d9eca7-2858-5fa5-9bfd-3b68300fec6f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Minnesota Governor",
+          "total_votes": 2252473,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bbf25adc-74df-528c-a75e-6740ec4cfa4a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6bbd9ddf-a6f4-51d9-b93c-cd24b33dd1ee",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3762f93c-df09-5ed7-b88f-8d1551b0e157",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/MO-2002-202609151031.db",
+      "size": 966656,
+      "sha256": "8ddcbd6790f57bfa0a4218184dd5cb2d8e17b38ab058c5fd3f6011c985726f7c",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": true,
+          "name": "2002 Missouri US Senate (Special)",
+          "total_votes": 1877630,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7877c6d9-c054-5e8c-a726-3b99276bd28b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a629c685-6394-5313-b4a6-1f7b09aa337e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8a743fa7-2c2d-59e9-a29c-66178e242e57",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/MS-2002-202609151031.db",
+      "size": 761856,
+      "sha256": "c33747c52df8b9f8dd79024b7d5077ce412317091959355745ebd5cb485af565",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Mississippi US Senate",
+          "total_votes": 630495,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "294c0a00-5c69-5f68-8a0d-7f026c0fd92f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e5db7fe7-f7c9-5878-9157-4212956bb5b2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/MT-2002-202609151031.db",
+      "size": 1003520,
+      "sha256": "54b20cf917cfe2da848ca330ecdb2c4b8dad7c59d345ecc53afc65680bf0b341",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Montana US Senate",
+          "total_votes": 326537,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cd2f95f6-0d48-5859-82f8-a9a3ed9ed366",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8e7b16a5-d2e4-51d5-ac05-13bd2e51cd81",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e8bc8edb-5418-5486-b98d-da3b7cb089a1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/NC-2002-202609151031.db",
+      "size": 1290240,
+      "sha256": "52bf78274e33da1c6f96ba1e1a4439fb4b79b142b3de00f7e0c8721cd4315192",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 North Carolina US Senate",
+          "total_votes": 2331181,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fcd0c3a4-5164-5228-81b2-4e9faaa870e0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e12fef56-c103-5a64-aaed-3dbe851cdc44",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2ca2aa9b-2fa4-57f8-8162-dfa4d1d7f6ce",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/NE-2002-202609151031.db",
+      "size": 630784,
+      "sha256": "3f9d393575a3360d079a856683512dbc07a3729ed70558b01c89188ad755a56e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Nebraska US Senate",
+          "total_votes": 480217,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "19e879bc-715a-5466-a30d-e30a586ab05e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "afcd7375-8c5a-5ca1-b001-0f4efcb11baa",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bec72f95-17be-534b-b265-ba95dde5916a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Nebraska Governor",
+          "total_votes": 480991,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7408bad9-55fa-5cda-b232-95f07913ae85",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d329b7fe-a31d-50dc-a20b-13506e017eff",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e83ce0e9-98fd-5a27-ab53-aa1a8b5d9798",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/NH-2002-202609151031.db",
+      "size": 229376,
+      "sha256": "4766bd1fa226829218f784375778b31dfe94e4f6c1e71c53719293f6761158a0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 New Hampshire US Senate",
+          "total_votes": 447135,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f5768758-b0f4-5fdc-bed4-495c5b2ab2ae",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8635ae99-98d3-5350-9e4f-4b1f44be23e0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "57d80507-1861-542c-b0cc-ff04890b153c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 New Hampshire Governor",
+          "total_votes": 442976,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9da1a9c8-ecb4-5523-bc79-d0816d6ab2d1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d0dbdc40-09a9-556b-b122-7fa136b76c98",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cdbdef70-5e29-5c14-a6ea-34af8830619a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/NJ-2002-202609151031.db",
+      "size": 417792,
+      "sha256": "dd6c5257271a681b6ed9ebffce89efbf56609bd50fdbcdc0cea11843b99027ab",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 New Jersey US Senate",
+          "total_votes": 2112604,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "fbcf80a2-a1da-5caf-b527-03e7f02acaec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c7135af4-6e79-56ee-a82d-40616b66001f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fca09790-96e8-5b6b-9c92-17f34e7fdd48",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/NM-2002-202609151031.db",
+      "size": 389120,
+      "sha256": "f747f11f530fa7772fa2e0e46793b557c681f7e9a615464987addca7a51a9560",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 New Mexico US Senate",
+          "total_votes": 483340,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "8486c7ba-c2b2-530b-b1bc-5d7a79822255",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d7fe52eb-28ab-5496-8450-c04143d5db6a",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 New Mexico Governor",
+          "total_votes": 484233,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6e7e3e3b-e364-529a-9b75-48fb8fbe3185",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1627fd21-ac9d-5515-8baf-5ece0ae93752",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1f50ce37-31da-5cbe-8f6b-c8489511b7af",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/NV-2002-202609151031.db",
+      "size": 270336,
+      "sha256": "3ba035692ebcfa57dfd174cddceff15770d0fabc2f79e67b347e0fc7891c4d7d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Nevada Governor",
+          "total_votes": 504079,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2aaf53c3-9d4b-5ecd-bdd8-ae515f988f1b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c81b26d7-3a18-553c-a5b1-857ae67ce6bf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7c37f5c3-1471-53e3-b72d-2dd494f7bebd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/NY-2002-202609151031.db",
+      "size": 811008,
+      "sha256": "eb256283850949d46d3083304af79abeba9b561a7bc308d255375521bffccb2a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 New York Governor",
+          "total_votes": 4579078,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b02fc849-5f8e-59a6-ac24-22097a228d98",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a8912c55-d1c0-5b75-9814-e78ae14b2fee",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0918958c-e82c-591e-bae5-eb36b22c3656",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/OH-2002-202609151031.db",
+      "size": 696320,
+      "sha256": "175b59b3d4e6c6856e73596d5efc3cd1714b6003284731df78196d0bcc4320bc",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Ohio Governor",
+          "total_votes": 3228992,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e88142b8-fb88-513a-8eca-a766cbde4f44",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0df08f87-9d1c-5f5b-b4af-f240a89132cd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "62766a51-c1fa-550e-95c3-8613e333a825",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/OK-2002-202609151031.db",
+      "size": 786432,
+      "sha256": "2705bf6e08e5b68aeadd44b29273a90454835d7ef6439e7dfe636adb2e4febd6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Oklahoma US Senate",
+          "total_votes": 1018424,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5bc655c3-44a3-5f00-992d-71221b756baa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d82d78b5-29f9-5120-8e87-bdf1447ac029",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "527944ca-4b51-5c7f-963a-570d7cab9183",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Oklahoma Governor",
+          "total_votes": 1035620,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "972acb0f-22ee-5488-bc40-bae3f39ade23",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "df0847d6-556e-5feb-9d34-1ec0ea6baa12",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f232a509-7acf-5310-8437-f241b4926c27",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/OR-2002-202609151031.db",
+      "size": 643072,
+      "sha256": "488449373e929a3fdf9851f59d95f04404c8042794f8b2cbcb8c599f448283e0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Oregon US Senate",
+          "total_votes": 1267221,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "de8bead1-ada9-50b6-8c5e-91be9c18e233",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ba56d6a1-00e8-56c8-b4c6-0382d98c0686",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "39d47b75-3bd8-5822-8eec-e359a6ba0032",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Oregon Governor",
+          "total_votes": 1260497,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "49943028-8a78-5c79-be4d-99cda8a09eb3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f38a3eb6-deb5-5461-a6e6-d91388587086",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "247c3778-13cb-5d3a-9621-1edd4da7fc33",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/PA-2002-202609151031.db",
+      "size": 806912,
+      "sha256": "644585beba1a52cc02871a48c3ed264e1dfc783cc77d0450411e3031189c15aa",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Pennsylvania Governor",
+          "total_votes": 3581989,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ce922c99-a279-593d-a424-affa97ba927d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "13aa662b-0083-5278-a3da-7428800e087f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "25c2fc8c-ce44-5804-9091-3a75d5ea594f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/RI-2002-202609151031.db",
+      "size": 155648,
+      "sha256": "6d8e181618f5d10e0183293d4dbc0a75ccc00799052d641cc4988766d69214fd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Rhode Island US Senate",
+          "total_votes": 323803,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "08a1d971-d187-5019-b4dc-35114d47df1c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0da2657e-cdb6-595c-b8de-3b73438d73ef",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Rhode Island Governor",
+          "total_votes": 332056,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "d96ec268-fa15-576d-99cb-999cdc3445f6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1f72a813-9dba-5a74-9bee-86d776776b74",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/SC-2002-202609151031.db",
+      "size": 909312,
+      "sha256": "d278ea680f1e9e4c91915c82d802da5a703560ee6e57c65e2db3a2399111d568",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 South Carolina US Senate",
+          "total_votes": 1102948,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "caeef8bc-b6e0-5bbd-bb16-d732eaaa6c41",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "947e33c8-75a7-59d8-96b7-f9681c4de084",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8c979466-685a-5cf8-a958-472177888af5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 South Carolina Governor",
+          "total_votes": 1107725,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "343dc011-1423-59a4-be75-67ccaf0fc215",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "42921be8-01f6-5b67-822a-83830d4a50c5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b4d247ee-2354-5da3-86f7-7f504b6a8a3a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/SD-2002-202609151031.db",
+      "size": 643072,
+      "sha256": "9d246d8d91785c10d3aedaba005ff423639a15be6baee1d17aa75f2878c5020d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 South Dakota US Senate",
+          "total_votes": 337508,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a3202e78-88b2-583e-abbc-6630c6d17051",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7701be22-7446-5bab-a070-e9d45413712b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2f546e01-37ff-5d00-8706-1a9a7e70250f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 South Dakota Governor",
+          "total_votes": 334559,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5afcd0a6-fb8c-546a-a16c-3d3cac096ba7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f2b42130-6b6c-5777-9295-b00772c1f895",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fc598558-89d4-5bc8-b543-4697e45a1cc8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/TN-2002-202609151031.db",
+      "size": 1282048,
+      "sha256": "9b428c4701be1473642c198716db4a49220e598c6e7dd3eed4d3c909fba7ca7e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Tennessee US Senate",
+          "total_votes": 1642421,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "94eca92b-4d33-5db9-8b1b-9433dd7d3e75",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8a7de396-5ab8-53b5-889a-958c1bc8378b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8615bb90-8ca5-52fb-96af-92dd59fafcc0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Tennessee Governor",
+          "total_votes": 1653167,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "402cd039-f01a-5a60-ba55-f57171a0c26f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8194e4a4-e1ed-5784-9784-079f5351f463",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3aca2591-9a1e-5224-86f6-f5eef2a44eb1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/TX-2002-202609151031.db",
+      "size": 2572288,
+      "sha256": "24e9fc7d1e4127b803f8a66d3341af27b1341a0d917222aa0a6552de37d8e777",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Texas US Senate",
+          "total_votes": 4514012,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2fad6b48-1d04-5fbf-8277-91991125d034",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9ce4f4ee-7fb5-5ce6-89c8-6818c57d15e4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "378251ac-7c5b-5a8f-8ecf-e57a87114f2f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Texas Governor",
+          "total_votes": 4553987,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ce56a1ef-2faa-5975-aaab-fcd06c340866",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a55a3c1b-1742-5e1e-a799-fd019fac5a01",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f84db9b3-a42c-5cd2-84e3-410b0470e2c2",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/VA-2002-202609151031.db",
+      "size": 1523712,
+      "sha256": "8726d5c67211f12c244ecc958531d11baf95c403242df76df6745a372f7ff261",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Virginia US Senate",
+          "total_votes": 1489422,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "b861ac86-edc2-5822-8ef0-fe0a4cf70684",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "22100d1a-658a-5d93-b31b-4a47fa87971d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/VT-2002-202609151031.db",
+      "size": 237568,
+      "sha256": "838551e65a6d33de6a48ddd50ba47766fbd73aed21b1ef2d1f57931252b0ffb1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Vermont Governor",
+          "total_votes": 230161,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ae8101ed-a5a5-5d5c-83a7-c9eb3f0a4641",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ab0b8aa7-e434-596d-9d43-250ef48174e0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "05c28698-c1e0-5eac-83be-efb97a662b74",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/WI-2002-202609151031.db",
+      "size": 733184,
+      "sha256": "bcbce74f16512699a8bf99b884d6ac0afedf522468ff382139deb290fb00c6f8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Wisconsin Governor",
+          "total_votes": 1775349,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ae130971-7f86-50b4-85d5-18ba098c9fea",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "76a0e474-b968-5094-866b-f09b8249b576",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b7ccded3-17a5-5cbc-b6e4-79e9b77ec5ef",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/WV-2002-202609151031.db",
+      "size": 811008,
+      "sha256": "5947e27a9337913269f0560b1965afc62cac7b0fa3a353c03c295ec8f10c8b68",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 West Virginia US Senate",
+          "total_votes": 436183,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "62a12aaa-b66b-5bd2-b3dd-acee20cebad9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "860fd3ee-01af-5606-8e43-5b53aa80565d",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2002.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2002/WY-2002-202609151031.db",
+      "size": 335872,
+      "sha256": "60156582ac8b156f00dcd64f0123e03fcbd8a7bb903295327ee6ee221f10083f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2002 Wyoming US Senate",
+          "total_votes": 183280,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "dbd7c19b-251d-589c-a9f4-059c8c90d762",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b6bf6af5-aabe-5029-9702-1c1adf4a5d2a",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2002 Wyoming Governor",
+          "total_votes": 185459,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9b7464aa-7ff3-5d27-8756-31bc0f925d36",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c3c29770-37ab-50d4-b92a-a8ff0137be18",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a034d07e-ab75-5d72-836d-fdbdfc19f51c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

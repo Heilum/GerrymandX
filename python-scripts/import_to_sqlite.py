@@ -225,7 +225,7 @@ NYT_DIR = INPUT_DIR / "nyt"
 STATE_SCHEMA = """
 CREATE TABLE counties (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL);
 CREATE TABLE congressional_districts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL);
-CREATE TABLE precincts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL, population INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE precincts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL);
 CREATE TABLE county_precincts (precinct_id INTEGER REFERENCES precincts(id) ON DELETE CASCADE, county_id INTEGER REFERENCES counties(id) ON DELETE CASCADE, PRIMARY KEY(precinct_id, county_id));
 CREATE TABLE congressional_district_precincts (precinct_id INTEGER REFERENCES precincts(id) ON DELETE CASCADE, congressional_district_id INTEGER REFERENCES congressional_districts(id) ON DELETE CASCADE, PRIMARY KEY(precinct_id, congressional_district_id));
 CREATE TABLE precinct_results (id INTEGER PRIMARY KEY AUTOINCREMENT, precinct_id INTEGER REFERENCES precincts(id) ON DELETE CASCADE, candidate_id TEXT NOT NULL, votes INTEGER NOT NULL DEFAULT 0, UNIQUE(precinct_id, candidate_id));
@@ -424,9 +424,15 @@ def districts_from_congressional_layer(base: gpd.GeoDataFrame, paths: list[Path]
 CONG_SPLIT_SUFFIX = re.compile(r"^(.*?)[-_ ]*\((?:CONG|CD)[-_ ]*([0-9A-Za-z]+)\)\s*$", re.I)
 
 
-def district_memberships(frame: gpd.GeoDataFrame, paths: list[Path],
-                         code: str) -> tuple[dict[str, set[str]], str] | None:
-    """Map each precinct id to every district it belongs to, from the cong layer."""
+def congressional_pieces(frame: gpd.GeoDataFrame, paths: list[Path],
+                         code: str) -> tuple[gpd.GeoDataFrame, str] | None:
+    """The companion cong layer as (pieces, id field of `frame`).
+
+    One row per precinct-in-district piece, with `__base` (the id of the
+    precinct it belongs to), `__district`, `__votes` (the US House ballots cast
+    in it) and its outline, repaired and snapped exactly like the precincts so
+    that unsplit edges coincide with theirs.
+    """
     congressional = [path for path in paths if "cong" in path.stem.lower()]
     if not congressional:
         return None
@@ -444,26 +450,132 @@ def district_memberships(frame: gpd.GeoDataFrame, paths: list[Path],
         field = "__district"
 
     known = set(frame[base_field].astype(str))
-    memberships: dict[str, set[str]] = {}
-    split = 0
-    for identifier, district in zip(layer[id_field].astype(str), layer[field]):
-        label = normalize_district(district)
-        if label is None:
-            continue
+    bases = []
+    for identifier in layer[id_field].astype(str):
         match = CONG_SPLIT_SUFFIX.match(identifier)
-        base = match.group(1) if match else identifier
-        if base not in known:
-            continue
-        if match:
-            split += 1
-        memberships.setdefault(base, set()).add(label)
-    if not memberships:
+        bases.append(match.group(1) if match else identifier)
+    house = [column for column in layer.columns if HOUSE_VOTE_COLUMN.match(str(column))]
+    votes = (layer[house].apply(pd.to_numeric, errors="coerce").fillna(0).sum(axis=1)
+             if house else pd.Series(0, index=layer.index))
+    pieces = gpd.GeoDataFrame({"__base": bases, "__district": layer[field].map(normalize_district),
+                               "__votes": votes.values}, geometry=layer.geometry.values, crs=layer.crs)
+    pieces = pieces[pieces["__district"].notna() & pieces["__base"].isin(known)
+                    & pieces.geometry.notna()].reset_index(drop=True)
+    if pieces.empty:
         return None
-    multi = sum(1 for value in memberships.values() if len(value) > 1)
+    pieces = pieces.to_crs("EPSG:4326")
+    pieces["geometry"] = repair(pieces.geometry, code, "congressional piece")
+    pieces["geometry"] = snap_to_grid(pieces.geometry, code)
+    pieces["geometry"] = repair(pieces.geometry, code, "snapped congressional piece")
+    return pieces, base_field
+
+
+def rank_districts(pieces: gpd.GeoDataFrame, code: str) -> dict[str, list[str]]:
+    """Each precinct's districts, the one holding most of its voters first.
+
+    A precinct VEST split between districts is still one precinct with one set
+    of results, so it is counted towards exactly one district: the one where
+    most of its US House ballots were cast, or, with no ballots to go by, the
+    one covering most of its area.
+    """
+    # Areas in degrees are only compared within one precinct, where that is fair.
+    sized = pieces.assign(__area=shapely.area(pieces.geometry.values))
+    totals = sized.groupby(["__base", "__district"])[["__votes", "__area"]].sum()
+    ranked: dict[str, list[tuple[float, float, str]]] = {}
+    for (base, label), row in totals.iterrows():
+        ranked.setdefault(base, []).append((-row["__votes"], -row["__area"], label))
+    result = {base: [label for *_, label in sorted(items)] for base, items in ranked.items()}
+    multi = sum(1 for labels in result.values() if len(labels) > 1)
     if multi:
-        print(f"[{code}] {multi} precincts span more than one district "
-              f"({split} split rows in the congressional layer)", flush=True)
-    return memberships, base_field
+        print(f"[{code}] {multi} precincts span more than one district; each is counted "
+              f"towards the district holding most of its House ballots", flush=True)
+    return result
+
+
+def _cut(operation, left, right):
+    """A set operation on the coordinate grid, falling back to full precision."""
+    try:
+        return operation(left, right, grid_size=COORD_GRID)
+    except shapely.errors.GEOSException:
+        return operation(left, right)
+
+
+def district_shapes(gdf: gpd.GeoDataFrame, pieces: gpd.GeoDataFrame | None) -> gpd.GeoSeries:
+    """District outlines that follow the true district line, without overlaps.
+
+    An unsplit precinct contributes its own outline to its district.  A split
+    precinct contributes each cong-layer piece, cut to the precinct, to that
+    piece's district; whatever its pieces leave uncovered (VEST drops pieces it
+    judges not to be real geography) goes to the district it is counted in.
+    The districts therefore tile exactly the ground the precincts cover.
+    Dissolving whole split precincts into every district they touch instead
+    drew each of them inside its neighbour, as an island of borders.
+    """
+    groups = {} if pieces is None else dict(tuple(pieces.groupby("__base", sort=False)))
+    keys = gdf["__base"] if "__base" in gdf else [None] * len(gdf)
+    labels, shapes = [], []
+    for key, primary, members, geometry in zip(keys, gdf["__district"], gdf["__districts"], gdf.geometry):
+        if primary is None:
+            continue
+        rows = groups.get(key) if len(members) > 1 else None
+        if rows is None:
+            labels.append(primary)
+            shapes.append(geometry)
+            continue
+        cells, taken = [], None
+        for label, piece in zip(rows["__district"], rows.geometry):
+            cut = _cut(shapely.intersection, geometry, piece)
+            if taken is not None:
+                cut = _cut(shapely.difference, cut, taken)
+            cut = polygonal(cut)
+            if cut is None or cut.is_empty:
+                continue
+            cells.append((label, cut))
+            taken = cut if taken is None else _cut(shapely.union, taken, cut)
+        rest = geometry if taken is None else polygonal(_cut(shapely.difference, geometry, taken))
+        if rest is not None and not rest.is_empty:
+            cells.append((primary, rest))
+        for label, shape in merge_slivers(cells, geometry.area):
+            labels.append(label)
+            shapes.append(shape)
+    frame = gpd.GeoDataFrame({"__district": labels}, geometry=shapes, crs=gdf.crs)
+    return frame.dissolve(by="__district").geometry
+
+
+# A detached fragment smaller than this share of its precinct is a sliver.
+SLIVER_SHARE = 0.02
+
+
+def merge_slivers(cells: list[tuple[str, object]], precinct_area: float) -> list[tuple[str, object]]:
+    """Fold a split precinct's slivers into the piece they border most.
+
+    VEST's pieces do not trace the precinct outline vertex for vertex, so
+    cutting them to it leaves strips a few metres wide, each one a stray island
+    of some district.  Every fragment of a district that is neither that
+    district's largest fragment in the precinct nor bigger than SLIVER_SHARE of
+    it is handed to its neighbour along the longest shared edge.
+    """
+    parts = [(label, part) for label, shape in cells
+             for part in getattr(shape, "geoms", [shape]) if not part.is_empty]
+    largest: dict[str, float] = {}
+    for label, part in parts:
+        largest[label] = max(largest.get(label, 0.0), part.area)
+    keep = [(label, part) for label, part in parts
+            if part.area >= largest[label] or part.area >= SLIVER_SHARE * precinct_area]
+    slivers = [part for label, part in parts
+               if not (part.area >= largest[label] or part.area >= SLIVER_SHARE * precinct_area)]
+    if not slivers:
+        return cells
+    merged: list[list] = [[label, [part]] for label, part in keep]
+    for sliver in slivers:
+        edges = [sliver.boundary.intersection(part.boundary).length for _, part in keep]
+        if max(edges) > 0:
+            index = edges.index(max(edges))
+        else:
+            gaps = [sliver.distance(part) for _, part in keep]
+            index = gaps.index(min(gaps))
+        merged[index][1].append(sliver)
+    return [(label, unary_union(group)) for label, group in merged]
 
 
 def districts_from_census(frame: gpd.GeoDataFrame, code: str,
@@ -601,6 +713,149 @@ def ensure_national_schema(conn: sqlite3.Connection) -> None:
     conn.commit()
 
 
+def read_precinct_layer(paths: list[Path], workdir: Path, code: str) -> gpd.GeoDataFrame:
+    """The all-precinct layer, repaired and snapped, with `__precinct` names.
+
+    Row order is precinct id order, so anything that rereads a state for an
+    existing database must come through here.
+    """
+    base_path = choose_precinct_path(paths)
+    print(f"[{code}] reading {base_path.relative_to(workdir)}", flush=True)
+    gdf = gpd.read_file(base_path)
+    if gdf.empty:
+        raise ValueError("precinct layer is empty")
+    if gdf.crs is None:
+        raise ValueError("precinct layer has no CRS")
+    gdf = gdf.to_crs("EPSG:4326")
+    # Repair before snapping: GEOS raises a TopologyException when asked to
+    # snap self-intersecting input.  Snapping can in turn invalidate a
+    # geometry, so repair again afterwards.
+    gdf["geometry"] = repair(gdf.geometry, code, "precinct")
+    before = int(gdf.geometry.count_coordinates().sum())
+    gdf["geometry"] = snap_to_grid(gdf.geometry, code)
+    after = int(gdf.geometry.count_coordinates().sum())
+    if after < before:
+        print(f"[{code}] snapped to {COORD_GRID:g}° grid: "
+              f"{before:,} -> {after:,} vertices ({after / before:.1%})", flush=True)
+    dropped = gdf.geometry.isna() | gdf.geometry.is_empty
+    if dropped.any():
+        print(f"[{code}] dropping {dropped.sum()} precincts that collapsed when snapped", flush=True)
+        gdf = gdf[~dropped].reset_index(drop=True)
+    gdf["geometry"] = repair(gdf.geometry, code, "snapped precinct")
+    precinct_field = first_column(gdf, ["UNIQUE_ID", "GEOID", "VTD", "VTDST", "PRECINCT", "PRECINCTNA", "PRECINCT_NA", "WARDID", "LABEL"])
+    gdf["__precinct"] = [as_text(value, f"Precinct_{index + 1}") for index, value in enumerate(gdf[precinct_field])] if precinct_field else [f"Precinct_{index + 1}" for index in range(len(gdf))]
+    return gdf
+
+
+def resolve_districts(gdf: gpd.GeoDataFrame, paths: list[Path], code: str, state_geom) -> gpd.GeoSeries:
+    """Set `__district` on every precinct and return the district outlines.
+
+    Districts resolve in order of authority: a field on the precinct layer,
+    then the companion congressional layer, then the House vote column names,
+    and only then the Census polygons.  Every precinct is counted towards one
+    district (see rank_districts); `__districts` keeps all it touches.
+    """
+    if code in AT_LARGE_STATES and state_geom is not None:
+        # One district holds the whole state, so its outline is the state's.
+        # Placing precincts one by one against the Census polygon loses those
+        # whose shapes reach into open water (Delaware's bay shore, Alaska's
+        # coast) — their centres fall outside it — and the outline dissolved
+        # from the rest then leaves them out.
+        gdf["__districts"] = [["At-large"] for _ in range(len(gdf))]
+        gdf["__district"] = "At-large"
+        return gpd.GeoSeries([state_geom], index=["At-large"], crs=gdf.crs)
+
+    column = district_values(gdf)
+    gdf["__districts"] = ([[normalize_district(v)] if normalize_district(v) else []
+                           for v in column]
+                          if column is not None else [[] for _ in range(len(gdf))])
+    pieces = None
+    if gdf["__districts"].map(len).eq(0).all():
+        found = congressional_pieces(gdf, paths, code)
+        if found is not None:
+            pieces, base_field = found
+            ranked = rank_districts(pieces, code)
+            gdf["__base"] = gdf[base_field].astype(str)
+            gdf["__districts"] = [list(ranked.get(value, ())) for value in gdf["__base"]]
+    # New Hampshire has neither a district field nor a cong layer, but its
+    # main layer does carry the House vote columns.
+    blank = gdf["__districts"].map(len) == 0
+    if blank.all():
+        derived = districts_from_vote_columns(gdf, code)
+        if derived is not None:
+            gdf["__districts"] = [[normalize_district(v)] if normalize_district(v) else []
+                                  for v in derived]
+
+    # Anything still without a district falls back to the Census polygons.
+    blank = gdf["__districts"].map(len) == 0
+    if blank.any():
+        filled = districts_from_census(
+            gdf[blank], code, reason=f"{blank.sum()} precincts have no district")
+        if filled is not None:
+            # Rebuild the column outright: assigning lists through .loc lets
+            # pandas align and broadcast them, which silently turns unmatched
+            # rows into NaN and can duplicate labels into a row.
+            found = {index: label for index, label in zip(gdf.index[blank], filled) if label}
+            gdf["__districts"] = [
+                list(values) if values else ([found[index]] if index in found else [])
+                for index, values in zip(gdf.index, gdf["__districts"])]
+    gdf["__district"] = [values[0] if values else None
+                         for values in gdf["__districts"]]
+
+    district_geoms = snap_to_grid(district_shapes(gdf, pieces), code)
+    if district_geoms.empty and code in AT_LARGE_STATES:
+        district_geoms = gpd.GeoSeries([state_geom], index=["At-large"], crs=gdf.crs)
+        gdf["__district"] = "At-large"
+    if len(district_geoms) == 1:
+        # A state with a single district has every precinct in it by
+        # definition; no geometry needs to place them.
+        gdf["__district"] = district_geoms.index[0]
+    return district_geoms
+
+
+def fix_districts(archive: Path) -> dict:
+    """Rebuild only the district tables of an existing state database.
+
+    Precincts, counties and results are left exactly as they are; the layer is
+    reread only to recover each precinct's district, and its row order is
+    checked against the stored precinct names before anything is written.
+    """
+    code = archive.name[:2].upper()
+    target = OUTPUT_DIR / f"{code}.db"
+    if not target.exists():
+        raise ValueError(f"no existing database at {target}")
+    with tempfile.TemporaryDirectory(prefix=f"gerrymander-{code}-") as temp:
+        paths = vector_paths(archive, Path(temp))
+        gdf = read_precinct_layer(paths, Path(temp), code)
+        state_geom = snap_geometry(gdf.geometry.union_all(), code) if code in AT_LARGE_STATES else None
+        district_geoms = resolve_districts(gdf, paths, code, state_geom)
+
+    db = sqlite3.connect(target)
+    stored = [name for (name,) in db.execute("SELECT name FROM precincts ORDER BY id")]
+    if stored != list(gdf["__precinct"]):
+        db.close()
+        raise ValueError(f"{code}: the layer no longer lines up with the stored precincts")
+    district_ids = {name: did for did, name in db.execute("SELECT id, name FROM congressional_districts")}
+    labels = {f"District {label}": label for label in district_geoms.index}
+    if set(labels) != set(district_ids):
+        db.close()
+        raise ValueError(f"{code}: districts {sorted(labels)} differ from stored {sorted(district_ids)}")
+    with db:
+        for name, did in district_ids.items():
+            geometry = district_geoms[labels[name]]
+            lat, lon = center(geometry)
+            db.execute("UPDATE congressional_districts SET boundary=?, center_lat=?, center_lon=? WHERE id=?",
+                       (wkb(geometry), lat, lon, did))
+        db.execute("DELETE FROM congressional_district_precincts")
+        db.executemany("INSERT INTO congressional_district_precincts(precinct_id,congressional_district_id) VALUES (?,?)",
+                       [(precinct_id, district_ids[f"District {label}"])
+                        for precinct_id, label in enumerate(gdf["__district"], 1) if label is not None])
+    db.execute("VACUUM")
+    db.close()
+    multi = int(gdf["__districts"].map(len).gt(1).sum())
+    return {"code": code, "districts": len(district_ids), "split precincts": multi}
+
+
 def import_state(archive: Path, national: sqlite3.Connection, overwrite: bool) -> dict:
     code = archive.name[:2].upper()
     state_name = STATE_NAMES[code.lower()]
@@ -610,78 +865,13 @@ def import_state(archive: Path, national: sqlite3.Connection, overwrite: bool) -
 
     with tempfile.TemporaryDirectory(prefix=f"gerrymander-{code}-") as temp:
         paths = vector_paths(archive, Path(temp))
-        base_path = choose_precinct_path(paths)
-        print(f"[{code}] reading {base_path.relative_to(temp)}", flush=True)
-        gdf = gpd.read_file(base_path)
-        if gdf.empty:
-            raise ValueError("precinct layer is empty")
-        if gdf.crs is None:
-            raise ValueError("precinct layer has no CRS")
-        gdf = gdf.to_crs("EPSG:4326")
-        # Repair before snapping: GEOS raises a TopologyException when asked to
-        # snap self-intersecting input.  Snapping can in turn invalidate a
-        # geometry, so repair again afterwards.
-        gdf["geometry"] = repair(gdf.geometry, code, "precinct")
-        before = int(gdf.geometry.count_coordinates().sum())
-        gdf["geometry"] = snap_to_grid(gdf.geometry, code)
-        after = int(gdf.geometry.count_coordinates().sum())
-        if after < before:
-            print(f"[{code}] snapped to {COORD_GRID:g}° grid: "
-                  f"{before:,} -> {after:,} vertices ({after / before:.1%})", flush=True)
-        dropped = gdf.geometry.isna() | gdf.geometry.is_empty
-        if dropped.any():
-            print(f"[{code}] dropping {dropped.sum()} precincts that collapsed when snapped", flush=True)
-            gdf = gdf[~dropped].reset_index(drop=True)
-        gdf["geometry"] = repair(gdf.geometry, code, "snapped precinct")
+        gdf = read_precinct_layer(paths, Path(temp), code)
         pres_cols = president_columns(gdf)
         if not pres_cols:
             raise ValueError("no recognizable 2024 presidential-result columns")
 
         county_field = first_column(gdf, ["COUNTY", "COUNTY_NAM", "COUNTYNAME", "CNTY_NAME", "CONAME", "COUNTYFP", "COUNTY_FIPS"])
-        precinct_field = first_column(gdf, ["UNIQUE_ID", "GEOID", "VTD", "VTDST", "PRECINCT", "PRECINCTNA", "PRECINCT_NA", "WARDID", "LABEL"])
-        population_field = first_column(gdf, ["PERSONS", "POPULATION", "TOTPOP", "TOTALPOP"])
         gdf["__county"] = gdf[county_field].map(lambda value: as_text(value, "Unknown")) if county_field else "Unknown"
-        gdf["__precinct"] = [as_text(value, f"Precinct_{index + 1}") for index, value in enumerate(gdf[precinct_field])] if precinct_field else [f"Precinct_{index + 1}" for index in range(len(gdf))]
-
-        # Districts resolve in order of authority: a field on the precinct
-        # layer, then the companion congressional layer, then the House vote
-        # column names, and only then the Census polygons.  A precinct that
-        # straddles districts belongs to each of them, which
-        # congressional_district_precincts is keyed to express.
-        column = district_values(gdf)
-        gdf["__districts"] = ([[normalize_district(v)] if normalize_district(v) else []
-                               for v in column]
-                              if column is not None else [[] for _ in range(len(gdf))])
-        if gdf["__districts"].map(len).eq(0).all():
-            memberships = district_memberships(gdf, paths, code)
-            if memberships is not None:
-                table, base_field = memberships
-                gdf["__districts"] = [sorted(table.get(str(value), ()))
-                                      for value in gdf[base_field]]
-        # New Hampshire has neither a district field nor a cong layer, but its
-        # main layer does carry the House vote columns.
-        blank = gdf["__districts"].map(len) == 0
-        if blank.all():
-            derived = districts_from_vote_columns(gdf, code)
-            if derived is not None:
-                gdf["__districts"] = [[normalize_district(v)] if normalize_district(v) else []
-                                      for v in derived]
-
-        # Anything still without a district falls back to the Census polygons.
-        blank = gdf["__districts"].map(len) == 0
-        if blank.any():
-            filled = districts_from_census(
-                gdf[blank], code, reason=f"{blank.sum()} precincts have no district")
-            if filled is not None:
-                # Rebuild the column outright: assigning lists through .loc lets
-                # pandas align and broadcast them, which silently turns unmatched
-                # rows into NaN and can duplicate labels into a row.
-                found = {index: label for index, label in zip(gdf.index[blank], filled) if label}
-                gdf["__districts"] = [
-                    list(values) if values else ([found[index]] if index in found else [])
-                    for index, values in zip(gdf.index, gdf["__districts"])]
-        gdf["__district"] = [values[0] if values else None
-                             for values in gdf["__districts"]]
 
         # Dissolving is where geometry really blows up: unioning thousands of
         # precincts keeps a node for every near-duplicate vertex along shared
@@ -689,17 +879,7 @@ def import_state(archive: Path, national: sqlite3.Connection, overwrite: bool) -
         # Snapping the result collapses those back onto the grid.
         state_geom = snap_geometry(gdf.geometry.union_all(), code)
         county_geoms = snap_to_grid(gdf.dissolve(by="__county").geometry, code)
-        exploded = gdf[["__districts", "geometry"]].explode("__districts").dropna(subset=["__districts"])
-        district_geoms = snap_to_grid(
-            exploded.dissolve(by="__districts").geometry, code)
-        if district_geoms.empty and code in AT_LARGE_STATES:
-            district_geoms = gpd.GeoSeries([state_geom], index=["At-large"], crs=gdf.crs)
-            gdf["__districts"] = [["At-large"] for _ in range(len(gdf))]
-        if len(district_geoms) == 1:
-            # A state with a single district has every precinct in it by
-            # definition; no geometry needs to place them.
-            only = [district_geoms.index[0]]
-            gdf["__districts"] = [list(only) for _ in range(len(gdf))]
+        district_geoms = resolve_districts(gdf, paths, code, state_geom)
         candidate_totals: defaultdict[str, int] = defaultdict(int)
 
         temp_target = target.with_suffix(".db.tmp")
@@ -723,16 +903,11 @@ def import_state(archive: Path, national: sqlite3.Connection, overwrite: bool) -
                 row_votes[candidate] += as_int(row[column])
             for candidate, votes in row_votes.items():
                 candidate_totals[candidate] += votes
-            fallback_population = sum(row_votes.values())
-            population = as_int(row[population_field]) if population_field else fallback_population
             lat, lon = center(row.geometry)
-            db.execute("INSERT INTO precincts(id,name,boundary,center_lat,center_lon,population) VALUES (?,?,?,?,?,?)", (precinct_id, row["__precinct"], wkb(row.geometry), lat, lon, population))
+            db.execute("INSERT INTO precincts(id,name,boundary,center_lat,center_lon) VALUES (?,?,?,?,?)", (precinct_id, row["__precinct"], wkb(row.geometry), lat, lon))
             db.execute("INSERT INTO county_precincts(precinct_id,county_id) VALUES (?,?)", (precinct_id, county_ids[row["__county"]]))
-            # dict.fromkeys keeps order while guaranteeing the (precinct,
-            # district) pair is inserted once.
-            for label in dict.fromkeys(row["__districts"]):
-                if label in district_ids:
-                    db.execute("INSERT INTO congressional_district_precincts(precinct_id,congressional_district_id) VALUES (?,?)", (precinct_id, district_ids[label]))
+            if row["__district"] in district_ids:
+                db.execute("INSERT INTO congressional_district_precincts(precinct_id,congressional_district_id) VALUES (?,?)", (precinct_id, district_ids[row["__district"]]))
             for candidate, votes in row_votes.items():
                 if votes:
                     db.execute("INSERT INTO precinct_results(precinct_id,candidate_id,votes) VALUES (?,?,?)", (precinct_id, candidate_uuid(candidate), votes))
@@ -1222,9 +1397,8 @@ def import_medsl_state(code: str, national: sqlite3.Connection, overwrite: bool)
         if blob is not None:
             drawn += 1
         lat, lon = center(geometry) if geometry is not None else (None, None)
-        db.execute("INSERT INTO precincts(id,name,boundary,center_lat,center_lon,population) VALUES (?,?,?,?,?,?)",
-                   (precinct_id, display.get((fips, precinct), precinct), blob, lat, lon,
-                    sum(row_votes.values())))
+        db.execute("INSERT INTO precincts(id,name,boundary,center_lat,center_lon) VALUES (?,?,?,?,?)",
+                   (precinct_id, display.get((fips, precinct), precinct), blob, lat, lon))
 
         name = county_name.get(fips)
         if name is None or name not in county_ids:
@@ -1416,8 +1590,24 @@ def main():
     parser.add_argument("--manifest-only", action="store_true", help="only rewrite data/output/dbs.json")
     parser.add_argument("--outlines-only", action="store_true", help="only refresh National.db state boundaries")
     parser.add_argument("--migrate-regions", action="store_true", help="move state_regions from National.db into each state database")
+    parser.add_argument("--fix-districts", action="store_true", help="rebuild only the district tables of existing state databases (use with --states)")
     args = parser.parse_args()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    if args.fix_districts:
+        wanted = {item.upper() for item in args.states or []}
+        failures = []
+        for archive in sorted(INPUT_DIR.glob("*_2024_gen_*.zip")):
+            if " (" in archive.name or (wanted and archive.name[:2].upper() not in wanted):
+                continue
+            try:
+                print(fix_districts(archive), flush=True)
+            except Exception as error:
+                failures.append((archive.name, str(error)))
+                print(f"FAILED {archive.name}: {error}", flush=True)
+        if failures:
+            raise SystemExit(1)
+        return
 
     if args.manifest_only:
         update_manifest()

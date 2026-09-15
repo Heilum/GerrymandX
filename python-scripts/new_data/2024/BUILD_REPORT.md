@@ -1,23 +1,23 @@
 # 2024 state databases — build report
 
-Generated 2026-09-12T15:51:27+00:00 by build_2024_state_dbs.py.
+Generated 2026-09-15T07:07:32+00:00 by build_2024_state_dbs.py.
 
 | State | Source | President | US Senate | US House | Governor | Size |
 |---|---|---|---|---|---|---|
-| AK | VEST | 327,524 | — | 328,805 | — | 16.4 MB |
+| AK | VEST | 327,524 | — | 328,805 | — | 16.0 MB |
 | AL | VEST | 2,265,090 | — | 2,048,663 | — | 33.5 MB |
 | AR | MEDSL | 1,182,481 | — | 1,144,611 | — | 23.6 MB |
 | AZ | VEST | 3,389,319 | 3,352,137 | 3,256,701 | — | 19.2 MB |
 | CA | VEST | 15,584,975 | 15,341,548 / 15,034,610 (special) | 15,104,029 | — | 174.2 MB |
 | CO | MEDSL | 3,192,745 | — | 3,073,391 | — | 39.1 MB |
 | CT | VEST | 1,750,562 | 1,708,259 | 1,701,914 | — | 6.7 MB |
-| DE | VEST | 510,783 | 500,606 | 497,436 | 498,635 | 4.4 MB |
-| FL | VEST | 10,868,291 | 10,757,416 | 10,327,700 | — | 81.1 MB |
+| DE | VEST | 510,783 | 500,606 | 497,436 | 498,635 | 4.3 MB |
+| FL | VEST | 10,868,291 | 10,757,416 | 10,327,700 | — | 81.2 MB |
 | GA | VEST | 5,250,066 | — | 5,137,102 | — | 43.7 MB |
 | HI | MEDSL | 516,701 | 501,763 | 478,766 | — | 4.9 MB |
 | IA | VEST | 1,661,718 | — | 1,609,609 | — | 14.5 MB |
 | ID | VEST | 903,480 | — | 873,704 | — | 20.4 MB |
-| IL | VEST | 5,649,622 | — | 5,376,615 | — | 50.5 MB |
+| IL | VEST | 5,649,622 | — | 5,376,615 | — | 50.2 MB |
 | IN | MEDSL | 3,088,482 | 2,976,484 | 3,005,335 | 2,995,532 | 31.9 MB |
 | KS | VEST | 1,327,591 | — | 1,305,655 | — | 31.5 MB |
 | KY | MEDSL | 2,074,527 | — | 1,905,531 | — | 54.6 MB |
@@ -27,9 +27,9 @@ Generated 2026-09-12T15:51:27+00:00 by build_2024_state_dbs.py.
 | ME | MEDSL | 824,806 | 810,583 | 798,076 | — | 1.8 MB |
 | MI | VEST | 5,619,828 | 5,576,702 | 5,516,486 | — | 36.1 MB |
 | MN | MEDSL | 3,253,920 | 3,189,323 | 3,146,762 | — | 20.5 MB |
-| MO | VEST | 2,995,327 | 2,972,559 | 2,924,863 | 2,960,266 | 32.2 MB |
+| MO | VEST | 2,995,327 | 2,972,559 | 2,924,863 | 2,960,266 | 32.0 MB |
 | MS | VEST | 1,226,977 | 1,215,400 | 1,163,151 | — | 33.0 MB |
-| MT | VEST | 602,963 | 607,262 | 597,811 | 602,404 | 16.3 MB |
+| MT | VEST | 602,963 | 607,262 | 597,811 | 602,404 | 16.4 MB |
 | NC | VEST | 5,676,874 | — | 5,480,486 | 5,588,824 | 47.8 MB |
 | ND | VEST | 368,155 | 364,327 | 359,787 | 361,951 | 7.1 MB |
 | NE | VEST | 944,097 | 935,617 / 935,005 (special) | 929,392 | — | 11.6 MB |
@@ -38,14 +38,14 @@ Generated 2026-09-12T15:51:27+00:00 by build_2024_state_dbs.py.
 | NM | MEDSL | 909,693 | 903,260 | 896,430 | — | 24.3 MB |
 | NV | MEDSL | 1,484,451 | 1,464,387 | 1,426,745 | — | 10.1 MB |
 | NY | VEST | 8,304,998 | 8,011,295 | 7,936,022 | — | 53.3 MB |
-| OH | VEST | 5,765,017 | 5,703,980 | 5,570,751 | — | 57.7 MB |
+| OH | VEST | 5,765,017 | 5,703,980 | 5,570,751 | — | 57.6 MB |
 | OK | MEDSL | 1,566,173 | — | 1,282,106 | — | 23.0 MB |
 | OR | MEDSL | 2,245,051 | — | 2,144,652 | — | 22.5 MB |
 | PA | MEDSL | 7,031,737 | 6,957,488 | 6,811,334 | — | 63.5 MB |
 | RI | VEST | 506,774 | 491,919 | 484,569 | — | 3.9 MB |
 | SC | VEST | 2,536,044 | — | 2,474,904 | — | 31.7 MB |
 | SD | MEDSL | 428,922 | — | 421,448 | — | 11.1 MB |
-| TN | VEST | 3,063,942 | 3,007,608 | 2,926,955 | — | 42.9 MB |
+| TN | VEST | 3,063,942 | 3,007,608 | 2,926,955 | — | 42.8 MB |
 | TX | VEST | 11,404,528 | 11,290,233 | 10,669,194 | — | 105.9 MB |
 | UT | VEST | 1,470,815 | 1,462,628 | 1,447,609 | 1,476,512 | 27.6 MB |
 | VA | VEST | 4,503,288 | 4,442,926 | 4,423,142 | — | 27.9 MB |
@@ -854,8 +854,6 @@ Generated 2026-09-12T15:51:27+00:00 by build_2024_state_dbs.py.
     - Brown [LIB]: 266,944
     - Roche [WRI]: 976
     - Andrus [WRI]: 534
-    - note: G24USSOAND: Andrus [WRI] via readme
-    - note: G24USSOROC: Roche [WRI] via readme
 - **2024 Texas US House** — 10,669,194 votes, 81 candidates, parties: DEM, REP, LIB, WRI, IND
     - Roy [REP] (District 21): 263,744
     - Williams [REP] (District 25): 263,033
@@ -863,21 +861,6 @@ Generated 2026-09-12T15:51:27+00:00 by build_2024_state_dbs.py.
     - Doggett [DEM] (District 37): 252,970
     - Fallon [REP] (District 4): 241,603
     - Gill [REP] (District 26): 241,096
-    - note: GCON16OMON: Montanez [WRI] via readme
-    - note: GCON16RARM: Armendariz-Jackson [REP] via readme
-    - note: GCON18DTUR: Turner [DEM] via readme
-    - note: GCON18ODUN: Duncan [WRI] via readme
-    - note: GCON18ODUR: Dural [WRI] via readme
-    - note: GCON18RCEN: Centonze [REP] via readme
-    - note: GCON22DGRE: Greene-Scott [DEM] via readme
-    - note: GCON25OHAG: Hagg [WRI] via readme
-    - note: GCON37RGAR: Garcia Sharon [REP] via readme
-    - note: GCON38OAYE: Ayers [WRI] via readme
-    - note: District 1 has no VEST columns; 257,648 votes added from MEDSL, 856 in precincts that could not be matched
-    - note: District 9 has no VEST columns; 182,995 votes added from MEDSL, 1,146 in precincts that could not be matched
-    - note: District 11 has no VEST columns; 211,226 votes added from MEDSL, 790 in precincts that could not be matched
-    - note: District 13 has no VEST columns; 238,819 votes added from MEDSL, 1,800 in precincts that could not be matched
-    - note: District 20 has no VEST columns; 155,854 votes added from MEDSL, 2,036 in precincts that could not be matched
 
 ### UT — Utah (VEST)
 - **2024 Utah President** — 1,470,815 votes, 5 candidates, parties: REP, DEM, LIB, GRN, WRI

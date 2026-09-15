@@ -617,12 +617,7 @@ class _GroupInspector extends StatelessWidget {
             InfoRow('Total precincts', formatNumber(composition.totalPrecincts)),
             const Divider(),
             if (votes != null) ...[
-              if (votes.population > 0)
-                InfoRow('Population', formatNumber(votes.population)),
               InfoRow('Total Votes', formatNumber(votes.totalVotes)),
-              if (votes.population > 0)
-                InfoRow('Turnout',
-                    '${(votes.totalVotes / votes.population * 100).toStringAsFixed(1)}%'),
               const Divider(),
               VotesByCandidate(summary: votes),
             ] else

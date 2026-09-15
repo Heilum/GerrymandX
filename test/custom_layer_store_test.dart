@@ -68,6 +68,12 @@ void main() {
     expect(saved1.precinctIds, {1, 2});
     expect(saved1.color.toARGB32(), 0xFF123456);
     expect(loaded.first.groupById(g2.id)!.precinctIds, {3, 4});
+
+    // A newer version of the state, published under a time-stamped name,
+    // keeps the layers; another state doesn't see them.
+    expect(await repo.loadLayers('2024', 'TX-2024-202609151031.db'), hasLength(1));
+    expect(await repo.loadLayers('2024', 'CA.db'), isEmpty);
+    expect(await repo.loadLayers('2022', 'TX.db'), isEmpty);
   });
 
   test('toggling a fully-contained cell removes it, otherwise adds it', () async {

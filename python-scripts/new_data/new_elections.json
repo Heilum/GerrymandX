@@ -1,204 +1,4031 @@
 {
-  "2024": [
+  "version": 202609151031,
+  "2000": [
     {
       "stateName": "Alabama",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/AL-2024.db"
-    },
-    {
-      "stateName": "Alaska",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/AK-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/AL-2000-202609151031.db",
+      "size": 872448,
+      "sha256": "41ffeec1c82ba344bea1002abcdc916fb91974c9775ea7d75757694540796075"
     },
     {
       "stateName": "Arizona",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/AZ-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/AZ-2000-202609151031.db",
+      "size": 401408,
+      "sha256": "76fb077510c8e2d51a46a756579f5af2f345e80eafe5668e1c526446e7960c7f"
     },
     {
       "stateName": "Arkansas",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/AR-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/AR-2000-202609151031.db",
+      "size": 946176,
+      "sha256": "be9fc5af7ecbceef197d0577e64b53ca51ec8d1e4b802cf710909a72f0199da5"
     },
     {
       "stateName": "California",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/CA-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/CA-2000-202609151031.db",
+      "size": 1220608,
+      "sha256": "4eb7283f9a19dffd4bb0e022b05c42edf33045a604354708e0df5f870ce5f981"
     },
     {
       "stateName": "Colorado",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/CO-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/CO-2000-202609151031.db",
+      "size": 778240,
+      "sha256": "4f1c77aa39297ad54a681fed23660674ab50d79856b4885521b70bbedc025c96"
     },
     {
       "stateName": "Connecticut",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/CT-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/CT-2000-202609151031.db",
+      "size": 204800,
+      "sha256": "b02a0889756bd3b3b6e3fef89d29368727c2cfb74c2289d69e66a9a14d33c73c"
     },
     {
       "stateName": "Delaware",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/DE-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/DE-2000-202609151031.db",
+      "size": 147456,
+      "sha256": "e71cb196392197273ae516f27c77593e334cab0d31eccbce4cad89dafda0f928"
+    },
+    {
+      "stateName": "District of Columbia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/DC-2000-202609151031.db",
+      "size": 122880,
+      "sha256": "ec2a7784e78911d652a6b6e907ea12005b67a858277193ca2c558dead962e388"
     },
     {
       "stateName": "Florida",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/FL-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/FL-2000-202609151031.db",
+      "size": 876544,
+      "sha256": "002af1e49e700e8e12bcd0653ac5a01a4828cea4964fab2f860a55eb310a763b"
     },
     {
       "stateName": "Georgia",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/GA-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/GA-2000-202609151031.db",
+      "size": 1634304,
+      "sha256": "25e14f2a2d51fd8126cc6cec35ab7cbe684eb86b45a14a982b91eeb956e6e2fd"
     },
     {
       "stateName": "Hawaii",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/HI-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/HI-2000-202609151031.db",
+      "size": 188416,
+      "sha256": "a0e803dfdb25e43d7f65f55053a27c358f42c0663cf61e57c17a487914054e2d"
     },
     {
       "stateName": "Idaho",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/ID-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/ID-2000-202609151031.db",
+      "size": 794624,
+      "sha256": "da224e545e3df0d8b00c86923f2a8191e998d31b5bfb437647e2bdf092364b3e"
     },
     {
       "stateName": "Illinois",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/IL-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/IL-2000-202609151031.db",
+      "size": 1015808,
+      "sha256": "43d3a89fe8cf8f200e022664ccfc0a09f06217a10cef43636fa1ffdd8dfd1860"
     },
     {
       "stateName": "Indiana",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/IN-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/IN-2000-202609151031.db",
+      "size": 864256,
+      "sha256": "b188189b45e838f1a7e60f4756de4838881539824b9c1e00c2fb56262448bf5c"
     },
     {
       "stateName": "Iowa",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/IA-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/IA-2000-202609151031.db",
+      "size": 679936,
+      "sha256": "4f230f29c10653c561caaf77fa1e1605b6bc377ef724ec6f56500e816942ed86"
     },
     {
       "stateName": "Kansas",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/KS-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/KS-2000-202609151031.db",
+      "size": 917504,
+      "sha256": "0b03a4accf22bf2b58739af106d8070bce8b9bc1827059a8e078f5384e2f7fa8"
     },
     {
       "stateName": "Kentucky",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/KY-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/KY-2000-202609151031.db",
+      "size": 1433600,
+      "sha256": "1d8085a1e1293416190c73bacdc37f85755f843eb47937ab8cd6a017a3551427"
     },
     {
       "stateName": "Louisiana",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/LA-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/LA-2000-202609151031.db",
+      "size": 1003520,
+      "sha256": "ead8e660983ccff9ba03fa9821e0077e612ffd76eb7af41605922de65cea5834"
     },
     {
       "stateName": "Maine",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/ME-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/ME-2000-202609151031.db",
+      "size": 352256,
+      "sha256": "78a9bb849a09153a48ec7a81fa8c94c78bbc5b1ebd27a0b1c0659479026e9a33"
     },
     {
       "stateName": "Maryland",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/MD-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/MD-2000-202609151031.db",
+      "size": 479232,
+      "sha256": "67739ebbb5ec533e395bc04bb834fa232d77cabd6e16a2357f0b8cccab9832cc"
     },
     {
       "stateName": "Massachusetts",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/MA-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/MA-2000-202609151031.db",
+      "size": 294912,
+      "sha256": "ce3e18c5841d758e3c76f10bdb5898206c510a67106d46e2fe2e5ef4251e60d2"
     },
     {
       "stateName": "Michigan",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/MI-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/MI-2000-202609151031.db",
+      "size": 937984,
+      "sha256": "8729cbbcd919f060435ca8c8d8bf90583a1eeef9354f8f080ab264859aaea092"
     },
     {
       "stateName": "Minnesota",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/MN-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/MN-2000-202609151031.db",
+      "size": 978944,
+      "sha256": "f04931fbe96e1476ec9e33996616cc2093f15bdd1e4c0df94d0dad8c41efd2a3"
     },
     {
       "stateName": "Mississippi",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/MS-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/MS-2000-202609151031.db",
+      "size": 847872,
+      "sha256": "4cc0703baa7348a00df291f98aa12a3d358a894f471802d72a1fd1b0c529e0c0"
     },
     {
       "stateName": "Missouri",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/MO-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/MO-2000-202609151031.db",
+      "size": 1363968,
+      "sha256": "1a6cb001f62c6348f99353a85d26da3931fafd96caf84623b0e420c25d071ea9"
     },
     {
       "stateName": "Montana",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/MT-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/MT-2000-202609151031.db",
+      "size": 1011712,
+      "sha256": "c380dd6a6a484123714aba6869b46b275eb36c1e149d09988bfa696f7a717388"
     },
     {
       "stateName": "Nebraska",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/NE-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/NE-2000-202609151031.db",
+      "size": 716800,
+      "sha256": "2a1711d7213c4c7079686534857985a055899caa88b733a64c4addf635355528"
     },
     {
       "stateName": "Nevada",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/NV-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/NV-2000-202609151031.db",
+      "size": 299008,
+      "sha256": "d6d45c9c54ed69e2aab787e5a332b25f75740ba95814ae68e39de19f112080aa"
     },
     {
       "stateName": "New Hampshire",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/NH-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/NH-2000-202609151031.db",
+      "size": 245760,
+      "sha256": "ea553a35be4c12331031379517719d8c9e2958a2f7a6293e447fa664a5fda148"
     },
     {
       "stateName": "New Jersey",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/NJ-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/NJ-2000-202609151031.db",
+      "size": 401408,
+      "sha256": "4d54337cea0ae287cdd0cbad099b09d75e99446738ec41140663b2b59c65e301"
     },
     {
       "stateName": "New Mexico",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/NM-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/NM-2000-202609151031.db",
+      "size": 430080,
+      "sha256": "aa998b8a440cb136755a38fad25ff80c841d55b12e9499f2bd3ad1dff7b446f5"
     },
     {
       "stateName": "New York",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/NY-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/NY-2000-202609151031.db",
+      "size": 794624,
+      "sha256": "1866ab8cae8334ccd4fc7858003b3675d25729fd448bb4e8b521893cf1574eb4"
     },
     {
       "stateName": "North Carolina",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/NC-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/NC-2000-202609151031.db",
+      "size": 1245184,
+      "sha256": "809b2e5a13dbe0e78d6a25384c676ee398d981a0791e98f94aef1fde20f6d30f"
     },
     {
       "stateName": "North Dakota",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/ND-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/ND-2000-202609151031.db",
+      "size": 675840,
+      "sha256": "0fee7e23bd1332250d25dd2da74c8d71c8d81ab9fd8688618eb6289f03231c21"
     },
     {
       "stateName": "Ohio",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/OH-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/OH-2000-202609151031.db",
+      "size": 782336,
+      "sha256": "b66eea2591f7bcb3c80c5ac9686bdc41601b58d50051c42fd5c5d929980c9b26"
     },
     {
       "stateName": "Oklahoma",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/OK-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/OK-2000-202609151031.db",
+      "size": 831488,
+      "sha256": "cd603f5fc38063f74b38f378f1b1e6e2dead49a40f6b4de3a2c4a0d1b708410b"
     },
     {
       "stateName": "Oregon",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/OR-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/OR-2000-202609151031.db",
+      "size": 638976,
+      "sha256": "f0a9a779efed6de4467152243f69e94fa6d26b7fbbebaf128269a894bd729b65"
     },
     {
       "stateName": "Pennsylvania",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/PA-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/PA-2000-202609151031.db",
+      "size": 897024,
+      "sha256": "bdc6237f0de1b52ddc4f7808eb0da3ef042ac6b366c0bcccdd1b9e85d48bfb3f"
     },
     {
       "stateName": "Rhode Island",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/RI-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/RI-2000-202609151031.db",
+      "size": 163840,
+      "sha256": "b4dd12349023cfbe83c80308e88ba5981739ef7663e952f885f6d2cf657094cd"
     },
     {
       "stateName": "South Carolina",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/SC-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/SC-2000-202609151031.db",
+      "size": 819200,
+      "sha256": "25314787285f268903a2574a139ebfd0c0724300769a0e16471b9362131e4e4a"
     },
     {
       "stateName": "South Dakota",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/SD-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/SD-2000-202609151031.db",
+      "size": 651264,
+      "sha256": "ccd526e471eb9f3c36131fde3a45de688fa7345a80424970da80cd8845027276"
     },
     {
       "stateName": "Tennessee",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/TN-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/TN-2000-202609151031.db",
+      "size": 1216512,
+      "sha256": "b88145523f3dcd359dd232cc724eb7f6e8230f70c7b9d9ec4b85b7e07f5203a0"
     },
     {
       "stateName": "Texas",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/TX-2024-202609122351.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/TX-2000-202609151031.db",
+      "size": 2306048,
+      "sha256": "f7628bea9f7783e62dff0114a0ac6e9bb518aa621ba771ec53fc55dd37daf1c7"
     },
     {
       "stateName": "Utah",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/UT-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/UT-2000-202609151031.db",
+      "size": 573440,
+      "sha256": "fd31ae52b67fd8a030b77a31baf98d93c204627d34519de0656d2e3957980d44"
     },
     {
       "stateName": "Vermont",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/VT-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/VT-2000-202609151031.db",
+      "size": 278528,
+      "sha256": "4d3142f2c963c6e5521e02bb602b26794999d1e245c7cce133079298abef5639"
     },
     {
       "stateName": "Virginia",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/VA-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/VA-2000-202609151031.db",
+      "size": 1523712,
+      "sha256": "0c8f3e9043f8704ba1015ffc8c74d385de3565857aa779a5a4389e4866bd976e"
     },
     {
       "stateName": "Washington",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/WA-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/WA-2000-202609151031.db",
+      "size": 733184,
+      "sha256": "ee4731991d061d294f298f4282c03d64a1f8d1e2069808145592186f7170d3c5"
     },
     {
       "stateName": "West Virginia",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/WV-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/WV-2000-202609151031.db",
+      "size": 868352,
+      "sha256": "909ba0548cc5770720c8e4be120f1ba83d5836f55d46cd68095db24be6dc699b"
     },
     {
       "stateName": "Wisconsin",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/WI-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/WI-2000-202609151031.db",
+      "size": 843776,
+      "sha256": "1caff453ee1e82eb01c4c85982875981dc3b5fc79e76056677df3d6195608722"
     },
     {
       "stateName": "Wyoming",
-      "db": "https://files.xp-oncology.cn/gerrymander/2024/WY-2024.db"
+      "db": "https://files.xp-oncology.cn/gerrymander/2000/WY-2000-202609151031.db",
+      "size": 327680,
+      "sha256": "cdbcbe34a48b8e979f223e6a3ddf930dfc7bc1827879ad1161b8d757f93af82c"
+    }
+  ],
+  "2001": [
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2001/NJ-2001-202609151031.db",
+      "size": 376832,
+      "sha256": "c9d66e8c9c13b01185adf9d77114b23002b8c1a5559aa40aca98abbf02e76a12"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2001/VA-2001-202609151031.db",
+      "size": 1454080,
+      "sha256": "e992ebd551deefeb4c2bca2ffac4035bb5675ea66e201aa3ab7a09acdce58dfd"
+    }
+  ],
+  "2002": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/AL-2002-202609151031.db",
+      "size": 937984,
+      "sha256": "d885733dc2bfc8cd8a9edc0d4d2bee5ed845598c04d10df144523030912b4897"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/AZ-2002-202609151031.db",
+      "size": 450560,
+      "sha256": "135922293068a48e7593e3e91ca5dd48b8e6c85f2ec1d404fcff2f2ae8a35e8c"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/AR-2002-202609151031.db",
+      "size": 1024000,
+      "sha256": "beb63a239704dbef07be0f393ef8cee50dd4f8b0060ea5f2dce3af9115c5e248"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/CA-2002-202609151031.db",
+      "size": 1437696,
+      "sha256": "f74d2a21e036e584db4b2e2c3c5f8fcbec874fede0621541d94dd7dcaa597deb"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/CO-2002-202609151031.db",
+      "size": 876544,
+      "sha256": "4f9983d48e72c789b7783a3baca566312f3a5e3d7159eb0d4929e5c50aa34271"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/CT-2002-202609151031.db",
+      "size": 204800,
+      "sha256": "603b94ccfedb5aea254e39dfa0078dd1d6e8d28bbb161c9cf237d0d3e590a8a0"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/DE-2002-202609151031.db",
+      "size": 147456,
+      "sha256": "95d773c2158636f8021697376f1401a7f20992ebfe9ba8091e1f3f7485f8fe90"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/FL-2002-202609151031.db",
+      "size": 1011712,
+      "sha256": "a08b18f520eed0d2a7c306b8d1a71ea88d9618b298ffac6cd771b78f06698301"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/GA-2002-202609151031.db",
+      "size": 1769472,
+      "sha256": "021dd1a40d952084c9978c772bb4e7d37d099da8c0370418e7381518740aebe4"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/HI-2002-202609151031.db",
+      "size": 204800,
+      "sha256": "4d31194a98ed09bb1693e472b0e3c0dcc0a1d09cf65d385ca407b5571d0aecf9"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/ID-2002-202609151031.db",
+      "size": 835584,
+      "sha256": "88138afbe9bcac723f1b49b49a7b01cdb949e116fb59692e041c59f012a6eef1"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/IL-2002-202609151031.db",
+      "size": 958464,
+      "sha256": "7da44941ec99fb8147b646bac9a083d1b6e8664c9b570af378faacd9577e46b0"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/IA-2002-202609151031.db",
+      "size": 614400,
+      "sha256": "9fc679c6604511935c6a1f77f5c84cc678e700f017a7b6b1eba2b968c4fe6b20"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/KS-2002-202609151031.db",
+      "size": 602112,
+      "sha256": "9e512be5264fca1ba58777789791955aff892890c9a8b84914a81a6561f69400"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/KY-2002-202609151031.db",
+      "size": 1576960,
+      "sha256": "1de3d634636216ef98f442bfc9c4fed371231a6f12b117deeb0c4d03ab6a1cc0"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/LA-2002-202609151031.db",
+      "size": 1097728,
+      "sha256": "8c00ae9c7e7a95c0b82c637a1313bd1031c6c77ba9f077b8e45a990e5043898f"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/ME-2002-202609151031.db",
+      "size": 434176,
+      "sha256": "87ffb5e8c0962a3dbfae4c6557099f690c18b57450e17c4cd0d6fadb052c8d6a"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/MD-2002-202609151031.db",
+      "size": 495616,
+      "sha256": "97e4548719cd36d577247d69c5ad0c7e94f62d316f68d6b509a06dceaf9f7c53"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/MA-2002-202609151031.db",
+      "size": 335872,
+      "sha256": "02dc5f823fd0e64a73b3df8063bf6e682efdb2d1b47df758836286c2d64d75b8"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/MI-2002-202609151031.db",
+      "size": 864256,
+      "sha256": "8f4a4a606c0ddc13f5206080864dc915e5a0baed6de8adedd5a934fa8912c904"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/MN-2002-202609151031.db",
+      "size": 892928,
+      "sha256": "b9d51fee0a8940ec1a53c8d84b5bffce29f14a57ebe6337fc5a91d880d63ca44"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/MS-2002-202609151031.db",
+      "size": 761856,
+      "sha256": "c33747c52df8b9f8dd79024b7d5077ce412317091959355745ebd5cb485af565"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/MO-2002-202609151031.db",
+      "size": 966656,
+      "sha256": "8ddcbd6790f57bfa0a4218184dd5cb2d8e17b38ab058c5fd3f6011c985726f7c"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/MT-2002-202609151031.db",
+      "size": 1003520,
+      "sha256": "54b20cf917cfe2da848ca330ecdb2c4b8dad7c59d345ecc53afc65680bf0b341"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/NE-2002-202609151031.db",
+      "size": 630784,
+      "sha256": "3f9d393575a3360d079a856683512dbc07a3729ed70558b01c89188ad755a56e"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/NV-2002-202609151031.db",
+      "size": 270336,
+      "sha256": "3ba035692ebcfa57dfd174cddceff15770d0fabc2f79e67b347e0fc7891c4d7d"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/NH-2002-202609151031.db",
+      "size": 229376,
+      "sha256": "4766bd1fa226829218f784375778b31dfe94e4f6c1e71c53719293f6761158a0"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/NJ-2002-202609151031.db",
+      "size": 417792,
+      "sha256": "dd6c5257271a681b6ed9ebffce89efbf56609bd50fdbcdc0cea11843b99027ab"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/NM-2002-202609151031.db",
+      "size": 389120,
+      "sha256": "f747f11f530fa7772fa2e0e46793b557c681f7e9a615464987addca7a51a9560"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/NY-2002-202609151031.db",
+      "size": 811008,
+      "sha256": "eb256283850949d46d3083304af79abeba9b561a7bc308d255375521bffccb2a"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/NC-2002-202609151031.db",
+      "size": 1290240,
+      "sha256": "52bf78274e33da1c6f96ba1e1a4439fb4b79b142b3de00f7e0c8721cd4315192"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/OH-2002-202609151031.db",
+      "size": 696320,
+      "sha256": "175b59b3d4e6c6856e73596d5efc3cd1714b6003284731df78196d0bcc4320bc"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/OK-2002-202609151031.db",
+      "size": 786432,
+      "sha256": "2705bf6e08e5b68aeadd44b29273a90454835d7ef6439e7dfe636adb2e4febd6"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/OR-2002-202609151031.db",
+      "size": 643072,
+      "sha256": "488449373e929a3fdf9851f59d95f04404c8042794f8b2cbcb8c599f448283e0"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/PA-2002-202609151031.db",
+      "size": 806912,
+      "sha256": "644585beba1a52cc02871a48c3ed264e1dfc783cc77d0450411e3031189c15aa"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/RI-2002-202609151031.db",
+      "size": 155648,
+      "sha256": "6d8e181618f5d10e0183293d4dbc0a75ccc00799052d641cc4988766d69214fd"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/SC-2002-202609151031.db",
+      "size": 909312,
+      "sha256": "d278ea680f1e9e4c91915c82d802da5a703560ee6e57c65e2db3a2399111d568"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/SD-2002-202609151031.db",
+      "size": 643072,
+      "sha256": "9d246d8d91785c10d3aedaba005ff423639a15be6baee1d17aa75f2878c5020d"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/TN-2002-202609151031.db",
+      "size": 1282048,
+      "sha256": "9b428c4701be1473642c198716db4a49220e598c6e7dd3eed4d3c909fba7ca7e"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/TX-2002-202609151031.db",
+      "size": 2572288,
+      "sha256": "24e9fc7d1e4127b803f8a66d3341af27b1341a0d917222aa0a6552de37d8e777"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/VT-2002-202609151031.db",
+      "size": 237568,
+      "sha256": "838551e65a6d33de6a48ddd50ba47766fbd73aed21b1ef2d1f57931252b0ffb1"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/VA-2002-202609151031.db",
+      "size": 1523712,
+      "sha256": "8726d5c67211f12c244ecc958531d11baf95c403242df76df6745a372f7ff261"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/WV-2002-202609151031.db",
+      "size": 811008,
+      "sha256": "5947e27a9337913269f0560b1965afc62cac7b0fa3a353c03c295ec8f10c8b68"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/WI-2002-202609151031.db",
+      "size": 733184,
+      "sha256": "bcbce74f16512699a8bf99b884d6ac0afedf522468ff382139deb290fb00c6f8"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2002/WY-2002-202609151031.db",
+      "size": 335872,
+      "sha256": "60156582ac8b156f00dcd64f0123e03fcbd8a7bb903295327ee6ee221f10083f"
+    }
+  ],
+  "2003": [
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2003/KY-2003-202609151031.db",
+      "size": 1572864,
+      "sha256": "c79cd583461b8f6f2a060a3fddc673a11628d73b557c8b4cdad274696471e15c"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2003/LA-2003-202609151031.db",
+      "size": 1097728,
+      "sha256": "1f96188a6d52219e20ea99d67dca944a876ecff8d2e8de506a729c246cc428f2"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2003/MS-2003-202609151031.db",
+      "size": 774144,
+      "sha256": "d5d1fbd7981159d466baf76aa26bdc84b6126adc59f60745551d00b0fd56057a"
+    }
+  ],
+  "2004": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/AL-2004-202609151031.db",
+      "size": 937984,
+      "sha256": "ad9f65635a1bab92fd8731e9f2931d8eb95d9840a30a88e2c21fb6576c2e5808"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/AZ-2004-202609151031.db",
+      "size": 458752,
+      "sha256": "a5cd55f4f162da2a12854c9d659dcb151f9fb2cf1584205002e66ead61d3a64a"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/AR-2004-202609151031.db",
+      "size": 1036288,
+      "sha256": "87cb75f9a0343f1bd5fb7eb3c346e8e0309da843183a4a660aad512bde503bb7"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/CA-2004-202609151031.db",
+      "size": 1462272,
+      "sha256": "0dc8012d65aad07998b57da06e684c869b264d939858c246752f4cbabaef63d5"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/CO-2004-202609151031.db",
+      "size": 876544,
+      "sha256": "3b16091d574a52a54454c41a843123972f43954ce10184018774261d54cb9625"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/CT-2004-202609151031.db",
+      "size": 204800,
+      "sha256": "8b3c6caad9299596494a287bb98957cf94c7df1f775651f1dd2a580d036b2315"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/DE-2004-202609151031.db",
+      "size": 147456,
+      "sha256": "05620363103ac6a218a55adfc10db9fb3b0021fa35fadc16b0b6eed9b800b827"
+    },
+    {
+      "stateName": "District of Columbia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/DC-2004-202609151031.db",
+      "size": 122880,
+      "sha256": "43e64bbc1dc223b86561c84f264fa19e6029f1600c1bcbdc3e2bc52a93091a7e"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/FL-2004-202609151031.db",
+      "size": 1036288,
+      "sha256": "b65aff6d09a6e2a37d9796655540c975eec935e876cdfcb65eed77ab1b70908b"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/GA-2004-202609151031.db",
+      "size": 1769472,
+      "sha256": "9749f29d6b1ce0c73c556ef464dfc374ccc02820a8aa746270f2358674d1f2f9"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/HI-2004-202609151031.db",
+      "size": 204800,
+      "sha256": "14d158d318c382583acca227332facfae380195fde16e15d6695d7e55578dbcd"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/ID-2004-202609151031.db",
+      "size": 831488,
+      "sha256": "c9e93b47373b9c3a92093f7c387b0152dab95390e05ed3ec709c8907182d3701"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/IL-2004-202609151031.db",
+      "size": 958464,
+      "sha256": "b567e99652d82a1d9d30be70510184a8603d37367efb75b7fd5cd74e51404861"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/IN-2004-202609151031.db",
+      "size": 733184,
+      "sha256": "344be87700487fa7a03d958d85131e997bf1042d6398a0457e073b0f7564784a"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/IA-2004-202609151031.db",
+      "size": 614400,
+      "sha256": "531b3664e795c98377839c28c6007d70b6f7af444039afee8134f327da8554c2"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/KS-2004-202609151031.db",
+      "size": 618496,
+      "sha256": "5ef4e7fba8596350485c6ed4bb721485767c8afe62f4dee001a6149fd2dc6b03"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/KY-2004-202609151031.db",
+      "size": 1642496,
+      "sha256": "6d41e6bf86939b9d360b2d1e269672aab684e600dc7217ea36caaf824209db5f"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/LA-2004-202609151031.db",
+      "size": 1134592,
+      "sha256": "1848d3f0ed3fc2b24eaa53ba4dfd0e5c532f70fddbcbf11c094f4421e1b8ae19"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/ME-2004-202609151031.db",
+      "size": 434176,
+      "sha256": "93fe3682ef976bd9167c87cece208b8b5ba041d90503bdf883512d43947214f2"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/MD-2004-202609151031.db",
+      "size": 520192,
+      "sha256": "67616c8f6c1f9c8d5dca36b85828dbf026952c40a91c03386a11cd8ad95a3ac5"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/MA-2004-202609151031.db",
+      "size": 335872,
+      "sha256": "8ab827bd1b5e97b455311b055f386015d42e7a7699ac6c92af1805b5508f7f19"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/MI-2004-202609151031.db",
+      "size": 811008,
+      "sha256": "c8f853d1ac9e650a7d773841220268b87f8234d45504b2b5113153b81b256b07"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/MN-2004-202609151031.db",
+      "size": 839680,
+      "sha256": "a53db28bfa3d39ce3b1f9e2c582a2cff3f4f0a8e719567ab6d0b7b5658393d53"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/MS-2004-202609151031.db",
+      "size": 774144,
+      "sha256": "b98a8761e04a8241df367552f792f2089c816eca4722461b27be4951e22069c5"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/MO-2004-202609151031.db",
+      "size": 1089536,
+      "sha256": "cf27be90b84ddb122fca514bf997803d53c27189c60aa0e6a032f35115baffa4"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/MT-2004-202609151031.db",
+      "size": 1028096,
+      "sha256": "202ac42b3350e79e1c8040d5578b0c352b8917818165bffaa0d9e491ab16370e"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/NE-2004-202609151031.db",
+      "size": 577536,
+      "sha256": "45a031bea44150db02e9141516598fe6ab11dbf4dd6cc5081fbdd4b8dcc32636"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/NV-2004-202609151031.db",
+      "size": 294912,
+      "sha256": "46334dd85d4be7471e3b5d69515a734c03c1051525b7d27cefac23f3eeb75d48"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/NH-2004-202609151031.db",
+      "size": 237568,
+      "sha256": "ab2bc17e37eaa6d81d98aa30e251970005b2b15779304254bb377b98f21bf9e1"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/NJ-2004-202609151031.db",
+      "size": 417792,
+      "sha256": "0759d692de17ad830504211d3c5254c4be48af7a3308e757f1bf46628d453226"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/NM-2004-202609151031.db",
+      "size": 385024,
+      "sha256": "de810439954b4acbaa1a34ba4c3a5ea8f64ca56529bb13576f1ae3d0e8e92100"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/NY-2004-202609151031.db",
+      "size": 835584,
+      "sha256": "ae21dde6deda3116b5910c607ca2fcd8d1cbf1f12993471f50e77d36c5516335"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/NC-2004-202609151031.db",
+      "size": 1392640,
+      "sha256": "9687e0042765685087852bf0223fb039c20f262205e5859b0c80c11cbfd0c2cb"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/ND-2004-202609151031.db",
+      "size": 573440,
+      "sha256": "1bee4972dd6dfaa28d46eae580ef330188c1c56781ab8224081c60de558f50e5"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/OH-2004-202609151031.db",
+      "size": 724992,
+      "sha256": "7952e51765e2a2c1dc9e5fda50f55a56af1fbc959aa87ce5d97cfcdd19e36bb4"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/OK-2004-202609151031.db",
+      "size": 778240,
+      "sha256": "b65892b8f9b87d3526b0cf57d4d41b3e1814cdbcb70f0f4d1f20ac9b60446dd0"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/OR-2004-202609151031.db",
+      "size": 643072,
+      "sha256": "cc70da9ae0b8d52af6c98909975367018f9652de726dc55c321e86c9eabca96a"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/PA-2004-202609151031.db",
+      "size": 831488,
+      "sha256": "8a558e07716b82b79a654d0d3fa736b659c72e2fc72c593993a29a94f15fab9f"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/RI-2004-202609151031.db",
+      "size": 155648,
+      "sha256": "7d41ab45c6108b7c8c8911f5a94daf5ddffcb929b3a128f0bd8746989c312c4e"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/SC-2004-202609151031.db",
+      "size": 913408,
+      "sha256": "5bc5938d7c4755a0b9d4b16b8a0618166bcf54c1de8130904a1b65a530f1b850"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/SD-2004-202609151031.db",
+      "size": 634880,
+      "sha256": "3aa9d45eab27523f84006fb2a951be35afba8277ecbd52a9a0d65c9fa365ee3b"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/TN-2004-202609151031.db",
+      "size": 1224704,
+      "sha256": "a5827a6f549f159eb97f95839862197034180e0f7f8cfffca3418522efae5910"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/TX-2004-202609151031.db",
+      "size": 2449408,
+      "sha256": "de7b4ad82f329363fcbbf9caec7c82f5c37d491c8651fc5f2ddd17f2eeb26159"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/UT-2004-202609151031.db",
+      "size": 638976,
+      "sha256": "b1ef336fc54405e98a1355805685c4915d887d221b575621f1a6f51fdd8e7123"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/VT-2004-202609151031.db",
+      "size": 262144,
+      "sha256": "47045c82a8ef5201db812cbaca0edcbdfdf19d2b12b63fe7c2182bab33fc00a6"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/VA-2004-202609151031.db",
+      "size": 1544192,
+      "sha256": "ddd2c04a160c1f50ec4afef53ae0f5001b68e4324cec2734b7edd20e772e892d"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/WA-2004-202609151031.db",
+      "size": 790528,
+      "sha256": "0c94b937c420ae416f27c740d492bd66d3d28928392524707f08047a424fd629"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/WV-2004-202609151031.db",
+      "size": 839680,
+      "sha256": "c10a8bf4cb5aca5ebe8556724b464835a315511a6051e66edb97ccf156975778"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/WI-2004-202609151031.db",
+      "size": 761856,
+      "sha256": "b337ce806f192e0e917cc738f9aad28c531ea510f1a2b71ea1333af33bae0e89"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2004/WY-2004-202609151031.db",
+      "size": 311296,
+      "sha256": "7e63df49a5e585583bb88f9d09c2a6514ea65aef0da6343e156703df88f87472"
+    }
+  ],
+  "2005": [
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2005/NJ-2005-202609151031.db",
+      "size": 417792,
+      "sha256": "4407a8c90b9bb707c09cef040271da5ec6573324cc04bd779ed68f62fa203682"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2005/VA-2005-202609151031.db",
+      "size": 1544192,
+      "sha256": "1723878be3a1b785dda863988cc4e92faa7d1a509f8020161df9c16cbb3c311f"
+    }
+  ],
+  "2006": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/AL-2006-202609151031.db",
+      "size": 913408,
+      "sha256": "e41c329dc88d6d7ec9f65388364104caaf25363d2267d56b286eedfaaebac52b"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/AZ-2006-202609151031.db",
+      "size": 458752,
+      "sha256": "79ca09d524b0f0f1fd941d83ed7cd2ac6c18b81dc14bdfcf2ca4a0c2c8667cf0"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/AR-2006-202609151031.db",
+      "size": 1011712,
+      "sha256": "cf91903b51c50f9f50a61669c7a779d5ae922ff57962008b4a9fafd762db859f"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/CA-2006-202609151031.db",
+      "size": 1462272,
+      "sha256": "965f33f7051a7b788b51bc9e30ce0aa63bd8d76cc6a33dc8f5a18aff5bdb1992"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/CO-2006-202609151031.db",
+      "size": 851968,
+      "sha256": "411ab3f942b8bdd6bb9583c52a9f7bca08947b1a56c6a22a2a0374a52dea4fcb"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/CT-2006-202609151031.db",
+      "size": 204800,
+      "sha256": "e6b7d3709e3784f01414aa12d4a34cabdf93baa18ea438e553342f1c5543be97"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/DE-2006-202609151031.db",
+      "size": 147456,
+      "sha256": "f0cf315fcf1f1bed45d90e607d07775db1accc36e5769c5aa29a81a2b57d0bc0"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/FL-2006-202609151031.db",
+      "size": 1036288,
+      "sha256": "0e4fabc498ce2bf7400480c331983b9773da8a19cf134e17b20882aec5cd29b3"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/GA-2006-202609151031.db",
+      "size": 1691648,
+      "sha256": "cf7240b8a30a08996f0857c9c89d4c252d35c8efe0f72fbcdc1f186542c63178"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/HI-2006-202609151031.db",
+      "size": 204800,
+      "sha256": "dfac975ff57fac1156c6bbb7134fdd51843452acc077767ed35ddde75cb2ec01"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/ID-2006-202609151031.db",
+      "size": 819200,
+      "sha256": "1efd8dab231c6ed9f3a872f9173c629911aa96ea15a2f9dc4ebffff760fff6e5"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/IL-2006-202609151031.db",
+      "size": 901120,
+      "sha256": "69bf50bdb1164772b8ba76732b671ad1b032db7dc4fb2c192290ea9972072299"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/IN-2006-202609151031.db",
+      "size": 626688,
+      "sha256": "2a50c60360a79ca6a6d3682e603a95d6e9c2e9c1eb9c8494e81e9aedc5596255"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/IA-2006-202609151031.db",
+      "size": 557056,
+      "sha256": "09a11874481c76bf465e5d40e52984ec81c0c65a0c312fb1d9c1216c1c28adf6"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/KS-2006-202609151031.db",
+      "size": 557056,
+      "sha256": "b662f05989acfc25cfb853b97695631d12d62f0c9d7ce8df22fb6c9d4aa1c448"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/ME-2006-202609151031.db",
+      "size": 458752,
+      "sha256": "3a739935dd3ec5377e50396c411b724d448a00eff3c85f53185e18920c292019"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/MD-2006-202609151031.db",
+      "size": 520192,
+      "sha256": "e98ea51e6c23eb1e76a344deff6a490f4656a5d7d5aeb5d1ecc74fa4a3ec8383"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/MA-2006-202609151031.db",
+      "size": 344064,
+      "sha256": "3c82836709b208c60fa7a699120b42c7cd05a87f49bff4e1ad0d933b2d78ac7b"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/MI-2006-202609151031.db",
+      "size": 864256,
+      "sha256": "44c051d5a32a38bbd76a8cf147ba861e293ebd1b38fccc14b4413a1a918a008a"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/MN-2006-202609151031.db",
+      "size": 892928,
+      "sha256": "a377f9bf02a15430c939e12dc66442e614c99f6e21772047ea631ce38526ae91"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/MS-2006-202609151031.db",
+      "size": 774144,
+      "sha256": "7d0b9a18471c1f53f35a8da55a8298e3b174400435936e7e29e49c8481a95969"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/MO-2006-202609151031.db",
+      "size": 966656,
+      "sha256": "1c77d814bc913d4478a9e95f8394b2c562cc3911f56836ea3c8fdb19ba182f6c"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/MT-2006-202609151031.db",
+      "size": 1003520,
+      "sha256": "aa492ec3584b8761be65cf9269e4f64445bab6a14dd6832c94c687bc77f1d410"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/NE-2006-202609151031.db",
+      "size": 602112,
+      "sha256": "3b16f62947ffeb2618d622b6608338be3d1e119453c6fa855dca97cc78cd8022"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/NV-2006-202609151031.db",
+      "size": 294912,
+      "sha256": "6e09ef3506080f123e26b819bde2830d644a5d896b62aa7f181666fb82f52827"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/NH-2006-202609151031.db",
+      "size": 229376,
+      "sha256": "fb19f272e3f9e9b6aefe515f2844dc3857d88af422788b697665397c00dac6d1"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/NJ-2006-202609151031.db",
+      "size": 417792,
+      "sha256": "0627153c6e1a0089068ae89aa7a1f1f23bb05e08ede21397169b274597151e0d"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/NM-2006-202609151031.db",
+      "size": 385024,
+      "sha256": "2285e0b07fdea0f087e6cb5d2d8be709e819cc8c6e5b0fe02fe14dceb4afea50"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/NY-2006-202609151031.db",
+      "size": 835584,
+      "sha256": "343adb3781d7c7d755fd3f3c8a679f429f615ecf0dc0b0e3e56350acd4c04e26"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/ND-2006-202609151031.db",
+      "size": 532480,
+      "sha256": "3170f1a371ac50e75f510373463c8a754a12d75c1084aac6091540e0af45428f"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/OH-2006-202609151031.db",
+      "size": 749568,
+      "sha256": "6e24391c148b301550b50396cf59ccd1c28c9283437dc4b9ba65e91aa50421ae"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/OK-2006-202609151031.db",
+      "size": 741376,
+      "sha256": "e0ebe6e75305865f90081465e152d6cd2fb366db735f9c9f0f21ac5d0132e368"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/OR-2006-202609151031.db",
+      "size": 630784,
+      "sha256": "b136ca9d92fece7cdb48c3389f2c15b637e74833734e9d48def0a4cdb0a269e5"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/PA-2006-202609151031.db",
+      "size": 827392,
+      "sha256": "9a660d7a7a3f363703435d42379a6825fb0f46542082b40892870c803ed70edf"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/RI-2006-202609151031.db",
+      "size": 155648,
+      "sha256": "4195cfe726d96ba34aec13e424664e45ee44b508b3c85c43e8f21d91751cb260"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/SC-2006-202609151031.db",
+      "size": 892928,
+      "sha256": "1118b38f651e9871c18dd737d813af809b6e4fb2502ff39e8ae8274c889ae73c"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/SD-2006-202609151031.db",
+      "size": 618496,
+      "sha256": "228b4b72811b01704c18855a45453ea64b411c6fcbfe12f689d866e6ea3033e0"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/TN-2006-202609151031.db",
+      "size": 1282048,
+      "sha256": "11df56724ddd80f97b11c3ef2501c9f50e85b126f96a490bf55a18a0c63850dd"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/TX-2006-202609151031.db",
+      "size": 2576384,
+      "sha256": "352a1cb194e7143db078a136e62420b028400e47267e60c0abc67dd4f2dde867"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/UT-2006-202609151031.db",
+      "size": 606208,
+      "sha256": "ed6d5babd8121221203f1123caab33f0036fda586aa0ae26f7710670a96076a5"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/VT-2006-202609151031.db",
+      "size": 245760,
+      "sha256": "283eecbe1c2ef2c2a0ec4649a26057fc078a4ab1537e17962dee2888a97a8b92"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/VA-2006-202609151031.db",
+      "size": 1544192,
+      "sha256": "735bbd63f505829444219c7c3c8ae11806a8f47e329085369a19cfdda1012946"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/WA-2006-202609151031.db",
+      "size": 761856,
+      "sha256": "e3e71b2ee922f05dd2f3d7bcea274c6aaba1851febc513aa15b7195287bb5ece"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/WV-2006-202609151031.db",
+      "size": 811008,
+      "sha256": "3a436957574c46e2f9625f873ea3ad3a6a36eea75c315623121c0f9378af06cb"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/WI-2006-202609151031.db",
+      "size": 761856,
+      "sha256": "bbbd75b7da94bb7e291c68532dd951f55827b06f573da297a35234d1830412d4"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2006/WY-2006-202609151031.db",
+      "size": 335872,
+      "sha256": "2565543b0f0e6bc9fb183fbdebd499a3080b9404be6c15c79e84b536f59a40b2"
+    }
+  ],
+  "2007": [
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2007/KY-2007-202609151031.db",
+      "size": 1572864,
+      "sha256": "c5a0d035b959dd52f5fc21d1d0ccf3bc31a45c3f2b6e1848949cf1c0e1616510"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2007/LA-2007-202609151031.db",
+      "size": 1110016,
+      "sha256": "d81a6cac4733530558e2868280f712855e41618c26349aeaf0aa479d185e5991"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2007/MS-2007-202609151031.db",
+      "size": 761856,
+      "sha256": "2f0b04a3d3187e4024f5841d85d651e2b3c723470c0804c1820c70eb7085f3fa"
+    }
+  ],
+  "2008": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/AL-2008-202609151031.db",
+      "size": 937984,
+      "sha256": "d387ef9720477439502a5f3da894ae3adde24c9335df4b87c6d4dce95a94f46d"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/AZ-2008-202609151031.db",
+      "size": 450560,
+      "sha256": "57c8a4474d31c15adeffe7bc0337d99fcc4125331ac076c5841f002a80a12946"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/AR-2008-202609151031.db",
+      "size": 1036288,
+      "sha256": "16ead3c8b13268ee27596e71a3c9876df68696a79210ce8123d7d66f7b573d74"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/CA-2008-202609151031.db",
+      "size": 1437696,
+      "sha256": "edd2443e5baef37706d48a675b5adc0796b393c07313fc4111e5b76253471dcd"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/CO-2008-202609151031.db",
+      "size": 876544,
+      "sha256": "ea8a27bbce5a022b2f338dfe504a8e898b88788ddb8ab42d7aebd8b491ae3419"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/CT-2008-202609151031.db",
+      "size": 204800,
+      "sha256": "d30a4c1c3f2d609ae353c81e03c8fe51b3ac6a4314e428080bbd4600681f9726"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/DE-2008-202609151031.db",
+      "size": 147456,
+      "sha256": "cc172a77aa164bb3673cbab9f613f7b62c0dae6bb3954cd69cafe2da73d67a0c"
+    },
+    {
+      "stateName": "District of Columbia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/DC-2008-202609151031.db",
+      "size": 122880,
+      "sha256": "a56fb58e223c44f3b32c6906d060e5e99f6a9298ec0bb8ba0ca24155bcb63b2f"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/FL-2008-202609151031.db",
+      "size": 1011712,
+      "sha256": "1da91b11e7a4fccbd551b82b9b1aa88b1961536cd41d36772f96b77824ab38a4"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/GA-2008-202609151031.db",
+      "size": 1740800,
+      "sha256": "81a8f03ec0d185db70b8cc8a52e443ca94ffe853abdf405c9ffadcaea077cdb6"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/HI-2008-202609151031.db",
+      "size": 204800,
+      "sha256": "a4fd2d8cff06f3340907cf5a8b885f83908f6e9e297ffae38b3cf6e2b026177e"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/ID-2008-202609151031.db",
+      "size": 835584,
+      "sha256": "d4989d61c0c9872e50c04b00f074b50b799a17788aa119550136faf15573784b"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/IL-2008-202609151031.db",
+      "size": 958464,
+      "sha256": "704b661bffa5f4615decb98f6457280094c1cce2408e65f5ec92f57edbd036f1"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/IN-2008-202609151031.db",
+      "size": 692224,
+      "sha256": "a4c907e87e4968363f4d0093f5c8b468dffd0a87e9689641fc03537d880702ff"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/IA-2008-202609151031.db",
+      "size": 614400,
+      "sha256": "91dd595bb88bcb2c9caab15c089a1665f72f676caf5eb595c240115c1b0bde69"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/KS-2008-202609151031.db",
+      "size": 618496,
+      "sha256": "b2d5bf7a5a715e950f6b9f610a5632a67038e634561b2a1aa477395a2f04fcfd"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/KY-2008-202609151031.db",
+      "size": 1642496,
+      "sha256": "5bc391262da83922e74cbc9bcffdc3058e32c137abfd2683390a503ecb192ec8"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/LA-2008-202609151031.db",
+      "size": 1134592,
+      "sha256": "9cdb849b66854d3e41a79a0a5b0f3c96dc7fa3ac98abcb447d2c6fc86cc1f4ce"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/ME-2008-202609151031.db",
+      "size": 450560,
+      "sha256": "175e2d1c15745d5a7328dc485f7d25309f4bb421d731e54e1e55cf2e11d2167f"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/MD-2008-202609151031.db",
+      "size": 495616,
+      "sha256": "2d82d53fb527d60744c4e55779040be57b5483f2d4adfb357343400d796c7fa9"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/MA-2008-202609151031.db",
+      "size": 344064,
+      "sha256": "0a0f88b2eecbaffadc1a219f3efd3a8e97c452e0ebf2f869462644a78b899eb6"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/MI-2008-202609151031.db",
+      "size": 864256,
+      "sha256": "aabb8f286bc9d5902c971fe7b94e0dc47aa63fd499d71cf334e3d1f8f14d4099"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/MN-2008-202609151031.db",
+      "size": 892928,
+      "sha256": "d883d87d389a7a6b1ee71fa6ab69eca1d87cad8103b28cbb4e46b5372483c074"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/MS-2008-202609151031.db",
+      "size": 843776,
+      "sha256": "4b177ef27ed6cb090606436ab901a49ff3de5edbae9d927178bcfca241f052a7"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/MO-2008-202609151031.db",
+      "size": 1032192,
+      "sha256": "2fae43b0cce334fbf0cc42099aea451c69ef8c986a57941c96cbb59b34f6dfa0"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/MT-2008-202609151031.db",
+      "size": 1040384,
+      "sha256": "ef238102941737c9016bec4416cbda0e1b90d97a5bda8a15905727d2870e3cd2"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/NE-2008-202609151031.db",
+      "size": 630784,
+      "sha256": "de174833cae0cdf57b60aaf73783fea684ed298a2f243d7f1dbec577bd9c8a58"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/NV-2008-202609151031.db",
+      "size": 270336,
+      "sha256": "9889a8889c030323a54a11249cfd55c8db0d229adb15c83d39375764810f128f"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/NH-2008-202609151031.db",
+      "size": 237568,
+      "sha256": "95115a26fcca29c89e132fb15a1a3bc49df3a85a34bd7fd5a578ff6904184b1d"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/NJ-2008-202609151031.db",
+      "size": 442368,
+      "sha256": "8e63e23e82763084b1922083c004fe109cd76e6a1a79c5822bb65c4d6a328fa3"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/NM-2008-202609151031.db",
+      "size": 389120,
+      "sha256": "d54843f14ba2357e3a02537b617c641333e58fdcc7ccd377d8242f4d6fe7cabf"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/NY-2008-202609151031.db",
+      "size": 811008,
+      "sha256": "19ee953cd9012126059dfa1acacfc18a88b8ff75f4304796fc6fe2c4fd7b4605"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/NC-2008-202609151031.db",
+      "size": 1392640,
+      "sha256": "c290c7f9297a0d02bf96c89558b4c6473d74aac3b24b3fb462f27b33b2edd460"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/ND-2008-202609151031.db",
+      "size": 557056,
+      "sha256": "ce60987b85634d1c59b67ae6f382b6fab3d52cd8be178509d8fad343895a2a26"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/OH-2008-202609151031.db",
+      "size": 696320,
+      "sha256": "d97088401c6c6015453558b5e7145c124b43adc5cd456e1a92a25095461ca5cf"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/OK-2008-202609151031.db",
+      "size": 778240,
+      "sha256": "1bdac53b20e93d90b2926355466ade5772a53b1cadb078067029c50ff4a69ae5"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/OR-2008-202609151031.db",
+      "size": 643072,
+      "sha256": "6c104ac1007865969cb66f0e484d6eca06310fc657f6c71f4138a5a3b14b017e"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/PA-2008-202609151031.db",
+      "size": 806912,
+      "sha256": "a03eb6dc1220d8dbce8b05bf50762f6b27e1f3b1303cf3d216976dee5818d131"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/RI-2008-202609151031.db",
+      "size": 155648,
+      "sha256": "d5ab962a63681199651491dd7b719c729a422ee450b0b63fee229f1b1f9a4b43"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/SC-2008-202609151031.db",
+      "size": 913408,
+      "sha256": "f5f89e52d8600eefe95865acb35db086f381d23bf77c93673bf17099c16e1aba"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/SD-2008-202609151031.db",
+      "size": 634880,
+      "sha256": "7dffe6eff1bf15fd22033f6df2f856a63cb8bf079424cfef7b723be3c54deda1"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/TN-2008-202609151031.db",
+      "size": 1282048,
+      "sha256": "3d66fdd6d935504982892fa67b7034b5112d92ea8b127fd03d1e83d067f44801"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/TX-2008-202609151031.db",
+      "size": 2576384,
+      "sha256": "8b376b767c1a3656ef31f316fab3d10854d462f17e2967ade6b2f90d8d42791e"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/UT-2008-202609151031.db",
+      "size": 626688,
+      "sha256": "e45db9dfb26d90095ed18d0c8f40d6b3bceb24b8dece9d2fe392b39fa33ad835"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/VT-2008-202609151031.db",
+      "size": 245760,
+      "sha256": "545438c7378a39ed312aa431a16f6beea22f8f2f020752bf9903cc717aee486e"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/VA-2008-202609151031.db",
+      "size": 1617920,
+      "sha256": "b1595bd58ba2587eab3a0b902d3ee64025d88a06257ae3f15e4735793a86abf8"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/WA-2008-202609151031.db",
+      "size": 774144,
+      "sha256": "4ea990844fca402bb566de02fc9912dca61dae606a859d8041d07993b650cd1e"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/WV-2008-202609151031.db",
+      "size": 868352,
+      "sha256": "9e4da7f6c2a25e2feac3e2a2fe4bdccceb8f44783343165e3dce72a0470dd802"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/WI-2008-202609151031.db",
+      "size": 733184,
+      "sha256": "81e1c2d4de4e5587ec03495ac233d93e0dab1fd6499793b690aec9b09c35e200"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2008/WY-2008-202609151031.db",
+      "size": 348160,
+      "sha256": "ad88092862a0372fbaf51222eef995e5f442d23b329a5ff36d6ae2277290366c"
+    }
+  ],
+  "2009": [
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2009/NJ-2009-202609151031.db",
+      "size": 417792,
+      "sha256": "40890f9e340987ab80334930bbaf921849ee3639b4cfaac04531f6fef9c7ab39"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2009/VA-2009-202609151031.db",
+      "size": 1544192,
+      "sha256": "142e6a4e1b6f85916ec077296e5954afa3af0c791584cf189b6ffd5f6e1eef30"
+    }
+  ],
+  "2010": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/AL-2010-202609151031.db",
+      "size": 937984,
+      "sha256": "22c58778a48f3b71770718868086a953e30433a641e244bedb859e0c7845d2bd"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/AZ-2010-202609151031.db",
+      "size": 458752,
+      "sha256": "b694f525fcdb3f58e82377dbbfe748ace2a0e6e536d0e4197ea36f8d697e5386"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/AR-2010-202609151031.db",
+      "size": 1044480,
+      "sha256": "00c1213f18a3ec062c9d3a1769125c564deef112f6ed3c2e07e61cb274a1c8c0"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/CA-2010-202609151031.db",
+      "size": 1462272,
+      "sha256": "f060b3609cabbb8b0db15b54cda2c6c47d05366b2812d33d93ef51c9d972c86f"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/CO-2010-202609151031.db",
+      "size": 876544,
+      "sha256": "ad8deb621f477d473bfac0c76ce3d392c10d763bf341475d6aa803a0a0b64609"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/CT-2010-202609151031.db",
+      "size": 204800,
+      "sha256": "414f7b9decf812850b1b5dda25357206a34453dc0db3e9408fcd7ddf2481ed33"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/DE-2010-202609151031.db",
+      "size": 147456,
+      "sha256": "260b0f8fc37203206fca5dbfe190798f0610aaa044a68c4b04e967d2421ebb20"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/FL-2010-202609151031.db",
+      "size": 1036288,
+      "sha256": "2b2a675dfb70870914b13ed11e792d964f6f6844d7bdc6aba109a0ab0f232582"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/GA-2010-202609151031.db",
+      "size": 1769472,
+      "sha256": "9300fbb49bb47933b1c660188e6932a28970bfabdd21ab63b90a8f691a3219d8"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/HI-2010-202609151031.db",
+      "size": 204800,
+      "sha256": "6bf01a47d661256fa24c72c621619408d1f00ccf3d4472a1d16ea215ec9a6b4b"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/ID-2010-202609151031.db",
+      "size": 835584,
+      "sha256": "10e12109aedcb66c5896962114b96a716646a6798a5b67abb1552689cd1f3eb3"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/IL-2010-202609151031.db",
+      "size": 958464,
+      "sha256": "47ece04bf7fce10064aed7429a555161faaca4bcd06580ee10f1fe6e5095cf57"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/IN-2010-202609151031.db",
+      "size": 638976,
+      "sha256": "a77de42416f7df4dfe71ba3ab7cc57b95b4c330e411a5cb62151240ce77d63a8"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/IA-2010-202609151031.db",
+      "size": 614400,
+      "sha256": "c5ec7f698b2ba8d2a874e5cc9182741190976748fe24068294f49d3b43460245"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/KS-2010-202609151031.db",
+      "size": 618496,
+      "sha256": "00bd94c721f70135a93a48b253a202463b827592f96084e20ec9b68b978c6b65"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/KY-2010-202609151031.db",
+      "size": 1585152,
+      "sha256": "118c53bf4173ac27a5369e25cfc693ddddf84ef01de6ca495b510499da8d019c"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/LA-2010-202609151031.db",
+      "size": 1110016,
+      "sha256": "aec4357b93592801e859171c723630c41c301b041863e9aee80a67938826c9ef"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/ME-2010-202609151031.db",
+      "size": 434176,
+      "sha256": "b3530eb02bdf26fa21dda0618cfcc4fe206eab6b986d2416b9d97035a0fad5b0"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/MD-2010-202609151031.db",
+      "size": 520192,
+      "sha256": "41d923d63d6efc76ff900ace0d361a4cac05999d01eee7f4e508539801784b4b"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/MA-2010-202609151031.db",
+      "size": 344064,
+      "sha256": "190934c828a0294cdf0d3f94498e937174b55ada9dac1d875a83a1a7cd3131cd"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/MI-2010-202609151031.db",
+      "size": 811008,
+      "sha256": "537cc9f05b6735216ee6d2982687de3d6577f48cc1576320d5bd656943e0846d"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/MN-2010-202609151031.db",
+      "size": 839680,
+      "sha256": "cfffe81b13402adfb2f2168fc27da6d9f99cf96a3c967f3eaccada8932d072c4"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/MO-2010-202609151031.db",
+      "size": 966656,
+      "sha256": "4aa49342ff35d0bdac0762174bbb4e432eccd5844ad337d6583ab1960679487a"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/NE-2010-202609151031.db",
+      "size": 565248,
+      "sha256": "8a7ddafe46df4996dc774dd3b532ea26e75cb731469d7182f272026a1f39caa3"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/NV-2010-202609151031.db",
+      "size": 294912,
+      "sha256": "3317ccb40667c38f30e1767702080b66fa0fa97dccfc9c7a29ced912338d5ce6"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/NH-2010-202609151031.db",
+      "size": 229376,
+      "sha256": "8913b1138d5c0938cca1f0429d82299279590142b399748ec384b8535498b36e"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/NM-2010-202609151031.db",
+      "size": 376832,
+      "sha256": "fdc2ce35b555633ba17f490792bad3e9244aed183a9fbf06e3889e3b509d9f40"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/NY-2010-202609151031.db",
+      "size": 876544,
+      "sha256": "5f03c017fd28a65c09a5929bdc1d722360fd66482b80eb8b54c6bbdc3b96c040"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/NC-2010-202609151031.db",
+      "size": 1290240,
+      "sha256": "c4dc53aa7586541a72fcd42742fa6f21ab05cead3293029bdd3778a5c5750e7b"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/ND-2010-202609151031.db",
+      "size": 532480,
+      "sha256": "65c7ba2f87d6a9ed334ddf8056d786ba14aed8980ce49f39fb066bc1da2486cd"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/OH-2010-202609151031.db",
+      "size": 749568,
+      "sha256": "fc61e9937977ffe48e860049070dcf6c76144f5129d25a4b9d75f408fc1c8560"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/OK-2010-202609151031.db",
+      "size": 778240,
+      "sha256": "68505434ad315440135fbe8a96b63524a1153448e88e186ead5042ed549a320c"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/OR-2010-202609151031.db",
+      "size": 643072,
+      "sha256": "5fc70e1b71928380295c50751125c21390efccac5a2624a5bd7d0045c6b78dbe"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/PA-2010-202609151031.db",
+      "size": 811008,
+      "sha256": "2c16bc3376410a075553bb2a17f85d5516b3f91f24dca1887a19b9e97cdba350"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/RI-2010-202609151031.db",
+      "size": 155648,
+      "sha256": "ffd80cbdda8a1407b5ba81d17b69696d9bc1d6a7951430bce07c8ec742a78bb5"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/SC-2010-202609151031.db",
+      "size": 913408,
+      "sha256": "f15391d0681260e00c1575ae01bae4191e5d7bfd3b053f38f32e2351ccb43e36"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/SD-2010-202609151031.db",
+      "size": 618496,
+      "sha256": "097f4f2be0eab53f50493ecd81288eb959d622ec19d65892de99bc4b3bd2f7c6"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/TN-2010-202609151031.db",
+      "size": 1224704,
+      "sha256": "aaf802c88b7956dd1f0b4631a1c595eb2f02688dd2cf6fd3a40347411ed4c335"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/TX-2010-202609151031.db",
+      "size": 2449408,
+      "sha256": "d2a00be42f06e3065aeeefa32ebab808c7678235aba16d89a7372421e07cfe4b"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/UT-2010-202609151031.db",
+      "size": 606208,
+      "sha256": "14dae466ea7798b0a63ad7df4cab6bacc3865be1118240337ffc27fa4c70f3be"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/VT-2010-202609151031.db",
+      "size": 245760,
+      "sha256": "f4524c88e016ca6bbd99cd60208c20befc56cfd8da9a8eb87f02ad7cce751092"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/WA-2010-202609151031.db",
+      "size": 737280,
+      "sha256": "3e7a4fde4b356b9842485ab09c4337b748a4914962827da7e145c20c7575a87d"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/WV-2010-202609151031.db",
+      "size": 811008,
+      "sha256": "1b32168d8919199c47da0995a485642c1aecf3a5d0c63941f7535bf375bf7127"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/WI-2010-202609151031.db",
+      "size": 761856,
+      "sha256": "2139a7e7459baffc8616285498388b33a7b4d5c9f09834364d503b9cb2547729"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2010/WY-2010-202609151031.db",
+      "size": 311296,
+      "sha256": "b8f36cd97fe78959d1573c7e7c6a28343e6f988fc08fed19764d6dbbeb018901"
+    }
+  ],
+  "2011": [
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2011/KY-2011-202609151031.db",
+      "size": 1593344,
+      "sha256": "8001af271b46eaa4e3d0ad13d3c43c598ed44e1ed0a470d96dbdaf61c272fdef"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2011/LA-2011-202609151031.db",
+      "size": 1110016,
+      "sha256": "0c112251500ce07de23e00b5f17208c750a412c2a32b26fb971041c92ca1caa2"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2011/MS-2011-202609151031.db",
+      "size": 761856,
+      "sha256": "3bc170bc60b0871eca8e14915f7a1a388dcb88d2838ff2842d4822c73a17785e"
+    }
+  ],
+  "2012": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/AL-2012-202609151031.db",
+      "size": 913408,
+      "sha256": "29793a6ca5b2f925f3b6e78918ea20fc3bc79bd26e9fbe1429f632de1a613c5a"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/AZ-2012-202609151031.db",
+      "size": 458752,
+      "sha256": "2036eb2a3ca42b9eba82b23e4953ccdf42bd9d5ff9d834edad746f8dc3c70fe7"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/AR-2012-202609151031.db",
+      "size": 1011712,
+      "sha256": "4809affdfe6a7acd278850bcefe2b42faf70d58eaf13f0f74da2b52c8143be13"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/CA-2012-202609151031.db",
+      "size": 1458176,
+      "sha256": "571a351c8c5a778e2c1940ae06a6938d96ea870961df77194585314b35224ce6"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/CO-2012-202609151031.db",
+      "size": 851968,
+      "sha256": "baa15ee0457d7f3b9ef4c5ef5ad2ffc4f9319b6531947e50935c131cfa513763"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/CT-2012-202609151031.db",
+      "size": 204800,
+      "sha256": "27e807bbd096233abc68658008a7d5ff95eceb75abc7d14efbb0337a0b77ef45"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/DE-2012-202609151031.db",
+      "size": 147456,
+      "sha256": "5ac98f6d314b560b097802e31bd0366c1389caa9eba698eb8c60747fbb089f80"
+    },
+    {
+      "stateName": "District of Columbia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/DC-2012-202609151031.db",
+      "size": 122880,
+      "sha256": "bc273e19d4a77c1b502cd4a71628ee9feb8e17df973e3f9caab96384da5e64d0"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/FL-2012-202609151031.db",
+      "size": 56078336,
+      "sha256": "fcdf8831851135c0d2d98edbcc81eb8cce4848ea9f7c2fa695c9f45d43446149"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/GA-2012-202609151031.db",
+      "size": 1691648,
+      "sha256": "7621a4c62ef3728669682ba59a8f6d6a379a6f40e0049d3df32eaa2ac397c1ba"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/HI-2012-202609151031.db",
+      "size": 204800,
+      "sha256": "dff089ed515bb05c9663058a5d3d26d9ab18bdff3b32ffd11f49f6c63d46a053"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/ID-2012-202609151031.db",
+      "size": 819200,
+      "sha256": "ed1d9e2deaac0de481f72b2501d03ae65a2d5c33f0cbef1eae93c89d4dfa2073"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/IL-2012-202609151031.db",
+      "size": 901120,
+      "sha256": "4bbe14f97aa59bd874d5d4381b0c68374973ffbaf98404f0f44876d922bd38cf"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/IN-2012-202609151031.db",
+      "size": 733184,
+      "sha256": "78cb1ba98cc989ed420dc2b035686e0c1c44f27baed0dd68762595257830170c"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/IA-2012-202609151031.db",
+      "size": 557056,
+      "sha256": "9366530394ae9858555fcf7ca18f9f75f60c4491cb72f88490be051e144677e5"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/KS-2012-202609151031.db",
+      "size": 18124800,
+      "sha256": "d38abbb1a9001a45026a29e0a08d1f14196099a5ed6e205a19fad859002b4586"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/KY-2012-202609151031.db",
+      "size": 1593344,
+      "sha256": "d7ab9f206843b37d689a9dc07fb51f8b4986a099893b587c76e86ae86453d5d1"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/LA-2012-202609151031.db",
+      "size": 1110016,
+      "sha256": "0870969176dd81c87f005b84537410517749576bcff7c7758d153298c5cb830c"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/ME-2012-202609151031.db",
+      "size": 458752,
+      "sha256": "8ffe959c51424aec82460daa5d386d6b92a95f3bae0c202f59c39f9c2a8bc687"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/MD-2012-202609151031.db",
+      "size": 520192,
+      "sha256": "e60dec395783a7c4903336791698c53529d9ab81e907e9f0959f69ec9186c0ba"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/MA-2012-202609151031.db",
+      "size": 344064,
+      "sha256": "444ca6a3e8e7a6925e94cda2020f51288451b9bd235f76f720ba63f5f10f381b"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/MI-2012-202609151031.db",
+      "size": 864256,
+      "sha256": "7ed3563b80aeb57f386265490c6cf41945b7b62598d4abebc9340d35c899779b"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/MN-2012-202609151031.db",
+      "size": 892928,
+      "sha256": "e81e90bf838d36ce05f275b375abbb6f0bdff87e363723901f2b5d8a4c784466"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/MS-2012-202609151031.db",
+      "size": 823296,
+      "sha256": "5cce7202149d79b28262c9f91eb8951919abcb9809e3585268e13874192320c8"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/MO-2012-202609151031.db",
+      "size": 1089536,
+      "sha256": "bb9df3fe6e832fced6295519a3ce52617165e5dace586e7775ef3d9e653f0375"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/MT-2012-202609151031.db",
+      "size": 1069056,
+      "sha256": "908db290c8ae078f560493651a18f7ad36c9328347da9c787dfe9b34dd7b8934"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/NE-2012-202609151031.db",
+      "size": 602112,
+      "sha256": "63d3a3b8953552b466816f891f19e32c4f2f827b54ce10dce7710a28680490ae"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/NV-2012-202609151031.db",
+      "size": 294912,
+      "sha256": "769186075cedaf8586b3335a14f2852f37c46e0561e1b3648cd26aed91544989"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/NH-2012-202609151031.db",
+      "size": 229376,
+      "sha256": "220d0be23c830a2f7a9a863980adafc8ec8e0def15478f47de894de49526a203"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/NJ-2012-202609151031.db",
+      "size": 442368,
+      "sha256": "9c84f58989699c423d9606553f2b397d2a909c61c7f4b4313841d507f604e8d8"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/NM-2012-202609151031.db",
+      "size": 397312,
+      "sha256": "08e04509c05b7258c9803301a4716b55cc28288e2b3d10ecaf0e8dcac823915d"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/NY-2012-202609151031.db",
+      "size": 835584,
+      "sha256": "18f353e67cb099221f4072038fa5ead6e3dc5dde615d6fc0dd9ef3522d5dcddb"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/NC-2012-202609151031.db",
+      "size": 1347584,
+      "sha256": "728c25548bb5d41177e89910ecc2c0ad50761539d2479100730fd7be143bf01f"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/ND-2012-202609151031.db",
+      "size": 589824,
+      "sha256": "a033d718119c2ec356c99448686cfadc55d237a595634250b4bad320a6d77da8"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/OH-2012-202609151031.db",
+      "size": 749568,
+      "sha256": "46cf1580b52ebe014f1ce54470c1fd4f0691ec4a1201079310a2533789e5214b"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/OK-2012-202609151031.db",
+      "size": 741376,
+      "sha256": "bddb2f4a765c8c26636ae3ab46b70f5bc6cedf8913b3c5cd5b935b21717a7115"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/OR-2012-202609151031.db",
+      "size": 630784,
+      "sha256": "9bf4289beb57866ea3f5e94c4bc485af9a2690d6ff63f5dd19172866b17d85a9"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/PA-2012-202609151031.db",
+      "size": 831488,
+      "sha256": "01ac068bb106e2446540748046d0c334b54ff340068f141b696d48a316eef815"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/RI-2012-202609151031.db",
+      "size": 155648,
+      "sha256": "366ab4ad7ddc68ac8ae2507bbdb2534169d44c0af98be552ad1155366b97c7da"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/SC-2012-202609151031.db",
+      "size": 892928,
+      "sha256": "67789b6dad8e918095ca47997ffeb7ae36e79573b27e651cad351a0895678fd4"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/SD-2012-202609151031.db",
+      "size": 618496,
+      "sha256": "4a3ea7f11611c7fa3c8a29aee8c51d63f8f86fc62d112247a012a7019dd5f24a"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/TN-2012-202609151031.db",
+      "size": 1282048,
+      "sha256": "6e94b5f1c3d85d909e7420153e11a3a490c810c77871fe4c2df1638045c6befb"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/TX-2012-202609151031.db",
+      "size": 2576384,
+      "sha256": "4a6f5bbbf95e94d09d519c538c0d79dffe752d21d8e0014bc7f349fb2143649e"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/UT-2012-202609151031.db",
+      "size": 638976,
+      "sha256": "f8cd5ff7cd9436664d52679fa186c823883d4520befc075e183f8c735ad0120e"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/VT-2012-202609151031.db",
+      "size": 262144,
+      "sha256": "17e4f7f57ecd6ff87977ab807170728f7ed4524a03d2ebbc833824930a3ace25"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/VA-2012-202609151031.db",
+      "size": 1613824,
+      "sha256": "9139cc1a6c58f4850f0442ff6b56c66320589c1580be5379b1e4df91371015ce"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/WA-2012-202609151031.db",
+      "size": 782336,
+      "sha256": "5417865748ca87f6c942a55a76d31c4c103c4f6fce36c78c9520780ef6dc479c"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/WV-2012-202609151031.db",
+      "size": 880640,
+      "sha256": "c89d29a0c4b7ccae30ce01e9564646e491b2beb5e9e9033556df0aa97872b573"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/WI-2012-202609151031.db",
+      "size": 761856,
+      "sha256": "3f3d1745901f879f27147017d0bc8e10499c861e69fa79b900538b0d9fe40261"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2012/WY-2012-202609151031.db",
+      "size": 335872,
+      "sha256": "058bd2e62a3509d5549b9eb8efe403cc1c42007ca9d1737e9f8ebf4dc993370f"
+    }
+  ],
+  "2013": [
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2013/MA-2013-202609151031.db",
+      "size": 335872,
+      "sha256": "d3c46078bb781d99d3b492b50dc75b5146dc252edf1ce28cfae6748d1add0af7"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2013/NJ-2013-202609151031.db",
+      "size": 442368,
+      "sha256": "136255807ab5b2607f6e9425c00753133958dc5e0bd517e9287e74be65f0d3b5"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2013/VA-2013-202609151031.db",
+      "size": 1544192,
+      "sha256": "7441dfc14951d12beaec453b9924983fd5e78e826fa1567f9e07a5a1805e48a1"
+    }
+  ],
+  "2014": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/AL-2014-202609151031.db",
+      "size": 958464,
+      "sha256": "de4090917757e144f67e22c7b7892309dca44b2f3604e9df33a5d5044531c39f"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/AZ-2014-202609151031.db",
+      "size": 483328,
+      "sha256": "9162bd360e2866097ebbb79a398a2b03651400192337344abdeced16ecb247e9"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/AR-2014-202609151031.db",
+      "size": 1077248,
+      "sha256": "1e3ff8d0e5453c3ff9006242a7405e3bdb9ba2bc4eca1bc6d603fc045aa2f249"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/CA-2014-202609151031.db",
+      "size": 1507328,
+      "sha256": "fb47856f4364ef478ea8e381014a7238ba1c463a2a8a9dfe76e3def46379e35b"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/CO-2014-202609151031.db",
+      "size": 888832,
+      "sha256": "710a5bdf005b6c25d0db8091ca62d4ee6edfd230b5a03f3eff735808b25b1e5a"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/CT-2014-202609151031.db",
+      "size": 221184,
+      "sha256": "bd58bf22c59d98d5538c47d6d9cf98f83000a6241db3f81d09fdee8f0e3a31b6"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/DE-2014-202609151031.db",
+      "size": 163840,
+      "sha256": "77bfe581e2d63aeb911df0ce15027b09f83874b1314c8f2e265850975d25c6ed"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/FL-2014-202609151031.db",
+      "size": 1142784,
+      "sha256": "117b9923ed7d0c5177c1fe5d07646d315457309502cf3824ae2f37c22b5d33bc"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/GA-2014-202609151031.db",
+      "size": 1929216,
+      "sha256": "727da1b617bfcbe6d7f009876841005039ff8f115c99efa2e1fe43bea72e9226"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/HI-2014-202609151031.db",
+      "size": 221184,
+      "sha256": "763a06a3d008b1f045bca401f32d8b07efd62c062d710ddaac5c635bd7963751"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/ID-2014-202609151031.db",
+      "size": 897024,
+      "sha256": "cea9f6019d0cf2ae5ccf42315a1c1afb54941b33fc94004adaed580fa68b0245"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/IL-2014-202609151031.db",
+      "size": 1007616,
+      "sha256": "ee43f2454228b44a834947cc352d6866c821712438a53660f6846c21c03cbbdc"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/IA-2014-202609151031.db",
+      "size": 630784,
+      "sha256": "e4b400390d44fe7675d3303bbed73d44beba3206a14f384a270c1150a97227a0"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/KS-2014-202609151031.db",
+      "size": 610304,
+      "sha256": "58d839040d2ced25057ecfdfd9c4c4f49e83373bc21db2f0a922a7e18dbbcd3e"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/KY-2014-202609151031.db",
+      "size": 1732608,
+      "sha256": "a49ba468d8422eebe97fcf0a1098e23f2df0a9af24d591dc6b5a1ebec27e26d8"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/LA-2014-202609151031.db",
+      "size": 1249280,
+      "sha256": "85f4889160f62265a0a5778f509b7118c3d24b5eb611ac68178b6727526550bc"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/ME-2014-202609151031.db",
+      "size": 540672,
+      "sha256": "4dd3542d7a84a2cb90be611c270a1a80920cf09a00ee82fb62b09fcaf386be75"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/MD-2014-202609151031.db",
+      "size": 614400,
+      "sha256": "0d3c00dbebb53a96bb75b8e5bb09b4ef26405e6b3e613d058ecc6d4991bcd332"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/MA-2014-202609151031.db",
+      "size": 323584,
+      "sha256": "7f37ae858a0d6012bf156b0ea1677226039eee9da252256f5e91f92503032271"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/MI-2014-202609151031.db",
+      "size": 995328,
+      "sha256": "67904a28254dbde06c709330dd1876d215a130f515189ea9a7e0f68d45002697"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/MN-2014-202609151031.db",
+      "size": 995328,
+      "sha256": "3715a34e9533b5777036e993fad774ef8cb96f7d916b816cd126e58e9f4b4e4d"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/MS-2014-202609151031.db",
+      "size": 790528,
+      "sha256": "a81f1f65f36f8238b246ec75b53d99d05de17189ae8914adcd9d735da0a9a7bc"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/MT-2014-202609151031.db",
+      "size": 1138688,
+      "sha256": "ac05fb9d93b27991285eaa50ef035a3ffdd32f58fc9048de22738f568ca0aea9"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/NE-2014-202609151031.db",
+      "size": 663552,
+      "sha256": "ec2b46ff49e55a2416b65f147855f0eaccf54a258a7aed186f38ea5be85896f1"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/NV-2014-202609151031.db",
+      "size": 278528,
+      "sha256": "139753baa4b44736da3e67a54c47718404083813735cedd7a46df60fe0d8d1d7"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/NH-2014-202609151031.db",
+      "size": 237568,
+      "sha256": "f42808853c9d558034444b10d7c579ae0a61f58778df18805a75a85b19891a15"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/NJ-2014-202609151031.db",
+      "size": 393216,
+      "sha256": "a25f72ff8ab0f40b9734154c3548d63c5e7374e4ee458e0655294a81bcebf743"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/NM-2014-202609151031.db",
+      "size": 417792,
+      "sha256": "8ad0bfa9d9c2deaffaab2cb0f9375bfa4d10eb8b6ed4cb39011501eb55af55f9"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/NY-2014-202609151031.db",
+      "size": 835584,
+      "sha256": "7030c2b4ac51e45b86a8e51137a5c32d56b4de3e7689365b682fd4f1c3537852"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/NC-2014-202609151031.db",
+      "size": 1843200,
+      "sha256": "6d7e77d8c723e6e581daa0bf33d07fdd0592da950c4ba8f0ddfe49a883c91eb7"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/OH-2014-202609151031.db",
+      "size": 688128,
+      "sha256": "fe93f423ccc98f301b8df9825a964bb47dc6871bf5adf5d1f7a6062045632504"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/OK-2014-202609151031.db",
+      "size": 892928,
+      "sha256": "2fcc6076c1a16d23e6503269311390b170c54ccdd168f2c6f4d28fb07c081af5"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/OR-2014-202609151031.db",
+      "size": 684032,
+      "sha256": "e1a92a5507af8b9aae3c01b81b26e7e947fd3427dd4a43e627579d4b9a93ced3"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/PA-2014-202609151031.db",
+      "size": 827392,
+      "sha256": "b40e40ded77ac132bb381f29de773fdb9e2d67b87180a9649a58d3d4f469abf2"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/RI-2014-202609151031.db",
+      "size": 188416,
+      "sha256": "a640b58e9470b0969e96eb1dc69c1e292bccb719f0e139b52448b259af2b6ae9"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/SC-2014-202609151031.db",
+      "size": 1015808,
+      "sha256": "1ceea4b2cca111bde98e8509322387890b7c2c5f0cdeb5fe2bea3e6a4b6bcf33"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/SD-2014-202609151031.db",
+      "size": 651264,
+      "sha256": "3162e2a6fa3ef4c3ecbda5ca5e5f09d043428a989a1658d5f775922e1dc0de42"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/TN-2014-202609151031.db",
+      "size": 1359872,
+      "sha256": "ad07e772692e0cb172520e045a01054fc3341a96dbec7199b5046fea0def46fc"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/TX-2014-202609151031.db",
+      "size": 2887680,
+      "sha256": "9b52e7c7cdd927dbac60cb99210528fea33455beab0863741f25a4fb779a8358"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/VT-2014-202609151031.db",
+      "size": 253952,
+      "sha256": "8e98d279fdcfd9c6e345a58d2f8436086a6d7fc4ee8ca57b55960415622a2a39"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/VA-2014-202609151031.db",
+      "size": 1732608,
+      "sha256": "4e6bca0f23cd4e66e6f3d54f70cc3c863015c533edb4c4bf3af3cd948bd5a72b"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/WV-2014-202609151031.db",
+      "size": 876544,
+      "sha256": "5056cd8baa08aafbec728cc67a37bfdd2e386f8a355510f7e42c411b4178d836"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/WI-2014-202609151031.db",
+      "size": 720896,
+      "sha256": "5f3df1cddd4c2b1b037bd4cb081b9a2e969bef682ec41df6afa919a650395835"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2014/WY-2014-202609151031.db",
+      "size": 327680,
+      "sha256": "92a545416de6c3c406775e731d63d01d9a761fd9a8378a71910c47b28dab6d49"
+    }
+  ],
+  "2015": [
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2015/KY-2015-202609151031.db",
+      "size": 1732608,
+      "sha256": "fab17eb692e023171b506a680559ade48cf170dcbbdf91358401647ea5aa5bfb"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2015/LA-2015-202609151031.db",
+      "size": 1249280,
+      "sha256": "405829213b1870444337499365ecd69a68cf9c68f3170a7b603d299956b4b2a8"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2015/MS-2015-202609151031.db",
+      "size": 790528,
+      "sha256": "2f96b5bf5abb2f73b471a3b4683c7d178cc13ec48ccba8be81a65aff4a14930f"
+    }
+  ],
+  "2016": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/AL-2016-202609151031.db",
+      "size": 38088704,
+      "sha256": "ad7a6d6f7d7467a3e5ada884ca404fa14cd7e693b1bc3c7103961cfc6760f6ee"
+    },
+    {
+      "stateName": "Alaska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/AK-2016-202609151031.db",
+      "size": 19329024,
+      "sha256": "bc9d9be870887af567cad7bef4cad4550ec14ea5d9fb8d8c897d7fcb3e8ea3fd"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/AZ-2016-202609151031.db",
+      "size": 17526784,
+      "sha256": "61f24698997d2f082e5daf598685c6626a85e074ce2ef1cec6374d5ab36c4943"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/AR-2016-202609151031.db",
+      "size": 32133120,
+      "sha256": "a812c88abc95d0a1c63ed2e1a6e672fca04f25314084213d2f0d82d72123e86a"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/CA-2016-202609151031.db",
+      "size": 122241024,
+      "sha256": "e089eb53a4c6c958e697b933911adb188cf445f84b3c0a95af6a9a57e93d7361"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/CO-2016-202609151031.db",
+      "size": 36352000,
+      "sha256": "39d706afb53f4f8ee576c3c377de5ddf1371cd0f9dc56cc60f1ef30d04a618ef"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/CT-2016-202609151031.db",
+      "size": 7340032,
+      "sha256": "260c4b65458b263406ca8ad80640fdcf20ef4b844dbfec4576dd4935f3d7834a"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/DE-2016-202609151031.db",
+      "size": 3940352,
+      "sha256": "592e113ce7484d2da9411603113045e349d2a5d40de34386c4aa75578c183301"
+    },
+    {
+      "stateName": "District of Columbia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/DC-2016-202609151031.db",
+      "size": 1748992,
+      "sha256": "669390177c66564e895606813312be410cc2ad450dcfbd1f2e8c75bc3c225c12"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/FL-2016-202609151031.db",
+      "size": 72593408,
+      "sha256": "1db44a0550c9eac4fa2b24807b527cdaa423e9b10c7b9aa07d61489e048cbf9a"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/GA-2016-202609151031.db",
+      "size": 44875776,
+      "sha256": "3f0a9a71293e558153d3b70d585d15f2c20551ef1c8bda2b9d87b747694de46d"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/HI-2016-202609151031.db",
+      "size": 6664192,
+      "sha256": "93fca915f36582d3121b69f4ccff53b56428d96a15695d61f62ddde2a523060b"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/ID-2016-202609151031.db",
+      "size": 18071552,
+      "sha256": "4f310c79a0620803e997c3b7a075dddf2609ca628b85180f44591b89bf4f746e"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/IL-2016-202609151031.db",
+      "size": 57356288,
+      "sha256": "377226cf900267b63e7c8fd1974787c47e38efbb0993b7b93d3d8972124c2ce2"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/IN-2016-202609151031.db",
+      "size": 37994496,
+      "sha256": "4fdf7f8bb52d859f3558dfd02357310cf39c11f714e5dcdfa1249c79525f9a48"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/IA-2016-202609151031.db",
+      "size": 16777216,
+      "sha256": "c3d98198c53ec1ba180bdc38cc672a78b53ab33260d7c06a6ef39ea7486b8cbd"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/KS-2016-202609151031.db",
+      "size": 26595328,
+      "sha256": "8d682f004f1acb2e4cc7164a95eb141308e5ad34c35da900159c0f27f81aad06"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/KY-2016-202609151031.db",
+      "size": 48037888,
+      "sha256": "da0b15ef9ff5b5084ab03911d3dc36f2e39e373d855b2669242fb95429cc4a14"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/LA-2016-202609151031.db",
+      "size": 49696768,
+      "sha256": "01687400fc7a8f9b228b745bcd04722f3a1c1bd6718e50decc9996331edc1e92"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/ME-2016-202609151031.db",
+      "size": 9588736,
+      "sha256": "3ec5be6b15aa73d9049287e84174e2bc1d5726d98cc05a3cc607d59f4be81ced"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/MD-2016-202609151031.db",
+      "size": 73072640,
+      "sha256": "a021375055be648fa31a0ae018610aeab51d1d44aa1da7f7ca01183db69470a0"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/MA-2016-202609151031.db",
+      "size": 21925888,
+      "sha256": "b8e5d25d0c00dd587e825f83cc27d69b9e7fbb419e795ab4f227a3dd7f018cac"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/MI-2016-202609151031.db",
+      "size": 25985024,
+      "sha256": "bc16fe50b8c278f0eea80765f06a5575de9c45b5df95cd6e9c7675e994243bef"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/MN-2016-202609151031.db",
+      "size": 21843968,
+      "sha256": "f8dd1cb05c4a9e4af7a848e63e3f2b5f995cec5a540b0ad4a97714a031f185d8"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/MS-2016-202609151031.db",
+      "size": 32006144,
+      "sha256": "67d78850d0b23dd0af3d268c669984d2c7a8b81245c39cb1109ec3f6b0532693"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/MO-2016-202609151031.db",
+      "size": 34304000,
+      "sha256": "0e17d8df4f42cf860f8fe577a01669b2f530d606daac8d4a1092976b08a85b08"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/MT-2016-202609151031.db",
+      "size": 16691200,
+      "sha256": "11fcb25052d82edae390cf55b246b1b24479057d01d25870f79fa5b4068de334"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/NE-2016-202609151031.db",
+      "size": 11259904,
+      "sha256": "fd23595d94e17fad6338ce7c6cc1da9fd0ee3e14bd51038f3b3bb17f4cb80032"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/NV-2016-202609151031.db",
+      "size": 15654912,
+      "sha256": "df01047891c108a2d891c138706014a1ea20c90a8a53debf9797cbe903cdfcd8"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/NH-2016-202609151031.db",
+      "size": 4337664,
+      "sha256": "19b6418fe293b1309d2aeafcb8102adfe3daafd7e49d3ac3ff3f8f33b3b508f4"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/NJ-2016-202609151031.db",
+      "size": 39911424,
+      "sha256": "7d9d5cc6a9ef08a3b60302bf16a38c35b738481b287f5a5e09d5b7bcb3b09add"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/NM-2016-202609151031.db",
+      "size": 22208512,
+      "sha256": "cb0a146ec25c471e0abc905a086f1f104d6b5addc239660287dc1ac6628649d6"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/NY-2016-202609151031.db",
+      "size": 94257152,
+      "sha256": "e42798fd73c74d98605f191bec413a6d2feb19ea3f0ebc610c2fb386b3565969"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/NC-2016-202609151031.db",
+      "size": 41975808,
+      "sha256": "d920db0ae092b8e3fd953a1b1283fa43da3324c0937d89cb19220150a0be68bc"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/ND-2016-202609151031.db",
+      "size": 8208384,
+      "sha256": "4c00bd5cab02927f517c3e851409ff3bb175e15489e98a85d439bddb2204dd64"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/OH-2016-202609151031.db",
+      "size": 56492032,
+      "sha256": "cea0ce591fa7f174c70a05cb37d8af7e197d38650d73b8a3f5f6d7dcc7826c61"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/OK-2016-202609151031.db",
+      "size": 26660864,
+      "sha256": "b4496870670874675b24a61ebd746e17fe11952dc784c1ccc7ff80ebaa04caa5"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/OR-2016-202609151031.db",
+      "size": 26669056,
+      "sha256": "6a46e97d0cfa9dfcb150a1f3ba8f28a149bfa1df1b9488c10c629e90b4d7e2ca"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/PA-2016-202609151031.db",
+      "size": 59174912,
+      "sha256": "1925f523c68837474fce844ecf29e464fc860e883cf6106588c793732ddb2bbd"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/RI-2016-202609151031.db",
+      "size": 3735552,
+      "sha256": "40721be3d0b37c629ca9730b2022a34e13b7cf2ffd701beccc8931e39aa78567"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/SC-2016-202609151031.db",
+      "size": 28364800,
+      "sha256": "11c408e276c236aec6320ca76306696b82c3b2007cc44d78ac30959f0e0ab242"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/SD-2016-202609151031.db",
+      "size": 13545472,
+      "sha256": "84d727433a208e8037e1ff441bee9c4bda4caedcb20e9eb9082854069264899a"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/TN-2016-202609151031.db",
+      "size": 45924352,
+      "sha256": "5099e84d7ad70f1ea2f9d3bf780f05080987fa29c5125796f66e19ddc36077a5"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/TX-2016-202609151031.db",
+      "size": 104185856,
+      "sha256": "7577ac5bf332e9af26177c99fdf32e6d0acd4e5729d032250e58671620c7396b"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/UT-2016-202609151031.db",
+      "size": 25915392,
+      "sha256": "23d2e1d74d5e5e0797dc2aaceb11ebc5905f0ccc5f96917d31d880773e2db7dd"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/VT-2016-202609151031.db",
+      "size": 2961408,
+      "sha256": "1bfecdcb91974429110ae667510378966bf8d41e9e01509b026182a5350ce6f5"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/VA-2016-202609151031.db",
+      "size": 51003392,
+      "sha256": "cb1ad311c0c2150046c867107cb6de2f1c58c38807a46a5f204ee8ef5d894eab"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/WA-2016-202609151031.db",
+      "size": 73990144,
+      "sha256": "24e0d0362ffcf56d1d8a2f5ae3349568f652ae7e07b9cb57ebc3ab6b36d9aef6"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/WV-2016-202609151031.db",
+      "size": 32043008,
+      "sha256": "ec979e43dc1c7e8f495c085ed588f67975cbcf7e8365253e27a332e56cf38d10"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/WI-2016-202609151031.db",
+      "size": 58527744,
+      "sha256": "e5bfb458713fddfcc91b2689783fa7f7a000e3c01ad6a78171b75a8ac95d9818"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2016/WY-2016-202609151031.db",
+      "size": 9318400,
+      "sha256": "610d28b4d59aa538c342a167e1ec886ce562ee83a14d9a9f20fc5c6189c34da5"
+    }
+  ],
+  "2017": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2017/AL-2017-202609151031.db",
+      "size": 35942400,
+      "sha256": "3391d0c7e32f88ff8022d29a20b66f18230402a8aa457e6c669ef7bf230858af"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2017/NJ-2017-202609151031.db",
+      "size": 34549760,
+      "sha256": "60b065f121d04fb9d5cb76d58df4e85d723467d9223b471f22f40080859d26dd"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2017/VA-2017-202609151031.db",
+      "size": 48787456,
+      "sha256": "cbf2222141536615d077f13d97f9366999dd807d4b0339085f5ba6436b63ac19"
+    }
+  ],
+  "2018": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/AL-2018-202609151031.db",
+      "size": 36724736,
+      "sha256": "8214acedeaf18b40ea225101b734055404b820f271f4fd92339105d33bf54a49"
+    },
+    {
+      "stateName": "Alaska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/AK-2018-202609151031.db",
+      "size": 18616320,
+      "sha256": "d1847eff53e9f03598c6da6a2315337cc0348140261504bc9c0eb86f64ce5619"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/AZ-2018-202609151031.db",
+      "size": 16936960,
+      "sha256": "739ccc479a45ed8a6db9e74f7da3b41d2203069c2f916c10120a60fcad9d8ef8"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/AR-2018-202609151031.db",
+      "size": 30179328,
+      "sha256": "d4f14f1a1892b5c3b1ba89088825733b66d15aea9f1b6479c979f397b4992837"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/CA-2018-202609151031.db",
+      "size": 2875392,
+      "sha256": "b0b7f4b58208791a1c28cd4a687525af29fea8070dd4b0edfc8000e04986428e"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/CO-2018-202609151031.db",
+      "size": 33259520,
+      "sha256": "9f0cd0c13a491c30b6b99404a7f44265ee37407671670b0ff4fd422f4794ba9c"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/CT-2018-202609151031.db",
+      "size": 7340032,
+      "sha256": "bb58972861722546e4d5c0faeecbdb0749d1951228d54e3aafec4bce638cdc8f"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/DE-2018-202609151031.db",
+      "size": 3551232,
+      "sha256": "137232518a332d673addea01e17a26bde6854b1f2c92381093506006469c3689"
+    },
+    {
+      "stateName": "District of Columbia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/DC-2018-202609151031.db",
+      "size": 1683456,
+      "sha256": "40a236cc800546c18ea3c3cf0dddc92372805189d4e62abbf2a7bf2b6ffb88cb"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/FL-2018-202609151031.db",
+      "size": 67645440,
+      "sha256": "487e0a01ce38870e453357ffd59e9de92c050dbcdf746f0d44830188a45a472d"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/GA-2018-202609151031.db",
+      "size": 43147264,
+      "sha256": "bbe6db40837b0fa61d8c1941babad2fdc99392b81a161205a7de81da0a83b128"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/HI-2018-202609151031.db",
+      "size": 7073792,
+      "sha256": "707c0be99c3a1d6ead227f2433ba669413bbaceab0a2e9df9dda5f6f54488aea"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/ID-2018-202609151031.db",
+      "size": 17551360,
+      "sha256": "625f17951453d05ef705ac0c8ad05f331d263e91589e4956259c9f846cc79e82"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/IL-2018-202609151031.db",
+      "size": 49512448,
+      "sha256": "08dfd37c68af6ac25cc029379fb83d1280e423054f58ffa63cfd2bb1061d3c1d"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/IN-2018-202609151031.db",
+      "size": 31653888,
+      "sha256": "43dd0c0200f03368e7a216c7d5319ef926cf98d0e950ff66acab2a4f9045452f"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/IA-2018-202609151031.db",
+      "size": 14626816,
+      "sha256": "17e74a83551502412d40d724323d64b8fe244f8864f452d1283939e23e58164e"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/KS-2018-202609151031.db",
+      "size": 24547328,
+      "sha256": "83819e74bfd28cb9e67f9db97231507db732d0ab7010e9df6f3778dc84dd0067"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/KY-2018-202609151031.db",
+      "size": 1961984,
+      "sha256": "7098488a156869e445ca778c0f0a8b70e5900fc490f51c03013ca3109dfd5ec0"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/ME-2018-202609151031.db",
+      "size": 9469952,
+      "sha256": "2d611fa569389440fa64866601500c04a7709e7003584b8c71cef17ad1cf8ef4"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/MD-2018-202609151031.db",
+      "size": 73109504,
+      "sha256": "71ad184c261f363bdd9ba637afa34c6bdb596ae79ed4bd8566a8ff8c1ddfab07"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/MA-2018-202609151031.db",
+      "size": 22294528,
+      "sha256": "9c3c5b1de82eb8a9039b70cbfb3ce5578ce86b47c8235aa5f0b3eed87cb375f3"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/MI-2018-202609151031.db",
+      "size": 32133120,
+      "sha256": "ae654c7e1ff32954cb3f9e740b6137fc018a7c2162c5e04ea5a5ec7bd48781c3"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/MN-2018-202609151031.db",
+      "size": 24678400,
+      "sha256": "1b2314c4d00737b44c8750d0de520c654aefb5e4d34e2fe57c5081b58e74666c"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/MS-2018-202609151031.db",
+      "size": 32391168,
+      "sha256": "d77e0f2d5147ab68f9a9e27279aea5f927ef79e925f9d7d2ba9cdddde7018ea6"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/MO-2018-202609151031.db",
+      "size": 29483008,
+      "sha256": "f28553dbd7cd47c742df6f0e033106f1d4824eb03d93c8968f01ef2f5adc7d0b"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/MT-2018-202609151031.db",
+      "size": 15933440,
+      "sha256": "67a5084f5418c5d5238411c5d7681342a4322fc40e71c3f61a7b6f281059ee70"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/NE-2018-202609151031.db",
+      "size": 11476992,
+      "sha256": "5485582b4b8c6dddc132089fbdf3e6178f74a6cd80a8c334c91e3f65a1a7088e"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/NV-2018-202609151031.db",
+      "size": 15622144,
+      "sha256": "c839fc62f1c1e08bfa3a5a3809f88bbfa3a2a6529cec0117988d77e2d920f3b5"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/NH-2018-202609151031.db",
+      "size": 3817472,
+      "sha256": "2c5a79326ad4383adb814710a8bf465886865db84afefa088c067a89ddbea1e4"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/NJ-2018-202609151031.db",
+      "size": 40595456,
+      "sha256": "032510c6e037e250d4394ffc85e50b819f3964438d198647c8adda738cd36d6b"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/NM-2018-202609151031.db",
+      "size": 22151168,
+      "sha256": "f8c45e6e8f9694dc4ea14d98ec280d4202d1f83bf582769f2dc4e126fa42ef75"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/NY-2018-202609151031.db",
+      "size": 87318528,
+      "sha256": "c262d3bad204ccc6537eb5eb431af54bef8ecce2593d88748f1c2e64699192bf"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/ND-2018-202609151031.db",
+      "size": 7438336,
+      "sha256": "7f68d8869175338b84775fbe0ddd6db817d69d4b37bd017ab8453c7da8bb9a71"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/OH-2018-202609151031.db",
+      "size": 50896896,
+      "sha256": "821f3e7334919cf6715abf5c1c8122130ef6cecab6135282adc28225f1c3c267"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/OK-2018-202609151031.db",
+      "size": 25206784,
+      "sha256": "1686da5c62a5f849745cdfed404dd03b5431bfd3c31c07d0acfdff31c4db07e0"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/OR-2018-202609151031.db",
+      "size": 24645632,
+      "sha256": "bcc0edb7e879b429a43c3ce013827da54e9238ffe502dd11ae75bf10555dd518"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/PA-2018-202609151031.db",
+      "size": 57929728,
+      "sha256": "38dc550c80a83c90f03193342301234d8689a496f13929362eefa894c9a687d5"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/RI-2018-202609151031.db",
+      "size": 3993600,
+      "sha256": "8bb4e49277e6913173a3cea01c8513a3a64bba47d59494b5389cabd974e0e5e3"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/SC-2018-202609151031.db",
+      "size": 27332608,
+      "sha256": "b9bc1b1ac60217b03aee27efa784093eada5e76686351078afa7a7165f8d2112"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/SD-2018-202609151031.db",
+      "size": 13266944,
+      "sha256": "90537309d4e2fa7ae5788be68b7116ef09f7b34a3b9a1324633416aed28a2e4d"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/TN-2018-202609151031.db",
+      "size": 44838912,
+      "sha256": "2f2d0148310b6dc354457e65d38b40fe99d97f40ecba616a41cc8207dbbf80cb"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/TX-2018-202609151031.db",
+      "size": 106618880,
+      "sha256": "b8cc81a0a04e432570f32d3f8bc316ef98c97c11b577ec4bc5a4a7c83fab091d"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/UT-2018-202609151031.db",
+      "size": 23474176,
+      "sha256": "ed5406b34ef80dd2b5753e6a454cc68bcd53ca098d29a8463dd4e0e52dad1a2d"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/VT-2018-202609151031.db",
+      "size": 3055616,
+      "sha256": "387c1729ec1bf340550c3f46377636a0ad7751892e06ebae2bae5f766d5ff81c"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/VA-2018-202609151031.db",
+      "size": 50163712,
+      "sha256": "a48a14cc87da83fe8b8c319affe79a0fa4b2dfb7e9b61a92464adb2289ad8b52"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/WA-2018-202609151031.db",
+      "size": 64094208,
+      "sha256": "e1bf229c85471fb6dcbde0884f1fdbdc41d7caede9e501a0dadbcb3da5003e87"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/WV-2018-202609151031.db",
+      "size": 30302208,
+      "sha256": "21369fa321eee6886551590e4ca35df8e1ffbaee2bd6c4881fff5ec786eac59d"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/WI-2018-202609151031.db",
+      "size": 56848384,
+      "sha256": "22a62b183b56667d5a8055b8fe8ac46a4be0b310632cf95af922c7ef2c225463"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2018/WY-2018-202609151031.db",
+      "size": 9453568,
+      "sha256": "c01196100ecc5342bded0fba135452cd1a480d5df6caf677504ffe5b11705cce"
+    }
+  ],
+  "2019": [
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2019/KY-2019-202609151031.db",
+      "size": 1720320,
+      "sha256": "c7821f7fe4b727d6051ee5efee563749ed96a10beb7151b8adc821fa8279eb76"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2019/LA-2019-202609151031.db",
+      "size": 1249280,
+      "sha256": "ffdeed0d7f8c5ded04ba0d5b7a1e95d1658f5d75ac2e29d63560ab526635b004"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2019/MS-2019-202609151031.db",
+      "size": 798720,
+      "sha256": "671c7118b2d3c58eb4d159b0301efb8981e344cadcc18d7f47f16b7a0406bc63"
+    }
+  ],
+  "2020": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/AL-2020-202609151031.db",
+      "size": 36954112,
+      "sha256": "17be4dbb2f9dbe792652623b356d65a57ab0cfa1e99225f963c39506084363d1"
+    },
+    {
+      "stateName": "Alaska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/AK-2020-202609151031.db",
+      "size": 18866176,
+      "sha256": "300c935af1ea203867d820032feb69c046d6978556410c348e45aed3935080af"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/AZ-2020-202609151031.db",
+      "size": 15683584,
+      "sha256": "542a67e200caa524a2238ea8faccf5bb9d9041f2a7d12e71684737083178968b"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/AR-2020-202609151031.db",
+      "size": 31289344,
+      "sha256": "4655c2cb81569dd75472a3987a37b561f9e90c41808289e0422b2c8d86cf660c"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/CA-2020-202609151031.db",
+      "size": 122527744,
+      "sha256": "e16a6ac6a6cf71a18e7092b03729fecbec95b15f2067a0862ec3115765514b78"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/CO-2020-202609151031.db",
+      "size": 35540992,
+      "sha256": "d8a7ccf8af818084d10748c91ca93e2c1a86119f95df6512f42ab081ed9ea32d"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/CT-2020-202609151031.db",
+      "size": 6328320,
+      "sha256": "ddaf4080e21abb324379500e7072fbe83bb260848bfc0b0db08a42b1b912bc9e"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/DE-2020-202609151031.db",
+      "size": 4239360,
+      "sha256": "06a4399f6ab2ea2af99e178977cab4cc79496bf5c06180132d6ab922f6c0048c"
+    },
+    {
+      "stateName": "District of Columbia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/DC-2020-202609151031.db",
+      "size": 1908736,
+      "sha256": "31c2e3694ebc973997a5222fc0b45b0c092425fce01e5f62c38744d87df465e8"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/FL-2020-202609151031.db",
+      "size": 63172608,
+      "sha256": "0e7d2d8e0185041b1f15db45c9f16afd8cf653fd36605dd47397e2c7433a0c4b"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/GA-2020-202609151031.db",
+      "size": 52629504,
+      "sha256": "1025b95db1d5cb988ced99013e1da449f825d757d992d49f2b17bf55e613d10e"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/HI-2020-202609151031.db",
+      "size": 6918144,
+      "sha256": "8391d62a06f7e9edcf9d33d6f5d2028f884dd410e7d4c8515a370d3a47744902"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/ID-2020-202609151031.db",
+      "size": 17772544,
+      "sha256": "08c5b3e62a5238adbd5018a076523e0c15a09f19730d9145f3453d28cef85e50"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/IL-2020-202609151031.db",
+      "size": 54951936,
+      "sha256": "e5bc2b218c4acec10b96ffc5d36ee182f317fea0a7b7360400f3086d8549e0ab"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/IN-2020-202609151031.db",
+      "size": 32153600,
+      "sha256": "578d32264f33e855b1b4aade74a20aa3982c94cf4ede23aae4f9a2562a18fe3f"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/IA-2020-202609151031.db",
+      "size": 15572992,
+      "sha256": "f75f9f1a28387c4ec09c1903db30cd61d0853cab4f3b487a9632cd2c94c7d0d9"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/KS-2020-202609151031.db",
+      "size": 24031232,
+      "sha256": "55d9912dfc7eab3c0de366925cd12a63b23e435b5419dab636d19d9252a149cd"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/KY-2020-202609151031.db",
+      "size": 19050496,
+      "sha256": "68f0b11d53ebb10a3989022577b79da3cd31851b32f01a5aae2856cd415861f6"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/LA-2020-202609151031.db",
+      "size": 42295296,
+      "sha256": "557e418a1f725543d5d16f204835afdec01eb4232671acc8aab94c6cf8a73a32"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/ME-2020-202609151031.db",
+      "size": 9494528,
+      "sha256": "8dd659bc878094ca5226b2cbc53149d4ba8a3dc068a5b0cbed4abe8489e423bc"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/MD-2020-202609151031.db",
+      "size": 70844416,
+      "sha256": "18ba058a3e71af26d464b91aede713040804628d55ecf9b7d4db8ccf1e5a7050"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/MA-2020-202609151031.db",
+      "size": 21909504,
+      "sha256": "ccddaa0cf7d9b89c0caaf4dd2ed09a4dc80dcc5c9e828ff68e1e2d9a4e212e3c"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/MI-2020-202609151031.db",
+      "size": 28930048,
+      "sha256": "f646283b5e3235004f333d9c8706ac4c2c4b333380da0f31339893558a0ffb50"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/MN-2020-202609151031.db",
+      "size": 21749760,
+      "sha256": "da5f3f401ae81e070c2b10033f50602f9243c1aa0359dc7bdb88c1f4dde16009"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/MS-2020-202609151031.db",
+      "size": 31723520,
+      "sha256": "0f57a3245c1f0eeb3302440ef84f65f4cb9f11a72bbc776bbbfe9725ab2a07b3"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/MO-2020-202609151031.db",
+      "size": 29949952,
+      "sha256": "2b807b635e3ac607723cf2515a5ca10e60ecb47f892935ba8e2c83e5ae04104c"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/MT-2020-202609151031.db",
+      "size": 16289792,
+      "sha256": "4e622008c519005597a3f4d0bd7ddc5865462f2442f229c7b75fd3dac9b38a63"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/NE-2020-202609151031.db",
+      "size": 11558912,
+      "sha256": "0d88e4e48fe96bb25736f6325f42db00624d85d75ea682076ecd1fcb960fefeb"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/NV-2020-202609151031.db",
+      "size": 12632064,
+      "sha256": "0597a84e77a78213080d88ed56ca209d1c054403bbb6db994a04a2f9cae3f9f2"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/NH-2020-202609151031.db",
+      "size": 3977216,
+      "sha256": "2b5e5474dd9f003c0a603c5250e1f76fc4fedd462e66e7ebcbeee7b8f0ad04c1"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/NJ-2020-202609151031.db",
+      "size": 18653184,
+      "sha256": "8223ce96cca9dae4eeb5c38655694f83bb1fdbd399387b3eed35c81da838278e"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/NM-2020-202609151031.db",
+      "size": 24014848,
+      "sha256": "2003ed0e27c59ee3a98434bfe0d7c57bbbf6c19811619850c4343b0be6c88b0c"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/NY-2020-202609151031.db",
+      "size": 69877760,
+      "sha256": "a8bfce33576ee0bb75391045e95009ba45a9038e68d3c40b15ec384b1b480159"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/NC-2020-202609151031.db",
+      "size": 49897472,
+      "sha256": "d5b1803144cb2cd210e99ade53f2028005b2b245cb71a689b16263cfda58d7b5"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/ND-2020-202609151031.db",
+      "size": 7749632,
+      "sha256": "e1d98f74f78179e947d9c9c556f8746c38d8d5f82da25d9616b6b529c0a89829"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/OH-2020-202609151031.db",
+      "size": 44183552,
+      "sha256": "dfe1a9ca09c947f5089765e97e8879fc78708ea68f1b8f316b5f804cc4c8dce2"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/OK-2020-202609151031.db",
+      "size": 26472448,
+      "sha256": "d5cfbc4584583fcdfbb8fb9793f6a43165344d63c95534037f246dcbb3511361"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/OR-2020-202609151031.db",
+      "size": 24723456,
+      "sha256": "6cb6958130b5a23930db9a29f150da77263a2d24f0fdb8dab0d349bd9dd6e93c"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/PA-2020-202609151031.db",
+      "size": 47964160,
+      "sha256": "a9a9e297fc64b0027e6af6df6eec4f1da3a1baa41481944bf1766c74f51af204"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/RI-2020-202609151031.db",
+      "size": 3756032,
+      "sha256": "96165b7acc90c7fe6a59ae5f1260b261f2d6e3a85d735bcb3c5740d7da9dc416"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/SC-2020-202609151031.db",
+      "size": 28246016,
+      "sha256": "87f77d97c24bc31372ed1c81484a27408dbe8b2fe4bb76c5c4bd60857e9f2514"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/SD-2020-202609151031.db",
+      "size": 13291520,
+      "sha256": "60fb0b5dc44ab1d9bf669ef4d36a35dfa7eaaf6e5c4c54cab309bee75605941d"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/TN-2020-202609151031.db",
+      "size": 45453312,
+      "sha256": "a631dd3e630b63b8858771763bc6023c1218a852c8c5854c04e5651ab3c78ada"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/TX-2020-202609151031.db",
+      "size": 105668608,
+      "sha256": "d8f1ea46d5e5a6eaf4854f7de1fc189632efa50b752769b947d8a543d9081a83"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/UT-2020-202609151031.db",
+      "size": 23846912,
+      "sha256": "8fa1de74d669da76719a0e2627ad9f5f5e1bfa02fec4f9f9c8441c1ecf42fc9d"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/VT-2020-202609151031.db",
+      "size": 3125248,
+      "sha256": "34c6265ad19c59432845ea02aec8ac9eabb4edad1ece5547c978d3689d8c80d4"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/VA-2020-202609151031.db",
+      "size": 50180096,
+      "sha256": "bd83f09063f6e292655f29e29047ac9b21a804afdd4122dd870b1b44fc0b7825"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/WA-2020-202609151031.db",
+      "size": 69062656,
+      "sha256": "abe3011232408e3ed3e1e3c665723a8184cb508967e38eecbc20655918cfb0bd"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/WV-2020-202609151031.db",
+      "size": 31559680,
+      "sha256": "98e492083b1355c42f7d9152bb74848491e445b700332c9b442e4b4bbb888f2c"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/WI-2020-202609151031.db",
+      "size": 51167232,
+      "sha256": "34689350d7c9715a47304e42bbeca57566ac77ced1e5bf2458d4e247435e295c"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2020/WY-2020-202609151031.db",
+      "size": 9400320,
+      "sha256": "229cb0d92dcfa2973f539255d7ca050398bad7af8402bb3b8eeb52b12537b7ae"
+    }
+  ],
+  "2021": [
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2021/NJ-2021-202609151031.db",
+      "size": 33357824,
+      "sha256": "1ee178870d7b205fc4c3a57f3b41997e831aaee4fa96f464f8cdbe7b0caacc6c"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2021/VA-2021-202609151031.db",
+      "size": 48975872,
+      "sha256": "23360114cfb9e0d3ee7de41f1222ea24884a4061f1a548cf0ed46c3c32624854"
+    }
+  ],
+  "2022": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/AL-2022-202609151031.db",
+      "size": 1310720,
+      "sha256": "887a3191154c63442ddbc948f006a2fdcdbd3aa8fe595930c4023d13ebc3299b"
+    },
+    {
+      "stateName": "Alaska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/AK-2022-202609151031.db",
+      "size": 6115328,
+      "sha256": "3d0e438d94b6ff005680eadbc3122caf293d0fb69d8ecbd5e6365d91eadac51a"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/AZ-2022-202609151031.db",
+      "size": 815104,
+      "sha256": "efd8b66280cd50d24d12cec7c8ba8f6b7504d4565ea5584284ad73e9f3042d6c"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/AR-2022-202609151031.db",
+      "size": 1232896,
+      "sha256": "eb6f806907bc938eb119fca90d351c74bd141ae771e492ef82a79fb6a191fe56"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/CA-2022-202609151031.db",
+      "size": 3117056,
+      "sha256": "2e095c5a2dbd2cafec37fda3866a89c5df46b1630235202e82b3246aaff6b5e5"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/CO-2022-202609151031.db",
+      "size": 1249280,
+      "sha256": "84ef60ff2401487b34446b6c59367574f5361fd3db24ae16c4040630c71cf899"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/CT-2022-202609151031.db",
+      "size": 348160,
+      "sha256": "24a7cfc5f5de47bb3f90d5fde8d533d2a04b3c75419f1d9ed5f610c27a1bec3a"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/DE-2022-202609151031.db",
+      "size": 155648,
+      "sha256": "03c4454744814e24c918e5e07fcab3007ce0a05be0188ba5fcb731bc0fbdcfa1"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/FL-2022-202609151031.db",
+      "size": 1761280,
+      "sha256": "4f6d6982e48d7fd03e12baf7df907c3ab76edb0200bc31f6326f9eedb8a113b2"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/GA-2022-202609151031.db",
+      "size": 2420736,
+      "sha256": "6276ce968ac9b447359bc99335d228ef1ce1c0eade99ca408037e554a7c0fda5"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/HI-2022-202609151031.db",
+      "size": 294912,
+      "sha256": "1a9b69a9014c6906ccbf8071f4bca5109213c1dc5c1f6b05eb5617cece9165a6"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/ID-2022-202609151031.db",
+      "size": 1097728,
+      "sha256": "0bf6618ba78890f301d03fd2846969cfd087d1aedc372732bd471bc4395d65e4"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/IL-2022-202609151031.db",
+      "size": 1671168,
+      "sha256": "68b367aef8c3211b16e68bf9faa8b2715c7cfea206700b3097a72e8117b63692"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/IN-2022-202609151031.db",
+      "size": 753664,
+      "sha256": "8b2a9d8a4c518ad816b3a54e44831653519a5c70955facab9a24339c5cca13d1"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/IA-2022-202609151031.db",
+      "size": 757760,
+      "sha256": "f12342c0f1b10efb2abc1bdd5de2aac086e4d80385c38c1aa0a44bdd08bb5d14"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/KS-2022-202609151031.db",
+      "size": 761856,
+      "sha256": "05faa8428287a8003342c71d7c4ca156432b76eb7e208237c029f1b859c7d643"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/KY-2022-202609151031.db",
+      "size": 1990656,
+      "sha256": "cc98e7aad6cfa7081bb83e184e278f1586005349e5630e7045e43490b31814b8"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/LA-2022-202609151031.db",
+      "size": 1740800,
+      "sha256": "4123f30aff0f025cbaaa53e59530fd7fa51245e749a3df7b493dd11678f8d583"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/ME-2022-202609151031.db",
+      "size": 688128,
+      "sha256": "670d8bde223c3dc7a81e64c0c82d1c01bca3b4fb12a7b7a1eae5197620edec17"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/MD-2022-202609151031.db",
+      "size": 913408,
+      "sha256": "a3436c1c34ff8b03e0b6ad6a91430048c4706cac6dab4116f48e0c3854f2dbf5"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/MA-2022-202609151031.db",
+      "size": 561152,
+      "sha256": "9d612b907def3f0580a6858e0bed2f6dd19f704d2a719dc333a0abd2d4dc0ece"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/MI-2022-202609151031.db",
+      "size": 1392640,
+      "sha256": "05cfbd4aa03b09caf2ae9104abbf42b5539c9ad240e9223a6775b7cb867e5572"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/MN-2022-202609151031.db",
+      "size": 1269760,
+      "sha256": "c8d2d10e2913d65713003ed58b35f824e74423e43376b243edff3df3dcb26bcf"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/MS-2022-202609151031.db",
+      "size": 909312,
+      "sha256": "de35cdd3e5045aea35ed73a95730df5f7fa9f653b8d314b02f8ebd769fa26986"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/MO-2022-202609151031.db",
+      "size": 1286144,
+      "sha256": "96101cab95a733ec84efabe2d46e37c416f13c5a52e92bd4a38b816b5393912a"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/MT-2022-202609151031.db",
+      "size": 1216512,
+      "sha256": "ceb1576428b54c4d1fe970940737acf898bb5d3b9289ce82c4a256b0d49bbd7c"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/NE-2022-202609151031.db",
+      "size": 729088,
+      "sha256": "951ce2a51917a114c4f36407475a02e1c81c76a69aa8ac716b74ac5970b0489f"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/NV-2022-202609151031.db",
+      "size": 376832,
+      "sha256": "34adbb23e714e48ad0d299be1d708f616ccb8dd66a20c91108d0dfd93d22eb24"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/NH-2022-202609151031.db",
+      "size": 311296,
+      "sha256": "ca786e1e3b963a0dd75701ea349a2be5f7aaddb96eecb257755ad8e0a192370f"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/NJ-2022-202609151031.db",
+      "size": 671744,
+      "sha256": "44acfeb38d81861b54ed98d43e466113ff0e365967a116e8b2bd86f619477eaf"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/NM-2022-202609151031.db",
+      "size": 507904,
+      "sha256": "9b1e6785c5efc6955b1afa33b8d7d2a6703afcff26dad5edcd3265c4e741a2c6"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/NY-2022-202609151031.db",
+      "size": 1404928,
+      "sha256": "cbe09c1c82a2c35a1e70eae897e308042b2e81d322bb455ac7293447ac044050"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/NC-2022-202609151031.db",
+      "size": 2002944,
+      "sha256": "fbd7db4cabcfeaf66fab086f5078e05fd03758efd0cddb4c0cd6a138a55fa725"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/ND-2022-202609151031.db",
+      "size": 684032,
+      "sha256": "5a88045b90741a6a75882155a4786f7befdf620008a1f82ca9f6d3bd3a976e53"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/OH-2022-202609151031.db",
+      "size": 1064960,
+      "sha256": "436197b911b69b530d5c57cb234d9545ff55250f9df586bf4048c15bed525d7b"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/OK-2022-202609151031.db",
+      "size": 1089536,
+      "sha256": "20eef041fabdc76d00f415c15bff6c60a32b4d56b448ae5a52b488d175f25366"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/OR-2022-202609151031.db",
+      "size": 1019904,
+      "sha256": "cac4a2ae899fef831eeb076000638805c1f4929b84668059b3aaeea5460b6465"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/PA-2022-202609151031.db",
+      "size": 1253376,
+      "sha256": "536d27cadba59f933d4f34d23fea437d8ada3aa7efe997ce5e6cf43213db3c74"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/RI-2022-202609151031.db",
+      "size": 221184,
+      "sha256": "30650182193225901f67da4d8a87a0c4e267bca22364eb1a74418c714f9dee5c"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/SC-2022-202609151031.db",
+      "size": 1368064,
+      "sha256": "7b41a4e29def495916cca7b15fdc984b60894a92203fd7f2a232573f711fa910"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/SD-2022-202609151031.db",
+      "size": 708608,
+      "sha256": "b7ea780d02a2e39ecfb45d1928af88b989d2e650e82ccea4683631637b02fde8"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/TN-2022-202609151031.db",
+      "size": 1642496,
+      "sha256": "e86eac6009ada0f8efe75a93bfb53d6e388805302c0e10a13790aa0b73dfe34c"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/TX-2022-202609151031.db",
+      "size": 4317184,
+      "sha256": "355ceccbf325c532720a0a6d1876c5b7c84578b2a1c642ffb5f43f4f71dd014f"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/UT-2022-202609151031.db",
+      "size": 843776,
+      "sha256": "2eac0c3ec446911116528224fb81a89fcdc40920907bee47b1a33a124df987e4"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/VT-2022-202609151031.db",
+      "size": 356352,
+      "sha256": "b6f845d6cbb82df456aa0a0a90c8f04a94ba80f35843b9da869eb07da13071e4"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/VA-2022-202609151031.db",
+      "size": 2129920,
+      "sha256": "c1184d3758c65059a7815308691e03abd2831f057c762a556df0d52b0ade34a9"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/WA-2022-202609151031.db",
+      "size": 1212416,
+      "sha256": "678dc2d7a33cdda2b0e30ea793e8a4f08f7b5adda56a078deaf54c8aa2230c93"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/WV-2022-202609151031.db",
+      "size": 974848,
+      "sha256": "7f9912f4946d7a5c6cd8a173fe4162a0670cd8cd07a84a699efbb35b5658b50a"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/WI-2022-202609151031.db",
+      "size": 1024000,
+      "sha256": "fc889bf3d1d6968c82c1728f53e7958b8f5a5fbc40808dba0fffb740a6a0336f"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2022/WY-2022-202609151031.db",
+      "size": 344064,
+      "sha256": "2b6c07abcf9c8ebcfafeef21d64db66191e144b24128a1ec6afbb18a21e040d1"
+    }
+  ],
+  "2023": [
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2023/KY-2023-202609151031.db",
+      "size": 1712128,
+      "sha256": "4a0767d7be564274cf6d989cba1d28f3d032b65af0b730a648eb6c1bbf37326d"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2023/LA-2023-202609151031.db",
+      "size": 1368064,
+      "sha256": "fe87bc2064b2da0207c336a563cd8b510dd7b59ed12d8f3a603594bda4a1e9ab"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2023/MS-2023-202609151031.db",
+      "size": 790528,
+      "sha256": "4bcb9310f6eaa0627850a29ac1ff69b8a804aad0b86878a68b45b5ce67387b58"
+    }
+  ],
+  "2024": [
+    {
+      "stateName": "Alabama",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/AL-2024-202609151031.db",
+      "size": 35176448,
+      "sha256": "78a83fa6d69af636c016aa854151a9c5d3762808b81ae7fe9ee9cf3b2f694997"
+    },
+    {
+      "stateName": "Alaska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/AK-2024-202609151031.db",
+      "size": 16801792,
+      "sha256": "b86b7be4e1c9391a4e6092ab52bc914232f134bc8b95762ddecbad2f0dcdc0a3"
+    },
+    {
+      "stateName": "Arizona",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/AZ-2024-202609151031.db",
+      "size": 20103168,
+      "sha256": "9d4c14fb6038790b07c91b7d85b85a8b0723acc156b99095ad6a54f59e7a6d45"
+    },
+    {
+      "stateName": "Arkansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/AR-2024-202609151031.db",
+      "size": 24748032,
+      "sha256": "5f2b46d3787f322d4c70bd805c1e05244c79797e9f8e3ebcd9d8045766d1950a"
+    },
+    {
+      "stateName": "California",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/CA-2024-202609151031.db",
+      "size": 182693888,
+      "sha256": "0676ce53fcd78bc6ee74ae53bf68e9f05abcf87ede3317c77a54e24d1a4d0fd0"
+    },
+    {
+      "stateName": "Colorado",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/CO-2024-202609151031.db",
+      "size": 40976384,
+      "sha256": "4c0a7bffd8205a5bd3dcced62d4396452626d144e5bcc9efde5e51fb87804dff"
+    },
+    {
+      "stateName": "Connecticut",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/CT-2024-202609151031.db",
+      "size": 7036928,
+      "sha256": "33d4322f05fc3a9e38f45d8709e6048345f894ff68b1bdc9d9d848456607561f"
+    },
+    {
+      "stateName": "Delaware",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/DE-2024-202609151031.db",
+      "size": 4497408,
+      "sha256": "b9ad775b34d85bb480c8913c71e518ac22696e20401140de10523a6cbcbb758f"
+    },
+    {
+      "stateName": "Florida",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/FL-2024-202609151031.db",
+      "size": 85123072,
+      "sha256": "67913a58098e5f7796e03390c54800851ea4f02a307cff7c7197fdb2c7f61546"
+    },
+    {
+      "stateName": "Georgia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/GA-2024-202609151031.db",
+      "size": 45867008,
+      "sha256": "a6ed3ef0dbc742a5e7da85040efdc52ad8e34cbe1c32bc7514b6ab17e36a1915"
+    },
+    {
+      "stateName": "Hawaii",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/HI-2024-202609151031.db",
+      "size": 5124096,
+      "sha256": "499242607da98665f24c87775c77edc912e5e99106082731e0a59ea10da01512"
+    },
+    {
+      "stateName": "Idaho",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/ID-2024-202609151031.db",
+      "size": 21405696,
+      "sha256": "688a85d316d67994561c4bf29a935215203ff25fa030e73b97cfbf1b36f3ce3c"
+    },
+    {
+      "stateName": "Illinois",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/IL-2024-202609151031.db",
+      "size": 52682752,
+      "sha256": "ab21e4efce702d40fa44b5f9f9645220f4f905adf8ada00865d0d06bc4cd369b"
+    },
+    {
+      "stateName": "Indiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/IN-2024-202609151031.db",
+      "size": 33497088,
+      "sha256": "011da126df01f789413b6448acd8744bbf00863b688ce3aa1d8b044e3f2d00c1"
+    },
+    {
+      "stateName": "Iowa",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/IA-2024-202609151031.db",
+      "size": 15155200,
+      "sha256": "7f033efcacde9c5f2c53a25942b936225c082ef7a3286b1a3b9c5de9a61ae9ae"
+    },
+    {
+      "stateName": "Kansas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/KS-2024-202609151031.db",
+      "size": 33075200,
+      "sha256": "7caf37e69a72dcb96516ef40cc15da6b8203fe3c3f7b2ba60b0b41df69d08ea9"
+    },
+    {
+      "stateName": "Kentucky",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/KY-2024-202609151031.db",
+      "size": 57221120,
+      "sha256": "017ba3100f373b6765805d9697d42fdf923f27a8effa2b9bb9ed14d89f2fecd7"
+    },
+    {
+      "stateName": "Louisiana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/LA-2024-202609151031.db",
+      "size": 38481920,
+      "sha256": "7a5913d40cef7ee173741387e41065187b17ebc2d218bdbf2ddaf464afb3a37c"
+    },
+    {
+      "stateName": "Maine",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/ME-2024-202609151031.db",
+      "size": 1912832,
+      "sha256": "55f31770f7a6ba36445990f0e71237b4cf204957587f3232360a69cad586777c"
+    },
+    {
+      "stateName": "Maryland",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MD-2024-202609151031.db",
+      "size": 58396672,
+      "sha256": "31e986e3a4e7b498c3ea3b6c7432d3fa5f0fbf725d41799139960bcd228c56fc"
+    },
+    {
+      "stateName": "Massachusetts",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MA-2024-202609151031.db",
+      "size": 22216704,
+      "sha256": "0cc10a712ca87a33393b79c8a964ed200ac21db6aa1b4af7b760cd6f69ce1469"
+    },
+    {
+      "stateName": "Michigan",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MI-2024-202609151031.db",
+      "size": 37900288,
+      "sha256": "07201d23e01ef452496d31c5f3eeb3b397a623bac05d5c0e69decd3f384c9bb2"
+    },
+    {
+      "stateName": "Minnesota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MN-2024-202609151031.db",
+      "size": 21483520,
+      "sha256": "ac49cf31836d43fbe624c97f1cb45a4137ea740a009c913e899813dad9807830"
+    },
+    {
+      "stateName": "Mississippi",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MS-2024-202609151031.db",
+      "size": 34623488,
+      "sha256": "0bab7d86444ab5a462ad8c08bc83c01b0a34c3487d855bca5e45aed17d2ba39e"
+    },
+    {
+      "stateName": "Missouri",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MO-2024-202609151031.db",
+      "size": 33570816,
+      "sha256": "e6abd3efa40834cc5aaf3218346800a6eebc0294bf2387d5c3ef2bf52fade6b0"
+    },
+    {
+      "stateName": "Montana",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/MT-2024-202609151031.db",
+      "size": 17199104,
+      "sha256": "c6fd98cdbb3b1bf562a3b8a0c4e4479c79e250b550dffb62d5997feb1b9e801e"
+    },
+    {
+      "stateName": "Nebraska",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NE-2024-202609151031.db",
+      "size": 12161024,
+      "sha256": "4d4c0e40d02e2e180ac8c0870d6f9ffdc5afb33a6332164b1d3be823e0f14475"
+    },
+    {
+      "stateName": "Nevada",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NV-2024-202609151031.db",
+      "size": 10600448,
+      "sha256": "17625ccf4db2bd8e8866dab8f8f9e77cd7970cfa44dfb20a049818ea417bd812"
+    },
+    {
+      "stateName": "New Hampshire",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NH-2024-202609151031.db",
+      "size": 3489792,
+      "sha256": "e36202bd34b253f72a06ee646e10c717f7cdecc2bb5fc85bdd2735c26f681f01"
+    },
+    {
+      "stateName": "New Jersey",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NJ-2024-202609151031.db",
+      "size": 43433984,
+      "sha256": "9196aca1f5c927600d67451c41d5376c3b05a0e5189b0fc430b18c2567958fad"
+    },
+    {
+      "stateName": "New Mexico",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NM-2024-202609151031.db",
+      "size": 25489408,
+      "sha256": "15e30dfcda0f2f1b105eb511358e01beb63abfbba1ad0e7ae3af8f2aee541269"
+    },
+    {
+      "stateName": "New York",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NY-2024-202609151031.db",
+      "size": 55861248,
+      "sha256": "b6c243624e8a1b0c48249cd3a06157db2b657bfc63a34a515beea80d076f016f"
+    },
+    {
+      "stateName": "North Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/NC-2024-202609151031.db",
+      "size": 50163712,
+      "sha256": "93abab55241eca3611846af1a36140b3425ebc97fef99d04cbe00db4da9a506f"
+    },
+    {
+      "stateName": "North Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/ND-2024-202609151031.db",
+      "size": 7454720,
+      "sha256": "4fe2f89a402164616ae89d085010a404234e6242cd9e1240ab487697904928a9"
+    },
+    {
+      "stateName": "Ohio",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/OH-2024-202609151031.db",
+      "size": 60407808,
+      "sha256": "a803d978599278354e887521f2233a6a70e940e8f5690ebec0d88ebd01b21dad"
+    },
+    {
+      "stateName": "Oklahoma",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/OK-2024-202609151031.db",
+      "size": 24104960,
+      "sha256": "9539453a778fd804cd4a83420b2231b06d9a705007cd407ff0d8dd9b91ae78b7"
+    },
+    {
+      "stateName": "Oregon",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/OR-2024-202609151031.db",
+      "size": 23547904,
+      "sha256": "0cfac35eb0ce124294c4bdddd3667b2121be6348877c92043dbb045455167185"
+    },
+    {
+      "stateName": "Pennsylvania",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/PA-2024-202609151031.db",
+      "size": 66629632,
+      "sha256": "e8b44cd4a64502443d6e107558cc69c25fa4b6a0747ec0144276365ad62aa406"
+    },
+    {
+      "stateName": "Rhode Island",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/RI-2024-202609151031.db",
+      "size": 4132864,
+      "sha256": "1dc621bba8de71317dbd6b295e88908439dfaa51ec364e19e26c3a465f59b733"
+    },
+    {
+      "stateName": "South Carolina",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/SC-2024-202609151031.db",
+      "size": 33198080,
+      "sha256": "b0b8ed91cce6911ab5a51555b1f92d0dfbac3f7e9049a0420d34cfc464282476"
+    },
+    {
+      "stateName": "South Dakota",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/SD-2024-202609151031.db",
+      "size": 11620352,
+      "sha256": "952626b131eb2ef30af4050e95f336475d3b31100a5f643067ff27a5d6851ca0"
+    },
+    {
+      "stateName": "Tennessee",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/TN-2024-202609151031.db",
+      "size": 44924928,
+      "sha256": "7975247282c791d13939ba01d82d5df1b27d6683720c120dd60544274410eeeb"
+    },
+    {
+      "stateName": "Texas",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/TX-2024-202609151031.db",
+      "size": 111017984,
+      "sha256": "98807fdb0b8a23693150595c77cc6d1ca1a93a7f7fd86033e90fdac7bcdf33bb"
+    },
+    {
+      "stateName": "Utah",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/UT-2024-202609151031.db",
+      "size": 28954624,
+      "sha256": "13b0862d5682d725cf8a19e02a6a69960ca10362ac6374c1e669ca89642b653a"
+    },
+    {
+      "stateName": "Vermont",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/VT-2024-202609151031.db",
+      "size": 2043904,
+      "sha256": "cd18bbe846614cbe09066512f9051c48a2019cb90cc7b687175c7f9d4bc0dc60"
+    },
+    {
+      "stateName": "Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/VA-2024-202609151031.db",
+      "size": 29253632,
+      "sha256": "b6df04f0e4c7858d58cfde0333fbbdc467ac3382bc30ff3cf25611e7b1aaeda5"
+    },
+    {
+      "stateName": "Washington",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/WA-2024-202609151031.db",
+      "size": 69914624,
+      "sha256": "4dc11722f607a8eed95402137e2d7c848a9b96b5989404cbd875361195e634d0"
+    },
+    {
+      "stateName": "West Virginia",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/WV-2024-202609151031.db",
+      "size": 32706560,
+      "sha256": "9bf9f6cc89748f53a147d0128f1e1d652b19d421878abb6f789362495aab0290"
+    },
+    {
+      "stateName": "Wisconsin",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/WI-2024-202609151031.db",
+      "size": 68857856,
+      "sha256": "7ca272bfc7a1e1a1fb3048905c1c1078de10f4dbc9325fee5b959a9a89c3d98c"
+    },
+    {
+      "stateName": "Wyoming",
+      "db": "https://files.xp-oncology.cn/gerrymander/2024/WY-2024-202609151031.db",
+      "size": 8810496,
+      "sha256": "3257d60221f12caf5ff9a9e2794b96cffbab74faeb1cdab0a26a27e20dd4f1ae"
     }
   ]
 }

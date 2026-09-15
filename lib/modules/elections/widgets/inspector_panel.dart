@@ -85,14 +85,12 @@ class InspectorPanel extends StatelessWidget {
                     style: Theme.of(context).textTheme.labelMedium,
                   ),
                   const SizedBox(height: 12),
-                  if (voteSummary != null && voteSummary.population > 0) ...[
-                    InfoRow('Population', formatNumber(voteSummary.population)),
+                  if (layer == LayerType.precinct) ...[
+                    ..._precinctRegionRows(dataStore.regionsOfPrecinct(cell.id)),
+                    const Divider(),
                   ],
                   if (voteSummary != null) ...[
                     InfoRow('Total Votes', formatNumber(voteSummary.totalVotes)),
-                    if (voteSummary.population > 0)
-                      InfoRow('Turnout',
-                          '${(voteSummary.totalVotes / voteSummary.population * 100).toStringAsFixed(1)}%'),
                     const Divider(),
                   ],
                   // The comparison fills replace the candidate list: the other
@@ -104,10 +102,15 @@ class InspectorPanel extends StatelessWidget {
                       layer: layer,
                       cell: cell,
                       summary: voteSummary,
-                      currentElection:
-                          electionStore.selectedElectionFolder.value ?? 'This election',
-                      comparisonElection:
-                          store.comparisonElectionFolder.value ?? '',
+                      // Year and office both: the two may share either one.
+                      currentElection: [
+                        electionStore.selectedElectionFolder.value ?? 'This election',
+                        ?dataStore.activeElection.value?.label,
+                      ].join(' '),
+                      comparisonElection: [
+                        store.comparisonElectionFolder.value ?? '',
+                        ?dataStore.comparisonContest.value?.label,
+                      ].join(' '),
                     )
                   else if (voteSummary != null)
                     VotesByCandidate(summary: voteSummary)
@@ -126,6 +129,19 @@ class InspectorPanel extends StatelessWidget {
       ],
     );
   }
+}
+
+/// County and district rows for a precinct; "—" when the state database
+/// doesn't place it in one.
+List<Widget> _precinctRegionRows(
+    ({List<String> counties, List<String> districts}) regions) {
+  String join(List<String> names) => names.isEmpty ? '—' : names.join(', ');
+  return [
+    InfoRow(regions.counties.length > 1 ? 'Counties' : 'County',
+        join(regions.counties)),
+    InfoRow(regions.districts.length > 1 ? 'Districts' : 'District',
+        join(regions.districts)),
+  ];
 }
 
 /// Side-by-side party totals for the two elections a comparison fill spans,
@@ -178,6 +194,10 @@ class _ComparisonBreakdown extends StatelessWidget {
           subtitle: 'this election',
           totalVotes: summary.totalVotes,
           votes: currentVotes,
+          candidates: {
+            for (final name in partyNames)
+              name: dataStore.partyCandidatesIn(summary, name),
+          },
           partyNames: partyNames,
           partyColors: partyColors,
         ),
@@ -194,6 +214,7 @@ class _ComparisonBreakdown extends StatelessWidget {
                 : 'recounted on this ${layer.name}',
             totalVotes: baseline.totalVotes,
             votes: baseline.votesByParty,
+            candidates: candidateNamesByParty(baseline),
             partyNames: partyNames,
             partyColors: partyColors,
           )
@@ -294,6 +315,7 @@ class _ComparisonBreakdown extends StatelessWidget {
     required String subtitle,
     required int totalVotes,
     required Map<String, int> votes,
+    required Map<String, List<String>> candidates,
     required List<String> partyNames,
     required Map<String, Color> partyColors,
   }) {
@@ -329,14 +351,28 @@ class _ComparisonBreakdown extends StatelessWidget {
                     ),
                     const SizedBox(width: 8),
                     Expanded(
-                      child: Text(
-                        name,
-                        style: TextStyle(
-                          fontWeight: inComparison
-                              ? FontWeight.bold
-                              : FontWeight.normal,
-                          color: inComparison ? null : Colors.white70,
+                      child: Text.rich(
+                        TextSpan(
+                          text: name,
+                          style: TextStyle(
+                            fontWeight: inComparison
+                                ? FontWeight.bold
+                                : FontWeight.normal,
+                            color: inComparison ? null : Colors.white70,
+                          ),
+                          children: [
+                            if (candidates[name]?.isNotEmpty ?? false)
+                              TextSpan(
+                                text: '  ${candidateListLabel(candidates[name]!)}',
+                                style: const TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.white54,
+                                ),
+                              ),
+                          ],
                         ),
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ),
                     Text(formatNumber(partyVotes),

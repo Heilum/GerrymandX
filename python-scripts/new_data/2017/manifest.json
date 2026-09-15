@@ -1,0 +1,150 @@
+{
+  "year": 2017,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:11:00+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2017",
+  "national": {
+    "db": "National-2017.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2017/National-2017-202609151031.db",
+    "size": 192512,
+    "sha256": "74c265f32fe2053c9d767367a88106d835682aa324a2fd7545c713956a25f107"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2017.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2017/AL-2017-202609151031.db",
+      "size": 35942400,
+      "sha256": "3391d0c7e32f88ff8022d29a20b66f18230402a8aa457e6c669ef7bf230858af",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": true,
+          "name": "2017 Alabama US Senate (Special)",
+          "total_votes": 1348749,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f0433387-8feb-589d-843c-11fc6c300aa1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a53c39b7-7d77-569e-9166-30b91016e4b0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6c5c5442-25ea-5091-8fa6-7e69cc19c4bf",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2017.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2017/NJ-2017-202609151031.db",
+      "size": 34549760,
+      "sha256": "60b065f121d04fb9d5cb76d58df4e85d723467d9223b471f22f40080859d26dd",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2017 New Jersey Governor",
+          "total_votes": 2147443,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "353cfb5f-18eb-58a8-bf30-f352ddd7ec96",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6ef0fc0d-5675-5e3f-aca4-857eebc87706",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "eb8fcd4b-bf91-57f3-aac7-0b0599aac400",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "34479dfe-f025-59c5-ae35-7b84c0ed5f69",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "583e4da3-d335-5fb9-bb13-f9b74c21db5c",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "cd8361ec-3ca6-58cd-a380-b1b29133ea18",
+              "code": "RPT",
+              "name": "Reduce Property Taxes"
+            },
+            {
+              "id": "407439a8-0d47-5895-88cd-2d8f80550251",
+              "code": "WE",
+              "name": "We the People"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2017.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2017/VA-2017-202609151031.db",
+      "size": 48787456,
+      "sha256": "cbf2222141536615d077f13d97f9366999dd807d4b0339085f5ba6436b63ac19",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2017 Virginia Governor",
+          "total_votes": 2614065,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "aaf7b014-d013-5d70-b94a-bb4f6aa1a02f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5f50e563-8d7c-5929-ad53-cacc828504c4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bb49ba91-3755-5924-9ade-09385d04eb20",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b9de88b5-4e1f-5118-b1b6-b625bf9bb7da",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

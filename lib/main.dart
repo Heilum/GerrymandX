@@ -23,7 +23,7 @@ Future<void> main() async {
       providers: [
         ChangeNotifierProvider.value(value: settings),
         ChangeNotifierProvider(create: (_) => AuthStore()),
-        Provider(create: (_) => ElectionStore()),
+        Provider(create: (_) => ElectionStore()..startUpdateChecks()),
         Provider(create: (_) => MapStateStore()),
         ProxyProvider2<ElectionStore, MapStateStore, CustomLayerStore>(
           update: (context, electionStore, mapStateStore, previous) =>

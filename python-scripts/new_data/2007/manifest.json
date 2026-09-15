@@ -1,0 +1,115 @@
+{
+  "year": 2007,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:58+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2007",
+  "national": {
+    "db": "National-2007.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2007/National-2007-202609151031.db",
+    "size": 221184,
+    "sha256": "e6f0573e3d888fca201662053ffc1065e0667d16ccd5f9afcc19b8053e3c087b"
+  },
+  "states": [
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2007.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2007/KY-2007-202609151031.db",
+      "size": 1572864,
+      "sha256": "c5a0d035b959dd52f5fc21d1d0ccf3bc31a45c3f2b6e1848949cf1c0e1616510",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2007 Kentucky Governor",
+          "total_votes": 1055325,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "752b7952-95ca-5ab5-8fa6-9ef980938141",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4c4e5b1c-dccc-575a-8648-907a5393bfa8",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2007.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2007/LA-2007-202609151031.db",
+      "size": 1110016,
+      "sha256": "d81a6cac4733530558e2868280f712855e41618c26349aeaf0aa479d185e5991",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2007 Louisiana Governor",
+          "total_votes": 1297840,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3d0494fd-356f-5bcc-a836-5481c1c458c1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a8a35206-6ec6-5ae8-ba89-2eef6d21cec5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "53cae64e-3548-518c-81c3-8940b579fca1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2007.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2007/MS-2007-202609151031.db",
+      "size": 761856,
+      "sha256": "2f0b04a3d3187e4024f5841d85d651e2b3c723470c0804c1820c70eb7085f3fa",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2007 Mississippi Governor",
+          "total_votes": 744039,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "3e667be5-8e38-5a30-ac11-71fbef03cc55",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b05fb4ef-9c98-53b4-a6c4-3c56402beb70",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

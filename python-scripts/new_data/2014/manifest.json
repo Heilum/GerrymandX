@@ -1,0 +1,2252 @@
+{
+  "year": 2014,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:59+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2014",
+  "national": {
+    "db": "National-2014.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2014/National-2014-202609151031.db",
+    "size": 2785280,
+    "sha256": "f0938d522c4b37dc17dea0e9635fe728032f748b519353a0c23237a02c97f232"
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/AL-2014-202609151031.db",
+      "size": 958464,
+      "sha256": "de4090917757e144f67e22c7b7892309dca44b2f3604e9df33a5d5044531c39f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Alabama US Senate",
+          "total_votes": 818090,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "be9c0ccd-b3cc-5df4-a2a1-31efc6623842",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bfa986db-21b9-545e-93f6-7c99bcecb9ce",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Alabama Governor",
+          "total_votes": 1180413,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "aca2a9a0-423c-5982-bf7e-079e1c42a6ec",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "de6e708b-03a8-524b-b6e0-c252a5f7d39b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d58cf7b8-50c1-5864-9502-fd53820f52c8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/AR-2014-202609151031.db",
+      "size": 1077248,
+      "sha256": "1e3ff8d0e5453c3ff9006242a7405e3bdb9ba2bc4eca1bc6d603fc045aa2f249",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Arkansas US Senate",
+          "total_votes": 847505,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8d516d99-5016-57ef-a9da-6749d47e2ea5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6f79e1bd-65ae-5d44-bc23-e69e050ecc58",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0d1936f9-5c92-5618-9823-d2bd49a3b66f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Arkansas Governor",
+          "total_votes": 848592,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "63a4e4f0-6f2b-5b6f-9d73-61a03e7768d2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ecb2ec20-38dd-5708-9b3a-209177fd2ea6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "026cd502-24d3-5792-8d87-99df06f4b357",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/AZ-2014-202609151031.db",
+      "size": 483328,
+      "sha256": "9162bd360e2866097ebbb79a398a2b03651400192337344abdeced16ecb247e9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Arizona Governor",
+          "total_votes": 1506416,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c79c259a-dd13-59ab-b5a3-d541bc89e7e5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9c8d4297-ffd6-5478-af70-c68e4db46fdc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "52c8b7cd-ebf9-545f-ab13-9be2bd23d93d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/CA-2014-202609151031.db",
+      "size": 1507328,
+      "sha256": "fb47856f4364ef478ea8e381014a7238ba1c463a2a8a9dfe76e3def46379e35b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 California Governor",
+          "total_votes": 7317581,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "2ea67d9f-75d8-5aa4-bc48-f021e002e40c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5a185ce3-7211-5a15-90f4-1325e8af420b",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/CO-2014-202609151031.db",
+      "size": 888832,
+      "sha256": "710a5bdf005b6c25d0db8091ca62d4ee6edfd230b5a03f3eff735808b25b1e5a",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Colorado US Senate",
+          "total_votes": 2041058,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f8dcfd8c-c771-5ca4-9e14-dd6322a748eb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d14f257c-daab-58fb-85e0-b24e8b4a7bcf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3c3575b2-dcfd-5087-916b-90a0379269ba",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Colorado Governor",
+          "total_votes": 2041607,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "95deaac9-1352-5ec3-9d74-f8e838c8e465",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7ba42983-1ddb-537a-ab5c-edbce5fad1a4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2d87c296-c309-5a4b-ac65-0db03fe8c057",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/CT-2014-202609151031.db",
+      "size": 221184,
+      "sha256": "bd58bf22c59d98d5538c47d6d9cf98f83000a6241db3f81d09fdee8f0e3a31b6",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Connecticut Governor",
+          "total_votes": 1092065,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "43787cea-9036-5044-a770-fb925a0aac35",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "27714675-2171-5214-8c89-3550975cb63a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7afd3eec-a866-5eae-946c-899e80be0afc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/DE-2014-202609151031.db",
+      "size": 163840,
+      "sha256": "77bfe581e2d63aeb911df0ce15027b09f83874b1314c8f2e265850975d25c6ed",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Delaware US Senate",
+          "total_votes": 234038,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e67cbc4c-5928-5299-9493-a0fa39fec05e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dae32393-3b36-56d4-b035-0fe48b895101",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4fc34e18-72f7-56f9-97d9-b1e00945dc50",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/FL-2014-202609151031.db",
+      "size": 1142784,
+      "sha256": "117b9923ed7d0c5177c1fe5d07646d315457309502cf3824ae2f37c22b5d33bc",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Florida Governor",
+          "total_votes": 5951561,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b077e316-87ce-5ecb-9ec7-df1827adf8fa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9407ac6a-2266-52a9-85a0-67a9b597fd26",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "15adbe2e-41f8-5e84-ade8-f7a92d0769d8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/GA-2014-202609151031.db",
+      "size": 1929216,
+      "sha256": "727da1b617bfcbe6d7f009876841005039ff8f115c99efa2e1fe43bea72e9226",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Georgia US Senate",
+          "total_votes": 2567805,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "22b7fb7e-f165-5253-aae8-388aa4a8ef58",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "22b3cf12-f038-5cf3-8c92-4bdc13271a59",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f3e4730a-8805-5c59-b5c4-6ec821077085",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Georgia Governor",
+          "total_votes": 2550648,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b6a8bf1f-f405-5c0d-843d-f90ca8325cb5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4d634385-c55e-54db-bfec-6d013666eb81",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "334b8948-1527-5f88-9ea8-1178885bcba9",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/HI-2014-202609151031.db",
+      "size": 221184,
+      "sha256": "763a06a3d008b1f045bca401f32d8b07efd62c062d710ddaac5c635bd7963751",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": true,
+          "name": "2014 Hawaii US Senate (Special)",
+          "total_votes": 353713,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "17ba7930-2580-5aa1-b44b-e486b850aa93",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1061c6ad-d0a5-5268-99f0-e3cbdd50daf0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4ebba2ba-3575-5996-9530-59e665d60f7c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Hawaii Governor",
+          "total_votes": 366210,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "07f5e3c8-35bc-5f7f-b494-83dc52cef059",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2552837b-e6c2-50fe-85c9-f0c2f3b81d32",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2baac227-7d91-5abd-bd54-723a74736f0c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/IA-2014-202609151031.db",
+      "size": 630784,
+      "sha256": "e4b400390d44fe7675d3303bbed73d44beba3206a14f384a270c1150a97227a0",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Iowa US Senate",
+          "total_votes": 1129700,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "00b0286c-85f0-5ced-951d-8ae667c05317",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "24072663-67ed-5fc0-abc3-4207d3ef411e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "14877fdb-1da1-57a9-b0e6-314512bb75dd",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Iowa Governor",
+          "total_votes": 1129057,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7862a153-d7bc-538a-8f25-324b81ebce14",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b203acd0-fb75-591d-8e78-5c16af958544",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "409d3479-02a8-5fde-a9da-afee14d2e01e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/ID-2014-202609151031.db",
+      "size": 897024,
+      "sha256": "cea9f6019d0cf2ae5ccf42315a1c1afb54941b33fc94004adaed580fa68b0245",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Idaho US Senate",
+          "total_votes": 437170,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "bb1249bd-edfa-5e14-8b77-7fab435be3dc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2a35265b-0388-564d-b999-950287336ab5",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Idaho Governor",
+          "total_votes": 439830,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c933a9ed-503c-50f4-a631-6158094ab408",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "19c2b5b5-e1f9-5627-a158-2ecdb0064f13",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9e44adb7-0811-5a1e-92c3-c6fc5c43243c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/IL-2014-202609151031.db",
+      "size": 1007616,
+      "sha256": "ee43f2454228b44a834947cc352d6866c821712438a53660f6846c21c03cbbdc",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Illinois US Senate",
+          "total_votes": 3603519,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "43a9d974-4f51-51a5-9554-bbe38981b0ab",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "31774b98-44f6-5a13-90ca-c62eb95f14e0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "33a8b838-c7b6-54d7-bd38-1d2e5575ae39",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Illinois Governor",
+          "total_votes": 3627690,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7975eb77-c986-5d02-98e3-9ce7637f1c39",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9568ff66-5175-599a-9d98-9ce456ffc22f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "203d983d-e6a2-5cdd-b0f9-ae72d3395ae5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/KS-2014-202609151031.db",
+      "size": 610304,
+      "sha256": "58d839040d2ced25057ecfdfd9c4c4f49e83373bc21db2f0a922a7e18dbbcd3e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Kansas US Senate",
+          "total_votes": 866191,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "a449aa80-ef86-5562-a860-c7468337f377",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "82a58ab8-33a0-57fd-bd11-2f4ae439df19",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Kansas Governor",
+          "total_votes": 869502,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "05db84ff-8f26-561f-972a-5be83db2cb13",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c90e6f5c-173a-5f2f-8214-52bacf7416f5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2a2bbc6a-b976-5fd6-afa7-a5726dd9e64e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/KY-2014-202609151031.db",
+      "size": 1732608,
+      "sha256": "a49ba468d8422eebe97fcf0a1098e23f2df0a9af24d591dc6b5a1ebec27e26d8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Kentucky US Senate",
+          "total_votes": 1435868,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d55cc3bb-4a4e-5946-b2e9-f9f146629680",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ee2f2407-eae4-5005-bac5-74cc18e87f13",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ad6a547a-9f78-51a0-bdc7-3b3ba29239e8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/LA-2014-202609151031.db",
+      "size": 1249280,
+      "sha256": "85f4889160f62265a0a5778f509b7118c3d24b5eb611ac68178b6727526550bc",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Louisiana US Senate",
+          "total_votes": 1273589,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "40da7730-c2e0-5367-b37d-7ca7dd791841",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f83af969-0d53-5e91-8140-288d462ad513",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/MA-2014-202609151031.db",
+      "size": 323584,
+      "sha256": "7f37ae858a0d6012bf156b0ea1677226039eee9da252256f5e91f92503032271",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Massachusetts US Senate",
+          "total_votes": 2084972,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "44b83d61-9227-5924-968d-9f0aefd469b5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "da06012d-cf06-5371-84e4-339b9c8947d6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fe02a07b-6606-5665-b306-3908620eb4c8",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Massachusetts Governor",
+          "total_votes": 2158326,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "df4131d3-a3a1-592b-b3ba-1359348378fc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3c2f102a-14e9-5d35-85eb-de8f31b0aff6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1a90ea14-df82-56cd-89ad-14fac696a428",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/MD-2014-202609151031.db",
+      "size": 614400,
+      "sha256": "0d3c00dbebb53a96bb75b8e5bb09b4ef26405e6b3e613d058ecc6d4991bcd332",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Maryland Governor",
+          "total_votes": 1733177,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a2398daf-6924-5f43-a217-1c213022f75b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "74a50212-534e-5cf4-8198-d24690bdf3ce",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "af6d10a0-15fc-5575-b9fc-b2fdeed58fb5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/ME-2014-202609151031.db",
+      "size": 540672,
+      "sha256": "4dd3542d7a84a2cb90be611c270a1a80920cf09a00ee82fb62b09fcaf386be75",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Maine US Senate",
+          "total_votes": 603157,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "76e7cf03-1740-5777-bb22-6b68475f53c2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5fc74c37-2c2f-57dc-a7b4-2382076c30ed",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7817dab4-4d2e-590b-ab6c-d449c1358f0c",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Maine Governor",
+          "total_votes": 610371,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3749f049-2f2d-553c-8ccb-0ca748524259",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2e4365dd-604b-573d-b5c9-5d7100e97c2a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "eac0d482-ae5e-5c0d-b121-9deba1fab688",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/MI-2014-202609151031.db",
+      "size": 995328,
+      "sha256": "67904a28254dbde06c709330dd1876d215a130f515189ea9a7e0f68d45002697",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Michigan US Senate",
+          "total_votes": 3121775,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "99d43c7a-e90c-5b80-942d-15924fa9cf63",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1f3f6565-b0a1-581c-ba8e-3815882df852",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c684e21b-5469-5f17-8953-cdabb50d9f30",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Michigan Governor",
+          "total_votes": 3156531,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "751411c5-1b2e-5505-8ff4-49523f5193f4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a4e2fcdb-05a1-59fa-b387-35398874b458",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9f0f8b33-2d47-553c-8fec-6e91971d513f",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/MN-2014-202609151031.db",
+      "size": 995328,
+      "sha256": "3715a34e9533b5777036e993fad774ef8cb96f7d916b816cd126e58e9f4b4e4d",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Minnesota US Senate",
+          "total_votes": 1981528,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b3ea5dda-63cb-58d0-bfeb-b867c06928e6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d49e31a4-4c59-5a08-9f4b-34c1064ec988",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1942d50d-ee7b-5314-bc2d-bdf78fce5eae",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Minnesota Governor",
+          "total_votes": 1975406,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e825d7e1-eb1c-58bc-88a5-00dadbc65b50",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "22b8f454-a79b-5acc-96a0-00f4ea5d8579",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6488e123-d0c8-5149-b683-19fdd29ab41d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/MS-2014-202609151031.db",
+      "size": 790528,
+      "sha256": "a81f1f65f36f8238b246ec75b53d99d05de17189ae8914adcd9d735da0a9a7bc",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Mississippi US Senate",
+          "total_votes": 631858,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "001064e2-fe25-50a3-88ac-0ca375832446",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d792f925-7a02-5d8a-a5dd-1ba0b80b936e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "72264e46-85f2-569f-8c13-e5ddf3bc6544",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/MT-2014-202609151031.db",
+      "size": 1138688,
+      "sha256": "ac05fb9d93b27991285eaa50ef035a3ffdd32f58fc9048de22738f568ca0aea9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Montana US Senate",
+          "total_votes": 369826,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "92783df4-0ed9-5216-9092-3eb2007303d0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c5024f62-a276-53dd-b6a4-91f1f7ab4daa",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "05ad62bc-4195-5613-b815-a77a7a85a682",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/NC-2014-202609151031.db",
+      "size": 1843200,
+      "sha256": "6d7e77d8c723e6e581daa0bf33d07fdd0592da950c4ba8f0ddfe49a883c91eb7",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 North Carolina US Senate",
+          "total_votes": 2915281,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2fdb3289-56af-545e-9bd1-281765428033",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e74bca63-99b9-5954-871f-632f8699db99",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "95fa4192-9eb2-536d-a0a3-fde6963f18ce",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/NE-2014-202609151031.db",
+      "size": 663552,
+      "sha256": "ec2b46ff49e55a2416b65f147855f0eaccf54a258a7aed186f38ea5be85896f1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Nebraska US Senate",
+          "total_votes": 540337,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4ced893e-63b9-55b8-84f3-4ecca349c2d5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "518594cb-13fa-53db-b1d8-43a942158b00",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6a7ca26f-67ef-59c3-9423-5651f7f78dbb",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Nebraska Governor",
+          "total_votes": 540202,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "aa8efaa3-f819-5454-91ba-341849686f35",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a995eb80-0282-5ec3-80cb-63ff7c6bc717",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "101ee3de-5b08-53d4-8686-75f4f99fe5be",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/NH-2014-202609151031.db",
+      "size": 237568,
+      "sha256": "f42808853c9d558034444b10d7c579ae0a61f58778df18805a75a85b19891a15",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 New Hampshire US Senate",
+          "total_votes": 488159,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "bc2af01e-e25e-584e-a72b-347f6042af72",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1a25e901-5cae-5834-8eab-5355ab6d3629",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2c05aac2-396e-5122-85b5-8d574db46bbc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 New Hampshire Governor",
+          "total_votes": 486183,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c7268206-558c-527f-b8a4-f7fcedd46c11",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b68cc65e-b89b-5851-b7a3-89bb4afa2077",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "93679024-f814-5304-b993-6f7cfacec87a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/NJ-2014-202609151031.db",
+      "size": 393216,
+      "sha256": "a25f72ff8ab0f40b9734154c3548d63c5e7374e4ee458e0655294a81bcebf743",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 New Jersey US Senate",
+          "total_votes": 1869535,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8848f114-5cbb-5857-8495-c09716926f30",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8238b33c-a243-5bf5-859c-d63dbf9fe815",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d47573d5-13f5-53ad-afc6-7c29e4eb81d4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/NM-2014-202609151031.db",
+      "size": 417792,
+      "sha256": "8ad0bfa9d9c2deaffaab2cb0f9375bfa4d10eb8b6ed4cb39011501eb55af55f9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 New Mexico US Senate",
+          "total_votes": 515506,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "7d81953a-e904-5b3c-8e95-90b918b4bd48",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d7e8dca2-04b2-5ff9-9863-4bd7f63fa944",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 New Mexico Governor",
+          "total_votes": 512805,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "397329d6-8b76-589f-92d3-0213799d0818",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4c438f83-051c-51d5-a03b-450f93b394f2",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/NV-2014-202609151031.db",
+      "size": 278528,
+      "sha256": "139753baa4b44736da3e67a54c47718404083813735cedd7a46df60fe0d8d1d7",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Nevada Governor",
+          "total_votes": 547349,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "98a104d7-e38b-5d16-b7b0-4d8aad01f0d7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "60744d07-026b-550d-a06a-dfb14cec23fe",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "397b0e8c-25f8-516d-a567-4e23f6f656fc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/NY-2014-202609151031.db",
+      "size": 835584,
+      "sha256": "7030c2b4ac51e45b86a8e51137a5c32d56b4de3e7689365b682fd4f1c3537852",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 New York Governor",
+          "total_votes": 3819086,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "116e1f01-110e-591b-9a8e-38bd6dd0da65",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eae420c7-378a-505a-b16d-2d823212b3bf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "88233949-e4c9-524e-8dfb-8cd2d1e86d93",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/OH-2014-202609151031.db",
+      "size": 688128,
+      "sha256": "fe93f423ccc98f301b8df9825a964bb47dc6871bf5adf5d1f7a6062045632504",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Ohio Governor",
+          "total_votes": 3055913,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "14e904bf-cf08-55bd-8592-c190f594ce1c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cb28c1d9-1e93-532f-b1de-4934327bec52",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1f38b706-dfe1-55f7-b1a4-0bce026ba798",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/OK-2014-202609151031.db",
+      "size": 892928,
+      "sha256": "2fcc6076c1a16d23e6503269311390b170c54ccdd168f2c6f4d28fb07c081af5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Oklahoma US Senate",
+          "total_votes": 820733,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a55b052a-73c5-572a-9cce-1730d275da51",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f5df28ec-7aa1-5cec-ba0a-c0de4c4c7724",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cb04542e-e2f0-542e-bad5-3391f3d8cd62",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": true,
+          "name": "2014 Oklahoma US Senate (Special)",
+          "total_votes": 820890,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a46ed16a-b14b-5ccf-bb9f-d380c3a3adc9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "82ce3309-414a-5313-8297-681bdc8505d9",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a07fbeae-6c00-504c-8c1f-97832928acd0",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Oklahoma Governor",
+          "total_votes": 824831,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8bb92338-d7d6-5f49-9991-5fd704917dd9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "96ff7fb4-714e-56ec-bfc7-f4de452dc2e7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2b985ca6-2d08-5ab9-9fc3-f185d8d2102a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/OR-2014-202609151031.db",
+      "size": 684032,
+      "sha256": "e1a92a5507af8b9aae3c01b81b26e7e947fd3427dd4a43e627579d4b9a93ced3",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Oregon US Senate",
+          "total_votes": 1461618,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "93851e06-2235-53dd-8a6b-b87ee2ac414c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8f2b1dcb-2392-59e3-95b9-8693306deeef",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dc0aac2a-37aa-576f-8eb4-f44c7a14b3a3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Oregon Governor",
+          "total_votes": 1469717,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d588c698-83b2-50db-b688-3217ebe69f4e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a7755df6-b431-58a3-baba-28b69592f7c7",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cedb8f3e-05d4-5ac3-8251-746e7bb49470",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/PA-2014-202609151031.db",
+      "size": 827392,
+      "sha256": "b40e40ded77ac132bb381f29de773fdb9e2d67b87180a9649a58d3d4f469abf2",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Pennsylvania Governor",
+          "total_votes": 3495866,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "d7408023-9050-54c1-9f38-6edd0e94bee5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "84cd533f-8efd-568a-be6c-fcf5a280e29e",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/RI-2014-202609151031.db",
+      "size": 188416,
+      "sha256": "a640b58e9470b0969e96eb1dc69c1e292bccb719f0e139b52448b259af2b6ae9",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Rhode Island US Senate",
+          "total_votes": 316876,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "26ef7003-febe-5321-807a-edfc0a756882",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c8a195ab-5936-59ee-bd14-2d32f284296a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ff72cff4-e384-50cc-b1a1-c6330d0607d7",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Rhode Island Governor",
+          "total_votes": 324055,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "81f0e565-accd-5d9e-9a30-dbd58d85f409",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "db9a14b9-6ece-5bdd-b376-b5529317ad69",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cc73fc6d-3085-5a5e-b0d8-016aabd3e83e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/SC-2014-202609151031.db",
+      "size": 1015808,
+      "sha256": "1ceea4b2cca111bde98e8509322387890b7c2c5f0cdeb5fe2bea3e6a4b6bcf33",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 South Carolina US Senate",
+          "total_votes": 1240075,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "649303a4-7077-58a3-a60c-e0c2bc788e19",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "eff3e1e3-2f77-5671-826a-3df1661922cd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "78ffc323-7bda-55b4-a8e0-1df8df2b875a",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": true,
+          "name": "2014 South Carolina US Senate (Special)",
+          "total_votes": 1238982,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2c2ec1d4-7e9b-579f-8bfe-fd5b9e2146fd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bc18785f-b980-58a8-be97-02bd817c910a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5d87d4ae-b710-5cfc-aad4-80368a7fcae6",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 South Carolina Governor",
+          "total_votes": 1246301,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c6811a63-1b2b-5b1f-95d9-02a08931a4ac",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8dab5a51-855e-57d0-818a-aabcc510305a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "96a8de84-b329-5e85-81fe-708013253f6e",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/SD-2014-202609151031.db",
+      "size": 651264,
+      "sha256": "3162e2a6fa3ef4c3ecbda5ca5e5f09d043428a989a1658d5f775922e1dc0de42",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 South Dakota US Senate",
+          "total_votes": 279412,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7ee7e8f2-fbdf-5340-8f6f-d2d3fd97204e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "aa5f5a1e-f1f2-566a-8466-5db902404d46",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d06d4b64-ce50-5962-9a8c-4779cdfe3553",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 South Dakota Governor",
+          "total_votes": 277403,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6f8ccb3b-7cae-5ea1-a7c2-ec4b106f2a91",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "38173e57-491f-5d49-ac5b-ff567938b074",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4108c67d-68e8-5a6e-8cb0-aac30960c016",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/TN-2014-202609151031.db",
+      "size": 1359872,
+      "sha256": "ad07e772692e0cb172520e045a01054fc3341a96dbec7199b5046fea0def46fc",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Tennessee US Senate",
+          "total_votes": 1366628,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "8511c4e1-6da8-5ffd-af09-d6b47f13d0d0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "76a76e73-b167-570f-bd94-177095be6566",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "106b8324-798e-5144-a9f5-ee72fb015559",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Tennessee Governor",
+          "total_votes": 1353728,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "7b1ff8eb-7444-53e8-8c7c-7da91b2e6a46",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f127b4f1-ef5a-5d66-86b9-c177e0dd1386",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d7aad276-20b4-507b-8f99-655be9002662",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/TX-2014-202609151031.db",
+      "size": 2887680,
+      "sha256": "9b52e7c7cdd927dbac60cb99210528fea33455beab0863741f25a4fb779a8358",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Texas US Senate",
+          "total_votes": 4648358,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "d356c2d5-bc30-5b6d-81d6-b63662652f68",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0769d876-c0d7-540f-bd23-52fd07107de0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "42ddf15e-6d6a-5662-bedb-1587eb9e5182",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Texas Governor",
+          "total_votes": 4718268,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b93fd605-2449-56f3-9262-90463d14fbcd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "05d648eb-cde9-53da-9f7a-0c7ec19ed092",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8c69d986-e521-5ac6-abd1-7efd78f85bff",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/VA-2014-202609151031.db",
+      "size": 1732608,
+      "sha256": "4e6bca0f23cd4e66e6f3d54f70cc3c863015c533edb4c4bf3af3cd948bd5a72b",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Virginia US Senate",
+          "total_votes": 2184473,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "52bdfde1-aedc-5d96-b004-f7599a8aabc0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1885e348-9635-5d9d-87f8-99dd7422acc3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "64152a6b-b780-59ba-a1a1-e90b1e1a2e07",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/VT-2014-202609151031.db",
+      "size": 253952,
+      "sha256": "8e98d279fdcfd9c6e345a58d2f8436086a6d7fc4ee8ca57b55960415622a2a39",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Vermont Governor",
+          "total_votes": 193087,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "e36156b7-24db-5071-a1aa-1fef35dbfbbd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "05c36750-8aa0-5478-add1-efb820a2e692",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "06961de0-b7da-56f2-b3be-ff4e54ba287d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/WI-2014-202609151031.db",
+      "size": 720896,
+      "sha256": "5f3df1cddd4c2b1b037bd4cb081b9a2e969bef682ec41df6afa919a650395835",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Wisconsin Governor",
+          "total_votes": 2410314,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1033a3fd-10f5-5e2e-a9d4-2803aa2226dc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d3130fb3-a22e-5d97-a982-7728414d32d4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8c1023f3-2736-5311-b709-7ccab466aa90",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/WV-2014-202609151031.db",
+      "size": 876544,
+      "sha256": "5056cd8baa08aafbec728cc67a37bfdd2e386f8a355510f7e42c411b4178d836",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 West Virginia US Senate",
+          "total_votes": 453659,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "56033150-241f-5161-803d-cd3b8e983f85",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f83f7425-50e6-5a66-82fd-ae967b5be2e5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "565ff69b-308b-5083-804d-8a22e469d3f3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2014.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2014/WY-2014-202609151031.db",
+      "size": 327680,
+      "sha256": "92a545416de6c3c406775e731d63d01d9a761fd9a8378a71910c47b28dab6d49",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": false,
+          "name": "2014 Wyoming US Senate",
+          "total_votes": 168390,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1c5636c1-db3b-5a15-aba9-fcdff25ce5f5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2766f300-eb07-581d-9f4c-2afe351f7142",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "00c324b3-1a82-5b6c-a24e-0cf547320005",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2014 Wyoming Governor",
+          "total_votes": 167877,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "be8227ca-3e35-5751-bf15-de7a9fc991d3",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "19bdf7b5-7651-50ef-a089-1da3b9fcdc7f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f59c3b72-d65a-586f-b93b-9d387dd25af6",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

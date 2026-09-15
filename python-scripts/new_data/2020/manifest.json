@@ -1,0 +1,4036 @@
+{
+  "year": 2020,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:11:01+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2020",
+  "national": {
+    "db": "National-2020.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2020/National-2020-202609151031.db",
+    "size": 5013504,
+    "sha256": "4d761575532b2b11390ccd7217a24aaf018f7094583f2ae9f9b594cf073143bc"
+  },
+  "states": [
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "db": "AK-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/AK-2020-202609151031.db",
+      "size": 18866176,
+      "sha256": "300c935af1ea203867d820032feb69c046d6978556410c348e45aed3935080af",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Alaska President",
+          "total_votes": 357569,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "50827892-46cd-5d2e-81be-2d14ae31e691",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "bf2a7c7d-bd4a-5a3a-bbf3-c690875050b5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "89a9d355-eaa2-5940-890c-92970814e1c5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "88190fd8-9a35-503d-9546-118b83ef8933",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "3b0ba14a-f500-5b2a-83ca-d97e60922695",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "2562f18a-c684-5b57-83e0-b6aac8c9a61b",
+              "code": "ALP",
+              "name": "Alliance"
+            },
+            {
+              "id": "de7a89bc-2d72-5a2b-bc05-1ce54d3a0220",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Alaska US Senate",
+          "total_votes": 353986,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "12c5b439-0deb-54c3-a2ff-3745baadbdb3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "aff2efb8-1d6f-5971-bfaa-162f3d6da3fa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "182a56d6-0196-5fad-aa7d-f9f1bd9eabb0",
+              "code": "AKI",
+              "name": "Alaskan Independence"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2020 Alaska US House",
+          "total_votes": 351982,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "6677e677-c042-5fa9-a22b-24ecc02fd9a2",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "daf0d8b7-64b0-59e0-bee2-a8b25dc111cd",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "db": "AL-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/AL-2020-202609151031.db",
+      "size": 36954112,
+      "sha256": "17be4dbb2f9dbe792652623b356d65a57ab0cfa1e99225f963c39506084363d1",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Alabama President",
+          "total_votes": 2323282,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "6e74fc2c-fe63-5ae5-9c4f-6b32c4ff5819",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "09b2be20-ec9b-5ef6-923b-9e80f04a33c1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3448cb10-8627-5b7e-90de-757afccd25d9",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3a9779e4-edae-5b2b-90b1-bfea335cda3a",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Alabama US Senate",
+          "total_votes": 2316445,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9b662450-a3d9-5948-9dc7-88c8c37cff32",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f9d7ac3e-2f7d-5a3c-bb06-d51aabbea6d0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "879c1d80-277b-594f-b1fb-37707340bc49",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "db": "AR-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/AR-2020-202609151031.db",
+      "size": 31289344,
+      "sha256": "4655c2cb81569dd75472a3987a37b561f9e90c41808289e0422b2c8d86cf660c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Arkansas President",
+          "total_votes": 1219069,
+          "candidates": 13,
+          "parties": [
+            {
+              "id": "a1716132-b751-5d30-b583-a0d560d66a40",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "86a46357-a0a1-5341-a479-37919089cbc0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7600c7e8-018c-545f-a6c9-fd80ede8a20c",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "49d3cdb7-a245-56ae-b0e4-1f0467915a88",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "b8c1ab2a-ddc9-53e5-bccf-63732823118d",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "f780ab65-77b3-5820-8c46-5c303d40b4c8",
+              "code": "ASP",
+              "name": "American Solidarity"
+            },
+            {
+              "id": "19e70754-b6c0-56db-a9a1-d79f84678edd",
+              "code": "LLP",
+              "name": "Life and Liberty"
+            },
+            {
+              "id": "a00a41ed-8ad1-5fa7-84a9-9db03d9138ee",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "5acb9e85-6fbe-5137-8f82-3024208ff23b",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Arkansas US Senate",
+          "total_votes": 1193261,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "48d3739f-69f9-5092-be26-20015a08065b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0aa1f7fb-6851-5d3f-8a3f-838c15ee09c1",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "db": "AZ-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/AZ-2020-202609151031.db",
+      "size": 15683584,
+      "sha256": "542a67e200caa524a2238ea8faccf5bb9d9041f2a7d12e71684737083178968b",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Arizona President",
+          "total_votes": 3385294,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "f175155d-a056-56b8-83cb-21ce493adbdc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "126548e3-a218-5866-b01d-30c7d84af4ee",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "71655239-0dd3-5de4-8db7-641f5134bebb",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Arizona US Senate",
+          "total_votes": 3354128,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "e41fe3ba-9ac7-5e2b-87d9-e55a68f09705",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "607a6954-8d89-5d6a-bd26-5f02b2773fbb",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "db": "CA-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/CA-2020-202609151031.db",
+      "size": 122527744,
+      "sha256": "e16a6ac6a6cf71a18e7092b03729fecbec95b15f2067a0862ec3115765514b78",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 California President",
+          "total_votes": 17497060,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "c55fba9c-d078-56ca-911b-d98de3e44523",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3f117bbb-3464-5e18-b9ad-f9dcd34586dc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "916e460a-ed83-562b-a8c5-f55242f8e9e5",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b8ef7f01-8c67-597d-b86a-c9d2a9cd3679",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "257ea4dd-1d9f-529c-9748-ce6139241ab6",
+              "code": "AIP",
+              "name": "American Independent"
+            },
+            {
+              "id": "77712896-3827-5a82-a89d-d3fb72830d26",
+              "code": "PFP",
+              "name": "Peace and Freedom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "db": "CO-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/CO-2020-202609151031.db",
+      "size": 35540992,
+      "sha256": "d8a7ccf8af818084d10748c91ca93e2c1a86119f95df6512f42ab081ed9ea32d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Colorado President",
+          "total_votes": 3256980,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "61430058-2bdb-5941-b7de-235cdf13d60f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fa7a2529-6fd3-5e29-a6be-75afaa5eb0b5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5dd81558-3617-5c06-8a30-ed8f0873ed1a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bfa42ab0-41d6-5422-8667-f60a23b6bd01",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "2a4ee821-b84a-5df4-b6e8-f3b15b73e8a2",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "7ca0e912-a864-54fb-8361-cc577a53b77c",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "5d6c9681-7e01-55bf-83f6-fbafd0b652bf",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Colorado US Senate",
+          "total_votes": 3235790,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "49f2467b-7019-5fa1-8e68-1c9fcf3f609e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e61a9764-7b8e-5294-b3bc-794ce0f90c9a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "47d6363a-911a-5974-b7be-204e442fc3cf",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c3033abb-56ef-57ac-9508-5d122f251f2f",
+              "code": "AVP",
+              "name": "Approval Voting"
+            },
+            {
+              "id": "af394c1a-3393-5488-89b4-304b14881a6e",
+              "code": "UNI",
+              "name": "Unity"
+            },
+            {
+              "id": "2b333af5-0699-5e16-bb51-8538f6e84e9a",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "db": "CT-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/CT-2020-202609151031.db",
+      "size": 6328320,
+      "sha256": "ddaf4080e21abb324379500e7072fbe83bb260848bfc0b0db08a42b1b912bc9e",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Connecticut President",
+          "total_votes": 1823857,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "446cf521-ca5f-5c75-89b6-6a27dc63228c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2c6eb3fe-4e35-5aba-b282-0a8cdbd447d8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "cad87071-ecc0-593d-a416-18cd2608d1b1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f0faad12-8509-515b-a920-267d33171fdb",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "d0367ed4-5e02-5550-9002-0a14ef631152",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "db": "DC-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/DC-2020-202609151031.db",
+      "size": 1908736,
+      "sha256": "31c2e3694ebc973997a5222fc0b45b0c092425fce01e5f62c38744d87df465e8",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 District of Columbia President",
+          "total_votes": 344356,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "5c753e9b-8504-51c0-abe8-9eb55d91aba5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "572ea04d-6e3d-5c41-b915-e361663a3497",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "67e79f4a-ce63-5c92-b3d0-dbe97594e484",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4322075a-bf68-5dc5-8279-212b5d59dfb7",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "cb994034-f111-589c-b060-6793e10d05f2",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "abd64dc3-c600-55e8-931e-85c6d5a5ba59",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2020 District of Columbia US House",
+          "total_votes": 326587,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "840ec2a8-4e9b-5d76-856a-ea58c9da00d9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "83da675f-088a-5b33-8f31-3eb831011772",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "f1851326-4212-54c0-aaa4-8f6cbc4838b7",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "7370e8a3-746a-561c-bfcb-b1e788966cbf",
+              "code": "SWP",
+              "name": "Socialist Workers"
+            },
+            {
+              "id": "b4da1d8a-9dd9-5424-a08c-9b41c18170d6",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "445d58b8-e7ae-5ac2-afd8-4ad03c7567ff",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "db": "DE-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/DE-2020-202609151031.db",
+      "size": 4239360,
+      "sha256": "06a4399f6ab2ea2af99e178977cab4cc79496bf5c06180132d6ab922f6c0048c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Delaware President",
+          "total_votes": 504010,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "f4ffb03c-aac4-5b3c-be2f-ec61ee85d66a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "223fcb7a-1e7d-5076-8086-62c00e3e3bfe",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "858aa475-7cfe-56a4-8686-4403edb8b0bc",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "fe3f9899-0fa3-50c5-a363-496664134670",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Delaware US Senate",
+          "total_votes": 490935,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "7e71bf75-6511-5edf-b525-fe0914bf7d10",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "35897d55-3d4b-5f50-b586-d4281f2f8432",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b74e4c72-f002-5a3a-94af-74b93e7a8063",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "befa5105-72bd-5dff-ba72-dc9b7f17dfd6",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2020 Delaware US House",
+          "total_votes": 488270,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "2752dc2b-84a6-543e-b3a0-d820582fddc2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "36809311-fbcb-5926-9601-116392967594",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "df12716a-f2cd-5381-a416-fe601a4ae3c8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3cca6346-0ff2-50a6-8a8c-742758789375",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 Delaware Governor",
+          "total_votes": 492635,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "2bd1729f-866e-556a-a557-fb895e2274b2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bce667f7-7a12-5d25-baa4-0b7526e90438",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e76299fc-19bd-54a6-89c1-fde1165cf741",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "1354a3f0-6d7e-506b-ba2b-60829abf7183",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "db": "FL-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/FL-2020-202609151031.db",
+      "size": 63172608,
+      "sha256": "0e7d2d8e0185041b1f15db45c9f16afd8cf653fd36605dd47397e2c7433a0c4b",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Florida President",
+          "total_votes": 11090869,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "207b7ab1-c26b-552b-9f47-f8dccb810308",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "53671d4a-e693-5e63-bbc5-e3655e13a6ba",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dd99d056-c724-5db8-b6bd-22f7a2cbb34e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "deab2631-b589-55cd-8303-c37091920f95",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "425f5bfa-742c-572b-abcb-96f64c4499d0",
+              "code": "REF",
+              "name": "Reform"
+            },
+            {
+              "id": "f8a74964-f695-56c7-8ff9-6f204f1ddd5e",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "10053f09-b76a-5fb9-b7e1-1961e7981027",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "ccafcbe6-6808-5960-bf19-d5e42106ddad",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "db": "GA-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/GA-2020-202609151031.db",
+      "size": 52629504,
+      "sha256": "1025b95db1d5cb988ced99013e1da449f825d757d992d49f2b17bf55e613d10e",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Georgia President",
+          "total_votes": 4998482,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "95106a94-ed90-50fc-86b5-96dad10e0083",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5f7ffa3f-c10c-5730-9afa-9e752301ad23",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e9a65f9f-272e-59b8-88fc-6a23e5d3c217",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Georgia US Senate",
+          "total_votes": 4952175,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2c95dbb6-baf8-5321-a0d8-6aff4a63da8d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f54a2470-a7d3-53ea-b8af-653584012ab7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "986612f4-2355-5094-97c9-d57f0abb438c",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US Senate",
+          "special": true,
+          "name": "2020 Georgia US Senate (Special)",
+          "total_votes": 4914361,
+          "candidates": 20,
+          "parties": [
+            {
+              "id": "39c3d54f-89c7-5522-9532-e7c4bca0959f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "96c34c3b-75cd-5da1-b56b-f9fb376632fe",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "87b73eef-9c7f-5012-9546-30428c0686eb",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5187a1ee-95db-56a3-9da8-93544a328a9e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4ebe173b-91dd-5498-9727-44e55e50dd84",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "db": "HI-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/HI-2020-202609151031.db",
+      "size": 6918144,
+      "sha256": "8391d62a06f7e9edcf9d33d6f5d2028f884dd410e7d4c8515a370d3a47744902",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Hawaii President",
+          "total_votes": 574469,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "161195e7-3bd5-5433-a181-a5a06cc605c5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6e6199c8-2e02-5cb4-bb1a-627f94ce6dcb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c907cd64-68d4-5193-9171-23553a8d699a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "fe4b43d6-f5e4-5f51-b544-787fb5e367b6",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "a6249b9a-c3dd-5eeb-865d-f7b6e4f01270",
+              "code": "CON",
+              "name": "Conservative"
+            },
+            {
+              "id": "aa7fc9bd-0a42-524e-b9f5-22ee02653e17",
+              "code": "AME",
+              "name": "American Shopping"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "db": "IA-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/IA-2020-202609151031.db",
+      "size": 15572992,
+      "sha256": "f75f9f1a28387c4ec09c1903db30cd61d0853cab4f3b487a9632cd2c94c7d0d9",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Iowa President",
+          "total_votes": 1690871,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "9c55f417-df3c-59fd-a4b2-7eaf3d9f4a84",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5c9ae894-a83d-5e3f-9e21-bb8f0b14c871",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5d5dd2bb-f205-5816-86ff-13d4608274e3",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c77444e0-44b7-5657-98c8-c127f2f1ac6e",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "3e5397ea-19c5-55cb-9f06-b3af40a9175f",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "bb245138-1bf5-594c-b469-196d7d82bfc6",
+              "code": "ALP",
+              "name": "Alliance"
+            },
+            {
+              "id": "72782026-1134-5bc6-8619-37e8dd594298",
+              "code": "GKY",
+              "name": "Genealogy Know Your Family History"
+            },
+            {
+              "id": "2232157c-e27f-5e9a-8351-0351b7cd342e",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4051973c-747f-5bc9-89c5-6000bc7fd37b",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Iowa US Senate",
+          "total_votes": 1671828,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "6fc11228-f635-597d-8ff2-0115575d893e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "45701bce-aa95-52e9-b524-c76cbd7fda0d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0a51efa7-0b67-50f0-8cd4-58e17cd55355",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "b58612f4-c421-553e-a695-3a808962f03b",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "d2e8378a-d5fa-56c5-a2f7-e244c2eaa86c",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "db": "ID-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/ID-2020-202609151031.db",
+      "size": 17772544,
+      "sha256": "08c5b3e62a5238adbd5018a076523e0c15a09f19730d9145f3453d28cef85e50",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Idaho President",
+          "total_votes": 867281,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "4faefd69-b3b4-5259-bf73-2eed79db1164",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6e5af1da-822b-5062-b5f3-3c6a2d8771ea",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f0ec377a-27cb-5735-b317-4d53d72c82a3",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7f47fceb-437c-5b09-9dc0-ce7ea6938f49",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "e90319dd-d4ae-5672-b948-caf40667e40c",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Idaho US Senate",
+          "total_votes": 859827,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "f93b17c5-2d67-5e97-9286-799a68879893",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "89ec160b-69fc-5d0a-8ec8-588f29332a2d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8a1d30ec-3f35-5b90-833e-6ec8e056cdfa",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "6c1ff875-4ce8-5ae4-9019-76e48dafb9e0",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "db": "IL-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/IL-2020-202609151031.db",
+      "size": 54951936,
+      "sha256": "e5bc2b218c4acec10b96ffc5d36ee182f317fea0a7b7360400f3086d8549e0ab",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Illinois President",
+          "total_votes": 6033438,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "fa306451-e837-57fa-b790-987e2aa8dc3a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "625eea61-981f-51fb-945d-6fe8852cb70d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c8ad147e-cea8-5c30-88c3-8741dbda8734",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9247b62c-6294-5f43-b93b-ec591b48da8f",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "63198aa5-cf7e-5873-bc5f-820c444b69d1",
+              "code": "ASP",
+              "name": "American Solidarity"
+            },
+            {
+              "id": "45e4a28f-98fa-5c7a-bf3f-b013a8badfbf",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Illinois US Senate",
+          "total_votes": 5968883,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "6471e25a-d5e5-5683-afed-b60faf3fa4a8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "019f7b8c-0659-58d4-921f-af1c2f8c0f7a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "694eccbb-6632-5a85-a78c-b42bd6ac30e8",
+              "code": "WIL",
+              "name": "Willie Wilson"
+            },
+            {
+              "id": "9e9dc8be-a2bd-59e2-9091-8b312ab3324f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "4aee60d8-ec84-52c8-ae61-54e2ba8992a3",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "db": "IN-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/IN-2020-202609151031.db",
+      "size": 32153600,
+      "sha256": "578d32264f33e855b1b4aade74a20aa3982c94cf4ede23aae4f9a2562a18fe3f",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Indiana President",
+          "total_votes": 3031256,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b50f47a4-b556-56e6-9962-0cc8ddbbdf73",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d9ab8918-8fd1-5c50-95d2-660f78957471",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1932cde1-eb4a-5646-88e3-80398f7b904c",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 Indiana Governor",
+          "total_votes": 3020322,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "c2d3ccfd-d0a0-5dcb-9a67-1415119e5994",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dab49902-dd55-524c-be59-48814a1dc26d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a967c9d3-c6bc-5c71-8795-fdef601c591d",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "db": "KS-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/KS-2020-202609151031.db",
+      "size": 24031232,
+      "sha256": "55d9912dfc7eab3c0de366925cd12a63b23e435b5419dab636d19d9252a149cd",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Kansas President",
+          "total_votes": 1372303,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "290621b0-9914-52e9-ab68-cf801088a5c0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "44492b19-1cbe-530c-9d7f-5e117d1e9079",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "494fc3cf-b284-5c8a-ab7b-8ae51b69faa1",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Kansas US Senate",
+          "total_votes": 1367755,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "967c3ad4-68d8-5762-ba91-5d77672372cc",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f44631cb-c4e0-539f-b4f8-908ea29fc044",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6323d750-be4a-5e04-a161-8eba1164edc0",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/KY-2020-202609151031.db",
+      "size": 19050496,
+      "sha256": "68f0b11d53ebb10a3989022577b79da3cd31851b32f01a5aae2856cd415861f6",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Kentucky President",
+          "total_votes": 2135436,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "8399aff2-4972-5d6d-84d9-04f0d9c22d94",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a1982361-f4b5-5135-b274-1b08563eabd9",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c8342e3d-3689-55cb-86a7-c66df70741ad",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "842d34b8-b09c-56df-af55-ee262895c267",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Kentucky US Senate",
+          "total_votes": 2134958,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "2ca873d3-902c-58ac-9fba-0d0472f326f3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a38d9ece-1c6e-52db-acc6-fd0d2d2f1df1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "787112af-8aba-5375-93dd-7de275d130fb",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/LA-2020-202609151031.db",
+      "size": 42295296,
+      "sha256": "557e418a1f725543d5d16f204835afdec01eb4232671acc8aab94c6cf8a73a32",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Louisiana President",
+          "total_votes": 2148062,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "24c4c56a-2b89-5e95-bcf3-9ad7caf898cf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e88ba5e5-6b87-5289-8e14-91a95a135ccd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1f9a4bbb-5c32-5bb5-aada-3ec337072403",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "338e5497-7184-5c37-8206-ebf4c7696a52",
+              "code": "BIR",
+              "name": "The Birthday"
+            },
+            {
+              "id": "d5d3b74f-27c0-5569-ae1e-ce6a741345e1",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Louisiana US Senate",
+          "total_votes": 2071543,
+          "candidates": 15,
+          "parties": [
+            {
+              "id": "6b768024-eba2-59aa-963c-6de1c6bf8b71",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "42563af7-fb5b-5f8c-9926-a7074ce87d2b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "29cb33a3-564d-5cde-b953-bac5f83e4b45",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a1844eb6-eb3b-5fab-a2dd-7da0f88a15b5",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "c361e1eb-fef5-5b8a-a693-a0dfcec77740",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "a5cfc350-8337-502f-ad9d-81960f47f3af",
+              "code": "GOL",
+              "name": "Gold"
+            },
+            {
+              "id": "1afae5c8-d7db-54be-b3eb-e26d9d429624",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/MA-2020-202609151031.db",
+      "size": 21909504,
+      "sha256": "ccddaa0cf7d9b89c0caaf4dd2ed09a4dc80dcc5c9e828ff68e1e2d9a4e212e3c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Massachusetts President",
+          "total_votes": 3631402,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "e75f8539-f149-5922-99d8-272ae5d2917e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "576e8360-2468-529a-a995-08edd919258a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "dd92f655-1c90-5c67-ba57-f32ac1c040f3",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "44f5fb50-adce-50a3-adb1-a0bda3e647ec",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "5bec2256-769c-54f0-8afa-c721d66dbe0f",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Massachusetts US Senate",
+          "total_votes": 3564136,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ca2753fc-1efd-5e43-9673-4875b17a81c6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "990197b0-6866-56bd-8fef-81051596019d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0d340195-0168-5e72-8202-c2046f8cdcf4",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "db": "MD-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/MD-2020-202609151031.db",
+      "size": 70844416,
+      "sha256": "18ba058a3e71af26d464b91aede713040804628d55ecf9b7d4db8ccf1e5a7050",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Maryland President",
+          "total_votes": 3037031,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "9202dde5-6d78-5837-8d02-51196f4f7ff6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "82b34a41-0e23-5bb2-b377-fe7225e2eeea",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0d86a331-af0f-5634-8f09-96d8a84cf031",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "990b7413-39c5-50c7-964a-ed6baee92b72",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "a111d2f6-8742-5f71-aeb2-d04b983aa67b",
+              "code": "BRE",
+              "name": "Bread and Roses"
+            },
+            {
+              "id": "95e7c141-7a01-5c7a-b5a9-97099c696cc1",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "db": "ME-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/ME-2020-202609151031.db",
+      "size": 9494528,
+      "sha256": "8dd659bc878094ca5226b2cbc53149d4ba8a3dc068a5b0cbed4abe8489e423bc",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Maine President",
+          "total_votes": 819369,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "27ed39ab-c05a-58f3-a48f-d082cd353850",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "dc5a5df0-9f76-5e85-8530-b923ee607a5b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "34b8fbc7-fe3f-5fb2-b36e-1ac287a246c1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c30f7a39-aa6b-5632-931c-f99c28a88a4a",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "0a85923c-b30c-59c1-bad5-025551f6fc0f",
+              "code": "ALP",
+              "name": "Alliance"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Maine US Senate",
+          "total_votes": 818970,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "cb38e4d2-cd28-5839-94b2-1430d21d8ff4",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "18f1beeb-59be-5c98-a37c-91afaec48cc6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a857bd4c-d5e0-577c-80e7-306833038cc7",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "db": "MI-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/MI-2020-202609151031.db",
+      "size": 28930048,
+      "sha256": "f646283b5e3235004f333d9c8706ac4c2c4b333380da0f31339893558a0ffb50",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Michigan President",
+          "total_votes": 5538226,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "7c8e272e-efa7-5e96-ad54-294e1b791d50",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "a66ec29a-3e4e-51f5-a199-40e13f140099",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "738b8f88-954e-582d-aa0a-f6a622004ca6",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "55f557ab-25e3-52cf-ac92-9bb9fc695a58",
+              "code": "UST",
+              "name": "US Taxpayers"
+            },
+            {
+              "id": "2145bfa1-34b0-589f-b3db-a42bff7d941b",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "3aa4fdba-f0da-5072-a287-e37bafac5258",
+              "code": "NLP",
+              "name": "Natural Law"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Michigan US Senate",
+          "total_votes": 5479709,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "86d06af7-ded6-5291-9b15-6d17f6d1bcd6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "36e8e8ad-dc40-5164-aff6-2e2185352610",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b776465b-fa90-5192-9b3c-3b550fe8429e",
+              "code": "UST",
+              "name": "US Taxpayers"
+            },
+            {
+              "id": "593e08c0-1db9-51f1-b9cc-d2b385fcf5b2",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "a5a91bb7-67a2-5c83-9a88-6c3f5cec92c1",
+              "code": "NLP",
+              "name": "Natural Law"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "db": "MN-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/MN-2020-202609151031.db",
+      "size": 21749760,
+      "sha256": "da5f3f401ae81e070c2b10033f50602f9243c1aa0359dc7bdb88c1f4dde16009",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Minnesota President",
+          "total_votes": 3277171,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "b4e50359-a167-539c-9fe9-9c0b13cdb627",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d8d683b5-026e-5674-935b-8d10398e21eb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "22b79abe-1691-5bfe-8815-0cafa6d71b34",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8afd1de5-15a6-5b68-8bc4-6dbc1561d2a9",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "3471cf8d-0448-50df-8ebb-cb690d5795e4",
+              "code": "ALP",
+              "name": "Alliance"
+            },
+            {
+              "id": "197aed37-6d51-54c4-b5eb-f44f7b470ac9",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "183dd366-a55a-5c4a-b010-a5a276b15b54",
+              "code": "SWP",
+              "name": "Socialist Workers"
+            },
+            {
+              "id": "43585b7b-3c46-515b-a335-c8d0ce552509",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "4b38405c-c1ea-5256-8018-a35d141f5d60",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Minnesota US Senate",
+          "total_votes": 3214256,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "7a2d4307-cfca-5dc7-8a23-288df64d7dc7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "e9a2ff27-4de2-54e4-a246-6438b45833bf",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f214e00e-633e-58ad-84be-303e3fdc56e4",
+              "code": "LMN",
+              "name": "Legal Marijuana Now"
+            },
+            {
+              "id": "48b7ae7f-3273-54fd-88ae-b24f7e0d0128",
+              "code": "GRP",
+              "name": "Grassroots"
+            },
+            {
+              "id": "510eb7ad-96bf-5e83-8070-73d503073193",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "db": "MO-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/MO-2020-202609151031.db",
+      "size": 29949952,
+      "sha256": "2b807b635e3ac607723cf2515a5ca10e60ecb47f892935ba8e2c83e5ae04104c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Missouri President",
+          "total_votes": 3025157,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "d2e5160c-cef8-534c-bb78-eca811f6fab6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d3b5d34d-2c12-5948-bd13-b925e6336dc8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "91f0c2a7-5a3f-5d5e-89aa-fdb1c4cd59c7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "0575416b-c2e2-5fd5-a785-ea57343550e3",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "871dc5f4-8a2d-59be-82b6-cfbfe7ef4efc",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 Missouri Governor",
+          "total_votes": 3012274,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "a16396a5-c8a0-577b-9262-394c92d340be",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "5a6830df-bbf4-5810-a62d-3c8fa2c5c937",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "42081bb0-47c6-57e2-9e4d-98b4eec360e1",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5740efdb-fce6-526f-a1ab-7362e01b6232",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/MS-2020-202609151031.db",
+      "size": 31723520,
+      "sha256": "0f57a3245c1f0eeb3302440ef84f65f4cb9f11a72bbc776bbbfe9725ab2a07b3",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Mississippi President",
+          "total_votes": 1313759,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "aa5c5d40-f52e-5705-9d01-a04a08b0f9bd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ceb921bf-860d-5728-81dc-8818999e66e7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6cc8ce38-099b-5d2e-92e3-38eac58587ac",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "332ff7b9-9753-5ab3-91f7-ed5d4a704acf",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "89f29c1e-f977-56ec-9296-332405d0d936",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "29e0684d-c000-598a-874f-7d72b59629c3",
+              "code": "ASP",
+              "name": "American Solidarity"
+            },
+            {
+              "id": "e7da075f-ec62-5efd-9cb9-781ef31d3037",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "5f8e67e8-f0a1-561c-85d2-4d70f4cda73c",
+              "code": "PRO",
+              "name": "Prohibition"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Mississippi US Senate",
+          "total_votes": 1311354,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "38e29d87-bb32-5dc5-9353-3176f8e8ed75",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "da803e21-5212-5bba-a7c3-44578625db7b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d8a7e4be-76c7-5cec-9163-98a1b840d110",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "db": "MT-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/MT-2020-202609151031.db",
+      "size": 16289792,
+      "sha256": "4e622008c519005597a3f4d0bd7ddc5865462f2442f229c7b75fd3dac9b38a63",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Montana President",
+          "total_votes": 603640,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3c2e9f9a-99d2-57b5-8c90-09684a533890",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2743f8a1-c16f-5baf-be85-e96be2b5efe7",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d193bfcf-88d7-5399-ab88-3e9376636caf",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Montana US Senate",
+          "total_votes": 605637,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "900f347f-587f-5707-b20e-120cba8b2d4e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "712addc3-5466-598c-9af5-485604028dce",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2020 Montana US House",
+          "total_votes": 601509,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "d1f10525-5b4a-582d-a6a6-d639f5771fa3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7d3451f6-ebb3-55af-a2cc-57832d49ce3f",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 Montana Governor",
+          "total_votes": 603587,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "4c96c2d0-c510-545c-8729-c9337d82a0f6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "28ab673c-b15f-52fd-97b7-df3f24400493",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "da19af5c-4ef0-54c2-b399-888bb480a551",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "db": "NC-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/NC-2020-202609151031.db",
+      "size": 49897472,
+      "sha256": "d5b1803144cb2cd210e99ade53f2028005b2b245cb71a689b16263cfda58d7b5",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 North Carolina President",
+          "total_votes": 5524804,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "52666307-0cc0-5034-8815-c9a3f52b92b5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1b91c088-2e9d-51fe-b85c-5beaa4b00d09",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "bc041ea6-e480-5986-91da-b128209287db",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bcf035d0-ae81-5168-a264-a7e9a4927753",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "dc72e7d9-0c67-5e57-867f-4a0e68360789",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "65319ddf-f732-5308-94e5-320077d0b982",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 North Carolina US Senate",
+          "total_votes": 5474952,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "8ea2b482-82aa-573a-be12-1f624dfe23a0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4463aa07-c416-5c9d-befb-b7f05dcbdc93",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c485476c-763d-5598-851e-a412d525e85e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "8d9337d6-75e7-574b-91a1-d19fdbaddb0f",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 North Carolina Governor",
+          "total_votes": 5502778,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "097dcc8e-a78e-5a12-81de-c6cc07b12226",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f73e0e9f-ec60-5f40-95e3-974c80979f28",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8aa7356c-0fa8-5386-acaf-30befcac512f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e7b29024-84e9-56f8-9b65-e7a968ccdf8c",
+              "code": "CST",
+              "name": "Constitution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "db": "ND-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/ND-2020-202609151031.db",
+      "size": 7749632,
+      "sha256": "e1d98f74f78179e947d9c9c556f8746c38d8d5f82da25d9616b6b529c0a89829",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 North Dakota President",
+          "total_votes": 362024,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "51c880ff-d59a-5cbc-80be-2aee10d9c14d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "55d0b66d-3dbf-539d-838f-334034f930a6",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "cbeb82a5-1b42-5b27-8c47-cbf6a762d1c7",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "87f8f691-8c27-5966-9594-088dd01e81ad",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2020 North Dakota US House",
+          "total_votes": 355799,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "3d083a2e-3bce-555e-a690-de99e57542f3",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d5cd6489-352d-516e-842f-c3bd577632f8",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7c73dcce-cc88-51f6-8a1a-497ac23bff6a",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "14ecffaa-ceb5-50d7-b9a4-4fbaf1794fe6",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 North Dakota Governor",
+          "total_votes": 357859,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "25c29290-8fb5-565f-a076-e737b7625bbc",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "723ae433-3eb0-56bd-9afa-e6abec65c917",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "412ec8d9-cf40-5a1e-ae29-c59029bfc451",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c8ddafbb-e816-5a59-8701-250378f45164",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "db": "NE-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/NE-2020-202609151031.db",
+      "size": 11558912,
+      "sha256": "0d88e4e48fe96bb25736f6325f42db00624d85d75ea682076ecd1fcb960fefeb",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Nebraska President",
+          "total_votes": 951712,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "144d86eb-6b87-53f9-8957-637a495be8e8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4a3e0904-792d-5e74-ac51-7835c44ebc1b",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3447286b-1615-50ba-92a7-f458f6fc13b0",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Nebraska US Senate",
+          "total_votes": 865813,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5e794b83-a9ec-52c6-9726-33d96a796a71",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4280ffc6-3e5f-5f79-9639-5d4b4a793c6d",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7cae25c6-1e20-5d26-bf4e-2871e4a3538b",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "db": "NH-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/NH-2020-202609151031.db",
+      "size": 3977216,
+      "sha256": "2b5e5474dd9f003c0a603c5250e1f76fc4fedd462e66e7ebcbeee7b8f0ad04c1",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 New Hampshire President",
+          "total_votes": 803833,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "23e0a37f-8a10-5aa9-90b7-2767bb20438a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ccc66047-027e-5ae6-8818-b7407fd67768",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "28d0fa29-5a31-5896-b7ac-91d69be3b03b",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 New Hampshire US Senate",
+          "total_votes": 795914,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "954b9fb9-38ad-5246-8d9d-5f121f93631a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "db1d14de-eecc-5111-aa98-a7c0f944752b",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2321fe18-7edb-5530-b345-fa9b06ea34a4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "c46fd20d-21aa-5fc1-bfba-2a3eda138adc",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 New Hampshire Governor",
+          "total_votes": 793260,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "a8def5db-6ff2-5fee-beaa-e9b35adf315c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "4bd06d10-d5ba-5f87-9d62-543f099c7923",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8f294e4b-af44-5255-aeb7-1c1020f0f425",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "de18d49d-a1ae-5519-a9a9-564e584519c8",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/NJ-2020-202609151031.db",
+      "size": 18653184,
+      "sha256": "8223ce96cca9dae4eeb5c38655694f83bb1fdbd399387b3eed35c81da838278e",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 New Jersey President",
+          "total_votes": 4549353,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "959dabdc-2eb2-5196-847a-2dc2b81930b2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "c9b271d2-e219-54f0-b170-cab63e597738",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "84a0b837-4482-5a89-8686-51d249aad791",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "3c0c5a83-c8f6-5ba6-b217-69f25125fdb9",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "d89dbd86-e36b-5e2f-b179-12d43d3fd326",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "cbe1d87d-ed12-563f-a981-3399bee1984b",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "412cc47d-22a1-528f-a6fb-001dccac6008",
+              "code": "UNI",
+              "name": "Unity"
+            },
+            {
+              "id": "84f4d7f6-c1b0-5872-968a-6f9cf89e7e5a",
+              "code": "ALP",
+              "name": "Alliance"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 New Jersey US Senate",
+          "total_votes": 4440440,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "76f113a8-52e1-5c98-a4dd-a4b7e935193c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5f692f19-8db1-5b27-92eb-52e131875386",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "587799e7-6393-5a0c-bf00-04ed77cae061",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "5ff8eecd-5bef-5efe-93ab-5825bdc47486",
+              "code": "BY",
+              "name": "Of, By, For"
+            },
+            {
+              "id": "52ba5757-16b0-5418-b467-9ceeea3677a1",
+              "code": "LWR",
+              "name": "LaRouche Was Right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "db": "NM-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/NM-2020-202609151031.db",
+      "size": 24014848,
+      "sha256": "2003ed0e27c59ee3a98434bfe0d7c57bbbf6c19811619850c4343b0be6c88b0c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 New Mexico President",
+          "total_votes": 923965,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "51753729-47e0-560d-85f4-708d43d8d2f5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1b67c035-10e8-5d86-8585-6291795ff389",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c14cb67f-0275-5fe9-99ee-0cf4195ee8f4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7c64b6a4-07c1-5ba2-9391-f9e577bee210",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "fb7df728-6301-5e0f-b4b9-bdc2d649376c",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "1d1ab4ca-8966-5730-927e-1a205dbea950",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 New Mexico US Senate",
+          "total_votes": 917237,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "b827636c-e501-5dfc-8f0a-ebec1a165364",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f8b58497-841c-5d84-a3f0-be8690f20008",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "427285b4-04dd-57f4-a93b-8acb85989826",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "db": "NV-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/NV-2020-202609151031.db",
+      "size": 12632064,
+      "sha256": "0597a84e77a78213080d88ed56ca209d1c054403bbb6db994a04a2f9cae3f9f2",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Nevada President",
+          "total_votes": 1405376,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "36f261f0-a8e6-5edf-a858-94d8c0db5a56",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "57d2c81c-46e4-5f69-883c-307b5d51072c",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6c753321-54e8-574e-bfb7-3eb58af44938",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bb86fc94-e2fb-588e-836a-f17830f97814",
+              "code": "AMR",
+              "name": "American"
+            },
+            {
+              "id": "8f6dab53-eb87-5c00-bc0e-dfd1df3ae365",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "db": "NY-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/NY-2020-202609151031.db",
+      "size": 69877760,
+      "sha256": "a8bfce33576ee0bb75391045e95009ba45a9038e68d3c40b15ec384b1b480159",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 New York President",
+          "total_votes": 8632253,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "2e346609-2e63-54d6-b753-d08c554b9482",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "26cac189-2d94-5dae-908c-5198cb09efaa",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e1a5163d-4759-550d-8eed-6b56e066ae60",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "a299f2fc-ad03-51c6-853d-ef1de17400ca",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "465fd821-0215-54f2-9983-1138518b3fc0",
+              "code": "IDP",
+              "name": "Independence"
+            },
+            {
+              "id": "dce55557-1db8-5f2b-9c2f-328051aad726",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "db": "OH-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/OH-2020-202609151031.db",
+      "size": 44183552,
+      "sha256": "dfe1a9ca09c947f5089765e97e8879fc78708ea68f1b8f316b5f804cc4c8dce2",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Ohio President",
+          "total_votes": 5920380,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "72f59851-7e9d-52bb-afe5-8caf7f2e0ab6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3b1a073d-d5ea-51ec-a35b-8600f0b68019",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0bdc2b61-458c-589e-b6e4-2939a6af6a1d",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "eb734e81-4a7c-5033-847d-4d8a0a908c62",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "db": "OK-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/OK-2020-202609151031.db",
+      "size": 26472448,
+      "sha256": "d5cfbc4584583fcdfbb8fb9793f6a43165344d63c95534037f246dcbb3511361",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Oklahoma President",
+          "total_votes": 1560699,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "ccea6092-418b-5902-8858-d0c318ba1de8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b20757ee-8ff6-5a43-acf7-0dcc00d5e72f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9a4cc9d7-1a22-5d5d-a651-02334f2f5988",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bb9d0ec5-b485-519c-8593-ccb7229465e4",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Oklahoma US Senate",
+          "total_votes": 1556361,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c934dc7f-6fd5-5543-8886-652b6b4b4184",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e2213222-5987-5c8a-86ad-efad919face5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7493e2f4-41e1-5ea7-a46b-8e9835fd0e11",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "9721c7c4-5390-54dd-b739-7ae68a71f82f",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "db": "OR-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/OR-2020-202609151031.db",
+      "size": 24723456,
+      "sha256": "6cb6958130b5a23930db9a29f150da77263a2d24f0fdb8dab0d349bd9dd6e93c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Oregon President",
+          "total_votes": 2374321,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "825e18d1-ff8c-542d-8b65-aaca096d1336",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0b9e9bb5-83e0-593b-834e-ecb645530502",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ff948612-b95f-58b0-b35f-be5d463d671b",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "777d0036-e9e6-5e7e-aa96-8273b57f9273",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "382cb817-407d-5813-bf24-8813654f713b",
+              "code": "PRG",
+              "name": "Progressive"
+            },
+            {
+              "id": "c61a4dad-ce9f-54d2-b364-5365c5ac6ab3",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Oregon US Senate",
+          "total_votes": 2321249,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "b26296e7-9d64-5e6f-b9ed-b4f72508ed34",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0429bd62-793c-5170-a0ca-0af6b21aa07a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "516ef1c5-22f1-5f78-861c-73acb5943a0b",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "82ff8222-8fe0-5eb2-8c85-475a4f786646",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "3fbb7f7b-5896-5481-9709-c4e47efca3b0",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "db": "PA-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/PA-2020-202609151031.db",
+      "size": 47964160,
+      "sha256": "a9a9e297fc64b0027e6af6df6eec4f1da3a1baa41481944bf1766c74f51af204",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Pennsylvania President",
+          "total_votes": 6918349,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "26b5abdc-7b55-5c70-bd8a-4d58688fa4fd",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "fb99565d-65a7-5088-ae1e-f19536e42c63",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "9a2d68bd-10a1-5265-bdd7-778174915ed3",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "db": "RI-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/RI-2020-202609151031.db",
+      "size": 3756032,
+      "sha256": "96165b7acc90c7fe6a59ae5f1260b261f2d6e3a85d735bcb3c5740d7da9dc416",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Rhode Island President",
+          "total_votes": 517757,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "9bbd1759-a4c6-5b7f-b9e9-3790e2c99d96",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "78a04d88-547b-5567-a8cc-c106d6a50e6e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "82b52cf6-1571-58cb-8279-8870317d9e68",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d172b3f5-97af-585c-8d9a-366fbcff9cc5",
+              "code": "ALP",
+              "name": "Alliance"
+            },
+            {
+              "id": "6f455fd5-72d1-518e-9278-4cd438370f7b",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "e876e634-03ff-5e98-aacc-f329642bf4bb",
+              "code": "ASP",
+              "name": "American Solidarity"
+            },
+            {
+              "id": "0ecf40fa-e14f-57d4-bdd2-5c02ed9f1091",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Rhode Island US Senate",
+          "total_votes": 494262,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0e23d913-e650-5e0d-8214-f18b7a57c14e",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "de33694c-4f86-51fb-807a-1e1770c6abc0",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "58446b76-f867-55e2-b488-707c56f78d22",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "db": "SC-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/SC-2020-202609151031.db",
+      "size": 28246016,
+      "sha256": "87f77d97c24bc31372ed1c81484a27408dbe8b2fe4bb76c5c4bd60857e9f2514",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 South Carolina President",
+          "total_votes": 2513329,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "c216fb5c-deee-5c59-a5f1-9b8b4ba949b8",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d32dc005-9c9f-5afe-8bac-d4be024430bb",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "61f52e40-91ef-57c4-b521-67eff5946d4e",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "5babd8f2-1ffb-532d-838d-bd7d09cefdcc",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "21ceadaa-647a-5c65-9d96-f4cdeb26eaec",
+              "code": "ALP",
+              "name": "Alliance"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 South Carolina US Senate",
+          "total_votes": 2515104,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "a4d916d9-074f-58ee-8c1b-69a7fd720a91",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c8606d00-85f7-5f1e-9aba-63c3546e735a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "40af0dab-c76d-5de4-a151-615a2d0a99d2",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "10785422-0a2b-50c0-a4c9-63aea0b5bc06",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "db": "SD-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/SD-2020-202609151031.db",
+      "size": 13291520,
+      "sha256": "60fb0b5dc44ab1d9bf669ef4d36a35dfa7eaaf6e5c4c54cab309bee75605941d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 South Dakota President",
+          "total_votes": 422609,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "a6e8bf60-23ca-54ab-a819-2f203467fd15",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "08863712-8912-55f8-9c75-413ad4d670c1",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d6262ab5-c8cf-5d6c-874b-50f8d22e7f06",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 South Dakota US Senate",
+          "total_votes": 420219,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "4e4e7253-82d5-5805-a159-cc39b6a26f11",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d34aa78b-bef6-5fce-84f3-1856e2f80ca1",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2020 South Dakota US House",
+          "total_votes": 397732,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "7ef1ac97-559c-5e54-b883-34043b253528",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "f50d751d-06c9-51d0-b3ef-5cea1179b1b8",
+              "code": "DEM",
+              "name": "Democrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "db": "TN-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/TN-2020-202609151031.db",
+      "size": 45453312,
+      "sha256": "a631dd3e630b63b8858771763bc6023c1218a852c8c5854c04e5651ab3c78ada",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Tennessee President",
+          "total_votes": 3052989,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "6ffeed71-6554-58c1-ba13-09cf9f3ebd4d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "869015c0-7f37-52f9-98f3-29f394d64c9f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d32a88d3-cfcc-533e-bf16-df1372ea94a1",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Tennessee US Senate",
+          "total_votes": 2950099,
+          "candidates": 10,
+          "parties": [
+            {
+              "id": "e513423c-ec48-5628-bd7f-66ced30220c1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8b52746d-7a42-506a-a156-f42868eaa386",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "2cca15f0-299d-50a8-a99c-0ea015adfc43",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "db": "TX-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/TX-2020-202609151031.db",
+      "size": 105668608,
+      "sha256": "d8f1ea46d5e5a6eaf4854f7de1fc189632efa50b752769b947d8a543d9081a83",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Texas President",
+          "total_votes": 11320419,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "7a6201e2-4a33-5d08-babd-cc7e381e0d20",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "df6ce881-06be-5dac-b06f-79b119013598",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0a614081-4bd9-5489-9946-89334db5f464",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6ed083a2-793c-52fd-be9b-7cba94650f45",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "52fce87e-a920-5598-bdf4-e6bc017c7eb5",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Texas US Senate",
+          "total_votes": 11143578,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "81af8fd4-60b7-59d9-b835-54c6cbf8d2d4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "085e8d44-0ded-5eed-933b-d064d05f070a",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ad1a6b0d-da59-58ec-b655-af75507b9521",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bdad143a-1074-50f7-9041-624793fbecd5",
+              "code": "GRN",
+              "name": "Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "db": "UT-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/UT-2020-202609151031.db",
+      "size": 23846912,
+      "sha256": "8fa1de74d669da76719a0e2627ad9f5f5e1bfa02fec4f9f9c8441c1ecf42fc9d",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Utah President",
+          "total_votes": 1487676,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "677f978f-5b31-510a-89f4-582a32dd6a25",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "fa0f8966-871c-5512-935a-604c307d3df5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "da9df0a8-a100-5e58-b61e-d0c5c6d227fc",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "ae8a0bea-98d6-5f24-ba4b-f35fd230e443",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "4b7ccee4-7463-503c-a061-fec98dbce89b",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "8324af91-6943-5e91-a887-4f9b51ae0f48",
+              "code": "IND",
+              "name": "Independent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 Utah Governor",
+          "total_votes": 1438710,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "2f815ad9-8671-54af-8da8-0052f0fecc98",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "83967d22-d45c-5cd6-85f9-2b0c1b450c0f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "1d631bbd-a97c-59ca-b069-fc5191b16780",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "6d19d564-44a4-58a4-805d-8a8e1003ec5d",
+              "code": "AMR",
+              "name": "American"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/VA-2020-202609151031.db",
+      "size": 50180096,
+      "sha256": "bd83f09063f6e292655f29e29047ac9b21a804afdd4122dd870b1b44fc0b7825",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Virginia President",
+          "total_votes": 4459751,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "963c132a-5ffa-5291-a4e7-1de18f419856",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "03c3b78e-6995-5e27-a7bf-af40e4c08f45",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "94815deb-dc24-5e2c-95f7-3ec4bc007eac",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "bcaa7e87-ce7c-526a-9690-372aca2a79ef",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Virginia US Senate",
+          "total_votes": 4406722,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "cef6cc1f-cdd0-532c-943d-3a07f6350a26",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b233d637-885e-5775-9411-30bf02805c39",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ea02a676-d0af-544d-966f-773911264445",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "db": "VT-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/VT-2020-202609151031.db",
+      "size": 3125248,
+      "sha256": "34c6265ad19c59432845ea02aec8ac9eabb4edad1ece5547c978d3689d8c80d4",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Vermont President",
+          "total_votes": 367428,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "cae6f8f6-4e10-5039-877e-950bfc2a8de5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9cb6d6ae-6692-54c8-847e-fa1c72c4483f",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "e7f0aad1-fdcd-5ece-96a2-9e5233a4b9e8",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "383075f5-a83b-579a-ad8a-769375e40662",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "e892e58f-0444-508d-9fcf-0dfaa5e74ba1",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "03218d8a-8d92-59d7-bac0-235448d54858",
+              "code": "OTH",
+              "name": "Other"
+            },
+            {
+              "id": "fb591476-a23b-54db-b38d-cee5c81231d7",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US House",
+          "special": false,
+          "name": "2020 Vermont US House",
+          "total_votes": 354840,
+          "candidates": 8,
+          "parties": [
+            {
+              "id": "5f132d79-955a-5153-b5d0-94e1a18f7191",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b1aebd4f-af7e-5a55-a3ec-f5e33c580fde",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "53ee0a61-72ad-5484-b818-f3879d04cb65",
+              "code": "COM",
+              "name": "Communisty"
+            },
+            {
+              "id": "4984412a-8199-59e2-84f5-b0c5c57030a3",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "80a06bb5-c792-5fc8-a6bf-90b433f22e8a",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 Vermont Governor",
+          "total_votes": 362711,
+          "candidates": 9,
+          "parties": [
+            {
+              "id": "d63675fa-33de-54f7-a486-4a88d437b061",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "41c5cb3d-0a42-5ca3-a4d0-1b7429b45135",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "7e9caf3e-5815-5cab-8e2c-0b481e866314",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "b56cfb14-64f0-59bf-a95a-c4e5aca3f655",
+              "code": "TMP",
+              "name": "Truth Matters Pary"
+            },
+            {
+              "id": "fac8bf5f-aebe-5d66-babe-0f1ced816440",
+              "code": "NPA",
+              "name": "No Party Affiliation"
+            },
+            {
+              "id": "2efce2b2-7448-52f3-827c-99ee17b41717",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "db": "WA-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/WA-2020-202609151031.db",
+      "size": 69062656,
+      "sha256": "abe3011232408e3ed3e1e3c665723a8184cb508967e38eecbc20655918cfb0bd",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Washington President",
+          "total_votes": 4087631,
+          "candidates": 7,
+          "parties": [
+            {
+              "id": "31274c86-f722-57c5-99f9-835034b66bac",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "92dfc87b-73c7-5951-9a5b-5d84776d4745",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "b591e97a-83f5-5dcd-a853-25156444574f",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "d5c4b171-5947-5466-a1d4-77e392658045",
+              "code": "GRN",
+              "name": "Green"
+            },
+            {
+              "id": "004298eb-d8cc-51d6-a033-ab89213833b9",
+              "code": "PSL",
+              "name": "Socialism and Liberation"
+            },
+            {
+              "id": "0a43b341-cd7e-5f85-850d-4563a22faf7d",
+              "code": "SWP",
+              "name": "Socialist Workers"
+            },
+            {
+              "id": "d88e87c3-347f-5484-bc98-74b094c28c33",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 Washington Governor",
+          "total_votes": 4056454,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6046342c-c832-5526-8fe8-ced5dd0613aa",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "395a46a5-9c35-5318-99e9-b2bf824a5c5d",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "2df40fb9-98ac-59cf-844c-03590fcae5cb",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "db": "WI-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/WI-2020-202609151031.db",
+      "size": 51167232,
+      "sha256": "34689350d7c9715a47304e42bbeca57566ac77ced1e5bf2458d4e247435e295c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Wisconsin President",
+          "total_votes": 3298041,
+          "candidates": 6,
+          "parties": [
+            {
+              "id": "19b9321a-6e50-51a0-ab74-71bef9e64260",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "ec102555-55ff-5680-80b9-051b47f7d115",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1f9c1c0a-3068-572f-8c47-1e6746ed2596",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "1a1df33e-c2bb-551c-b4c0-c1c7d4d03aec",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "7294ed31-b2c8-5781-8c52-5053785c00e1",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "e7908704-49c4-58d4-875c-d52ac1e54613",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "db": "WV-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/WV-2020-202609151031.db",
+      "size": 31559680,
+      "sha256": "98e492083b1355c42f7d9152bb74848491e445b700332c9b442e4b4bbb888f2c",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 West Virginia President",
+          "total_votes": 794652,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "6d79cc45-d4bd-5731-9797-e1a00b8be367",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "6214efe1-e199-5653-9842-790715598839",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "67125724-eb1b-5579-807d-5b195c4e3957",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "e043c1bc-88fe-5ed2-a5b7-31c918ca7068",
+              "code": "MTN",
+              "name": "Mountain"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 West Virginia US Senate",
+          "total_votes": 778918,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "83fa7431-3787-5a8e-af80-d46064c181f5",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "25f8bed5-e13c-578b-9677-42d24f7e3040",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d13b1b47-b5d5-52bf-8c12-fa40d082efa6",
+              "code": "LIB",
+              "name": "Libertarian"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "Governor",
+          "special": false,
+          "name": "2020 West Virginia Governor",
+          "total_votes": 768804,
+          "candidates": 4,
+          "parties": [
+            {
+              "id": "08e1968f-50d2-5669-96c8-331f45e62ab4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "a3cd04fc-65d2-58de-b79a-264b03e22299",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9e10c3cb-2adf-5ac7-a3f2-00fa47b1d7b4",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "cd010aeb-6f5c-5db2-8950-2e5ab05987b4",
+              "code": "MTN",
+              "name": "Mountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "db": "WY-2020.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2020/WY-2020-202609151031.db",
+      "size": 9400320,
+      "sha256": "229cb0d92dcfa2973f539255d7ca050398bad7af8402bb3b8eeb52b12537b7ae",
+      "source": "VEST",
+      "level": "precinct",
+      "elections": [
+        {
+          "id": 1,
+          "office": "President",
+          "special": false,
+          "name": "2020 Wyoming President",
+          "total_votes": 276765,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "fb123558-b4d9-5548-8f39-d0d1d0d5b412",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0d2e273e-d265-54b2-b7d9-b66cef60b2f0",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9c71e0bb-daf7-5fbd-8e7c-0be45c9a9707",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "2d152804-227e-5354-aa77-06d6f3701054",
+              "code": "IND",
+              "name": "Independent"
+            },
+            {
+              "id": "7f88ed5d-029c-5581-bcea-f1bb10b7cc61",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "US Senate",
+          "special": false,
+          "name": "2020 Wyoming US Senate",
+          "total_votes": 271937,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "0dc1b586-f93c-5bac-baf5-bd5abcb43e78",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "05d5a0e4-689a-5756-9b6b-8a06fe21ab1c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3e51be48-3c01-5ddd-9e07-75eecfa83ad0",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "office": "US House",
+          "special": false,
+          "name": "2020 Wyoming US House",
+          "total_votes": 270892,
+          "candidates": 5,
+          "parties": [
+            {
+              "id": "9d95ad8b-c3cd-5cf8-aa4c-c18711584c24",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ce297784-ef67-59a8-b952-2d4fdceba76f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "3e2631a8-492d-50db-a5ad-c35456fe798b",
+              "code": "LIB",
+              "name": "Libertarian"
+            },
+            {
+              "id": "78ab4ba0-bc21-55da-8204-3fd8c9620224",
+              "code": "CST",
+              "name": "Constitution"
+            },
+            {
+              "id": "69697e0e-4b1a-5a91-b136-a79c4f96782a",
+              "code": "WRI",
+              "name": "Write-In"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

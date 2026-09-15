@@ -27,8 +27,7 @@ CREATE TABLE precincts (
     name TEXT NOT NULL,
     boundary BLOB, -- WKB stored as bytes
     center_lat REAL,
-    center_lon REAL,
-    population INTEGER NOT NULL DEFAULT 0
+    center_lon REAL
 );
 
 CREATE TABLE county_precincts (

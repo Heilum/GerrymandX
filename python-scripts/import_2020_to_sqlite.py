@@ -178,7 +178,7 @@ CD_OUTLINES = INPUT_DIR / "cb_2020_us_cd116_500k.zip"
 STATE_SCHEMA = """
 CREATE TABLE counties (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL);
 CREATE TABLE congressional_districts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL);
-CREATE TABLE precincts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL, population INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE precincts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, boundary BLOB, center_lat REAL, center_lon REAL);
 CREATE TABLE county_precincts (precinct_id INTEGER REFERENCES precincts(id) ON DELETE CASCADE, county_id INTEGER REFERENCES counties(id) ON DELETE CASCADE, PRIMARY KEY(precinct_id, county_id));
 CREATE TABLE congressional_district_precincts (precinct_id INTEGER REFERENCES precincts(id) ON DELETE CASCADE, congressional_district_id INTEGER REFERENCES congressional_districts(id) ON DELETE CASCADE, PRIMARY KEY(precinct_id, congressional_district_id));
 CREATE TABLE precinct_results (id INTEGER PRIMARY KEY AUTOINCREMENT, precinct_id INTEGER REFERENCES precincts(id) ON DELETE CASCADE, candidate_id TEXT NOT NULL, votes INTEGER NOT NULL DEFAULT 0, UNIQUE(precinct_id, candidate_id));
@@ -592,7 +592,6 @@ def import_state(archive: Path, national: sqlite3.Connection, overwrite: bool) -
 
         statefp = state_fips(code)
         precinct_field = first_column(gdf, PRECINCT_FIELDS)
-        population_field = first_column(gdf, ["PERSONS", "POPULATION", "TOTPOP", "TOTALPOP"])
         gdf["__county"] = resolve_counties(gdf, code, statefp)
         gdf["__precinct"] = ([as_text(value, f"Precinct_{index + 1}")
                               for index, value in enumerate(gdf[precinct_field])]
@@ -642,10 +641,8 @@ def import_state(archive: Path, national: sqlite3.Connection, overwrite: bool) -
                 row_votes[candidate] += as_int(row[column])
             for candidate, votes in row_votes.items():
                 candidate_totals[candidate] += votes
-            fallback_population = sum(row_votes.values())
-            population = as_int(row[population_field]) if population_field else fallback_population
             lat, lon = center(row.geometry)
-            db.execute("INSERT INTO precincts(id,name,boundary,center_lat,center_lon,population) VALUES (?,?,?,?,?,?)", (precinct_id, row["__precinct"], wkb(row.geometry), lat, lon, population))
+            db.execute("INSERT INTO precincts(id,name,boundary,center_lat,center_lon) VALUES (?,?,?,?,?)", (precinct_id, row["__precinct"], wkb(row.geometry), lat, lon))
             db.execute("INSERT INTO county_precincts(precinct_id,county_id) VALUES (?,?)", (precinct_id, county_ids[row["__county"]]))
             if row["__district"] in district_ids:
                 db.execute("INSERT INTO congressional_district_precincts(precinct_id,congressional_district_id) VALUES (?,?)", (precinct_id, district_ids[row["__district"]]))

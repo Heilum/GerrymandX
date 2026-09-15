@@ -1,0 +1,88 @@
+{
+  "year": 2001,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:57+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2001",
+  "national": {
+    "db": "National-2001.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2001/National-2001-202609151031.db",
+    "size": 151552,
+    "sha256": "2be3d94cbccd63e7a3a821f3891454c8164ec75908b316dc0746fd9bc620219a"
+  },
+  "states": [
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2001.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2001/NJ-2001-202609151031.db",
+      "size": 376832,
+      "sha256": "c9d66e8c9c13b01185adf9d77114b23002b8c1a5559aa40aca98abbf02e76a12",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2001 New Jersey Governor",
+          "total_votes": 2227165,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "9a4b6552-ec93-55f0-8c6b-c0f42e15b51f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "36e85019-75a4-52a7-a41d-0eeadd9af061",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8fb034fa-dcf0-5992-8c04-4a71653118d4",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2001.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2001/VA-2001-202609151031.db",
+      "size": 1454080,
+      "sha256": "e992ebd551deefeb4c2bca2ffac4035bb5675ea66e201aa3ab7a09acdce58dfd",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2001 Virginia Governor",
+          "total_votes": 1886721,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "5ea27fba-45d3-549a-ad56-43323ef3ce81",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "8dfd44a7-1523-5808-88b1-6fcb527380c6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "1ab447e7-7530-57c5-a662-eb7ca6cd44dc",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

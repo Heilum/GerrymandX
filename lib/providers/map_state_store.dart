@@ -7,7 +7,6 @@ enum FillMode {
   winnerOpacity,
   singleCandidateOpacity,
   winnerDotDensity,
-  turnoutGray,
 
   /// One party, this election vs. another one: how much its vote share moved.
   singlePartyComparison,
@@ -59,8 +58,15 @@ class MapStateStore {
   // Single Candidate (UUID) for fillMode = singleCandidateOpacity
   final selectedCandidateId = Signal<String?>(null);
 
-  /// Election folder the comparison fill modes measure against.
+  /// Election folder the comparison fill modes measure against. May be the
+  /// folder on the map, to compare two of its contests.
   final comparisonElectionFolder = Signal<String?>(null);
+
+  /// Contest of [comparisonElectionFolder]'s state database to compare
+  /// against, by [ElectionContest.label] (`US Senate`, `US Senate (Special)`):
+  /// ids are minted per database, labels are not. Null until picked, when the
+  /// contest for the office on the map is used.
+  final comparisonContestLabel = Signal<String?>(null);
 
   /// Party ids **of the current election** for the comparison fill modes.
   /// Party ids are minted per election, so the other election is matched by
@@ -93,6 +99,7 @@ class MapStateStore {
   /// state (or election) has its own set of comparable elections.
   void resetComparison() {
     comparisonElectionFolder.value = null;
+    comparisonContestLabel.value = null;
     comparisonPartyAId.value = null;
     comparisonPartyBId.value = null;
   }

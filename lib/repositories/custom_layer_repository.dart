@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:gerrymanderx/models/custom_layer.dart';
+import 'package:gerrymanderx/models/election_sub_item.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 /// Persistence for [CustomLayer]s in a single SQLite file of the app's own
@@ -63,13 +64,26 @@ class CustomLayerRepository {
 
   // ── Layers ──
 
+  /// Layers of [dbName]'s state in [election].
+  ///
+  /// Matched by state rather than by file name: a newer version of a
+  /// database is published under a new time-stamped name (`TX-2024.db` →
+  /// `TX-2024-202609151630.db`) and replaces the old file in the same folder,
+  /// and the layers drawn on it carry over.
   Future<List<CustomLayer>> loadLayers(String election, String dbName) async {
-    final layerRows = await _db.query(
+    final state = ElectionSubItem.stateCodeOf(dbName);
+    final layerRows = (await _db.query(
       'custom_layers',
-      where: 'election = ? AND db_name = ?',
-      whereArgs: [election, dbName],
+      where: 'election = ?',
+      whereArgs: [election],
       orderBy: 'created_at, id',
-    );
+    ))
+        .where((r) {
+      final stored = r['db_name'] as String;
+      return state == null
+          ? stored == dbName
+          : ElectionSubItem.stateCodeOf(stored) == state;
+    }).toList();
     if (layerRows.isEmpty) return const [];
 
     final layerIds = layerRows.map((r) => r['id'] as int).toList();

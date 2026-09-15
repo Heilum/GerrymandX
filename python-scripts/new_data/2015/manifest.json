@@ -1,0 +1,120 @@
+{
+  "year": 2015,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:59+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2015",
+  "national": {
+    "db": "National-2015.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2015/National-2015-202609151031.db",
+    "size": 221184,
+    "sha256": "9160c88603b551ba10678a66a026246ca9211527988d07bbdb666e64a08e2528"
+  },
+  "states": [
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2015.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2015/KY-2015-202609151031.db",
+      "size": 1732608,
+      "sha256": "fab17eb692e023171b506a680559ade48cf170dcbbdf91358401647ea5aa5bfb",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2015 Kentucky Governor",
+          "total_votes": 973692,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3d98bb01-ad6c-5047-afdd-0cc1bfcd2078",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "9da34a62-73e8-5793-9b2d-8f65cb20aec1",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "8b4c4398-dedc-528b-99e7-d92fe2a3fed3",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2015.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2015/LA-2015-202609151031.db",
+      "size": 1249280,
+      "sha256": "405829213b1870444337499365ecd69a68cf9c68f3170a7b603d299956b4b2a8",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2015 Louisiana Governor",
+          "total_votes": 1152864,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "e0e74530-fae7-5c74-8978-54524480489f",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "5984d2e0-245a-50e1-8f13-4d06c5a33e81",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2015.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2015/MS-2015-202609151031.db",
+      "size": 790528,
+      "sha256": "2f96b5bf5abb2f73b471a3b4683c7d178cc13ec48ccba8be81a65aff4a14930f",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2015 Mississippi Governor",
+          "total_votes": 725207,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "903cb2e0-7bcc-5819-94b3-9a263a8ee0c2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "f1a82086-b847-51f3-8cef-b184c3e402cd",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "3c0c295a-cfc6-526a-a0de-de1a9df39f32",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

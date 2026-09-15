@@ -1,0 +1,120 @@
+{
+  "year": 2011,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:58+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2011",
+  "national": {
+    "db": "National-2011.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2011/National-2011-202609151031.db",
+    "size": 221184,
+    "sha256": "43b827d9c66da9784761479dfbbab4523cf5c96886c2a52b6b76f8200c1859ba"
+  },
+  "states": [
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "db": "KY-2011.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2011/KY-2011-202609151031.db",
+      "size": 1593344,
+      "sha256": "8001af271b46eaa4e3d0ad13d3c43c598ed44e1ed0a470d96dbdaf61c272fdef",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2011 Kentucky Governor",
+          "total_votes": 833139,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "98b75b3d-2a2d-5d3d-b077-96adbc40688c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "d54e1766-b5f2-5a7a-bb92-20b8d1a62db4",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "c3df74d7-476a-5ec7-acd6-0e9ca51bcdec",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "db": "LA-2011.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2011/LA-2011-202609151031.db",
+      "size": 1110016,
+      "sha256": "0c112251500ce07de23e00b5f17208c750a412c2a32b26fb971041c92ca1caa2",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2011 Louisiana Governor",
+          "total_votes": 1023163,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "1708a4db-f002-5fcf-bd88-1366e5872df5",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "149bc2ca-089e-5234-85f4-c9fd8804b75a",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "4a83af32-4e89-5295-a348-3b4388c0bcf5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "db": "MS-2011.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2011/MS-2011-202609151031.db",
+      "size": 761856,
+      "sha256": "3bc170bc60b0871eca8e14915f7a1a388dcb88d2838ff2842d4822c73a17785e",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2011 Mississippi Governor",
+          "total_votes": 893468,
+          "candidates": 2,
+          "parties": [
+            {
+              "id": "86e460a2-c5a6-5ae5-bf24-102c0721d206",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "0cd84517-312c-5d10-ae4b-bff537ec583c",
+              "code": "REP",
+              "name": "Republican"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

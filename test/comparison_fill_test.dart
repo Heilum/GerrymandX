@@ -68,6 +68,34 @@ void main() {
     });
   });
 
+  test('sumRegionVotes adds up parties and candidates statewide', () {
+    final state = MapDataStore.sumRegionVotes(const [
+      RegionPartyVotes(
+        totalVotes: 100,
+        votesByParty: {'DEM': 40, 'REP': 55},
+        candidateVotesByParty: {
+          'DEM': {'Ann': 40},
+          'REP': {'Bo': 55},
+        },
+      ),
+      RegionPartyVotes(
+        totalVotes: 50,
+        votesByParty: {'REP': 50},
+        candidateVotesByParty: {
+          'REP': {'Bo': 30, 'Cy': 20},
+        },
+      ),
+    ]);
+
+    // Votes for no party still count towards the total.
+    expect(state.totalVotes, 150);
+    expect(state.votesByParty, {'DEM': 40, 'REP': 105});
+    expect(state.candidateVotesByParty, {
+      'DEM': {'Ann': 40},
+      'REP': {'Bo': 85, 'Cy': 20},
+    });
+  });
+
   group('votesByPrecinctId', () {
     // Precincts are matched geometrically rather than by name, so their
     // baseline totals stay keyed by id instead of going through region names.
@@ -98,6 +126,38 @@ void main() {
 
       expect(regions[10]!.shareOf('DEM'), closeTo(0.4, 1e-9));
       expect(regions[10]!.votesByParty.containsKey('z'), isFalse);
+    });
+
+    test('keeps who ran for each party, through region aggregation', () {
+      final precincts = MapDataStore.votesByPrecinctId(
+        {
+          10: {'a1': 30, 'a2': 10, 'b1': 60},
+          11: {'a1': 5, 'b1': 0},
+        },
+        partyOf,
+        candidateNameById: const {'a1': 'Ann', 'a2': 'Al', 'b1': 'Bo'},
+      );
+
+      expect(precincts[10]!.candidateVotesByParty, {
+        'DEM': {'Ann': 30, 'Al': 10},
+        'REP': {'Bo': 60},
+      });
+      // A candidate with no votes in a precinct isn't named there.
+      expect(precincts[11]!.candidateVotesByParty, {
+        'DEM': {'Ann': 5},
+      });
+
+      final region = RenderableCell(
+        cell: GeoCell(id: 1, name: 'R', layerType: LayerType.county),
+        path: Path()..addRect(const Rect.fromLTWH(0, 0, 10, 10)),
+        exteriorPath: Path(),
+        bounds: const Rect.fromLTWH(0, 0, 10, 10),
+      );
+      final merged = MapDataStore.aggregateBaselineInto([region], [
+        BaselinePoint(const Offset(2, 2), precincts[10]!),
+        BaselinePoint(const Offset(3, 3), precincts[11]!),
+      ]);
+      expect(merged[1]!.candidateVotesByParty['DEM'], {'Ann': 35, 'Al': 10});
     });
 
     test('skips precincts with no votes rather than dividing by zero', () {

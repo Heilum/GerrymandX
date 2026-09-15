@@ -4,9 +4,16 @@ class RemoteDbItem {
   final String name;
   final String url;
 
+  /// Byte size and SHA-256 of the file on the CDN, from a versioned manifest.
+  /// A downloaded copy whose hash differs is out of date.
+  final int? size;
+  final String? sha256;
+
   RemoteDbItem({
     required this.name,
     required this.url,
+    this.size,
+    this.sha256,
   });
 
   static const String _cdnBase = 'https://files.xp-oncology.cn/gerrymander/';
@@ -30,12 +37,22 @@ class RemoteDbItem {
       final rawUrl = (json['url'] ?? json['db']) as String;
       final name = (json['name'] ?? json['stateName']) as String? ??
           Uri.parse(rawUrl).pathSegments.last;
-      return RemoteDbItem(name: name, url: _ensureCdnUrl(rawUrl));
+      return RemoteDbItem(
+        name: name,
+        url: _ensureCdnUrl(rawUrl),
+        size: (json['size'] as num?)?.toInt(),
+        sha256: json['sha256'] as String?,
+      );
     }
     throw FormatException('Invalid db item format: $json');
   }
 
-  Map<String, dynamic> toJson() => {'name': name, 'url': url};
+  Map<String, dynamic> toJson() => {
+        'name': name,
+        'url': url,
+        if (size != null) 'size': size,
+        if (sha256 != null) 'sha256': sha256,
+      };
 }
 
 /// One downloadable election folder: a legacy election such as
@@ -77,6 +94,9 @@ class RemoteElectionItem {
   /// `{"2024": [{"stateName": "Texas", "db": "…/TX-2024.db"}, …]}` — and each
   /// year becomes one item whose folder name is the year; candidates and
   /// parties live in the databases themselves.
+  ///
+  /// A versioned `new_elections.json` also carries a top-level `version`,
+  /// which is skipped here (see [manifestVersionOf]).
   static List<RemoteElectionItem> listFromManifest(dynamic decoded) {
     if (decoded is List) {
       return decoded
@@ -99,6 +119,10 @@ class RemoteElectionItem {
     }
     throw FormatException('Unrecognised elections manifest: ${decoded.runtimeType}');
   }
+
+  /// The `version` of a `new_elections.json`; null for a manifest without one.
+  static int? manifestVersionOf(dynamic decoded) =>
+      decoded is Map<String, dynamic> ? (decoded['version'] as num?)?.toInt() : null;
 
   /// Written to `meta.json` inside the downloaded election folder so that
   /// candidates and parties are available without the remote manifest.

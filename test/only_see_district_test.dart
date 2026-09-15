@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:ui';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:gerrymanderx/models/election_metadata.dart';
@@ -18,13 +19,12 @@ class _TempPathProvider extends PathProviderPlatform
   Future<String?> getApplicationDocumentsPath() async => path;
 }
 
-PrecinctVoteSummary _votes(int dem, int rep, {int population = 0}) =>
+PrecinctVoteSummary _votes(int dem, int rep) =>
     PrecinctVoteSummary(
       totalVotes: dem + rep,
       winnerCandidateId: dem >= rep ? 'd' : 'r',
       winnerVotes: dem >= rep ? dem : rep,
       candidateVotes: {'d': dem, 'r': rep},
-      population: population,
     );
 
 /// "Only See" narrows a US House race to one district: precincts outside it
@@ -45,9 +45,9 @@ void main() {
     // District 1 holds precincts 1 and 2; district 2 holds precinct 3.
     // County 10 straddles the two districts (precincts 2 and 3).
     dataStore.precinctVotes.value = {
-      1: _votes(100, 50, population: 300),
-      2: _votes(40, 60, population: 200),
-      3: _votes(10, 90, population: 100),
+      1: _votes(100, 50),
+      2: _votes(40, 60),
+      3: _votes(10, 90),
     };
     dataStore.cdPrecincts.value = {1: [1, 2], 2: [3]};
     dataStore.countyPrecincts.value = {10: [2, 3]};
@@ -77,7 +77,6 @@ void main() {
         LayerType.congressionalDistrict, 2)!;
     expect(other.totalVotes, 0);
     expect(other.winnerCandidateId, isNull);
-    expect(other.population, 100, reason: 'people stay, ballots go');
 
     final outside = dataStore.aggregateVotesForRegion(LayerType.precinct, 3)!;
     expect(outside.totalVotes, 0);
@@ -104,12 +103,92 @@ void main() {
     final county = dataStore.aggregateVotesForRegion(LayerType.county, 10)!;
     expect(county.totalVotes, 100);
     expect(county.candidateVotes, {'d': 40, 'r': 60});
-    expect(county.population, 300);
 
     expect(
       dataStore.aggregateVotesForRegion(LayerType.state, 0)!.totalVotes,
       250,
     );
+  });
+
+  group('a precinct split between districts', () {
+    setUp(() {
+      // Precinct 2 straddles the line: besides district 1's race it carries
+      // 30 ballots for district 2's candidates 'd2' and 'r2'.
+      dataStore.precinctVotes.value = {
+        ...dataStore.precinctVotes.value,
+        2: PrecinctVoteSummary(
+          totalVotes: 130,
+          winnerCandidateId: 'r',
+          winnerVotes: 60,
+          candidateVotes: {'d': 40, 'r': 60, 'd2': 20, 'r2': 10},
+        ),
+      };
+      dataStore.candidates.value = const [
+        Candidate(id: 'd', name: 'D1', district: '1'),
+        Candidate(id: 'r', name: 'R1', district: '1'),
+        Candidate(id: 'd2', name: 'D2', district: '2'),
+        Candidate(id: 'r2', name: 'R2', district: '2'),
+      ];
+      RenderableCell district(int id) => RenderableCell(
+            cell: GeoCell(
+              id: id,
+              name: 'District $id',
+              layerType: LayerType.congressionalDistrict,
+            ),
+            path: Path(),
+            exteriorPath: Path(),
+            bounds: Rect.zero,
+          );
+      dataStore.cellIndex.value = {
+        LayerType.congressionalDistrict: {1: district(1), 2: district(2)},
+      };
+    });
+
+    test('lists only the picked district\'s candidates', () {
+      mapState.focusDistrictId.value = 1;
+
+      expect(dataStore.focusCandidateIds.value, {'d', 'r'});
+      final precinct =
+          dataStore.aggregateVotesForRegion(LayerType.precinct, 2)!;
+      expect(precinct.candidateVotes, {'d': 40, 'r': 60});
+      expect(precinct.totalVotes, 100);
+
+      final county = dataStore.aggregateVotesForRegion(LayerType.county, 10)!;
+      expect(county.candidateVotes, {'d': 40, 'r': 60});
+    });
+
+    test('keeps every candidate while no district is picked', () {
+      expect(dataStore.focusCandidateIds.value, isNull);
+      expect(
+        dataStore.aggregateVotesForRegion(LayerType.precinct, 2)!.totalVotes,
+        130,
+      );
+    });
+  });
+
+  test('a precinct reports its county and district by membership', () {
+    RenderableCell cell(int id, String name, LayerType layer) =>
+        RenderableCell(
+          cell: GeoCell(id: id, name: name, layerType: layer),
+          path: Path(),
+          exteriorPath: Path(),
+          bounds: Rect.zero,
+        );
+    dataStore.cellIndex.value = {
+      LayerType.county: {10: cell(10, 'Blount', LayerType.county)},
+      LayerType.congressionalDistrict: {
+        1: cell(1, 'District 1', LayerType.congressionalDistrict),
+        2: cell(2, 'District 2', LayerType.congressionalDistrict),
+      },
+    };
+
+    final regions = dataStore.regionsOfPrecinct(3);
+    expect(regions.counties, ['Blount']);
+    expect(regions.districts, ['District 2']);
+
+    // Precinct 1 lies in no county of this fixture.
+    expect(dataStore.regionsOfPrecinct(1).counties, isEmpty);
+    expect(dataStore.regionsOfPrecinct(1).districts, ['District 1']);
   });
 
   test('only applies to a US House contest', () {

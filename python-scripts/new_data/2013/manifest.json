@@ -1,0 +1,150 @@
+{
+  "year": 2013,
+  "schema": 2,
+  "generated_at": "2026-09-14T07:10:58+00:00",
+  "cdn_base": "https://files.xp-oncology.cn/gerrymander/2013",
+  "national": {
+    "db": "National-2013.db",
+    "url": "https://files.xp-oncology.cn/gerrymander/2013/National-2013-202609151031.db",
+    "size": 212992,
+    "sha256": "e012a00c7afeb37789b3abb9aa0e32b6f0c23679e52ef6a95f5fe50006220416"
+  },
+  "states": [
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "db": "MA-2013.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2013/MA-2013-202609151031.db",
+      "size": 335872,
+      "sha256": "d3c46078bb781d99d3b492b50dc75b5146dc252edf1ce28cfae6748d1add0af7",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": true,
+          "name": "2013 Massachusetts US Senate (Special)",
+          "total_votes": 1177790,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6246c8af-0546-5fb1-85b3-2323c25e1f73",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "7412419d-3816-5977-bd42-13e1e6530dff",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "ce540833-dbef-5a14-b4aa-479b45bcd8e5",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "db": "NJ-2013.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2013/NJ-2013-202609151031.db",
+      "size": 442368,
+      "sha256": "136255807ab5b2607f6e9425c00753133958dc5e0bd517e9287e74be65f0d3b5",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "US Senate",
+          "special": true,
+          "name": "2013 New Jersey US Senate (Special)",
+          "total_votes": 1348659,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "3addb550-bad4-5324-83d9-c428ee5778c2",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "6e21d90e-acd2-57de-ab22-4d81ea54025e",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "079d130c-d237-5d85-ba9a-53b395b8bfce",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "office": "Governor",
+          "special": false,
+          "name": "2013 New Jersey Governor",
+          "total_votes": 2120866,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "ae25e364-9cdc-5454-94f1-df7d3ee5c19c",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "018235b3-9962-5c76-8d0b-3447fde5d9cb",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "0b1a620e-d36c-56b9-8803-31d85a49ae40",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "db": "VA-2013.db",
+      "url": "https://files.xp-oncology.cn/gerrymander/2013/VA-2013-202609151031.db",
+      "size": 1544192,
+      "sha256": "7441dfc14951d12beaec453b9924983fd5e78e826fa1567f9e07a5a1805e48a1",
+      "source": "Algara-Amlani",
+      "level": "county",
+      "elections": [
+        {
+          "id": 1,
+          "office": "Governor",
+          "special": false,
+          "name": "2013 Virginia Governor",
+          "total_votes": 2241071,
+          "candidates": 3,
+          "parties": [
+            {
+              "id": "6f2b7ca4-1b55-5ad7-b778-09aa38288847",
+              "code": "DEM",
+              "name": "Democrat"
+            },
+            {
+              "id": "b23be065-857e-52e6-831c-0680aa2e14e6",
+              "code": "REP",
+              "name": "Republican"
+            },
+            {
+              "id": "d1f650bc-fabd-5da1-aa40-34eed958ee9d",
+              "code": "OTH",
+              "name": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

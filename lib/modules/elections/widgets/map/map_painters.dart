@@ -147,6 +147,17 @@ class BaseMapPainter extends CustomPainter {
     canvas.translate(t.offsetX, t.offsetY);
     canvas.scale(t.scale, t.scale);
 
+    // Under "Only See", a county straddling the focused district counts only
+    // its inside votes but would still paint its whole shape; keep fills to
+    // the district itself.
+    if (drawFill && dataStore.focusPrecincts.value != null) {
+      final focusId = dataStore.mapStateStore.focusDistrictId.value;
+      final district = focusId == null
+          ? null
+          : dataStore.cellAt(LayerType.congressionalDistrict, focusId);
+      if (district != null) canvas.clipPath(district.path);
+    }
+
     if (visibleLayers.contains(LayerType.state)) {
       _drawLayer(
         canvas,
@@ -407,12 +418,6 @@ class BaseMapPainter extends CustomPainter {
         final candidateVotes = summary.candidateVotes[singleCandidateId] ?? 0;
         final share = summary.totalVotes > 0 ? candidateVotes / summary.totalVotes : 0.0;
         return _getStrengthColor(share, singleCandidateId);
-
-      case FillMode.turnoutGray:
-        final pop = summary.totalVotes * 1.8;
-        final turnout = summary.totalVotes / pop;
-        final gray = (turnout * 255).round().clamp(30, 240);
-        return Color.fromARGB(255, gray, gray, gray);
 
       case FillMode.winnerDotDensity:
         return Colors.transparent;
